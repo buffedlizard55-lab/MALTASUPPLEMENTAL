@@ -52,8 +52,32 @@ deliberately omitted. If you contribute: never commit email text.
 2. Collect the five written confirmations listed on [Hotspawn & Prize](hotspawn.html).
 3. T-7 days: re-check EPL MW7 kick-offs, the TWC format page, ETIAS status, winter-fare switchover,
    passport validity, and DAB+ 6C carriage on arrival.
-4. Email Kalshi support about trading from Malta; keep the written reply.
+4. Kalshi: resolved on the Radio page (official help article + Member Agreement — Malta not restricted;
+   Italy/France/UK/Ireland are, so no trading during such layovers). Screenshot both before flying.
 5. BirguFest dates: ask the Birgu Local Council directly once published.
+6. Request a PDF of the giveaway T&Cs — community.hotspawn.com was offline on 23 Sep 2026 and is not
+   archived (Wayback holds only a placeholder capture).
+
+## Limitations (pass 3 audit, 23 Sep 2026)
+
+- The build sandbox has no outbound shell network, so **links were not machine-checked**; every URL was
+  opened via the research fetch tool instead. A future session with network should run a link checker.
+- Giveaway T&Cs analysis relies on a reading taken while the page was live; no archived copy exists.
+- "Sports Channel" on DAB+ 6C = talkSPORT rests on a hobbyist directory + Wikipedia; the multiplex
+  operator's own catalogue does not list it. Treat as probable until tuned in.
+- Rai Radio 1's per-match commentary assignments and talkSPORT's Malta feed for 17–19 Oct are not
+  published in advance; the Serie A / EPL tables show official kick-offs, not verified radio line-ups.
+- Restaurant ratings/review counts are point-in-time TripAdvisor data; social platforms were not
+  directly queryable.
+- Cost bands are estimates, not quotes; a parallel independent estimate (MALTA dossier) is shown on the
+  Costs page for reconciliation.
+- Nothing here is legal or tax advice.
+
+## Corrections log
+
+- Pass 2/3: Radio Sportiva relabelled (private Mediahit station, not Rai); TWC group-stage advancement
+  corrected to top-two-per-group; Prosciutteria area corrected to Gżira; full Serie A MD7 table added
+  from the official Lega notice; talkSPORT/BBC slot mapping added from premierleague.com.
 
 ## Building
 
