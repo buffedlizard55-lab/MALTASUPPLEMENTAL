@@ -40,7 +40,8 @@
     var el = document.getElementById(id);
     if (!el) return fallback;
     var v = parseFloat(el.value);
-    return isNaN(v) ? fallback : v;
+    if (isNaN(v) || v < 0) return fallback; // clamp negatives/NaN to the safe default
+    return v;
   }
 
   function render() {
@@ -50,8 +51,8 @@
     var airfare = num(ids.airfareCovered, 0);      // $ you pay (0 if covered)
     var hotel = num(ids.hotelCovered, 0);          // $ you pay (0 if covered)
     var food = num(ids.foodPerDay, 30) * days;     // $
-    var transport = num(ids.transport, 35);        // $
-    var transfers = num(ids.transfers, 60);        // $
+    var transport = num(ids.transport, 45);        // $ (matches input default)
+    var transfers = num(ids.transfers, 45);        // $ (matches input default)
     var activities = num(ids.activities, 80);      // $
     var sim = num(ids.sim, 15);                    // $
     var ecoTax = num(ids.ecoTax, 11);              // $ (€1.50/night x1.145 x7)
