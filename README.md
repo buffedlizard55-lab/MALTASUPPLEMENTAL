@@ -60,8 +60,11 @@ scrub it first.
 - US cars have HD Radio, not DAB+ — bring a DAB+ radio or buy one locally. The one *verified, dated*
   English-language Premier League radio slot is BBC World Service **Sportsworld** (DAB+ 6A), Sat 17 Oct
   15:06 and Sun 18 Oct 16:06 Malta time; talkSPORT on 6C is probable, not confirmed.
-- Unpriced on purpose (no operator page found): Comino/Blue Grotto boats, Saluting Battery, Fort St
-  Angelo, Inquisitor's Palace, Ġgantija, Heritage Malta multi-site pass, Gamers Lounge session rates.
+- Unpriced on purpose (no operator page found): Comino boats, Saluting Battery, Gamers Lounge session
+  rates. **Resolved 24 Sep evening:** Blue Grotto boats (€10/€5 per 2026 guides, older €8/€4 shown as
+  conflict), Fort St Angelo €10, Inquisitor's Palace €6, Ġgantija €10 (combo), Skorba & Ta' Ħaġrat combo
+  €6, Heritage Malta Multisite Pass €30–€60 by type (all from the official Heritage Malta pages/store;
+  exact adult pass price within the band not shown there).
 - Login-walled platforms (Google Maps, Yelp, Instagram, TikTok, Facebook, X) could not be queried
   directly; their signal enters only via named aggregators — see the not-found register on
   [Sources](sources.html).
@@ -84,12 +87,16 @@ scrub it first.
 6. Screenshot/save the giveaway page and Terms now (back online since later on 24 Sep, but intermittent), and
    request a PDF of the giveaway T&Cs — no archive copy exists if they vanish again.
 7. Book the Hypogeum (€35, 10 per tour) now if wanted — the only sight with a hard booking constraint.
-8. Next research session: price the unpriced items above from operators; confirm the Village Fork,
-   Caviar & Bull, Country Terrace and Ta' Tona localities from their own sites; find the Ta' Qali bus
-   route numbers on the operator's route planner; re-sample SFO–MLA fares once the routing is named;
-   re-open cfr.gov.mt's VAT page and the State Department fee page (both errored on 24 Sep); confirm
-   drinking age / public holidays from a Maltese government page; re-confirm the EES "fully operational
-   from 10 Apr 2026" date; ask the MALTA-dossier owner to scrub the name/quote.
+8. Next research session: price Comino boats and the Saluting Battery from operators (the only
+   remaining unpriced items); re-sample SFO–MLA fares once the routing is named; re-open cfr.gov.mt's
+   VAT page and the State Department fee page (both errored on 24 Sep); confirm public holidays & shop
+   hours from a Maltese government page; re-confirm the EES "fully operational from 10 Apr 2026" date;
+   ask the MALTA-dossier owner to scrub the name/quote.
+   **Done in the 24 Sep evening pass:** the Village Fork (Birkirkara), Caviar & Bull (Corinthia Hotel,
+   St George's Bay), Country Terrace (Triq iż-Żewwieqa, Mġarr/Għajnsielem, Gozo) and Ta' Tona (Triq
+   ir-Rebħa, Mġarr, Gozo) localities; drinking age 17 (secondary sources); Ta' Qali corridor routes
+   (52 / 56 / 58 / 186 per third-party guides — slight disagreement kept flagged; confirm in the tallinja
+   app with the hotel address); plus the pricing items above.
 
 ## Limitations (pass 3 audit, 23 Sep 2026; re-audited 24 Sep 2026)
 
@@ -118,6 +125,27 @@ scrub it first.
 
 ## Corrections log
 
+- **24 Sep 2026 fourth pass (evening session):** full mechanical audit (all 12 pages served locally
+  HTTP 200; zero missing internal links; HTML tag-balance clean; `node --check js/site.js` OK; CSS braces
+  101/101; calculator arithmetic script-verified against the published $587 / $2,100 / $567 / $1,154 figures).
+  Load-bearing sources re-read a third time the same day: TWC format page (unchanged), ETIAS ("not in
+  operation"), State Dept Malta advisory (Level 1, 9 Jul 2026), MP Transport fares page (winter window and the
+  Airport-Direct self-contradiction unchanged), Valletta Ferry Services (**back on the normal summer schedule —
+  the 23–24 Sep swell suspensions had ended**), MTA eco-contribution page, BBC Sportsworld schedule (both
+  in-window episodes still listed; UTC−4 rendering 09:06/10:06 ⇒ same 13:06/14:06 GMT), Kalshi help article,
+  premierleague.com Oct/Nov amendments page (MW7 table matches exactly, incl. the UEL footnote), the giveaway
+  page (live again, "100 entries").
+  - *Gap-fills:* priced Fort St Angelo (€10), Inquisitor's Palace (€6), Ġgantija (€10 combo) and the Multisite
+    Pass (€30–€60 by type) from the official Heritage Malta pages/store, plus Skorba & Ta' Ħaġrat combo (€6);
+    Blue Grotto boats (€10/€5 from two 2026 guides; €8/€4 conflict shown); Village Fork = Birkirkara, Caviar &
+    Bull = Corinthia St George's Bay, Country Terrace = Mġarr/Għajnsielem Gozo, Ta' Tona = Mġarr Gozo; Esports
+    Plaza corroborated via Instagram; Gamers Lounge FAQ page live; drinking age 17 now secondary-sourced
+    (tripbase 2026, WorldAtlas — no Maltese gov page); Ta' Qali corridor bus numbers (52 / 56 / 58 / 186)
+    added from third-party guides with the guide-vs-guide disagreement kept flagged.
+  - *New content:* Food page gains a community-pulse section (four Reddit threads tabulated with caveats) and
+    three cafés (Lot Sixty One, UC Cafè, Piadina Caffe) from TripAdvisor's café lists.
+  - *Method note:* the Costs hero "EUR/USD ≈ 1.14" and the calculator/sources "1.145" are the same rounded
+    rate — documented on Sources, not an error.
 - **24 Sep 2026 third pass (evening session, PR #6):** full site re-opened end-to-end; load-bearing sources
   re-fetched and re-read (Terms verbatim 2nd read; giveaway page; TWC format page; 16 Sep PR; BLAST fan guide;
   premierleague.com October/November amendments — every MW7 fixture confirmed; Malta FA ticketing — Gżira Utd v
