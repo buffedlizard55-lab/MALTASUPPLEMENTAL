@@ -33,6 +33,7 @@
     sim: "c_sim",
     ecoTax: "c_eco",
     buffer: "c_buffer",
+    extras: "c_extras",
     taxRate: "c_taxrate"
   };
 
@@ -57,15 +58,17 @@
     var sim = num(ids.sim, 15);                    // $
     var ecoTax = num(ids.ecoTax, 12);              // $ (€1.50/night x 7 nights x1.145 = ~$12; €22.50 visit cap unreachable in 7 nights)
     var buffer = num(ids.buffer, 150);             // $
+    var extras = num(ids.extras, 0);               // $ fixed extras: bag fees, insurance, passport renewal, DAB+ radio
 
-    var total = airfare + hotel + food + transport + transfers + activities + sim + ecoTax + buffer;
+    var total = airfare + hotel + food + transport + transfers + activities + sim + ecoTax + buffer + extras;
 
-    // Tax: only on the FMV of the prize you receive (airfare + hotel + ticket you did NOT pay)
-    var fmv = (airfare === 0 ? 1100 : airfare) + (hotel === 0 ? 900 : hotel) + 100; // ticket est $100
-    var taxRate = num(ids.taxRate, 30) / 100;      // combined federal + California estimate
+    // Tax: only on the FMV of what the prize actually pays for. Each covered element ("0" = covered)
+    // contributes its estimated market value; anything you pay yourself is not prize income.
+    var fmv = (airfare === 0 ? 1100 : 0) + (hotel === 0 ? 900 : 0) + 100; // ticket est $100 (always covered)
+    var taxRate = num(ids.taxRate, 27) / 100;      // combined federal + California estimate
     var tax = fmv * taxRate;
 
-    var out = total + (airfare === 0 && hotel === 0 ? tax : 0);
+    var out = total + tax;
 
     var el = document.getElementById("calc-out");
     if (!el) return;
@@ -84,9 +87,8 @@
       "<li>Local SIM / eSIM: $" + Math.round(sim).toLocaleString() + "</li>" +
       "<li>Eco-tax (hotel pass-through): $" + Math.round(ecoTax).toLocaleString() + "</li>" +
       "<li>Buffer / incidentals: $" + Math.round(buffer).toLocaleString() + "</li>" +
-      (airfare === 0 && hotel === 0
-        ? "<li>Est. US tax on prize FMV (~$" + Math.round(fmv).toLocaleString() + " × " + num(ids.taxRate, 30) + "%): $" + Math.round(tax).toLocaleString() + "</li>"
-        : "") +
+      "<li>Fixed extras (bags, insurance, passport, radio): $" + Math.round(extras).toLocaleString() + "</li>" +
+      "<li>Est. US tax on prize FMV (~$" + Math.round(fmv).toLocaleString() + " covered × " + num(ids.taxRate, 27) + "%): $" + Math.round(tax).toLocaleString() + "</li>" +
       "</ul>" +
       '<p class="small" style="color:#8fa1b5;margin:10px 0 0">Estimate only — not tax advice. "0" in flights/hotel = covered by the prize. The calculator runs entirely in your browser.</p>';
   }
