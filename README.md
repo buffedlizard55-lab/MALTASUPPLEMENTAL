@@ -38,13 +38,18 @@ deliberately omitted. If you contribute: never commit email text.
 - **Do not book anything** until the prize's cash-alternative / written coverage is confirmed (see
   [Costs](costs.html) and the email draft in [Hotspawn](hotspawn.html)).
 - The T&C residency clause conflicts with the winner's US residence — resolve before ID submission.
+  (The full T&Cs were re-read live from the source on 23 Sep 2026 — the outage earlier that day cleared —
+  but a PDF copy is still worth requesting since availability was intermittent.)
 - BirguFest 2026 dates are unresolved across four sources; 2026/27 winter bus-fare switchover is assumed
-  but unconfirmed; the 7-day card's Airport Direct coverage is self-contradictory on the two official
-  operator pages (Explore-card detail vs Airport Direct FAQ).
+  but unconfirmed; the 7-day card's Airport Direct coverage is self-contradictory across three statements
+  on the operator's own pages (two say included, one says excluded — flagged 2-vs-1).
 - US cars have HD Radio, not DAB+ — bring a radio or buy one locally for the talkSPORT feed.
 - Login-walled platforms (Google Maps, Yelp, Instagram, TikTok, Facebook, X) could not be queried
   directly; their signal enters only via named aggregators — see the not-found register on
   [Sources](sources.html).
+- Hotspawn's dedicated /author/ page for Sophie McCarthy 404s after a site restructure; her role is
+  verified via article bylines instead. The Gamers Lounge site was unreachable at check; corroborated
+  via its Facebook page.
 
 ## Next-session work queue
 
@@ -55,18 +60,24 @@ deliberately omitted. If you contribute: never commit email text.
 4. Kalshi: resolved on the Radio page (official help article + Member Agreement — Malta not restricted;
    Italy/France/UK/Ireland are, so no trading during such layovers). Screenshot both before flying.
 5. BirguFest dates: ask the Birgu Local Council directly once published.
-6. Request a PDF of the giveaway T&Cs — community.hotspawn.com was offline on 23 Sep 2026 and is not
-   archived (Wayback holds only a placeholder capture).
+6. Request a PDF of the giveaway T&Cs — the live page was re-read and verified on 23 Sep 2026, but the
+   site has shown intermittent availability, so hold a fixed copy.
 
 ## Limitations (pass 3 audit, 23 Sep 2026)
 
-- The build sandbox has no outbound shell network, so **links were not machine-checked**; every URL was
-  opened via the research fetch tool instead. A future session with network should run a link checker.
-- Giveaway T&Cs analysis relies on a reading taken while the page was live; no archived copy exists.
-- "Sports Channel" on DAB+ 6C = talkSPORT rests on a hobbyist directory + Wikipedia; the multiplex
-  operator's own catalogue does not list it. Treat as probable until tuned in.
+- The build sandbox has no outbound shell network, so **links were not machine-checked from the shell**;
+  every URL was opened via the research fetch tool instead — and in the second verification pass the
+  load-bearing sources (giveaway Terms, league fixtures, fares pages, CFR sections, MTA guidelines) were
+  re-fetched and re-read directly. A future session with network should still run a bulk link checker.
+- Community-platform URLs can be flaky (community.hotspawn.com had an outage on the morning of
+  23 Sep 2026; The Gamers Lounge site did not respond at check). Both are corroborated by other sources
+  and flagged on-page.
+- "Sports Channel" on DAB+ 6C = talkSPORT rests on three independent directories/listening reports
+  (radioinmalta, RadioBlog.eu, Wikipedia); the multiplex operator's own catalogue does not list it.
+  Treat as probable until tuned in.
 - Rai Radio 1's per-match commentary assignments and talkSPORT's Malta feed for 17–19 Oct are not
   published in advance; the Serie A / EPL tables show official kick-offs, not verified radio line-ups.
+  Note also: only two of the three Saturday-15:00 EPL games receive UK radio commentary at all.
 - Restaurant ratings/review counts are point-in-time TripAdvisor data; social platforms were not
   directly queryable.
 - Cost bands are estimates, not quotes; a parallel independent estimate (MALTA dossier) is shown on the
@@ -78,6 +89,17 @@ deliberately omitted. If you contribute: never commit email text.
 - Pass 2/3: Radio Sportiva relabelled (private Mediahit station, not Rai); TWC group-stage advancement
   corrected to top-two-per-group; Prosciutteria area corrected to Gżira; full Serie A MD7 table added
   from the official Lega notice; talkSPORT/BBC slot mapping added from premierleague.com.
+- Second verification pass (23 Sep 2026, this session): re-verified every load-bearing claim against the
+  live primary sources; giveaway T&Cs re-read in full and confirmed verbatim (incl. the duplicated
+  section "4" and the orphaned heading); eco-tax band corrected ($26 high → $12 max, since 7 nights ×
+  €1.50 can't reach the €22.50 visit cap — subtotals/totals updated to $415–$867 / $835–$1,647);
+  passport claim corrected (the Borders Code sets no blank-page minimum — 3-month validity + issued
+  within 10 years are the actual Art. 6(1) conditions); EPL audio note refined (two of three Saturday
+  15:00 games get BBC audio, the third gets none); talkSPORT-on-6C identification upgraded to three
+  independent corroborations; Kalshi help-article link updated to the canonical URL; Malta NT fixture
+  dates (1 & 4 Oct, Ta' Qali) verified and cited; Sophie McCarthy citations switched from the 404'd
+  author page to live article bylines; TD5 route, Explore Flex Airport-Direct add-on (€6), and the Ryde
+  ride-hailing app added; Gamers Lounge reachability flagged with Facebook corroboration.
 
 ## Building
 

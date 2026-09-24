@@ -55,7 +55,7 @@
     var transfers = num(ids.transfers, 45);        // $ (matches input default)
     var activities = num(ids.activities, 80);      // $
     var sim = num(ids.sim, 15);                    // $
-    var ecoTax = num(ids.ecoTax, 11);              // $ (€1.50/night x1.145 x7)
+    var ecoTax = num(ids.ecoTax, 12);              // $ (€1.50/night x 7 nights x1.145 = ~$12; €22.50 visit cap unreachable in 7 nights)
     var buffer = num(ids.buffer, 150);             // $
 
     var total = airfare + hotel + food + transport + transfers + activities + sim + ecoTax + buffer;
