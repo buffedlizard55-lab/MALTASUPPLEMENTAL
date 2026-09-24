@@ -3,10 +3,16 @@
 Travel supplement for the **Thunderpick World Championship 2026** trip to Malta, **13–20 October 2026**
 (7 nights, 8 days), for a US (California) resident departing **SFO**.
 
-This site is a **supplement** to the main legal/risk dossier at
-[buffedlizard55-lab.github.io/MALTA](https://buffedlizard55-lab.github.io/MALTA/) — it covers what that
-dossier deliberately does not: food, landmarks, activities, getting around, radio & sports broadcasts,
+This site was built as a **supplement** to the main legal/risk dossier at
+`buffedlizard55-lab.github.io/MALTA` — it covers what that
+dossier deliberately did not: food, landmarks, activities, getting around, radio & sports broadcasts,
 prize-specific costs, entry/address answers, and a full audit of the Hotspawn prize.
+
+> **24 Sep 2026:** the MALTA dossier **no longer resolves** — the GitHub repo is not found via the API and the
+> Pages site 404s (as does the URL that was supplied as this project's starting point). All cross-links to it have
+> been removed; its key conclusions (cost cross-check, due-diligence verdict) are preserved on this site, which is
+> now the surviving public record. The privacy exposure that dossier carried (see below) is closed unless the repo
+> reappears.
 
 ## Pages
 
@@ -34,17 +40,20 @@ the site was scrubbed further: the owner's handle, leaderboard position and firs
 reply was replaced by a neutral confirmations checklist, and no winner handles (own or third-party) appear
 anywhere. If you contribute: never commit email text, names, handles or addresses.
 
-**Open exposure outside this repo:** the main [MALTA dossier](https://buffedlizard55-lab.github.io/MALTA/)
-still uses the winner's first name and quotes a short phrase from the correspondence on its public pages.
-That repository is not part of this site; its owner should scrub it.
+**Open exposure outside this repo — closed 24 Sep 2026:** the main MALTA dossier previously used the winner's
+first name and quoted a short phrase from the correspondence on its public pages. On 24 Sep 2026 that
+repository stopped resolving (not found via the GitHub API; Pages 404) — whether it was deleted, renamed or
+made private is unknown from here, but the exposure is closed while it stays down. If it ever comes back,
+scrub it first.
 
 ## Known open items (all flagged on-page)
 
 - **Do not book anything** until the prize's cash-alternative / written coverage is confirmed (see
   [Costs](costs.html) and the confirmations checklist in [Hotspawn](hotspawn.html)).
 - The T&C residency clause conflicts with the winner's US residence — resolve before ID submission.
-  (The full T&Cs were read live on 23 Sep 2026; on 24 Sep the giveaway and terms sub-pages were offline
-  again — "no available server" — with no Wayback capture. Request a PDF.)
+  (The full T&Cs were read live on 23 Sep 2026, went down on the morning of 24 Sep, and were **back up later
+  on 24 Sep when they were re-read verbatim a second time — identical**. Availability is intermittent and there is
+  no Wayback capture: **screenshot both sub-pages now** and still request a PDF.)
 - BirguFest 2026 dates are unresolved across four sources; 2026/27 winter bus-fare switchover is assumed
   but unconfirmed; the 7-day card's Airport Direct coverage is self-contradictory across three statements
   on the operator's own pages (two say included, one says excluded — flagged 2-vs-1).
@@ -72,7 +81,8 @@ That repository is not part of this site; its owner should scrub it.
    trading during such layovers; Germany/Netherlands/Denmark/Austria are not listed). Screenshot both
    before flying — Kalshi may amend the list unilaterally.
 5. BirguFest dates: ask the Birgu Local Council directly once published (birgu-fest.com did not help).
-6. Request a PDF of the giveaway T&Cs — the sub-pages were offline on 24 Sep 2026 with no archive copy.
+6. Screenshot/save the giveaway page and Terms now (back online since later on 24 Sep, but intermittent), and
+   request a PDF of the giveaway T&Cs — no archive copy exists if they vanish again.
 7. Book the Hypogeum (€35, 10 per tour) now if wanted — the only sight with a hard booking constraint.
 8. Next research session: price the unpriced items above from operators; confirm the Village Fork,
    Caviar & Bull, Country Terrace and Ta' Tona localities from their own sites; find the Ta' Qali bus
@@ -87,8 +97,9 @@ That repository is not part of this site; its owner should scrub it.
   every URL was opened via the research fetch tool instead — and in the second verification pass the
   load-bearing sources (giveaway Terms, league fixtures, fares pages, CFR sections, MTA guidelines) were
   re-fetched and re-read directly. A future session with network should still run a bulk link checker.
-- Community-platform URLs can be flaky (community.hotspawn.com: outage morning of 23 Sep, up later
-  that day, sub-pages down again all of 24 Sep 2026). Corroborated by other sources and flagged on-page.
+- Community-platform URLs are flaky (community.hotspawn.com: outage morning of 23 Sep, up later that day,
+  sub-pages down on the morning of 24 Sep, **back up later on 24 Sep** — intermittent). Corroborated by other
+  sources, flagged on-page, and now covered by a "screenshot both pages" instruction.
 - The 23 Sep build contained eleven factual errors that the 24 Sep pass withdrew (see the corrections
   log). All were unsourced or single-source guidebook lines. Claims still badged only "Verified
   23 Sep 2026" have been read once, not twice.
@@ -107,7 +118,25 @@ That repository is not part of this site; its owner should scrub it.
 
 ## Corrections log
 
-- **24 Sep 2026 re-verification (this session, PR #5):**
+- **24 Sep 2026 third pass (evening session, PR #6):** full site re-opened end-to-end; load-bearing sources
+  re-fetched and re-read (Terms verbatim 2nd read; giveaway page; TWC format page; 16 Sep PR; BLAST fan guide;
+  premierleague.com October/November amendments — every MW7 fixture confirmed; Malta FA ticketing — Gżira Utd v
+  Mosta 14 Oct 19:00 confirmed; BBC Sportsworld schedule; Radio In Malta directory — ONE Radio 92.7 confirmed;
+  publictransport.com.mt fares; Valletta Ferry — incl. live "Sliema service suspended for swell" banner; MTA
+  eco-contribution; St John's; Hypogeum €35/€50 mechanics; State Dept Malta advisory in full — emergency numbers
+  verbatim; ETIAS "not in operation"; Kalshi help article; MCA consumer tools).
+  - *Dead links:* the MALTA main dossier repo/site no longer resolves (API + Pages both 404) — all cross-links
+    removed site-wide; its archived figures kept as labelled references.
+  - *Correction:* Entry page EES note "your first entry is Malta" fixed — with no nonstop SFO→MLA, EES
+    registration happens at the first Schengen-entry airport (the connecting hub; Malta only via a non-Schengen
+    connection such as Dublin).
+  - *Downgrades/notes:* Falcons "Cologne Major winners" note downgraded to secondary-sourced; BBC Sportsworld
+    times annotated (page renders viewer-local; both renderings resolve to 13:06/14:06 GMT = 15:06/16:06 CEST);
+    Everyday page gained the State Department's 1777 gambling-support and 1772 loneliness numbers.
+  - *Intermittencia watchlist:* community.hotspawn.com sub-pages (up/down same day); gozohighspeed.com fares
+    sub-page (HTTP 502 in this pass; fares carried from the earlier same-day verification).
+
+- **24 Sep 2026 re-verification (morning session, PR #5):**
   - *Privacy:* handle/leaderboard position/first name removed from index, hotspawn, sources and README;
     draft email replaced by a generic confirmations checklist; "Sophie" → "Hotspawn" in on-page wording.
   - *Landmarks (page rewritten):* "Skara Baħri" temple (does not exist) → Skorba; a Caravaggio "in
