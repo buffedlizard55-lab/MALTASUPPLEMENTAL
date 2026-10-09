@@ -1,0 +1,58 @@
+[
+  {
+    "id": "exp-flight",
+    "name": "Round Trip Flights (US to Malta)",
+    "category": "Travel",
+    "estimated_cost": "$1000 - $1500",
+    "actual_cost": 0,
+    "notes": "Cost depends on departure city. (Prize may cover this)"
+  },
+  {
+    "id": "exp-hotel",
+    "name": "AX ODYCY Hotel (6 nights)",
+    "category": "Accommodation",
+    "estimated_cost": "Covered by Prize",
+    "actual_cost": 0,
+    "notes": "Deluxe Sea View room."
+  },
+  {
+    "id": "exp-transport-airport",
+    "name": "Airport Transfers",
+    "category": "Transport",
+    "estimated_cost": "€40 - €50",
+    "actual_cost": 0,
+    "notes": "Round trip via eCabs or Bolt."
+  },
+  {
+    "id": "exp-transport-daily",
+    "name": "Daily Transport (Hotel to Arena)",
+    "category": "Transport",
+    "estimated_cost": "€100 - €120",
+    "actual_cost": 0,
+    "notes": "Round trip ride share for event days."
+  },
+  {
+    "id": "exp-food-daily",
+    "name": "Food & Dining",
+    "category": "Meals",
+    "estimated_cost": "€300 - €450",
+    "actual_cost": 0,
+    "notes": "Approx €50-€75 per day."
+  },
+  {
+    "id": "exp-activities",
+    "name": "Activities & Landmarks",
+    "category": "Entertainment",
+    "estimated_cost": "€50 - €100",
+    "actual_cost": 0,
+    "notes": "Museums, gaming center hours, sightseeing."
+  },
+  {
+    "id": "exp-misc",
+    "name": "Miscellaneous (eSIM, Tips)",
+    "category": "Misc",
+    "estimated_cost": "€30 - €50",
+    "actual_cost": 0,
+    "notes": "Data plans, incidentals."
+  }
+]
