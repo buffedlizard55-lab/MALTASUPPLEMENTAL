@@ -1,5 +1,28 @@
 # Final Report
 
+> ## ⚠ Correction, 9 Oct 2026 — the transport line below is wrong
+> This report was written by an earlier workstream and merged to `main` in PR #8.
+> Its transport recommendation does not survive checking:
+>
+> 1. **Route X3 no longer exists.** It was withdrawn on **20 April 2025** and replaced by
+>    route **214**. The entry in `data/transport.json` carried `confidence: verified` and
+>    `source_type: official` for a route that has not run for eighteen months.
+> 2. **Even when it ran, X3 did not serve the venue.** Its routing was Buġibba → Qawra →
+>    Rabat → *Qali 2 on the main road* → Balzan → Birkirkara → Paola → Airport. The MFCC is
+>    reached from the **Ta' Qali Stadium / Ta' Qali Villagg** stops.
+> 3. **It missed the actual answer.** **Route 186** runs Buġibba Bay 6 → Qawra seafront →
+>    Mosta → Ta' Qali Stadium → Ta' Qali Villagg → Rabat, every 30 minutes, with no change of
+>    bus, free on the €25 weekly card. Board at Arznell (950) or Qawra (952); about 24–30 min.
+> 4. **The €12–25 rideshare figures are estimates, not verified.** No operator publishes a
+>    Qawra↔Ta' Qali fare; prices only appear in-app from a live GPS position. They are logged
+>    as **OQ-04** and are not stated as fact on the canonical pages.
+>
+> The corrected answer is on [getting-around.html](../getting-around.html#eventdays) and
+> [hotel.html](../hotel.html), sourced to the operator's own route page. Two further
+> confidence downgrades made in the same pass are noted in `docs/SOURCES.md`:
+> **"TalkSport (DAB+ Malta)"** and **"Michele's Cafe"** were both marked `verified` on sources
+> that do not support that level of confidence, and are now `partially verified`.
+
 ## Verified Deliverables
 - **Transport:** Identified the X3 bus route as the cheapest (€2.50) but slowest option from AX ODYCY to BLAST Arena (Attard). Recommended ride-hailing (eCabs, Bolt) as the most efficient (€12-25, 20-25 mins).
 - **Food & Cafes:** Verified 4 highly rated options, including 3 within the AX ODYCY hotel itself (Trattoria Riccardo, Cheeky Monkey, Minoa) and a local favorite (Michele's Cafe).

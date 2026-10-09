@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "purpose": "Single source of truth for the trip parameters every page reads from. Pages must not hand-write facts that contradict this file.",
+    "schema": "Each item carries: id, name, category, area, address, hours, price_range, description, source_url, source_type, date_checked, confidence, notes.",
+    "source_type_values": ["official", "map", "review", "social"],
+    "confidence_values": ["verified", "partially verified", "unverified"],
+    "last_updated": "2026-10-09",
+    "updated_by": "workstream G (site shell / shared facts)"
+  },
+  "trip": {
+    "id": "trip-core",
+    "name": "Malta trip — Thunderpick World Championship 2026 Finals",
+    "category": "trip",
+    "area": "Malta",
+    "address": "AX Odycy, Qawra Coast Road, Qawra SPB 1902, Malta",
+    "hours": "Check-in 13 Oct 2026 / check-out 19 Oct 2026",
+    "price_range": "n/a",
+    "description": "Six nights (13-19 October 2026) at AX Odycy in Qawra, St Paul's Bay, attending the Counter-Strike 2 Thunderpick World Championship 2026 Finals at BLAST Arena Studios (Malta Fairs & Conventions Centre), Ta' Qali, Attard, 14-18 October 2026.",
+    "source_url": "https://axhotelsmalta.com/odycy/contact/",
+    "source_type": "official",
+    "date_checked": "2026-10-09",
+    "confidence": "verified",
+    "notes": "Dates supplied by the traveller. 13->19 Oct 2026 is 6 nights / 7 days. This SUPERSEDES the earlier '13-20 Oct, 7 nights / 8 days' figure that some pages on this site still carried from a previous session - see docs/OPEN_QUESTIONS.md OQ-01."
+  },
+  "hotel": {
+    "id": "hotel-ax-odycy",
+    "name": "AX Odycy",
+    "category": "hotel",
+    "area": "Qawra, St Paul's Bay",
+    "address": "Qawra Coast Road, Qawra SPB 1902, Malta (also published as 186 Dawret il-Qawra)",
+    "hours": "24-hour reception",
+    "price_range": "Booked; Deluxe sea view room",
+    "description": "Seafront 4-star hotel on the Qawra promenade overlooking Salina Bay. Roughly 600 rooms. Eleven on-site food and drink outlets. A bus stop is on the hotel frontage.",
+    "source_url": "https://axhotelsmalta.com/odycy/",
+    "source_type": "official",
+    "date_checked": "2026-10-09",
+    "confidence": "verified",
+    "notes": "Telephone +356 2354 3000. Structured data on the official page lists the on-site outlets: Minoa, Minoa Deck, Deck & Keel, Trattoria Riccardo, Cheeky Monkey Gastropub, Cheeky Monkey Waters, Cheeky Monkey Creperie, Medusa, Mamacita, Espresso, Sidestreet Lounge Bar. The 'bus stop on the doorstep' claim is from a third-party hotel listing (destinia.com), NOT from the operator - treated as partially verified; the official tallinja stop list puts stops Arznell (950), Luzzu (951), Qawra (952) and Boxxla (953) on the Qawra seafront served by routes 186, 45, 212, 214, 221, 223, 280, TD1, TD5 and night routes N11/N212."
+  },
+  "event": {
+    "id": "event-twc-2026",
+    "name": "Thunderpick World Championship 2026 Finals (Counter-Strike 2)",
+    "category": "esports-event",
+    "area": "Ta' Qali, Attard",
+    "address": "Malta Fairs & Conventions Centre, Ta' Qali, ATD 4000, Attard (BLAST Arena Studios; also listed as MFCC South Gate National Stadium, Millennium Stand)",
+    "hours": "14-18 October 2026. Per-day door times not published at check time.",
+    "price_range": "$1,000,000 USD prize pool; 8 teams",
+    "description": "Independent CS2 LAN finals, fourth edition. Eight teams: FURIA, Falcons, Aurora, PARIVISION, BETBOOM, 9z, Legacy and Virtus.pro. Broadcast live on Thunderpick's Twitch, Kick and YouTube.",
+    "source_url": "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html",
+    "source_type": "official",
+    "date_checked": "2026-10-09",
+    "confidence": "verified",
+    "notes": "Dates 14-18 Oct 2026 confirmed by Thunderpick's own PRNewswire releases of 13 Aug 2026 and 16 Sep 2026, and independently by HLTV's calendar. The 16 Sep release is datelined 'TA' QALI, Malta'. Team field and roster of casters/hosts from the 16 Sep release; cross-checked against timesaver.gg. NOTE: some esports aggregators (dmarket.com, esports.gg) list the prize pool as $500,000 - the organiser's own release says $1,000,000 and is used here."
+  }
+}

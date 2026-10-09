@@ -56,7 +56,7 @@
     "source_url": "https://www.tripadvisor.com/",
     "source_type": "review",
     "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "Located just a short walk (0.2 mi) from AX ODYCY."
+    "confidence": "unverified",
+    "notes": "Located just a short walk (0.2 mi) from AX ODYCY. || DOWNGRADED to \"unverified\" 9 Oct 2026: the cited source_url is the TripAdvisor homepage, not a listing for this venue, so it does not support the claim. Locality, address and hours are all unresolved. Do not present as a recommendation until a listing is found."
   }
 ]
