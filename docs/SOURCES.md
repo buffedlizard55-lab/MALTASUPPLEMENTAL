@@ -48,8 +48,8 @@ never presented as fact).
 | Oct 2026 events calendar: Notte Bianca 3 Oct; BirguFest 9–10; Middle Sea Race 17; In Guardia Sundays (18 & 25); Mediterranea from 15; Traviata 17; JESC 24 Oct (MFCC) | https://manicmalta.com/malta-in-october/ | 2026-10-09 | C | partially verified (community calendar) |
 | BirguFest 2026 conflict: 9–10 Oct (hubpymalta, ManicMalta) vs "preliminary 16–17 Oct" (beautifulmalta) | https://hubpymalta.com/what-to-do/notte-bianca-valletta-2026.html ; https://www.beautifulmalta.com/event/birgu-by-candlelight-malta-birgufest/ | 2026-10-09 | C | unverified (conflict logged) |
 | Notte Bianca 2026: Sat 3 Oct, Valletta, free | https://www.maltainfoguide.com/notte-bianca-malta.html ; https://artsmalta.org/event/notte-bianca-2026/ | 2026-10-09 | C | partially verified (before window) |
-| EPL MW8 fixtures/times (official amendments incl. TNT/Sky picks) | https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november | 2026-10-09 | E | verified (official) |
-| MW8 cross-check (Guardian fixture list) | https://www.theguardian.com/football/premierleague/fixtures | 2026-10-09 | E | verified (cross-check) |
+| EPL MW7 fixtures/times (official amendments incl. TNT/Sky picks) | https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november | 2026-10-09 | E | verified (official) |
+| MW7 cross-check (Guardian fixture list) | https://www.theguardian.com/football/premierleague/fixtures | 2026-10-09 | E | verified (cross-check) |
 | BBC 5 Live: 209 live PL commentaries/season; "UK only" flags on programme pages | https://www.bbc.com/sport/football/articles/cp30ggvqj0do | 2026-10-09 | E | verified (official) |
 | BBC World Service DAB+ in Malta (block 6A, 181.936 MHz, Ġargħur+Żebbuġ; station C001) | https://radioinmalta.com/en/dab/6a.php | 2026-10-09 | E | partially verified (community directory) |
 | talkSPORT on Malta DAB+ ("Sports Channel"); Radio Sportiva & Rai Radio 1 on DAB+; Campus FM sim. BBC WS at times | https://radioinmalta.com/en/stations/ | 2026-10-09 | E | partially verified |
@@ -63,3 +63,6 @@ never presented as fact).
 | October weather: highs ~25 °C, lows ~21 °C, sea 22–24 °C, ~7h sun | https://www.holiday-weather.com/malta/averages/october/ | 2026-10-09 | D | partially verified (cross-checked vs maltauncovered + ManicMalta) |
 | US Embassy Malta: Ta'Qali National Park Street, Attard ATD 4000; +356 2561 4000 | https://mt.usembassy.gov/ | 2026-10-09 | D | verified (official) |
 | Heritage Malta site prices (St John's €15, Hypogeum €35, Ħaġar Qim €10, Fort St Elmo €10, G'Master's Palace €12) | https://heritagemalta.mt/ | 2026-10-09 | C | verified (official, prior session 24 Sep 2026) |
+| MW numbering correction (Pass 2): 17–19 Oct 2026 is Matchweek **7** (not 8) | https://www.nbcsports.com/soccer/news/premier-league-schedule-for-2026-27-season-released ; https://fbref.com/en/matches/2026-10-17 ; https://www.premierleagueschedule.org/ | 2026-10-09 | E | verified (cross-check ×3) |
+| Hotel café (Espresso) + Cheeky Monkey Creperie/Sidestreet as café outlets | https://axhotelsmalta.com/malta-restaurants/qawra-st-pauls-bay/ | 2026-10-09 | B | verified (official) |
+| Tony's Ice-Cream, Dawret il-Gzejjer, Buġibba (promenade gelateria) | https://www.tripadvisor.com/Restaurants-g608946-zfp43-St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B | partially verified (listing schema) |

@@ -79,14 +79,14 @@
       "notes": "Current-week pattern verified (Arsenal v Leeds GameDay Exclusive 10 Oct; Coventry v Newcastle Kick Off 12 Oct). Which match gets GameDay on 17 Oct is published midweek — check talksport.com T-3."
     },
     {
-      "id": "epl-mw8",
-      "name": "Premier League MW8 — the trip-weekend slate (Malta times)",
+      "id": "epl-mw7",
+      "name": "Premier League MW7 — the trip-weekend slate (Malta times)",
       "category": "fixture",
       "area": "England (broadcast into Malta)",
       "address": "",
       "hours": "Sat 17 Oct: 13:30 Everton–Chelsea; 16:00 Brentford–Liverpool / Fulham–Hull / Man City–Ipswich; 18:30 Newcastle–Aston Villa. Sun 18 Oct: 15:00 Bournemouth–Sunderland / Brighton–Palace / Leeds–Man Utd; 17:30 Nott'm Forest–Arsenal. Mon 19 Oct: 21:00 Spurs–Coventry (air time may slip past checkout)",
       "price_range": "Free on DAB+ radio (selected matches)",
-      "description": "Full MW8 fixture list from the Premier League's official amendments (17 Aug 2026). Times converted to Malta (CEST = UK+1). At least one Saturday and one Sunday match will be on BBC WS Sportsworld; talkSPORT has exclusive radio on more; the rest run as goal services.",
+      "description": "Full MW7 fixture list from the Premier League's official amendments (17 Aug 2026). Times converted to Malta (CEST = UK+1). At least one Saturday and one Sunday match will be on BBC WS Sportsworld; talkSPORT has exclusive radio on more; the rest run as goal services.",
       "source_url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
       "source_type": "official",
       "date_checked": "2026-10-09",

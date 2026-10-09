@@ -10,8 +10,8 @@
 | E Radio sports broadcasts | **done** — `data/radio.json` + radio.html (trip-weekend playbook added) | 17–18 Oct Sportsworld commentary pick publishes T-7; talkSPORT 2 DAB+ carriage in Malta unverified | 2026-10-09 |
 | F Expense planner | **done** — `data/expenses.json` + costs.html (template table + 6-night calculator) | Final itinerary numbers pending | 2026-10-09 |
 | G Integration & site shell | **done** — index/exec summary, nav (Qawra Base added), badges, validation script, docs | — | 2026-10-09 |
-| Integration check (`scripts/check-data.py`) | **run** — see PR notes | — | 2026-10-09 |
-| Passes 1–3 | **pass 1 done**; pass 2–3 in progress at session end | — | 2026-10-09 |
+| Integration check (`scripts/check-data.py`) | **PASSED** — 97→99 records, schema + coverage + links + nav | — | 2026-10-09 |
+| Passes 1–3 | **all three passes done** (P1 implement+verify · P2 bug/gap sweep: MW8→MW7 correction, stale 13–20/7-night refs, callout-ok CSS, README rebuild · P3 vs prompt: itinerary skeleton, Qawra cafés, bus-56 fix) | — | 2026-10-09 |
 
 ## Session summary (9 Oct 2026)
 

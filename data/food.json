@@ -317,6 +317,36 @@
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
       "notes": "Price bands from TripAdvisor $$-classifications and community threads; not a quote. Feeds the expense planner (data/expenses.json)."
+    },
+    {
+      "id": "espresso-hotel-cafe",
+      "name": "Espresso café (AX ODYCY)",
+      "category": "cafe",
+      "area": "Qawra",
+      "address": "AX ODYCY, Qawra Coast Road",
+      "hours": "Daytime (hotel schedule)",
+      "price_range": "€ (coffee/pastry)",
+      "description": "The hotel's own café outlet — coffee, pastries and light bites between the lobby and the pool; the zero-walk morning option listed among AX ODYCY's Qawra outlets.",
+      "source_url": "https://axhotelsmalta.com/malta-restaurants/qawra-st-pauls-bay/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Cheeky Monkey Creperie (same complex) covers sweet crepes; Sidestreet Lounge does coffee/cocktails."
+    },
+    {
+      "id": "tonys-ice-cream",
+      "name": "Tony's Ice-Cream (Buġibba promenade)",
+      "category": "cafe",
+      "area": "Buġibba",
+      "address": "Dawret il-Gzejjer, Buġibba",
+      "hours": "Daytime–evening (seasonal)",
+      "price_range": "€",
+      "description": "Promenade gelateria on the Buġibba seafront strip — the walk-destination treat between the hotel and Buġibba square, listed on TripAdvisor's St Paul's Bay schema data.",
+      "source_url": "https://www.tripadvisor.com/Restaurants-g608946-zfp43-St_Paul_s_Bay_Island_of_Malta.html",
+      "source_type": "review",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Listing data via TripAdvisor schema snapshot 9 Oct 2026."
     }
   ]
 }
