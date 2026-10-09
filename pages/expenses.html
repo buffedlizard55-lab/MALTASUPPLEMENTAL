@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A quick, editable EUR itinerary expense planner for a Malta stay from 13 to 19 October 2026, with optional source-checked transport and ticket price references.">
+  <title>Expense Planner · Malta Trip Companion</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .budget-summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 205px), 1fr)); gap: 12px; margin-block: 18px; }
+    .budget-summary-grid .budget-total { margin: 0; min-width: 0; }
+    .budget-summary-grid .budget-total span { display: block; color: var(--muted); font-size: .84rem; }
+    .budget-summary-grid .budget-total strong { font-size: clamp(1.4rem, 3vw, 2rem); overflow-wrap: anywhere; }
+    .planner-controls { margin-block: 16px; }
+    .planner-controls .form-field input { max-width: 100%; }
+    .planner-groups { display: grid; gap: 18px; }
+    .expense-section { margin-block: 20px; }
+    .expense-section > h2 { margin-block-start: 30px; }
+    .expense-row { min-width: 0; margin: 12px 0; padding: 15px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface); box-shadow: var(--shadow); }
+    .expense-row-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-block-end: 10px; }
+    .expense-row-head strong { color: var(--navy); }
+    .expense-row-head .badge { white-space: normal; }
+    .expense-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 175px), 1fr)); gap: 10px 12px; }
+    .expense-fields label { display: grid; align-content: start; gap: 4px; color: var(--ink); font-size: .86rem; font-weight: 700; }
+    .expense-fields input, .expense-fields select, .expense-fields textarea,
+    .planner-controls input {
+      width: 100%; min-height: 44px; border: 1px solid #aebdc9; border-radius: 9px;
+      padding: 8px 10px; color: var(--ink); background: #fff; font: inherit; font-weight: 400;
+    }
+    .expense-fields textarea { min-height: 68px; resize: vertical; }
+    .expense-row-summary { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; margin-block-start: 11px; padding-block-start: 10px; border-block-start: 1px solid var(--line); font-size: .9rem; }
+    .expense-row-summary strong { color: var(--navy); }
+    .daily-plan { margin-block: 10px; border: 1px solid var(--line); border-radius: 12px; background: #fff; }
+    .daily-plan > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 52px; padding: 12px 15px; color: var(--navy); font-weight: 750; cursor: pointer; }
+    .daily-plan[open] > summary { border-block-end: 1px solid var(--line); }
+    .daily-plan-body { padding: 2px 14px 10px; }
+    .daily-subtotal { color: var(--teal-dark); font-size: .9rem; white-space: nowrap; }
+    .remove-expense { min-height: 40px; padding: 6px 10px; border: 1px solid #d7aab0; border-radius: 8px; color: #76212c; background: #fff7f8; cursor: pointer; }
+    .remove-expense:hover { background: #fbe9ec; }
+    .price-reference-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 13px; margin-block-start: 14px; }
+    .price-reference { min-width: 0; }
+    .price-reference h3 { margin-block: 0 7px; }
+    .price-reference .reference-price { margin: 9px 0; padding: 10px 12px; border-radius: 9px; background: #f3f6f8; }
+    .price-option { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 7px 12px; padding-block: 9px; border-block-start: 1px solid var(--line); }
+    .price-option:first-child { border-block-start: 0; }
+    .price-option small { display: block; color: var(--muted); }
+    .price-option button { flex: 0 0 auto; }
+    .source-link-row { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-block-start: 11px; font-size: .84rem; }
+    .storage-status { min-height: 1.5em; }
+    .category-breakdown { margin-block: 12px; padding-inline-start: 21px; }
+    .category-breakdown li { margin-block: 4px; }
+    .tool-button { min-height: 44px; border: 1px solid #668096; border-radius: 10px; padding: 9px 13px; color: var(--navy); background: #fff; font-weight: 700; cursor: pointer; }
+    .tool-button:hover { background: #edf3f6; }
+    .planner-actions { display: flex; flex-wrap: wrap; gap: 9px; margin-block: 12px; }
+    .empty-hint { color: var(--muted); font-style: italic; }
+    .screen-only { display: block; }
+    @media (max-width: 620px) {
+      .expense-row { padding: 12px; }
+      .expense-row-head { align-items: flex-start; }
+      .expense-row-head .badge { font-size: .68rem; }
+      .daily-plan > summary { align-items: flex-start; flex-direction: column; gap: 3px; }
+      .price-reference-grid { grid-template-columns: 1fr; }
+    }
+    @media print {
+      .site-header, .site-footer, .skip-link, .planner-actions, .planner-controls, #published-prices,
+      .remove-expense, .price-reference-grid, .page > .callout, .screen-only { display: none !important; }
+      body { background: #fff; font-size: 11pt; }
+      .page { width: 100%; max-width: none; padding: 0; }
+      .expense-row, .budget-total, .daily-plan { break-inside: avoid; box-shadow: none; }
+      .daily-plan:not([open]) > .daily-plan-body { display: block !important; }
+      .daily-plan > summary { list-style: none; }
+    }
+  </style>
+</head>
+<body data-root="..">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main-content" class="page">
+    <p class="eyebrow">Quick-fill · editable · EUR-first</p>
+    <h1 class="page-title">Trip expense planner</h1>
+    <p class="page-intro">Build a working itinerary budget for 13–19 October 2026. Amounts are blank until you enter them; source-published ticket and fare amounts below are references, not automatic trip costs.</p>
+
+    <div class="callout warning">
+      <p><strong>Trip dates and unknowns:</strong> the supplied window includes seven calendar dates. Six hotel nights applies only if the booking is check-in 13 October and check-out 19 October; the exact reservation, room total, flights, arrival/departure times, traveler count and tournament attendance are not supplied. Tournament spectator access and ticket price are unconfirmed.</p>
+      <p><strong>Blank is not free.</strong> No meal allowance, taxi quote, currency conversion, tipping percentage, tax, insurance reimbursement or sponsor/third-party coverage is assumed. Enter only amounts you have verified or want to estimate.</p>
+    </div>
+
+    <div id="planner-load" class="load-error" role="status">Loading the editable planner…</div>
+    <div id="planner-app" hidden>
+      <section aria-labelledby="budget-summary-title">
+        <h2 id="budget-summary-title">Budget snapshot</h2>
+        <div class="budget-summary-grid" id="budget-summary" aria-live="polite">
+          <article class="budget-total"><span>Entered planned costs</span><strong id="summary-planned">€0.00</strong><span id="summary-count">No amounts entered yet</span></article>
+          <article class="budget-total"><span>Paid / covered (you enter this)</span><strong id="summary-paid">€0.00</strong><span>No paid amount is assumed</span></article>
+          <article class="budget-total"><span>Remaining against planned costs</span><strong id="summary-remaining">€0.00</strong><span>Planned less the amount you mark paid/covered</span></article>
+          <article class="budget-total"><span>Unpriced lines</span><strong id="summary-unpriced">—</strong><span>Blank amount fields are excluded from totals</span></article>
+        </div>
+        <div class="form-grid planner-controls">
+          <div class="form-field">
+            <label for="budget-limit">Optional budget limit (EUR)</label>
+            <input id="budget-limit" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Leave blank if unset">
+            <small>Compares your entered planned amounts with a limit you choose.</small>
+          </div>
+          <div class="form-field">
+            <label for="eur-per-usd">Optional exchange rate: 1 USD = how many EUR?</label>
+            <input id="eur-per-usd" type="number" min="0.000001" step="0.000001" inputmode="decimal" placeholder="Enter your card or chosen rate">
+            <small>No live USD/EUR rate is loaded. The USD display is only an arithmetic conversion using your input.</small>
+          </div>
+        </div>
+        <p id="budget-limit-result" class="callout" aria-live="polite">Set an optional EUR budget limit above to see the difference.</p>
+        <p id="usd-result" class="small muted"></p>
+        <p id="save-status" class="small storage-status" role="status" aria-live="polite"></p>
+        <details class="small">
+          <summary>Cost breakdown by category</summary>
+          <ul id="category-breakdown" class="category-breakdown"></ul>
+        </details>
+      </section>
+
+      <section class="expense-section" aria-labelledby="expense-lines-title">
+        <h2 id="expense-lines-title">Plan the costs you actually expect</h2>
+        <p>Each line totals <strong>quantity × unit cost</strong>. Add a known, quoted or estimated cost; record any paid/covered amount separately. You can change the date, category and status at any time.</p>
+        <div class="planner-actions screen-only">
+          <button class="button" id="add-expense" type="button">Add a custom expense</button>
+          <button class="tool-button" id="export-csv" type="button">Download CSV</button>
+          <button class="tool-button" id="print-plan" type="button">Print / save as PDF</button>
+          <button class="tool-button" id="reset-plan" type="button">Reset this planner</button>
+        </div>
+        <p id="trip-total" class="small muted"></p>
+        <div id="trip-expenses" aria-label="Trip-level expense lines"></div>
+        <h3>Daily itinerary costs</h3>
+        <p class="small muted">Four blank starter lines are provided for each date. Leave an unused line blank, or add a separate line for a meal, ride, ticket or other item.</p>
+        <div id="daily-expenses"></div>
+        <p class="small">For bus prices, enter the number of rides in “Quantity” and choose a rate only after confirming the 2026/27 fare. For one-off bookings, use quantity 1 and enter the total booking amount or leave the row as a reminder.</p>
+      </section>
+
+      <section class="expense-section" id="published-prices" aria-labelledby="published-prices-title">
+        <h2 id="published-prices-title">Optional published price references</h2>
+        <p>These source-linked amounts were checked on 9 October 2026 and may change. They are <strong>not</strong> added to your budget unless you deliberately select “Add to plan.” Recheck current price, date, eligibility and booking terms before relying on one.</p>
+        <div id="price-reference-list" class="price-reference-grid"></div>
+        <div class="callout warning">
+          <p><strong>Items not priced or not confirmed:</strong> no representative meal cost or restaurant average was verified; MPT's October 2026/27 seasonal fare is unresolved; event-day TWC spectator access/ticket price is unconfirmed; public gaming-session prices at The Gamers Lounge are unconfirmed; and the listed Picnic in the 1800s price is withheld from the add-to-plan buttons because it conflicts with a current venue-closure notice.</p>
+        </div>
+      </section>
+
+      <p class="small">Your entries are saved in this browser on this device only; they are not uploaded or synced. Export a CSV if you need a backup. Do not put booking reference numbers or other sensitive details in the notes. Sources and open items: <a href="../sources.html#source-register">verification log</a> · <a href="../sources.html#open-questions">open questions</a> · <a href="../sources.html#handoff">workstream handoff</a>.</p>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <noscript><p class="callout warning">JavaScript is required to calculate and save the editable plan. Open this page through GitHub Pages or a local web server, not as a file:// URL.</p></noscript>
+  <script src="../js/site.js" defer></script>
+  <script>
+  (function () {
+    "use strict";
+    var storageKey = "malta-trip-expense-planner-2026-10";
+    var data;
+    var state;
+    var storageWorks = true;
+    var app = document.getElementById("planner-app");
+    var loadMessage = document.getElementById("planner-load");
+    var tripList = document.getElementById("trip-expenses");
+    var dailyList = document.getElementById("daily-expenses");
+    var referenceList = document.getElementById("price-reference-list");
+    var amountStatuses = [];
+
+    function node(tag, className, value) {
+      var el = document.createElement(tag);
+      if (className) el.className = className;
+      if (value !== undefined) el.textContent = value;
+      return el;
+    }
+
+    function money(value, currency) {
+      var amount = Number(value);
+      if (!Number.isFinite(amount)) amount = 0;
+      try {
+        return new Intl.NumberFormat(currency === "USD" ? "en-US" : "en-IE", {
+          style: "currency", currency: currency || "EUR", minimumFractionDigits: 2, maximumFractionDigits: 2
+        }).format(amount);
+      } catch (error) {
+        return (currency === "USD" ? "$" : "€") + amount.toFixed(2);
+      }
+    }
+
+    function numeric(value, fallback) {
+      if (value === null || value === undefined || String(value).trim() === "") return fallback;
+      var number = Number(value);
+      return Number.isFinite(number) && number >= 0 ? number : fallback;
+    }
+
+    function cleanString(value, fallback) {
+      return value === null || value === undefined ? (fallback || "") : String(value);
+    }
+
+    function makeId(prefix) {
+      return prefix + "-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+    }
+
+    function defaultItems() {
+      var items = (data.trip_items || []).map(function (item) {
+        return {
+          id: item.id, date: item.date || "trip", name: item.name || "Expense", category: item.category || data.categories[0],
+          quantity: item.quantity === undefined ? "1" : String(item.quantity),
+          unit_cost: item.unit_cost === null || item.unit_cost === undefined ? "" : String(item.unit_cost),
+          paid_amount: item.paid_amount === null || item.paid_amount === undefined ? "" : String(item.paid_amount),
+          status: item.status || "User estimate", notes: item.notes || "", reference_url: ""
+        };
+      });
+      (data.trip_dates || []).forEach(function (day) {
+        (data.daily_templates || []).forEach(function (template) {
+          items.push({
+            id: "daily-" + day.date + "-" + template.id, date: day.date, name: template.name,
+            category: template.category, quantity: "1", unit_cost: "", paid_amount: "",
+            status: "User estimate", notes: "", reference_url: ""
+          });
+        });
+      });
+      return items;
+    }
+
+    function normaliseItem(item) {
+      var category = data.categories.indexOf(item.category) >= 0 ? item.category : (data.categories[0] || "Other");
+      var validDates = ["trip"].concat((data.trip_dates || []).map(function (day) { return day.date; }));
+      return {
+        id: cleanString(item.id, makeId("expense")),
+        date: validDates.indexOf(item.date) >= 0 ? item.date : "trip",
+        name: cleanString(item.name, "Expense"),
+        category: category,
+        quantity: cleanString(item.quantity, "1"),
+        unit_cost: cleanString(item.unit_cost, ""),
+        paid_amount: cleanString(item.paid_amount, ""),
+        status: amountStatuses.indexOf(item.status) >= 0 ? item.status : "User estimate",
+        notes: cleanString(item.notes, ""),
+        reference_url: cleanString(item.reference_url, "")
+      };
+    }
+
+    function loadState() {
+      var fresh = defaultItems();
+      try {
+        var raw = window.localStorage.getItem(storageKey);
+        if (!raw) return { items: fresh, budget_limit: "", eur_per_usd: "" };
+        var saved = JSON.parse(raw);
+        if (!saved || !Array.isArray(saved.items)) throw new Error("Saved plan had an unexpected shape.");
+        var savedById = new Map(saved.items.map(function (item) { return [item.id, normaliseItem(item)]; }));
+        var merged = fresh.map(function (item) { return savedById.get(item.id) || item; });
+        var defaults = new Set(fresh.map(function (item) { return item.id; }));
+        saved.items.forEach(function (item) { if (!defaults.has(item.id)) merged.push(normaliseItem(item)); });
+        return {
+          items: merged,
+          budget_limit: cleanString(saved.budget_limit, ""),
+          eur_per_usd: cleanString(saved.eur_per_usd, "")
+        };
+      } catch (error) {
+        storageWorks = false;
+        return { items: fresh, budget_limit: "", eur_per_usd: "" };
+      }
+    }
+
+    function saveState() {
+      try {
+        window.localStorage.setItem(storageKey, JSON.stringify(state));
+        storageWorks = true;
+        document.getElementById("save-status").textContent = "Saved in this browser on this device. No data is uploaded.";
+      } catch (error) {
+        storageWorks = false;
+        document.getElementById("save-status").textContent = "Browser storage is unavailable. Your entries remain in this page until it closes; download a CSV backup.";
+      }
+    }
+
+    function dateLabel(date) {
+      if (date === "trip") return "Trip total / date not fixed";
+      var day = (data.trip_dates || []).find(function (item) { return item.date === date; });
+      return day ? day.label : "Unscheduled";
+    }
+
+    function makeLabel(labelText, input, hint) {
+      var wrapper = node("label", "");
+      wrapper.appendChild(document.createTextNode(labelText));
+      wrapper.appendChild(input);
+      if (hint) wrapper.appendChild(node("small", "", hint));
+      return wrapper;
+    }
+
+    function makeSelect(field, value, options) {
+      var select = document.createElement("select");
+      select.dataset.field = field;
+      options.forEach(function (option) {
+        var entry = document.createElement("option");
+        entry.value = option.value;
+        entry.textContent = option.label;
+        if (option.value === value) entry.selected = true;
+        select.appendChild(entry);
+      });
+      return select;
+    }
+
+    function makeNumberInput(field, value, label, step) {
+      var input = document.createElement("input");
+      input.type = "number";
+      input.min = "0";
+      input.step = step || "0.01";
+      input.inputMode = "decimal";
+      input.dataset.field = field;
+      input.setAttribute("aria-label", label);
+      input.value = value === null || value === undefined ? "" : String(value);
+      return input;
+    }
+
+    function lineTotal(item) {
+      var qty = numeric(item.quantity, 0);
+      var unit = numeric(item.unit_cost, 0);
+      return Math.round(qty * unit * 100) / 100;
+    }
+
+    function makeExpenseRow(item, index, groupDate) {
+      var fieldset = node("fieldset", "expense-row");
+      fieldset.dataset.id = item.id;
+      fieldset.dataset.groupDate = groupDate || "trip";
+      var legend = node("legend", "visually-hidden", "Expense details");
+      fieldset.appendChild(legend);
+
+      var head = node("div", "expense-row-head");
+      var identity = node("div", "");
+      identity.appendChild(node("span", "card-kicker", dateLabel(item.date)));
+      identity.appendChild(node("strong", "", item.name || "Expense line"));
+      head.appendChild(identity);
+      var remove = node("button", "remove-expense screen-only", "Remove");
+      remove.type = "button";
+      remove.dataset.action = "remove";
+      remove.setAttribute("aria-label", "Remove " + (item.name || "expense line"));
+      head.appendChild(remove);
+      fieldset.appendChild(head);
+
+      var fields = node("div", "expense-fields");
+      var nameInput = document.createElement("input");
+      nameInput.type = "text";
+      nameInput.maxLength = 100;
+      nameInput.dataset.field = "name";
+      nameInput.setAttribute("aria-label", "Expense item name");
+      nameInput.value = item.name || "";
+      fields.appendChild(makeLabel("Expense item", nameInput));
+
+      var dateOptions = [{ value: "trip", label: "Trip total / not date-specific" }].concat((data.trip_dates || []).map(function (day) { return { value: day.date, label: day.label }; }));
+      fields.appendChild(makeLabel("Date", makeSelect("date", item.date, dateOptions)));
+      var categoryOptions = data.categories.map(function (category) { return { value: category, label: category }; });
+      fields.appendChild(makeLabel("Category", makeSelect("category", item.category, categoryOptions)));
+      var quantity = makeNumberInput("quantity", item.quantity, "Quantity for " + (item.name || "expense"), "0.01");
+      quantity.value = item.quantity === null || item.quantity === undefined ? "1" : String(item.quantity);
+      fields.appendChild(makeLabel("Quantity", quantity, "For a one-off total, leave at 1."));
+      var unitCost = makeNumberInput("unit_cost", item.unit_cost, "Unit cost in euros for " + (item.name || "expense"), "0.01");
+      fields.appendChild(makeLabel("Unit cost (EUR)", unitCost));
+      fields.appendChild(makeLabel("Amount status", makeSelect("status", item.status, amountStatuses.map(function (status) { return { value: status, label: status }; }))));
+      var paid = makeNumberInput("paid_amount", item.paid_amount, "Paid or covered amount in euros for " + (item.name || "expense"), "0.01");
+      fields.appendChild(makeLabel("Paid / covered (EUR)", paid, "Enter only what you know; no payment or coverage is assumed."));
+      var notes = document.createElement("textarea");
+      notes.maxLength = 350;
+      notes.dataset.field = "notes";
+      notes.setAttribute("aria-label", "Notes for " + (item.name || "expense"));
+      notes.value = item.notes || "";
+      fields.appendChild(makeLabel("Notes / conditions", notes));
+      fieldset.appendChild(fields);
+
+      var footer = node("div", "expense-row-summary");
+      var planned = node("span", "", "Planned: ");
+      planned.appendChild(node("strong", "", money(lineTotal(item), "EUR")));
+      var due = node("span", "", "Remaining: ");
+      var paidValue = numeric(item.paid_amount, 0);
+      due.appendChild(node("strong", "", money(Math.max(0, lineTotal(item) - paidValue), "EUR")));
+      footer.append(planned, due);
+      if (item.reference_url) {
+        var link = node("a", "small", "Source used for this reference price");
+        link.href = item.reference_url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        footer.appendChild(link);
+      }
+      fieldset.appendChild(footer);
+
+      fieldset.addEventListener("input", function (event) {
+        if (!event.target.dataset.field) return;
+        updateItemFromRow(fieldset);
+        saveState();
+        updateSummaries();
+      });
+      fieldset.addEventListener("change", function (event) {
+        if (!event.target.dataset.field) return;
+        updateItemFromRow(fieldset);
+        saveState();
+        if (event.target.dataset.field === "date") {
+          var openDates = getOpenDates();
+          if (event.target.value !== "trip") openDates.add(event.target.value);
+          renderPlan(openDates);
+        } else {
+          updateSummaries();
+        }
+      });
+      remove.addEventListener("click", function () {
+        state.items = state.items.filter(function (entry) { return entry.id !== item.id; });
+        saveState();
+        renderPlan(getOpenDates());
+        document.getElementById("add-expense").focus();
+      });
+      return fieldset;
+    }
+
+    function updateItemFromRow(row) {
+      var item = state.items.find(function (entry) { return entry.id === row.dataset.id; });
+      if (!item) return;
+      row.querySelectorAll("[data-field]").forEach(function (input) { item[input.dataset.field] = input.value; });
+      var strongs = row.querySelectorAll(".expense-row-summary strong");
+      var total = lineTotal(item);
+      strongs[0].textContent = money(total, "EUR");
+      strongs[1].textContent = money(Math.max(0, total - numeric(item.paid_amount, 0)), "EUR");
+      var name = item.name || "Expense line";
+      row.querySelector(".expense-row-head strong").textContent = name;
+      row.querySelector(".expense-row-head .remove-expense").setAttribute("aria-label", "Remove " + name);
+    }
+
+    function getOpenDates() {
+      var open = new Set();
+      dailyList.querySelectorAll(".daily-plan[open]").forEach(function (detail) { open.add(detail.dataset.date); });
+      return open;
+    }
+
+    function renderPlan(openDates) {
+      var tripItems = state.items.filter(function (item) { return item.date === "trip"; });
+      tripList.replaceChildren();
+      if (!tripItems.length) tripList.appendChild(node("p", "empty-hint", "No trip-level items yet. Add one above or use a published-price reference below."));
+      tripItems.forEach(function (item, index) { tripList.appendChild(makeExpenseRow(item, index, "trip")); });
+
+      dailyList.replaceChildren();
+      (data.trip_dates || []).forEach(function (day, index) {
+        var details = node("details", "daily-plan");
+        details.dataset.date = day.date;
+        if ((openDates && openDates.has(day.date)) || (!openDates && index === 0)) details.open = true;
+        var summary = node("summary", "");
+        summary.appendChild(node("span", "", day.label));
+        var subtotal = node("span", "daily-subtotal", "Entered: " + money(0, "EUR"));
+        subtotal.dataset.dateTotal = day.date;
+        summary.appendChild(subtotal);
+        details.appendChild(summary);
+        var body = node("div", "daily-plan-body");
+        var dayItems = state.items.filter(function (item) { return item.date === day.date; });
+        if (!dayItems.length) body.appendChild(node("p", "empty-hint", "No expenses assigned to this date."));
+        dayItems.forEach(function (item, rowIndex) { body.appendChild(makeExpenseRow(item, rowIndex, day.date)); });
+        details.appendChild(body);
+        dailyList.appendChild(details);
+      });
+      var nonTripItems = state.items.filter(function (item) { return item.date !== "trip" && !(data.trip_dates || []).some(function (day) { return day.date === item.date; }); });
+      if (nonTripItems.length) {
+        var extra = node("details", "daily-plan");
+        extra.open = true;
+        var extraSummary = node("summary", "", "Other / unscheduled dates");
+        extra.appendChild(extraSummary);
+        var extraBody = node("div", "daily-plan-body");
+        nonTripItems.forEach(function (item, index) { extraBody.appendChild(makeExpenseRow(item, index, "unscheduled")); });
+        extra.appendChild(extraBody);
+        dailyList.appendChild(extra);
+      }
+      updateSummaries();
+    }
+
+    function readTotals() {
+      var totals = { planned: 0, paid: 0, remaining: 0, unpriced: 0, entered: 0, categories: {}, byDate: {} };
+      state.items.forEach(function (item) {
+        var hasCost = item.unit_cost !== null && item.unit_cost !== undefined && String(item.unit_cost).trim() !== "";
+        if (!hasCost) totals.unpriced += 1;
+        else totals.entered += 1;
+        var planned = lineTotal(item);
+        var paid = numeric(item.paid_amount, 0);
+        var remaining = Math.max(0, planned - paid);
+        totals.planned += planned;
+        totals.paid += paid;
+        totals.remaining += remaining;
+        totals.categories[item.category] = (totals.categories[item.category] || 0) + planned;
+        totals.byDate[item.date] = (totals.byDate[item.date] || 0) + planned;
+      });
+      Object.keys(totals).forEach(function (key) {
+        if (typeof totals[key] === "number") totals[key] = Math.round(totals[key] * 100) / 100;
+      });
+      return totals;
+    }
+
+    function updateSummaries() {
+      if (!state) return;
+      var totals = readTotals();
+      document.getElementById("summary-planned").textContent = money(totals.planned, "EUR");
+      document.getElementById("summary-paid").textContent = money(totals.paid, "EUR");
+      document.getElementById("summary-remaining").textContent = money(totals.remaining, "EUR");
+      document.getElementById("summary-unpriced").textContent = String(totals.unpriced);
+      document.getElementById("summary-count").textContent = totals.entered + " amount" + (totals.entered === 1 ? "" : "s") + " entered; blank lines are excluded, not free.";
+
+      document.querySelectorAll("[data-date-total]").forEach(function (subtotal) {
+        var value = totals.byDate[subtotal.dataset.date] || 0;
+        subtotal.textContent = "Entered: " + money(value, "EUR");
+      });
+      var tripTotal = totals.byDate.trip || 0;
+      document.getElementById("trip-total").textContent = "Trip-level amounts entered: " + money(tripTotal, "EUR") + ".";
+
+      var limit = numeric(state.budget_limit, null);
+      var limitMessage = document.getElementById("budget-limit-result");
+      if (limit === null || String(state.budget_limit).trim() === "") {
+        limitMessage.className = "callout";
+        limitMessage.textContent = "Set an optional EUR budget limit above to see the difference.";
+      } else {
+        var difference = limit - totals.planned;
+        limitMessage.className = difference >= 0 ? "callout" : "callout warning";
+        limitMessage.textContent = difference >= 0
+          ? "Entered costs are " + money(difference, "EUR") + " under your limit of " + money(limit, "EUR") + ". This excludes all blank and unpriced lines."
+          : "Entered costs are " + money(Math.abs(difference), "EUR") + " over your limit of " + money(limit, "EUR") + ". This excludes all blank and unpriced lines.";
+      }
+      var rate = numeric(state.eur_per_usd, null);
+      var usdMessage = document.getElementById("usd-result");
+      if (rate !== null && rate > 0) {
+        usdMessage.textContent = "At your entered rate of 1 USD = " + rate.toFixed(6) + " EUR: entered planned costs are approximately " + money(totals.planned / rate, "USD") + " (USD equivalent; not a quote or live exchange rate).";
+      } else {
+        usdMessage.textContent = "Optional USD comparison will appear here after you enter an EUR-per-USD rate.";
+      }
+      var breakdown = document.getElementById("category-breakdown");
+      breakdown.replaceChildren();
+      var categoryNames = Object.keys(totals.categories).filter(function (category) { return totals.categories[category] > 0; }).sort();
+      if (!categoryNames.length) breakdown.appendChild(node("li", "muted", "No amounts entered yet."));
+      categoryNames.forEach(function (category) { breakdown.appendChild(node("li", "", category + ": " + money(totals.categories[category], "EUR"))); });
+    }
+
+    function renderPriceReferences() {
+      referenceList.replaceChildren();
+      (data.records || []).forEach(function (record) {
+        var card = node("article", "card price-reference");
+        var kicker = node("p", "card-kicker", record.category || "Price reference");
+        card.appendChild(kicker);
+        card.appendChild(node("h3", "", record.name));
+        var badgeClass = record.confidence === "verified" ? "verified" : (record.confidence === "partially verified" ? "partially-verified" : "unverified");
+        var badge = node("span", "badge " + badgeClass, record.confidence || "unverified");
+        card.appendChild(badge);
+        card.appendChild(node("p", "reference-price", record.price_range || "Not published / not verified"));
+        if (record.description) card.appendChild(node("p", "", record.description));
+        if (record.notes) card.appendChild(node("p", "small muted", "Notes: " + record.notes));
+        var options = record.details && Array.isArray(record.details.budget_options) ? record.details.budget_options : [];
+        if (options.length) {
+          var optionsBox = node("div", "");
+          options.forEach(function (option) {
+            var row = node("div", "price-option");
+            var copy = node("div", "");
+            copy.appendChild(node("strong", "", option.label + " · " + money(option.amount, "EUR")));
+            copy.appendChild(node("small", "", option.unit || "Published unit price"));
+            if (option.note) copy.appendChild(node("small", "", option.note));
+            row.appendChild(copy);
+            var add = node("button", "tool-button", "Add to plan");
+            add.type = "button";
+            add.dataset.recordId = record.id;
+            add.dataset.optionId = option.id;
+            add.addEventListener("click", function () { addPublishedOption(record, option); });
+            row.appendChild(add);
+            optionsBox.appendChild(row);
+          });
+          card.appendChild(optionsBox);
+        } else {
+          card.appendChild(node("p", "callout warning", "No add-to-plan amount: price, access or event status is not confirmed."));
+        }
+        var sourceRow = node("div", "source-link-row");
+        var primary = node("a", "", "Open primary source");
+        primary.href = record.source_url;
+        primary.target = "_blank";
+        primary.rel = "noopener noreferrer";
+        sourceRow.appendChild(primary);
+        sourceRow.appendChild(node("span", "badge source-type", record.source_type || "source"));
+        sourceRow.appendChild(node("span", "small", "Checked: " + (record.date_checked || "date not recorded")));
+        (record.additional_sources || []).forEach(function (source) {
+          if (!source || !source.url) return;
+          var link = node("a", "", source.label || "Additional source");
+          link.href = source.url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          sourceRow.appendChild(link);
+        });
+        card.appendChild(sourceRow);
+        referenceList.appendChild(card);
+      });
+    }
+
+    function addPublishedOption(record, option) {
+      var newItem = {
+        id: makeId("reference"), date: option.date || "trip",
+        name: record.name + " — " + option.label,
+        category: data.categories.indexOf(record.planner_category) >= 0 ? record.planner_category : "Activities & events",
+        quantity: "1", unit_cost: Number(option.amount).toFixed(2), paid_amount: "",
+        status: "Published source price (recheck)",
+        notes: (option.note || "Published reference price; recheck before purchase.") + " Unit: " + (option.unit || "one item") + ".",
+        reference_url: record.source_url
+      };
+      state.items.push(newItem);
+      saveState();
+      var openDates = getOpenDates();
+      if (newItem.date !== "trip") openDates.add(newItem.date);
+      renderPlan(openDates);
+      var added = document.querySelector('[data-id="' + newItem.id + '"]');
+      if (added) {
+        if (typeof added.scrollIntoView === "function") added.scrollIntoView({ behavior: "smooth", block: "center" });
+        var nameInput = added.querySelector('[data-field="name"]');
+        if (nameInput) nameInput.focus({ preventScroll: true });
+      }
+      document.getElementById("save-status").textContent = "Added a published-price reference. Recheck its conditions; the source price may change.";
+    }
+
+    function addCustomExpense() {
+      var item = {
+        id: makeId("custom"), date: "trip", name: "New expense", category: "Shopping / other",
+        quantity: "1", unit_cost: "", paid_amount: "", status: "User estimate", notes: "", reference_url: ""
+      };
+      state.items.push(item);
+      saveState();
+      renderPlan(getOpenDates());
+      var row = document.querySelector('[data-id="' + item.id + '"]');
+      if (row) {
+        if (typeof row.scrollIntoView === "function") row.scrollIntoView({ behavior: "smooth", block: "center" });
+        row.querySelector('[data-field="name"]').focus({ preventScroll: true });
+      }
+    }
+
+    function csvCell(value) {
+      var text = value === null || value === undefined ? "" : String(value);
+      return '"' + text.replace(/"/g, '""') + '"';
+    }
+
+    function exportCsv() {
+      var rows = [["Date", "Expense", "Category", "Quantity", "Unit cost EUR", "Planned EUR", "Paid or covered EUR", "Remaining EUR", "Amount status", "Notes", "Source URL"]];
+      state.items.forEach(function (item) {
+        var planned = lineTotal(item);
+        var paid = numeric(item.paid_amount, 0);
+        rows.push([dateLabel(item.date), item.name, item.category, item.quantity, item.unit_cost, planned.toFixed(2), paid.toFixed(2), Math.max(0, planned - paid).toFixed(2), item.status, item.notes, item.reference_url]);
+      });
+      var totals = readTotals();
+      rows.push([]);
+      rows.push(["Entered planned total EUR", "", "", "", "", totals.planned.toFixed(2)]);
+      rows.push(["Paid / covered total EUR", "", "", "", "", "", totals.paid.toFixed(2)]);
+      rows.push(["Remaining total EUR", "", "", "", "", "", "", totals.remaining.toFixed(2)]);
+      rows.push(["Optional budget limit EUR", state.budget_limit]);
+      rows.push(["USD rate (1 USD = EUR)", state.eur_per_usd]);
+      var csv = rows.map(function (row) { return row.map(csvCell).join(","); }).join("\r\n");
+      var blob = new Blob(["\ufeff", csv], { type: "text/csv;charset=utf-8" });
+      var url = URL.createObjectURL(blob);
+      var link = node("a");
+      link.href = url;
+      link.download = "malta-trip-expenses-2026-10-13-to-2026-10-19.csv";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+      document.getElementById("save-status").textContent = "CSV download started.";
+    }
+
+    function resetPlan() {
+      if (!window.confirm("Clear this locally saved plan and restore the blank starter lines?")) return;
+      try { window.localStorage.removeItem(storageKey); } catch (error) { storageWorks = false; }
+      state = { items: defaultItems(), budget_limit: "", eur_per_usd: "" };
+      document.getElementById("budget-limit").value = "";
+      document.getElementById("eur-per-usd").value = "";
+      renderPlan(null);
+      saveState();
+      document.getElementById("save-status").textContent = "Planner reset. Blank lines are not counted as free.";
+    }
+
+    function bindGlobalControls() {
+      var budgetLimit = document.getElementById("budget-limit");
+      var exchangeRate = document.getElementById("eur-per-usd");
+      budgetLimit.value = state.budget_limit;
+      exchangeRate.value = state.eur_per_usd;
+      budgetLimit.addEventListener("input", function () { state.budget_limit = budgetLimit.value; saveState(); updateSummaries(); });
+      exchangeRate.addEventListener("input", function () { state.eur_per_usd = exchangeRate.value; saveState(); updateSummaries(); });
+      document.getElementById("add-expense").addEventListener("click", addCustomExpense);
+      document.getElementById("export-csv").addEventListener("click", exportCsv);
+      document.getElementById("print-plan").addEventListener("click", function () { window.print(); });
+      document.getElementById("reset-plan").addEventListener("click", resetPlan);
+    }
+
+    function initialize(payload) {
+      data = payload;
+      amountStatuses = data.amount_statuses || [];
+      if (!Array.isArray(data.trip_dates) || !Array.isArray(data.categories) || !Array.isArray(data.records)) throw new Error("Planner data is incomplete.");
+      state = loadState();
+      app.hidden = false;
+      loadMessage.hidden = true;
+      renderPriceReferences();
+      bindGlobalControls();
+      renderPlan(null);
+      if (!storageWorks) document.getElementById("save-status").textContent = "Local browser storage is unavailable. Your entries will not persist after closing this page; use Download CSV for a backup.";
+      else document.getElementById("save-status").textContent = "Saved in this browser on this device. No data is uploaded.";
+    }
+
+    function fail(error) {
+      console.error("Expense planner could not load:", error);
+      loadMessage.className = "callout danger";
+      loadMessage.textContent = "The planner data could not be loaded. Open the site through GitHub Pages or a local web server, then reload. No expense values have been inferred.";
+    }
+
+    function start() {
+      fetch("../data/expenses.json", { credentials: "same-origin" })
+        .then(function (response) { if (!response.ok) throw new Error("HTTP " + response.status); return response.json(); })
+        .then(initialize)
+        .catch(fail);
+    }
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start, { once: true });
+    else start();
+  })();
+  </script>
+</body>
+</html>

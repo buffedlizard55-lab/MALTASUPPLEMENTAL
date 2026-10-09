@@ -1,0 +1,233 @@
+{
+  "heading": "Routes, costs, and trade-offs",
+  "records": [
+    {
+      "id": "transport-twc-route-186",
+      "name": "Bus 186 — Qawra to Ta’ Qali Stadium",
+      "category": "Tournament-day bus",
+      "area": "Qawra ↔ Ta’ Qali / Attard",
+      "address": "Origin: AX ODYCY, Qawra Coast Road, Qawra SPB 1902. MPT timetable names Qawra stop 952 and Ta’ Qali Stadium stop 2194. Use the official journey planner to select the closest hotel stop and confirm the venue entrance walk.",
+      "hours": "MPT route page lists a 30-minute scheduled frequency. Exact departures for your session times must be checked in the live planner. A published notice detours buses toward Buġibba on 17 Oct 19:00–18 Oct 00:00 and skips stops from Gholja 2 through Targa during that period.",
+      "price_range": "Published regular day-bus rates: €2.00 winter / €2.50 summer; the 2026/27 seasonal change date is not yet stated on the current MPT fare page. The page also lists a €25 Explore Adult 7-day card.",
+      "description": "Best-supported public-bus corridor for tournament days: the current Malta Public Transport route 186 page includes both the Qawra and Ta’ Qali Stadium stops. It appears to avoid a transfer between those points. Do not assume the hotel-side stop, venue-side walking route, match finish time, or post-match bus availability without checking the dated Journey Planner result.",
+      "source_url": "https://www.publictransport.com.mt/route/186/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Planning assessment: strongest price/value candidate for the event commute if the live timetable fits. Qualitative scores are a planning judgment, not a measured service rating. S-IDs T-001, T-005, T-006, E-002, V-001.",
+      "details": {
+        "convenience": "Good when the live planner shows a suitable direct journey; timetable and final walk still need confirmation.",
+        "price_value": "Lowest-cost candidate; exact fare season for the travel dates is not published yet.",
+        "feasibility": "Likely workable for daytime group-stage departures; playoff return after 19:00 on 17 Oct needs a detour/backup check.",
+        "boarding_and_alighting": "The MPT route page names Qawra #952 and Stadium #2194. Enter AX ODYCY and BLAST/MFCC into the Journey Planner to verify the actual stop selection and walking legs.",
+        "event_dates": "Organizer's current Finals page: group stage 14–16 Oct; playoffs 17–18 Oct 2026. Individual match and door times are not in the source.",
+        "backup": "If the event ends outside a convenient bus timetable or the route is disrupted, compare a live Bolt/eCabs/Uber quote or use Malta Taxi."
+      },
+      "additional_sources": [
+        {
+          "label": "MPT Journey Planner",
+          "url": "https://www.publictransport.com.mt/journey-planner/",
+          "type": "official"
+        },
+        {
+          "label": "Official TWC 2026 Finals schedule",
+          "url": "https://world-championship.thunderpick.io/2026-finals/",
+          "type": "official"
+        },
+        {
+          "label": "BLAST attendee guide (a different 2026 event; venue-area reference only)",
+          "url": "https://blast.tv/cs/news/malta-fan-guide",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "transport-twc-route-214",
+      "name": "Bus 214 — alternative Qawra / Qali 2 corridor",
+      "category": "Tournament-day bus alternative",
+      "area": "Qawra ↔ Ta’ Qali / Attard",
+      "address": "Origin: AX ODYCY, Qawra Coast Road, Qawra SPB 1902. The MPT timetable includes Qawra stop 952 and Ta’ Qali Qali 2 stop 2542. Qali 2 is not verified as the closest stop to the October tournament entrance.",
+      "hours": "MPT's current stop timetable shows a variable schedule; departures shown for Qawra are approximately hourly. Check the official planner for the correct date and time.",
+      "price_range": "Regular day-bus fare is currently listed as €2.00 winter / €2.50 summer; the operator has not yet published the 2026/27 seasonal crossover date.",
+      "description": "A secondary route to test in the official Journey Planner. The operator's route page includes Qawra and Qali 2, but it does not establish that Qali 2 is closer to the event entrance than route 186's Stadium stop. Treat this as an alternative rather than the default.",
+      "source_url": "https://www.publictransport.com.mt/route/214/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Schedule, stop choice and final walking directions need exact date/time validation. S-IDs T-002, T-004, T-005, T-006.",
+      "details": {
+        "convenience": "Potentially direct from the Qawra corridor; venue-side approach from Qali 2 is not verified.",
+        "price_value": "Regular bus fare; a seven-day card may be relevant if its current conditions fit your airport and other trips.",
+        "feasibility": "Use only if the MPT planner returns a workable time and stop for the actual event date.",
+        "direction_note": "Route 214 is also listed as an airport service; do not board by route number alone—confirm the destination shown on the bus and the planner result."
+      }
+    },
+    {
+      "id": "transport-airport-route-214",
+      "name": "Airport to AX ODYCY — regular bus 214",
+      "category": "Airport transfer",
+      "area": "Malta International Airport ↔ Qawra",
+      "address": "AX ODYCY, Qawra Coast Road, Qawra SPB 1902. Use the airport bus terminal and select this full address in the MPT Journey Planner. The operator's route information lists airport and Qawra stops; the best stop for hotel luggage arrival requires planner confirmation.",
+      "hours": "Current operator timetables are date- and direction-specific. Check arrival time against the live planner; do not rely on a search snippet or old timetable.",
+      "price_range": "Regular day-bus rates currently listed as €2.00 winter / €2.50 summer; the fare season in effect on 13 Oct 2026 is not confirmed on the current page.",
+      "description": "Lowest-cost airport option to compare first if the flight arrival aligns with bus operation and luggage is manageable. MPT route 214 is listed between the airport and Buġibba and its route timetable includes Qawra. The exact walk from the selected Qawra stop to the hotel and exact travel time need a live planner result.",
+      "source_url": "https://www.publictransport.com.mt/route/214/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Do not use the 2025/26 fare-season dates to assert a 2026/27 fare crossover. Add flight arrival time and luggage needs once itinerary arrives. S-IDs T-002, T-004, T-005, T-006.",
+      "details": {
+        "convenience": "Budget-friendly but depends on the flight time, wait, luggage and exact hotel-side stop.",
+        "price_value": "Best price candidate if you are comfortable with the bus and the schedule fits.",
+        "feasibility": "Planner and live operations must be checked after the flight itinerary is known.",
+        "where_to_check": "MPT planner accepts street/locality/stop names and shows route, time, interchange and map."
+      },
+      "additional_sources": [
+        {
+          "label": "MPT Journey Planner",
+          "url": "https://www.publictransport.com.mt/journey-planner/",
+          "type": "official"
+        },
+        {
+          "label": "MPT route changes (historical 2025 summary)",
+          "url": "https://www.publictransport.com.mt/service-update-important-changes-to-bus-routes-x1-x2-x3-and-x4-effective-from-20-april-2025/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "transport-airport-direct",
+      "name": "Airport Direct TD1 / TD5",
+      "category": "Airport transfer alternative",
+      "area": "Malta International Airport ↔ northern Malta",
+      "address": "Airport Direct buses depart from Malta International Airport's bus terminal. MPT lists Buġibba among the TD1 and TD5 destinations; confirm whether the selected service stop is suitable for AX ODYCY and how to finish the journey.",
+      "hours": "The official Airport Direct information page lists TD1 and TD5 as hourly services; use the linked MPT timetable for the day of arrival.",
+      "price_range": "MPT currently lists TD5 at €3 and TD1 at €3.50 for a single trip; unlimited travel cards may have different coverage. Confirm card terms before buying.",
+      "description": "Airport Direct is a luggage-oriented option with space for bags, according to MPT. It costs more than a regular day bus and is not confirmed as a door-to-door AX ODYCY service. Compare it only if its stop and departure time improve the arrival leg.",
+      "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "The official overview lists TD1 to Rabat/Buġibba/Mellieħa/Ċirkewwa and TD5 to Rabat/Buġibba. Verify the precise hotel stop and fare/card coverage in the app. S-ID T-007.",
+      "details": {
+        "convenience": "More luggage space than a regular service per MPT; destination stop may still require a walk or connection.",
+        "price_value": "More expensive than the regular day fare; value depends on luggage and stop convenience.",
+        "feasibility": "Suitable only when the published service time and stop match the flight and hotel plan."
+      },
+      "additional_sources": [
+        {
+          "label": "MPT route and timetable directory",
+          "url": "https://www.publictransport.com.mt/routes-timetables-view-all-routes/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "transport-7day-card",
+      "name": "MPT bus fare products for a 7-date stay",
+      "category": "Bus fares and passes",
+      "area": "Malta and Gozo bus network",
+      "address": "Travel cards are sold through MPT sales offices, ticket machines, retail outlets and/or the Tallinja app as described on the official fares page.",
+      "hours": "Not applicable; ticket purchase channels and product conditions should be checked on the current MPT page.",
+      "price_range": "The current MPT page lists an Explore Adult 7-day card at €25, an Explore Flex 7-day offer at €27, and a 12 Single Day Journeys card at €19. Regular day singles are listed at €2.00 winter / €2.50 summer.",
+      "description": "Compare the 7-day card with pay-as-you-go based on the actual number of bus rides. The trip spans seven calendar dates (13–19 Oct); the card is described as valid for seven days, but check the purchase page for activation/coverage. The current page's season dates stop at 2025/26, so the October 2026 fare transition is unresolved.",
+      "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "MPT page presents multiple products and Airport Direct inclusion details; confirm the exact card/product in the official Tallinja app or sales office before paying. S-ID T-006.",
+      "details": {
+        "convenience": "A pass reduces repeated onboard payment if you take many buses.",
+        "price_value": "At the listed €25 price, compare against your expected paid bus rides; the MPT Airport Direct page says Unlimited Travel Cards include Airport Direct, but confirm the specific card and date coverage at purchase.",
+        "fare_conditions": "Explore Adult 7-day details state that Tallinja Direct routes are excluded. MPT's Airport Direct page says Unlimited Travel Cards include Airport Direct at no extra cost; confirm that your specific card/product is covered when purchasing. Explore Flex may bundle other travel products, so check the exact offer shown for your dates.",
+        "fare_date_caveat": "The visible winter-fare date range is 19 Oct 2025–13 Jun 2026; the 2026/27 switch is not yet published on the page checked 9 Oct 2026."
+      }
+    },
+    {
+      "id": "transport-rideshare",
+      "name": "Bolt, eCabs or Uber app ride",
+      "category": "Taxi and ride-hailing",
+      "area": "Malta-wide; availability depends on pickup and demand",
+      "address": "Enter AX ODYCY, the actual event entrance or your destination in the chosen app. Follow the app's pickup instructions; exact event-day pickup point is unverified.",
+      "hours": "On-demand and scheduled options vary by provider and location. Driver availability and pickup time are not guaranteed; check in the app.",
+      "price_range": "Dynamic; no fixed Qawra–Attard fare verified. Bolt and eCabs describe an estimate before booking; compare the live price when you request.",
+      "description": "Best flexible backup for a late or disrupted return, a tight airport connection, or a destination awkward for the bus. Compare Bolt, eCabs and Uber in-app rather than relying on old online fare estimates. The ride may cost much more than a bus, particularly for a solo traveler, but the quote is route- and time-specific.",
+      "source_url": "https://bolt.eu/en-mt/rides/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Provider presence and quote method verified; no trip-specific live price or event pickup location is claimed. S-IDs T-011, T-012, T-013.",
+      "details": {
+        "convenience": "High if a driver accepts and the pickup pin is accessible.",
+        "price_value": "Low-to-medium compared with bus for one passenger; potentially better when shared. This is a planning judgment, not a fare quote.",
+        "feasibility": "Strong backup option; keep mobile data and payment method available."
+      },
+      "additional_sources": [
+        {
+          "label": "eCabs price-estimate policy",
+          "url": "https://support.ecabs.com.mt/hc/en-us/articles/4409086921361-Pricing-policy",
+          "type": "official"
+        },
+        {
+          "label": "Uber Malta / Valletta rides",
+          "url": "https://www.uber.com/global/en/r/cities/valletta-valletta-mt/",
+          "type": "official"
+        },
+        {
+          "label": "Malta Airport official taxi provider / transport information",
+          "url": "https://maltairport.com/transport/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "transport-airport-taxi",
+      "name": "Official Malta Taxi from the airport",
+      "category": "Airport transfer / taxi",
+      "area": "Malta International Airport ↔ Qawra",
+      "address": "Malta Taxi booth is in the Malta International Airport Welcomers’ Hall. The official airport page also links the Malta Taxi app.",
+      "hours": "Malta International Airport says taxi services are available 24 hours a day.",
+      "price_range": "Prepaid fixed rate; the Qawra amount was not published in the official page fetched. Ask at the booth or check Malta Taxi before travel.",
+      "description": "Most straightforward airport choice when arriving late, carrying substantial luggage, or preferring not to set up an app. Pay the fixed fare at the airport booth before travel. This is an airport-to-hotel option; it is not a quote for tournament-day journeys.",
+      "source_url": "https://help.maltairport.com/hc/en-us/articles/360021015579-Where-can-I-get-a-Taxi",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Official source establishes 24h availability and fixed pre-paid tickets, but not the Qawra price. No price guessed. S-IDs T-008, T-009.",
+      "details": {
+        "convenience": "High for airport arrival; no bus timetable or ride-hailing app required.",
+        "price_value": "Predictable fixed price, but Qawra tariff must be requested; likely costs more than public bus, with no official amount captured.",
+        "feasibility": "Good when fare is confirmed and luggage/arrival time matter.",
+        "phone": "+356 2369 6441 (airport help page)"
+      },
+      "additional_sources": [
+        {
+          "label": "Official Malta Taxi service site",
+          "url": "https://www.maltataxi.mt/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "transport-car-rental",
+      "name": "Rental car — only if the itinerary needs it",
+      "category": "Car rental",
+      "area": "Airport pickup / island-wide driving",
+      "address": "Malta International Airport links rental options; individual supplier desks, pickup procedures, deposit, coverage and return instructions vary.",
+      "hours": "Supplier-specific; check the selected rental provider and flight arrival time.",
+      "price_range": "No dated, like-for-like rental quote captured. Compare supplier quote, insurance/excess, fuel and parking before booking.",
+      "description": "A rental offers independence for several out-of-town stops, but it is not needed just to reach the venue if the direct bus route fits. No October TWC parking or access arrangement has been verified; do not assume parking at MFCC is available to spectators.",
+      "source_url": "https://maltairport.com/renting-a-car/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Airport rental information is official; final price, licence conditions, insurance, fuel, venue parking and traffic remain provider/event-specific. S-ID T-014; see Everyday Life for driving-side and licensing checklist.",
+      "details": {
+        "convenience": "High for a multi-stop rural itinerary; low for a single event commute if parking is unknown.",
+        "price_value": "Cannot be ranked without an actual supplier quote, insurance terms, parking and number of passengers.",
+        "feasibility": "Book only if driver requirements, pickup hours and parking are confirmed.",
+        "parking": "Event parking is not verified; ask the event organizer before renting a car for tournament access."
+      }
+    }
+  ]
+}

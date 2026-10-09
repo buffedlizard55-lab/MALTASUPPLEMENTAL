@@ -1,0 +1,352 @@
+{
+  "heading": "Everyday essentials for 13–19 October 2026 · checked 9 October",
+  "records": [
+    {
+      "id": "everyday-entry-passport",
+      "name": "Entry basics (if travelling on a U.S. passport)",
+      "category": "Entry · passport and visa",
+      "area": "Schengen Area / Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "The U.S. State Department lists visa-free tourist visits of 90 days or less; any separate travel authorisation is covered below.",
+      "description": "For U.S. citizens using a U.S. passport, the current U.S. State Department Malta page says a tourist visa is not required for a stay of 90 days or less. It says the passport should remain valid at least three months beyond the planned departure from the Schengen Area. This is conditional guidance: nationality, previous Schengen days, travel purpose and individual circumstances can change the answer.",
+      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "D-002. The traveler asked for U.S.-traveler guidance but has not supplied passport nationality or prior Schengen travel; verify the rules for the actual passport and itinerary. Recheck before departure.",
+      "details": {
+        "passport_validity": "At least three months beyond the planned departure from the Schengen Area, per the State Department page checked 9 October 2026.",
+        "stay_limit": "Visa-exempt short stays are generally limited to 90 days in any 180-day period; count other Schengen visits, not just Malta days.",
+        "important": "Do not treat this short summary as an entry guarantee or as a substitute for checking the official entry rules for the passport being used."
+      },
+      "additional_sources": [
+        {
+          "label": "European Commission short-stay visa and Schengen information",
+          "url": "https://home-affairs.ec.europa.eu/policies/schengen/visa-policy/applying-schengen-visa_en",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-ees-etias",
+      "name": "EES and ETIAS: check again immediately before travel",
+      "category": "Entry · border systems",
+      "area": "Schengen external borders",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "The official ETIAS page lists a €20 application fee; the system was not collecting applications on 9 October 2026. Recheck status and fee before applying.",
+      "description": "The EU says the Entry/Exit System (EES) became fully operational on 10 April 2026 and records travel-document and biometric data for covered non-EU short-stay travellers. On 9 October 2026, the official ETIAS page said ETIAS was not yet operating and was not collecting applications. A Commission timeline published in March 2025 had forecast ETIAS for the last quarter of 2026, so the trip dates may overlap its start. Use only the official EU site and recheck before departure.",
+      "source_url": "https://travel-europe.europa.eu/en/etias",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "D-005–D-007. Status is time-sensitive. The €20 amount and Q4 2026 timing are not a guarantee that an application will be required or available for this trip; see open question Q-020.",
+      "details": {
+        "ees": "EES is fully operational from 10 April 2026. The Commission says it registers travel-document details, fingerprints and facial images for non-EU nationals on short stays at covered external borders.",
+        "etias": "Not in operation and not collecting applications on 9 October 2026; the exact start date was not stated on the official page.",
+        "scam_avoidance": "Do not pay a third-party website based on an unverified launch date. Follow the official EU ETIAS page for the latest status, eligibility and fee."
+      },
+      "additional_sources": [
+        {
+          "label": "European Commission: Entry/Exit System",
+          "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en",
+          "type": "official"
+        },
+        {
+          "label": "European Commission: revised EES/ETIAS timeline (6 March 2025; forecast, not a launch notice)",
+          "url": "https://home-affairs.ec.europa.eu/news/revised-timeline-ees-and-etias-2025-03-06_en",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-money",
+      "name": "Currency, cards and ATMs",
+      "category": "Money",
+      "area": "Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "Currency: euro (€). ATM/operator and card-issuer fees vary; no USD/EUR exchange rate is assumed.",
+      "description": "Malta uses the euro. The U.S. State Department says U.S.-issued bankcards can be used at Maltese ATMs, but withdrawals frequently incur an ATM fee; it also says American Express is not widely accepted. Check your bank's foreign-transaction and ATM fees and bring a payment backup you know works abroad.",
+      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "D-003 and D-008. No live exchange rate, specific card acceptance at individual venues, or bank fee is asserted; enter the actual card rate in the expense planner if needed.",
+      "details": {
+        "cash": "Carry only the cash you want for convenience; the separate EU declaration threshold is €10,000 or more (see the cash-control record).",
+        "card_tip": "If your main card is American Express, consider carrying another card; the State Department says AmEx is not widely accepted."
+      },
+      "additional_sources": [
+        {
+          "label": "European Union country profile: Malta and the euro",
+          "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/malta_en",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-cash-declaration",
+      "name": "EU cash declaration threshold",
+      "category": "Money · customs",
+      "area": "Entering or leaving the European Union",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "€10,000 or more in cash (or specified cash-equivalents): declaration required; this is not a cash limit.",
+      "description": "The European Commission requires a customs declaration when entering or leaving the EU with €10,000 or more in cash or certain cash-equivalents. This is a reporting threshold, not a ban on carrying that amount. Check the Commission's current list and declaration instructions if it applies to you.",
+      "source_url": "https://taxation-customs.ec.europa.eu/what-are-rules_en",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "D-009. The rule concerns the EU external border and includes more than banknotes; consult the linked official page for the precise covered items and procedure.",
+      "details": {
+        "threshold": "€10,000 or more per person when entering or leaving the EU.",
+        "important": "Declaration requirement, not a maximum amount you may carry."
+      }
+    },
+    {
+      "id": "everyday-mobile",
+      "name": "Mobile data and roaming",
+      "category": "Phone and connectivity",
+      "area": "Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "No U.S.-carrier rate is quoted; your plan, add-on and usage determine the cost.",
+      "description": "Before leaving, check your own U.S. carrier's Malta rates and roaming options for calls, texts and data, including any daily pass, fair-use cap or hotspot limit. Malta Communications Authority material explains EU/EEA roaming protections for eligible plans; do not assume those rules set the price of a U.S. subscription.",
+      "source_url": "https://www.mca.org.mt/consumer/faqs",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "D-010; Q-021 remains open because the traveler’s carrier and plan are unknown. Check the carrier's own current coverage and pricing page before travel.",
+      "details": {
+        "before_you_go": "Confirm Malta coverage, automatic roaming, data limits, voice/SMS charges and any required activation with your carrier.",
+        "wi_fi": "Hotel and venue Wi-Fi access/quality has not been verified; do not rely on it for navigation or ticket access without a mobile-data backup."
+      }
+    },
+    {
+      "id": "everyday-power",
+      "name": "Power plugs and device voltage",
+      "category": "Electrical",
+      "area": "Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "Adapter/converter cost depends on what you already own; no product price is quoted.",
+      "description": "Electrical Safety First's Malta guide lists Type G plugs and 230 V / 50 Hz mains. A plug adapter changes the plug shape; it does not convert voltage or frequency. Check the input label on each charger or appliance before connecting it, especially U.S.-only 120 V devices.",
+      "source_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/malta/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "D-011. This is a specialist electrical-safety organization's travel guide, not a Malta government page. Confirm any high-power or voltage-sensitive device with its manufacturer.",
+      "details": {
+        "plug": "Type G (three rectangular pins).",
+        "mains": "230 volts, 50 hertz.",
+        "safety": "A simple travel adapter does not convert voltage; follow the device's marked input range."
+      }
+    },
+    {
+      "id": "everyday-languages",
+      "name": "Languages",
+      "category": "Language and local basics",
+      "area": "Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "Not applicable",
+      "description": "The Government of Malta lists Maltese and English as both official languages of the country. The EU profile also lists both as official EU languages. This does not guarantee the language preference of a particular business or person.",
+      "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "D-008 and D-020. The national government source confirms Malta's official languages; the EU country profile separately confirms both as official EU languages. Individual business/person language preference is not inferred.",
+      "additional_sources": [
+        {
+          "label": "European Union country profile: Maltese and English as official EU languages",
+          "url": "https://european-union.europa.eu/principles-countries-history/eu-countries/malta_en",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-water",
+      "name": "Tap water",
+      "category": "Water and food safety",
+      "area": "Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "No price quoted; bottled water is a personal choice.",
+      "description": "The U.S. State Department says tap water in Malta is generally safe to drink and use for cooking. Water Services Corporation explains that the blended supply can have a hard taste associated with its chloride and mineral content (its information page is dated 2019). If you dislike the taste, bottled water is a personal option; if water at a specific property looks, smells or tastes unusual, ask the hotel rather than assuming the issue is normal.",
+      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "D-015. General country guidance does not assess the condition of a particular building's plumbing or tank.",
+      "additional_sources": [
+        {
+          "label": "Water Services Corporation: tap-water information",
+          "url": "https://water.org.mt/2019/11/01/is-tap-water-drinkable-in-malta/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-time",
+      "name": "Local time",
+      "category": "Time and dates",
+      "area": "Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "Not applicable",
+      "description": "Malta is on Central European Summer Time (UTC+2) during 13–19 October 2026. The EU's current seasonal-clock rule returns to standard time on the last Sunday in October; in 2026 that is 25 October, after this trip.",
+      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "D-017. Local phone time should update automatically if its time-zone setting is enabled.",
+      "additional_sources": [
+        {
+          "label": "Council of the EU: seasonal clock changes",
+          "url": "https://www.consilium.europa.eu/en/policies/seasonal-time-changes/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-health-insurance",
+      "name": "Medical coverage and urgent help",
+      "category": "Health and emergency",
+      "area": "Malta and Gozo",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Emergency number 112; use for urgent emergency services.",
+      "price_range": "Medical care may involve out-of-pocket costs; private providers may require payment up front. Coverage and reimbursement depend on your policy.",
+      "description": "The U.S. Embassy advises travelers to have adequate overseas medical coverage; Medicare and Medicaid do not cover expenses abroad. The U.S. State Department says most U.S. health plans do not cover care abroad and recommends considering medical-evacuation insurance. Malta's emergency number for ambulance, fire and police is 112. Check your insurer's overseas, evacuation, pre-existing-condition and payment/reimbursement terms before travelling.",
+      "source_url": "https://mt.usembassy.gov/medical-assistance/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "D-004 and D-013. This is travel-preparation information, not medical advice or a guarantee of coverage. Save 112 offline; use it for emergencies, not routine questions.",
+      "details": {
+        "emergency": "112 for ambulance, fire brigade or police in Malta and Gozo.",
+        "insurance_checklist": "Ask whether care is paid directly or reimbursed, what documentation is needed, and whether medical evacuation is included.",
+        "medicare_medicaid": "The U.S. Embassy page says Medicare and Medicaid are only valid in the United States."
+      },
+      "additional_sources": [
+        {
+          "label": "U.S. Department of State Malta travel guidance: medical payments and insurance",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+          "type": "official"
+        },
+        {
+          "label": "CDC Malta Traveler View: plan for medical care and insurance",
+          "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/malta",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-medicines",
+      "name": "Prescription medicines and controlled substances",
+      "category": "Health · medicines and customs",
+      "area": "Malta / EU border",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "Any permit or administrative cost is medication-specific and not verified here.",
+      "description": "The U.S. State Department says to carry prescription medicine in original packaging with the doctor's prescription and to check that each medicine is legal in Malta. Some controlled ingredients may require additional documentation or clearance; the traveler and exact medicines are not known, so check with Malta's health authority well before travel. The State Department specifically warns that importing cannabis, CBD and related products can result in severe penalties. Do not assume a U.S. prescription makes a product lawful to bring across the border.",
+      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "D-012 and D-014; Q-024 remains open because no medication list was supplied. Malta Pharmaceutical Unit traveller-guidelines page was not directly accessible during this research, so controlled-drug requirements are not summarized as settled law.",
+      "details": {
+        "general": "Carry medicines in original packaging with a copy of the prescription; CDC also recommends bringing prescription copies and verifying local legality.",
+        "controlled_medicines": "Rules can depend on the ingredient and quantity. Get written, medication-specific confirmation from the relevant Maltese authority before travel.",
+        "cannabis_cbd": "The U.S. State Department warns against importing cannabis/CBD products and derivatives into Malta."
+      },
+      "additional_sources": [
+        {
+          "label": "CDC Malta Traveler View: medicines and health-care planning",
+          "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/malta",
+          "type": "official"
+        },
+        {
+          "label": "Malta Pharmaceutical Unit: Guidelines for Travellers (direct access failed; recheck before relying on it)",
+          "url": "https://deputyprimeminister.gov.mt/en/Pharmaceutical-Unit/Pages/guidelines-for-travellers.aspx",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-driving",
+      "name": "Driving and licence paperwork",
+      "category": "Road safety and driving",
+      "area": "Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "Rental, insurance and any permit costs are provider- and driver-specific; no rental price is quoted.",
+      "description": "Transport Malta says a licence issued outside Malta or the EU can be used for up to 12 months from the driver's last entry into Malta. Traffic drives on the left and seatbelts are required. CDC advises U.S. drivers to carry both a U.S. licence and an International Driving Permit (IDP); confirm the rental company's and insurer's paperwork requirements before booking. This guide does not assume the traveler will rent a car.",
+      "source_url": "https://www.transport.gov.mt/land/driving-licence-783",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "D-016–D-017. The legal licence statement, CDC travel recommendation, rental-company contract terms and insurance rules are distinct; verify the latter two with the specific provider.",
+      "details": {
+        "road_side": "Drive on the left; take extra care crossing roads and at junctions.",
+        "seatbelts": "Transport Malta says seatbelts are required.",
+        "documents": "If driving, check whether your chosen rental company or insurer requires an IDP in addition to your valid U.S. licence."
+      },
+      "additional_sources": [
+        {
+          "label": "CDC Malta Traveler View: driving safety and International Driving Permit advice",
+          "url": "https://wwwnc.cdc.gov/travel/destinations/traveler/none/malta",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "everyday-safety",
+      "name": "Personal and beach safety",
+      "category": "Safety",
+      "area": "Malta, including coastal areas",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Not applicable",
+      "price_range": "Not applicable",
+      "description": "The U.S. State Department's Malta advisory was Level 1 when checked on 9 October 2026. It notes pickpocketing and theft of unattended property in tourist areas, and warns that rip currents can be dangerous. Keep valuables secure; at the coast, follow lifeguards, warning flags and local instructions, and do not swim when conditions are unsafe.",
+      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "D-001. Advisory level and destination warnings can change; recheck the State Department page before the trip. For an emergency, call 112.",
+      "details": {
+        "advisory": "Level 1: Exercise Normal Precautions, as displayed on the page checked 9 October 2026.",
+        "coastal_note": "Rip currents can be dangerous; obey warning flags and lifeguard directions.",
+        "property_note": "Secure valuables and avoid leaving belongings unattended."
+      }
+    },
+    {
+      "id": "everyday-weather",
+      "name": "October weather and forecast recheck",
+      "category": "Weather and packing",
+      "area": "Malta",
+      "address": "Not applicable — visitor guidance",
+      "hours": "Forecast updates on the official rolling forecast page; check again close to each outing.",
+      "price_range": "Not applicable",
+      "description": "On 9 October, Malta International Airport's MetOffice seven-day forecast covered 13–15 October only, with forecast highs of 23–25°C and lows of 18–19°C. It did not yet cover 16–19 October, so those figures are not a forecast for the entire stay. The State Department describes October–February as Malta's rainy season and notes that heavy rain, strong winds and flash flooding can occur. Recheck the rolling forecast and warnings before outdoor plans; pack for changeable conditions.",
+      "source_url": "https://maltametoffice.com/en/forecast/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "D-018–D-019. Forecast values are volatile and deliberately date-stamped. The 16–19 October outlook was not available in the seven-day forecast captured on 9 October; Q-023 remains open.",
+      "details": {
+        "forecast_at_check": "13–15 October 2026 only; highs 23–25°C and lows 18–19°C in the forecast checked 9 October.",
+        "recheck": "Review the official Malta Airport MetOffice forecast and alerts closer to each day, especially for the later dates and outdoor events.",
+        "general_climate": "The State Department says Malta's rainy season is October through February and that heavy rain, strong winds and flash flooding can occur."
+      },
+      "additional_sources": [
+        {
+          "label": "U.S. Department of State Malta travel guidance: weather conditions",
+          "url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+          "type": "official"
+        }
+      ]
+    }
+  ]
+}
