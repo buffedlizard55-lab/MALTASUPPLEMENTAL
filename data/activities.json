@@ -1,0 +1,62 @@
+[
+  {
+    "id": "act-gamers-lounge",
+    "name": "The Gamers Lounge",
+    "category": "Gaming Center",
+    "area": "Msida",
+    "address": "Near Junior College, Msida",
+    "hours": "Typically 12:00 - 22:00",
+    "price_range": "€5 - €10 per hour",
+    "description": "Malta's most popular PC gaming center. High-end PC gaming stations and peripherals.",
+    "source_url": "http://outlets.gamerslounge.mt/",
+    "source_type": "official",
+    "date_checked": "2026-10-09",
+    "confidence": "verified",
+    "notes": "Good place to play PC games or meet other gamers during your downtime."
+  },
+  {
+    "id": "act-eden-esports",
+    "name": "Eden Esports Centre (Eden SuperBowl)",
+    "category": "Gaming Center / Entertainment",
+    "area": "St. Julians",
+    "address": "Eden SuperBowl, St. George's Bay, St. Julian's",
+    "hours": "10:00 - 00:00",
+    "price_range": "Varies",
+    "description": "Esports area and PC setups located inside the Eden SuperBowl complex.",
+    "source_url": "https://www.reddit.com/r/malta/comments/q5vylk/gaming_places_in_malta/",
+    "source_type": "social",
+    "date_checked": "2026-10-09",
+    "confidence": "partially verified",
+    "notes": "Convenient if you also want to bowl or grab drinks in the busy St. Julian's area."
+  },
+  {
+    "id": "act-mdina",
+    "name": "Mdina (The Silent City)",
+    "category": "Landmark",
+    "area": "Mdina",
+    "address": "Mdina, Malta",
+    "hours": "24/7 (museums vary)",
+    "price_range": "Free to walk around",
+    "description": "Historic fortified city and former capital of Malta. Famous for its medieval architecture and narrow streets.",
+    "source_url": "https://www.visitmalta.com/en/a/mdina-and-rabat/",
+    "source_type": "official",
+    "date_checked": "2026-10-09",
+    "confidence": "verified",
+    "notes": "Very close to Attard (where the BLAST Arena is). Highly recommended for a half-day trip before the matches."
+  },
+  {
+    "id": "act-valletta",
+    "name": "Valletta",
+    "category": "Landmark",
+    "area": "Valletta",
+    "address": "Valletta, Malta",
+    "hours": "24/7",
+    "price_range": "Free to explore",
+    "description": "Current capital of Malta, UNESCO World Heritage site known for museums, palaces, and grand churches.",
+    "source_url": "https://www.visitmalta.com/en/a/valletta/",
+    "source_type": "official",
+    "date_checked": "2026-10-09",
+    "confidence": "verified",
+    "notes": "Easily accessible by bus from Qawra or a 30-min ride share."
+  }
+]

@@ -47,3 +47,57 @@ and why".
 | Navigation identical across all pages | checked by `scripts/check_links.py` |
 | Data ↔ page consistency | checked by `scripts/check_links.py` (spot-asserts the load-bearing numbers) |
 | Mobile + desktop layout | existing `css/style.css` breakpoints at 900px and 760px; new page uses only existing classes |
+
+## Merge reconciliation with PR #8 (9 Oct 2026)
+
+While this branch was being worked on, **PR #8 merged to `main`** from a different workstream.
+It deleted 3,544 lines — eleven content pages (`event`, `restaurants`, `landmarks`, `activities`,
+`getting-around`, `everyday`, `radio`, `costs`, `logistics`, `hotspawn`, `sources`) — and replaced
+them with six short `pages/*.html` summaries plus its own `data/` and `docs/` files. Merging was
+therefore not a fast-forward and produced 20 conflicts.
+
+**How each conflict was resolved, and why:**
+
+| Conflict | Resolution | Reason |
+|---|---|---|
+| 11 content pages (modify/delete) | **kept this branch's versions** | main deleted them; they hold the verified, sourced content this project is for |
+| `README.md`, `index.html`, `css/style.css` | **kept this branch's versions** | strictly larger; main's are reduced versions of the same files |
+| `data/transport.json` (add/add) | **kept this branch's version** | main's recommends a withdrawn route — see below |
+| `docs/PLAN|SOURCES|OPEN_QUESTIONS|STATUS|HANDOFF.md` (add/add) | **kept this branch's versions** | 6–48 lines on main vs full logs here |
+| `docs/FINAL_REPORT.md`, `docs/SCHEMA.md` | **taken from main** | additive, no conflict |
+| `data/{activities,everyday,expenses,food,radio}.json`, `pages/*.html` | **taken from main, then corrected** | additive workstream E/F content this branch lacked |
+
+**Corrections made to what came in from main** — none of these were optional, because each was a
+claim badged `verified` that the cited source does not support:
+
+1. **Route X3 was recommended as the way to the venue.** X3 was **withdrawn on 20 April 2025** and
+   replaced by route 214. It was badged `confidence: verified`, `source_type: official`,
+   `date_checked: 2026-10-09`. It also never served the MFCC — its routing passed *Qali 2 on the
+   main road*. Corrected in `pages/transport.html`, struck through with the reason, and the real
+   answer (route 186) put in its place.
+2. **"TalkSport (DAB+ Malta)" was `verified`** on `radioinmalta.com`, a third-party station
+   directory. The multiplex operator's own catalogue does not list it. Downgraded to
+   `partially verified`, `source_type: review`. **Radio Sportiva** cited the same directory and was
+   downgraded the same way.
+3. **"Michele's Cafe" was `partially verified`** on `https://www.tripadvisor.com/` — the homepage,
+   not a listing. Downgraded to `unverified`; it must not be presented as a recommendation.
+4. **The €12–25 rideshare figures were badged `verified`.** No operator publishes a Qawra↔Ta' Qali
+   fare. Left as an estimate, logged as **OQ-04**.
+
+A correction note recording all four was prepended to `docs/FINAL_REPORT.md` rather than the
+original text being quietly rewritten.
+
+**Regression guards added** so this cannot come back silently:
+`scripts/check_links.py` now scans the `pages/` stubs and `data/*.json` as well as the root pages,
+and fails on any bare `Route X3` mention outside an explicit correction, and on any
+gaming-category item that places itself near Qawra/Bugibba while claiming to be verified.
+
+Two bugs were found **in the checker itself** while proving those guards worked, and both are worth
+recording because a guard that cannot fail is worse than no guard:
+
+- The forbidden-pattern gate only walked root pages, so a regression shipped into `pages/` passed
+  silently. Found by re-injecting the PR #8 X3 text and watching the gate stay green.
+- The first two gaming patterns were prose regexes and false-fired on this project's own honest
+  sentences — `"Gaming centres / LAN venues near Qawra"` and `"Gamers Lounge … no verified Qawra
+  branch"`. A regex cannot tell an assertion from a denial, so the guard was moved into the data
+  gate where it can read the `confidence` field instead of guessing.

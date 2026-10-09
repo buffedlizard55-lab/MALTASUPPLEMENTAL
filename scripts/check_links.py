@@ -24,6 +24,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGES = sorted(p for p in ROOT.glob("*.html"))
+STUBS = sorted((ROOT / "pages").glob("*.html")) if (ROOT / "pages").is_dir() else []
 
 REQUIRED_FIELDS = [
     "id", "name", "category", "area", "address", "hours", "price_range",
@@ -45,40 +46,48 @@ def warn(gate, msg):
 
 
 # ---------------------------------------------------------------- gate 1
-def gate_internal_links():
-    page_names = {p.name for p in PAGES}
+def _check_page(p, base):
+    """Resolve <a href> targets in p relative to `base` (the page's own directory)."""
     total = 0
-    for p in PAGES:
-        html = p.read_text(encoding="utf-8")
-        anchors = {m for m in re.findall(r'id="([^"]+)"', html)}
-        # Only <a href> counts as a link. <link href="css/style.css"> is a stylesheet
-        # reference, not a navigable page - including it produced false failures.
-        hrefs = re.findall(r'<a\s[^>]*?href="([^"]+)"', html)
-        for href in hrefs:
-            if href.startswith(("http://", "https://", "mailto:", "#")):
-                if href.startswith("#") and href[1:] not in anchors:
-                    fail("links", f"{p.name}: in-page anchor {href} has no matching id")
-                continue
-            total += 1
-            target, _, frag = href.partition("#")
-            if target:
-                # Any repo-relative path that exists on disk is fine - .html pages,
-                # but also docs/*.md and data/*.json linked from a page.
-                if not (ROOT / target).exists():
-                    fail("links", f"{p.name}: internal link to missing file {target!r}")
-                    continue
-                if href.startswith(".."):
-                    fail("links", f"{p.name}: {href} escapes the site root; use a repo-relative path")
-                    continue
-            if target and not target.endswith(".html"):
-                continue
-            if frag:
-                tgt = ROOT / target
-                if tgt.exists():
-                    tgt_html = tgt.read_text(encoding="utf-8")
-                    if f'id="{frag}"' not in tgt_html:
-                        fail("links", f"{p.name}: {href} - no id={frag!r} in {target}")
-    print(f"  gate 1  internal links: {total} checked across {len(PAGES)} pages")
+    html = p.read_text(encoding="utf-8")
+    anchors = {m for m in re.findall(r'id="([^"]+)"', html)}
+    # Only <a href> counts as a link. <link href="css/style.css"> is a stylesheet
+    # reference, not a navigable page - including it produced false failures.
+    for href in re.findall(r'<a\s[^>]*?href="([^"]+)"', html):
+        if href.startswith(("http://", "https://", "mailto:")):
+            continue
+        if href.startswith("#"):
+            if href[1:] not in anchors:
+                fail("links", f"{p.name}: in-page anchor {href} has no matching id")
+            continue
+        total += 1
+        target, _, frag = href.partition("#")
+        if not target:
+            continue
+        resolved = (base / target).resolve()
+        if not resolved.exists():
+            fail("links", f"{p.name}: internal link to missing file {target!r}")
+            continue
+        if frag and resolved.suffix == ".html":
+            if f'id="{frag}"' not in resolved.read_text(encoding="utf-8"):
+                fail("links", f"{p.name}: {href} - no id={frag!r} in {target}")
+    return total
+
+
+def gate_internal_links():
+    total = sum(_check_page(p, ROOT) for p in PAGES)
+    if STUBS:
+        total += sum(_check_page(p, p.parent) for p in STUBS)
+        # Every summary stub must point back at the main site, and must carry the
+        # banner that says the main site wins a disagreement.
+        for p in STUBS:
+            html = p.read_text(encoding="utf-8")
+            if "../index.html" not in html:
+                fail("links", f"pages/{p.name}: no link back to the main site index")
+            if "stub-banner" not in html:
+                fail("links", f"pages/{p.name}: missing the stub banner that defers to the main site")
+    print(f"  gate 1  internal links: {total} checked across {len(PAGES)} pages"
+          + (f" + {len(STUBS)} summary stubs" if STUBS else ""))
 
 
 # ---------------------------------------------------------------- gate 2
@@ -150,6 +159,14 @@ def gate_data_schema():
             elif it["confidence"] != "unverified":
                 fail("data", f"{f.name} :: {it['id']}: no source_url but confidence is {it['confidence']!r} - "
                              "an unsourced item must be marked 'unverified'")
+            # Precise version of the gaming guard: a gaming item that places itself near
+            # this trip's base must be unverified, because none has been (OQ-05).
+            if str(it.get("category", "")).lower() == "gaming":
+                where = f"{it.get('area','')} {it.get('address','')}".lower()
+                if ("qawra" in where or "bugibba" in where or "buġibba" in where) \
+                        and it["confidence"] != "unverified":
+                    fail("data", f"{f.name} :: {it['id']}: a gaming venue near Qawra/Bugibba is marked "
+                                 f"{it['confidence']!r}, but none has been verified (OQ-05)")
     print(f"  gate 3  data schema: {len(data_files)} files, {count} items, all {len(REQUIRED_FIELDS)} fields required")
 
 
@@ -178,7 +195,16 @@ CONSISTENCY = [
 # Things that must NOT be asserted as fact anywhere (open questions / unverifiable).
 FORBIDDEN = [
     (r"Popeye Village[^.]*route 2\d\d", "a Qawra->Popeye route was never verified (OQ-10)"),
-    (r"gaming (?:centre|center)[^.]{0,60}(?:Qawra|Bu[gġ]ibba)[^.]*verified", "no gaming centre near Qawra was verified (OQ-05)"),
+    # Route X3 was withdrawn on 20 April 2025 and replaced by route 214. It may only
+    # appear inside an explicit correction (a <del>, or the word withdrawn/replaced
+    # nearby). A bare recommendation of it is a regression - PR #8 shipped one.
+    (r"(?<!<del>)\bRoute X3\b(?![^<]{0,120}(?:withdrawn|replaced|del>))",
+     "route X3 was withdrawn 20 Apr 2025; it may only appear inside an explicit correction"),
+    # NOTE: the gaming-venue guard used to be a prose regex here. Two versions were tried
+    # and both false-fired on this project's own honest sentences - "Gaming centres / LAN
+    # venues near Qawra" and "Gamers Lounge ... has no published session rates and no
+    # verified Qawra branch". Regex cannot tell an assertion from a denial. The guard now
+    # lives in the data gate, where it can read the confidence field instead of guessing.
 ]
 
 
@@ -190,12 +216,25 @@ def gate_page_consistency():
             continue
         if needle not in path.read_text(encoding="utf-8"):
             fail("consistency", f"{page}: expected {needle!r} ({why}) not found")
-    for p in PAGES:
+    # Scan the summary stubs too - the forbidden-pattern gate originally only walked
+    # PAGES, so a regression shipped into pages/ would have passed silently. Found by
+    # deliberately re-injecting the PR #8 X3 claim and watching the gate stay green.
+    scanned = 0
+    for p in PAGES + STUBS:
+        scanned += 1
         text = p.read_text(encoding="utf-8")
         for pattern, why in FORBIDDEN:
             if re.search(pattern, text, re.I):
-                fail("consistency", f"{p.name}: asserts something that is not verified - {why}")
-    print(f"  gate 5  data/page consistency: {len(CONSISTENCY)} assertions, {len(FORBIDDEN)} forbidden patterns")
+                fail("consistency", f"{p.relative_to(ROOT)}: asserts something that is not verified - {why}")
+    # Data files carry prose too (notes, descriptions) - scan them as well.
+    for f in sorted((ROOT / "data").glob("*.json")):
+        scanned += 1
+        text = f.read_text(encoding="utf-8")
+        for pattern, why in FORBIDDEN:
+            if re.search(pattern, text, re.I):
+                fail("consistency", f"data/{f.name}: asserts something that is not verified - {why}")
+    print(f"  gate 5  data/page consistency: {len(CONSISTENCY)} assertions, "
+          f"{len(FORBIDDEN)} forbidden patterns over {scanned} files")
 
 
 def main():

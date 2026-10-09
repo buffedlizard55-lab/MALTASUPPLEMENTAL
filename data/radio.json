@@ -1,0 +1,62 @@
+[
+  {
+    "id": "radio-talksport",
+    "name": "TalkSport (DAB+ Malta)",
+    "category": "Sports Radio",
+    "area": "Malta-wide",
+    "address": "",
+    "hours": "24/7",
+    "price_range": "Free on DAB+",
+    "description": "TalkSport is broadcast in Malta on DAB+ (Labelled as 'Sports Channel' or 'Talk Sport'). It provides live English Premier League (EPL) commentary, which is highly relevant for Kalshi market bettors.",
+    "source_url": "https://radioinmalta.com/en/stations/",
+    "source_type": "review",
+    "date_checked": "2026-10-09",
+    "confidence": "partially verified",
+    "notes": "Matches typically run on Saturday (Oct 17) and Sunday (Oct 18). You need a DAB+ receiver (not standard FM/AM) to pick this up locally over the air. || DOWNGRADED from \"verified\" 9 Oct 2026: the source cited (radioinmalta.com, a third-party directory) is not the multiplex operator. An earlier audit of this project found \"Sports Channel\" on DAB+ 6C = talkSPORT resting on three independent directories/listening reports, while the multiplex operator's own catalogue does not list it. Treat as probable until tuned in on arrival."
+  },
+  {
+    "id": "radio-vibefm",
+    "name": "Vibe FM",
+    "category": "Sports/Music Radio",
+    "area": "Malta-wide",
+    "address": "",
+    "hours": "24/7",
+    "price_range": "Free on 88.7 FM and DAB+",
+    "description": "Official Radio Partner for the Malta Premier League. They broadcast updates and local matches.",
+    "source_url": "https://vibe.mt/maltapremier/",
+    "source_type": "official",
+    "date_checked": "2026-10-09",
+    "confidence": "verified",
+    "notes": "Good for local football, though less likely to be on US prediction markets like Kalshi."
+  },
+  {
+    "id": "radio-sportiva",
+    "name": "Radio Sportiva",
+    "category": "Sports Radio",
+    "area": "Malta-wide",
+    "address": "",
+    "hours": "24/7",
+    "price_range": "Free on DAB+",
+    "description": "Italian sports radio station covering Serie A and global sports.",
+    "source_url": "https://radioinmalta.com/en/stations/",
+    "source_type": "review",
+    "date_checked": "2026-10-09",
+    "confidence": "partially verified",
+    "notes": "Broadcast is in Italian. Available via DAB+. || DOWNGRADED from \"verified\" 9 Oct 2026: cited source is a third-party station directory, not the broadcaster or the multiplex operator."
+  },
+  {
+    "id": "radio-bbcws",
+    "name": "BBC World Service via Campus FM",
+    "category": "News/Sports",
+    "area": "Malta-wide",
+    "address": "",
+    "hours": "Selected hours",
+    "price_range": "Free on 103.7 FM / DAB+",
+    "description": "Campus FM simulcasts BBC World Service, which often carries BBC Sport (Sportsworld) on weekends for live EPL updates.",
+    "source_url": "https://radioinmalta.com/en/stations/",
+    "source_type": "official",
+    "date_checked": "2026-10-09",
+    "confidence": "partially verified",
+    "notes": "Live match commentary availability depends on the exact BBC World Service schedule for the weekend of Oct 17-18, 2026."
+  }
+]
