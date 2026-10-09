@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Planner - Malta Trip Planner</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+        .totals {
+            font-weight: bold;
+            background-color: #f1f1f1;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Expense Planner</h1>
+        <p>Template to track costs for the Thunderpick CS2 Finals trip</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Executive Summary</a></li>
+            <li><a href="transport.html">Transport</a></li>
+            <li><a href="food.html">Food & Cafes</a></li>
+            <li><a href="activities.html">Activities & Landmarks</a></li>
+            <li><a href="everyday.html">Everyday Life</a></li>
+            <li><a href="radio.html">Radio Sports</a></li>
+            <li><a href="expenses.html">Expense Planner</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>Use this template to plan your out-of-pocket expenses once your exact itinerary is finalized.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Expense Item</th>
+                    <th>Category</th>
+                    <th>Estimated Cost</th>
+                    <th>Actual Cost (€)</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody id="expense-body">
+                <!-- Data will be loaded via JS, but we hardcode for quick view -->
+                <tr>
+                    <td>Round Trip Flights (US to Malta)</td>
+                    <td>Travel</td>
+                    <td>$1000 - $1500</td>
+                    <td><input type="number" placeholder="0"></td>
+                    <td>Cost depends on departure city. (Prize may cover this)</td>
+                </tr>
+                <tr>
+                    <td>AX ODYCY Hotel (6 nights)</td>
+                    <td>Accommodation</td>
+                    <td>Covered by Prize</td>
+                    <td><input type="number" placeholder="0" value="0"></td>
+                    <td>Deluxe Sea View room.</td>
+                </tr>
+                <tr>
+                    <td>Airport Transfers</td>
+                    <td>Transport</td>
+                    <td>€40 - €50</td>
+                    <td><input type="number" placeholder="0"></td>
+                    <td>Round trip via eCabs or Bolt.</td>
+                </tr>
+                <tr>
+                    <td>Daily Transport (Hotel to Arena)</td>
+                    <td>Transport</td>
+                    <td>€100 - €120</td>
+                    <td><input type="number" placeholder="0"></td>
+                    <td>Round trip ride share for event days.</td>
+                </tr>
+                <tr>
+                    <td>Food & Dining</td>
+                    <td>Meals</td>
+                    <td>€300 - €450</td>
+                    <td><input type="number" placeholder="0"></td>
+                    <td>Approx €50-€75 per day.</td>
+                </tr>
+                <tr>
+                    <td>Activities & Landmarks</td>
+                    <td>Entertainment</td>
+                    <td>€50 - €100</td>
+                    <td><input type="number" placeholder="0"></td>
+                    <td>Museums, gaming center hours, sightseeing.</td>
+                </tr>
+                <tr>
+                    <td>Miscellaneous (eSIM, Tips)</td>
+                    <td>Misc</td>
+                    <td>€30 - €50</td>
+                    <td><input type="number" placeholder="0"></td>
+                    <td>Data plans, incidentals.</td>
+                </tr>
+                <tr class="totals">
+                    <td colspan="3" style="text-align: right;">Total Out of Pocket:</td>
+                    <td id="total-cost">€0.00</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const inputs = document.querySelectorAll('input[type="number"]');
+        const totalDisplay = document.getElementById('total-cost');
+
+        function calculateTotal() {
+            let total = 0;
+            inputs.forEach(input => {
+                total += parseFloat(input.value) || 0;
+            });
+            totalDisplay.textContent = '€' + total.toFixed(2);
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('input', calculateTotal);
+        });
+    </script>
+</body>
+</html>
