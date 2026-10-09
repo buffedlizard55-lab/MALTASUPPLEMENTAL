@@ -12,11 +12,12 @@
   <div class="header-inner">
     <a class="brand" href="index.html">
       <span class="flag-dot" aria-hidden="true"></span>
-      <span>MALTASUPPLEMENTAL<small>Thunderpick WC 2026 · Malta · Oct 13–20, 2026</small></span>
+      <span>MALTASUPPLEMENTAL<small>Thunderpick WC 2026 · Malta · Oct 13–19, 2026</small></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav">Menu</button>
     <nav class="main-nav" id="mainnav">
       <a href="index.html">Overview</a>
+      <a href="qawra.html">Qawra Base</a>
       <a href="event.html">The Event</a>
       <a href="restaurants.html">Food &amp; Drink</a>
       <a href="landmarks.html">Landmarks</a>
@@ -37,7 +38,7 @@
   <section class="hero">
     <h1>Live sport on the radio in Malta — and the Kalshi question</h1>
     <p>Everything below answers one question: <strong>which live sports broadcasts can I actually hear over the air
-    (AM/FM/DAB+) in Malta during 13–20 October 2026, and which of those events carry Kalshi markets?</strong>
+    (AM/FM/DAB+) in Malta during 13–19 October 2026, and which of those events carry Kalshi markets?</strong>
     Frequencies come from the DAB+ operator and receiver observations from 13 January 2026; the fixture schedule is
     the official leagues' own; anything that cannot be verified is flagged instead of assumed.</p>
     <div class="callout callout-key" style="margin-bottom:0">
@@ -49,6 +50,56 @@
         <li><strong>Evening session, 24 Sep (third check):</strong> the BBC Sportsworld page was read a third time — both in-window episodes still listed (rendering 09:06/10:06 in a UTC−4 view = 13:06/14:06 GMT = 15:06/16:06 Malta, identical to the earlier reads); the Premier League's official October/November fixture-amendments page was re-read and the Matchweek 7 table below matches it exactly (including the Europa-League footnote moving Bournemouth's and Palace's fixtures to Sunday); and Kalshi's help article was re-read (unchanged since its 20 Mar 2026 update).</li>
       </ol>
     </div>
+  </section>
+
+  <section>
+    <h2><span class="sec-num">0</span>Trip-weekend radio playbook — re-verified 9 Oct 2026</h2>
+    <p>The Premier League Matchweek 8 slate for <strong>17–19 Oct 2026</strong>, converted to <strong>Malta time (CEST = UK+1)</strong>,
+    from the Premier League's official fixture-amendments page. How it maps to radio you can actually hear in Malta:</p>
+    <div class="table-wrap"><table id="epl-mw8">
+      <thead><tr><th>Malta time</th><th>Match (MW8)</th><th>Radio in Malta</th></tr></thead>
+      <tbody>
+        <tr><td rowspan="4"><strong>Sat 17 Oct</strong></td><td>13:30 Everton v Chelsea (TNT)</td><td rowspan="4">One match gets full commentary on <strong>BBC World Service Sportsworld</strong> (from 15:06 Malta, pattern) — which one is the BBC's weekly pick; <strong>talkSPORT GameDay</strong> has exclusive on its pick + goal service on the rest. Both are on <strong>DAB+</strong>.</td></tr>
+        <tr><td>16:00 Brentford v Liverpool</td></tr>
+        <tr><td>16:00 Fulham v Hull</td></tr>
+        <tr><td>16:00 Man City v Ipswich</td></tr>
+        <tr><td><strong>Sat 17 Oct</strong></td><td>18:30 Newcastle v Aston Villa (Sky)</td><td>Often the big-television pick; BBC WM has it "UK only" online — in Malta expect Sportsworld/talkSPORT coverage or TV</td></tr>
+        <tr><td rowspan="4"><strong>Sun 18 Oct</strong></td><td>15:00 Bournemouth v Sunderland</td><td rowspan="4"><strong>Sportsworld</strong> from 16:06 Malta (pattern) carries the Sunday window — usually Nott'm Forest v Arsenal (17:30) or Leeds v Man Utd. talkSPORT Sunday coverage too.</td></tr>
+        <tr><td>15:00 Brighton v C Palace</td></tr>
+        <tr><td>15:00 Leeds v Man Utd</td></tr>
+        <tr><td>17:30 Nott'm Forest v Arsenal</td></tr>
+        <tr><td><strong>Mon 19 Oct</strong></td><td>21:00 Spurs v Coventry (Sky)</td><td>talkSPORT "Kick Off" usually has Monday-night exclusive — but this is checkout day/evening</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small"><span class="badge badge-official">Official</span> fixtures:
+    <a href="https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november">premierleague.com amendments (17 Aug 2026)</a>.
+    <span class="badge badge-flag">Flag</span> which match carries full radio commentary is published midweek; the
+    exact Sportsworld hours for 17–18 Oct should be re-confirmed on the BBC schedule T-7 (pattern verified this
+    week: Sat 10 Oct from 15:06 Malta, Sun 11 Oct from 16:06 Malta, per the published BBC World Service listing).</p>
+
+    <h3>The 14 data-backed records (from <code>data/radio.json</code>)</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Ref</th><th>What</th><th>Verified fact</th></tr></thead>
+      <tbody>
+        <tr id="dab-malta-6a"><td class="mono">dab-malta-6a</td><td><strong>Malta DAB+ block 6A</strong> (181.936 MHz)</td><td>National multiplex from Ġargħur + Żebbuġ (Gozo) — carries BBC WS, talkSPORT, Radju Malta…</td></tr>
+        <tr id="bbc-world-service-dab"><td class="mono">bbc-world-service-dab</td><td><strong>BBC World Service on Malta DAB+</strong></td><td>Station C001 on 6A — the Sportsworld carrier</td></tr>
+        <tr id="talksport-dab"><td class="mono">talksport-dab</td><td><strong>talkSPORT on Malta DAB+</strong></td><td>Listed as "Sports Channel" — exclusive PL GameDay commentary</td></tr>
+        <tr id="sportsworld"><td class="mono">sportsworld</td><td><strong>Sportsworld (BBC WS)</strong></td><td>Live PL at weekends; this week Sat from 15:06 &amp; Sun from 16:06 Malta — same window expected 17–18 Oct</td></tr>
+        <tr id="talksport-gameday"><td class="mono">talksport-gameday</td><td><strong>talkSPORT GameDay</strong></td><td>Saturday pattern: GameDay Exclusive ~13:30 Malta, Live from 15:30, Phone-In 18:30, Kick Off evening</td></tr>
+        <tr id="bbc-5live-sounds"><td class="mono">bbc-5live-sounds</td><td><strong>BBC Radio 5 Live / Sounds</strong></td><td>209 PL commentaries/season — but "UK only" geo-flags on live streams; not on Malta DAB+</td></tr>
+        <tr id="radio-sportiva"><td class="mono">radio-sportiva</td><td><strong>Radio Sportiva / Rai Radio 1 (DAB+)</strong></td><td>Italian-language sport on the Malta multiplex</td></tr>
+        <tr id="radju-malta-999"><td class="mono">radju-malta-999</td><td><strong>Radju Malta 93.7 FM / 999 AM</strong></td><td>The AM dial's only station; local sport flavour</td></tr>
+        <tr id="campus-fm"><td class="mono">campus-fm</td><td><strong>Campus FM 103.7</strong></td><td>Simulcasts BBC WS at times (directory claim)</td></tr>
+        <tr id="nfl-october"><td class="mono">nfl-october</td><td><strong>NFL Week 6/7</strong></td><td>talkSPORT 2 pattern (SA–AUS cricket + NFL London Live + NFL Live last week); 18–19 Oct games run Sun/Mon Malta nights</td></tr>
+        <tr id="uefa-midweek"><td class="mono">uefa-midweek</td><td><strong>UCL 13–14 Oct / UEL 15 Oct</strong></td><td>Midweek UEFA radio in Malta is thin — plan TV/stream (Radio Sportiva/Rai 1 for Italian clubs)</td></tr>
+        <tr id="kalshi-malta"><td class="mono">kalshi-malta</td><td><strong>Kalshi from Malta</strong></td><td>Malta NOT restricted (Member Agreement 21 Sep 2026 lists 55 restricted jurisdictions — Malta absent); UK/Italy/France transit stops ARE restricted</td></tr>
+        <tr id="dab-radio-what-to-bring"><td class="mono">dab-radio-what-to-bring</td><td><strong>What to bring</strong></td><td>US AM/FM ≠ DAB+ — bring/buy a DAB+ portable (€25–60 locally) or use streams as fallback</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small">Note: <span class="mono">epl-mw8</span> is the fixture table above. Station carriage:
+    <a href="https://radioinmalta.com/en/stations/">radioinmalta.com</a> ·
+    <a href="https://radioinmalta.com/en/dab/6a.php">DAB+ 6A list</a> <span class="badge badge-community">Community directory</span>
+    (cross-checked vs Wikipedia's Malta radio list and Radio Malta's own frequencies).</p>
   </section>
 
   <section>
@@ -145,7 +196,7 @@
         <tr>
           <td><strong>Radju Malta / PBS</strong></td>
           <td>93.7 FM · 999 kHz AM · DAB+ 6A (C01C)</td>
-          <td>Malta's public broadcaster — current affairs, news, local sport; national-team fixtures get heavy coverage when they happen. (Verified: Malta's next home games are UEFA Nations League D ties vs Gibraltar on Thu 1 Oct (20:45) and vs Andorra on Sun 4 Oct (18:00), both at the National Stadium, Ta' Qali — <strong>nothing falls inside 13–20 Oct</strong>, so no national-team commentary is expected on Radju Malta that week.)</td>
+          <td>Malta's public broadcaster — current affairs, news, local sport; national-team fixtures get heavy coverage when they happen. (Verified: Malta's next home games are UEFA Nations League D ties vs Gibraltar on Thu 1 Oct (20:45) and vs Andorra on Sun 4 Oct (18:00), both at the National Stadium, Ta' Qali — <strong>nothing falls inside 13–19 Oct</strong>, so no national-team commentary is expected on Radju Malta that week.)</td>
           <td><span class="badge badge-verified">Frequencies verified</span>; sports-role description from the directory (“Current Affairs”).</td>
         </tr>
         <tr>
@@ -175,7 +226,7 @@
   </section>
 
   <section>
-    <h2><span class="sec-num">4</span>The fixture schedule inside your window (13–20 Oct 2026)</h2>
+    <h2><span class="sec-num">4</span>The fixture schedule inside your window (13–19 Oct 2026)</h2>
     <p class="small">All times converted to <strong>Malta local time (CEST, UTC+2)</strong>. UK kick-offs are BST (UTC+1) — add one hour.
     <span class="badge badge-flag">Flag</span> TV broadcast selections can still move individual kick-offs; re-check the league's official schedule a week before each matchday.</p>
 

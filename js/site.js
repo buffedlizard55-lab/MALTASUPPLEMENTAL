@@ -46,17 +46,17 @@
   }
 
   function render() {
-    var nights = num(ids.nights, 7);
+    var nights = num(ids.nights, 6);
     var days = nights + 1;
 
     var airfare = num(ids.airfareCovered, 0);      // $ you pay (0 if covered)
     var hotel = num(ids.hotelCovered, 0);          // $ you pay (0 if covered)
     var food = num(ids.foodPerDay, 30) * days;     // $
-    var transport = num(ids.transport, 45);        // $ (matches input default)
+    var transport = num(ids.transport, 55);        // $ (matches input default)
     var transfers = num(ids.transfers, 45);        // $ (matches input default)
     var activities = num(ids.activities, 80);      // $
     var sim = num(ids.sim, 15);                    // $
-    var ecoTax = num(ids.ecoTax, 12);              // $ (€1.50/night x 7 nights x1.145 = ~$12; €22.50 visit cap unreachable in 7 nights)
+    var ecoTax = num(ids.ecoTax, 10);              // $ (€1.50/night x 6 nights x 1.145 ≈ $10)
     var buffer = num(ids.buffer, 150);             // $
     var extras = num(ids.extras, 0);               // $ fixed extras: bag fees, insurance, passport renewal, DAB+ radio
 
