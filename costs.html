@@ -18,7 +18,9 @@
     <nav class="main-nav" id="mainnav">
       <a href="index.html">Overview</a>
       <a href="hotel.html">Hotel &amp; Base</a>
+      <a href="itinerary.html">Itinerary</a>
       <a href="event.html">The Event</a>
+      <a href="qawra.html">Your Base</a>
       <a href="restaurants.html">Food &amp; Drink</a>
       <a href="landmarks.html">Landmarks</a>
       <a href="activities.html">Activities &amp; Gaming</a>
@@ -35,23 +37,13 @@
 
 <main class="page page-narrow">
 
-  <div class="callout callout-warn">
-    <span class="callout-title">Night count warning — this page is built for 7 nights; the booking is 6</span>
-    The confirmed hotel booking is <strong>AX Odycy, Qawra, 13–19 October 2026 — six nights</strong>.
-    The figures and the calculator default below were built for the giveaway's seven-night
-    <strong>13–20 October</strong> itinerary. Anything here that scales per night will be one night high
-    until the date conflict is resolved. Transport is the exception and is now firmer than before:
-    <strong>€32 committed for the week</strong> (€25 Explore Adult 7-Day card + two €3.50 TD1 airport hops),
-    with every event-day round trip to Ta' Qali on route 186 covered by the card. See
-    <a href="getting-around.html#eventdays">event-day transport</a>. Tracked as OQ-01.
-  </div>
-
-
   <section class="hero">
-    <h1>Costs &amp; Budget — what the prize covers, what you pay, and the tax nobody expects</h1>
-    <p>Structured so that <strong>when Hotspawn sends the actual itinerary, filling this in takes two minutes</strong>:
-    the calculator below pre-loads every excluded item from the giveaway Terms, and you only type the confirmed numbers.
-    All prices are mid-October 2026 estimates unless marked official; EUR/USD ≈ 1.14 (close of 22 Sep 2026).</p>
+    <h1>Costs &amp; Budget — what's covered, what you pay, and the tax nobody expects</h1>
+    <p>Structured so that <strong>when the confirmed itinerary arrives, filling this in takes two minutes</strong>:
+    the data-driven expense planner in § 5b (mirroring <span class="mono">data/expenses.json</span>) has an
+    <strong>Actual</strong> column per line, and the calculator in § 5 pre-loads every excluded item. All prices are
+    mid-October 2026 estimates unless marked official; EUR/USD ≈ 1.14 (close of 22 Sep 2026). Trip confirmed:
+    <strong>AX ODYCY, Qawra — 13–19 Oct 2026 (six nights, 7 days)</strong>.</p>
   </section>
 
   <section>
@@ -62,7 +54,7 @@
         <ul style="margin:6px 0 0">
           <li>One ticket to the TWC 2026 Finals at BLAST Arena Studios</li>
           <li>Return flights to Malta (SFO↔MLA in your case)</li>
-          <li>Accommodation in Malta for the prize stay (13–20 Oct window)</li>
+          <li>Accommodation in Malta for the prize stay (the Terms said 13–20 Oct; your confirmed booking is <strong>AX ODYCY, Qawra, 13–19 Oct</strong> — 6 nights)</li>
           <li>Attendance opportunity for all five event days</li>
         </ul>
       </div>
@@ -82,28 +74,29 @@
       </div>
     </div>
     <p class="small"><span class="badge badge-verified">Verified 23 Sep 2026</span> read directly from the <a href="https://community.hotspawn.com/giveaways/thunderpick-giveaway/terms">official Terms</a>.
-    Practical note: “accommodation … subject to availability” means the hotel isn't specified yet — the calculator lets you set it to $0 (covered) or a number (if they shift costs).</p>
+    Practical note: “accommodation … subject to availability” — your confirmed hotel is AX ODYCY, Qawra (Deluxe sea view); the calculator lets you set the hotel line to $0 (covered) or a number (if costs shift).</p>
   </section>
 
   <section id="food">
     <h2><span class="sec-num">2</span>Line-by-line cost model (if the prize is honoured)</h2>
-    <p class="small">Assumes the 13–20 Oct itinerary (7 nights, 8 days), SFO departure, food at your <strong>$30/day</strong> estimate,
-    one traveller. Airfare &amp; hotel = $0 because the prize pays them.</p>
+    <p class="small">Assumes the confirmed <strong>13–19 Oct 2026</strong> itinerary (6 nights, 7 days), AX ODYCY Qawra base, SFO departure,
+    food at your <strong>$30/day</strong> estimate, one traveller. Airfare &amp; hotel = $0 because the prize pays them.
+    <span class="badge badge-flag">Updated 9 Oct 2026 from the earlier 13–20 Oct / 7-night model (food 8→7 days; eco-tax €10.50→€9.00; bands recomputed).</span></p>
     <div class="table-wrap"><table>
       <thead><tr><th>Item</th><th class="num">Low</th><th class="num">Mid</th><th class="num">High</th><th>Basis</th></tr></thead>
       <tbody>
         <tr><td>Flights SFO↔MLA (covered)</td><td class="num">$0</td><td class="num">$0</td><td class="num">$0</td><td>Prize §5. (Reference: real market $611–963 RT mid-Oct — that's the FMV you'll be taxed on, see §3.)</td></tr>
-        <tr><td>Hotel 7 nights (covered)</td><td class="num">$0</td><td class="num">$0</td><td class="num">$0</td><td>Prize §5. (Reference: Sliema/St Julian's mid-Oct ~€100–180/night — estimate.)</td></tr>
-        <tr><td id="food-row">Food @ $30/day × 8 days</td><td class="num">$240</td><td class="num">$240</td><td class="num">$300</td><td>Your stated $30/day; high band if one or two splurge dinners slip in (see <a href="restaurants.html">reality check</a>).</td></tr>
-        <tr><td>Local transport (week)</td><td class="num">$35</td><td class="num">$45</td><td class="num">$70</td><td>Explore 7-Day card €25 + Airport Direct €3×2 + 1–2 rideshare runs (official fares, <a href="getting-around.html">source page</a>).</td></tr>
-        <tr><td>Airport transfers (if you skip the bus)</td><td class="num">$0</td><td class="num">$45</td><td class="num">$60</td><td>White-taxi kiosk ~€20–27 each way incl. admin fee, or rideshare €20–35.</td></tr>
-        <tr><td>Entry fees / activities</td><td class="num">$30</td><td class="num">$80</td><td class="num">$150</td><td><strong>Official prices (24 Sep 2026):</strong> St John's €15 · Fort St Elmo €10 · Grand Master's Palace €12 · Ħaġar Qim &amp; Mnajdra €10 · Tarxien €6 · St Paul's Catacombs €6 · Hypogeum €35 (€50 last-minute) · Fort St Angelo €10 · Inquisitor's Palace €6 · Ġgantija €10 · Skorba &amp; Ta' Ħaġrat combo €6 (last four priced from the official pages in the evening pass) · harbour ferry €3/€5 · Gozo €4.65–15. Typical mix €45–80 (≈ $50–90); with Hypogeum + Gozo €80–115 (≈ $90–130). Upper Barrakka, Mdina lanes, Dingli are free.</td></tr>
-        <tr><td>Local SIM / eSIM</td><td class="num">$10</td><td class="num">$15</td><td class="num">$25</td><td>Malta tourist data plans / eSIM for the week — estimate.</td></tr>
-        <tr><td>Malta eco-tax</td><td class="num">$0</td><td class="num">$12</td><td class="num">$12</td><td><strong>Official:</strong> €1.50/night per person 18+, cap €22.50/visit, effective 1 Jul 2026 (MTA — verified against the Authority's own guidelines PDF). 7 nights × €1.50 = €10.50 ≈ $12 — the visit cap cannot be reached inside 7 nights. Often invoiced separately by the hotel; $0 if the prize provider absorbs it.</td></tr>
-        <tr><td>Incidentals / buffer</td><td class="num">$100</td><td class="num">$150</td><td class="num">$250</td><td>Shopping, tips, one extra night meal, DAB+ radio if you didn't buy one (€50–100 street price — estimate).</td></tr>
-        <tr><td><strong>Out-of-pocket subtotal (before tax)</strong></td><td class="num"><strong>$415</strong></td><td class="num"><strong>$587</strong></td><td class="num"><strong>$867</strong></td><td>Mid ≈ the “typical traveller” case.</td></tr>
+        <tr><td>Hotel — AX ODYCY, Qawra, 6 nights (covered)</td><td class="num">$0</td><td class="num">$0</td><td class="num">$0</td><td>Prize §5. (Reference: Qawra mid-Oct market ≈ €90–160/night — estimate; your confirmed rate is on the booking.)</td></tr>
+        <tr><td id="food-row">Food @ $30/day × 7 days</td><td class="num">$180</td><td class="num">$210</td><td class="num">$300</td><td>Your stated $30/day; high band if one or two splurge dinners slip in (see <a href="restaurants.html">reality check</a>).</td></tr>
+        <tr><td>Local transport (week)</td><td class="num">$35</td><td class="num">$45</td><td class="num">$70</td><td>Explore 7-Day card €25 + Airport Direct hops + 1–2 rideshare runs (official fares, <a href="getting-around.html">source page</a>).</td></tr>
+        <tr><td>Airport transfers (if you skip the bus)</td><td class="num">$0</td><td class="num">$45</td><td class="num">$60</td><td>White-taxi kiosk ~€25–28 to Qawra each way incl. admin fee, or rideshare ≈ €15–30.</td></tr>
+        <tr><td>Entry fees / activities</td><td class="num">$50</td><td class="num">$90</td><td class="num">$150</td><td><strong>Official prices:</strong> Malta National Aquarium €16.90 online (9 Oct 2026) · St John's €15 · Fort St Elmo €10 · Grand Master's Palace €12 · Ħaġar Qim &amp; Mnajdra €10 · Tarxien €6 · St Paul's Catacombs €6 · Hypogeum €35 (€50 last-minute) · Fort St Angelo €10 · Inquisitor's Palace €6 · Ġgantija €10 · Skorba &amp; Ta' Ħaġrat combo €6 · HM Multisite Pass €60 (incl. aquarium) · harbour ferry €3/€5 · Gozo €4.65–15. Typical mix €45–80 (≈ $50–90); with Hypogeum + Gozo €80–115 (≈ $90–130). Upper Barrakka, Mdina lanes, Dingli, Qawra beaches are free.</td></tr>
+        <tr><td>Local SIM / eSIM</td><td class="num">$5</td><td class="num">$15</td><td class="num">$25</td><td>Local prepaid ≈ €10–16 or travel eSIM from $4.50 (2026 guide bands — <a href="everyday.html">everyday § 3b</a>).</td></tr>
+        <tr><td>Malta eco-tax</td><td class="num">$0</td><td class="num">$11</td><td class="num">$11</td><td><strong>Official:</strong> €1.50/night per person 18+, cap €22.50/visit, effective 1 Jul 2026 (MTA — verified against the Authority's own guidelines PDF). 6 nights × €1.50 = <strong>€9.00 ≈ $10</strong> — the visit cap cannot be reached inside 6 nights. Often invoiced separately by the hotel; $0 if the prize provider absorbs it.</td></tr>
+        <tr><td>Incidentals / buffer</td><td class="num">$100</td><td class="num">$150</td><td class="num">$250</td><td>Shopping, tips, one extra night meal, DAB+ radio if you didn't buy one (€25–60 — estimate).</td></tr>
+        <tr><td><strong>Out-of-pocket subtotal (before tax)</strong></td><td class="num"><strong>$370</strong></td><td class="num"><strong>$566</strong></td><td class="num"><strong>$866</strong></td><td>Mid ≈ the “typical traveller” case. (Was $415/$587/$867 on the 7-night model.)</td></tr>
         <tr><td>US federal + CA tax on prize (est.)</td><td class="num">$420</td><td class="num">$567</td><td class="num">$780</td><td>See §3 — FMV band $1,700–2,900 at ≈ 25–27%; mid = the calculator default ($2,100 × 27%). This is the number people miss. File it against 2026 income.</td></tr>
-        <tr><td><strong>Total expected cost to you</strong></td><td class="num"><strong>$835</strong></td><td class="num"><strong>$1,154</strong></td><td class="num"><strong>$1,647</strong></td><td>Compare: the main dossier's independently built model lands at ~$1,330 mid-case — same order of magnitude, different assumptions. Both are estimates.</td></tr>
+        <tr><td><strong>Total expected cost to you</strong></td><td class="num"><strong>$790</strong></td><td class="num"><strong>$1,133</strong></td><td class="num"><strong>$1,646</strong></td><td>Compare: the main dossier's independently built model lands at ~$1,330 mid-case — same order of magnitude, different assumptions. Both are estimates.</td></tr>
       </tbody>
     </table></div>
   </section>
@@ -117,7 +110,7 @@
         <tr><td>Layover meals &amp; airport time</td><td>$20–60 <span class="badge badge-estimate">Estimate</span></td><td>No nonstop SFO–MLA exists; expect one or two connections each way (Frankfurt, Dublin, Paris, Copenhagen, Zurich, Rome are the usual). Two airport meals each direction adds up.</td></tr>
         <tr><td>Foreign-transaction &amp; ATM fees</td><td>1–3% of spend + $3–6 per withdrawal <span class="badge badge-estimate">Estimate</span></td><td>The State Department notes Maltese ATMs frequently charge a fee and Amex is not widely accepted. Bring a no-foreign-fee Visa/Mastercard; decline “pay in USD” dynamic-currency offers at terminals.</td></tr>
         <tr><td>Hotel incidentals hold</td><td>€50–150 hold <span class="badge badge-estimate">Estimate</span></td><td>Even with the room prepaid by the prize, the front desk typically pre-authorises a card for incidentals/minibar/eco-tax — it is released after check-out but ties up your limit for the week.</td></tr>
-        <tr><td>Eco-contribution</td><td>€10.50 (≈ $12) for 7 nights</td><td><strong>Official:</strong> €1.50/night per person 18+, capped at €22.50 per stay — often collected separately at the desk, so it may not be covered by the Promoter's prepayment.</td></tr>
+        <tr><td>Eco-contribution</td><td>€9.00 (≈ $10) for 6 nights</td><td><strong>Official:</strong> €1.50/night per person 18+, capped at €22.50 per stay — often collected separately at the desk, so it may not be covered by the Promoter's prepayment.</td></tr>
         <tr><td>Passport renewal / expedite</td><td>$130 adult book renewal (+$60 expedited service; +$22.05 1–3-day delivery) <span class="badge badge-flag">Flag — State Dept fee table (2026) as reproduced by an acceptance facility; the travel.state.gov fees URL returned 404 at check time</span></td><td>Malta wants 3 months' validity beyond your stay and a passport issued within the last 10 years. If yours is marginal, this is a real pre-trip cost the Terms exclude.</td></tr>
         <tr><td>ETIAS</td><td>€0 now; €20 when it launches</td><td>Not in operation for October 2026 (EU official site). Budget nothing — but do not pay any third-party “ETIAS agent”.</td></tr>
         <tr><td>Travel &amp; medical insurance</td><td>$40–120 for the week <span class="badge badge-estimate">Estimate</span></td><td>Terms §5 exclude insurance; the State Department says most US health plans (incl. Medicare) do not cover you abroad and private clinics expect payment up front. Consider medical-evacuation cover.</td></tr>
@@ -134,7 +127,7 @@
     <ul>
       <li><strong>A won trip is taxable income.</strong> IRS Publication 525: prizes and awards from a drawing or contest must be included in income at <strong>fair market value</strong> (goods/services — for you: flight + hotel + ticket). Report on Form 1040, Schedule 1 line 8i. Its other key line: <em>“If you refuse to accept a prize, don't include its value in your income.”</em></li>
       <li><strong>California concurs:</strong> the FTB's gambling/income page exempts only <em>California Lottery</em> winnings; everything else flows through federal AGI onto your CA return. Expect combined federal + CA at roughly your marginal rate on the FMV (≈ 24–32% for most earners — <span class="badge badge-estimate">Estimate</span>; a CPA should confirm the exact filing treatment of a non-cash travel prize).</li>
-      <li><strong>FMV inputs:</strong> airfare (market $611–963 RT, mid-Oct sampling) + hotel (~€100–180/night × 7) + ticket value → a plausible FMV band of roughly <strong>$1,700–2,900</strong> → at ~25–27% combined, tax ≈ <strong>$420–780</strong> (the §2 band; mid = $2,100 × 27% ≈ $567); at the 32% end of the range it reaches ≈ $930. The calculator uses a default FMV of $2,100 and a 27% rate — both adjustable.</li>
+      <li><strong>FMV inputs:</strong> airfare (market $611–963 RT, mid-Oct sampling) + hotel (~€90–160/night × 6 nights at AX ODYCY) + ticket value → a plausible FMV band of roughly <strong>$1,700–2,900</strong> → at ~25–27% combined, tax ≈ <strong>$420–780</strong> (the §2 band; mid = $2,100 × 27% ≈ $567); at the 32% end of the range it reaches ≈ $930. The calculator uses a default FMV of $2,100 and a 27% rate — both adjustable.</li>
       <li><strong>Paperwork:</strong> for prizes paid in 2026 the 1099-MISC information-reporting threshold is <strong>$2,000</strong> (IRS 2026 instructions) — that's sponsor reporting, not an exemption, and a foreign promoter may not issue one to you at all. Keep the itinerary, any prize letter, and booking confirmations; a CPA is cheap insurance for the filing question.</li>
     </ul>
     <p class="small"><span class="badge badge-official">Official</span> <a href="https://www.irs.gov/publications/p525">IRS Pub 525 (Taxable and Nontaxable Income)</a> <span class="badge badge-verified">Verified 24 Sep 2026 — “Prizes and awards in goods or services must be included in your income at their FMV”; Schedule 1 line 8i; refused prize not income</span> ·
@@ -149,10 +142,10 @@
     <div class="table-wrap"><table>
       <thead><tr><th>Scenario</th><th>Cost to you</th><th>Notes</th></tr></thead>
       <tbody>
-        <tr><td><strong>Prize honoured, travel as planned</strong></td><td><strong>~$835–1,647</strong> (mid ~$1,154)</td><td>§2 model. This is the case to budget for — but only after the written waiver (§5 of this site's story: <a href="hotspawn.html">Hotspawn &amp; Prize</a>).</td></tr>
+        <tr><td><strong>Prize honoured, travel as planned</strong></td><td><strong>~$790–1,646</strong> (mid ~$1,133)</td><td>§2 model (6-night update, 9 Oct 2026). This is the case to budget for — but only after the written waiver (§5 of this site's story: <a href="hotspawn.html">Hotspawn &amp; Prize</a>).</td></tr>
         <tr><td><strong>Prize withdrawn before you spend anything</strong></td><td>$0 (beyond any time you spend)</td><td>Terms let the Promoter redraw if a winner is “found to be ineligible” — the eligibility fight is over paper, not money, if you stay disciplined.</td></tr>
         <tr><td><strong>You travel anyway after the prize falls through</strong></td><td><strong>~$2,500–4,700</strong> (estimate)</td><td>You'd pay the market airfare ($611–963) + a real hotel (~$700–1,260) + everything in §2 + a self-purchased ticket. This is the exposure number: <strong>do not book anything yourself until the prize is confirmed in writing.</strong></td></tr>
-        <tr><td><strong>Cross-check vs the parallel MALTA dossier</strong></td><td>MALTA site: out-of-pocket mid <strong>$1,332</strong> (range $740–2,760) + est. tax $489; worst case $4,717 <span class="badge badge-flag">dossier offline since 24 Sep 2026 — figures from its archived read</span></td><td>Our mid (~$1,154 incl. tax) sits below the other dossier's because it assumes the $30/day food cap and the €25 bus card rather than taxis/rideshare; the worst-case bands ($4,700 vs $4,717) agree. Neither figure is a quote — use the calculator once the itinerary lands. <span class="badge badge-flag">Flag — two independent estimates, both shown</span></td></tr>
+        <tr><td><strong>Cross-check vs the parallel MALTA dossier</strong></td><td>MALTA site: out-of-pocket mid <strong>$1,332</strong> (range $740–2,760) + est. tax $489; worst case $4,717 <span class="badge badge-flag">dossier offline since 24 Sep 2026 — figures from its archived read</span></td><td>Our mid (~$1,123 incl. tax, 6-night model) sits below the other dossier's because it assumes the $30/day food cap and the €25 bus card rather than taxis/rideshare; the worst-case bands ($4,700 vs $4,717) agree. Neither figure is a quote — use the calculator once the itinerary lands. <span class="badge badge-flag">Flag — two independent estimates, both shown</span></td></tr>
         <tr><td><strong>Prize honoured, you decline travel</strong></td><td>$0 tax (IRS Pub 525: declining a prize is not income)</td><td>Non-transferable, no cash — declining costs you the trip; it's the only clean way to zero out both exposure and tax.</td></tr>
       </tbody>
     </table></div>
@@ -160,26 +153,57 @@
 
   <section>
     <h2><span class="sec-num">5</span>The quick planner — fills in in 2 minutes once the itinerary lands</h2>
-    <p class="small">Defaults: prize covers flights &amp; hotel (set to 0), food $30/day, 7 nights. When Hotspawn sends the
-    booking, type the real numbers and this page becomes your budget. Pure browser — no data leaves your device.</p>
+    <p class="small">Defaults: prize covers flights &amp; hotel (set to 0), food $30/day, 6 nights (13–19 Oct). When the confirmed
+    booking arrives, type the real numbers and this page becomes your budget. Pure browser — no data leaves your device.</p>
     <div class="calc" id="budget-calc">
       <div class="calc-grid">
-        <div><label for="c_nights">Nights (default 7)</label><input type="number" id="c_nights" value="7" min="0" max="30"></div>
+        <div><label for="c_nights">Nights (default 6)</label><input type="number" id="c_nights" value="6" min="0" max="30"></div>
         <div><label for="c_airfare">Flights you pay, $ (0 = covered)</label><input type="number" id="c_airfare" value="0" min="0"></div>
         <div><label for="c_hotel">Hotel you pay, $ (0 = covered)</label><input type="number" id="c_hotel" value="0" min="0"></div>
         <div><label for="c_food">Food per day, $</label><input type="number" id="c_food" value="30" min="0"></div>
         <div><label for="c_transport">Local transport, $</label><input type="number" id="c_transport" value="45" min="0"></div>
         <div><label for="c_transfers">Airport transfers, $</label><input type="number" id="c_transfers" value="45" min="0"></div>
-        <div><label for="c_activities">Activities/entries, $</label><input type="number" id="c_activities" value="80" min="0"></div>
+        <div><label for="c_activities">Activities/entries, $</label><input type="number" id="c_activities" value="90" min="0"></div>
         <div><label for="c_sim">SIM/eSIM, $</label><input type="number" id="c_sim" value="15" min="0"></div>
-        <div><label for="c_eco">Eco-tax, $</label><input type="number" id="c_eco" value="12" min="0"></div>
+        <div><label for="c_eco">Eco-tax, $</label><input type="number" id="c_eco" value="11" min="0"></div>
         <div><label for="c_buffer">Buffer/incidentals, $</label><input type="number" id="c_buffer" value="150" min="0"></div>
         <div><label for="c_extras">Fixed extras (bags, insurance, passport, radio), $</label><input type="number" id="c_extras" value="0" min="0"></div>
         <div><label for="c_taxrate">Est. combined tax rate on FMV, %</label><input type="number" id="c_taxrate" value="27" min="0" max="60"></div>
       </div>
       <div class="calc-result" id="calc-out" aria-live="polite"></div>
-      <p class="small muted" style="margin:12px 0 0">FMV assumption for each element you enter as “0/covered”: ~$1,100 flight + ~$900 hotel + ~$100 ticket = $2,100 → 27% ≈ $567 tax. If you end up paying for one element yourself (e.g. the hotel), enter the real number and it drops out of the taxable FMV automatically. Adjust the rate to your marginal situation; not tax advice.</p>
+      <p class="small muted" style="margin:12px 0 0">FMV assumption for each element you enter as “0/covered”: ~$1,100 flight + ~$900 hotel (6 nights) + ~$100 ticket = $2,100 → 27% ≈ $567 tax. If you end up paying for one element yourself (e.g. the hotel), enter the real number and it drops out of the taxable FMV automatically. Adjust the rate to your marginal situation; not tax advice.</p>
     </div>
+  </section>
+
+  <section id="planner">
+    <h2><span class="sec-num">5b</span>Expense planner — data-driven, one row per line (mirrors <span class="mono">data/expenses.json</span>)</h2>
+    <p class="small">The single source of truth for the budget is <span class="mono">data/expenses.json</span> — every line below is an item
+    in that file. <strong>When the confirmed itinerary arrives:</strong> fill the <strong>Actual ($)</strong> column from the booking
+    confirmations (2 minutes), and set <strong>Covered by</strong> per line (prize / self / TBD). Everything without an actual is an
+    estimate, not a quote. EUR/USD ≈ 1.145 (22 Sep 2026 close — labelled estimate).</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Line item</th><th class="num">Est. low</th><th class="num">Est. mid</th><th class="num">Est. high</th><th class="num">Actual ($)</th><th>Covered by</th><th>Basis / note</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Flights SFO↔MLA (round trip)</strong></td><td class="num">$611</td><td class="num">$780</td><td class="num">$963</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>TBD</td><td>Market band (23 Sep 2026 OTA sampling); no nonstop. FMV anchor if prize-paid.</td></tr>
+        <tr><td><strong>Hotel — AX ODYCY, Qawra (6 nights, Deluxe sea view)</strong></td><td class="num">$620</td><td class="num">$850</td><td class="num">$1,100</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>TBD</td><td>≈ €90–160/night market band (estimate); confirmed rate from your booking.</td></tr>
+        <tr><td><strong>Airport transfers (MLA ↔ Qawra)</strong></td><td class="num">$6</td><td class="num">$45</td><td class="num">$60</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Bus €2.50–3.50 each way; taxi €25–28; rideshare ≈ €15–30 (official bus fares).</td></tr>
+        <tr><td><strong>Local transport (week)</strong></td><td class="num">$35</td><td class="num">$45</td><td class="num">$70</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Explore 7-Day €25 (official) + 2–3 rideshare runs (estimate).</td></tr>
+        <tr><td><strong>Food &amp; drink ($30/day × 7 days)</strong></td><td class="num">$180</td><td class="num">$210</td><td class="num">$300</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Your $30/day target; see § 6 reality check.</td></tr>
+        <tr><td><strong>TWC 2026 Finals ticket</strong></td><td class="num">$0</td><td class="num">$0</td><td class="num">$100</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>prize</td><td>Terms §5; ~$100 FMV estimate if self-purchased.</td></tr>
+        <tr><td><strong>Activities &amp; entry fees</strong></td><td class="num">$50</td><td class="num">$90</td><td class="num">$150</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Official anchors listed in § 2 (aquarium €16.90 online; HM sites; ferries).</td></tr>
+        <tr><td><strong>SIM / eSIM (week)</strong></td><td class="num">$5</td><td class="num">$15</td><td class="num">$25</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Local prepaid ≈ €10–16; eSIM from $4.50 (2026 guide bands).</td></tr>
+        <tr><td><strong>Malta eco-tax (6 nights)</strong></td><td class="num">$0</td><td class="num">$11</td><td class="num">$11</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>TBD</td><td>Official: €1.50/night 18+ → €9.00 for 6 nights; often billed by the hotel separately.</td></tr>
+        <tr><td><strong>DAB+/FM radio (optional)</strong></td><td class="num">$0</td><td class="num">$45</td><td class="num">$70</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Only for the live-sport radio plan; €25–60 street (estimate).</td></tr>
+        <tr><td><strong>Travel &amp; medical insurance (week)</strong></td><td class="num">$40</td><td class="num">$80</td><td class="num">$120</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Terms exclude insurance; buy your own ($ band = market estimate).</td></tr>
+        <tr><td><strong>Buffer / incidentals</strong></td><td class="num">$100</td><td class="num">$150</td><td class="num">$250</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Planning allowance — absorbs the unplanned.</td></tr>
+        <tr><td><strong>Passport renewal + expedite (if needed)</strong></td><td class="num">$0</td><td class="num">$0</td><td class="num">$212</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>$130 + $60 + $22.05 (2026 fee table); $0 if your passport is fine.</td></tr>
+        <tr><td><strong>Checked bag &amp; seat fees</strong></td><td class="num">$0</td><td class="num">$75</td><td class="num">$150</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>Terms exclude baggage; ask which fare class was booked.</td></tr>
+        <tr><td><strong>Est. US tax on prize FMV (if prize-funded)</strong></td><td class="num">$0</td><td class="num">$567</td><td class="num">$780</td><td class="num" style="background:#fff8e1">&nbsp;</td><td>self</td><td>IRS Pub 525 — FMV $1,700–2,900 × ~25–27%; $0 if self-funded or prize declined.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small"><span class="badge badge-estimate">Estimate</span> every band above is a planning figure from the cited sources — not a quote.
+    The yellow <strong>Actual</strong> column is yours to fill when the itinerary lands. Data file: <span class="mono">data/expenses.json</span>
+    (schema: <span class="mono">data/schema.md</span>; sources: <span class="mono">docs/SOURCES.md</span> § F).</p>
   </section>
 
   <section>
@@ -218,6 +242,15 @@
       <li><a href="https://www.publictransport.com.mt/fares-and-tickets/">Malta Public Transport — official fares (transport line items)</a> <span class="badge badge-official">Official</span> <span class="badge badge-verified">Verified 23 Sep 2026</span></li>
       <li><a href="https://www.kayak.com/flight-routes/San-Francisco-SFO/Luqa-Malta-Intl-MLA">KAYAK SFO–MLA (sample fares/routings)</a> <span class="badge badge-estimate">Estimate — point-in-time sampling</span></li>
       <li class="src-note">Cross-check: the main MALTA dossier's independent cost model lands at ~$1,330 mid-case (range $740–2,760; worst case up to $4,700). This page's model is built separately from the same primary inputs; the agreement in magnitude is intentional, not a copy. EUR/USD 1.145 from the TradingEconomics close of 22 Sep 2026 (as recorded in the dossier's sources).</li>
+      <li><strong>9 Oct 2026 update (6-night model + § 5b planner; mirrors data/expenses.json; sources logged in docs/SOURCES.md § F):</strong>
+        <a href="https://axhotelsmalta.com/odycy/">AX ODYCY — official site (hotel line)</a> <span class="badge badge-official">Official</span> ·
+        <a href="https://aquarium.com.mt/tickets/">Malta National Aquarium — official tickets (activities line)</a> <span class="badge badge-official">Official</span> ·
+        <a href="https://mta.com.mt/services/environmental-contribution/">MTA — eco-contribution (eco-tax line: €1.50/night, €22.50 cap)</a> <span class="badge badge-official">Official</span> ·
+        <a href="https://www.roafly.com/blog/how-to-get-internet-in-malta">roafly (May 2026) — SIM/eSIM bands</a> <span class="badge badge-estimate">Estimate</span> ·
+        <a href="https://dab.com.mt/dab-products/">DAB+ Malta — products page (radio hardware; price not captured)</a> <span class="badge badge-official">Official</span> <span class="badge badge-flag">Flag — price estimate</span> ·
+        <a href="https://travel.state.gov/en/passports.html">State Department — U.S. Passports (fees)</a> <span class="badge badge-official">Official</span> <span class="badge badge-flag">Flag — fee sub-URL 404 on 24 Sep 2026; cross-checked</span> ·
+        <a href="https://www.kayak.com/flight-routes/San-Francisco-SFO/Luqa-Malta-Intl-MLA">KAYAK SFO–MLA (fare band sampling)</a> <span class="badge badge-estimate">Estimate — point-in-time</span>
+      </li>
     </ul>
   </section>
 
@@ -244,7 +277,7 @@
       re-open the official sources before booking anything — and book nothing until the prize is confirmed in writing.</p>
     </div>
   </div>
-  <div class="footer-bottom">MALTASUPPLEMENTAL · costs.html · verified 24 September 2026</div>
+  <div class="footer-bottom">MALTASUPPLEMENTAL · costs.html · verified 24 Sep 2026 · 6-night model + expense planner 9 Oct 2026</div>
 </footer>
 
 <script src="js/site.js"></script>

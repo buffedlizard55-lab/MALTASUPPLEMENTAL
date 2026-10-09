@@ -18,7 +18,9 @@
     <nav class="main-nav" id="mainnav">
       <a href="index.html">Overview</a>
       <a href="hotel.html">Hotel &amp; Base</a>
+      <a href="itinerary.html">Itinerary</a>
       <a href="event.html">The Event</a>
+      <a href="qawra.html">Your Base</a>
       <a href="restaurants.html">Food &amp; Drink</a>
       <a href="landmarks.html">Landmarks</a>
       <a href="activities.html">Activities &amp; Gaming</a>
@@ -35,22 +37,6 @@
 
 <main class="page page-narrow">
 
-  <div class="callout callout-info">
-    <span class="callout-title">This page has not yet been given the 9 October 2026 sources</span>
-    The Qawra re-base added a set of new primary sources — the operator's
-    <a href="https://www.publictransport.com.mt/route/186/">route 186 page</a> (every stop code and
-    departure time used on this site), the re-read
-    <a href="https://www.publictransport.com.mt/fares-and-tickets/">fares page</a>, the
-    <a href="https://maltairport.com/transport/bus-service/">airport bus page</a>,
-    <a href="https://axhotelsmalta.com/odycy/">AX Odycy's own pages</a> and
-    <a href="https://blast.tv/cs/news/malta-fan-guide">BLAST's attendee guide</a> for the venue address.
-    They are listed per-page at the foot of <a href="hotel.html">Hotel &amp; Base</a> and
-    <a href="getting-around.html">Getting Around</a>, and in full in
-    <a href="docs/SOURCES.md"><code>docs/SOURCES.md</code></a>, with the conflicts found. Rolling them
-    up into this register is the top next-session task.
-  </div>
-
-
   <section class="hero">
     <h1>All sources — for manual review</h1>
     <p>Every external source used across this site, in one place, with the tag that tells you how much to trust it
@@ -59,10 +45,28 @@
     eco-tax rate, EES rollout).</p>
     <div class="meta">
       <span><span class="badge badge-official">Official</span> = the institution's own page/document</span>
-      <span><span class="badge badge-verified">Verified</span> = read directly on 23 Sep 2026 (or re-verified 24 Sep 2026 where stated)</span>
+      <span><span class="badge badge-verified">Verified</span> = read directly on 23 Sep 2026 (or re-verified 24 Sep / 9 Oct 2026 where stated)</span>
       <span><span class="badge badge-estimate">Estimate</span> = third-party/point-in-time figure</span>
       <span><span class="badge badge-flag">Flag</span> = single-source, conflicting, or not fully verifiable</span>
     </div>
+  </section>
+
+  <section>
+    <h2 id="reverify4"><span class="sec-num">0d</span>Fifth pass — 9 Oct 2026 (trip re-focus: AX ODYCY Qawra, 13–19 Oct; T−4 days)</h2>
+    <p class="small">The trip parameters were confirmed (hotel, dates) and the site re-focused on trip planning around the hotel.
+    Load-bearing sources re-read directly on 9 Oct 2026; the working master log is <span class="mono">docs/SOURCES.md</span>
+    (workstream-tagged), the data layer is <span class="mono">data/*.json</span> (schema: <span class="mono">data/schema.md</span>),
+    and the mechanical gate is <span class="mono">scripts/verify_site.py</span>.</p>
+    <ul>
+      <li><strong>Hotel:</strong> <a href="https://axhotelsmalta.com/odycy/">axhotelsmalta.com/odycy</a> + <a href="https://axhotelsmalta.com/odycy/contact/">contact page</a> — address Qawra Coast Road, Qawra SPB 1902, +356 2354 3000, licence H/0175; room types incl. Deluxe sea view; outlets. <span class="badge badge-official">Official</span> <span class="badge badge-verified">Read 9 Oct 2026</span> · corroborated by <a href="https://www.britishairways.com/en-gb/destinations/hotel-information/Malta/AX-ODYCY/MT-M99-3543835">British Airways hotel profile</a>, <a href="https://bestloved.com/hotels/ax-odycy/">Best Loved Hotels</a>, <a href="https://maps.apple.com/place?place-id=IE1BB06686A1FE0D5">Apple Maps listing</a>.</li>
+      <li><strong>Event:</strong> <a href="https://world-championship.thunderpick.io/2026-finals/">TWC format page</a> re-read — 12–19 Oct programme, match days 14–18, $1M table unchanged; match schedule still unpublished. <a href="https://community.skin.club/en/events/thunderpick-world-championship-2026">community.skin.club</a> — Location: Attard, Venue: BLAST Arena Studios. <a href="https://blast.tv/cs/news/malta-fan-guide">BLAST attendee guide</a> re-read — venue address verbatim (MFCC, Ta' Qali, ATD 4000 Ħ'Attard). <span class="badge badge-verified">Re-read 9 Oct 2026</span></li>
+      <li><strong>Transport:</strong> <a href="https://www.publictransport.com.mt/fares-and-tickets/">MPT fares</a> re-read (Explore 7-day €25; 12-journey €19; Flex from €21/€27; Buġibba Terminal sales office; Airport-Direct contradiction unchanged) · <a href="https://www.publictransport.com.mt/route/186/">route 186 page</a> (live; detour affects only the toward-Buġibba direction) · route list incl. X1–X4/TD1–TD5/TQ1–TQ4 · <a href="https://malta.busatlas.uk/timetables/timetable_2025_11.pdf">bus atlas Nov 2025</a> (186/214 stop sequences) · <a href="https://tvmnews.mt/en/news/tallinja-direct-routes-to-airport-and-bugibba-designed-for-tourists-and-residents-alike/">TVM News — TD5 launch</a> · <a href="https://seaandstone.blog/malta-airport-to-st-pauls-bay-bugibba/">seaandstone (Aug 2026)</a>, <a href="https://airporttocitycenter.com/malta/">airporttocitycenter (27 Sep 2026)</a>, <a href="https://www.mappytravel.com/malta-airport-to-city-centre/">mappytravel</a> (airport↔Qawra options &amp; taxi table) · <a href="https://newsbook.com.mt/en/malta-public-transport-provides-special-service-for-earth-garden-2023/">Newsbook — TQ shuttles</a>. <span class="badge badge-verified">Read 9 Oct 2026</span></li>
+      <li><strong>Food:</strong> TripAdvisor ranked lists read via search-result extracts (9 Oct 2026): <a href="https://www.tripadvisor.com/Restaurants-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta.html">Bugibba top-10 (Oct 2026)</a> · <a href="https://www.tripadvisor.com/Restaurants-g608948-c33-Bugibba_St_Paul_s_Bay_Island_of_Malta.html">Bugibba seafood</a> · <a href="https://www.tripadvisor.com/Restaurants-g608948-zfp30-Bugibba_St_Paul_s_Bay_Island_of_Malta.html">Bugibba lunch</a> · <a href="https://www.tripadvisor.com/Restaurants-g608946-St_Paul_s_Bay_Island_of_Malta.html">St Paul's Bay top-10</a> · <a href="https://www.tripadvisor.com/Restaurants-g608947-c33-Qawra_Island_of_Malta.html">Qawra seafood</a> · <a href="https://www.tripadvisor.com/Restaurants-g608947-c8-Qawra_Island_of_Malta.html">Qawra cafés</a> · <a href="https://www.tripadvisor.com/Restaurants-g608947-zfp2-Qawra_Island_of_Malta.html">Qawra breakfast</a> · <a href="https://www.tripadvisor.co.nz/RestaurantsNear-g608948-d12875293-Qawra_Point_Beach-Bugibba_St_Paul_s_Bay_Island_of_Malta.html">near Qawra Point</a> · <a href="https://www.tripadvisor.com/Restaurants-g608946-c8-St_Paul_s_Bay_Island_of_Malta.html">St Paul's Bay cafés</a> · <a href="https://www.tripadvisor.com/Tourism-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta-Vacations.html">Bugibba tourism guide</a>. <span class="badge badge-verified">Read 9 Oct 2026</span> <span class="badge badge-flag">Flag — point-in-time review data</span></li>
+      <li><strong>Activities/events:</strong> <a href="https://aquarium.com.mt/tickets/">aquarium.com.mt/tickets</a> + <a href="https://aquarium.com.mt/">aquarium.com.mt</a> — official prices/hours + talk programme; HM Multisite Pass exact prices (adult €60). <a href="https://sundays.com.mt/">sundays.com.mt</a> + <a href="https://cafedelmar.com.mt/event/cdm-sundays-3/">cafedelmar.com.mt</a> — CDM Sundays, Sun 18 Oct free. <a href="https://spotlightmalta.com/">spotlightmalta.com</a> — BLAST SLAM VIII (8–11 Oct, BLAST Arena Studios), Malta Comic Con (10–11 Oct, MFCC), Kite &amp; Wind Festival Gozo (17–18 Oct). <a href="https://www.jambase.com/festivals/mt">jambase</a> + <a href="https://www.bandsintown.com/c/valletta-malta">bandsintown</a> — Anjunadeep Malta / Café del Mar slots. <a href="https://www.checkyeti.com/en/boat-tours/malta/saint-pauls-bay/boat-tours">CheckYeti</a> — boat trips from Buġibba/Qawra. <a href="https://hubpymalta.com/what-to-do/st-pauls-bay-attractions.html">hubpymalta</a> — St Paul's Bay guide (Oracle Casino). <a href="https://www.yabstamalta.com/search/all/1/internet%20cafe">yabstamalta</a> + <a href="https://bugibba-malta.com/internet-cafes-international-calls">bugibba-malta.com</a> — internet cafés / 9 Ball. <span class="badge badge-verified">Read 9 Oct 2026</span> <span class="badge badge-flag">Flag — aggregators/marketplaces where noted</span></li>
+      <li><strong>Everyday/customs:</strong> <a href="https://www.roafly.com/blog/how-to-get-internet-in-malta">roafly (May 2026)</a>, <a href="https://esimmalta.com/sim-card/">esimmalta.com</a>, <a href="https://www.malta-spirit.com/guides/malta-sim-card-and-internet/">malta-spirit (Jul 2026)</a> — SIM/eSIM bands; eSIM resellers (Nomad/Ubigi/Airalo/Holafly) own sites. <a href="https://maltairport.com/practical-information/security-passport-control/customs/">Malta International Airport — Customs</a> — duty-free allowances verbatim. <span class="badge badge-verified">Read 9 Oct 2026</span></li>
+      <li><strong>Radio:</strong> <a href="https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming">BBC Sportsworld schedule</a> re-read (Sat 17 / Sun 18 Oct confirmed, third read) · <a href="https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season">PL 2026/27 fixtures</a> + <a href="https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november">Oct/Nov amendments</a> re-verified (MW7 = 17–19 Oct) · <a href="https://dab.com.mt/channels/">dab.com.mt catalogue</a> re-read (Rai/BBC/Sportiva present; “Sports Channel” absent) · <a href="https://radioinmalta.com/en/stations/">radioinmalta.com directory</a> re-read (“Talk Sport — DAB+ (Labelled as Sports Channel)”; Calypso DAB+ 12A). <span class="badge badge-verified">Re-read 9 Oct 2026</span></li>
+      <li><strong>Carried unchanged from 24 Sep 2026 (third/fourth passes below):</strong> giveaway Terms (verbatim, twice), State Dept Malta advisory (Level 1, 9 Jul 2026), ETIAS (“not in operation”), MTA eco-contribution, Valletta Ferry Services, Gozo Channel/Highspeed, Heritage Malta &amp; St John's prices, UEFA/Serie A/NFL schedules, Kalshi help article + Member Agreement, MCA consumer tools, IRS Pub 525 / FTB / 1099-MISC instructions.</li>
+    </ul>
   </section>
 
   <section>
@@ -306,7 +310,7 @@
       relying on any rule, fare, or schedule — several of them changed during 2026.</p>
     </div>
   </div>
-  <div class="footer-bottom">MALTASUPPLEMENTAL · sources.html · links checked 23 September 2026 · section 0 and badged items re-checked 24 September 2026 (two further passes the same day)</div>
+  <div class="footer-bottom">MALTASUPPLEMENTAL · sources.html · links checked 23 Sep 2026 · re-checked 24 Sep 2026 (two further passes) · fifth pass 9 Oct 2026</div>
 </footer>
 
 <script src="js/site.js"></script>
