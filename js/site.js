@@ -46,7 +46,7 @@
   }
 
   function render() {
-    var nights = num(ids.nights, 7);
+    var nights = num(ids.nights, 6); // confirmed booking: 13–19 Oct 2026 = 6 nights (9 Oct 2026)
     var days = nights + 1;
 
     var airfare = num(ids.airfareCovered, 0);      // $ you pay (0 if covered)
@@ -56,7 +56,7 @@
     var transfers = num(ids.transfers, 45);        // $ (matches input default)
     var activities = num(ids.activities, 80);      // $
     var sim = num(ids.sim, 15);                    // $
-    var ecoTax = num(ids.ecoTax, 12);              // $ (€1.50/night x 7 nights x1.145 = ~$12; €22.50 visit cap unreachable in 7 nights)
+    var ecoTax = num(ids.ecoTax, 11);              // $ (€1.50/night x 6 nights x1.145 ≈ $10; €22.50 visit cap unreachable in 6 nights)
     var buffer = num(ids.buffer, 150);             // $
     var extras = num(ids.extras, 0);               // $ fixed extras: bag fees, insurance, passport renewal, DAB+ radio
 

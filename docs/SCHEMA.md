@@ -14,7 +14,7 @@ Every item in the `data/*.json` files must follow this structure:
     "price_range": "Price range (e.g., 'Free', '€10-€20', '€€')",
     "description": "Short description",
     "source_url": "URL verifying the information",
-    "source_type": "official | map | review | social",
+    "source_type": "official | map | review | social | guide",
     "date_checked": "YYYY-MM-DD",
     "confidence": "verified | partially verified | unverified",
     "notes": "Any additional context or limitations"

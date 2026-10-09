@@ -30,7 +30,7 @@ REQUIRED_FIELDS = [
     "id", "name", "category", "area", "address", "hours", "price_range",
     "description", "source_url", "source_type", "date_checked", "confidence", "notes",
 ]
-SOURCE_TYPES = {"official", "map", "review", "social"}
+SOURCE_TYPES = {"official", "map", "review", "social", "guide"}
 CONFIDENCE = {"verified", "partially verified", "unverified"}
 
 failures = []
