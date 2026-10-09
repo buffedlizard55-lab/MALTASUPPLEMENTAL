@@ -1,7 +1,18 @@
 # MALTASUPPLEMENTAL
 
-Travel supplement for the **Thunderpick World Championship 2026** trip to Malta, **13–20 October 2026**
-(7 nights, 8 days), for a US (California) resident departing **SFO**.
+Travel supplement for the **Thunderpick World Championship 2026** trip to Malta, for a US resident.
+
+> **Re-based 9 Oct 2026.** The hotel is now confirmed: **AX Odycy, Qawra Coast Road, Qawra SPB 1902**,
+> Deluxe sea view, **13–19 October 2026 (6 nights, 7 days)**. Qawra is on the north-east coast, not the
+> Sliema/St Julian's belt the earlier pages assumed, and that changed the transport answer: **bus route
+> 186 runs from the seafront outside the hotel straight to the tournament venue at Ta' Qali, every 30
+> minutes, with no change of bus.** See [Hotel & Base](hotel.html) and the
+> [event-day transport section](getting-around.html#eventdays).
+>
+> **Open date conflict:** the booking says 13–19 Oct (6 nights); the giveaway Terms fix the itinerary at
+> 13–20 Oct (7 nights). The site leads with the booking. `costs.html` and `landmarks.html` still carry the
+> old night count and have warning banners; this is tracked as **OQ-01** in
+> [`docs/OPEN_QUESTIONS.md`](docs/OPEN_QUESTIONS.md) rather than silently overwritten.
 
 This site was built as a **supplement** to the main legal/risk dossier at
 `buffedlizard55-lab.github.io/MALTA` — it covers what that
@@ -19,6 +30,7 @@ prize-specific costs, entry/address answers, and a full audit of the Hotspawn pr
 | Page | Contents |
 |---|---|
 | [Overview](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/) | Executive summary, verdict on the prize, what's here, top sources |
+| [Hotel & Base](hotel.html) | AX Odycy, Qawra: the booking, the four bus stops on the coast road, route 186 to the venue with times, the eleven on-site outlets, the day trips you can verify from this address |
 | [The Event](event.html) | TWC 2026 Finals: dates, venue, teams, format, streams, ticket notes |
 | [Food & Drink](restaurants.html) | Top restaurants, Maltese classics, cafés, $30/day verification |
 | [Landmarks & Sights](landmarks.html) | 8-day visit plan, temples, Valletta, Gozo/Comino |
@@ -30,6 +42,33 @@ prize-specific costs, entry/address answers, and a full audit of the Hotspawn pr
 | [Entry & Address](logistics.html) | Entry requirements, EES/ETIAS, passport, the address question answered |
 | [Hotspawn & Prize](hotspawn.html) | Who Hotspawn/Sophie McCarthy are, T&C audit, 10 flagged irregularities, written-confirmations checklist |
 | [All Sources](sources.html) | Every URL used, tagged Official / Verified / Estimate / Flag |
+
+## Project structure
+
+```
+*.html              the site (flat, published as GitHub Pages)
+css/ js/            design tokens and the nav toggle + budget calculator
+data/               single source of truth - pages must match these files
+  trip.json         hotel, dates, event  (the parameters every page reads)
+  transport.json    every route, fare and mode, with its source
+  venues.json       on-site and nearby food, activities, landmarks
+docs/               PLAN.md SOURCES.md OPEN_QUESTIONS.md STATUS.md HANDOFF.md
+scripts/
+  check_links.py    integration check - run before every merge
+```
+
+Every item in a data file carries the same thirteen fields: `id, name, category, area, address,
+hours, price_range, description, source_url, source_type, date_checked, confidence, notes`.
+`source_type` ∈ {official, map, review, social}; `confidence` ∈ {verified, partially verified,
+unverified}. A fact that is not in a data file does not go on a page, and anything that could not be
+verified goes in `docs/OPEN_QUESTIONS.md` instead of being filled with a guess.
+
+**Verification gate.** `python3 scripts/check_links.py` checks internal links and anchors, that the
+navigation is identical on all 13 pages, that every data item carries the full schema, that no
+unsourced item is marked verified, and that the load-bearing numbers from the Qawra re-base actually
+appear on the pages that claim them. It exits non-zero on any failure. External URL liveness is
+**not** checked — this environment has no outbound network to those hosts — and the script says so
+rather than implying it checked.
 
 ## Privacy
 
