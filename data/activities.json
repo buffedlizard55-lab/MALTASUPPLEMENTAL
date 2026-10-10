@@ -1,529 +1,443 @@
 {
   "topic": "activities",
-  "title": "Gaming, landmarks & October events",
-  "intro": "A source-checked set of gaming venues, Qawra-area outings, historic landmarks and named events during 13–19 October 2026. Claims are limited to the linked operator or official pages; verify time-sensitive details before travelling.",
-  "date_checked": "2026-10-09",
-  "notes": [
-    "For a dedicated PC gaming session, The Gamers Lounge is the clearest local lead, but its current public-play hours, station availability and hourly rates were not published on the pages retrieved. Confirm before making the trip.",
-    "Trip-week event listings reflect organizer pages checked 2026-10-09. Ticket inventory, weather and operational schedules can change; use the linked booking or official event page for a same-day check.",
-    "The official Heritage Malta 2026 calendar lists a ‘Sailing Spectacle: Middle Sea Race Viewing’ at Fort St Elmo on 17 October, but no event-specific time or ticket details were found. Ask Heritage Malta before relying on that special opening.",
-    "Only trip-window events with accessible official or organizer evidence are listed. Potential events surfaced only through blocked social pages or third-party listings are not presented as confirmed."
-  ],
-  "sections": [
+  "title": "Activities, landmarks & events in Malta",
+  "last_updated": "2026-10-10",
+  "intro": "A source-checked shortlist for the 13–19 October 2026 stay: confirmed event dates, ticketed activities, sights, and gaming-venue status. TWC spectator access and daily match times remain unconfirmed. Google Maps currently marks three legacy public PC/esports-centre listings as permanently closed; The Eden XP Arcade is a separate, current general arcade/VR option, not a PC LAN café. Recheck operators and live schedules before travelling.",
+  "records": [
     {
-      "id": "gaming-centres",
-      "title": "Gaming centres & arcades",
-      "lead": "PC play, arcade games, VR and laser tag. Confirm the exact activity and booking rules before travelling, especially for group sessions.",
-      "items": [
-        {
-          "id": "the-gamers-lounge-msida",
-          "name": "The Gamers Lounge",
-          "category": "PC gaming lounge / retail",
-          "area": "Msida",
-          "address": "John Borg Street, Msida, Malta, MSD 1201",
-          "hours": "The current contact page lists store hours: Monday–Friday 10:00–19:00, Saturday 10:00–13:00, Sunday closed.",
-          "price_range": "Current public PC-session rates were not found on the retrieved official pages; ask the venue before visiting.",
-          "description": "The official FAQ describes the Msida shop as a gaming lounge and PC-gaming hardware retailer. This is the clearest dedicated PC-gaming lead found, but the current public play service and its availability need confirmation.",
-          "source_url": "https://gamerslounge.mt/faqs",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "partially verified",
-          "notes": "Published opening times are shown on the current contact page as store hours, not explicitly as PC-session hours. The retrieved current site did not publish a play tariff, station availability or game list. Confirm that public gaming sessions are operating on your date.",
-          "supporting_sources": [
-            {
-              "claim": "The current FAQ calls The Gamers Lounge a gaming lounge and retail store specializing in PC gaming hardware, based in Msida.",
-              "url": "https://gamerslounge.mt/faqs",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The current contact page gives John Borg Street, Msida, MSD 1201 and store hours of 10:00–19:00 Monday–Friday, 10:00–13:00 Saturday and closed Sunday.",
-              "url": "https://gamerslounge.mt/contact-us",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "multimaxx-st-julians",
-          "name": "MULTIMAXX St Julian’s",
-          "category": "Indoor gaming / laser tag / VR",
-          "area": "St Julian’s",
-          "address": "Bay Street Shopping Complex, Level 4, St Julian’s, Malta",
-          "hours": "Open daily 10:00–22:00; later visits are by advance booking. The operator says walk-ins are welcome for listed activities.",
-          "price_range": "Laser tag: €8 for 1 game, €14 for 2, €18 for 3. VR: €6 for 1 game or €10 for 2. Arcade games use €0.50, €1 or €2 coins or the venue’s PlayCard.",
-          "description": "An indoor option for laser tag, VR and arcade games at Bay Street. The operator lists walk-in availability for these activities and separate advance booking for group events.",
-          "source_url": "https://www.starwarsmalta.com/multimaxx-stjulians",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "Check the operator’s booking page for current availability, age or group conditions, and any price changes.",
-          "supporting_sources": [
-            {
-              "claim": "The operator lists Level 4, Bay Street, daily 10:00–22:00, laser-tag rates of €8/€14/€18 for one/two/three games, VR rates of €6/€10, and coin or PlayCard arcade payment.",
-              "url": "https://www.starwarsmalta.com/multimaxx-stjulians",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "xp-arcade-the-eden",
-          "name": "XP Arcade at The Eden",
-          "category": "Arcade / VR / racing games",
-          "area": "St Julian’s",
-          "address": "The Eden, Triq Santu Wistin, St Julian’s STJ 3310, Malta",
-          "hours": "The Eden’s current contact page labels its schedule ‘Winter opening hours’: Monday–Wednesday 11:00–00:00, Thursday–Friday 11:00–01:00, Saturday 10:00–01:00, Sunday 10:00–00:00. Confirm that the seasonal schedule applies to your visit and to XP Arcade.",
-          "price_range": "XP Arcade cards: 90 credits €10; 260 credits €20; 650 credits €50; 1,500 credits €100. The number of credits needed varies by game.",
-          "description": "The Eden describes XP Arcade as an all-ages arcade with VR and racing games, a cashless credit card and a prize-redemption booth.",
-          "source_url": "https://theeden.mt/activities/xp-arcade",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "partially verified",
-          "notes": "The arcade page does not give the credit cost for each machine. The separate venue page labels its hours as a winter schedule without publishing a date range; check the schedule for the exact visit date.",
-          "supporting_sources": [
-            {
-              "claim": "The XP Arcade page describes an all-ages arcade with VR/video games, racing, prizes and credit bundles from 90 credits for €10.",
-              "url": "https://theeden.mt/activities/xp-arcade",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The Eden’s current contact page gives the St Julian’s address and labels the published schedule as Winter opening hours.",
-              "url": "https://theeden.mt/contact-us",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "multimaxx-kordin",
-          "name": "MULTIMAXX Kordin / BattleMaxx",
-          "category": "Outdoor gaming / laser tag / go-karting",
-          "area": "Paola (Kordin)",
-          "address": "Historic Kordin Old Military Prison, Paola, Malta. The operator directs booked visitors to The Pavilion Gastro Pub, Telgħa ta’ Ras Ħanżir, Raħal Ġdid; follow the booking instructions, not the separate correctional-facility entrance.",
-          "hours": "Booked activities are offered every day at times arranged in advance; this is not a walk-in venue.",
-          "price_range": "Outdoor laser tag: 2 hours €300 for up to 10 players, then €30 per additional player; 3 hours €400 for up to 10, then €40 per additional player. Minimum 6 players. Go-kart and combo packages have separate prices.",
-          "description": "A group-focused outdoor laser-tag and go-kart venue in the historic Old Military Prison complex. It is a booked activity site rather than a drop-in PC or arcade lounge.",
-          "source_url": "https://www.starwarsmalta.com/kordinlocation",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "Advance booking is required. The operator explicitly distinguishes this historic visitor venue from Corradino Correctional Facility, which is not open to visitors.",
-          "supporting_sources": [
-            {
-              "claim": "The operator describes Kordin as the historic Old Military Prison in Paola, says activities require advance booking, and gives arrival instructions that distinguish it from the working correctional facility.",
-              "url": "https://www.starwarsmalta.com/kordinlocation",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The BattleMaxx page lists the two- and three-hour laser-tag prices, player minimum and per-extra-player charges.",
-              "url": "https://www.starwarsmalta.com/kordinlasertag",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        }
-      ]
+      "id": "twc-finals-2026",
+      "name": "Thunderpick World Championship 2026 Finals",
+      "category": "Confirmed event dates — spectator access open question",
+      "area": "Ta’ Qali / Ħ’Attard",
+      "address": "BLAST Studios Malta / Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, ATD 4000 Ħ’Attard",
+      "hours": "Organizer timeline: arrivals 12 October; media day 13 October; Group Stage 14–16 October; Playoffs 17–18 October; departures 19 October 2026. Daily match times and public doors were not published on the page checked 9 October.",
+      "price range": "Spectator access and ticket price not confirmed",
+      "description": "The official Finals page confirms the event phases and Malta location. Thunderpick’s announcement and BLAST’s Malta fan guide corroborate BLAST Studios Malta at MFCC, Ta’ Qali. The venue identity does not establish that the event is open to the public; do not assume spectator access.",
+      "source_url": "https://world-championship.thunderpick.io/2026-finals/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Venue corroboration: Thunderpick announcement https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html and BLAST guide https://blast.tv/cs/news/malta-fan-guide (use the latter for address corroboration only, not current spectator rules). Daily public match/door times and ticket-holder instructions remain open. The 17 October playoff date coincides with the Rolex Middle Sea Race and a Heritage Malta ticketed event; exact TWC times are not published. See getting-around.html for transport caveats once an event timetable is available."
     },
     {
-      "id": "north-malta-activities",
-      "title": "Activities near Qawra & day trips",
-      "lead": "Two practical indoor stops near the Qawra base, plus a seasonal film-set attraction farther north.",
-      "items": [
-        {
-          "id": "malta-national-aquarium",
-          "name": "Malta National Aquarium",
-          "category": "Aquarium / indoor activity",
-          "area": "Qawra Point, Qawra",
-          "address": "Triq it-Trunciera, Qawra, San Pawl il-Baħar SPB 1500, Malta",
-          "hours": "Daily 10:00–20:00; last admission 19:30, according to the current official aquarium site.",
-          "price_range": "All-day: adult 13+ €17.90 at the door / €16.90 online; child 4–12 €11.90 / €10.90; senior 60+ €14.90 / €13.90. After 16:00 online: adult €13.90, child €8.90, senior €10.90. Ages 0–3 enter free but need a ticket from the ticket desk. Child age proof and a valid National ID for senior tickets are required.",
-          "description": "The Qawra aquarium describes 50+ tanks and habitats, around 300 species and a walk-through tunnel. Its current site lists talks and feeding sessions through the day; check the daily programme for the visit date.",
-          "source_url": "https://aquarium.com.mt/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "The current contact page confirms the street address and daily opening hours. Ticket rules distinguish door/online pricing, after-16:00 admission and resident rates; check eligibility and the live ticket page before purchase.",
-          "supporting_sources": [
-            {
-              "claim": "The current aquarium homepage places the attraction at Qawra Point, shows daily opening as 10:00–20:00 and displays a daily talks/feeding programme.",
-              "url": "https://aquarium.com.mt/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The current ticket page lists adult, child and senior door/online prices, after-16:00 online rates, free entry for ages 0–3 with a desk-issued ticket, age/ID requirements and last entry at 19:30.",
-              "url": "https://aquarium.com.mt/tickets/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The current official contact page gives the address Triq it-Trunciera, San Pawl il-Baħar SPB 1500 and daily 10:00–20:00 opening hours.",
-              "url": "https://aquarium.com.mt/contact/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "malta-classic-car-collection",
-          "name": "Malta Classic Car Collection Museum",
-          "category": "Motoring museum",
-          "area": "Qawra",
-          "address": "Tourists Street, Qawra, St Paul’s Bay SPB 1020, Malta",
-          "hours": "Monday–Friday 09:00–17:00; Saturday, Sunday and public holidays 09:00–14:00, per the museum’s current official site.",
-          "price_range": "Adults €10; children €4.50.",
-          "description": "A family-run collection of classic cars, motorcycles and period memorabilia. The museum describes its displays across 3,000 square metres; it is an indoor option close to the Qawra base.",
-          "source_url": "https://www.classiccarsmalta.com/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "Opening times and admission are taken from the museum’s own page. Recheck the operator site for holiday or temporary changes.",
-          "supporting_sources": [
-            {
-              "claim": "The museum’s official home page lists its Qawra address, weekday/weekend hours, adult and child admission, and the car-and-motorcycle collection.",
-              "url": "https://www.classiccarsmalta.com/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The official ticket page lists an adult ticket at €10 and a child ticket at €4.50.",
-              "url": "https://www.classiccarsmalta.com/museum-entrance-tickets",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "popeye-village",
-          "name": "Popeye Village",
-          "category": "Film set / outdoor attraction",
-          "area": "Anchor Bay, Mellieħa",
-          "address": "Anchor Bay, Mellieħa, Malta",
-          "hours": "Mid-season 2026 (1 October–5 November): open daily 09:30–17:30. The supplied trip dates fall within this published season.",
-          "price_range": "Mid-season 2026: adults and teens €18; children aged 3–12 €14; pensioners €14.",
-          "description": "The original 1980 Popeye film set at Anchor Bay offers the film-set visit, live animation shows, mini-golf, traditional games and other activities, subject to availability.",
-          "source_url": "https://www.popeyemalta.com/packages/mid-season-2026",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "The operator says visitors aged 16 and under must be accompanied by an adult aged 18 or over. Activities and services are subject to availability; areas close 10 minutes before the posted closing time.",
-          "supporting_sources": [
-            {
-              "claim": "The operator’s Mid Season 2026 page states the 1 October–5 November season, daily 09:30–17:30 hours, ticket categories/prices and accompanying-adult rule.",
-              "url": "https://www.popeyemalta.com/packages/mid-season-2026",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The official homepage describes Popeye Village as the original 1980 film set overlooking Anchor Bay.",
-              "url": "https://www.popeyemalta.com/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        }
-      ]
+      "id": "gzira-mosta-2026-10-14",
+      "name": "Gżira United v Mosta FC — Malta Premier League",
+      "category": "Confirmed event dates — football",
+      "area": "Paola",
+      "address": "Tony Bezzina Stadium, Paola, Malta",
+      "hours": "Wednesday 14 October 2026 at 19:00, as listed on the Malta FA ticket page.",
+      "price range": "Adults €10; seniors €6; children under 16 enter free but must collect a ticket at the gate. Ticket terms may change.",
+      "description": "The live Malta FA match-specific ticket page lists Gżira United v Mosta FC at Tony Bezzina Stadium on 14 October at 19:00. Check ticket availability and the live fixture page before travelling.",
+      "source_url": "https://tickets.mfa.com.mt/matches/gzira-united-fc-vs-mosta-fc-2026-10-14",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "The match-specific Malta FA page confirms date, time, stadium and ticket categories. Hibernians FC identifies Tony Bezzina Stadium as being in Paola: https://www.hiberniansfc.mt/stadium/. This direct listing resolves the earlier search-result fixture/time discrepancy; recheck before purchase."
     },
     {
-      "id": "landmarks",
-      "title": "Landmarks & historic walks",
-      "lead": "Landmark walks are easy to combine with a Valletta day. Ticketed museums and churches have separate hours and admission.",
-      "items": [
-        {
-          "id": "valletta-fortified-city",
-          "name": "Valletta historic core",
-          "category": "Historic city / UNESCO World Heritage",
-          "area": "Valletta",
-          "address": "Valletta, Malta",
-          "hours": "No single city-wide visitor schedule; museums, churches and other ticketed sites set their own hours.",
-          "price_range": "No city-entry ticket is listed by UNESCO; admission to individual attractions is separate.",
-          "description": "UNESCO describes Valletta as Malta’s capital and a fortified city founded in 1566, with 320 monuments within 55 hectares. Use the historic core as a self-guided walking day and check each paid site separately.",
-          "source_url": "https://whc.unesco.org/en/list/131/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "UNESCO verifies the historic-city facts, not opening times for individual attractions. Consult each venue’s official page before planning a timed visit.",
-          "supporting_sources": [
-            {
-              "claim": "UNESCO’s World Heritage listing describes Valletta as a fortified capital founded in 1566 and records 320 monuments in 55 hectares.",
-              "url": "https://whc.unesco.org/en/list/131/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "mdina-old-capital",
-          "name": "Mdina, Malta’s old capital",
-          "category": "Historic walled town / walking visit",
-          "area": "Mdina",
-          "address": "Mdina, Malta",
-          "hours": "No city-wide visitor schedule was published by the official sources checked; museums, the cathedral and other attractions set their own hours.",
-          "price_range": "No city-entry price was published by the official sources checked; ticketed attractions are separate.",
-          "description": "A self-guided town walk in Mdina, a fortified hill-top settlement that served as the administrative and political capital of the Maltese Islands for almost two millennia, according to the Malta-submitted UNESCO Tentative List.",
-          "source_url": "https://whc.unesco.org/en/tentativelists/983/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "partially verified",
-          "notes": "The UNESCO Tentative List verifies Mdina’s fortified form and historic role but does not publish visitor hours or prices. VisitMalta’s separate page returned only its title (‘Mdina, Our Old Capital’) during this check. Verify hours/prices directly for any specific site you plan to enter.",
-          "supporting_sources": [
-            {
-              "claim": "UNESCO’s Tentative List entry, submitted by the Government of Malta, describes Mdina as a fortified hill-top urban settlement and says it acted as the Islands’ administrative and political capital for almost two millennia.",
-              "url": "https://whc.unesco.org/en/tentativelists/983/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "VisitMalta’s official page is titled ‘Mdina, Our Old Capital’; detailed page text was not exposed in the retrieved view.",
-              "url": "https://www.visitmalta.com/en/info/mdina-malta-old-capital",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "upper-barrakka-gardens",
-          "name": "Upper Barrakka Gardens & Grand Harbour viewpoint",
-          "category": "Viewpoint / landmark",
-          "area": "Valletta",
-          "address": "Upper Barrakka Gardens, Valletta, Malta",
-          "hours": "The retrieved official attraction listing did not expose current visiting hours; check same-day access before relying on a timed view.",
-          "price_range": "No admission price was stated in the retrieved official attraction listing; no fee is assumed here.",
-          "description": "A Valletta viewpoint overlooking the Grand Harbour. The Royal Malta Yacht Club recommends Upper Barrakka Gardens as one of the places to watch the 17 October 2026 Middle Sea Race start; it also names waterfront viewpoints in Valletta, Senglea and Vittoriosa.",
-          "source_url": "https://www.visitmalta.com/en/attraction/upper-barrakka-gardens-malta",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "partially verified",
-          "notes": "The official tourism page returned its title but not opening/pricing details. For race viewing, confirm access and any harbour or event restrictions close to 17 October.",
-          "supporting_sources": [
-            {
-              "claim": "VisitMalta has an official Upper Barrakka Gardens attraction listing; current hours and admission were not exposed in the retrieved page.",
-              "url": "https://www.visitmalta.com/en/attraction/upper-barrakka-gardens-malta",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The Royal Malta Yacht Club’s 2026 race article names Upper Barrakka Gardens and the Valletta, Senglea and Vittoriosa waterfronts as places to watch the start.",
-              "url": "https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "fort-st-elmo",
-          "name": "Fort St Elmo & the National War Museum",
-          "category": "Fort / military museum",
-          "area": "Valletta",
-          "address": "Mediterranean Street, Valletta, Malta",
-          "hours": "Heritage Malta publishes seasonal hours as an image on its opening-hours page, which did not yield readable times in this check. On scheduled In Guardia Sundays, regular museum admission begins at 12:00; the show itself starts at 11:00.",
-          "price_range": "Official regular-admission product page: €5.50–€10.00, depending on ticket category. In Guardia tickets are separate.",
-          "description": "A historic harbour fort housing the National War Museum. The official site describes its strategic position on the Sceberras peninsula and offers a separate Sunday In Guardia re-enactment ticket.",
-          "source_url": "https://heritagemalta.mt/store/s29/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "partially verified",
-          "notes": "The WW1 display in Section 4 was listed by Heritage Malta as closed until further notice on the checked opening-hours page. Check its current notices and opening image before visiting.",
-          "supporting_sources": [
-            {
-              "claim": "Heritage Malta lists regular Fort St Elmo/National War Museum admission at €5.50–€10.00 and says regular entry on In Guardia days begins at noon.",
-              "url": "https://heritagemalta.mt/store/s29/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "Heritage Malta’s opening-hours page carries the seasonal schedule and a notice that the WW1 display in Section 4 is closed until further notice; the schedule itself is an image.",
-              "url": "https://heritagemalta.mt/opening-hours/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        }
-      ]
+      "id": "rolex-middle-sea-race-2026",
+      "name": "Rolex Middle Sea Race — 2026 start",
+      "category": "Confirmed event dates — sailing",
+      "area": "Grand Harbour / Valletta",
+      "address": "Grand Harbour, Valletta, Malta",
+      "hours": "Saturday 17 October 2026 at 11:00, according to the Royal Malta Yacht Club’s 2026 event listing. Confirm the live organizer notice for changes.",
+      "price range": "No spectator ticket or viewing fee was stated in the organizer article",
+      "description": "The 47th Rolex Middle Sea Race starts from Grand Harbour during the trip. The RMYC’s 2026 event listing gives the 11:00 start; its 2 October article describes a fleet of more than 100 yachts and names shoreline viewing locations.",
+      "source_url": "https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "verified",
+      "notes": "RMYC identifies viewing locations in the separate ‘Race-start viewpoints’ card below. The same article mentions English commentary on RMYC / Rolex Middle Sea Race social channels and Maltese commentary on TVMSport+; that is not evidence of AM/FM/DAB radio carriage. Radio research belongs on radio.html.\nOfficial event time: https://rmyc.org/races/2026-rolex-middle-sea-race/. The 2 October 2026 article confirms the Grand Harbour date and recommends Upper Barrakka Gardens and the Valletta, Senglea and Vittoriosa waterfronts: https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/."
     },
     {
-      "id": "trip-window-events",
-      "title": "Events during 13–19 October 2026",
-      "lead": "Confirmed dates and published details from event owners or primary ticketing pages. Ticket availability and day-of changes still need a final check.",
-      "items": [
-        {
-          "id": "their-native-valour-lecture",
-          "name": "‘Their native valour’ — Heritage Malta public lecture",
-          "category": "Lecture / history",
-          "area": "Fort St Elmo, Valletta",
-          "address": "Fort St Elmo and the National War Museum, Mediterranean Street, Valletta, Malta",
-          "hours": "Tuesday 13 October 2026 at 19:00; the lecture is in English.",
-          "price_range": "€5 ticket.",
-          "description": "Professor Emanuel Buttigieg discusses the Maltese militia and the defence of Malta during the 17th century. This is a dated, ticketed event at Fort St Elmo.",
-          "source_url": "https://heritagemalta.mt/whats-on/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-17th-century-by-prof-emmanuel-buttigieg/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "The event page confirms date, 19:00 start, English language, Valletta address and €5 ticket. Book/check any remaining availability through Heritage Malta.",
-          "supporting_sources": [
-            {
-              "claim": "Heritage Malta’s event page lists the 13 October 2026 lecture at Fort St Elmo at 19:00 in English, with a €5 ticket.",
-              "url": "https://heritagemalta.mt/whats-on/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-17th-century-by-prof-emmanuel-buttigieg/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "valletta-waterfront-jazz-oct15",
-          "name": "Valletta Waterfront Jazz Series — Volume 2",
-          "category": "Concert / jazz",
-          "area": "Valletta Waterfront, Floriana",
-          "address": "Sagrestia Vault, Valletta Waterfront, Floriana, Malta",
-          "hours": "Thursday 15 October 2026 at 19:30; event page states age 16+.",
-          "price_range": "TicketLine lists €25, including a glass of prosecco and a limited-edition poster. Current seat availability was not determinable from the retrieved seat-map text; check the live booking page.",
-          "description": "The Dominic Galea Trio with guest vocalist Nadine Axisa perform a Great American Songbook-inspired set in the Sagrestia Vault. The event is listed for a date inside the trip window.",
-          "source_url": "https://vallettawaterfront.com/events/the-valletta-waterfront-jazz-series-volume-2/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "partially verified",
-          "notes": "Date, venue, start time, age limit and listed ticket price are published. Do not assume tickets remain available; verify directly with TicketLine before making plans.",
-          "supporting_sources": [
-            {
-              "claim": "The official Valletta Waterfront event page gives 15 October at 19:30, the Sagrestia Vault venue and a 16+ audience.",
-              "url": "https://vallettawaterfront.com/events/the-valletta-waterfront-jazz-series-volume-2/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "TicketLine’s seat-selection page shows a €25 ticket including a glass of prosecco and a limited poster; its extracted seat map did not establish current inventory.",
-              "url": "https://www.ticketline.com.mt/bookings/BookSeats.aspx?ShowId=3122&SectionId=2954",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "rolex-middle-sea-race-2026-start",
-          "name": "Rolex Middle Sea Race — Grand Harbour start",
-          "category": "Sailing / sporting event",
-          "area": "Grand Harbour, Valletta",
-          "address": "Grand Harbour, Valletta; the Royal Malta Yacht Club recommends Upper Barrakka Gardens and the Valletta, Senglea and Vittoriosa waterfronts as viewing areas.",
-          "hours": "Saturday 17 October 2026; the RMYC event listing shows 11:00. Confirm the live event notice for any operational changes.",
-          "price_range": "No shore-viewing admission price was stated on the checked race pages. No ticket or boat-access assumption is made.",
-          "description": "The 47th Rolex Middle Sea Race is a 606-nautical-mile offshore race starting from Grand Harbour. The RMYC’s event listing gives the date/time, and its current news page names recommended shoreline viewpoints.",
-          "source_url": "https://rmyc.org/races/2026-rolex-middle-sea-race/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "Heritage Malta’s 2026 calendar also lists ‘Sailing Spectacle: Middle Sea Race Viewing’ at Fort St Elmo on 17 October, but no specific time or ticket details were exposed. Confirm with Heritage Malta before planning a Fort visit.",
-          "supporting_sources": [
-            {
-              "claim": "The RMYC 2026 race listing gives the October 17 event and 11:00 time.",
-              "url": "https://rmyc.org/races/2026-rolex-middle-sea-race/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The RMYC’s current article confirms the Grand Harbour start on 17 October and recommends Upper Barrakka Gardens and waterfronts in Valletta, Senglea and Vittoriosa for viewing.",
-              "url": "https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "Heritage Malta’s 2026 calendar lists a ‘Sailing Spectacle: Middle Sea Race Viewing’ at Fort St Elmo on October 17; event-specific details were not present in the calendar entry.",
-              "url": "https://heritagemalta.mt/app/uploads/2026/01/2026-calendar-of-events-English-R6-Web.pdf",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "in-guardia-oct18",
-          "name": "In Guardia at Fort St Elmo",
-          "category": "Historical re-enactment",
-          "area": "Valletta",
-          "address": "Fort St Elmo and the National War Museum, Mediterranean Street, Valletta, Malta",
-          "hours": "Sunday 18 October 2026, 11:00–12:00. Fort St Elmo and the museum open for general admission at 12:00 on In Guardia days.",
-          "price_range": "In Guardia only: adults €10, seniors/students €7.50, children €5, infants free. Combined In Guardia + Fort St Elmo/museum: adults €17, seniors/students €13, children €9, infants free.",
-          "description": "A scheduled historical re-enactment at Fort St Elmo. Heritage Malta says the event may be cancelled in adverse weather; the combined ticket includes museum access after the performance.",
-          "source_url": "https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "The 18 October date is on Heritage Malta’s 2026 schedule. Check the operator’s notices before travelling, particularly if the weather is poor. Heritage Malta Passports and discount cards are not valid for these tickets.",
-          "supporting_sources": [
-            {
-              "claim": "Heritage Malta lists 18 October 2026 at 11:00, the 11:00–12:00 event window, ticket prices, museum access from noon and a weather-cancellation caveat.",
-              "url": "https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "cafe-del-mar-cdm-sundays-oct18",
-          "name": "CDM Sundays at Café del Mar Malta",
-          "category": "DJ event / nightlife",
-          "area": "Qawra",
-          "address": "Café del Mar Malta, Triq it-Trunciera, Qawra, San Pawl il-Baħar SPB 1500, Malta",
-          "hours": "Sunday 18 October 2026; the event description says late afternoon into the night but does not publish a precise start time.",
-          "price_range": "Ticket price was not shown on the event page; use the operator’s ticket link. Sofa reservations have a minimum spend that includes admission tickets.",
-          "description": "The official Café del Mar calendar lists CDM Sundays on 18 October. Its event page advertises DJ sets and states a 17+ age limit.",
-          "source_url": "https://cafedelmar.com.mt/event/cdm-sundays-6/?date=20261018",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "Exact event start time and ticket price were not visible in the retrieved official event page. Check the ticket link for current entry conditions and availability.",
-          "supporting_sources": [
-            {
-              "claim": "The official events calendar lists CDM Sundays on Sunday 18 October 2026.",
-              "url": "https://cafedelmar.com.mt/events/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The event page describes late-afternoon-to-night DJ sets, a 17+ age limit, ticket link and sofa reservations with a minimum spend that includes admission.",
-              "url": "https://cafedelmar.com.mt/event/cdm-sundays-6/?date=20261018",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "Café del Mar’s current contact page gives the Triq it-Trunciera, Qawra address.",
-              "url": "https://cafedelmar.com.mt/contact/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        },
-        {
-          "id": "valletta-waterfront-autumn-vibes",
-          "name": "Autumn Vibes at Valletta Waterfront",
-          "category": "Free outdoor / family activities",
-          "area": "Valletta Waterfront, Floriana",
-          "address": "Valletta Waterfront promenade, Floriana, Malta",
-          "hours": "The organizer’s 2026 calendar shows Autumn Vibes on the weekend dates 17–18 October. Its calendar PDF describes Saturday/Sunday activities from lunchtime into teatime; exact daily times are not published.",
-          "price_range": "The organizer describes the promenade activities as free; food and drinks are separate venue offerings.",
-          "description": "An October programme of free activities along the Valletta Waterfront promenade, with examples in the organizer’s calendar including bouncy castles and seasonal games. The daily lineup can vary.",
-          "source_url": "https://vallettawaterfront.com/",
-          "source_type": "official",
-          "date_checked": "2026-10-09",
-          "confidence": "verified",
-          "notes": "The date-range and weekend schedule are from the official 2026 calendar. Check the organizer’s calendar for the current programme before travelling.",
-          "supporting_sources": [
-            {
-              "claim": "The current Valletta Waterfront calendar lists Autumn Vibes for 17 and 18 October 2026.",
-              "url": "https://vallettawaterfront.com/",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            },
-            {
-              "claim": "The official 2026 calendar describes free weekend activities in October from lunchtime into teatime, with examples including bouncy castles and seasonal games.",
-              "url": "https://vallettawaterfront.com/?force_download=%2Fwp-content%2Fuploads%2Fsites%2F7%2F2026%2F04%2F2026-Valletta-Waterfront-Events-Calendar.pdf",
-              "source_type": "official",
-              "date_checked": "2026-10-09"
-            }
-          ]
-        }
-      ]
+      "id": "picnic-in-the-1800s-2026",
+      "name": "Picnic in the 1800s — Borġ in-Nadur",
+      "category": "Official event listing — site access conflict",
+      "area": "Birżebbuġa",
+      "address": "Borġ in-Nadur Prehistoric Complex, Sqaq In-Nadur, Birżebbuġa, Malta",
+      "hours": "The event page lists Saturday 17 October 2026, 13:00–16:00, with arrival by 12:45. However, Heritage Malta’s general opening-hours notice checked 9 October says Borġ in-Nadur is closed to visitors due to road works until further notice; event access/status needs direct confirmation.",
+      "price range": "The event page lists €55 per adult, senior, student or child; €45 for Heritage Malta members. Do not assume tickets are available or that the event can proceed while the closure notice is active.",
+      "description": "Heritage Malta’s dedicated page advertises this ticketed afternoon-tea event, but its current site-wide notice separately says Borġ in-Nadur is closed to visitors due to road works. Treat the event as listed but not fully confirmed for access or delivery until the organizer clarifies the conflict.",
+      "source_url": "https://heritagemalta.mt/whats-on/picnic-in-the-1800s/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "The dedicated event page gives the schedule, arrival instruction, description and listed prices: https://heritagemalta.mt/whats-on/picnic-in-the-1800s/. The separate current Heritage Malta opening-hours page says: ‘due to road works, Borġ in-Nadur Prehistoric Complex will be closed to visitors until further notice’: https://heritagemalta.mt/opening-hours/. Contact Heritage Malta and confirm the event is proceeding and the site is accessible before travelling or budgeting it as committed. It also coincides with TWC Playoffs and the Rolex Middle Sea Race start; their exact times are not published."
+    },
+    {
+      "id": "in-guardia-2026-10-18",
+      "name": "In Guardia — Fort St Elmo re-enactment",
+      "category": "Confirmed event dates — ticketed",
+      "area": "Valletta",
+      "address": "Fort St Elmo and the National War Museum, Mediterranean Street, Valletta, Malta",
+      "hours": "Sunday 18 October 2026. Entry opens at 10:00; the re-enactment runs 11:00–12:00; the National War Museum opens at 12:00. The show may be cancelled for adverse weather.",
+      "price range": "In Guardia only: adults €10, seniors/students €7.50, children €5, infants free. Show plus Fort and National War Museum: adults €17, seniors/students €13, children €9, infants free.",
+      "description": "Heritage Malta lists an In Guardia historical re-enactment on Sunday 18 October. The event ticket is separate from ordinary museum entry; advance booking is available through the official page.",
+      "source_url": "https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "verified",
+      "notes": "Heritage Malta says HM Passports and discount cards do not apply to these event tickets, and that the event can be cancelled for adverse weather. The same page lists the 2026 date and both ticket types."
+    },
+    {
+      "id": "rolex-race-viewpoints-2026",
+      "name": "Rolex Middle Sea Race — organizer-listed viewing areas",
+      "category": "Event viewing locations",
+      "area": "Valletta, Senglea and Vittoriosa",
+      "address": "Upper Barrakka Gardens and waterfronts of Valletta, Senglea and Vittoriosa",
+      "hours": "For the race start on Saturday 17 October 2026 at 11:00, per the RMYC event listing; location-specific access arrangements were not stated.",
+      "price range": "No viewing fee was stated; this is not a ticket for the Saluting Battery or other attractions",
+      "description": "The Royal Malta Yacht Club names Upper Barrakka Gardens and the waterfronts of Valletta, Senglea and Vittoriosa as the best places to watch the start. Crowd levels, garden access and the exact race time still need a live check.",
+      "source_url": "https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "partially verified",
+      "notes": "Organizer source confirms suggested viewing areas, not reserved access, a viewing platform, or a timetable. Do not assume Saluting Battery entry is free or included; it is a separate managed attraction. Recheck local access and transport notices on the day.\nRMYC event listing shows 11:00: https://rmyc.org/races/2026-rolex-middle-sea-race/."
+    },
+    {
+      "id": "gamers-lounge-msida-status",
+      "name": "The Gamers Lounge — PC café status conflict",
+      "category": "Dedicated PC gaming — status conflict",
+      "area": "Msida",
+      "address": "John Borg Street, Msida MSD 1201, Malta",
+      "hours": "The operator’s contact page lists store hours Mon–Fri 10:00–19:00, Sat 10:00–13:00, Sun closed. These do not confirm PC-session availability; Google Maps marks its place listing permanently closed as checked 9 October.",
+      "price range": "Current PC-session rates not verified; an older operator outlet page described timed sessions but did not provide a current, directly retrievable price list.",
+      "description": "The operator’s current website still describes The Gamers Lounge as a PC-gaming lounge and hardware retailer in Msida, but Google Maps labels the named place permanently closed. Treat the public gaming café status as unresolved and call before making a trip; this is not a confirmed open walk-in venue.",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=The+Gamers+Lounge+John+Borg+Street+Msida+Malta",
+      "source_type": "map",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Operator pages: https://gamerslounge.mt/faqs and https://gamerslounge.mt/contact-us (the FAQ calls it a gaming lounge; contact page lists retail hours and location). Google Maps status is a platform report, not an operator closure notice. An older Reddit discussion from 2021 is ambiguous about walk-in play and is not current evidence: https://www.reddit.com/r/malta/comments/q5vylk/gaming_places_in_malta/. The operator’s old outlet page could not be fetched directly."
+    },
+    {
+      "id": "esports-plaza-sliema-status",
+      "name": "Esports Plaza Gaming Lounge — closure reported",
+      "category": "Dedicated PC gaming — status conflict",
+      "area": "Sliema",
+      "address": "Level 0, The Plaza Shopping Centre, Bisazza Street, Sliema SLM 1640, Malta",
+      "hours": "No current hours verified. Google Maps marked the place permanently closed on 9 October 2026; a third-party directory still displays hours that may be stale.",
+      "price range": "No current price verified",
+      "description": "This was listed as a PC/console gaming lounge at The Plaza. Google Maps currently reports it permanently closed; the older Plaza page returns 404 and esportsplaza.com.mt returned a 503 error when checked. Do not plan a visit unless the operator confirms it has reopened.",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=Esports+Plaza+Gaming+Lounge+Sliema+Malta",
+      "source_type": "map",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "The directly fetched Google Maps listing showed 4.5/125 and ‘permanently closed’ (rating is a dated listing snapshot, not a recommendation). Hopsa’s directory still lists address, phone and hours but is not the operator: https://hopsa.io/en/attractions/malta,jedzenie-picie,esports-plaza-gaming-lounge-69cf83a22b. The Plaza’s old Esports page returned 404 and the venue domain returned 503."
+    },
+    {
+      "id": "eden-esports-centre-status",
+      "name": "Eden Esports Centre — legacy walk-in listing",
+      "category": "Dedicated PC gaming — status conflict",
+      "area": "St Julian’s",
+      "address": "SuperBowl, Triq Santu Wistin, St Julian’s, Malta",
+      "hours": "No walk-in hours verified. Google Maps marked Eden Esports Centre permanently closed on 9 October 2026.",
+      "price range": "No current drop-in gaming price verified",
+      "description": "A former PC/esports-centre listing at SuperBowl. Google Maps reports it permanently closed. Eden’s current official material describes a team bootcamp by arrangement, not a public drop-in PC café; see the separate, currently listed XP Arcade entry below for general games.",
+      "source_url": "https://www.google.com/maps/search/?api=1&query=Eden+Esports+Centre+St+Julian%27s+Malta",
+      "source_type": "map",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Google Maps listing showed 4.1/15 and ‘permanently closed’ (a dated user-generated listing). Eden’s current bootcamp article describes a team facility at InterContinental Malta tied to a qualifying accommodation booking, not public walk-in access: https://theeden.mt/inside-eden-esports-premium-bootcamp-experience-in-malta/."
+    },
+    {
+      "id": "the-eden-xp-arcade",
+      "name": "The Eden — XP Arcade, VR and games",
+      "category": "Arcade, VR & social gaming",
+      "area": "St Julian’s",
+      "address": "Triq Santu Wistin, St Julian’s STJ 3310, Malta",
+      "hours": "The Eden’s contact page labels these ‘Winter opening hours’: Mon–Wed 11:00–00:00; Thu–Fri 11:00–01:00; Sat 10:00–01:00; Sun 10:00–00:00. It does not state when the winter schedule begins; confirm it covers 13–19 October.",
+      "price range": "XP Arcade credit packs listed: 90 credits €10; 260 credits €20; 650 credits €50; 1,500 credits €100. Individual game-credit costs vary.",
+      "description": "A current general entertainment venue with arcade, VR/video games, racing games and prize redemption. The operator’s XP Arcade page labels the experience ‘For All Ages’. This is an arcade/social-gaming option, not a dedicated public PC esports lounge.",
+      "source_url": "https://theeden.mt/activities/xp-arcade",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "partially verified",
+      "notes": "Credit packs and activity type are listed by the operator. Address, phone +356 2371 0450 and seasonal hours: https://theeden.mt/contact-us. Google Maps currently lists The Eden as open, but its hours are a live listing snapshot; see https://www.google.com/maps/search/?api=1&query=The+Eden+Triq+Santu+Wistin+St+Julian%27s+Malta."
+    },
+    {
+      "id": "malta-national-aquarium-qawra",
+      "name": "Malta National Aquarium",
+      "category": "Near the Qawra base",
+      "area": "Qawra",
+      "address": "Triq it-Trunciera, San Pawl il-Baħar SPB 1500, Malta",
+      "hours": "Daily 10:00–20:00; the current official ticket FAQ says last entry is 19:30.",
+      "price range": "All-day: adult 13+ €17.90 at the door / €16.90 online; child 4–12 €11.90 / €10.90; senior 60+ €14.90 / €13.90. After 16:00 online: adult €13.90, child €8.90, senior €10.90. Ages 0–3 enter free but need a ticket from the ticket desk. Child age proof and a valid National ID for senior tickets are required.",
+      "description": "An indoor marine-life attraction at Qawra Point with 50+ tanks and habitats, around 300 species and a walk-through tunnel. The current site displays daily talks and feeding sessions; check the day’s programme.",
+      "source_url": "https://aquarium.com.mt/tickets/",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "verified",
+      "notes": "Current operator pages: address and daily hours https://aquarium.com.mt/contact/; ticket categories, prices, last entry at 19:30, and free entry for ages 0–3 with a desk-issued ticket https://aquarium.com.mt/tickets/; aquarium description and daily programme https://aquarium.com.mt/. TripAdvisor snapshot 9 Oct: 4.0/5 from 4,937 reviews, #4 of 7 things to do in Qawra; recent reviews include both praise for marine exhibits and mixed views on visit length/value. https://www.tripadvisor.com/Attraction_Review-g608947-d4753782-Reviews-Malta_National_Aquarium-Qawra_Island_of_Malta.html. Ratings and reviews are volatile and subjective."
+    },
+    {
+      "id": "comino-blue-lagoon",
+      "name": "Comino — Blue Lagoon day trip",
+      "category": "Island / sea excursion",
+      "area": "Comino",
+      "address": "Blue Lagoon, Comino, Malta",
+      "hours": "A free landing QR pass is required before stepping ashore in the Blue Lagoon area. Listed slots: 08:00–13:00, 13:30–17:30 and 18:00–22:00. Ferry times are separate and operator-specific.",
+      "price range": "Blue Lagoon landing pass: free. Ferry/boat fare is separate and varies by operator; no trip-specific fare was verified.",
+      "description": "A possible island day trip, subject to the boat operator’s 13–19 October timetable, weather and capacity. The official Blue Lagoon Access Management System says visitors need a free timed QR landing pass to remain ashore in the Lagoon; it is not a ferry ticket.",
+      "source_url": "https://blcomino.com/faqs/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "The official AMS FAQ says passes can be booked up to two months ahead, ferry transport must be purchased separately, and authorised-vessel/operator rules apply. Malta’s official tourism ferry directory lists a Paradise Diving service from Ċirkewwa every 30 minutes from 1 May to 31 October, but that directory is not a date-specific sailing confirmation: https://www.visitmalta.com/en/a/ferries-and-water-taxis/. Check the chosen operator and Blue Lagoon booking portal for your exact day."
+    },
+    {
+      "id": "ta-qali-artisan-village",
+      "name": "Ta’ Qali Artisan Village",
+      "category": "Crafts & local culture",
+      "area": "Ta’ Qali / Attard",
+      "address": "Ta’ Qali Artisan Village, Ta’ Qali, Attard ATD 4000, Malta",
+      "hours": "Not published on the official village pages checked. Individual artisans may have different schedules; contact the village before making a special trip.",
+      "price range": "No general admission price published; individual artisan products are priced by each shop.",
+      "description": "The official village describes opportunities to watch local craftspeople at work, including glassblowing, filigree, jewellery, ceramics, wood, metal and stonework. It is a Ta’ Qali-area cultural stop, but exact opening/working hours were not published.",
+      "source_url": "https://artisanvillagesmalta.com/contact-us/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Official homepage overview: https://artisanvillagesmalta.com/. Contact listed by the operator: +356 2226 4400, artisanvillage@indismalta.com. Confirm which studios are open on your chosen day; the village’s general information does not guarantee live demonstrations."
+    },
+    {
+      "id": "mdina-rabat-walk",
+      "name": "Mdina and Rabat historic-centre walk",
+      "category": "Historic towns & walking",
+      "area": "Mdina / Rabat",
+      "address": "Mdina and Rabat, Malta",
+      "hours": "No city-wide visitor schedule was published by the official sources checked; museums, the cathedral and other attractions set their own hours.",
+      "price range": "No city-entry price was published by the official sources checked; ticketed attractions are separate.",
+      "description": "A general walk through Mdina and Rabat. Malta’s UNESCO Tentative List entry describes Mdina as a fortified hill-top settlement and says it served as the Islands’ administrative and political capital for almost two millennia; this is a tentative-list entry, not an inscription on the World Heritage List.",
+      "source_url": "https://whc.unesco.org/en/tentativelists/983/",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "partially verified",
+      "notes": "UNESCO’s Malta-submitted Tentative List entry verifies Mdina’s fortified form and historic role but does not publish visitor hours or prices: https://whc.unesco.org/en/tentativelists/983/. VisitMalta’s separate page returned only its title in the checked extraction; do not infer individual attraction schedules or admission."
+    },
+    {
+      "id": "st-johns-co-cathedral",
+      "name": "St John’s Co-Cathedral",
+      "category": "Valletta landmarks",
+      "area": "Valletta",
+      "address": "St John’s Square, Valletta VLT 1156, Malta",
+      "hours": "Monday–Saturday 09:00–16:45; last admission 16:00. Closed Sundays and public holidays, as listed by the operator.",
+      "price range": "Adults €15; seniors/students €12; children under 12 free when accompanied by an adult. Optional belfry tour €5; admission fee applies.",
+      "description": "A major Valletta church visit with a handheld multilingual audio guide included in admission. Dress appropriately; the operator recommends around 1 hour 45 minutes. The church is open on the listed weekdays, but its Museum is currently stated to be closed for extension/refurbishment.",
+      "source_url": "https://www.stjohnscocathedral.com/visit/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "The official visit page confirms hours, admission and dress/access guidance. It currently displays a notice that the Museum is closed for extension and refurbishment; this does not itself confirm a closure of the Co-Cathedral. Check for any trip-week service or special-closure notice before going."
+    },
+    {
+      "id": "grand-masters-palace",
+      "name": "Grand Master’s Palace and Armoury",
+      "category": "Valletta landmarks",
+      "area": "Valletta",
+      "address": "St George’s Square, Valletta, Malta",
+      "hours": "10:00–18:00 daily under Heritage Malta’s 1 March–31 October 2026 summer schedule; last admission 30 minutes before closing.",
+      "price range": "Adults €12; ages 12–17 and seniors 60+ €10; ages 6–11 €8; ages 1–5 free. Heritage Malta members/passport holders free.",
+      "description": "A historic palace and state-building with restored State Rooms and the Palace Armoury. Heritage Malta says the Throne Room remains closed to the public; other state-function closures can occur.",
+      "source_url": "https://heritagemalta.mt/explore/grand-masters-palace/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "The official 2026 summer-hours chart gives 10:00–18:00 daily through 31 October, with last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The listed State Rooms closures are on 26 and 28 October, 18 November and 2 December, outside the requested 13–19 October window; the Throne Room remains closed until further notice. Rare state functions may cause additional closure."
+    },
+    {
+      "id": "national-museum-archaeology",
+      "name": "National Museum of Archaeology",
+      "category": "Valletta landmarks",
+      "area": "Valletta",
+      "address": "Auberge de Provence, Republic Street, Valletta, Malta",
+      "hours": "09:00–19:00 daily under Heritage Malta’s 1 March–31 October 2026 summer schedule; last admission 30 minutes before closing.",
+      "price range": "Adults €5; ages 12–17, seniors 60+, concessions/students €3.50; ages 6–11 €2.50; ages 1–5 free. Heritage Malta members/passport holders free.",
+      "description": "A Valletta museum covering Maltese prehistory through the early Phoenician period, with objects such as the Sleeping Lady, Venus of Malta and the Cippus. The current operator page includes multilingual audio guides and accessibility information.",
+      "source_url": "https://heritagemalta.mt/explore/national-museum-of-archaeology/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "The official Heritage Malta hours chart gives 09:00–19:00 daily through 31 October 2026; last admission is 30 minutes before close: https://heritagemalta.mt/opening-hours/. Recheck the operator notice for changes before travel."
+    },
+    {
+      "id": "fort-st-elmo-national-war-museum",
+      "name": "Fort St Elmo and the National War Museum",
+      "category": "Valletta landmarks",
+      "area": "Valletta",
+      "address": "Mediterranean Street, Valletta, Malta",
+      "hours": "09:00–19:00 daily under Heritage Malta’s 1 March–31 October 2026 summer schedule; last admission 30 minutes before closing. On scheduled In Guardia Sundays, event entry begins at 10:00 and ordinary admission begins at 12:00.",
+      "price range": "Adults €10; seniors 60+, ages 12–17 and concessions/students €7.50; ages 6–11 €5.50; ages 1–5 free. Heritage Malta members/passport holders free. Separate In Guardia tickets are listed above.",
+      "description": "A large Valletta fort and museum spanning Maltese military history. Heritage Malta’s current notice says the WWI display in Section 4 is closed until further notice; Section 2 covering the early Knights and Great Siege is available again from 1 August.",
+      "source_url": "https://heritagemalta.mt/explore/fort-st-elmo-national-war-museum/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Heritage Malta’s summer-hours chart gives 09:00–19:00 daily through 31 October, last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. On Sunday 18 October, In Guardia is separately scheduled for 11:00–12:00; the show and ordinary museum entry have different ticket rules. See https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/."
+    },
+    {
+      "id": "st-pauls-catacombs",
+      "name": "St Paul’s Catacombs",
+      "category": "Rabat / Mdina heritage",
+      "area": "Rabat",
+      "address": "Triq Ħal-Bajjada, Rabat, Malta",
+      "hours": "Heritage Malta’s 2026 summer schedule lists 09:00–19:00 daily through 31 October, with last admission 30 minutes before close. A Google Maps snapshot checked 9 October instead lists Friday 09:00–17:00; confirm with Heritage Malta before visiting.",
+      "price range": "Adults €6; ages 12–17, seniors 60+, concessions/students €4.50; ages 6–11 €3.50; ages 1–5 free. Heritage Malta members/passport holders free.",
+      "description": "A large interconnected underground burial complex from Punic, Roman and Byzantine periods. Heritage Malta describes it as the earliest and largest archaeological evidence of Christianity in Malta; audio guides are available. The site has partial accessibility, narrow passages and stairs.",
+      "source_url": "https://heritagemalta.mt/explore/st-pauls-catacombs/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "The official summer-hours chart and general notice give 09:00–19:00 daily through 31 October and last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The direct Google Maps listing snapshot instead displays Friday 09:00–17:00 and rating 4.3: https://www.google.com/maps/search/?api=1&query=St+Paul%27s+Catacombs+Rabat+Malta. Prefer the official seasonal schedule provisionally, but confirm this discrepancy with Heritage Malta before travel. TripAdvisor snapshot checked 9 Oct: 4.1/5 from 1,686 reviews, #3 of 48 things to do in Rabat; recent feedback mentions crowding and narrow/stepped spaces: https://www.tripadvisor.com/Attraction_Review-g190326-d2624344-Reviews-St_Paul_s_Catacombs-Rabat_Island_of_Malta.html. Ratings/reviews are subjective and accessibility details should be checked against the official access statement."
+    },
+    {
+      "id": "hagar-qim-mnajdra",
+      "name": "Ħaġar Qim and Mnajdra Archaeological Park",
+      "category": "Archaeology & UNESCO sites",
+      "area": "Qrendi",
+      "address": "Triq Ħaġar Qim, Qrendi, Malta",
+      "hours": "09:00–19:00 daily under Heritage Malta’s 1 March–31 October 2026 summer schedule; last admission 30 minutes before closing.",
+      "price range": "Adults €10; ages 12–17, seniors 60+, concessions/students €7.50; ages 6–11 €5.50; ages 1–5 free. Heritage Malta members/passport holders free.",
+      "description": "Two megalithic temple sites dating to the late Neolithic, more than 5,000 years old and part of the UNESCO-listed Megalithic Temples of Malta. The sites are about 500 metres apart; the walk to Mnajdra is downhill and Mnajdra is not accessible to visitors with mobility limitations.",
+      "source_url": "https://heritagemalta.mt/explore/hagar-qim-and-mnajdra-archaeological-park/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Heritage Malta’s summer-hours chart gives 09:00–19:00 daily through 31 October, last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The operator says the Visitor Centre and Ħaġar Qim are accessible (assistance may still be needed), while Mnajdra is not. Check the access statement and transport before planning."
+    },
+    {
+      "id": "multimaxx-st-julians",
+      "name": "MULTIMAXX St Julian’s",
+      "category": "Indoor gaming / laser tag / VR",
+      "area": "St Julian’s",
+      "address": "Bay Street Shopping Complex, Level 4, St Julian’s, Malta",
+      "hours": "Open daily 10:00–22:00; later visits are by advance booking. The operator says walk-ins are welcome for listed activities.",
+      "price range": "Laser tag: €8 for 1 game, €14 for 2, €18 for 3. VR: €6 for 1 game or €10 for 2. Arcade games use €0.50, €1 or €2 coins or the venue’s PlayCard.",
+      "description": "An indoor option for laser tag, VR and arcade games at Bay Street. The operator lists walk-in availability for these activities and separate advance booking for group events.",
+      "source_url": "https://www.starwarsmalta.com/multimaxx-stjulians",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Check the operator’s booking page for current availability, age or group conditions, and any price changes.\nSupporting claim sources:\nThe operator lists Level 4, Bay Street, daily 10:00–22:00, laser-tag rates of €8/€14/€18 for one/two/three games, VR rates of €6/€10, and coin or PlayCard arcade payment. https://www.starwarsmalta.com/multimaxx-stjulians"
+    },
+    {
+      "id": "multimaxx-kordin",
+      "name": "MULTIMAXX Kordin / BattleMaxx",
+      "category": "Outdoor gaming / laser tag / go-karting",
+      "area": "Paola (Kordin)",
+      "address": "Historic Kordin Old Military Prison, Paola, Malta. The operator directs booked visitors to The Pavilion Gastro Pub, Telgħa ta’ Ras Ħanżir, Raħal Ġdid; follow the booking instructions, not the separate correctional-facility entrance.",
+      "hours": "Booked activities are offered every day at times arranged in advance; this is not a walk-in venue.",
+      "price range": "Outdoor laser tag: 2 hours €300 for up to 10 players, then €30 per additional player; 3 hours €400 for up to 10, then €40 per additional player. Minimum 6 players. Go-kart and combo packages have separate prices.",
+      "description": "A group-focused outdoor laser-tag and go-kart venue in the historic Old Military Prison complex. It is a booked activity site rather than a drop-in PC or arcade lounge.",
+      "source_url": "https://www.starwarsmalta.com/kordinlocation",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Advance booking is required. The operator explicitly distinguishes this historic visitor venue from Corradino Correctional Facility, which is not open to visitors.\nSupporting claim sources:\nThe operator describes Kordin as the historic Old Military Prison in Paola, says activities require advance booking, and gives arrival instructions that distinguish it from the working correctional facility. https://www.starwarsmalta.com/kordinlocation\nThe BattleMaxx page lists the two- and three-hour laser-tag prices, player minimum and per-extra-player charges. https://www.starwarsmalta.com/kordinlasertag"
+    },
+    {
+      "id": "malta-classic-car-collection",
+      "name": "Malta Classic Car Collection Museum",
+      "category": "Motoring museum",
+      "area": "Qawra",
+      "address": "Tourists Street, Qawra, St Paul’s Bay SPB 1020, Malta",
+      "hours": "Monday–Friday 09:00–17:00; Saturday, Sunday and public holidays 09:00–14:00, per the museum’s current official site.",
+      "price range": "Adults €10; children €4.50.",
+      "description": "A family-run collection of classic cars, motorcycles and period memorabilia. The museum describes its displays across 3,000 square metres; it is an indoor option close to the Qawra base.",
+      "source_url": "https://www.classiccarsmalta.com/",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "verified",
+      "notes": "Opening times and admission are taken from the museum’s own page. Recheck the operator site for holiday or temporary changes.\nSupporting claim sources:\nThe museum’s official home page lists its Qawra address, weekday/weekend hours, adult and child admission, and the car-and-motorcycle collection. https://www.classiccarsmalta.com/\nThe official ticket page lists an adult ticket at €10 and a child ticket at €4.50. https://www.classiccarsmalta.com/museum-entrance-tickets"
+    },
+    {
+      "id": "popeye-village",
+      "name": "Popeye Village",
+      "category": "Film set / outdoor attraction",
+      "area": "Anchor Bay, Mellieħa",
+      "address": "Anchor Bay, Mellieħa, Malta",
+      "hours": "Mid-season 2026 (1 October–5 November): open daily 09:30–17:30. The supplied trip dates fall within this published season.",
+      "price range": "Mid-season 2026: adults and teens €18; children aged 3–12 €14; pensioners €14.",
+      "description": "The original 1980 Popeye film set at Anchor Bay offers the film-set visit, live animation shows, mini-golf, traditional games and other activities, subject to availability.",
+      "source_url": "https://www.popeyemalta.com/packages/mid-season-2026",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "The operator says visitors aged 16 and under must be accompanied by an adult aged 18 or over. Activities and services are subject to availability; areas close 10 minutes before the posted closing time.\nSupporting claim sources:\nThe operator’s Mid Season 2026 page states the 1 October–5 November season, daily 09:30–17:30 hours, ticket categories/prices and accompanying-adult rule. https://www.popeyemalta.com/packages/mid-season-2026\nThe official homepage describes Popeye Village as the original 1980 film set overlooking Anchor Bay. https://www.popeyemalta.com/"
+    },
+    {
+      "id": "their-native-valour-lecture",
+      "name": "‘Their native valour’ — Heritage Malta public lecture",
+      "category": "Lecture / history",
+      "area": "Fort St Elmo, Valletta",
+      "address": "Fort St Elmo and the National War Museum, Mediterranean Street, Valletta, Malta",
+      "hours": "Tuesday 13 October 2026 at 19:00; the lecture is in English.",
+      "price range": "€5 ticket.",
+      "description": "Professor Emanuel Buttigieg discusses the Maltese militia and the defence of Malta during the 17th century. This is a dated, ticketed event at Fort St Elmo.",
+      "source_url": "https://heritagemalta.mt/whats-on/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-17th-century-by-prof-emmanuel-buttigieg/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "The event page confirms date, 19:00 start, English language, Valletta address and €5 ticket. Book/check any remaining availability through Heritage Malta.\nSupporting claim sources:\nHeritage Malta’s event page lists the 13 October 2026 lecture at Fort St Elmo at 19:00 in English, with a €5 ticket. https://heritagemalta.mt/whats-on/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-17th-century-by-prof-emmanuel-buttigieg/"
+    },
+    {
+      "id": "valletta-waterfront-jazz-oct15",
+      "name": "Valletta Waterfront Jazz Series — Volume 2",
+      "category": "Concert / jazz",
+      "area": "Valletta Waterfront, Floriana",
+      "address": "Sagrestia Vault, Valletta Waterfront, Floriana, Malta",
+      "hours": "Thursday 15 October 2026 at 19:30; event page states age 16+.",
+      "price range": "TicketLine lists €25, including a glass of prosecco and a limited-edition poster. Current seat availability was not determinable from the retrieved seat-map text; check the live booking page.",
+      "description": "The Dominic Galea Trio with guest vocalist Nadine Axisa perform a Great American Songbook-inspired set in the Sagrestia Vault. The event is listed for a date inside the trip window.",
+      "source_url": "https://vallettawaterfront.com/events/the-valletta-waterfront-jazz-series-volume-2/",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "partially verified",
+      "notes": "Date, venue, start time, age limit and listed ticket price are published. Do not assume tickets remain available; verify directly with TicketLine before making plans.\nSupporting claim sources:\nThe official Valletta Waterfront event page gives 15 October at 19:30, the Sagrestia Vault venue and a 16+ audience. https://vallettawaterfront.com/events/the-valletta-waterfront-jazz-series-volume-2/\nTicketLine’s seat-selection page shows a €25 ticket including a glass of prosecco and a limited poster; its extracted seat map did not establish current inventory. https://www.ticketline.com.mt/bookings/BookSeats.aspx?ShowId=3122&SectionId=2954 Availability was not determinable from the extracted TicketLine seat map; do not assume tickets remain or call the event sold out."
+    },
+    {
+      "id": "cafe-del-mar-cdm-sundays-oct18",
+      "name": "CDM Sundays at Café del Mar Malta",
+      "category": "DJ event / nightlife",
+      "area": "Qawra",
+      "address": "Café del Mar Malta, Triq it-Trunciera, Qawra, San Pawl il-Baħar SPB 1500, Malta",
+      "hours": "Sunday 18 October 2026; the event description says late afternoon into the night but does not publish a precise start time.",
+      "price range": "Ticket price was not shown on the event page; use the operator’s ticket link. Sofa reservations have a minimum spend that includes admission tickets.",
+      "description": "The official Café del Mar calendar lists CDM Sundays on 18 October. Its event page advertises DJ sets and states a 17+ age limit.",
+      "source_url": "https://cafedelmar.com.mt/event/cdm-sundays-6/?date=20261018",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "verified",
+      "notes": "Exact event start time and ticket price were not visible in the retrieved official event page. Check the ticket link for current entry conditions and availability.\nSupporting claim sources:\nThe official events calendar lists CDM Sundays on Sunday 18 October 2026. https://cafedelmar.com.mt/events/\nThe event page describes late-afternoon-to-night DJ sets, a 17+ age limit, ticket link and sofa reservations with a minimum spend that includes admission. https://cafedelmar.com.mt/event/cdm-sundays-6/?date=20261018\nCafé del Mar’s current contact page gives the Triq it-Trunciera, Qawra address. https://cafedelmar.com.mt/contact/"
+    },
+    {
+      "id": "valletta-waterfront-autumn-vibes",
+      "name": "Autumn Vibes at Valletta Waterfront",
+      "category": "Free outdoor / family activities",
+      "area": "Valletta Waterfront, Floriana",
+      "address": "Valletta Waterfront promenade, Floriana, Malta",
+      "hours": "The organizer’s 2026 calendar shows Autumn Vibes on the weekend dates 17–18 October. Its calendar PDF describes Saturday/Sunday activities from lunchtime into teatime; exact daily times are not published.",
+      "price range": "Free activities per the organizer’s 2026 calendar; the calendar does not publish prices for food or drinks.",
+      "description": "An October programme of free activities along the Valletta Waterfront promenade, with examples in the organizer’s calendar including bouncy castles and seasonal games.",
+      "source_url": "https://vallettawaterfront.com/",
+      "source_type": "official",
+      "date_checked": "2026-10-10",
+      "confidence": "verified",
+      "notes": "The date-range and weekend schedule are from the official 2026 calendar. Check the organizer’s calendar for the current programme before travelling.\nSupporting claim sources:\nThe current Valletta Waterfront calendar lists Autumn Vibes for 17 and 18 October 2026. https://vallettawaterfront.com/\nThe official 2026 calendar describes free weekend activities in October from lunchtime into teatime, with examples including bouncy castles and seasonal games. https://vallettawaterfront.com/?force_download=%2Fwp-content%2Fuploads%2Fsites%2F7%2F2026%2F04%2F2026-Valletta-Waterfront-Events-Calendar.pdf"
+    },
+    {
+      "id": "heritage-malta-sailing-spectacle-2026-10-17",
+      "name": "Sailing Spectacle: Middle Sea Race Viewing",
+      "category": "Heritage Malta special event — details incomplete",
+      "area": "Valletta",
+      "address": "Fort St Elmo and the National War Museum, Mediterranean Street, Valletta, Malta",
+      "hours": "Saturday 17 October 2026. Heritage Malta’s annual calendar lists the event but does not state an event-specific start time; confirm directly before visiting.",
+      "price range": "Not stated in the annual calendar; admission/booking details remain unverified.",
+      "description": "A separate Heritage Malta event listing for Middle Sea Race viewing at Fort St Elmo, alongside the public shoreline viewpoints recommended by the Royal Malta Yacht Club. The annual calendar entry does not establish the event’s time, admission, or ticket availability.",
+      "source_url": "https://heritagemalta.mt/app/uploads/2026/01/2026-calendar-of-events-English-R6-Web.pdf",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "The 2026 calendar lists “Sailing Spectacle: Middle Sea Race Viewing” at Fort St Elmo on 17 October but gives no event-specific time or price. Contact Heritage Malta before relying on this special viewing; it is not a confirmed free event."
     }
   ]
 }
