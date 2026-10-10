@@ -65,7 +65,7 @@
     if (footer) {
       var inner = make("div", "footer-inner");
       var left = document.createElement("div");
-      left.appendChild(make("p", "", "Malta trip guide · Research snapshot: 9 October 2026"));
+      left.appendChild(make("p", "", "Malta trip guide · Research snapshot: 10 October 2026"));
       left.appendChild(make("p", "", "Check source pages and live operator information again before travel; schedules, opening hours and prices can change."));
       var right = document.createElement("div");
       var sourceLink = make("a", "", "Master source log");

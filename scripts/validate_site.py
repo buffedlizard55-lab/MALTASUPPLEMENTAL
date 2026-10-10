@@ -27,7 +27,7 @@ REQUIRED_FIELDS = {
     "confidence",
     "notes",
 }
-SOURCE_TYPES = {"official", "map", "review", "social"}
+SOURCE_TYPES = {"official", "map", "review", "social", "directory"}
 CONFIDENCE = {"verified", "partially verified", "unverified"}
 EXPECTED_PAGES = {
     "data/transport.json": "getting-around.html",
