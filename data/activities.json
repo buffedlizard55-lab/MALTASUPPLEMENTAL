@@ -1,7 +1,7 @@
 {
   "topic": "activities",
   "title": "Activities, landmarks & events in Malta",
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-10",
   "intro": "A source-checked shortlist for the 13–19 October 2026 stay: confirmed event dates, ticketed activities, sights, and gaming-venue status. TWC spectator access and daily match times remain unconfirmed. Google Maps currently marks three legacy public PC/esports-centre listings as permanently closed; The Eden XP Arcade is a separate, current general arcade/VR option, not a PC LAN café. Recheck operators and live schedules before travelling.",
   "records": [
     {
@@ -9,15 +9,15 @@
       "name": "Thunderpick World Championship 2026 Finals",
       "category": "Confirmed event dates — spectator access open question",
       "area": "Ta’ Qali / Ħ’Attard",
-      "address": "BLAST Studios Malta / Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, ATD 4000 Ħ’Attard",
-      "hours": "Organizer timeline: arrivals 12 October; media day 13 October; Group Stage 14–16 October; Playoffs 17–18 October; departures 19 October 2026. Daily match times and public doors were not published on the page checked 9 October.",
+      "address": "Venue-area lead: Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, ATD 4000 Ħ’Attard, identified by a BLAST guide for a separate event. The official TWC page itself says only Malta; exact Thunderpick address/pin and attendee entrance are not confirmed.",
+      "hours": "Official event window 12–19 October 2026: arrival 12th, media day 13th, Group Stage 14–16th, Playoffs 17–18th, departure 19th. Daily public match/door times and ticket-holder instructions are not published.",
       "price_range": "Spectator access and ticket price not confirmed",
-      "description": "The official Finals page confirms the event phases and Malta location. Thunderpick’s announcement and BLAST’s Malta fan guide corroborate BLAST Studios Malta at MFCC, Ta’ Qali. The venue identity does not establish that the event is open to the public; do not assume spectator access.",
+      "description": "The official organizer page lists the event dates and Malta location. A Thunderpick-issued release names BLAST Studios Malta; a BLAST guide for another event associates BLAST Arena Studios with MFCC, Ta’ Qali. This is venue-area corroboration only—not a confirmed Thunderpick street address, public entrance or spectator-access notice.",
       "source_url": "https://world-championship.thunderpick.io/2026-finals/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
-      "confidence": "verified",
-      "notes": "Venue corroboration: Thunderpick announcement https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html and BLAST guide https://blast.tv/cs/news/malta-fan-guide (use the latter for address corroboration only, not current spectator rules). Daily public match/door times and ticket-holder instructions remain open. The 17 October playoff date coincides with the Rolex Middle Sea Race and a Heritage Malta ticketed event; exact TWC times are not published. See getting-around.html for transport caveats once an event timetable is available."
+      "date_checked": "2026-10-10",
+      "confidence": "partially verified",
+      "notes": "The official TWC page was rechecked 10 October and lists arrival 12 October, media day 13 October, Group Stage 14–16 October, Playoffs 17–18 October, and departure 19 October. The Thunderpick-issued release names BLAST Studios Malta but gives no street address or attendee logistics: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . A BLAST guide for a different event associates BLAST Arena Studios with MFCC, Ta’ Qali; use as venue-area context only: https://blast.tv/cs/news/malta-fan-guide . Exact TWC address/pin, daily public match/door times and spectator access remain open. The 17 October playoff date coincides with the Rolex Middle Sea Race and a Heritage Malta ticketed event; exact TWC times are not published. See getting-around.html for transport caveats once an event timetable is available."
     },
     {
       "id": "gzira-mosta-2026-10-14",

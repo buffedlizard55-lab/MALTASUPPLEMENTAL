@@ -4,7 +4,7 @@ A mobile-friendly, source-linked travel guide for the trip window **13–19 Octo
 
 **Published guide:** <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/>
 
-The official Thunderpick page checked on 9 October lists the 2026 Finals Group Stage on 14–16 October and Playoffs on 17–18 October. Thunderpick names BLAST Studios Malta; a BLAST attendee guide for a different event identifies the studio as being at the Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, Ħ’Attard. Neither source confirms this traveler’s spectator access, ticket, daily public door times, or exact entrance. Those details remain open.
+The official Thunderpick page rechecked on 10 October lists the overall 2026 event window as 12–19 October (arrival 12th, media 13th, group stage 14–16th, playoffs 17–18th, departure 19th). The Thunderpick-issued release names BLAST Studios Malta; a BLAST attendee guide for a different event identifies the studio area as the Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, Ħ’Attard. Neither confirms this traveler’s spectator access, ticket, daily public door times, exact entrance, or event transport. Those details remain open.
 
 This is a dated research and planning aid, not a booking or guarantee of future opening hours, fares, availability, event access, radio reception, or programme carriage.
 
@@ -38,6 +38,7 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 - [`docs/HANDOFF.md`](docs/HANDOFF.md) — cross-workstream discoveries and follow-ups.
 - [`docs/PLAN.md`](docs/PLAN.md) — scope, ownership, and verification plan.
 - [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions.
+- [`data/record.schema.json`](data/record.schema.json) — canonical machine-readable schema for the exact 13 fields in every record.
 
 ## Build, preview, and deployment
 
@@ -52,4 +53,4 @@ python3 -m http.server 8080
 
 An HTTP server is needed for browser `fetch()` and the expense planner’s `localStorage` behavior. The deployed planner saves only in the current browser/device; export a CSV before switching devices or clearing browser data.
 
-The Pages workflow and local validation script check JSON/schema, JavaScript syntax, topic-page/data wiring, and local links. External websites are not guaranteed to remain available; re-open primary sources before acting on date-sensitive information.
+The Pages workflow and local validator check the exact 13 record fields and allowed values, require HTTPS primary URLs, confirm primary and cited record links appear in the source log, and check page wiring, navigation, JavaScript syntax and local links. This is not an external URL-liveness crawler; re-open primary sources before acting on date-sensitive information.

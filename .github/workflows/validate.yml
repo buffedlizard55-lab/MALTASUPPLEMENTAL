@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Validate JSON, schema, page wiring, and local links
+      - name: Validate record schema, source log, page wiring, and local links
         run: python3 scripts/validate_site.py
       - name: Check JavaScript syntax
         run: |

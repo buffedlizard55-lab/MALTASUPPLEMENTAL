@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Dependency-free structural checks for the Malta Trip Guide."""
+"""Dependency-free schema, source-log, page-wiring, and local-link checks."""
 
 from __future__ import annotations
 
 import json
 import re
 import sys
+from datetime import date
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -29,6 +30,8 @@ REQUIRED_FIELDS = {
 }
 SOURCE_TYPES = {"official", "map", "review", "social"}
 CONFIDENCE = {"verified", "partially verified", "unverified"}
+URL_RE = re.compile(r"https://[^\s<>\"']+")
+TRAILING_URL_PUNCTUATION = ".,;:!?)]}»”"
 EXPECTED_PAGES = {
     "data/transport.json": "getting-around.html",
     "data/food.json": "restaurants.html",
@@ -74,12 +77,52 @@ def ensure_inside_root(path: Path, label: str) -> Path:
     return resolved
 
 
-def validate_data() -> dict[str, dict]:
-    files = sorted(DATA_DIR.glob("*.json"))
-    if not files:
-        fail("no data/*.json files found")
+def cited_urls(value: str) -> list[str]:
+    return [match.rstrip(TRAILING_URL_PUNCTUATION) for match in URL_RE.findall(value)]
+
+
+def validate_record_schema() -> dict:
+    schema_path = DATA_DIR / "record.schema.json"
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        fail(f"data/record.schema.json: cannot read schema ({exc})")
+    if not isinstance(schema, dict):
+        fail("data/record.schema.json must contain a JSON Schema object")
+    properties = schema.get("properties")
+    required = schema.get("required")
+    if not isinstance(properties, dict) or not isinstance(required, list):
+        fail("data/record.schema.json must define properties and required")
+    if set(properties) != REQUIRED_FIELDS or set(required) != REQUIRED_FIELDS or len(required) != len(REQUIRED_FIELDS):
+        fail("data/record.schema.json must require and define exactly the 13 common record fields")
+    if schema.get("additionalProperties") is not False:
+        fail("data/record.schema.json must reject additional record fields")
+    for field, definition in properties.items():
+        if not isinstance(definition, dict) or definition.get("type") != "string":
+            fail(f"data/record.schema.json: {field} must be a string")
+    if set(properties["source_type"].get("enum", [])) != SOURCE_TYPES:
+        fail("data/record.schema.json: source_type enum does not match the allowed values")
+    if set(properties["confidence"].get("enum", [])) != CONFIDENCE:
+        fail("data/record.schema.json: confidence enum does not match the allowed values")
+    if properties["source_url"].get("format") != "uri" or properties["date_checked"].get("format") != "date":
+        fail("data/record.schema.json must specify URI and date formats")
+    return schema
+
+
+def validate_data() -> tuple[dict[str, dict], set[str], int]:
+    schema = validate_record_schema()
+    source_log = ROOT / "docs/SOURCES.md"
+    if not source_log.is_file():
+        fail("docs/SOURCES.md is missing")
+    source_text = source_log.read_text(encoding="utf-8")
+
+    files = sorted(file for file in DATA_DIR.glob("*.json") if file.name != "record.schema.json")
+    if len(files) != 6:
+        fail(f"expected six topic JSON files, found {len(files)}")
 
     datasets: dict[str, dict] = {}
+    logged_urls: set[str] = set()
+    total_records = 0
     for file_path in files:
         try:
             data = json.loads(file_path.read_text(encoding="utf-8"))
@@ -90,11 +133,15 @@ def validate_data() -> dict[str, dict]:
         for key in ("topic", "title", "last_updated", "intro"):
             if not isinstance(data.get(key), str) or not data[key].strip():
                 fail(f"{file_path.relative_to(ROOT)}: missing or blank top-level {key}")
-        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", data["last_updated"]):
-            fail(f"{file_path.relative_to(ROOT)}: last_updated must use YYYY-MM-DD")
+        try:
+            if date.fromisoformat(data["last_updated"]).isoformat() != data["last_updated"]:
+                fail(f"{file_path.relative_to(ROOT)}: last_updated must use YYYY-MM-DD")
+        except (TypeError, ValueError):
+            fail(f"{file_path.relative_to(ROOT)}: last_updated must be a real YYYY-MM-DD date")
 
         seen: set[str] = set()
         for index, record in enumerate(data["records"], start=1):
+            total_records += 1
             label = f"{file_path.relative_to(ROOT)} record {index}"
             if not isinstance(record, dict):
                 fail(f"{label}: record must be an object")
@@ -112,11 +159,23 @@ def validate_data() -> dict[str, dict]:
                 fail(f"{label}: invalid source_type {record['source_type']!r}")
             if record["confidence"] not in CONFIDENCE:
                 fail(f"{label}: invalid confidence {record['confidence']!r}")
-            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", record["date_checked"]):
-                fail(f"{label}: date_checked must use YYYY-MM-DD")
+            try:
+                if date.fromisoformat(record["date_checked"]).isoformat() != record["date_checked"]:
+                    fail(f"{label}: date_checked must use YYYY-MM-DD")
+            except ValueError:
+                fail(f"{label}: date_checked must be a real YYYY-MM-DD date")
             parsed = urlsplit(record["source_url"])
-            if parsed.scheme not in {"http", "https"} or not parsed.netloc:
-                fail(f"{label}: source_url must be an absolute HTTP(S) URL")
+            if parsed.scheme != "https" or not parsed.netloc:
+                fail(f"{label}: source_url must be an absolute HTTPS URL")
+            if record["source_url"] not in source_text:
+                fail(f"{label}: primary source_url is absent from docs/SOURCES.md")
+
+            # URLs cited in a record (primary or supplementary in notes) must be logged.
+            for value in record.values():
+                for url in cited_urls(value):
+                    logged_urls.add(url)
+                    if url not in source_text:
+                        fail(f"{label}: cited URL is absent from docs/SOURCES.md: {url}")
         datasets[file_path.relative_to(ROOT).as_posix()] = data
 
     for data_path, page_path in EXPECTED_PAGES.items():
@@ -137,7 +196,7 @@ def validate_data() -> dict[str, dict]:
     if not re.search(r"fetch\([\"']data/expenses\.json[\"']\)", costs_html):
         fail("costs.html is not wired to data/expenses.json")
 
-    return datasets
+    return datasets, logged_urls, total_records
 
 
 def local_target(page: Path, value: str) -> tuple[Path, str | None] | None:
@@ -223,13 +282,13 @@ def validate_navigation() -> int:
 
 
 def main() -> None:
-    datasets = validate_data()
+    datasets, logged_urls, records = validate_data()
     page_count, link_count = validate_html_links()
     nav_count = validate_navigation()
-    records = sum(len(data["records"]) for data in datasets.values())
     print(
         "PASS: "
-        f"{len(datasets)} JSON files / {records} schema-valid records; "
+        f"{len(datasets)} JSON files / {records} exact-schema records; "
+        f"{len(logged_urls)} unique record URLs found in docs/SOURCES.md; "
         f"{page_count} HTML pages / {link_count} link attributes checked; "
         f"{nav_count} shared navigation destinations; 18 expense rows wired."
     )

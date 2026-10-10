@@ -7,7 +7,7 @@
 
 ## Executive summary
 
-The site is a mobile-friendly, static Malta tourism and recreation guide with an overview, six topic pages, shared navigation, an evidence dashboard, and an editable expense planner. Six JSON files hold **85 common-schema records** with source type, check date, confidence, and caveats. Unknowns are stated rather than guessed.
+The site is a mobile-friendly, static Malta tourism and recreation guide with an overview, six topic pages, shared navigation, an evidence dashboard, and an editable expense planner. Six topic JSON files hold **85 common-schema records** with source type, check date, confidence, and caveats; [`data/record.schema.json`](../data/record.schema.json) defines the exact 13 fields and disallows per-record extras. Unknowns are stated rather than guessed.
 
 The traveler supplied the hotel name/address, Deluxe Sea-View room type, trip dates, and event location. Those are planning inputs; the hotel reservation, rate, deposit, check-in/out times, flights, party size, arrival/departure times, and tournament attendance were not provided. Six hotel nights applies only if check-in is 13 October and check-out is 19 October; the guide does not assume that booking condition, event access, or an itinerary.
 
@@ -24,11 +24,11 @@ The source register, unresolved questions, workstream status, and cross-topic ha
 
 ## Three cumulative review passes
 
-1. **Implementation and source pass — passed with open questions.** All six data files passed the required common-field and allowed-enum checks. The integrated build reports 85 records, 15 root HTML pages, 79 checked link attributes, eight shared navigation destinations, and all 18 planner rows wired. Page/data references and inline/shared JavaScript syntax were checked.
+1. **Implementation and source pass — passed with open questions.** All six topic datasets passed the canonical exact 13-string-field JSON Schema, allowed-enum, unique-ID, ISO-date, HTTPS-source and source-log checks. The integrated build reports 85 records, 131 unique record URLs in the source log, 15 root HTML pages, 83 checked link attributes, eight shared navigation destinations, and all 18 planner rows wired. Page/data references and inline/shared JavaScript syntax were checked.
 2. **Independent requirements and evidence pass — passed with limitations recorded.** Reviewed the six requested topics, supplied trip facts, event-vs-access distinction, date/frequency/time-zone claims, source type/confidence, and cross-workstream notes. Inaccessible or limited Google/review/social endpoints and unresolved operator or event details are described in the source and open-question logs. Social-platform non-access is not treated as evidence.
-3. **Integration and interaction pass — passed; visual comparison remains limited.** Local HTTP smoke checks returned 200 for the overview, topic pages, data, evidence pages, and legacy notice URLs. A headless DOM run exercised the five record-rendered topics and the expense page; CSS responsive breakpoints and navigation were reviewed. A full desktop/mobile browser screenshot and real-device accessibility check were not available in this environment.
+3. **Integration and interaction pass — passed; visual comparison remains limited.** A fresh local HTTP smoke test returned 200 for 31 site, data, schema, research-document, and legacy-notice paths. A headless DOM run exercised the five record-rendered topics and the expense page; CSS responsive breakpoints and navigation were reviewed. A full desktop/mobile browser screenshot and real-device accessibility check were not available in this environment.
 
-Repeat the repository's offline gate with `python3 scripts/validate_site.py`. It checks the local schema, internal paths, navigation destinations, and expense-row wiring; it is not an external URL crawler.
+Repeat the repository's offline gate with `python3 scripts/validate_site.py`. It checks the machine-readable record schema, exact fields and enums, HTTPS primary-source links and cited-URL presence in `docs/SOURCES.md`, internal paths/fragments, navigation destinations, and expense-row wiring. It is not an external URL-liveness crawler.
 
 ## Open questions and traveler actions
 
