@@ -4,7 +4,7 @@ A mobile-friendly, source-linked travel guide for the trip window **13–19 Octo
 
 **Published guide:** <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/>
 
-The official Thunderpick page rechecked on 10 October lists the overall 2026 event window as 12–19 October (arrival 12th, media 13th, group stage 14–16th, playoffs 17–18th, departure 19th). The Thunderpick-issued release names BLAST Studios Malta; a BLAST attendee guide for a different event identifies the studio area as the Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, Ħ’Attard. Neither confirms this traveler’s spectator access, ticket, daily public door times, exact entrance, or event transport. Those details remain open.
+The official Thunderpick page rechecked on 10 October lists the overall 2026 event window as 12–19 October (arrival 12th, media day 13th, Group Stage 14–16th, Playoffs 17–18th, departure 19th). The Thunderpick-issued release names BLAST Studios Malta; a BLAST attendee guide for a different event gives MFCC/Ta’ Qali venue-area context only. Neither confirms this traveler’s spectator access, ticket, daily public door times, exact event entrance, or transport. Those details remain open.
 
 This is a dated research and planning aid, not a booking or guarantee of future opening hours, fares, availability, event access, radio reception, or programme carriage.
 
@@ -24,7 +24,7 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 ## Key findings and limits
 
 - **Event and venue:** official Thunderpick sources list the Group Stage and Playoffs dates. The BLAST guide supplies venue/address corroboration only; public spectator access, ticket arrangements, door times, and event-day entrance instructions were not confirmed.
-- **Event-day transit:** Route 186 is the leading direct public-bus candidate between Qawra and Ta’ Qali; Route 214 is an alternate to compare. The Route 186 timetable is not a saved hotel-to-venue itinerary. MPT lists a 17 October evening diversion (19:00 to approximately midnight); confirm the exact outbound/return stops, walking segments, live timetable, and effect of the diversion close to travel.
+- **Event-day transit:** Route 186 is the leading public-bus corridor between Qawra and Ta’ Qali; Route 214 is an alternate to compare. MPT’s static listing shows Qawra stop 952 at 06:10–21:38. The normal Rabat-to-Buġibba return runs via St Paul’s Bay/Buġibba, not the Qawra seafront, with a final listed arrival at Buġibba Bay 1 at 21:26—this is not a guaranteed hotel return. MPT also lists a 17 October evening diversion (19:00 to approximately midnight); confirm the exact stops, walking segments, live timetable, and detour impact close to travel.
 - **Radio:** NET FM is listed at FM 101 MHz and has recurring weekend sports shows. Malta’s DAB+ directory lists Radio Sportiva and BBC World Service. Exact DAB+ block/frequency and reception at the hotel/event venue remain unverified; no radio carriage of the TWC, Gżira United–Mosta, or Rolex Middle Sea Race was confirmed. Do not rely on fixtures or general sports listings as proof of carriage.
 - **Expense planner:** all budget and actual amounts start blank. Enter amounts in euros on a consistent whole-trip/party basis. The planner stores inputs in this browser/device only, does not send them to a server, exports a CSV backup, and can clear saved entries. Reference URLs are not price quotes.
 - **Research-platform limits:** sampled TripAdvisor and a small number of Google Maps profile views informed parts of the food/activities research. Direct Yelp, Instagram, TikTok, Facebook, and X requests, and Reddit refreshes, were blocked or returned HTTP 403 in the relevant checks. Platform coverage is not comprehensive; see the dated notes in `docs/SOURCES.md` and the topic pages.
@@ -37,8 +37,8 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 - [`docs/STATUS.md`](docs/STATUS.md) — workstream progress and blockers.
 - [`docs/HANDOFF.md`](docs/HANDOFF.md) — cross-workstream discoveries and follow-ups.
 - [`docs/PLAN.md`](docs/PLAN.md) — scope, ownership, and verification plan.
-- [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions.
-- [`data/record.schema.json`](data/record.schema.json) — canonical machine-readable schema for the exact 13 fields in every record.
+- [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions; topic records use the exact common key `price_range`.
+- [`data/record.schema.json`](data/record.schema.json) — canonical machine-readable schema for the exact 13 fields.
 
 ## Build, preview, and deployment
 
@@ -53,4 +53,4 @@ python3 -m http.server 8080
 
 An HTTP server is needed for browser `fetch()` and the expense planner’s `localStorage` behavior. The deployed planner saves only in the current browser/device; export a CSV before switching devices or clearing browser data.
 
-The Pages workflow and local validator check the exact 13 record fields and allowed values, require HTTPS primary URLs, confirm primary and cited record links appear in the source log, and check page wiring, navigation, JavaScript syntax and local links. This is not an external URL-liveness crawler; re-open primary sources before acting on date-sensitive information.
+The Pages workflow and local validator check the exact 13-field record schema and enums, HTTPS primary URLs and their source-log coverage, JavaScript syntax, topic-page/data wiring, and local links. External websites are not guaranteed to remain available; re-open primary sources before acting on date-sensitive information.
