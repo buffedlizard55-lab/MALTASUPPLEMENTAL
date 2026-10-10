@@ -11,7 +11,7 @@ Last updated: **2026-10-10**. Status labels: `not started`, `in progress`, `bloc
 | D. Everyday life for a US traveler | integrated | `data/everyday.json`, `pages/everyday.html` | Fourteen records are integrated with linked official/verifiable sources. Actual passport, itinerary, carrier and medication are unknown; ETIAS and weather are volatile; no authoritative fixed tipping percentage was found (Q-011, Q-020–Q-024). | 2026-10-09 |
 | E. Radio sports broadcasts | integrated | `data/radio.json`, `pages/radio.html` | Two date-specific BBC World Service Sportsworld entries are integrated at 15:06 on 17 Oct and 16:06 on 18 Oct Malta time. Published 3h53 duration calculations give 18:59/19:59 ends, immediately before the next schedule entries. No fixture commentary is named; WorldDAB is an industry directory and hotel reception is untested (Q-009–Q-010). | 2026-10-09 |
 | F. Expense planner | integrated | `data/expenses.json`, `pages/expenses.html` | Eighteen source-linked price/unknown records accompany four trip-level and 28 date-specific blank lines. Custom items, quantity arithmetic, budget comparison, optional user-entered FX, local-only storage, CSV export, print and reset are implemented. No meal, taxi, FX, tax, tip, attendance, payment or coverage is assumed; blanks are not free. | 2026-10-09 |
-| G. Site shell, executive summary & integration | integrated | `README.md`, `index.html`, `sources.html`, root compatibility pages, shared CSS/JS and integration docs | Executive summary and navigation now match the supplied 13–19 Oct trip. Legacy topic URLs redirect to current pages and the old prize/legal pages are retired. Local-link, source/schema, date/arithmetic and JSDOM interaction checks pass. A real-device visual audit, shell-based outbound-link test and post-merge GitHub Pages deployment check have not been performed. | 2026-10-09 |
+| G. Site shell, executive summary & integration | integrated | `README.md`, `index.html`, `sources.html`, root compatibility pages, shared CSS/JS and integration docs | Executive summary and navigation match the supplied 13–19 Oct trip; legacy routes redirect and old prize/legal material is retired. The offline integration gate passes (70 records, 112 local links/assets/fragments), and JSDOM interaction checks passed. GitHub Pages reported `built` for merge commit `c4a33ec`; external URL liveness and actual browser/device rendering remain unverified. | 2026-10-10 |
 
 ## Three cumulative review passes
 
@@ -28,7 +28,7 @@ Last updated: **2026-10-10**. Status labels: `not started`, `in progress`, `bloc
 
 ## Current execution note
 
-This session is constrained to branch `arena/785456db-maltasupplemental`. Workstreams were performed serially on that branch, following the file ownership in `docs/PLAN.md`. The static site is ready for repository-level review; GitHub Pages has not yet been verified in a post-merge deployment.
+This session is constrained to branch `arena/785456db-maltasupplemental`. Workstreams were performed serially on that branch, following the file ownership in `docs/PLAN.md`. PR #12 merged to `main` as `c4a33ec` on 10 October 2026. GitHub Pages reports the merge build as `built`; that status does not substitute for testing the public page in a browser or on a real device.
 
 ## Latest-main reconciliation
 
