@@ -3,16 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,follow">
-  <meta http-equiv="refresh" content="0; url=pages/transport.html">
-  <link rel="canonical" href="pages/transport.html">
-  <title>Page moved · Malta Trip Companion</title>
+  <meta name="description" content="Source-backed Malta transport guidance for the Qawra hotel, Ta’ Qali event venue, airport, ferries and taxis.">
+  <title>Getting Around Malta | Malta Trip Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>This page has moved</h1>
-    <p>The current page for <strong>Getting around</strong> is <a href="pages/transport.html">pages/transport.html</a>.</p>
-
+  <header class="site-header" data-site-header></header>
+  <main class="page">
+    <p class="small"><a href="index.html">Overview</a> / Getting around</p>
+    <section class="hero" aria-labelledby="topic-heading">
+      <p class="eyebrow">Transport · hotel, event, airport & island connections</p>
+      <h1 id="topic-heading" data-topic-title>Getting around Malta</h1>
+      <p data-topic-intro>Loading source-backed transport notes…</p>
+    </section>
+    <aside class="callout callout-warning" aria-label="Travel planning note">
+      <strong class="callout-title">Use the live operator tools for exact departures.</strong>
+      Route choices, stop access, fares and diversions can change. Confirm each event-day journey in Malta Public Transport’s planner and recheck service notices before setting out.
+    </aside>
+    <section class="topic-tools" data-topic-tools aria-label="Filter transport options">
+      <label>Search transport options
+        <input type="search" placeholder="Try ‘Route 186’, ‘airport’, or ‘Gozo’" autocomplete="off">
+      </label>
+      <label>Filter by category
+        <select aria-label="Filter by category"><option value="">All categories</option></select>
+      </label>
+      <p class="result-count" data-result-count aria-live="polite"></p>
+    </section>
+    <div data-topic-data="data/transport.json" aria-live="polite"></div>
   </main>
+  <footer class="site-footer" data-site-footer></footer>
 </body>
 </html>

@@ -1,55 +1,51 @@
-# Final report — Malta Trip Companion
+# Final report — Malta Trip Guide
 
-**Research snapshot:** 9 October 2026
-**Trip window supplied for planning:** 13–19 October 2026
-**Hotel supplied for planning:** AX ODYCY Malta, Qawra Coast Road, Qawra SPB 1902
+**Planning window:** 13–19 October 2026
+**Hotel supplied by traveler:** AX ODYCY Malta, Qawra Coast Road, Qawra SPB 1902
+**Event location supplied by traveler:** BLAST Arena Studios, Attard
+**Research snapshot:** see the individual access dates in [`SOURCES.md`](SOURCES.md)
 
 ## Executive summary
 
-The repository now provides a focused, mobile-friendly static guide for the supplied Malta trip. It has six topic pages—transport, food and cafés, activities and sights, practical U.S.-traveler guidance, scheduled sports radio, and an editable expense planner—plus a concise overview and an evidence landing page. Structured records retain source links, source types, check dates, confidence labels and caveats. Unknown prices, hours, schedules, entry conditions and venue access are not guessed.
+The site is a mobile-friendly, static Malta tourism and recreation guide with an overview, six topic pages, shared navigation, an evidence dashboard, and an editable expense planner. Six JSON files hold **85 common-schema records** with source type, check date, confidence, and caveats. Unknowns are stated rather than guessed.
 
-The trip window covers seven calendar dates. Six hotel nights applies only if the reservation is check-in on 13 October and check-out on 19 October. The user has not supplied the hotel booking confirmation/room type, flights, arrival/departure times, traveler count or intended tournament sessions. The planner therefore begins blank and does not assume any event attendance, reimbursement or third-party coverage.
+The traveler supplied the trip dates and destinations, not the hotel booking, room category, flights, party size, arrival/departure times, or tournament attendance. Six nights applies only if check-in is 13 October and check-out is 19 October. The guide does not assume that booking condition, event access, or an itinerary.
 
-## Verified deliverables
+## Verified deliverables and research findings
 
-- **Transport:** eight source-linked records compare public transport, Airport Direct, taxi/rideshare and rental options. Route 186 is presented as a corridor to test, not a finalized door-to-door itinerary. The page flags the 17–18 October notice and requires date/time-specific operator-planner checks.
-- **Food and cafés:** eight Qawra-area venue records include on-property dining and separate, dated review-platform snapshots. Ratings are not blended and no representative EUR meal cost is inferred.
-- **Activities and sights:** 20 records cover attractions, dated event leads and gaming options. Spectator access, gaming walk-in terms and event conflicts remain visible where not confirmed.
-- **Everyday travel:** 14 records link entry, money, phone, health, power, safety, weather and practical guidance to official or otherwise identified sources. Advice that depends on nationality, carrier or medicine is explicitly conditional.
-- **Scheduled radio sport:** two official BBC World Service Sportsworld programme entries are recorded for 17 and 18 October, with Malta-local starts at 15:06 and 16:06. Their published 3h53 duration yields calculated ends at 18:59 and 19:59. Neither listing names a specific match; hotel DAB+ reception is untested.
-- **Expense planner:** 18 optional price/unknown reference cards accompany four trip-level and 28 date-specific blank lines. Users can add custom entries, calculate quantity × unit cost, compare an optional budget limit, enter their own EUR-per-USD rate, save locally in the browser, export CSV and print. Reference prices are not included unless selected.
-- **Evidence and maintenance:** source, open-question, handoff, schema, status and planning registers are maintained in `docs/`. Root compatibility URLs redirect to the current guide rather than presenting stale prize/legal pages or unsupported itinerary claims.
+- **Getting around (13 records):** compares airport, bus, taxi/ride-hailing, car-hire, ferry, and local transport options. Route 186 is a leading Qawra–Ta’ Qali corridor candidate and Route 214 is listed as an alternative to compare. A date-specific MPT itinerary to the event entrance, diversion impact, fare validity, and late return still require checking in the operator planner; the page is not a door-to-door guarantee.
+- **Food and cafés (15 records):** includes AX ODYCY/on-property options, Qawra-area venues, selected wider-area ideas, local-food context, and separately labelled map/review/community observations. Platform ratings are not blended. Reported closures and conflicting hours remain caveated; current menus, hours, and representative meal costs are not assumed.
+- **Activities, landmarks, and events (20 records):** covers recreation and gaming leads, Malta attractions, and dated events relevant to the trip. Organizer/event dates are kept distinct from spectator access, ticket terms, opening times, or guaranteed availability. Conflicts such as the Heritage Malta picnic listing and site-closure notice remain open.
+- **Everyday travel (15 records):** covers entry pointers, EES/ETIAS, currency/cards, language, electricity, mobile connectivity, emergency/health, safety, weather, and practical U.S.-traveler considerations. Passport, device, carrier, itinerary, and medicine-dependent advice is conditional.
+- **Sports radio (4 records):** the Broadcasting Authority lists NET FM at FM 101 MHz; NET FM’s official grid shows recurring weekend sports programming, not a trip-week guarantee. Digi B’s directory lists Radio Sportiva and BBC World Service on DAB+, but the current local block/frequency and reception at Qawra are unverified. BBC programme listings show Sportsworld on 17 and 18 October; they do not name a particular match. No current AM/MW sports service or named-event radio carriage was confirmed. A third-party TalkSPORT/6C claim is explicitly unverified.
+- **Expense planner (18 blank-by-default categories):** editable EUR budget/actual fields, notes, totals and difference, browser-local autosave, CSV export, source links, and reset are available. The starter has no assumed itinerary, amounts, booking costs, event costs, reimbursement, tax, tip, or exchange rate; blank does not mean free.
 
-## Open questions and traveler-specific actions
+The source register, unresolved questions, workstream status, and cross-topic handoffs are in [`SOURCES.md`](SOURCES.md), [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md), [`STATUS.md`](STATUS.md), and [`HANDOFF.md`](HANDOFF.md).
 
-1. Confirm the hotel reservation, actual check-in/out times, room details and booking total; six nights remains conditional on 13/19 October check-in/out.
-2. Supply flight airports/numbers, baggage, arrival/departure times and traveler count before finalizing airport options or costs.
-3. Confirm whether and when the traveler will attend the tournament, and obtain the event-specific entrance, ticket/access terms and session times. Then use the official MPT planner for the exact trip and return, especially around the 17–18 October route notice.
-4. Recheck 2026/27 bus fare/card terms, supplier prices, venue hours, event availability and weather before travel. Restaurant records do not establish an average meal budget.
-5. Recheck ETIAS immediately before departure; its 9 October status was not operating, while an older EU forecast placed a possible start in Q4 2026.
-6. Confirm the traveler’s actual passport/Schengen history, mobile carrier plan and any medication-specific requirements with the relevant official sources.
-7. Recheck BBC schedule changes and the local DAB+ channel list; bring a DAB+ capable receiver if relying on over-the-air radio and test reception on arrival.
-8. Obtain organizer confirmation before relying on Heritage Malta’s Picnic listing, which conflicts with the current Borġ in-Nadur closure notice.
+## Three cumulative review passes
 
-All 24 unresolved items and proposed evidence/actions are recorded in `docs/OPEN_QUESTIONS.md`.
+1. **Implementation and source pass — passed with open questions.** All six data files passed the required common-field and allowed-enum checks. The integrated build reports 85 records, 15 root HTML pages, 79 checked link attributes, eight shared navigation destinations, and all 18 planner rows wired. Page/data references and inline/shared JavaScript syntax were checked.
+2. **Independent requirements and evidence pass — passed with limitations recorded.** Reviewed the six requested topics, supplied trip facts, event-vs-access distinction, date/frequency/time-zone claims, source type/confidence, and cross-workstream notes. Inaccessible or limited Google/review/social endpoints and unresolved operator or event details are described in the source and open-question logs. Social-platform non-access is not treated as evidence.
+3. **Integration and interaction pass — passed; visual comparison remains limited.** Local HTTP smoke checks returned 200 for the overview, topic pages, data, evidence pages, and legacy notice URLs. A headless DOM run exercised the five record-rendered topics and the expense page; CSS responsive breakpoints and navigation were reviewed. A full desktop/mobile browser screenshot and real-device accessibility check were not available in this environment.
+
+Repeat the repository's offline gate with `python3 scripts/validate_site.py`. It checks the local schema, internal paths, navigation destinations, and expense-row wiring; it is not an external URL crawler.
+
+## Open questions and traveler actions
+
+1. Confirm the hotel reservation, actual check-in/out, room details, booking total, and separately billed charges.
+2. Provide flight details, airports, baggage, arrival/departure times, and traveler count before finalizing transfers or total costs.
+3. Confirm whether/when the traveler will attend the event, ticket/access terms, session times, and the event-specific public entrance. Then run the official Malta Public Transport planner for the outbound and late-return trip, including the 17 October notice.
+4. Recheck 2026/27 fares/cards, live venue hours/menus, event availability, attraction access, and weather before travel.
+5. Verify the applicable passport/Schengen and ETIAS status, mobile plan/device compatibility, and medication-specific requirements with the relevant authority/provider.
+6. Recheck official radio schedules and DAB+ channel details close to the broadcasts; reception at the hotel has not been tested.
+
+See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) for the full list, evidence gaps, and proposed next checks.
 
 ## Limitations
 
-- External source freshness is not guaranteed after the 9 October snapshot. The repository's offline verification script checks URL presence and internal structure, not whether external sites remain live.
-- JSDOM exercised shared navigation, data rendering, search/filtering and expense interactions at a 390 px viewport; it is not a real-device visual/accessibility audit.
-- The current source inventory flags direct-access failures and platform limitations. WorldDAB is an industry directory rather than the local DAB operator; hotel indoor radio reception has not been measured.
-- No actual booking, flight itinerary, tournament ticket, attendance schedule, roaming plan, medicine list, exchange rate, taxes/tips or supplier quotes are inferred.
-- GitHub Pages is configured to publish `main` from the repository root; the GitHub Pages API reported the post-merge build for `c4a33ec` as `built`. This confirms the build state, not the live browser rendering, external link liveness or real-device appearance; recheck after future content changes.
-- This guide is a personal planning aid, not legal, tax, medical or immigration advice, a live dispatch service, or a guarantee of availability or access.
-
-## Verification record
-
-The three cumulative review passes are documented in `docs/STATUS.md`. Final local checks completed:
-
-- 70 topic and price-reference records passed common-schema, allowed-enum, date, unique-ID, source URL/log and open-question reference checks.
-- 101 unique source-log IDs and 24 open questions were recognized; trip-date weekdays, the conditional six-night calculation, 32 blank expense lines and radio duration arithmetic were checked.
-- 112 local HTML links, fragments and assets resolved across root and topic pages; all legacy root routes were checked as redirects.
-- JSDOM smoke tests passed for the overview, evidence page and all six topic pages, including responsive-menu state, data rendering, search/filter and expense math, local storage, price insertion, CSV action and reset.
-- `node --check js/site.js`, CSS brace balance (114/114) and `git diff --check` passed.
-
-Run `python3 scripts/verify_site.py` (or `python3 scripts/check_links.py`) from the repository root to repeat the offline integration gate. It does not replace outbound source checks or a device-level visual review.
+- Information is a dated research snapshot and can change. The maintained source log gives claim-specific access dates and identifies third-party or non-official evidence.
+- Some requested review/social services were blocked or only partially queryable. Google Maps and platform snapshots do not establish current operator hours or prices.
+- The offline link checker does not guarantee external-site availability. No automatic crawler of every external source was run.
+- A headless DOM simulation is not a substitute for visual review on real desktop/mobile browsers or assistive technologies.
+- GitHub Pages is configured to publish the repository root from `main`. The Pages API reported the current `main` build for merge commit `87bca74` as `built`; that confirms the upstream build only, not deployment of this PR's different files or actual browser/device rendering.
+- This guide is a planning aid, not a booking, dispatch, immigration, tax, legal, medical, or event-access guarantee.

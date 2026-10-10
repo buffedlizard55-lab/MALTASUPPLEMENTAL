@@ -3,16 +3,320 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,follow">
-  <meta http-equiv="refresh" content="0; url=pages/expenses.html">
-  <link rel="canonical" href="pages/expenses.html">
-  <title>Page moved · Malta Trip Companion</title>
+  <meta name="description" content="Editable, blank-by-default Malta trip expense planner for 13–19 October 2026, with local autosave and CSV export.">
+  <title>Expense planner · Malta Trip Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>This page has moved</h1>
-    <p>The current page for <strong>Expense planner</strong> is <a href="pages/expenses.html">pages/expenses.html</a>.</p>
+  <header class="site-header" data-site-header></header>
 
+  <main class="page">
+    <section class="hero" aria-labelledby="expenses-title">
+      <p class="eyebrow">Editable planner · Trip window 13–19 October 2026</p>
+      <h1 id="expenses-title" data-expense-title>Quick-fill Malta expense planner</h1>
+      <p data-expense-intro>Loading blank-by-default expense categories…</p>
+      <div class="meta">
+        <span><strong>Hotel as supplied:</strong> AX ODYCY, Deluxe Sea-View, Qawra</span>
+        <span><strong>Planning currency:</strong> euro (€)</span>
+      </div>
+    </section>
+
+    <section class="callout callout-warning" aria-label="Expense planner assumptions">
+      <span class="callout-title">No itinerary or booking amounts were supplied</span>
+      <p>All amount fields start blank. Do not infer flight route, hotel nights/check-in dates, number of travelers, meal plan, event admission, or expenses covered by someone else. Enter whole-trip totals in euros on a consistent basis; if a charge is in USD, note the conversion rate and fee in the row notes. Confirm every quote and booking before relying on it.</p>
+      <p>This planner saves on this browser/device only; it does not send amounts to a server. Download a CSV backup before clearing browser data or switching devices. Avoid saving private financial details on a shared device.</p>
+    </section>
+
+    <section aria-labelledby="summary-title">
+      <h2 id="summary-title">Trip totals</h2>
+      <p class="lede">Blank amount fields count as €0 until filled. These are sums of the values you enter, not a cost estimate.</p>
+      <div class="grid">
+        <article class="card">
+          <span class="card-tag">Your inputs</span>
+          <h3>Budgeted total</h3>
+          <p><output id="budget-total" aria-live="polite">€0.00</output></p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Your inputs</span>
+          <h3>Actual total</h3>
+          <p><output id="actual-total" aria-live="polite">€0.00</output></p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Actual minus budget</span>
+          <h3>Difference</h3>
+          <p><output id="difference-total" aria-live="polite">€0.00</output></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-label="Expense planner actions">
+      <div class="quick-links">
+        <button type="button" id="export-csv">Download CSV backup ↓</button>
+        <button type="button" id="clear-expenses">Clear saved entries</button>
+      </div>
+      <p id="save-status" class="small" role="status" aria-live="polite">Your amounts will autosave locally as you type.</p>
+    </section>
+
+    <section aria-label="Editable expense categories">
+      <div id="expense-list" aria-live="polite">
+        <p class="muted">Loading editable expense rows…</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="expense-help-title">
+      <h2 id="expense-help-title">Quick-use notes</h2>
+      <ul class="notice-list">
+        <li>Each line has a budget and actual amount, both in euros. Use whole-trip/whole-party totals consistently; if you prefer per-person amounts, note that basis and apply it to every row.</li>
+        <li>The reference links are for reconfirming details or choosing a provider; they are not price quotes. No amount is prefilled, even where another guide page reports a dated menu or ticket price.</li>
+        <li>The event-access row is only a placeholder. A tournament schedule does not establish public access or a ticket price; leave it blank until the organizer confirms.</li>
+        <li>Use the <a href="getting-around.html">transport guide</a>, <a href="restaurants.html">food shortlist</a>, <a href="activities.html">activities and events</a>, and <a href="everyday.html">everyday guide</a> to compare sourced options before entering your own amounts.</li>
+      </ul>
+    </section>
   </main>
+
+  <footer class="site-footer" data-site-footer></footer>
+
+  <script>
+    (function () {
+      "use strict";
+      var storageKey = "malta-trip-2026-10-13-19-expenses-v1";
+      var host = document.getElementById("expense-list");
+      var saveStatus = document.getElementById("save-status");
+      var records = [];
+      var state = {};
+      var storageAvailable = true;
+      var formatter = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR" });
+
+      function make(tag, className, text) {
+        var element = document.createElement(tag);
+        if (className) element.className = className;
+        if (text !== undefined && text !== null) element.textContent = text;
+        return element;
+      }
+
+      function appendLinkedText(container, text) {
+        var value = String(text || "");
+        var urlPattern = /https?:\/\/[^\s<>]+/g;
+        var lastIndex = 0;
+        var match;
+        while ((match = urlPattern.exec(value)) !== null) {
+          var rawUrl = match[0];
+          var trailing = "";
+          while (/[),.;!?]$/.test(rawUrl)) {
+            trailing = rawUrl.slice(-1) + trailing;
+            rawUrl = rawUrl.slice(0, -1);
+          }
+          if (match.index > lastIndex) container.appendChild(document.createTextNode(value.slice(lastIndex, match.index)));
+          try {
+            var parsed = new URL(rawUrl);
+            if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+              var link = make("a", "", rawUrl);
+              link.href = parsed.href;
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+              container.appendChild(link);
+            } else {
+              container.appendChild(document.createTextNode(rawUrl));
+            }
+          } catch (_error) {
+            container.appendChild(document.createTextNode(rawUrl));
+          }
+          if (trailing) container.appendChild(document.createTextNode(trailing));
+          lastIndex = match.index + match[0].length;
+        }
+        if (lastIndex < value.length) container.appendChild(document.createTextNode(value.slice(lastIndex)));
+      }
+
+      function makeLabel(caption, recordId, fieldName, type, savedValue) {
+        var label = make("label", "", caption);
+        var input = document.createElement("input");
+        input.type = type;
+        input.id = "expense-" + recordId + "-" + fieldName;
+        input.name = input.id;
+        input.dataset.expenseId = recordId;
+        input.dataset.expenseField = fieldName;
+        input.autocomplete = "off";
+        if (type === "number") {
+          input.min = "0";
+          input.step = "0.01";
+          input.inputMode = "decimal";
+          input.placeholder = "0.00";
+        } else {
+          input.maxLength = 240;
+          input.placeholder = "Optional booking or receipt detail";
+        }
+        input.value = savedValue || "";
+        label.appendChild(input);
+        return label;
+      }
+
+      function readStoredState() {
+        try {
+          var raw = window.localStorage.getItem(storageKey);
+          state = raw ? JSON.parse(raw) : {};
+          if (!state || typeof state !== "object" || Array.isArray(state)) state = {};
+        } catch (error) {
+          storageAvailable = false;
+          state = {};
+          saveStatus.textContent = "Browser storage is unavailable. You can still use the form, but download a CSV backup before leaving.";
+        }
+      }
+
+      function buildCard(record) {
+        var saved = state[record.id] || {};
+        var article = make("article", "record-card");
+        article.dataset.expenseRow = record.id;
+        var meta = make("div", "record-meta");
+        meta.append(make("span", "pill", record.category), make("span", "pill unverified", "amount not verified"));
+        article.append(meta, make("h3", "", record.name), make("p", "", record.description));
+
+        var dl = make("dl", "record-details");
+        var priceDetail = make("div", "record-detail");
+        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record.price_range));
+        dl.appendChild(priceDetail);
+        article.appendChild(dl);
+
+        var fields = make("div", "topic-tools");
+        fields.style.margin = "14px 0 0";
+        fields.style.padding = "12px";
+        fields.append(
+          makeLabel("Budgeted amount (€)", record.id, "budget", "number", saved.budget),
+          makeLabel("Actual amount (€)", record.id, "actual", "number", saved.actual),
+          makeLabel("Notes / booking detail", record.id, "note", "text", saved.note)
+        );
+        article.appendChild(fields);
+
+        var source = document.createElement("a");
+        source.className = "record-source";
+        source.href = record.source_url;
+        source.target = "_blank";
+        source.rel = "noopener noreferrer";
+        source.textContent = "Reference link (not a price quote) ↗";
+        source.setAttribute("aria-label", "Open reference page for " + record.name + " in a new tab");
+        article.appendChild(source);
+        article.appendChild(make("div", "record-source-meta", record.source_type + " · checked " + record.date_checked + " · no cost prefilled"));
+
+        var notes = make("div", "record-notes");
+        appendLinkedText(notes, record.notes);
+        article.appendChild(notes);
+        return article;
+      }
+
+      function formatDifference(amount) {
+        return (amount > 0 ? "+" : "") + formatter.format(amount);
+      }
+
+      function updateTotals() {
+        var budget = 0;
+        var actual = 0;
+        host.querySelectorAll("[data-expense-row]").forEach(function (row) {
+          var budgetInput = row.querySelector('[data-expense-field="budget"]');
+          var actualInput = row.querySelector('[data-expense-field="actual"]');
+          var budgetValue = budgetInput && budgetInput.value !== "" ? Number(budgetInput.value) : 0;
+          var actualValue = actualInput && actualInput.value !== "" ? Number(actualInput.value) : 0;
+          if (Number.isFinite(budgetValue)) budget += budgetValue;
+          if (Number.isFinite(actualValue)) actual += actualValue;
+        });
+        document.getElementById("budget-total").textContent = formatter.format(budget);
+        document.getElementById("actual-total").textContent = formatter.format(actual);
+        document.getElementById("difference-total").textContent = formatDifference(actual - budget);
+      }
+
+      function captureState() {
+        var next = {};
+        host.querySelectorAll("[data-expense-row]").forEach(function (row) {
+          var id = row.dataset.expenseRow;
+          next[id] = {};
+          row.querySelectorAll("[data-expense-field]").forEach(function (input) {
+            next[id][input.dataset.expenseField] = input.value;
+          });
+        });
+        state = next;
+      }
+
+      function save() {
+        captureState();
+        if (!storageAvailable) return;
+        try {
+          window.localStorage.setItem(storageKey, JSON.stringify(state));
+          saveStatus.textContent = "Saved locally in this browser on this device. Download a CSV backup to move it elsewhere.";
+        } catch (error) {
+          storageAvailable = false;
+          saveStatus.textContent = "Could not save to this browser. Download a CSV backup before leaving or reloading.";
+        }
+      }
+
+      function render(data) {
+        records = Array.isArray(data.records) ? data.records : [];
+        document.querySelector("[data-expense-title]").textContent = data.title || "Expense planner";
+        document.querySelector("[data-expense-intro]").textContent = data.intro || "Enter confirmed trip costs below.";
+        host.replaceChildren();
+        var categories = Array.from(new Set(records.map(function (record) { return record.category; })));
+        categories.forEach(function (category) {
+          var section = make("section", "category-section");
+          var heading = make("div", "category-heading");
+          heading.append(make("h2", "", category), make("span", "category-count", records.filter(function (record) { return record.category === category; }).length + " line items"));
+          var grid = make("div", "grid");
+          records.filter(function (record) { return record.category === category; }).forEach(function (record) { grid.appendChild(buildCard(record)); });
+          section.append(heading, grid);
+          host.appendChild(section);
+        });
+        updateTotals();
+        if (storageAvailable) saveStatus.textContent = "Your amounts autosave locally in this browser as you type.";
+      }
+
+      function csvCell(value) {
+        var text = String(value === undefined || value === null ? "" : value);
+        if (/^[=+@-]/.test(text)) text = "'" + text;
+        return '"' + text.replace(/"/g, '""') + '"';
+      }
+
+      document.getElementById("expense-list").addEventListener("input", function () {
+        updateTotals();
+        save();
+      });
+
+      document.getElementById("export-csv").addEventListener("click", function () {
+        captureState();
+        var rows = [["Item", "Category", "Budgeted EUR", "Actual EUR", "Notes", "Reference URL"]];
+        records.forEach(function (record) {
+          var itemState = state[record.id] || {};
+          rows.push([record.name, record.category, itemState.budget || "", itemState.actual || "", itemState.note || "", record.source_url]);
+        });
+        var csv = rows.map(function (row) { return row.map(csvCell).join(","); }).join("\r\n");
+        var blob = new Blob(["\ufeff" + csv], { type: "text/csv;charset=utf-8" });
+        var url = URL.createObjectURL(blob);
+        var link = document.createElement("a");
+        link.href = url;
+        link.download = "malta-expenses-2026-10-13-to-19.csv";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url);
+        saveStatus.textContent = "CSV backup downloaded. Keep it somewhere private and secure.";
+      });
+
+      document.getElementById("clear-expenses").addEventListener("click", function () {
+        if (!window.confirm("Clear all budget, actual, and note entries saved in this browser? This cannot be undone unless you downloaded a CSV backup.")) return;
+        state = {};
+        host.querySelectorAll("[data-expense-field]").forEach(function (input) { input.value = ""; });
+        if (storageAvailable) {
+          try { window.localStorage.removeItem(storageKey); } catch (error) { storageAvailable = false; }
+        }
+        updateTotals();
+        saveStatus.textContent = "Saved expense entries cleared from this browser.";
+      });
+
+      readStoredState();
+      fetch("data/expenses.json").then(function (response) {
+        if (!response.ok) throw new Error("Unable to load expense categories (" + response.status + ")");
+        return response.json();
+      }).then(render).catch(function (error) {
+        host.replaceChildren(make("p", "callout callout-danger", "Expense rows could not be loaded. Reload the page or download the source data from the project repository. " + error.message));
+        saveStatus.textContent = "Planner data did not load.";
+      });
+    })();
+  </script>
 </body>
 </html>

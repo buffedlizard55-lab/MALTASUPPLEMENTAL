@@ -1,234 +1,233 @@
 {
-  "heading": "Qawra food and café shortlist",
+  "topic": "Food & cafés",
+  "title": "Food & cafés in Malta",
+  "last_updated": "2026-10-09",
+  "intro": "A source-backed shortlist centered on AX ODYCY and Qawra, with a few clearly labeled farther outings. Operator pages and menus are primary; review ratings, counts and guide positions are dated snapshots, not stable quality measures. Direct TripAdvisor profiles were checked on 9 October 2026. Limited Google Maps profile views loaded for Minoa and Trattoria Riccardo only. Yelp, Instagram, TikTok, Facebook and X page requests returned HTTP 403; five Reddit threads last read on 24 September could not be refreshed on 9 October (HTTP 403). TripAdvisor currently labels The Meeting Point Cafe & Snacks Bar CLOSED, without independent operator confirmation. Luzzu's operator says it is closed for refurbishment; no reopening date is published. Recheck hours, menu prices, status and reservations before travelling.",
   "records": [
     {
-      "id": "food-trattoria-riccardo",
-      "name": "Trattoria Riccardo",
-      "category": "Italian restaurant",
-      "area": "Inside AX ODYCY, Qawra",
-      "address": "Level -1, AX ODYCY Hotel, Qawra Coast Road, Qawra SPB 1902, Malta",
-      "hours": "Daily 12:00–22:30 (official restaurant page; recheck during the stay)",
-      "price_range": "Tripadvisor tier: $$–$$$; this is not an exact EUR price. See the official menu for current dish prices.",
-      "description": "An Italian restaurant on the hotel premises, with the venue's menu and booking information linked from its official site. A no-transfer dining option at AX ODYCY.",
-      "source_url": "https://trattoriariccardo.mt/menu/",
-      "source_type": "official",
-      "date_checked": "2026-10-09",
-      "confidence": "partially verified",
-      "notes": "Platform snapshots are point-in-time and are not combined: Google Maps showed 4.8 with no review count in the limited view; Tripadvisor showed 4.8/5 from 2,651 reviews. S-IDs B-001–B-003.",
-      "details": {
-        "rating_snapshots": "Google Maps: 4.8 (review count not exposed in the limited view). Tripadvisor: 4.8/5 (2,651 reviews). Both checked 2026-10-09; do not average or treat as an objective popularity ranking.",
-        "menu_note": "The official page links the food menu PDF dated March 2026; menu prices and availability may change before the visit.",
-        "planning_note": "On the AX ODYCY premises; confirm a table directly if you want to dine at a particular time."
-      },
-      "additional_sources": [
-        {
-          "label": "Tripadvisor listing and dated rating snapshot",
-          "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d26887189-Reviews-Trattoria_Riccardo-Qawra_Island_of_Malta.html",
-          "type": "review"
-        },
-        {
-          "label": "Google Maps listing and limited-view snapshot",
-          "url": "https://www.google.com/maps/search/?api=1&query=Trattoria%20Riccardo%20Qawra%20Malta",
-          "type": "map"
-        }
-      ]
-    },
-    {
-      "id": "food-minoa",
+      "id": "minoa-ax-odycy",
       "name": "Minoa Mediterranean Fusion",
-      "category": "Mediterranean fusion · fine dining",
-      "area": "Inside AX ODYCY, Qawra",
-      "address": "Level 11, AX ODYCY Hotel, Qawra Coast Road, Qawra SPB 1902, Malta",
-      "hours": "Wednesday–Saturday 18:30–22:30 (official venue page; recheck during the stay)",
-      "price_range": "Tripadvisor tier: $$$$; this is a platform category, not an exact EUR price. Check the official menu.",
-      "description": "An adults-only (16+) Mediterranean-fusion restaurant on Level 11 of AX ODYCY. The official site links its menu and table-booking page.",
-      "source_url": "https://minoa.mt/",
+      "category": "At AX ODYCY",
+      "area": "Qawra",
+      "address": "Level 11, AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Malta",
+      "hours": "Published hours: Wednesday–Saturday, 18:30–22:30. Adults-only (16+); other days are not listed on the official page.",
+      "price_range": "Official menu checked 2026-10-09: à la carte mains €22–€36; tasting menus €70 vegetarian, €80 standard and €95 signature per guest. Drinks extra. Tasting menu must be ordered for the whole table by 20:30.",
+      "description": "Rooftop Mediterranean-fusion dining at the user's hotel, with local ingredients, à la carte dishes and set tasting menus. TripAdvisor's Qawra profile showed 5.0/764 reviews, #1 of 64 in Qawra and a 2026 Best of the Best badge; a limited Google Maps view showed 4.9 without a visible review count. These are platform snapshots, not guarantees.",
+      "source_url": "https://minoa.mt/restaurant-menu/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Official hours, location and 16+ policy: https://minoa.mt/. TripAdvisor snapshot (5.0/764; #1/64; Best of the Best 2026): https://www.tripadvisor.com/Restaurant_Review-g608947-d26887178-Reviews-Minoa_Mediterranean_Fusion-Qawra_Island_of_Malta.html. Google Maps limited profile view (4.9; no review count surfaced): https://www.google.com/maps?cid=8295389532400202843. Definitive(ly) Good Guide 2026 lists Minoa #9: https://restaurantsmalta.com/top-10-restaurants-for-2026-as-voted-by-you/."
+    },
+    {
+      "id": "trattoria-riccardo-qawra",
+      "name": "Trattoria Riccardo",
+      "category": "At AX ODYCY",
+      "area": "Qawra",
+      "address": "AX ODYCY Hotel / Qawra Coast Road, Qawra SPB 1902, Malta",
+      "hours": "Google Maps and TripAdvisor listings show daily 12:00–22:30; the restaurant's current standalone site does not publish hours. Confirm when booking.",
+      "price_range": "Official March 2026 menu examples: pasta from €9.75, pizza from €10.95, and selected mains €15.50–€29.50. Examples only; drinks and the rest of the menu vary.",
+      "description": "Italian trattoria and pizzeria at AX ODYCY, with a family-friendly atmosphere and a supervised children's play area called Little Italy. TripAdvisor's Qawra snapshot showed 4.8/2,651 reviews and #4 of 64; a limited Google Maps view showed 4.8 without a visible review count. Ratings and counts change.",
+      "source_url": "https://trattoriariccardo.mt/",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "Google Maps showed 4.9 (378 reviews); Tripadvisor showed 5.0/5 (764 reviews), both checked 2026-10-09. Keep them as separate platform observations. S-IDs B-004–B-006.",
-      "details": {
-        "rating_snapshots": "Google Maps: 4.9/5 (378 reviews). Tripadvisor: 5.0/5 (764 reviews). Both checked 2026-10-09; ratings and review counts are platform-specific, not a composite score.",
-        "age_policy": "Official venue and Tripadvisor pages describe Minoa as adults-only, 16+.",
-        "menu_and_booking": "Official site links the menu and a Book a Table page. Confirm opening days, current menu and availability before going."
-      },
-      "additional_sources": [
-        {
-          "label": "AX ODYCY official restaurant information",
-          "url": "https://axhotelsmalta.com/odycy/qawra-restaurants/minoa/",
-          "type": "official"
-        },
-        {
-          "label": "Tripadvisor listing and dated rating snapshot",
-          "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d26887178-Reviews-Minoa_Mediterranean_Fusion-Qawra_Island_of_Malta.html",
-          "type": "review"
-        },
-        {
-          "label": "Google Maps search for the Minoa listing",
-          "url": "https://www.google.com/maps/search/?api=1&query=Minoa%20Mediterranean%20Fusion%20Qawra%20Malta",
-          "type": "map"
-        }
-      ]
+      "notes": "Current official food menu (March 2026): https://trattoriariccardo.mt/wp-content/uploads/2026/03/Trattoria-Riccardo-Menu.pdf. Official family/play-area details: https://trattoriariccardo.mt/play-area-little-italy/. TripAdvisor snapshot (4.8/2,651; #4/64): https://www.tripadvisor.com/Restaurant_Review-g608947-d26887189-Reviews-Trattoria_Riccardo-Qawra_Island_of_Malta.html. Google Maps limited profile view (4.8; no review count surfaced): https://www.google.com/maps/search/?api=1&query=Trattoria%20Riccardo%20Qawra%20Malta. Hours are third-party listing snapshots, not an official published schedule."
     },
     {
-      "id": "food-cheeky-monkey",
+      "id": "deck-and-keel-ax-odycy",
+      "name": "Deck & Keel Restaurant",
+      "category": "At AX ODYCY",
+      "area": "Qawra",
+      "address": "AX ODYCY Hotel, Qawra Coast Road, Qawra SPB 1902; Deck is Level 0 and Keel is Level -1",
+      "hours": "Deck: continental breakfast 05:30–07:00; buffet breakfast 07:00–10:00; lunch 12:30–14:30; snacks 16:00–17:00 (Sunday 16:30–17:30); dinner 18:00–21:30. Keel: breakfast 08:00–11:00; lunch 12:30–14:30; dinner 18:30–21:30. Operator schedule checked 2026-10-09.",
+      "price_range": "Not published on the operator page. Check the hotel/restaurant for current prices and whether any meal is included in the room booking.",
+      "description": "Two contemporary international buffet restaurants inside AX ODYCY, offering breakfast, lunch, dinner and scheduled snacks. A convenient on-site alternative; the supplied room description does not establish that meals are included.",
+      "source_url": "https://axhotelsmalta.com/odycy/qawra-restaurants/deck-keel-restaurant/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "The operator page lists the separate Deck and Keel meal periods and a reservation-request form. Hotel contact shown there: +356 7974 7754. Confirm seasonal schedules and booking inclusions directly."
+    },
+    {
+      "id": "cheeky-monkey-qawra",
       "name": "Cheeky Monkey Gastropub Qawra",
-      "category": "Gastropub",
-      "area": "Qawra Coast Road, Qawra",
-      "address": "Qawra Coast Road, Qawra, Malta (the listing does not give a building number)",
-      "hours": "Sunday–Thursday 12:00–00:00; Friday–Saturday 12:00–01:00 (official venue page; check before visiting)",
-      "price_range": "Tripadvisor tier: $$–$$$; this is not an exact EUR price. See the venue's linked menu PDFs.",
-      "description": "Qawra gastropub. Its official page links food and drinks menus and advertises a daily 16:00–19:00 happy hour; confirm current menu, offer terms and availability with the venue.",
+      "category": "Nearby Qawra & Buġibba",
+      "area": "Qawra",
+      "address": "Qawra Coast Road, Qawra, Malta",
+      "hours": "Daily: Sunday–Thursday 12:00–00:00; Friday–Saturday 12:00–01:00. Last food order 22:30. Happy hour is advertised daily 16:00–19:00; confirm current terms.",
+      "price_range": "The operator-linked July 2025 food-menu PDF shows sample food prices €8.25–€26.50 and a €7 children's meal; prices are inclusive of VAT in that PDF. Menu versions and offers can change.",
+      "description": "Casual gastropub with burgers, snacks, pasta, mains and drinks, on Qawra Coast Road. TripAdvisor's snapshot showed 4.5/3,366 reviews, #5 of 64 in Qawra and a $$–$$$ tier. Review signals and promotional terms are not guarantees.",
       "source_url": "https://cheekymonkeymalta.com/qawra/",
       "source_type": "official",
       "date_checked": "2026-10-09",
-      "confidence": "partially verified",
-      "notes": "Tripadvisor showed 4.5/5 from 3,366 reviews on 2026-10-09. A Google Maps card was not captured in the limited search view; no Google rating is claimed. S-IDs B-007–B-008.",
-      "details": {
-        "rating_snapshots": "Tripadvisor: 4.5/5 (3,366 reviews), checked 2026-10-09. No Google Maps score is stated because a venue card did not load in the checked view.",
-        "food_order_note": "The official venue page says the last food order is at 22:30; confirm with the venue, especially for late arrivals.",
-        "menu_note": "The official page links food and drinks PDFs dated July 2025; check the live page for newer menus."
-      },
-      "additional_sources": [
-        {
-          "label": "Tripadvisor listing and dated rating snapshot",
-          "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d8381082-Reviews-Cheeky_Monkey_Gastropub_Qawra-Qawra_Island_of_Malta.html",
-          "type": "review"
-        }
-      ]
+      "confidence": "verified",
+      "notes": "Official food menu PDF: https://cheekymonkeymalta.com/wp-content/uploads/2025/07/Cheeky-Monkey-Qawra-Food-Menu.pdf. TripAdvisor snapshot (4.5/3,366; #5/64; $$–$$$): https://www.tripadvisor.com/Restaurant_Review-g608947-d8381082-Reviews-Cheeky_Monkey_Gastropub_Qawra-Qawra_Island_of_Malta.html."
     },
     {
-      "id": "food-ombre-cafe-bistro",
+      "id": "ombre-cafe-bistro-qawra",
       "name": "Ombré Café Bistro",
-      "category": "Café bistro",
-      "area": "DoubleTree by Hilton Malta, Qawra",
-      "address": "Inside DoubleTree by Hilton Malta, Qawra (a separate restaurant street number was not captured)",
-      "hours": "Daily 08:00–23:00; lunch 12:00–16:00; dinner 18:30–22:00 (official venue page; recheck during the stay)",
-      "price_range": "Tripadvisor tier: $$–$$$; this is not an exact EUR price. Use the linked menu for current prices.",
-      "description": "A casual bistro at DoubleTree by Hilton Malta, described by the venue as serving Mediterranean cuisine. The official page links its menu and booking page and lists tea, coffee, afternoon tea, pastries, cakes and light meals.",
+      "category": "Nearby Qawra & Buġibba",
+      "area": "Qawra",
+      "address": "DoubleTree by Hilton Malta, Qawra SPB 2402, Malta",
+      "hours": "Open daily 08:00–23:00; lunch 12:00–16:00; dinner 18:30–22:00 (operator schedule checked 2026-10-09).",
+      "price_range": "The operator links a digital menu, but prices were not extractable from the public page checked. TripAdvisor labels it $$–$$$; that is a platform tier, not a euro estimate.",
+      "description": "Casual Mediterranean bistro for coffee and tea, pastries, cakes, light meals, cocktails and afternoon tea. TripAdvisor's snapshot showed 4.9/145 reviews, #6 of 64 in Qawra and Travelers' Choice 2026; these are dated review-platform signals.",
       "source_url": "https://doubletreemaltaexperience.com/explore/ombre-cafe-bistro/",
       "source_type": "official",
       "date_checked": "2026-10-09",
-      "confidence": "partially verified",
-      "notes": "Tripadvisor showed 4.9/5 from 145 reviews on 2026-10-09. The hotel's 2026 Travelers' Choice badge is displayed on the official page; this is Tripadvisor's award, not an objective local ranking. S-IDs B-009–B-010.",
-      "details": {
-        "rating_snapshots": "Tripadvisor: 4.9/5 (145 reviews), checked 2026-10-09. No Google Maps rating is stated because a card did not load in the checked view.",
-        "service_hours": "The official page separately lists lunch service 12:00–16:00 and dinner service 18:30–22:00 within the daily 08:00–23:00 opening window.",
-        "menu_and_booking": "Official menu and Book Now links are available on the venue page."
-      },
-      "additional_sources": [
-        {
-          "label": "Tripadvisor listing and dated rating snapshot",
-          "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d33264628-Reviews-Ombre_Cafe_Bistro-Qawra_Island_of_Malta.html",
-          "type": "review"
-        }
-      ]
+      "confidence": "verified",
+      "notes": "Official page links the digital menu and booking: https://www.flipsnack.com/9578C69C5A8/ombre-menu/full-view.html. TripAdvisor snapshot (4.9/145; #6/64; $$–$$$; Travelers' Choice 2026): https://www.tripadvisor.com/Restaurant_Review-g608947-d33264628-Reviews-Ombre_Cafe_Bistro-Qawra_Island_of_Malta.html."
     },
     {
-      "id": "food-cafe-maroc",
-      "name": "Cafe Maroc",
-      "category": "Café · pastries and drinks",
-      "area": "dB San Antonio Hotel & Spa, Qawra",
-      "address": "Triq it-Turisti, Qawra SPB 1024, Malta (hotel level listed by Tripadvisor: Level 10)",
-      "hours": "Daily 10:00–23:00 (official dB Hotels page; recheck during the stay)",
-      "price_range": "Tripadvisor tier: $$–$$$; this is not an exact EUR price. Check the venue for its current menu.",
-      "description": "Hotel café serving hot and cold drinks, pastries and cakes, according to the official dB Hotels page. The hotel page says non-hotel guests are welcome for coffee, snacks and sweet items.",
-      "source_url": "https://www.dbhotelsresorts.com/en/hotels/db-San-Antonio/Restaurants-Bars/cafe-maroc",
+      "id": "sabi-house-qawra",
+      "name": "Sabi House",
+      "category": "Nearby Qawra & Buġibba",
+      "area": "Qawra",
+      "address": "Sabi, Dawret il-Gżejjer, Qawra SPB 1500, Malta (TripAdvisor listing address)",
+      "hours": "The operator page lists daily 10:00–22:00. Its direct Sabi House TripAdvisor profile displayed hours to 23:00; use the operator schedule and confirm before dining.",
+      "price_range": "The operator links a digital menu, but current item prices were not extractable from the public page checked. TripAdvisor's $$–$$$ tier is not a euro estimate.",
+      "description": "DoubleTree by Hilton outlet serving Mediterranean-inspired food with global influences, raw dishes, wood-fired flatbreads and cocktails. The separate Sabi House TripAdvisor profile showed 4.9/126 reviews and #7 of 64 in Qawra on 2026-10-09; review counts change.",
+      "source_url": "https://doubletreemaltaexperience.com/explore/sabihouse/",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "Ratings differ by platform: Google Maps 3.7/5 (28 reviews) versus Tripadvisor 4.6/5 (219 reviews), checked 2026-10-09. Do not average them. Official page says the outlet is card-only. S-IDs B-011–B-013.",
-      "details": {
-        "rating_snapshots": "Google Maps: 3.7/5 (28 reviews). Tripadvisor: 4.6/5 (219 reviews). Both checked 2026-10-09; these are different platform snapshots, not a composite ranking.",
-        "payment_note": "The official hotel page says its restaurants operate card-only and do not accept cash.",
-        "hours_note": "The official dB Hotels page, Tripadvisor and Google Maps each showed 10:00–23:00 daily in the checked material; confirm directly before the visit."
-      },
-      "additional_sources": [
-        {
-          "label": "Tripadvisor listing and dated rating snapshot",
-          "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d10954321-Reviews-Cafe_Maroc-Qawra_Island_of_Malta.html",
-          "type": "review"
-        },
-        {
-          "label": "Google Maps card and dated rating snapshot",
-          "url": "https://www.google.com/maps/search/?api=1&query=Cafe%20Maroc%20Qawra%20Malta",
-          "type": "map"
-        }
-      ]
+      "notes": "Operator hours, menu and booking: https://doubletreemaltaexperience.com/explore/sabihouse/. Direct Sabi House TripAdvisor snapshot (4.9/126; #7/64; page displayed to 23:00): https://www.tripadvisor.com/Restaurant_Review-g608947-d33309449-Reviews-Sabi_House-Qawra_Island_of_Malta.html. The Hilton page's own TripAdvisor badge points to a different Sabi Café listing; do not merge the two outlets or their schedules: https://www.tripadvisor.com/Restaurant_Review-g608946-d33246102-Reviews-Sabi_Cafe-St_Paul_s_Bay_Island_of_Malta.html."
     },
     {
-      "id": "food-9-ball-cafe",
-      "name": "9 Ball Cafe",
-      "category": "Café · bar",
-      "area": "Tourist Street, Qawra",
-      "address": "366 Triq it-Turisti, Qawra, SPB 1023, Malta",
-      "hours": "Tripadvisor showed a 23:00 closing time at the checked visit; its full weekly schedule was not captured. Google Maps did not list hours. Confirm directly before going.",
-      "price_range": "Tripadvisor tier: $; this is a platform category, not an exact EUR price.",
-      "description": "A café/bar listing in Qawra. Tripadvisor identifies breakfast, lunch, dinner and brunch service; its listing also links a Facebook page. Google Maps labels the venue a bar and shows the Tourist Street address.",
-      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d9804691-Reviews-9_Ball_Cafe-Qawra_Island_of_Malta.html",
+      "id": "venus-bugibba",
+      "name": "Venus Restaurant",
+      "category": "Nearby Qawra & Buġibba",
+      "area": "Buġibba",
+      "address": "Pioneer Road / Triq il-Gandoffli, Buġibba, St Paul's Bay, Malta SPB 10",
+      "hours": "TripAdvisor lists daily 18:00–22:30. The restaurant's own site confirms dinner/late-night service but does not publish a weekly schedule; re-confirm when booking.",
+      "price_range": "Current online menu checked 2026-10-09: starters €13.50–€17; listed pasta mains €19.50–€22.50; selected mains €23.50–€35. Fresh catch is market-priced.",
+      "description": "Small family-run dinner restaurant with Mediterranean and seafood dishes, fresh daily specials, and vegetarian/vegan options described by the venue. TripAdvisor's snapshot showed 4.8/2,900 reviews and #1 of 95 restaurants in Buġibba; the Definitive(ly) Good Guide ranked it #4 overall for 2026. Rankings and counts are dated signals, not guarantees.",
+      "source_url": "https://venusrestaurantmalta.com/menu/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Official restaurant story, address, phone and booking: https://venusrestaurantmalta.com/. TripAdvisor snapshot (4.8/2,900; #1/95; daily hours listed above): https://www.tripadvisor.com/Restaurant_Review-g608948-d1385602-Reviews-Venus_Restaurant-Bugibba_St_Paul_s_Bay_Island_of_Malta.html. Definitive(ly) Good Guide 2026 Top 10 page: https://restaurantsmalta.com/top-10-restaurants-for-2026-as-voted-by-you/. The Guide's 2026 award-winners page also lists Venus among the top Food recipients: https://restaurantsmalta.com/restaurant-award-winners/."
+    },
+    {
+      "id": "gululu-spinola-bay",
+      "name": "Gululu – Kċina Maltija",
+      "category": "Further afield",
+      "area": "St Julian's / Spinola Bay",
+      "address": "133 Spinola Bay, St Julian's, Malta",
+      "hours": "Official site: weekdays from 18:00; weekends lunch and dinner. Exact service slots are not listed there; confirm in the reservation system or by phone.",
+      "price_range": "Official 2026 menu: Maltese tasting menu €35 per person and rabbit tasting menu €36 per person; both require at least two people. Individual items and drinks vary.",
+      "description": "Waterfront restaurant focused on Maltese food. The Definitive(ly) Good Guide named it Best Maltese Restaurant for 2026. TripAdvisor's St Julian's snapshot showed 3.9/3,597 reviews, #81 of 303 and a $$–$$$ tier; this lower, mixed platform signal is shown alongside the award rather than hidden.",
+      "source_url": "https://gululu.com.mt/more-about-us/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Official food menu PDF (March 2026): https://gululu.com.mt/files/2026/03/Gululu-food-menu-2026.pdf. Official contact/reservation: https://gululu.com.mt/contact-us/. Definitive(ly) Good Guide award report (Best Maltese Restaurant 2026): https://restaurantsmalta.com/restaurants-awards-ceremony-2026-awards/. TripAdvisor snapshot (3.9/3,597; #81/303; $$–$$$): https://www.tripadvisor.com/Restaurant_Review-g227101-d1911663-Reviews-Gululu_St_Julian_s-Saint_Julian_s_Island_of_Malta.html."
+    },
+    {
+      "id": "sole-by-tarragon",
+      "name": "Sole by Tarragon",
+      "category": "Further afield",
+      "area": "St Julian's / St George's Bay",
+      "address": "St George's Bay waterfront, St Julian's, Malta",
+      "hours": "No weekly hours schedule was found on the official pages checked. Booking is available; confirm the service date and time directly.",
+      "price_range": "Current menu linked by the operator: six-course tasting €85 and eight-course tasting €105; listed mains €34–€65; market fish and some share dishes are separately priced. Menu and prices can change.",
+      "description": "Mediterranean sea bar with seasonal local fish and seafood. The Definitive(ly) Good Guide's 2026 diner-voted list ranked it #2 overall and named it for Best Service and Best Local Fish. This is a premium, farther-from-Qawra dinner rather than a nearby casual meal.",
+      "source_url": "https://solebytarragon.com/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Operator's current food menu PDF: https://solebytarragon.com/wp-content/uploads/sole-food-menu-q2.pdf. Definitive(ly) Good Guide 2026 Top 10 and award information: https://restaurantsmalta.com/top-10-restaurants-for-2026-as-voted-by-you/. Locality correction: Sole is in St Julian's / St George's Bay, not St Paul's Bay."
+    },
+    {
+      "id": "il-barri-mgarr",
+      "name": "il-Barri Restaurant",
+      "category": "Further afield",
+      "area": "Mġarr, Malta",
+      "address": "Triq il-Kbira, Mġarr, Malta",
+      "hours": "No weekly schedule is published on the official page checked. Same-day reservations should be requested by phone at +356 2157 3235 or +356 2157 4054. The online form is a request, not a confirmed booking.",
+      "price_range": "No current euro range was published on the official menu page checked. TripAdvisor classifies the listing $$–$$$; this is a platform tier, not a meal quote.",
+      "description": "Family-run Mġarr restaurant established in 1939, with traditional Maltese and Mediterranean dishes including rabbit in wine gravy and bragioli. TripAdvisor's Mġarr snapshot showed 4.2/588 reviews and #4 of 14; recent reviews include positive rabbit/bragioli recommendations alongside mixed opinions, so this is a qualified village-food option rather than an unqualified endorsement.",
+      "source_url": "https://il-barri.com.mt/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "Official menu and booking-request form: https://il-barri.com.mt/menu/. The operator says the form is not a booking until it confirms by email or phone; same-day contacts are listed at https://il-barri.com.mt/. TripAdvisor snapshot (4.2/588; #4/14; $$–$$$): https://www.tripadvisor.com/Restaurant_Review-g1437311-d1237240-Reviews-Il_Barri_Restaurant-Mgarr_Island_of_Malta.html. The operator's homepage also describes a public World War II shelter; see the Activities & sights workstream for any opening/admission research."
+    },
+    {
+      "id": "caffe-cordina-valletta",
+      "name": "Caffè Cordina",
+      "category": "Further afield",
+      "area": "Valletta",
+      "address": "244 Republic Street, Valletta VLT 1114, Malta",
+      "hours": "Monday–Saturday 07:30–21:00; Sunday 07:30–15:00 (operator contact page checked 2026-10-09).",
+      "price_range": "Official August 2026 menu examples: Maltese pastizzi €1.50, Full English breakfast €15 and Eggs Royale €15.75. These are selected items, not a full-meal estimate.",
+      "description": "Long-running Valletta café, pastry and dining stop. The operator traces its origins to 1837 and publishes a 2026 menu with breakfast, brunch, hot snacks and Maltese sweets; useful when visiting the capital, but not near the Qawra hotel.",
+      "source_url": "https://caffecordina.com/contact-us/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Official 2026 menu PDF: https://caffecordina.com/wp-content/uploads/2026/08/cc-menu-2026.pdf. The Caffè page describes its history and dining: https://caffecordina.com/the-caffe/."
+    },
+    {
+      "id": "luzzu-qawra-closed",
+      "name": "Luzzu Restaurant / Lido — closed for refurbishment",
+      "category": "Status to recheck — not an active recommendation",
+      "area": "Qawra",
+      "address": "Qawra, Malta; current access details are not published while the venue is closed.",
+      "hours": "Closed for refurbishment according to the operator's update dated 2026-09-29. No reopening date is stated.",
+      "price_range": "Not applicable while closed; do not use old menus as current prices.",
+      "description": "The official Luzzu homepage says the venue is closed while a new waterfront experience is developed and points to nearby alternatives. Do not treat Luzzu as open or bookable until the operator posts a reopening notice.",
+      "source_url": "https://luzzumalta.com/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "verified",
+      "notes": "Official closure/update page: https://luzzumalta.com/. The operator's older restaurant page is still online at https://leisure.luzzumalta.com/ but should not override the current closure notice."
+    },
+    {
+      "id": "meeting-point-qawra-closed-report",
+      "name": "The Meeting Point Cafe & Snacks Bar — TripAdvisor reports CLOSED",
+      "category": "Status to recheck — not an active recommendation",
+      "area": "Qawra",
+      "address": "Tourist Street, San Pawl il-Baħar, Qawra SPB 0288 (TripAdvisor listing; not independently confirmed)",
+      "hours": "The current TripAdvisor profile is labeled CLOSED. No official closure notice or current schedule was found.",
+      "price_range": "No current price is verified; the listing's historical $ tier/menu should not be treated as current.",
+      "description": "TripAdvisor marks this café/snack bar CLOSED as checked 2026-10-09. No independent operator confirmation was found, so this is a platform-reported status only. Do not recommend or travel there as an open venue without reconfirming directly.",
+      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d27470569-Reviews-The_Meeting_Point_Cafe_Snacks_Bar-Qawra_Island_of_Malta.html",
       "source_type": "review",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "Platform snapshots differ: Google Maps 4.5/5 (533 reviews) versus Tripadvisor 4.7/5 (60 reviews), checked 2026-10-09. The Tripadvisor page contains a recent review text about a different restaurant; do not rely on review narratives without checking the venue attribution. S-IDs B-014–B-015.",
-      "details": {
-        "rating_snapshots": "Google Maps: 4.5/5 (533 reviews). Tripadvisor: 4.7/5 (60 reviews). Both checked 2026-10-09; no averaging or cross-platform ranking.",
-        "listing_caution": "One visible Tripadvisor review in the checked capture describes Bognor's in Sliema rather than 9 Ball Cafe. Treat the platform rating/count as a snapshot only and inspect recent, venue-specific reviews yourself.",
-        "hours_note": "Tripadvisor displayed a closing time of 23:00; Google Maps showed no hours. A complete, consistent weekly schedule was not verified."
-      },
-      "additional_sources": [
-        {
-          "label": "Google Maps card and dated rating snapshot",
-          "url": "https://www.google.com/maps/search/?api=1&query=9%20Ball%20Cafe%20Qawra%20Malta",
-          "type": "map"
-        }
-      ]
+      "notes": "TripAdvisor profile also showed 4.7/15 reviews, a small and volatile sample, and listed phone +356 7762 6293 and email milanocoffeeshop5@gmail.com; those contact details may be stale. No official venue site or independent closure confirmation was found."
     },
     {
-      "id": "food-knickerbocker",
-      "name": "Knickerbocker Restaurant",
-      "category": "Café · European restaurant",
-      "area": "Tourist Street, Qawra",
-      "address": "Tourist Street, Qawra SPB 1022, Malta",
-      "hours": "Tripadvisor listing: daily 08:30–21:00 (not an official venue schedule; confirm before visiting)",
-      "price_range": "Tripadvisor tier: $; this is a platform category, not an exact EUR price.",
-      "description": "A café/European restaurant listing on Tourist Street. The listing describes it as open daily; no current official menu or venue-owned hours page was captured.",
-      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d2425124-Reviews-Knickerbocker_Restaurant-Qawra_Island_of_Malta.html",
-      "source_type": "review",
+      "id": "maltese-food-seasonal-guide",
+      "name": "Local food to look for: ftira, pastizzi and lampuki",
+      "category": "Maltese food notes",
+      "area": "Malta-wide",
+      "address": "Dish and vendor locations vary by bakery, restaurant and season.",
+      "hours": "Availability varies; ask the venue what is fresh and on the menu.",
+      "price_range": "Varies by vendor; no island-wide price is implied.",
+      "description": "Il-ftira is a flattened sourdough bread tradition inscribed by UNESCO in 2020; Visit Malta also highlights Maltese bread and local pastizzi. In October, ask whether lampuki (dolphinfish) is being served: AgriFair says it migrates through Maltese waters from late August to December and is a popular autumn dish. Seasonal timing does not guarantee a particular catch or restaurant menu.",
+      "source_url": "https://ich.unesco.org/en/RL/il-ftira-culinary-art-and-culture-of-flattened-sourdough-bread-in-malta-01580",
+      "source_type": "official",
       "date_checked": "2026-10-09",
-      "confidence": "partially verified",
-      "notes": "Tripadvisor showed 4.2/5 from 700 reviews on 2026-10-09. Google Maps search results did not load a venue card in the checked view; no Google score is claimed. S-ID B-016.",
-      "details": {
-        "rating_snapshots": "Tripadvisor: 4.2/5 (700 reviews), checked 2026-10-09. No Google Maps rating is stated because a venue card did not load in the checked view.",
-        "hours_note": "Hours are from a third-party listing, not an official business page. Confirm with the venue on the date."
-      },
-      "additional_sources": []
+      "confidence": "verified",
+      "notes": "Visit Malta delicacies overview: https://www.visitmalta.com/en/delicacies/. Official AgriFair fisheries page for lampuki seasonality: https://agrifair.gov.mt/fisheries-and-aquaculture/. Current local-food examples also appear in Gululu's 2026 menu: https://gululu.com.mt/files/2026/03/Gululu-food-menu-2026.pdf."
     },
     {
-      "id": "food-zigumar",
-      "name": "Zigumar Restaurant",
-      "category": "Seafood · Sicilian restaurant",
-      "area": "Triq Il-Luzzu, Qawra",
-      "address": "Triq Il-Luzzu, San Pawl il-Baħar, Qawra SPB 1984, Malta",
-      "hours": "Tripadvisor listing: Sunday 12:00–23:00; Monday–Thursday 12:00–15:00 and 18:30–23:00; Friday–Saturday 12:00–23:00. Google Maps showed Friday 11:30–23:00. Confirm the current schedule directly.",
-      "price_range": "Tripadvisor tier: $$–$$$; this is not an exact EUR price. Check the current menu with the venue.",
-      "description": "A Qawra restaurant listed by Tripadvisor under seafood and Sicilian cuisine. Tripadvisor provides the fuller published weekly schedule; Google Maps' limited card showed only Friday hours.",
-      "source_url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d10347003-Reviews-Zigumar_Restaurant-Qawra_Island_of_Malta.html",
-      "source_type": "review",
-      "date_checked": "2026-10-09",
+      "id": "reddit-food-community-snapshot",
+      "name": "Reddit food conversations — older, anecdotal snapshot",
+      "category": "Community research — dated and limited",
+      "area": "Malta-wide community threads",
+      "address": "Not applicable — community threads, not a single venue.",
+      "hours": "Not applicable; community comments do not establish current business hours or status.",
+      "price_range": "Not a price source; community statements have not been refreshed.",
+      "description": "Five public Reddit threads were directly read in the earlier research pass on 2026-09-24, according to the legacy page's research log. The recurring mentions included Mġarr rabbit restaurants (including il-Barri), Gululu and local snacks. Direct refresh attempts on 2026-10-09 returned HTTP 403, so treat these as older anecdotal context, not a current consensus, venue-status check or verified menu claim.",
+      "source_url": "https://www.reddit.com/r/malta/comments/10mepod/best_restaurant_for_traditional_maltese_food/",
+      "source_type": "social",
+      "date_checked": "2026-09-24",
       "confidence": "partially verified",
-      "notes": "Google Maps showed 4.6 with no review count exposed; Tripadvisor showed 4.4/5 from 293 reviews on 2026-10-09. Separate the ratings; do not average them. Tripadvisor lists phone +356 9906 4380. S-IDs B-017–B-018.",
-      "details": {
-        "rating_snapshots": "Google Maps: 4.6 (review count not exposed in the limited view). Tripadvisor: 4.4/5 (293 reviews). Both checked 2026-10-09; no composite rating.",
-        "hours_note": "Hours disagree slightly: Google Maps showed Friday starting at 11:30; Tripadvisor lists Friday from 12:00. The weekly schedule has not been confirmed with the restaurant.",
-        "contact_note": "Tripadvisor listing gives +356 9906 4380; verify the current number and booking availability before relying on it."
-      },
-      "additional_sources": [
-        {
-          "label": "Google Maps card and dated rating snapshot",
-          "url": "https://www.google.com/maps/search/?api=1&query=Zigumar%20Restaurant%20Qawra%20Malta",
-          "type": "map"
-        }
-      ]
+      "notes": "Other earlier-read threads: https://www.reddit.com/r/malta/comments/18i44jd/best_restaurants_with_ftira_pastizzi_and_stuffat/ https://www.reddit.com/r/malta/comments/1q4if7w/where_do_locals_eat/ https://www.reddit.com/r/malta/comments/1q5t73o/restaurant_recommendations_needed_terrible/ https://www.reddit.com/r/travel/comments/1p3tcfe/solo_dining_in_malta_need_restaurant_recs_for_a/. All five direct refresh attempts on 2026-10-09 returned HTTP 403."
     }
   ]
 }

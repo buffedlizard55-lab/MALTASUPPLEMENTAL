@@ -1,72 +1,55 @@
-# Malta Trip Companion
+# Malta Trip Guide
 
-A mobile-friendly, source-linked static guide and editable expense planner for the supplied **13–19 October 2026** stay at **AX ODYCY Malta, Qawra**.
+A mobile-friendly, source-linked travel guide for the trip window **13–19 October 2026**, based at the user-supplied **AX ODYCY, Qawra Coast Road, Qawra SPB 1902** (Deluxe Sea-View room). The event location supplied by the traveler is **BLAST Arena Studios, Attard**.
 
-> **Trip facts supplied for planning:** AX ODYCY Malta, Qawra Coast Road, Qawra SPB 1902; travel window 13–19 October 2026. Those seven calendar dates equal six hotel nights only if the booking is check-in on 13 October and check-out on 19 October. Flight details, arrival/departure times, traveler count, confirmed tournament attendance and room total were not supplied.
+**Published guide:** <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/>
 
-## Executive summary
+The official Thunderpick page checked on 9 October lists the 2026 Finals Group Stage on 14–16 October and Playoffs on 17–18 October. Thunderpick names BLAST Studios Malta; a BLAST attendee guide for a different event identifies the studio as being at the Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, Ħ’Attard. Neither source confirms this traveler’s spectator access, ticket, daily public door times, or exact entrance. Those details remain open.
 
-The site brings the trip's practical research into six focused topics: transport, food and cafés, activities and landmarks, everyday U.S.-traveler guidance, scheduled live-sport radio, and a quick-fill expense planner. Topic pages show structured records with source links, source types, check dates, confidence labels and caveats. Unknown hours, prices, access rules and schedules are identified rather than filled in with guesses.
+This is a dated research and planning aid, not a booking or guarantee of future opening hours, fares, availability, event access, radio reception, or programme carriage.
 
-The event-day transport page compares public and private options and identifies routes to check in the official operator planner. It is not a confirmed door-to-door itinerary: session times, the event-specific public entrance, the best hotel-side stop and the effect of the 17–18 October route notice still need date- and time-specific verification. The event page likewise does not establish spectator access or ticket terms.
+## Pages
 
-The expense planner begins with blank, editable lines. It does not assume a meal allowance, taxi price, exchange rate, tax, tip, event attendance, payment or outside coverage. Optional published fare/admission references are not added unless selected. Planner entries stay in the current browser on the current device; they are not uploaded or synced.
+| Page | What it covers |
+|---|---|
+| [Overview](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/) | Executive summary, trip assumptions, priorities, and guide navigation |
+| [Transport](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/getting-around.html) | Airport/hotel options and Qawra-to-event travel; compares bus, taxi/ride-hailing, ferries, and car hire |
+| [Food & cafés](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/restaurants.html) | Sourced restaurants, cafés, and casual food, with review/social evidence limitations |
+| [Activities & sights](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/activities.html) | Gaming options, landmarks, recreation, and dated events during the trip window |
+| [Everyday guide](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/everyday.html) | Practical information for a U.S. traveler, with passport, entry, safety, and date-sensitive caveats |
+| [Sports radio](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/radio.html) | Malta-receivable AM/FM/DAB+ leads and official station/programme listings; event-specific carriage is not assumed |
+| [Expense planner](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/costs.html) | 18 editable budget/actual categories, local browser autosave, CSV export, and reset |
+| [Sources & status](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/sources.html) | Links to the evidence log, open questions, workstream status, handoffs, plan, and schema |
 
-## Browse the guide
+## Key findings and limits
 
-| Topic | Page | What's there |
-|---|---|---|
-| Overview | [Trip summary](index.html) | Trip facts, the six topic links, priority caveats and research registers |
-| Transport | [Getting around](pages/transport.html) | Airport options, local transport and event-day route comparisons; live timetable and access limitations |
-| Food | [Food and cafés](pages/food.html) | Qawra-area options, venue details and separately dated review-platform signals |
-| Activities | [Activities and sights](pages/activities.html) | Landmarks, gaming leads and dated event listings with access/availability caveats |
-| Everyday travel | [Practical guidance](pages/everyday.html) | Source-linked U.S.-traveler, entry, money, phone, health, weather and local-practice checks |
-| Radio | [Scheduled live-sport radio](pages/radio.html) | Officially listed broadcasts during the trip, Malta-local time calculations and reception limits |
-| Budget | [Expense planner](pages/expenses.html) | Editable itinerary lines, totals, optional user-entered USD conversion, local saving, CSV and print |
-| Evidence | [Sources and open questions](sources.html) | How evidence is recorded, checked and qualified |
+- **Event and venue:** official Thunderpick sources list the Group Stage and Playoffs dates. The BLAST guide supplies venue/address corroboration only; public spectator access, ticket arrangements, door times, and event-day entrance instructions were not confirmed.
+- **Event-day transit:** Route 186 is the leading direct public-bus candidate between Qawra and Ta’ Qali; Route 214 is an alternate to compare. The Route 186 timetable is not a saved hotel-to-venue itinerary. MPT lists a 17 October evening diversion (19:00 to approximately midnight); confirm the exact outbound/return stops, walking segments, live timetable, and effect of the diversion close to travel.
+- **Radio:** NET FM is listed at FM 101 MHz and has recurring weekend sports shows. Malta’s DAB+ directory lists Radio Sportiva and BBC World Service. Exact DAB+ block/frequency and reception at the hotel/event venue remain unverified; no radio carriage of the TWC, Gżira United–Mosta, or Rolex Middle Sea Race was confirmed. Do not rely on fixtures or general sports listings as proof of carriage.
+- **Expense planner:** all budget and actual amounts start blank. Enter amounts in euros on a consistent whole-trip/party basis. The planner stores inputs in this browser/device only, does not send them to a server, exports a CSV backup, and can clear saved entries. Reference URLs are not price quotes.
+- **Research-platform limits:** sampled TripAdvisor and a small number of Google Maps profile views informed parts of the food/activities research. Direct Yelp, Instagram, TikTok, Facebook, and X requests, and Reddit refreshes, were blocked or returned HTTP 403 in the relevant checks. Platform coverage is not comprehensive; see the dated notes in `docs/SOURCES.md` and the topic pages.
+- **Open questions:** exact event access/times, saved date-specific transit route and return, 17 October diversion impact, trip-week radio schedule/carriage, current business hours/status conflicts, traveler-specific entry/insurance/device details, and the booking itinerary remain unresolved as noted in `docs/OPEN_QUESTIONS.md`.
 
-## Evidence and limitations
+## Research records
 
-- The topic records are in `data/*.json`; the pages under `pages/` render from those records. Follow the source links on each record for the original evidence.
-- The full source register is [`docs/SOURCES.md`](docs/SOURCES.md); unresolved decisions and source gaps are in [`docs/OPEN_QUESTIONS.md`](docs/OPEN_QUESTIONS.md). Cross-topic findings are in [`docs/HANDOFF.md`](docs/HANDOFF.md), and progress is in [`docs/STATUS.md`](docs/STATUS.md).
-- Research is a dated snapshot, checked **9 October 2026**. Fares, hours, event listings, border/entry requirements, weather and schedules can change. Re-open the linked official operator, organizer or government source before booking or travelling.
-- Some requested review/social platforms or operator subpages could not be accessed. Those limits and conflicts are stated in the relevant records and open-question register; inaccessible information is not treated as confirmed.
-- This is a trip-planning aid, not live dispatch, a booking service, legal/tax/medical/immigration advice, or a guarantee of event access, radio reception or venue availability.
+- [`docs/SOURCES.md`](docs/SOURCES.md) — claim, URL, access date, workstream, and source limitations.
+- [`docs/OPEN_QUESTIONS.md`](docs/OPEN_QUESTIONS.md) — missing, disputed, or date-sensitive information and how to resolve it.
+- [`docs/STATUS.md`](docs/STATUS.md) — workstream progress and blockers.
+- [`docs/HANDOFF.md`](docs/HANDOFF.md) — cross-workstream discoveries and follow-ups.
+- [`docs/PLAN.md`](docs/PLAN.md) — scope, ownership, and verification plan.
+- [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions.
 
-## Verify and run locally
+## Build, preview, and deployment
 
-Run the portable offline integration gate from the repository root:
+The site is static HTML, CSS, and JavaScript with JSON data; no application build or dependency installation is required. Repository Pages settings checked on 9 October 2026 publish the `main` branch root to the public site. Merging changes to `main` updates the site through GitHub Pages’ existing branch-based publishing. The `.nojekyll` file keeps the source/data tree static. A GitHub Actions workflow validates pull requests and pushes to `main`; it does not replace the configured Pages publisher.
+
+For a local HTTP preview from the repository root:
 
 ```bash
-python3 scripts/verify_site.py
+python3 -m http.server 8080
+# Open http://localhost:8080
 ```
 
-It checks the JSON contract, source/question references, date and expense arithmetic, local paths/fragments, responsive-shell markers and compatibility redirects. It does not test external link liveness or replace a real-device visual review.
+An HTTP server is needed for browser `fetch()` and the expense planner’s `localStorage` behavior. The deployed planner saves only in the current browser/device; export a CSV before switching devices or clearing browser data.
 
-The site uses plain HTML, CSS and JavaScript without a build step or package dependencies. Serve the repository root over HTTP so the topic pages can fetch their JSON data:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open `http://localhost:8000/`. Do not open the data-driven pages as `file://` URLs. GitHub Pages can serve the same static site from the repository root.
-
-## Repository layout
-
-```text
-index.html                 Executive summary
-pages/                     Six topic pages
-data/                      Structured research and planner starter data
-  schema.md                Common topic-record schema
-css/style.css              Responsive shared visual system
-js/site.js                 Shared navigation and data renderer
-scripts/verify_site.py     Offline integration gate (standard library only)
-docs/PLAN.md               Scope, schema, ownership and review passes
-docs/SCHEMA.md             Shared schema overview
-docs/SOURCES.md            Source and verification log
-docs/OPEN_QUESTIONS.md     Unresolved items and next actions
-docs/HANDOFF.md            Cross-workstream research handoffs
-docs/STATUS.md             Workstream progress
-```
-
-Legacy top-level topic URLs are retained as small redirects to the current pages; outdated prize/legal content is not part of this travel companion.
+The Pages workflow and local validation script check JSON/schema, JavaScript syntax, topic-page/data wiring, and local links. External websites are not guaranteed to remain available; re-open primary sources before acting on date-sensitive information.

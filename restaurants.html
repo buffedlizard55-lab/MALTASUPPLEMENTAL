@@ -1,18 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,follow">
-  <meta http-equiv="refresh" content="0; url=pages/food.html">
-  <link rel="canonical" href="pages/food.html">
-  <title>Page moved · Malta Trip Companion</title>
+  <meta name="description" content="Source-backed food, café and restaurant guide for Qawra, AX ODYCY and the Malta trip in October 2026.">
+  <title>Food &amp; cafés · Malta Trip Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>This page has moved</h1>
-    <p>The current page for <strong>Food and cafés</strong> is <a href="pages/food.html">pages/food.html</a>.</p>
+  <header class="site-header" data-site-header></header>
 
+  <main class="page">
+    <section class="hero" aria-labelledby="food-title">
+      <p class="eyebrow">Eat well, close to base</p>
+      <h1 id="food-title" data-topic-title>Food &amp; cafés in Malta</h1>
+      <p data-topic-intro>Loading the source-backed food shortlist…</p>
+    </section>
+
+    <section class="callout callout-warning" aria-label="Research and menu caveat">
+      <span class="callout-title">Before you go</span>
+      <p>Use the search and category filter to narrow the list. Published menus, hours, promotions and review counts can change; the linked venue or operator page is the final check. Sample menu prices are not a complete meal budget.</p>
+    </section>
+
+    <section aria-label="Search and filter food entries">
+      <div class="topic-tools" data-topic-tools>
+        <label for="food-search">Search by dish, venue or area
+          <input id="food-search" type="search" placeholder="Try ‘rabbit’, ‘Qawra’ or ‘ftira’" autocomplete="off">
+        </label>
+        <label for="food-category">Filter category
+          <select id="food-category">
+            <option value="">All categories</option>
+          </select>
+        </label>
+        <span class="result-count" data-result-count aria-live="polite">Loading entries…</span>
+      </div>
+    </section>
+
+    <section aria-label="Source-backed food entries">
+      <div data-topic-data="data/food.json" aria-live="polite"></div>
+    </section>
   </main>
+
+  <footer class="site-footer" data-site-footer></footer>
 </body>
 </html>
