@@ -3,16 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,follow">
-  <meta http-equiv="refresh" content="0; url=pages/radio.html">
-  <link rel="canonical" href="pages/radio.html">
-  <title>Page moved · Malta Trip Companion</title>
+  <meta name="description" content="Source-checked sports radio options in Malta for 13–19 October 2026, including FM, DAB+ and dated programme listings.">
+  <title>Sports radio · Malta Trip Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>This page has moved</h1>
-    <p>The current page for <strong>Scheduled sports radio</strong> is <a href="pages/radio.html">pages/radio.html</a>.</p>
+  <header class="site-header" data-site-header></header>
 
+  <main class="page">
+    <section class="hero" aria-labelledby="radio-title">
+      <p class="eyebrow">Trip dates · 13–19 October 2026</p>
+      <h1 id="radio-title" data-topic-title>Sports radio to try in Malta</h1>
+      <p data-topic-intro>Loading source-checked radio listings…</p>
+    </section>
+
+    <section class="callout callout-warning" aria-label="Radio reception and event-carriage caveats">
+      <span class="callout-title">What is confirmed—and what is not</span>
+      <p><strong>Start with NET FM on FM 101 MHz.</strong> For DAB+, Digi B Network’s channel directory lists Radio Sportiva and BBC World Service; use a DAB+ receiver and scan by station name. The directory does not give a current channel block/frequency, and reception has not been tested at the hotel or event venue.</p>
+      <p>No current AM/MW sports programme was verified. A fixture or event date is not evidence of broadcast carriage: no radio commentary has been confirmed for the Thunderpick event, Gżira United–Mosta, or the Rolex Middle Sea Race.</p>
+    </section>
+
+    <section aria-labelledby="receiver-title">
+      <h2 id="receiver-title">Receiver quick check</h2>
+      <ul class="notice-list">
+        <li><strong>FM:</strong> a regular FM receiver that tunes to 101 MHz can try NET FM. Its Saturday and Sunday sports shows are recurring weekly listings, not a promise of live match commentary.</li>
+        <li><strong>DAB+:</strong> use a DAB+ compatible receiver and scan for <em>Radio Sportiva</em> or <em>BBC World Service</em>. A standard AM/FM-only radio will not receive DAB+.</li>
+        <li><strong>AM / MW:</strong> no current sports broadcast was verified. Do not rely on older references to Radju Malta on 999 MW; the cited history describes that as a past frequency.</li>
+      </ul>
+    </section>
+
+    <section aria-label="Search and filter radio listings">
+      <div class="topic-tools" data-topic-tools>
+        <label for="radio-search">Search stations or programs
+          <input id="radio-search" type="search" placeholder="Try ‘FM 101’, ‘DAB+’, ‘Sportsworld’ or ‘AM’" autocomplete="off">
+        </label>
+        <label for="radio-category">Filter band / topic
+          <select id="radio-category">
+            <option value="">All listings</option>
+          </select>
+        </label>
+        <span class="result-count" data-result-count aria-live="polite">Loading listings…</span>
+      </div>
+    </section>
+
+    <section aria-label="Source-checked radio stations, schedules, and coverage checks">
+      <div data-topic-data="data/radio.json" aria-live="polite"></div>
+    </section>
+
+    <section aria-labelledby="unverified-title">
+      <h2 id="unverified-title">Unverified leads and event limits</h2>
+      <p>A third-party Malta radio directory has been found claiming a DAB+ “Sports Channel (Talk Sport)”. I did not establish that claim through an authoritative station or network-operator listing, so TalkSPORT is <strong>not counted above as confirmed receivable radio</strong>. Treat it as a lead to rescan/check, not a recommendation. Directory page: <a href="https://radioinmalta.com/en/dab/6c.php" target="_blank" rel="noopener noreferrer">Radio in Malta’s DAB+ 6C list</a>.</p>
+      <p>The schedules shown above are official station/program listings, but NET FM’s grid is recurring and Radio Sportiva’s page did not show dated live-event listings for 13–19 October when checked. BBC’s dated <em>Sportsworld</em> entries are general live-sport programming; none of these listings confirms carriage of a named fixture or the user’s esports event. Recheck station pages close to the broadcast and use the <a href="activities.html">activities and events guide</a> only for event facts, not radio rights.</p>
+    </section>
   </main>
+
+  <footer class="site-footer" data-site-footer></footer>
 </body>
 </html>

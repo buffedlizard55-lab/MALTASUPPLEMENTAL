@@ -3,75 +3,86 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How the Malta Trip Companion records sources, confidence, access limitations and unresolved questions for the 13–19 October 2026 trip.">
-  <title>Sources &amp; Verification · Malta Trip Companion</title>
+  <meta name="description" content="Sources, open questions, workstream status, and verification notes for the Malta Trip Guide.">
+  <title>Sources &amp; status · Malta Trip Guide</title>
   <link rel="stylesheet" href="css/style.css">
-</head>
-<body data-root=".">
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <header id="site-header"></header>
-
-  <main id="main-content" class="page page-narrow">
-    <p class="eyebrow">Evidence · limitations · next checks</p>
-    <h1 class="page-title">Sources and verification</h1>
-    <p class="page-intro">Research snapshot checked on 9 October 2026. Use the source links on each topic record to inspect the original listing; check volatile details again before paying, booking or travelling.</p>
-
-    <div class="callout">
-      <p><strong>Where evidence appears:</strong> topic pages are built from structured JSON records. Each card shows a source link, source type, checked date, confidence label and notes. The source register connects individual claims to their evidence; the open-questions register records information that is missing, conflicting or personal to the traveler.</p>
-    </div>
-
-    <h2>Evidence registers</h2>
-    <p>These registers are maintained in the repository. Open the rendered file view on GitHub, or the source Markdown file when browsing a local checkout.</p>
-    <div class="grid">
-      <article class="card" id="source-register">
-        <p class="card-kicker">Claim-by-claim record</p>
-        <h3>Source log</h3>
-        <p>Source IDs, supported claims, URLs, source types, access dates and verification notes.</p>
-        <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/SOURCES.md" target="_blank" rel="noopener noreferrer">View the source log on GitHub</a> · <a href="docs/SOURCES.md">Open repository file</a></p>
-      </article>
-      <article class="card" id="open-questions">
-        <p class="card-kicker">Unknowns and conflicts</p>
-        <h3>Open questions</h3>
-        <p>Each item identifies its impact, evidence needed, owner and current status.</p>
-        <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/OPEN_QUESTIONS.md" target="_blank" rel="noopener noreferrer">View open questions on GitHub</a> · <a href="docs/OPEN_QUESTIONS.md">Open repository file</a></p>
-      </article>
-      <article class="card" id="handoff">
-        <p class="card-kicker">Cross-topic findings</p>
-        <h3>Workstream handoff</h3>
-        <p>Relevant leads that another topic must verify before using as a claim.</p>
-        <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/HANDOFF.md" target="_blank" rel="noopener noreferrer">View handoff notes on GitHub</a> · <a href="docs/HANDOFF.md">Open repository file</a></p>
-      </article>
-      <article class="card" id="status">
-        <p class="card-kicker">Build and review progress</p>
-        <h3>Project status</h3>
-        <p>Completed research, test coverage, integration work and remaining checks.</p>
-        <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/STATUS.md" target="_blank" rel="noopener noreferrer">View project status on GitHub</a> · <a href="docs/STATUS.md">Open repository file</a></p>
-      </article>
-    </div>
-
-    <h2>How to read the topic records</h2>
-    <ul>
-      <li><strong>Source type:</strong> <code>official</code> means a venue, operator, organizer, broadcaster or public authority; <code>map</code>, <code>review</code> and <code>social</code> distinguish other evidence rather than elevating it to official confirmation.</li>
-      <li><strong>Confidence:</strong> <code>verified</code> applies to the specific claim supported by the linked evidence; <code>partially verified</code> signals that a detail or condition remains open; <code>unverified</code> marks a lead that should not be treated as a confirmed service, price or schedule.</li>
-      <li><strong>Unknown values:</strong> missing hours, addresses, costs and schedules are left blank or explicitly identified as not published/not verified. A planner blank is not a zero-cost claim.</li>
-      <li><strong>Conflicts and access limits:</strong> differing listings, unavailable platforms, incomplete schedules, and untested reception are disclosed in the relevant records and registers. They are not resolved by guessing or averaging.</li>
-      <li><strong>Point-in-time facts:</strong> prices, hours, review counts, weather, event status, transport and entry rules can change. Confirm with the original source close to the date of use.</li>
-    </ul>
-
-    <h2>Browse the underlying data</h2>
-    <div class="grid">
-      <a class="card" href="data/transport.json"><h3>Transport data</h3><p>Route, airport, fare and mobility records.</p></a>
-      <a class="card" href="data/food.json"><h3>Food data</h3><p>Venue facts and separate platform snapshots.</p></a>
-      <a class="card" href="data/activities.json"><h3>Activities data</h3><p>Attractions, gaming leads and event records.</p></a>
-      <a class="card" href="data/everyday.json"><h3>Everyday travel data</h3><p>Practical guidance and traveler-specific caveats.</p></a>
-      <a class="card" href="data/radio.json"><h3>Radio data</h3><p>Scheduled broadcasts and Malta reception notes.</p></a>
-      <a class="card" href="data/expenses.json"><h3>Expense planner data</h3><p>Blank starter lines and optional source-linked price references.</p></a>
-    </div>
-
-    <p class="small">The trip details in the overview were supplied by the traveler. They do not imply a confirmed hotel booking, flight schedule, tournament attendance or spectator access. For the trip guide, return to the <a href="index.html">overview</a>.</p>
-  </main>
-
-  <footer id="site-footer"></footer>
   <script src="js/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header" data-site-header></header>
+  <main class="page">
+    <section class="hero" aria-labelledby="sources-title">
+      <p class="eyebrow">Research record · checked 9 October 2026</p>
+      <h1 id="sources-title">Sources, open questions &amp; status</h1>
+      <p>Use these records to trace a guide claim to its source, see when it was checked, and distinguish published facts from estimates, platform listings, and unresolved trip-specific details.</p>
+    </section>
+
+    <section class="callout callout-warning" aria-label="Research limitations">
+      <span class="callout-title">Research limitations</span>
+      <p>The site prioritizes official operators, organizers, venues, and government sources for schedules, entry guidance, prices, and transport. Review and social data are labelled as platform snapshots, not guarantees or universal rankings. Direct Yelp, Instagram, TikTok, Facebook, X, and Reddit requests were blocked or limited in the relevant checks; Google Maps views were limited and did not expose a comprehensive set of review text. These gaps are recorded, not inferred around.</p>
+      <p>Radio schedules and a DAB+ directory listing do not prove that a specific match or event is carried or receivable at the hotel/venue. Transit-route candidates do not replace a date/time-specific journey planner query.</p>
+    </section>
+
+    <section aria-labelledby="records-title">
+      <h2 id="records-title">Project records</h2>
+      <div class="grid">
+        <article class="card">
+          <span class="card-tag">Evidence</span>
+          <h3>Master source log</h3>
+          <p>Claims, official and third-party URLs, access dates, owning workstream, and source limitations.</p>
+          <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/SOURCES.md">View formatted source log on GitHub ↗</a><br><a href="docs/SOURCES.md">Open raw Markdown source log</a></p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Gaps</span>
+          <h3>Open questions</h3>
+          <p>Unpublished schedules, route details, source conflicts, and traveler-specific information that still needs confirmation.</p>
+          <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/OPEN_QUESTIONS.md">View open questions on GitHub ↗</a><br><a href="docs/OPEN_QUESTIONS.md">Open raw Markdown questions</a></p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Progress</span>
+          <h3>Workstream status</h3>
+          <p>Current completion, blockers, and last-updated date for setup and workstreams A–G.</p>
+          <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/STATUS.md">View status on GitHub ↗</a><br><a href="docs/STATUS.md">Open raw Markdown status</a></p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Integration</span>
+          <h3>Cross-workstream handoffs</h3>
+          <p>Findings that affect another topic page, with a named follow-up rather than an unowned edit.</p>
+          <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/HANDOFF.md">View handoffs on GitHub ↗</a><br><a href="docs/HANDOFF.md">Open raw Markdown handoffs</a></p>
+        </article>
+        <article class="card">
+          <span class="card-tag">Method</span>
+          <h3>Plan &amp; data schema</h3>
+          <p>Scope reset, file ownership, dependencies, shared record fields, source/confidence rules, and cumulative verification steps.</p>
+          <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/PLAN.md">View plan on GitHub ↗</a> · <a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/DATA_SCHEMA.md">View schema ↗</a><br><a href="docs/PLAN.md">Raw plan</a> · <a href="docs/DATA_SCHEMA.md">Raw schema</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="data-title">
+      <h2 id="data-title">Topic data</h2>
+      <p class="lede">The topic pages render from their corresponding JSON files. Each record carries a source URL, source type, date checked, confidence, and notes; the expense planner uses those records as reference prompts and does not prefill cost estimates.</p>
+      <div class="quick-links" aria-label="Topic JSON data files">
+        <a href="data/transport.json">Transport</a>
+        <a href="data/food.json">Food &amp; cafés</a>
+        <a href="data/activities.json">Activities &amp; events</a>
+        <a href="data/everyday.json">Everyday guidance</a>
+        <a href="data/radio.json">Sports radio</a>
+        <a href="data/expenses.json">Expense categories</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="recheck-title">
+      <h2 id="recheck-title">Before acting on a listing</h2>
+      <ul class="notice-list">
+        <li>Recheck a venue’s official page or contact the operator for current hours, reservation status, pricing, and access.</li>
+        <li>Run Malta Public Transport’s planner for the actual event-day time and destination entrance; check service alerts, especially the 17 October Route 186 notice.</li>
+        <li>Ask the organizer about public entry, ticket entitlements, doors, and finish times. Tournament dates alone do not establish spectator access.</li>
+        <li>Rescan/check a DAB+ receiver locally; the directory does not publish an exact block/frequency or guarantee reception. Confirm station schedules close to airtime.</li>
+        <li>Use the expense planner’s blank fields for confirmed amounts and download a private CSV backup before changing devices.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer" data-site-footer></footer>
 </body>
 </html>

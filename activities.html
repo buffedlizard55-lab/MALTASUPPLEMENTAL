@@ -1,18 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,follow">
-  <meta http-equiv="refresh" content="0; url=pages/activities.html">
-  <link rel="canonical" href="pages/activities.html">
-  <title>Page moved · Malta Trip Companion</title>
+  <meta name="description" content="Source-checked Malta events, gaming venues, landmarks and activities for 13–19 October 2026.">
+  <title>Activities, landmarks &amp; events · Malta Trip Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>This page has moved</h1>
-    <p>The current page for <strong>Activities and sights</strong> is <a href="pages/activities.html">pages/activities.html</a>.</p>
+  <header class="site-header" data-site-header></header>
 
+  <main class="page">
+    <section class="hero" aria-labelledby="activities-title">
+      <p class="eyebrow">Events, sights and recreation</p>
+      <h1 id="activities-title" data-topic-title>Activities, landmarks &amp; events in Malta</h1>
+      <p data-topic-intro>Loading source-checked entries…</p>
+    </section>
+
+    <section class="callout callout-warning" aria-label="Research and planning notes">
+      <span class="callout-title">Plan with the confirmed details</span>
+      <p>Only dates supported by organizer or ticketing pages are treated as confirmed. TWC spectator access and daily times remain unknown; the named PC gaming-centre listings carry closure/status conflicts, so do not travel to one without operator confirmation. Heritage Malta’s event page lists the 17 October picnic at Borġ in-Nadur, but a separate current Heritage Malta notice says the site is closed to visitors due to road works; confirm that conflict with the organizer before travelling or treating it as booked.</p>
+      <p>BirguFest is not shown as a confirmed event because no official 2026 date was located and third-party reports conflict; see <a href="docs/OPEN_QUESTIONS.md">open questions</a>.</p>
+      <p>For the hotel-to-MFCC route and the 17 October bus notice, use <a href="getting-around.html">Getting around</a>. For verified AM/FM/DAB+ carriage, use <a href="radio.html">Sports radio</a>—a fixture list or event livestream is not proof of radio broadcast rights.</p>
+    </section>
+
+    <section aria-label="Search and filter activities">
+      <div class="topic-tools" data-topic-tools>
+        <label for="activities-search">Search by event, activity or area
+          <input id="activities-search" type="search" placeholder="Try ‘17 October’, ‘Qawra’, ‘Valletta’ or ‘gaming’" autocomplete="off">
+        </label>
+        <label for="activities-category">Filter category
+          <select id="activities-category">
+            <option value="">All categories</option>
+          </select>
+        </label>
+        <span class="result-count" data-result-count aria-live="polite">Loading entries…</span>
+      </div>
+    </section>
+
+    <section aria-label="Source-checked activities, landmarks and events">
+      <div data-topic-data="data/activities.json" aria-live="polite"></div>
+    </section>
   </main>
+
+  <footer class="site-footer" data-site-footer></footer>
 </body>
 </html>

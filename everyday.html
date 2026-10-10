@@ -1,18 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,follow">
-  <meta http-equiv="refresh" content="0; url=pages/everyday.html">
-  <link rel="canonical" href="pages/everyday.html">
-  <title>Page moved · Malta Trip Companion</title>
+  <meta name="description" content="Official-source everyday guidance for a U.S. traveler visiting Malta 13–19 October 2026.">
+  <title>Everyday guide · Malta Trip Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body>
-  <main>
-    <h1>This page has moved</h1>
-    <p>The current page for <strong>Everyday travel guidance</strong> is <a href="pages/everyday.html">pages/everyday.html</a>.</p>
+  <header class="site-header" data-site-header></header>
 
+  <main class="page">
+    <section class="hero" aria-labelledby="everyday-title">
+      <p class="eyebrow">Practical tips for the trip</p>
+      <h1 id="everyday-title" data-topic-title>Everyday guide for a U.S. traveler in Malta</h1>
+      <p data-topic-intro>Loading source-checked travel essentials…</p>
+    </section>
+
+    <section class="callout callout-warning" aria-label="Entry and date-sensitive guidance">
+      <span class="callout-title">Check live rules before departure</span>
+      <p>Entry rules depend on the passport you travel on. The ETIAS status and forecast shown here are dated snapshots; follow current EU, U.S. government, airline, and Malta Met Office updates. This page is a planning aid, not legal, medical, or immigration advice.</p>
+      <p>For the hotel-to-event transit comparison, see <a href="getting-around.html">Getting around</a>. Confirmed event dates and attraction schedules are on <a href="activities.html">Activities &amp; sights</a>; editable trip spending is on the <a href="costs.html">expense planner</a>.</p>
+    </section>
+
+    <section aria-label="Search and filter everyday guidance">
+      <div class="topic-tools" data-topic-tools>
+        <label for="everyday-search">Search by topic
+          <input id="everyday-search" type="search" placeholder="Try ‘passport’, ‘112’, ‘SIM’, ‘plug’ or ‘weather’" autocomplete="off">
+        </label>
+        <label for="everyday-category">Filter category
+          <select id="everyday-category">
+            <option value="">All categories</option>
+          </select>
+        </label>
+        <span class="result-count" data-result-count aria-live="polite">Loading entries…</span>
+      </div>
+    </section>
+
+    <section aria-label="Source-checked everyday travel essentials">
+      <div data-topic-data="data/everyday.json" aria-live="polite"></div>
+    </section>
   </main>
+
+  <footer class="site-footer" data-site-footer></footer>
 </body>
 </html>
