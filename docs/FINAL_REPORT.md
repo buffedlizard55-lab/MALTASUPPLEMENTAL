@@ -47,5 +47,5 @@ See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) for the full list, evidence gaps, a
 - Some requested review/social services were blocked or only partially queryable. Google Maps and platform snapshots do not establish current operator hours or prices.
 - The offline link checker does not guarantee external-site availability. No automatic crawler of every external source was run.
 - A headless DOM simulation is not a substitute for visual review on real desktop/mobile browsers or assistive technologies.
-- GitHub Pages is configured to publish the repository root from `main`. The Pages API reported the current `main` build for merge commit `87bca74` as `built`; that confirms the upstream build only, not deployment of this PR's different files or actual browser/device rendering.
+- GitHub Pages is configured to publish the repository root from `main`. After PR #14 merged, the Pages API reported `built` for its `main` merge commit `2aeb536` (10 October 2026). This confirms the static-site build, not external-link liveness or actual browser/device rendering.
 - This guide is a planning aid, not a booking, dispatch, immigration, tax, legal, medical, or event-access guarantee.
