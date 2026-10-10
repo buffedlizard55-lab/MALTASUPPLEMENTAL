@@ -13,7 +13,7 @@ Every record in `data/*.json` uses exactly the 13 fields defined in the canonica
 | `price_range` | Source-published current price or an explicit state such as `Not published`, `Not set`, or `Varies`; identify estimates as estimates. |
 | `description` | The sourced claim(s) shown to visitors. Keep uncertainty explicit. |
 | `source_url` | Primary URL used to check the record. Related corroboration may be listed in `notes` and `docs/SOURCES.md`. |
-| `source_type` | Exactly one of `official`, `map`, `review`, or `social`. |
+| `source_type` | Exactly one of `official`, `map`, `review`, or `social`. Specialist technical directories published by an organization are classified as `official`; confidence and notes still describe limitations. |
 | `date_checked` | ISO date (`YYYY-MM-DD`) when the URL/claim was last checked. |
 | `confidence` | `verified`, `partially verified`, or `unverified`. |
 | `notes` | Caveats, conflicts, unknowns, source context, or related corroborating URLs. Never silently promote an unverified claim. |

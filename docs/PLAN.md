@@ -6,7 +6,7 @@ The repository is a hand-authored static HTML/CSS/JavaScript site with no applic
 
 ## Shared setup (serial, before topic work)
 
-1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price_range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`.
+1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price_range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`. Records use exactly those 13 keys; source types are `official`, `map`, `review`, or `social`.
 2. Preserve a dependency-free static site. Topic pages render from their workstream JSON data; the expense planner uses a blank-by-default editable form backed by its expense JSON categories.
 3. Maintain `docs/SOURCES.md` (claim, URL, UTC access date, workstream, limitation), `docs/OPEN_QUESTIONS.md` (missing/conflicting details), `docs/STATUS.md` (progress/blockers), and `docs/HANDOFF.md` (cross-topic findings).
 4. Prefer primary operator, organizer, venue, station, government, or official provider pages for current details. Label review/social snapshots separately. Do not present a fixture list as radio carriage or a route-level bus timetable as a door-to-door trip.
@@ -36,4 +36,4 @@ After integration, perform three cumulative passes:
 
 ## Concurrent main-branch reconciliation
 
-While PR #14 was open, `main` advanced through PRs #11 and #12 with a parallel travel-guide implementation. The latest tree carried an alternate 70-record dataset/page renderer, separate schema/final-report documents, and duplicate validation scripts. This branch keeps its independently reviewed common-schema records, root-page renderer, focused blank expense template, and the expanded radio-frequency/carriage investigation so the repository has one canonical implementation rather than two competing datasets and renderers. The duplicate `pages/` copies, alternate schema/report artifacts, and redundant validators were not carried over. No alternate claim is imported without its source being checked against the final logs. Legacy `hotel.html`, `itinerary.html`, and `qawra.html` URLs remain noindex notices.
+PR #15 is reconciled with the latest `origin/main` through PR #20 before merge. The integration keeps the single root-page guide and its six topic datasets, adds the WorldDAB BBC DAB+ technical listing and the MTA environmental-contribution guidance, and retains the original exact 13-field schema (`price_range` plus the four permitted source types). The source type for the WorldDAB technical directory is `official`, with its specialist-directory provenance and untested reception limitations described in notes. Duplicate/retired legacy URLs remain noindex notices. No sourced update is treated as proof of event access, a saved transit itinerary, actual hotel billing, or on-location radio reception.
