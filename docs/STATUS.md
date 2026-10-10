@@ -1,6 +1,6 @@
 # Workstream status
 
-Last updated: **2026-10-09 (UTC)**. Status labels: `not started`, `in progress`, `blocked`, `verified`, `integrated`.
+Last updated: **2026-10-10**. Status labels: `not started`, `in progress`, `blocked`, `verified`, `integrated`.
 
 | Workstream | Status | Files | Verification and remaining limits | Last updated |
 |---|---|---|---|---|
@@ -29,3 +29,7 @@ Last updated: **2026-10-09 (UTC)**. Status labels: `not started`, `in progress`,
 ## Current execution note
 
 This session is constrained to branch `arena/785456db-maltasupplemental`. Workstreams were performed serially on that branch, following the file ownership in `docs/PLAN.md`. The static site is ready for repository-level review; GitHub Pages has not yet been verified in a post-merge deployment.
+
+## Latest-main reconciliation
+
+While PR #12 was open, `main` advanced with a parallel refocus change. Its added hotel/base/itinerary drafts asserted an unprovided room type, SFO departure and event attendance. This branch keeps the user-supplied-only trip facts: those routes are now noindex redirects, and the unused conflicting `data/trip.json` / `data/venues.json` copies were removed. The six topic datasets remain canonical. The upstream schema documentation and verification-script entry points were retained and corrected for this site's `records` structure and Pages-safe paths.

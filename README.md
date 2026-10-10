@@ -33,7 +33,15 @@ The expense planner begins with blank, editable lines. It does not assume a meal
 - Some requested review/social platforms or operator subpages could not be accessed. Those limits and conflicts are stated in the relevant records and open-question register; inaccessible information is not treated as confirmed.
 - This is a trip-planning aid, not live dispatch, a booking service, legal/tax/medical/immigration advice, or a guarantee of event access, radio reception or venue availability.
 
-## Run locally
+## Verify and run locally
+
+Run the portable offline integration gate from the repository root:
+
+```bash
+python3 scripts/verify_site.py
+```
+
+It checks the JSON contract, source/question references, date and expense arithmetic, local paths/fragments, responsive-shell markers and compatibility redirects. It does not test external link liveness or replace a real-device visual review.
 
 The site uses plain HTML, CSS and JavaScript without a build step or package dependencies. Serve the repository root over HTTP so the topic pages can fetch their JSON data:
 
@@ -49,9 +57,12 @@ Then open `http://localhost:8000/`. Do not open the data-driven pages as `file:/
 index.html                 Executive summary
 pages/                     Six topic pages
 data/                      Structured research and planner starter data
+  schema.md                Common topic-record schema
 css/style.css              Responsive shared visual system
 js/site.js                 Shared navigation and data renderer
+scripts/verify_site.py     Offline integration gate (standard library only)
 docs/PLAN.md               Scope, schema, ownership and review passes
+docs/SCHEMA.md             Shared schema overview
 docs/SOURCES.md            Source and verification log
 docs/OPEN_QUESTIONS.md     Unresolved items and next actions
 docs/HANDOFF.md            Cross-workstream research handoffs

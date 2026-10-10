@@ -41,3 +41,7 @@ The requested ownership boundaries are retained. The active Arena session is fix
 3. **Pass 3 — integration audit:** check every supplied requirement against the site; validate JSON, page/data rendering, internal links, responsive/mobile navigation, keyboard access, budget calculations, GitHub Pages paths, and the final source/open-question/status registers. No item without evidence should be presented as verified.
 
 The project is complete only when the integration checks pass and remaining unknowns are visible, actionable, and not guessed.
+
+## Reconciliation with newer main-branch work
+
+While this session was in progress, `main` advanced with a parallel trip-refocus PR. Its new hotel/itinerary/neighborhood drafts treated a Deluxe sea-view booking, SFO departure and tournament attendance as confirmed, although those details were not supplied in this task. Those URLs now redirect to the current guide, and the unused `data/trip.json` / `data/venues.json` copies were removed rather than publishing conflicting facts. The six A–F topic datasets/pages and this plan's uncertainty rules remain the canonical implementation. The upstream schema documentation and validation-script paths were retained in corrected, repository-compatible form.
