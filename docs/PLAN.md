@@ -1,122 +1,47 @@
-# PLAN — Malta / Thunderpick WC 2026 trip site (merged)
+# Malta trip companion — implementation plan
 
-Last updated: 9 Oct 2026 · Owner: workstream G · **Merged after the rebase of the
-trip-planning branch onto `main`** (which had received the parallel Qawra re-base via
-PRs #8/#9).
+## Repository review
 
-## What this project is
+The repository is an existing static HTML/CSS/JavaScript site with a root-level page for most subjects. It has no structured topic data, no `docs/` research register, and no automated checks. The existing content assumes **13–20 October 2026**, an eight-day/seven-night stay, a California/SFO departure, and includes unrelated prize/legal analysis. The user-supplied trip is instead **13–19 October 2026** at **AX ODYCY Malta, Qawra**; arrival/departure times, flights, event-session times, and the confirmed event-day travel plan are not yet supplied. Existing claims and sources must therefore be audited rather than inherited. Keep the user-facing site focused on the requested trip and clearly distinguish verified facts, estimates, and unknowns.
 
-A tourism, recreation and logistics site for a trip to Malta to attend the **Counter-Strike 2
-Thunderpick World Championship 2026 Finals**. It exists so that a traveller can find food,
-activities, transport and everyday-life information quickly, on desktop or mobile, with every
-fact traceable to a source.
+## Shared setup (serial; complete before topic research)
 
-## Confirmed trip parameters (see `data/trip.json`)
+- Preserve the static GitHub Pages deployment model and root `index.html` entry point.
+- Add `data/`, `pages/`, and `docs/`; create the shared record schema and source-log format below before editing topic pages.
+- Define one responsive shell, navigation, design tokens, accessible card/table/callout styles, and one shared client-side renderer. Topic pages must display their data records rather than introduce unsupported facts in prose.
+- Set the trip facts used site-wide: AX ODYCY Malta, Qawra Coast Road, Qawra SPB 1902; 13–19 October 2026; 6 hotel nights if checking in on 13 October and out on 19 October. Do not assume flight times or which tournament days the traveler will attend.
+- Establish `docs/SOURCES.md`, `docs/OPEN_QUESTIONS.md`, `docs/HANDOFF.md`, and `docs/STATUS.md` before topic work.
 
-| Item | Value | Source |
-|---|---|---|
-| Hotel | AX Odycy, Qawra Coast Road, Qawra SPB 1902, Malta | axhotelsmalta.com/odycy/ (+contact page) |
-| Room | Deluxe sea view | supplied by traveller |
-| Dates | 13 Oct 2026 → 19 Oct 2026 (6 nights, 7 days) | supplied by traveller |
-| Event | Thunderpick World Championship 2026 Finals (CS2) | Thunderpick PRNewswire, 13 Aug & 16 Sep 2026 |
-| Event dates | 14–18 Oct 2026 | as above, corroborated by HLTV calendar |
-| Event venue | BLAST Arena Studios, Malta Fairs & Conventions Centre, Ta' Qali, ATD 4000, Ħ'Attard | BLAST attendee guide (+ visitmalta.co.uk listing) |
+## Shared data contract and evidence rules
 
-## Two parallel sessions (9 Oct 2026) and the merge
+Every ordinary list record has these required keys: `id`, `name`, `category`, `area`, `address`, `hours`, `price_range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, `notes`. `source_type` is one of `official`, `map`, `review`, or `social`; `confidence` is one of `verified`, `partially verified`, or `unverified`. Use `null` or an explicit `Not published / not verified` value instead of inferring missing hours, fares, schedules, or addresses. Topic-specific fields may be added where necessary (for example, route legs, dates, frequencies, or budget inputs). Every factual claim must be tied to a source URL and an access date in `docs/SOURCES.md`; conflicting or unavailable evidence belongs in `docs/OPEN_QUESTIONS.md`. Pages are rendered from or strictly match the associated JSON records. Do not present estimates as operator quotes or third-party listings as official.
 
-Both sessions ran the user's parallel-work protocol on the same day, on session-pinned
-branches (the platform does not permit creating/pushing other branches), so conflict
-avoidance was enforced by **file ownership** instead of branch isolation — each workstream
-touched only its own data file(s) and page(s); shared files only by G. The re-base session
-merged first (PRs #8/#9); this branch was then **rebased onto main and merged (PR #11)**,
-resolving every conflict by keeping the union of both workspaces' content. The full
-resolution table is in `docs/STATUS.md` → "Rebase resolution".
+Source-log columns: `ID | Claim supported | URL | Source type | Accessed (UTC) | Workstream | Verification note`. Record negative findings (such as an unpublished match listing or inaccessible platform) in the open-questions register, not as positive facts.
 
-## Workstreams and file ownership (integrated, post-merge)
+## Workstreams and file ownership
 
-| ID | Workstream | Data file(s) (owns) | Page(s) (owns) | Status |
-|---|---|---|---|---|
-| A | Transport — airport, hotel→venue on event days, buses, taxis, rideshare, rentals, cost/feasibility | `data/transport.json` | `getting-around.html` | done (both sessions merged) |
-| B | Food and cafes | `data/food.json` (root-page mirror) + `data/venues.json` `on_site`/`nearby` (hotel.html mirror, re-base session) | `restaurants.html`, `hotel.html` | done |
-| C | Gaming centres, activities, landmarks, events near the hotel | `data/activities.json` + `data/venues.json` `activities_landmarks` (re-base session) | `activities.html`, `landmarks.html`, `qawra.html`, `hotel.html` | done |
-| D | Everyday life for a US traveller — plugs, SIM, money, safety, health, customs, language, weather | `data/everyday.json` | `everyday.html`, `logistics.html` | done |
-| E | Radio sports broadcasts — Malta stations, FM/DAB+, official schedules, trip-date listings | `data/radio.json` | `radio.html` | done |
-| F | Expense planner — data-driven template, quick to fill once the itinerary arrives | `data/expenses.json` | `costs.html` | done |
-| G | Site shell, executive summary, navigation, integration — runs last | `data/trip.json` (shared parameters) | `index.html`, `itinerary.html`, `qawra.html`, `hotel.html`, `README.md`, `css/style.css`, `js/site.js`, `docs/*` | done |
+| Workstream | Owned files | Scope | Dependencies |
+|---|---|---|---|
+| A. Transport | `data/transport.json`, `pages/transport.html` | Airport options; AX ODYCY ↔ BLAST Arena Studios / Ta' Qali corridor public-bus directions for confirmed tournament dates; fares, transfers, taxis/ride-hailing, rental feasibility; convenience/price/value comparison | Shared schema, source log, shell; official operator and event venue data |
+| B. Food & cafés | `data/food.json`, `pages/food.html` | Curated popular places to eat/cafés near Qawra and useful trip areas; distinguish review signals from verified business facts; disclose access limits for Google/Yelp/social platforms | Shared schema, source log, shell; A for areas/travel context |
+| C. Gaming, activities, landmarks & events | `data/activities.json`, `pages/activities.html` | Gaming venues; sights and day trips; only date-relevant events with confirmed dates, plus clearly flagged tentative items | Shared schema, source log, shell; A for travel context and event-day constraints |
+| D. Everyday life for a US traveler | `data/everyday.json`, `pages/everyday.html` | Plugs/voltage, mobile data, money, tipping, safety, health, customs/entry, language, weather and practical differences | Shared schema, source log, shell; authoritative US/Maltese/EU sources |
+| E. Radio sports broadcasts | `data/radio.json`, `pages/radio.html` | Receivable AM/FM/DAB+ or other radio services; official schedules for sports broadcasts during 13–19 Oct; schedule gaps explicitly noted | Shared schema, source log, shell; official broadcasters, regulators, competitions |
+| F. Expense planner | `data/expenses.json`, `pages/expenses.html` | Itinerary-ready editable budget template; separate known amounts, estimates, and user-entered costs; no assumed prize coverage or tax advice | Shared schema, source log, shell; A–E for cost categories |
+| G. Site shell, executive summary & integration | `index.html`, shared CSS/JS, navigation, docs landing/audit updates, any integration fixes | Executive summary; navigation; mobile/desktop integration; links, data/page consistency, accessibility and final review | Runs last after A–F; consumes all topics and open questions |
 
-Shared files (`index.html`, `README.md`, `css/style.css`, `js/site.js`, the navigation block
-repeated on every page, and everything under `docs/`) are edited **only by workstream G**, or
-serially after the other workstreams have finished.
+## Conflict avoidance and execution constraint
 
-## Dependencies
+The requested ownership boundaries are retained. The active Arena session is fixed to branch `arena/785456db-maltasupplemental`; do not create or switch to workstream branches. No separate-agent tool is available in this session, so the workstreams will be executed sequentially on this branch and only in their listed owned files, with G/integration edits last. Relevant cross-topic findings go in `docs/HANDOFF.md` rather than another workstream's files.
 
-```
-data/trip.json  (G, written first — everyone reads it)
-      │
-      ├──> A  data/transport.json ──> getting-around.html
-      ├──> B  data/food.json + data/venues.json ──> restaurants.html, hotel.html
-      ├──> C  data/activities.json + data/venues.json ──> activities.html, landmarks.html, qawra.html
-      ├──> D  data/everyday.json ──> everyday.html, logistics.html
-      ├──> E  data/radio.json ──> radio.html
-      └──> F  data/expenses.json ──> costs.html
-                     │
-                     ▼
-                G: index.html + itinerary.html + qawra.html + hotel.html + navigation + README + docs/
-```
+## Verification gates / passes
 
-Nothing downstream of `data/trip.json` may contradict it. If a workstream finds that a trip
-parameter is wrong, it edits `docs/HANDOFF.md`, not `data/trip.json`.
+1. **Pass 1 — implement:** verify each source against the statement it supports; populate data and page, open questions, source log, and status.
+2. **Pass 2 — independent audit:** check date arithmetic, event/venue and transit feasibility, quoted prices/hours/frequencies, schedule time zones, links, and all high-impact assumptions; remove or downgrade unsupported claims.
+3. **Pass 3 — integration audit:** check every supplied requirement against the site; validate JSON, page/data rendering, internal links, responsive/mobile navigation, keyboard access, budget calculations, GitHub Pages paths, and the final source/open-question/status registers. No item without evidence should be presented as verified.
 
-## Data schema (identical fields in every data item)
+The project is complete only when the integration checks pass and remaining unknowns are visible, actionable, and not guessed.
 
-```
-id, name, category, area, address, hours, price_range,
-description, source_url, source_type, date_checked, confidence, notes
-```
+## Reconciliation with newer main-branch work
 
-- `source_type` ∈ {`official`, `map`, `review`, `social`, `guide`}
-- `confidence` ∈ {`verified`, `partially verified`, `unverified`}
-
-Pages are generated from, or must match, the data files. A fact that is not in a data file
-does not go on a page. Anything that cannot be verified goes to `docs/OPEN_QUESTIONS.md` — it
-is never filled with a guess. (`data/schema.md` documents the same schema plus the
-expense-planner extension fields `estimated_low/mid/high`, `actual`, `covered_by`.)
-
-## Shared setup (done serially, before parallel work)
-
-1. `data/` folder and the JSON schema — **done** (`data/trip.json`, `data/transport.json`,
-   `data/venues.json`, then this branch's six topic files + `data/schema.md`)
-2. `docs/` folder: `PLAN.md`, `SOURCES.md`, `OPEN_QUESTIONS.md`, `STATUS.md`, `HANDOFF.md` —
-   **done** (both sessions; merged)
-3. Folder structure and page conventions — **done** (flat HTML at repo root, `css/style.css`,
-   `js/site.js`; the re-base session's `pages/*.html` summary stubs kept as a sub-site)
-4. Design tokens — **this branch's full stylesheet** (the re-base session's reduced CSS would
-   have broken both sessions' pages) + the 5 stub classes
-5. Source-log format — **done** (`docs/SOURCES.md`: claim · URL · date accessed · workstream,
-   merged from both sessions)
-
-## Verification gates
-
-1. **Per workstream** — every fact has a `source_url`; every link resolves; nothing marked
-   `unverified` is presented on a page as fact.
-2. **Integration** — run **both** scripts:
-   - `scripts/check_links.py` (re-base session): internal links + anchors incl. the pages/
-     stubs; navigation identical on every root page (incl. hotel.html); data schema for all
-     data files; 13 load-bearing page assertions; forbidden patterns (no bare `Route X3`,
-     no unverified Popeye route, gaming guard).
-   - `scripts/verify_site.py` (this branch): JSON validity + schema (all 8 data files,
-     140 items); data↔page consistency for the 6 page-mirrored topics across the 15 root
-     pages; internal links + anchors; HTML tag balance; source-log coverage (every data
-     `source_url` appears in docs/SOURCES.md).
-3. **Passes 1–3** on the integrated result, not per branch: implement → review for bugs and
-   wrong assumptions → re-check against the original request line by line. (Pass log:
-   `docs/STATUS.md`.)
-
-## Branching — adapted, and why
-
-The protocol asks for one branch per workstream. **Both sessions were pinned to single
-branches** (`arena/806552e3-maltasupplemental`, `arena/c4fd385c-maltasupplemental`,
-`arena/8ed16394-maltasupplemental`), and the platform does not permit creating or pushing
-other branches. The conflict-avoidance intent is therefore enforced by *file ownership*
-instead of by branch isolation. When the second branch merged, it **rebased on main first**
-and resolved every conflict explicitly (table in `docs/STATUS.md`).
+While this session was in progress, `main` advanced with a parallel trip-refocus PR. Its new hotel/itinerary/neighborhood drafts treated a Deluxe sea-view booking, SFO departure and tournament attendance as confirmed, although those details were not supplied in this task. Those URLs now redirect to the current guide, and the unused `data/trip.json` / `data/venues.json` copies were removed rather than publishing conflicting facts. The six A–F topic datasets/pages and this plan's uncertainty rules remain the canonical implementation. The upstream schema documentation and validation-script paths were retained in corrected, repository-compatible form.

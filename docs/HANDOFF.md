@@ -1,72 +1,20 @@
-# HANDOFF — notes between workstreams (merged)
+# Cross-workstream handoff notes
 
-Rule: if you find something that belongs to another workstream, write it here. Do not edit
-their files. Workstream G sweeps this file at the end of each session and files the items.
+Use this file for verified or potentially relevant findings discovered outside the finding workstream. The owning workstream must verify before publishing the claim in its data or page. Do not edit another workstream's owned files.
 
-**Merged 9 Oct 2026** from the Qawra re-base session (first sections) and this branch's
-trip-planning pass (later sections).
-
-## Raised 9 Oct 2026 (re-base session)
-
-### For workstream F (expense planner)
-
-- **The night count is wrong on `costs.html`.** It is built for 7 nights / 8 days. The booking is
-  **13–19 Oct 2026 = 6 nights / 7 days**. The calculator's `c_nights` default and any hard-coded
-  "7 nights" copy need to change. (Raised by A and G; tracked as OQ-01.)
-  → **Done in this branch:** costs.html rebuilt for 6 nights; calculator default `c_nights` = 6;
-  eco-tax default $11 (6 × €1.50 = €9.00); food 7 days.
-- **Transport budget can now be bottom-up instead of a band.** €25 Explore Adult 7-Day card
-  covers the whole week including every event-day round trip on route 186, plus €3.00–€3.50
-  each way for the two airport hops = **€31–€32 of committed transport spend**, before any
-  rideshare. That is far tighter than the "€35–60" band on `getting-around.html`.
-  → **Kept as a band** on costs/expenses (it includes 2–3 rideshare backup runs); the €31–32
-  committed figure is now noted in `data/expenses.json` (exp-transport).
-- **New unavoidable line item: late-night return from Ta' Qali.** The last route 186 back is
-  published around 21:26 (Bugibba Bay 1) and no night bus serves Ta' Qali. Any match ending
-  after roughly 20:45 needs a rideshare or taxi. The price is unknown (OQ-04), so it must be
-  budgeted as a range with the range's basis stated, not as a number.
-  → **Done:** the 21:26 limit is stated on getting-around § 0 and in data/transport.json.
-
-### For workstream B (food)
-
-- AX Odycy has **eleven** food and drink outlets on site (operator's own structured data). For a
-  Qawra base the on-site and Dawret il-Qawra options are the ones that need zero transport.
-  `data/venues.json` → `on_site` has them with sources; this branch's `data/food.json` carries
-  the same outlets plus 16 nearby restaurants + 7 cafés (restaurants.html § 0).
-- **Minoa is adults-only** (operator's page) — stated on the pages so nobody plans a family
-  dinner there.
-- None of the AX Odycy outlets publish opening hours (OQ-13) — flagged, not implied.
-
-### For workstream C (activities / gaming)
-
-- **No gaming centre or LAN venue near Qawra could be verified** (both sessions, 9 Oct 2026).
-  `data/venues.json` carries an explicitly empty `unverified` entry; this branch's
-  `data/activities.json` lists the basic internet cafés (Cyber Zone, A.A, 24/7) and the three
-  real venues (Gamers Lounge Msida, Esports Plaza Sliema, Eden Esports St Julian's) with
-  call-ahead flags. Do not fill the gap from memory.
-- The Qawra bus network makes a specific set of day trips *verifiable by route*: Mdina/Rabat
-  and Mosta and Ta' Qali on **186**; Valletta on **45** (peak-only caveat, OQ-09); Sliema on
-  **212**; Ċirkewwa for Gozo on **221** or **TD1**; Golden Bay on **223**.
-
-## Raised 9 Oct 2026 (this branch — trip-planning pass)
-
-- (setup) Trip parameters confirmed: AX ODYCY Qawra (Deluxe sea view), 13–19 Oct 2026. Every
-  workstream keys prices/dates to **6 nights / 7 days**, base **Qawra**.
-- (A→G) The event-day hotel→venue plan lives on getting-around § 0 (id="eventdays") and is
-  mirrored by `itinerary.html` — the itinerary links to it, it does not re-derive it.
-- (B→C) Near-hotel food picks belong to `data/food.json` (restaurants.html § 0); qawra.html
-  and hotel.html link to them rather than duplicating them. Two datasets coexist after the
-  merge: `data/food.json` (root-page mirror) and `data/venues.json` (hotel.html mirror) —
-  consolidate in a future session.
-- (E→F) The DAB+ radio cost line (€25–60 estimate) feeds the expense planner's "fixed
-  extras" default note.
-- (F→G) Expense planner defaults (nights=6, food $30/day, transport band) match the calculator
-  defaults on costs.html and the executive summary's headline budget band ($370–866 /
-  $790–1,646).
-- (G, integration) New pages `itinerary.html` and `qawra.html`; the re-base session's
-  `hotel.html` kept. One 15-link navigation on all 15 root pages. `pages/*.html` remain the
-  re-base session's stub sub-site (they defer to the main site where they disagree).
-- (G→next session) After merge: re-verify the public Pages URL rebuilds from main; run a
-  bulk external link checker from a networked environment; fill the expense planner Actual
-  column when the confirmed itinerary arrives; consolidate `data/food.json` +
-  `data/venues.json` and `qawra.html` + `hotel.html` if the duplication bothers you.
+| Date (UTC) | Finding / lead | Relevant workstream | Source / evidence | Action for owner |
+|---|---|---|---|---|
+| 2026-10-09 | AX ODYCY official page lists Qawra Coast Road, Qawra SPB 1902. | A, B, F, G | https://axhotelsmalta.com/odycy/ | Use as the hotel address; room and trip dates remain traveler-supplied. |
+| 2026-10-09 | The official TWC 2026 Finals page (fetched 9 Oct) lists overall dates 12–19 Oct, media day 13 Oct, group stage 14–16 Oct, playoffs 17–18 Oct and departure 19 Oct. | A, C, E, G | https://world-championship.thunderpick.io/2026-finals/ | Plan tournament transport for 14–18 Oct; individual match times/doors remain unconfirmed. |
+| 2026-10-09 | BLAST's attendee guide for a different 2026 event identifies MFCC South Gate / Millennium Stand, Ta' Qali, ATD 4000, but it does not verify the TWC session access point or October directions. | A, C | https://blast.tv/cs/news/malta-fan-guide | Treat only as venue-area evidence; do not copy as TWC-specific access instructions without a matching source. |
+| 2026-10-09 | MPT route 186 schedule page reports 30-minute frequency, includes Qawra and Ta' Qali Stadium stops, and publishes a detour toward Buġibba on 17 Oct 19:00–18 Oct 00:00 (Gholja 2–Targa section stops not served during it). | A, C, F | https://www.publictransport.com.mt/route/186/ | Check date/time-specific planner and return stop on the day; exact impact on Qawra/venue return remains unresolved. |
+| 2026-10-09 | Official MPT route 214 page lists Qawra and Qali 2; its 2025 route-change notice gives a Qawra–Rabat–Ta' Qali–Attard corridor. | A, F | https://www.publictransport.com.mt/route/214/ ; https://www.publictransport.com.mt/service-update-important-changes-to-bus-routes-x1-x2-x3-and-x4-effective-from-20-april-2025/ | Use only after stop/venue walking-distance and 2026 timetable verification. |
+| 2026-10-09 | Official MPT fare page publishes seasonal €2.00/€2.50 day fares and a €25 Explore Adult 7-day offer; the 2026/27 seasonal crossover date is not published. | A, F | https://www.publictransport.com.mt/fares-and-tickets/ | Budget with a visible fare range; verify card rules and active fare season before purchase. |
+| 2026-10-09 | Official MPT Journey Planner accepts a locality, street or stop, then returns routes, times, interchanges and a map (powered by Google Maps). | A, G | https://www.publictransport.com.mt/journey-planner/ | Use exact AX ODYCY and MFCC/BLAST event address for each trip date/time; this is the final trip-planning step. |
+| 2026-10-09 | Official Rolex Middle Sea Race programme lists a Grand Harbour start at 11:00 on 17 Oct and the Yachting Malta Coastal Race at 10:00 on 14 Oct. | A, C, E | https://www.rolexmiddlesearace.com/race-programme/ | Assess as possible public activities only after confirming spectator/access and transport impact. |
+| 2026-10-09 | Workstream B directly checked venue pages plus Tripadvisor and limited Google Maps cards for eight Qawra-area food options. Ratings differ by platform (e.g., Cafe Maroc Google 3.7/28 vs Tripadvisor 4.6/219; 9 Ball 4.5/533 vs 4.7/60); no composite ranking or exact EUR meal cost is supported. | F, G | `data/food.json`; `docs/SOURCES.md` B-001–B-019 | Preserve the platform/date/count separately in the display. Use menu links for budget inputs; confirm hours, prices, availability and accessibility nearer the visit. |
+| 2026-10-09 | Workstream C added 20 source-linked activity, landmark, gaming-lead and event records. Official listings confirm several trip-window dates; Esplora's booklet lists free entry on 19 Oct. TWC spectator access remains unconfirmed, Gamers Lounge public gaming prices/access are not confirmed, Esports Plaza is not a confirmed walk-in venue, and Heritage Malta's Picnic listing conflicts with a current Borġ in-Nadur closure notice. | A, F, G | `data/activities.json`, `pages/activities.html`; `docs/SOURCES.md` C-001–C-028; `docs/OPEN_QUESTIONS.md` Q-015–Q-019 | A must not treat the TWC venue guide for a different event as its entrance pin. F should use only posted ticket prices/free-entry notes and no assumed spectator access. G should preserve confidence labels, caveats and the 13–19 Oct trip dates; recheck tickets, special hours and access before publication/travel. |
+| 2026-10-09 | Workstream D added 14 source-linked everyday-travel records. EES is fully operational; ETIAS remained inactive on 9 Oct despite an older EU Q4 2026 forecast. Malta uses EUR and CEST (UTC+2) during the trip; no USD conversion or tipping percentage is invented. The forecast captured 9 Oct covers only 13–15 Oct, and passport nationality, mobile carrier and medicines are unknown. | A, C, E, F, G | `data/everyday.json`, `pages/everyday.html`; `docs/SOURCES.md` D-001–D-019; `docs/OPEN_QUESTIONS.md` Q-020–Q-024 | E should use Malta local time UTC+2 for 13–19 Oct when converting any official broadcast schedule. F should keep expenses in EUR unless the traveler enters an exchange rate; do not include a speculative ETIAS cost as confirmed. C should check outdoor-event forecasts and warnings. G should retain passport/carrier/medicine contingencies and recheck ETIAS, forecast, carrier pricing and any controlled-drug rules immediately before travel. |
+| 2026-10-09 | Workstream E added two date-specific BBC World Service Sportsworld entries: 17 Oct start 15:06 Malta time (3h53 episode duration; calculated end 18:59, next schedule entry 19:00) and 18 Oct start 16:06 (calculated end 19:59, next schedule entry 20:00). The programme is described as live sport, but neither date-specific listing names a match. The current local DAB+ channel page lists BBC World Service; a WorldDAB directory lists block 6A / 181.936 MHz, but hotel indoor reception is untested. | A, C, F, G | `data/radio.json`, `pages/radio.html`; `docs/SOURCES.md` RAD-001–RAD-007; `docs/OPEN_QUESTIONS.md` Q-009–Q-010 | Do not promise a specific live match commentary or treat 6A/181.936 MHz as an operator/regulator confirmation. Recheck the BBC schedule, current DAB+ lineup and signal/device compatibility near the trip; any other station listing must meet the same official, dated schedule and Malta-reception threshold. |
+| 2026-10-09 | Workstream F implemented an EUR-first expense planner with 4 overall and 28 date-specific blank lines for 13–19 Oct, optional custom items, local-only browser saving, CSV export, an optional user-entered EUR-per-USD rate and 18 source-linked price/unknown references. Arithmetic, budget comparison, user-input FX, local-storage behavior and reference insertion pass JSDOM interaction checks. No costs, meal allowances, taxes, tips, attendance, exchange rate or reimbursement are presumed; blank does not mean free. | A, B, C, D, F, G | `data/expenses.json`, `pages/expenses.html`; `docs/SOURCES.md` T-006–T-007, E-002 and selected C-001–C-026; `docs/OPEN_QUESTIONS.md` Q-012, Q-016, Q-019–Q-022 | G has integrated the planner and passed link/render/interaction smoke checks. Preserve editable, local-only entries and the optional/blank nature of references; do not promote unknown prices or seasonal fares to quotes. A/B/C/D should retain their caveats and encourage rechecking supplier prices, eligibility, event access and applicable fares before the trip. |
+| 2026-10-09 | Workstream G replaced the stale root overview and README, added a current evidence landing page, and turned old root topic URLs into redirects to the new six-topic guide. Published topic links use the HTML evidence page; repository Markdown registers also have GitHub-view links. The site remains static, root-hostable and relative-path based for GitHub Pages. During PR #12, newer main-branch hotel/itinerary/base drafts asserted an unprovided Deluxe room, SFO departure and tournament attendance; those routes were replaced with redirects and the unused conflicting trip/venue datasets removed. | A–G | `README.md`, `index.html`, `sources.html`, root compatibility HTML files, `css/style.css`, `js/site.js`; `docs/PLAN.md`, `docs/STATUS.md` | Keep the historical prize/legal material retired, do not restore the old 13–20 Oct/SFO or unsupported booking/attendance assertions, and check the actual Pages deployment after PR merge. Refresh volatile source facts and obtain the traveler's flight, hotel and event-session details before treating any itinerary as final. |

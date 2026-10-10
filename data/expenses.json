@@ -1,255 +1,814 @@
 {
-  "topic": "expenses",
-  "trip": {
-    "hotel": "AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Malta",
-    "dates": "2026-10-13/2026-10-19",
-    "nights": 6,
-    "days": 7,
-    "event": "Thunderpick World Championship 2026 Finals, BLAST Arena Studios, Attard (Ta' Qali), match days 2026-10-14/2026-10-18",
-    "fx": "EUR/USD ≈ 1.145 (close of 22 Sep 2026 — labelled estimate)"
-  },
-  "generated": "2026-10-09",
-  "fill_instructions": "When the confirmed itinerary arrives: (1) set each line's `actual` to the confirmed/paid amount (USD), (2) set `covered_by` to prize/self/TBD per line, (3) the totals row on costs.html § 5b recomputes from this file's estimates until you overwrite them. Everything with an empty `actual` is an estimate, not a quote.",
-  "items": [
+  "heading": "Quick-fill expense planner · 13–19 October 2026",
+  "currency": "EUR",
+  "date_checked": "2026-10-09",
+  "trip_dates": [
     {
-      "id": "exp-flights",
-      "name": "Flights SFO↔MLA (round trip)",
-      "category": "expense-line",
-      "area": "SFO ↔ Malta International (MLA)",
-      "address": "",
-      "hours": "",
-      "price_range": "Market band $611–963 RT mid-Oct (23 Sep 2026 sampling); no nonstop — one stop via FRA/DUB/CDG/CPH/ZRH/ROM etc.",
-      "description": "Outbound Tue 13 Oct, return Mon 19 Oct. No nonstop SFO–MLA exists; expect one or two connections each way.",
-      "source_url": "https://www.kayak.com/flight-routes/San-Francisco-SFO/Luqa-Malta-Intl-MLA",
-      "source_type": "guide",
-      "date_checked": "2026-09-23",
-      "confidence": "partially verified",
-      "notes": "Point-in-time OTA sampling (KAYAK/flightroutes/flightconnections, 23 Sep 2026) — fares move daily; re-sample when booking. If the prize pays this, actual = $0 to you (but it is prize FMV for tax — see exp-tax).",
-      "estimated_low": 611, "estimated_mid": 780, "estimated_high": 963, "actual": "", "covered_by": "TBD"
+      "date": "2026-10-13",
+      "label": "Tue 13 Oct"
     },
     {
-      "id": "exp-hotel",
-      "name": "Hotel — AX ODYCY, Qawra (6 nights, Deluxe sea view)",
-      "category": "expense-line",
+      "date": "2026-10-14",
+      "label": "Wed 14 Oct"
+    },
+    {
+      "date": "2026-10-15",
+      "label": "Thu 15 Oct"
+    },
+    {
+      "date": "2026-10-16",
+      "label": "Fri 16 Oct"
+    },
+    {
+      "date": "2026-10-17",
+      "label": "Sat 17 Oct"
+    },
+    {
+      "date": "2026-10-18",
+      "label": "Sun 18 Oct"
+    },
+    {
+      "date": "2026-10-19",
+      "label": "Mon 19 Oct"
+    }
+  ],
+  "categories": [
+    "Air travel",
+    "Accommodation",
+    "Food & drink",
+    "Public transport",
+    "Taxi / rideshare",
+    "Activities & events",
+    "Gaming",
+    "Mobile / connectivity",
+    "Insurance",
+    "Shopping / other"
+  ],
+  "amount_statuses": [
+    "User estimate",
+    "Supplier quote",
+    "Published source price (recheck)",
+    "Paid / actual",
+    "Other user entry"
+  ],
+  "trip_items": [
+    {
+      "id": "starter-air-travel",
+      "date": "trip",
+      "name": "Flights, baggage and seat fees (enter booking total)",
+      "category": "Air travel",
+      "quantity": 1,
+      "unit_cost": null,
+      "paid_amount": null,
+      "status": "User estimate",
+      "notes": "No flight itinerary, traveler count, baggage choice or airfare was supplied. Enter the amount for your own booking; no route or price is assumed."
+    },
+    {
+      "id": "starter-accommodation",
+      "date": "trip",
+      "name": "AX ODYCY booking total",
+      "category": "Accommodation",
+      "quantity": 1,
+      "unit_cost": null,
+      "paid_amount": null,
+      "status": "User estimate",
+      "notes": "Enter the amount from your booking. Six nights applies only if check-in is 13 Oct and check-out is 19 Oct; exact hotel nights, room rate, payment and any separate charges are not confirmed here."
+    },
+    {
+      "id": "starter-insurance",
+      "date": "trip",
+      "name": "Travel / medical insurance",
+      "category": "Insurance",
+      "quantity": 1,
+      "unit_cost": null,
+      "paid_amount": null,
+      "status": "User estimate",
+      "notes": "Enter your policy quote or actual cost; coverage and reimbursement depend on your policy."
+    },
+    {
+      "id": "starter-connectivity",
+      "date": "trip",
+      "name": "Mobile roaming, eSIM or data add-on",
+      "category": "Mobile / connectivity",
+      "quantity": 1,
+      "unit_cost": null,
+      "paid_amount": null,
+      "status": "User estimate",
+      "notes": "Carrier and plan are unknown. Check the rate, allowance and activation with your own U.S. provider; no roaming charge is assumed."
+    }
+  ],
+  "daily_templates": [
+    {
+      "id": "food",
+      "name": "Meals, cafés and snacks (daily total)",
+      "category": "Food & drink"
+    },
+    {
+      "id": "transport",
+      "name": "Local transport (daily total)",
+      "category": "Public transport"
+    },
+    {
+      "id": "activities",
+      "name": "Sights, events or gaming (daily total)",
+      "category": "Activities & events"
+    },
+    {
+      "id": "other",
+      "name": "Other daily spending",
+      "category": "Shopping / other"
+    }
+  ],
+  "notes": [
+    "All amount fields start blank. Blank means not entered or not priced; it never means free.",
+    "The planner is EUR-first. No EUR/USD rate, meal budget, taxi estimate, tax, tip or event coverage is preloaded.",
+    "Any paid, prepaid or otherwise covered amount must be entered by the traveler; nothing is assumed to be reimbursed or covered.",
+    "Optional published prices below are references checked on 9 Oct 2026. They do not enter the total unless you deliberately add them, and they may change before the trip.",
+    "Food records do not support a representative meal total; use a current menu, quote, receipt or your own estimate."
+  ],
+  "records": [
+    {
+      "id": "budget-mpt-single-fares",
+      "name": "Malta Public Transport · regular single fares",
+      "category": "Public transport · reference prices",
+      "area": "Malta",
+      "address": "Not applicable — fare reference",
+      "hours": "Not applicable — check the operator timetable for the actual journey",
+      "price_range": "The current fare page lists €2.00 winter / €2.50 summer for a regular single ticket. The 2026/27 seasonal switch date and applicable October fare were not published on the page checked.",
+      "description": "Optional fare references from Malta Public Transport. Neither amount is selected for the trip by default: confirm the active 2026/27 fare and ticket conditions before using one in the plan.",
+      "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "T-006. The displayed season information did not establish which rate will apply on 13–19 October 2026.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "mpt-single-winter",
+            "label": "Regular single · winter rate shown",
+            "amount": 2.0,
+            "unit": "per passenger / single ticket",
+            "date": "trip",
+            "note": "Current published rate only; the 2026/27 winter season dates are not posted. Verify before budgeting or purchase."
+          },
+          {
+            "id": "mpt-single-summer",
+            "label": "Regular single · summer rate shown",
+            "amount": 2.5,
+            "unit": "per passenger / single ticket",
+            "date": "trip",
+            "note": "Current published rate only; the 2026/27 season applying to the trip is not confirmed. Verify before budgeting or purchase."
+          }
+        ]
+      },
+      "planner_category": "Public transport"
+    },
+    {
+      "id": "budget-mpt-cards",
+      "name": "Malta Public Transport · multi-day / journey cards",
+      "category": "Public transport · reference prices",
+      "area": "Malta",
+      "address": "Not applicable — fare reference",
+      "hours": "Not applicable — check card conditions for the actual journey",
+      "price_range": "Current page lists Explore Adult 7-day €25, Explore Flex 7-day €27 and 12 Single Day Journeys €19. Check the product, route exclusions and 2026/27 terms before purchase.",
+      "description": "Optional card-price references. These products are not assumed to suit the traveler's route or dates, and no card is automatically included in the plan.",
+      "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "T-006. The fare page's seasonal transition and product terms for October 2026 require rechecking; the Explore Adult terms exclude Tallinja Direct routes.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "mpt-explore-adult",
+            "label": "Explore Adult · 7-day card",
+            "amount": 25.0,
+            "unit": "per card",
+            "date": "trip",
+            "note": "Current posted price; confirm eligibility, validity dates, route exclusions and current card terms."
+          },
+          {
+            "id": "mpt-explore-flex",
+            "label": "Explore Flex · 7-day offer",
+            "amount": 27.0,
+            "unit": "per offer",
+            "date": "trip",
+            "note": "Current posted offer; confirm its exact included products and conditions at purchase."
+          },
+          {
+            "id": "mpt-12-journeys",
+            "label": "12 Single Day Journeys card",
+            "amount": 19.0,
+            "unit": "per card",
+            "date": "trip",
+            "note": "Current posted price; check validity, eligibility and remaining conditions."
+          }
+        ]
+      },
+      "planner_category": "Public transport"
+    },
+    {
+      "id": "budget-airport-direct",
+      "name": "Malta Public Transport · Airport Direct TD1 / TD5",
+      "category": "Airport transfer · reference prices",
+      "area": "Malta International Airport and published route corridor",
+      "address": "Not applicable — fare reference",
+      "hours": "Check live route timetable and stop for flight time",
+      "price_range": "MPT currently lists TD5 at €3.00 and TD1 at €3.50 for a single trip. Exact stop suitability and travel-card conditions must be checked.",
+      "description": "Optional Airport Direct single-trip fare references. The planner does not assume either route serves the traveler's flight time or provides a direct stop at AX ODYCY.",
+      "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "T-007. Check the route page, live timetable, hotel stop/walk and the specific travel-card terms before relying on the service or price.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "mpt-td5",
+            "label": "Airport Direct TD5 · single trip",
+            "amount": 3.0,
+            "unit": "per passenger / one trip",
+            "date": "trip",
+            "note": "Current posted fare; verify route, stop, timetable and ticket/card terms for the flight."
+          },
+          {
+            "id": "mpt-td1",
+            "label": "Airport Direct TD1 · single trip",
+            "amount": 3.5,
+            "unit": "per passenger / one trip",
+            "date": "trip",
+            "note": "Current posted fare; verify route, stop, timetable and ticket/card terms for the flight."
+          }
+        ]
+      },
+      "planner_category": "Public transport"
+    },
+    {
+      "id": "budget-esplora",
+      "name": "Esplora Interactive Science Centre · standard admission",
+      "category": "Activities & events · reference prices",
+      "area": "Villa Bighi, Kalkara",
+      "address": "See official visitor information; confirm the map pin before travel",
+      "hours": "See the official dated opening hours; Monday closes at 15:00",
+      "price_range": "The official 2026 booklet lists standard admission from €12 adult / €10 child or student; children up to age 2 free. It also lists a free public day on 19 Oct, but special-show inclusions are not established.",
+      "description": "Published standard admission references only. Esplora's 2026 booklet lists Monday 19 October as a free public Open Day; whether Planetarium or other timed experiences are included is not stated, so no paid or free special experience is assumed.",
+      "source_url": "https://esplora.org.mt/wp-content/uploads/2026/01/Esplora-Booklet-2026_ENG_DIGITAL.pdf",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-007. The free-day record is in `data/activities.json`; recheck included experiences and booking requirements with Esplora.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "esplora-adult",
+            "label": "Standard admission · adult",
+            "amount": 12.0,
+            "unit": "per person",
+            "date": "trip",
+            "note": "2026 booklet price; check any later update, ticket type and eligibility."
+          },
+          {
+            "id": "esplora-child-student",
+            "label": "Standard admission · child/student",
+            "amount": 10.0,
+            "unit": "per eligible person",
+            "date": "trip",
+            "note": "2026 booklet price; verify age/student eligibility and any later update."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-aquarium",
+      "name": "Malta National Aquarium · admission",
+      "category": "Activities & events · reference prices",
       "area": "Qawra",
-      "address": "AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Malta",
-      "hours": "Check-in Tue 13 Oct / check-out Mon 19 Oct 2026",
-      "price_range": "Market band ≈ €90–160/night mid-Oct in Qawra (estimate) → ≈ $620–1,100 for 6 nights",
-      "description": "Your booking: AX ODYCY, Deluxe sea view, 13–19 Oct 2026 (6 nights). Enter the confirmed total (incl. any resort fees/eco-tax the hotel adds) as the actual.",
-      "source_url": "https://axhotelsmalta.com/odycy/",
+      "address": "Official ticket page; exact current street address was not captured",
+      "hours": "Official homepage lists daily 10:00–20:00; last entry 19:30 per ticket FAQ",
+      "price_range": "Adult 13+: €17.90 door / €16.90 online; child 4–12: €11.90 / €10.90; senior 60+: €14.90 / €13.90; ages 0–3 free with desk ticket and proof of age.",
+      "description": "Published ticket amounts from the aquarium's official ticket information. Online and at-door amounts differ; choose only the ticket type you intend to buy and recheck availability and prices.",
+      "source_url": "https://aquarium.com.mt/tickets/",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "Hotel verified (official site). The nightly market band is a third-party estimate — the confirmed booking price comes from your confirmation. Whether the prize or you pay is set in `covered_by`.",
-      "estimated_low": 620, "estimated_mid": 850, "estimated_high": 1100, "actual": "", "covered_by": "TBD"
+      "notes": "C-001–C-002. The aquarium says advance booking is not required, but ticket products can change. Exact map pin/address remains Q-015.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "aquarium-adult-online",
+            "label": "Adult 13+ · online ticket",
+            "amount": 16.9,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current published online price; check current ticket product and availability."
+          },
+          {
+            "id": "aquarium-adult-door",
+            "label": "Adult 13+ · at-door ticket",
+            "amount": 17.9,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current published at-door price; check current ticket product and availability."
+          },
+          {
+            "id": "aquarium-child-online",
+            "label": "Child 4–12 · online ticket",
+            "amount": 10.9,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current published online price; confirm age eligibility and ticket availability."
+          },
+          {
+            "id": "aquarium-child-door",
+            "label": "Child 4–12 · at-door ticket",
+            "amount": 11.9,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current published at-door price; confirm age eligibility and ticket availability."
+          },
+          {
+            "id": "aquarium-senior-online",
+            "label": "Senior 60+ · online ticket",
+            "amount": 13.9,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current published online price; confirm age eligibility and ticket availability."
+          },
+          {
+            "id": "aquarium-senior-door",
+            "label": "Senior 60+ · at-door ticket",
+            "amount": 14.9,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current published at-door price; confirm age eligibility and ticket availability."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
     },
     {
-      "id": "exp-transfers",
-      "name": "Airport transfers (MLA ↔ Qawra)",
-      "category": "expense-line",
-      "area": "MLA ↔ Qawra",
-      "address": "",
-      "hours": "Arrival Tue 13 Oct; departure Mon 19 Oct",
-      "price_range": "Bus €2.50–3.50 each way (TD1/TD5/214/X3) · taxi €25–28 fixed each way · rideshare ≈ €15–30 each way",
-      "description": "Two airport runs. Cheapest: Airport Direct/214 bus. Most convenient with luggage: white-taxi kiosk or rideshare.",
-      "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
+      "id": "budget-classic-car-museum",
+      "name": "Malta Classic Car Collection · admission",
+      "category": "Activities & events · reference prices",
+      "area": "Qawra",
+      "address": "Official museum page lists Tourists Street, Qawra; verify map pin before travel",
+      "hours": "See the museum's current visitor page; recheck before visiting",
+      "price_range": "Official ticket page lists adult €10 and child €4.50; the child age boundary was not stated in the retrieved text.",
+      "description": "Published admission amounts only. The child-rate age limit is unclear in the source page text; confirm it with the museum before selecting a ticket.",
+      "source_url": "https://www.classiccarsmalta.com/museum-entrance-tickets",
       "source_type": "official",
-      "date_checked": "2026-10-09",
-      "confidence": "verified",
-      "notes": "Bus fares official (re-read 9 Oct 2026); taxi/rideshare bands are guide estimates (mappytravel/airporttocitycenter/appsavvytraveller).",
-      "estimated_low": 6, "estimated_mid": 45, "estimated_high": 60, "actual": "", "covered_by": "self"
-    },
-    {
-      "id": "exp-transport",
-      "name": "Local transport (week)",
-      "category": "expense-line",
-      "area": "Malta & Gozo",
-      "address": "",
-      "hours": "",
-      "price_range": "Explore Adult 7-Day €25 + 2–3 rideshare runs ≈ €10–18 each",
-      "description": "The week's island transport: unlimited bus card (covers all event-day 186/214 runs + night routes) plus a few rideshare/taxi runs for fixed times.",
-      "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
-      "source_type": "official",
-      "date_checked": "2026-10-09",
-      "confidence": "verified",
-      "notes": "Card price official (€25, re-read 9 Oct 2026). Rideshare band is an estimate. Summer single fare €2.50 applies 13–18 Oct; winter €2.00 from 19 Oct (if you buy singles instead of the card).",
-      "estimated_low": 35, "estimated_mid": 45, "estimated_high": 70, "actual": "", "covered_by": "self"
-    },
-    {
-      "id": "exp-food",
-      "name": "Food & drink ($30/day × 7 days)",
-      "category": "expense-line",
-      "area": "Qawra + island sights",
-      "address": "",
-      "hours": "",
-      "price_range": "$30/day target ≈ €26/day: pastizzi breakfast €3–5, café lunch €6–10, mid-range dinner €10–20; one or two splurge dinners push the high band",
-      "description": "7 days (13–19 Oct) of eating. The hotel's Deck & Keel buffet may cover breakfast (check your rate); near-hotel picks are on Food & Drink § 0.",
-      "source_url": "https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html",
-      "source_type": "guide",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "The $30/day figure is your stated budget; the band is this site's arithmetic (see costs.html § 6 reality check). Enter actuals per day if you track them.",
-      "estimated_low": 180, "estimated_mid": 210, "estimated_high": 300, "actual": "", "covered_by": "self"
+      "notes": "C-003–C-004. The child-price age boundary and ticket availability need confirmation.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "classic-cars-adult",
+            "label": "Adult admission",
+            "amount": 10.0,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current official page price; recheck before visiting."
+          },
+          {
+            "id": "classic-cars-child",
+            "label": "Child admission (age boundary not stated)",
+            "amount": 4.5,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Use only after confirming the child-rate age boundary with the museum."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
     },
     {
-      "id": "exp-ticket",
-      "name": "TWC 2026 Finals ticket",
-      "category": "expense-line",
-      "area": "BLAST Arena Studios, Ta' Qali, Attard",
-      "address": "Malta Fairs & Conventions Centre, Ta' Qali, ATD 4000 Ħ'Attard",
-      "hours": "Match days Wed 14 – Sun 18 Oct 2026",
-      "price_range": "Covered by the prize (per giveaway Terms §5) — est. FMV ~$100 if self-purchased",
-      "description": "Your ticket to the five match days. Which days it covers is one of the written confirmations to collect.",
+      "id": "budget-st-johns",
+      "name": "St John's Co-Cathedral · admission",
+      "category": "Activities & events · reference prices",
+      "area": "Valletta",
+      "address": "See the official visit page for directions",
+      "hours": "Official page lists Mon–Sat 09:00–16:45, last admission 16:00; dated 15 Oct notice opens at 11:00",
+      "price_range": "Adult €15; senior/student €12; under-12s free with an accompanying adult, per current visitor page.",
+      "description": "Published ticket amounts. The special opening notice for Thursday 15 October says opening is delayed to 11:00; recheck the date-specific notice and admission terms.",
+      "source_url": "https://www.stjohnscocathedral.com/visit/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-019–C-020. Current amount and hours may change; check the official page before the visit.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "st-johns-adult",
+            "label": "Adult admission",
+            "amount": 15.0,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current posted standard admission; recheck date-specific hours and price."
+          },
+          {
+            "id": "st-johns-senior-student",
+            "label": "Senior/student admission",
+            "amount": 12.0,
+            "unit": "per eligible person",
+            "date": "trip",
+            "note": "Current posted concession price; confirm eligibility and ticket terms."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-fort-st-angelo",
+      "name": "Fort St Angelo · admission",
+      "category": "Activities & events · reference prices",
+      "area": "Birgu",
+      "address": "See official Heritage Malta page for directions",
+      "hours": "Recheck the official Heritage Malta page for current hours and any event-day access",
+      "price_range": "Adult €10; youth 12–17, senior 60+, student/concession €6; child 6–11 €4; infants free, per Heritage Malta.",
+      "description": "Published general-admission categories. A separately ticketed Sail & Savour race-viewing offer on 17 October has different prices and access; do not combine it with this standard ticket automatically.",
+      "source_url": "https://heritagemalta.mt/explore/fort-st-angelo/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-021. Event-date access and any special ticket must be confirmed separately.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "fort-st-angelo-adult",
+            "label": "Adult general admission",
+            "amount": 10.0,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current posted general-admission rate; recheck event-day access."
+          },
+          {
+            "id": "fort-st-angelo-concession",
+            "label": "Youth 12–17 / senior 60+ / student / concession",
+            "amount": 6.0,
+            "unit": "per eligible person",
+            "date": "trip",
+            "note": "Current posted rate; confirm the ticket category and evidence required."
+          },
+          {
+            "id": "fort-st-angelo-child",
+            "label": "Child 6–11 admission",
+            "amount": 4.0,
+            "unit": "per eligible child",
+            "date": "trip",
+            "note": "Current posted rate; confirm eligibility and ticket terms."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-fort-st-elmo",
+      "name": "Fort St Elmo / National War Museum · admission",
+      "category": "Activities & events · reference prices",
+      "area": "Valletta",
+      "address": "See official Heritage Malta page for directions",
+      "hours": "Recheck Heritage Malta for current hours and event-day admission windows",
+      "price_range": "Adult €10; senior/youth/student €7.50; child €5.50; infants free. In Guardia show-only tickets are separate.",
+      "description": "Published general museum admission. On the listed In Guardia date, non-performance museum visitors are admitted from 12:00; show-only and combination tickets are distinct.",
+      "source_url": "https://heritagemalta.mt/explore/fort-st-elmo-national-war-museum/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-022. Check event-day entry, the separate In Guardia ticket, and the listed Section 4 closure before setting a plan.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "fort-st-elmo-adult",
+            "label": "Adult general admission",
+            "amount": 10.0,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current posted museum rate; check event-day terms."
+          },
+          {
+            "id": "fort-st-elmo-concession",
+            "label": "Senior/youth/student admission",
+            "amount": 7.5,
+            "unit": "per eligible person",
+            "date": "trip",
+            "note": "Current posted rate; confirm the ticket category and eligibility."
+          },
+          {
+            "id": "fort-st-elmo-child",
+            "label": "Child admission",
+            "amount": 5.5,
+            "unit": "per eligible child",
+            "date": "trip",
+            "note": "Current posted rate; confirm age category and event-day conditions."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-eden-duckpin-arcade",
+      "name": "The Eden · Duckpin and XP Arcade",
+      "category": "Gaming & entertainment · reference prices",
+      "area": "St Julian's",
+      "address": "See the official activity pages for venue details",
+      "hours": "Duckpin junior price is listed until 18:00; confirm seasonal hours and booking slot",
+      "price_range": "Duckpin: adult 14+ €9.95; junior under 14 €7.95 until 18:00; family pack €30; qualifying senior/special-needs €5. XP Arcade credit bundles start at €10 for 90 credits.",
+      "description": "Current published activity prices from The Eden. Arcade games consume different credits; the listed starting bundle does not fix the price of a particular game. Check live activity slots and terms.",
+      "source_url": "https://theeden.mt/activities/duckpin",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-013 and C-015. Age, time-of-day and qualifying-card conditions apply; check the activity and booking pages before purchase.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "eden-duckpin-adult",
+            "label": "Duckpin · adult 14+",
+            "amount": 9.95,
+            "unit": "per person",
+            "date": "trip",
+            "note": "Current posted rate; confirm current slot and booking terms."
+          },
+          {
+            "id": "eden-duckpin-junior",
+            "label": "Duckpin · junior under 14 (until 18:00)",
+            "amount": 7.95,
+            "unit": "per eligible person",
+            "date": "trip",
+            "note": "Current posted rate; junior price is listed until 18:00; confirm age and time eligibility."
+          },
+          {
+            "id": "eden-duckpin-family",
+            "label": "Duckpin · family pack",
+            "amount": 30.0,
+            "unit": "per pack",
+            "date": "trip",
+            "note": "Current posted pack price; check family composition and booking conditions."
+          },
+          {
+            "id": "eden-duckpin-concession",
+            "label": "Duckpin · qualifying senior / special-needs card",
+            "amount": 5.0,
+            "unit": "per eligible person",
+            "date": "trip",
+            "note": "Current posted rate requires a qualifying card; verify eligibility at the venue."
+          },
+          {
+            "id": "eden-arcade-credits",
+            "label": "XP Arcade · starting credit bundle",
+            "amount": 10.0,
+            "unit": "per 90-credit bundle",
+            "date": "trip",
+            "note": "Published starting bundle; individual games consume varying credits."
+          }
+        ]
+      },
+      "planner_category": "Gaming"
+    },
+    {
+      "id": "budget-gzira-mosta",
+      "name": "Gżira United FC vs Mosta FC · 14 October",
+      "category": "Sport · reference prices",
+      "area": "Tony Bezzina Stadium; check the match listing for directions",
+      "address": "See official Malta FA ticket page",
+      "hours": "Listed kickoff 19:00 on 14 Oct 2026; verify any schedule change",
+      "price_range": "Adult €10; senior €6; under-16s free with a ticket collected at the entry booths, per the official match page.",
+      "description": "Date-specific official match and ticket prices. Attendance is optional; recheck the match, ticket inventory and entry instructions before adding a ticket to the itinerary.",
+      "source_url": "https://tickets.mfa.com.mt/matches/gzira-united-fc-vs-mosta-fc-2026-10-14",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-018. Ticket inventory and match timing can change.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "gzira-mosta-adult",
+            "label": "Match ticket · adult",
+            "amount": 10.0,
+            "unit": "per person",
+            "date": "2026-10-14",
+            "note": "Current match-page price; recheck fixture and ticket inventory."
+          },
+          {
+            "id": "gzira-mosta-senior",
+            "label": "Match ticket · senior",
+            "amount": 6.0,
+            "unit": "per eligible person",
+            "date": "2026-10-14",
+            "note": "Current match-page price; confirm eligibility and ticket inventory."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-eden-blood-on-clocktower",
+      "name": "The Eden · Blood on the Clocktower · 14 October",
+      "category": "Events & activities · reference price",
+      "area": "The Eden, St Julian's",
+      "address": "See official event page",
+      "hours": "Listed 18:00 on 14 Oct 2026; age guidance 14+",
+      "price_range": "€10 per person on the official listing; recheck booking availability, age and entry terms.",
+      "description": "Date-specific event price; add it only if you decide to attend and confirm a booking.",
+      "source_url": "https://theeden.mt/events/blood-on-the-clocktower-oct",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-017. Published entry price and event listing may change.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "blood-on-clocktower-ticket",
+            "label": "Blood on the Clocktower · ticket",
+            "amount": 10.0,
+            "unit": "per person",
+            "date": "2026-10-14",
+            "note": "Current event-listing price; confirm booking and entry terms."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-eden-disney-trivia",
+      "name": "The Eden · Disney Trivia Night · 17 October",
+      "category": "Events & activities · reference price",
+      "area": "The Eden, St Julian's",
+      "address": "See official event page",
+      "hours": "Doors listed 19:30; quiz 20:00 on 17 Oct 2026",
+      "price_range": "€10 per person; welcome drink included according to the event listing. Recheck booking availability and entry conditions.",
+      "description": "Date-specific event price; attendance and ticket availability are not assumed.",
+      "source_url": "https://theeden.mt/events/disney-trivia-night",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-016. Confirm the date, booking inventory, age guidance and entry terms before purchase.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "disney-trivia-ticket",
+            "label": "Disney Trivia Night · ticket",
+            "amount": 10.0,
+            "unit": "per person",
+            "date": "2026-10-17",
+            "note": "Current event-listing price; welcome drink is listed as included. Confirm booking and terms."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-sail-savour",
+      "name": "Sail & Savour · Middle Sea Race viewing · 17 October",
+      "category": "Events & activities · reference prices",
+      "area": "Fort St Angelo / Fort St Elmo; see the event organizer's page",
+      "address": "See official Heritage Malta event page",
+      "hours": "Fort St Angelo VIP 10:00–12:00; Fort St Elmo offer 09:00–12:00 on 17 Oct",
+      "price_range": "Fort St Angelo VIP: €40 adult / €35 member, 150 places listed. Fort St Elmo: half-price admission at the door; the event listing does not state one fixed price.",
+      "description": "The organizer lists a fixed Fort St Angelo VIP ticket and a separate half-price Fort St Elmo entry offer. The Fort St Elmo amount cannot be calculated without the applicable base ticket and eligibility; no price is prefilled for it.",
+      "source_url": "https://heritagemalta.mt/whats-on/sail-savour/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-024. Recheck access, ticket availability and what is included before booking.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "sail-savour-adult",
+            "label": "Fort St Angelo VIP viewing · adult",
+            "amount": 40.0,
+            "unit": "per person",
+            "date": "2026-10-17",
+            "note": "Current event price; 150 places were listed. Verify inventory and inclusions."
+          },
+          {
+            "id": "sail-savour-member",
+            "label": "Fort St Angelo VIP viewing · Heritage Malta member",
+            "amount": 35.0,
+            "unit": "per eligible member",
+            "date": "2026-10-17",
+            "note": "Current event price; confirm active membership, inventory and inclusions."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-in-guardia",
+      "name": "In Guardia · Fort St Elmo · 18 October",
+      "category": "Events & activities · reference prices",
+      "area": "Fort St Elmo, Valletta",
+      "address": "See official event page",
+      "hours": "Performance listed 11:00 on 18 Oct 2026; weather cancellation is possible",
+      "price_range": "Show-only: adult €10; senior/student €7.50; child €5. Museum-combination ticket is separate.",
+      "description": "Date-specific performance prices from Heritage Malta. Do not confuse show-only entry with the separate museum-combination ticket; the event may be cancelled due to weather.",
+      "source_url": "https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "C-023. Recheck the event notice, inventory, ticket type and weather-cancellation status.",
+      "details": {
+        "budget_options": [
+          {
+            "id": "inguardia-adult",
+            "label": "In Guardia · show-only adult",
+            "amount": 10.0,
+            "unit": "per person",
+            "date": "2026-10-18",
+            "note": "Current event-page price; show-only ticket, not the museum-combination ticket."
+          },
+          {
+            "id": "inguardia-senior-student",
+            "label": "In Guardia · show-only senior/student",
+            "amount": 7.5,
+            "unit": "per eligible person",
+            "date": "2026-10-18",
+            "note": "Current event-page price; confirm eligibility and ticket type."
+          },
+          {
+            "id": "inguardia-child",
+            "label": "In Guardia · show-only child",
+            "amount": 5.0,
+            "unit": "per eligible child",
+            "date": "2026-10-18",
+            "note": "Current event-page price; confirm eligibility and ticket type."
+          }
+        ]
+      },
+      "planner_category": "Activities & events"
+    },
+    {
+      "id": "budget-twc-admission-unknown",
+      "name": "Thunderpick World Championship · spectator admission",
+      "category": "Events & activities · unresolved cost",
+      "area": "BLAST Arena Studios, Attard (event entrance still needs confirmation)",
+      "address": "Not confirmed for spectator entry",
+      "hours": "No individual match/session time confirmed for this trip",
+      "price_range": "Public spectator access and ticket price were not confirmed by the checked organizer schedule.",
+      "description": "Do not enter a ticket amount or assume the event is open to spectators until the organizer confirms access and any ticket cost.",
       "source_url": "https://world-championship.thunderpick.io/2026-finals/",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "Prize coverage per Terms §5 (verified 23 Sep 2026, carried); the $100 FMV is an estimate (no public ticket price published — TWC does not publish a fan-zone ticketing structure).",
-      "estimated_low": 0, "estimated_mid": 0, "estimated_high": 100, "actual": "", "covered_by": "prize"
+      "notes": "E-002. Event dates/phases are published, but event-day attendance, doors and a public ticket price remain unconfirmed.",
+      "details": {
+        "budget_options": []
+      },
+      "planner_category": "Activities & events"
     },
     {
-      "id": "exp-activities",
-      "name": "Activities & entry fees",
-      "category": "expense-line",
-      "area": "Island-wide",
-      "address": "",
-      "hours": "",
-      "price_range": "Official anchors: Malta National Aquarium €16.90 online · St John's €15 · Fort St Elmo €10 · Grand Master's Palace €12 · Ħaġar Qim & Mnajdra €10 · Tarxien €6 · St Paul's Catacombs €6 · Hypogeum €35 · harbour ferry €3/€5 · Gozo €4.65–15 · HM Multisite Pass €60",
-      "description": "Sights & activities for the week: aquarium (near hotel), Valletta set, maybe Gozo/Comino. Typical mix €45–80; with Hypogeum + Gozo €80–115.",
-      "source_url": "https://aquarium.com.mt/tickets/",
+      "id": "budget-gamers-lounge-unknown",
+      "name": "The Gamers Lounge · public gaming session",
+      "category": "Gaming · unresolved cost",
+      "area": "Msida",
+      "address": "John Borg Street, Msida MSD 1201 (retail address; session access not confirmed)",
+      "hours": "Published store hours do not establish gaming-session hours",
+      "price_range": "Public gaming-session prices, walk-in access and booking terms were not published in the checked FAQ/contact pages.",
+      "description": "No gaming price is entered. Contact the operator to confirm public access, date availability and price before adding a cost or trip stop.",
+      "source_url": "https://gamerslounge.mt/faqs",
       "source_type": "official",
       "date_checked": "2026-10-09",
-      "confidence": "verified",
-      "notes": "Aquarium price official (9 Oct 2026); Heritage Malta/St John's prices official (24 Sep 2026, carried); ferry fares official (24 Sep 2026). Blue Grotto boats €10/€5 (2026 guides, conflict shown); Comino boats unverified.",
-      "estimated_low": 50, "estimated_mid": 90, "estimated_high": 150, "actual": "", "covered_by": "self"
+      "confidence": "unverified",
+      "notes": "C-009–C-010 and Q-016. Store details are not proof of public gaming access or session prices.",
+      "additional_sources": [
+        {
+          "label": "The Gamers Lounge contact page (store hours/address only)",
+          "url": "https://gamerslounge.mt/contact-us",
+          "type": "official"
+        }
+      ],
+      "details": {
+        "budget_options": []
+      },
+      "planner_category": "Gaming"
     },
     {
-      "id": "exp-sim",
-      "name": "SIM / eSIM (week)",
-      "category": "expense-line",
-      "area": "Island-wide",
-      "address": "",
-      "hours": "",
-      "price_range": "Local prepaid ≈ €10–16 · eSIM ≈ $4.50–20 · US day-passes ~$10–12/day",
-      "description": "A week of phone data. eSIM (Airalo/Holafly/Ubigi/Nomad) activated before you fly, or a GO/Epic/Melita prepaid SIM at the airport.",
-      "source_url": "https://www.roafly.com/blog/how-to-get-internet-in-malta",
-      "source_type": "guide",
+      "id": "budget-picnic-flagged",
+      "name": "Picnic in the 1800s · price listed, event/venue conflict open",
+      "category": "Events & activities · unresolved cost",
+      "area": "Borġ in-Nadur, Birżebbuġa (event continuation/location not confirmed)",
+      "address": "See organizer; venue currently has a closure notice",
+      "hours": "The event page lists 13:00–16:00 on 17 Oct; current venue closure conflicts",
+      "price_range": "Event listing says €55 general / €45 Heritage Malta member, but a current closure notice conflicts with the event listing. Do not budget/book this until Heritage Malta confirms it is proceeding and where.",
+      "description": "This price is copied from the event listing only and is deliberately not offered as an add-to-budget option because the same organizer currently lists the venue as closed until further notice.",
+      "source_url": "https://heritagemalta.mt/whats-on/picnic-in-the-1800s/",
+      "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "2026 guide bands — re-check operator sites before buying (see everyday.html § 3b).",
-      "estimated_low": 5, "estimated_mid": 15, "estimated_high": 25, "actual": "", "covered_by": "self"
-    },
-    {
-      "id": "exp-ecotax",
-      "name": "Malta eco-tax (6 nights)",
-      "category": "expense-line",
-      "area": "Accommodation",
-      "address": "",
-      "hours": "Charged by the hotel (often separately at the desk)",
-      "price_range": "€1.50/night per person 18+ → €9.00 for 6 nights (≈ $10.30); visit cap €22.50 unreachable in 6 nights",
-      "description": "Malta's Environmental Contribution on tourist accommodation, effective 1 Jul 2026. Often invoiced separately by the hotel — may not be covered by a prepaid room.",
-      "source_url": "https://mta.com.mt/services/environmental-contribution/",
-      "source_type": "official",
-      "date_checked": "2026-09-23",
-      "confidence": "verified",
-      "notes": "MTA official page + 2026 guidelines PDF (verified 23 Sep 2026, carried). Corrected from the earlier 7-night €10.50 figure to 6 nights = €9.00.",
-      "estimated_low": 0, "estimated_mid": 11, "estimated_high": 11, "actual": "", "covered_by": "TBD"
-    },
-    {
-      "id": "exp-radio",
-      "name": "DAB+/FM radio (optional)",
-      "category": "expense-line",
-      "area": "—",
-      "address": "",
-      "hours": "",
-      "price_range": "€25–60 street price (estimate)",
-      "description": "Only if you want the live-sport radio plan (radio.html): a European DAB+/FM receiver. US radios use HD Radio and won't receive DAB+.",
-      "source_url": "https://dab.com.mt/dab-products/",
-      "source_type": "official",
-      "date_checked": "2026-09-23",
-      "confidence": "partially verified",
-      "notes": "Price band is an estimate (operator sells hardware via dab.com.mt/dab-products; no price captured). Skip if you only need FM.",
-      "estimated_low": 0, "estimated_mid": 45, "estimated_high": 70, "actual": "", "covered_by": "self"
-    },
-    {
-      "id": "exp-insurance",
-      "name": "Travel & medical insurance (week)",
-      "category": "expense-line",
-      "area": "—",
-      "address": "",
-      "hours": "",
-      "price_range": "$40–120 for the week (estimate)",
-      "description": "Medical care is not free to visitors and most US plans don't cover you abroad; private clinics expect payment up front. The giveaway Terms excluded insurance — buy your own.",
-      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
-      "source_type": "official",
-      "date_checked": "2026-09-23",
-      "confidence": "partially verified",
-      "notes": "State Department health/insurance guidance (official); the $ band is a market estimate.",
-      "estimated_low": 40, "estimated_mid": 80, "estimated_high": 120, "actual": "", "covered_by": "self"
-    },
-    {
-      "id": "exp-buffer",
-      "name": "Buffer / incidentals",
-      "category": "expense-line",
-      "area": "—",
-      "address": "",
-      "hours": "",
-      "price_range": "$100–250",
-      "description": "Shopping, tips, an extra night meal, souvenirs, small surprises. The line that absorbs everything unplanned.",
-      "source_url": "https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/costs.html",
-      "source_type": "guide",
-      "date_checked": "2026-10-09",
-      "confidence": "partially verified",
-      "notes": "Planning allowance — no source needed; it is a budget line, not a price claim.",
-      "estimated_low": 100, "estimated_mid": 150, "estimated_high": 250, "actual": "", "covered_by": "self"
-    },
-    {
-      "id": "exp-passport",
-      "name": "Passport renewal + expedite (if needed)",
-      "category": "expense-line",
-      "area": "Pre-trip",
-      "address": "",
-      "hours": "Routine 4–6 weeks; expedited 2–3 weeks (16 Apr 2026)",
-      "price_range": "$130 renewal + $60 expedite + $22.05 1–3-day delivery (2026 fee table)",
-      "description": "Only if your passport is expiring before ~mid-Jan 2027 (3 months past your 19 Oct departure) or was issued more than 10 years ago.",
-      "source_url": "https://travel.state.gov/en/passports.html",
-      "source_type": "official",
-      "date_checked": "2026-09-24",
-      "confidence": "partially verified",
-      "notes": "State Department fees (official page; the specific fee sub-URL 404'd on 24 Sep 2026 — figures cross-checked against a 2026 acceptance-facility table — flag carried). $0 if your passport is fine.",
-      "estimated_low": 0, "estimated_mid": 0, "estimated_high": 212, "actual": "", "covered_by": "self"
-    },
-    {
-      "id": "exp-bags",
-      "name": "Checked bag & seat fees",
-      "category": "expense-line",
-      "area": "Airline",
-      "address": "",
-      "hours": "",
-      "price_range": "$0–150 round trip (estimate)",
-      "description": "The giveaway Terms exclude additional baggage. If the booked fare is basic/light economy, the first checked bag on a transatlantic ticket can be $75+ each way; seat selection extra.",
-      "source_url": "https://community.hotspawn.com/giveaways/thunderpick-giveaway/terms",
-      "source_type": "official",
-      "date_checked": "2026-09-23",
-      "confidence": "partially verified",
-      "notes": "Exclusion per Terms §5 (official, carried). The $ band is an estimate — ask which fare class was booked; pack carry-on-only if you can.",
-      "estimated_low": 0, "estimated_mid": 75, "estimated_high": 150, "actual": "", "covered_by": "self"
-    },
-    {
-      "id": "exp-tax",
-      "name": "Est. US tax on prize FMV (if prize-funded)",
-      "category": "expense-line",
-      "area": "US tax (2026 income)",
-      "address": "",
-      "hours": "Filed with your 2026 return",
-      "price_range": "FMV band $1,700–2,900 (flights $611–963 + hotel 6 nights ≈ $620–1,100 + ticket ~$100) × ~25–27% combined federal+CA ≈ $420–780",
-      "description": "A won trip is taxable income at fair market value (IRS Pub 525; Form 1040 Schedule 1 line 8i; California flows through federal AGI). Only applies to the elements the prize actually pays for.",
-      "source_url": "https://www.irs.gov/publications/p525",
-      "source_type": "official",
-      "date_checked": "2026-09-24",
-      "confidence": "verified",
-      "notes": "IRS Pub 525 + FTB (official, carried). The dollar band is this site's arithmetic on those rules — not tax advice; a CPA should confirm the filing treatment. $0 if you self-fund the trip (nothing is prize income) or decline the prize (Pub 525: declining is not income).",
-      "estimated_low": 0, "estimated_mid": 567, "estimated_high": 780, "actual": "", "covered_by": "self"
+      "notes": "C-025–C-026 and Q-019. Seek explicit organizer go/no-go, current location and ticket confirmation; no price option is enabled.",
+      "additional_sources": [
+        {
+          "label": "Heritage Malta current opening-hours / closure notice",
+          "url": "https://heritagemalta.mt/opening-hours/",
+          "type": "official"
+        }
+      ],
+      "details": {
+        "budget_options": []
+      },
+      "planner_category": "Activities & events"
     }
   ]
 }

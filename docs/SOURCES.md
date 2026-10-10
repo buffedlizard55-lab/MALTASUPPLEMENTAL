@@ -1,247 +1,116 @@
-# SOURCES — master log (merged)
+# Sources and claim-verification log
 
-Format: **claim · URL · date accessed · workstream** (status column added by the second
-session where used).
+**Access date convention:** UTC. Review date: 9 October 2026. Trip window supplied by the traveler: 13–19 October 2026.
 
-**This file is the merge of two parallel 9 Oct 2026 sessions** (the Qawra re-base, merged to
-`main` via PRs #8/#9, and this branch's trip-planning pass, PR #11). The first sections below
-are the re-base session's log; the sections from "Session of 9 Oct 2026 (this build)" onward
-are this branch's log. `2026-09-23` / `2026-09-24` rows are **carried over, not re-checked**
-(marked ⤴ in the re-base session's log).
+Every non-trivial factual claim published on the site must have a record below. Topic JSON records carry a direct `source_url`; this file is the audit trail stating what that source was used to verify. An operator or government source is preferred for routes, fares, venue details, schedules, safety, entry, utilities, and prices. Review/social-platform information must be labeled as such and must not be upgraded to an official fact. Estimates must be visibly labeled. If a page cannot be accessed or doesn't establish the claim, record that limitation in `OPEN_QUESTIONS.md` and do not present the claim as verified.
 
-The full URL-by-URL register from earlier sessions (including the not-found register for
-login-walled platforms) lives on the site at [`sources.html`](../sources.html).
+## Log format
 
-## Trip parameters — workstream G
+`ID | Claim supported | URL | Source type | Accessed (UTC) | Workstream | Verification note`
 
-| Claim | URL | Accessed | WS |
-|---|---|---|---|
-| AX Odycy address is Qawra Coast Road, Qawra SPB 1902, Malta; phone +356 2354 3000 | https://axhotelsmalta.com/odycy/ | 2026-10-09 | G |
-| Same address on the operator's contact page | https://axhotelsmalta.com/odycy/contact/ | 2026-10-09 | G |
-| AX Odycy's structured data names 11 on-site outlets (Minoa, Minoa Deck, Deck & Keel, Trattoria Riccardo, Cheeky Monkey Gastropub / Waters / Creperie, Medusa, Mamacita, Espresso, Sidestreet Lounge Bar) | https://axhotelsmalta.com/odycy/ | 2026-10-09 | B |
-| AX Odycy is ~600 rooms, 4-star, on the Qawra seafront promenade | https://bestloved.com/hotels/ax-odycy/ | 2026-10-09 | G |
-| The street number is 186 Dawret il-Qawra; the airport is ~12.8 km and Mdina ~7.8 km away | https://www.trivago.ca/en-CA/oar/ax-odycy-hotel-qawra | 2026-10-09 | G |
-| "A bus stop on the hotel doorstep" / "nearest bus stop five yards away" | https://www.destinia.com/en/hotels/europe/malta/qawra/qawra/ax-odycy/ho-46824 · https://holiday.saga.co.uk/holidays/europe/malta/ax-odycy | 2026-10-09 | A |
+Source types for item records are `official`, `map`, `review`, or `social`, as defined in `docs/PLAN.md`. In this log, the verification note may additionally clarify user-supplied facts, secondary references, or a failed access attempt. Keep one claim (or tightly related set of claims) per row. Link the log ID from a topic record's `notes` when useful.
 
-## Event — workstream A / G
-
-| Claim | URL | Accessed | WS |
-|---|---|---|---|
-| TWC 2026 Finals are **14–18 Oct 2026** at BLAST Studios Malta, 8 teams, **$1,000,000** prize pool | https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html | 2026-10-09 | G |
-| Eight-team field (Legacy, Falcons, FURIA, BETBOOM, 9z, Aurora, PARIVISION, Virtus.pro); casters SPUNJ, Machine, Hugo Byron, JustHarry; hosts stunna and Tech Girl; live on Twitch, Kick and YouTube; release datelined **TA' QALI, Malta** | https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html | 2026-10-09 | G |
-| Same dates, independent corroboration | https://www.hltv.org/calendar | 2026-10-09 | G |
-| Venue is **Malta Fairs & Conventions Centre – BLAST Arena Studios, Ta Qali, ATD 4000 Ħ'Attard** | https://blast.tv/cs/news/malta-fan-guide | 2026-10-09 | A |
-| Corroborating venue formulation "MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000" | https://www.visitmalta.co.uk/business-directory/entertainment-venues-malta/blast-arena-studios-malta | 2026-10-09 | A |
-| Contradiction: some aggregators list the TWC prize pool as $500,000 | https://dmarket.com/blog/cs2-esports-calendar-2026/ · https://esports.gg/news/counter-strike-2/schedule-cs2-events-2026/ | 2026-10-09 | G |
-
-## Transport — workstream A
-
-| Claim | URL | Accessed | WS |
-|---|---|---|---|
-| Route 186 runs Bugibba Bay 6 → Ben → **Arznell → Luzzu → Qawra → Boxxla** → … → Rotunda 4 (Mosta) → Bezzina → Gholja 1 → Gholja 2 → Mithna → Trincetta → Waqqafa → Ta' Qali → Rabat, with the published stop-level times used on this site | https://www.publictransport.com.mt/route/186/ | 2026-10-09 | A |
-| Route 186 outbound departures from Bugibba Bay 6: 06:05 every 30 min to 21:35; from Arznell 06:08–21:37; from Qawra 06:10–21:38 | https://www.publictransport.com.mt/route/186/ | 2026-10-09 | A |
-| Route 186's **return** direction runs via St Paul's Bay (Mwiezeb, Imhasel, Toni, Gillieru) and the Bugibba seafront (Moll, Rizzi, Sajf, Gzejjer) to Bugibba Bay 1; last published passing time there 21:26 | https://www.publictransport.com.mt/route/186/ | 2026-10-09 | A |
-| Qawra seafront stops are also served by TD1, TD5, 45, 212, 214, 221, 223, 280, N11, N212 and 406 | https://www.publictransport.com.mt/route/186/ (stop-by-stop "other routes operating from this bus stop" lists) | 2026-10-09 | A |
-| Airport Direct routes are TD1 (Rabat, Buġibba, Ċirkewwa), TD2 (St Julian's, Pembroke), TD3 (Gżira, Sliema, St Julian's), TD4 (Valletta, Gozo Fast Ferry); route 214 goes airport → Marsa, Rabat, Buġibba; 201 goes airport → Dingli, Rabat | https://maltairport.com/transport/bus-service/ | 2026-10-09 | A |
-| Fares: Day Routes €2.00 winter / €2.50 summer; Night €3.00; Special Services €3.00; tallinja Direct €3.00; **TD1 €3.50**; €50 fine for no valid ticket; tickets valid 2 h with free transfers | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | A |
-| Explore Adult 7-Day **€25** (unlimited Day + Night Routes, excludes tallinja Direct, includes select Special Services, individual use) | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | A |
-| 12 Single Day Journeys **€19**, shareable, 6-month validity, Night/Airport Direct cost 2 journeys per trip | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | A |
-| Explore Flex **€21** (4-day) / **€27** (7-day); sightseeing bundles €36–€74; Explore Child 7-Day **€7** | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | A |
-| Card sales points: airport Welcomer's Hall and Baggage Reclaim, Valletta Terminal, **Buġibba Terminal**, Sliema Ferries, card machines, Agenda / 8TillLate / WH Smith, tallinja app | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | A |
-| The winter-fare window published on the live page is still **19 Oct 2025 → 13 Jun 2026** (stale; 2026/27 not published) | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | A |
-| The 7-day card's Airport Direct coverage is self-contradictory on the operator's own page (card detail excludes tallinja Direct; offers summary says Airport Direct is included) | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | A |
-| Live service updates currently list detours for 10–14 Oct only, none on route 186 | https://www.publictransport.com.mt/latest-service-updates/ | 2026-10-09 | A |
-| The national route list includes routes TQ1–TQ4 and 186, and the national stop list includes "Bus Stop 1005 Popeye" | https://www.publictransport.com.mt/routes-timetables-search-page/ | 2026-10-09 | A |
-| ⤴ Route 186 described as "BUGIBBA bay 6 – QAWRA (seafront) – MOSTA Rotunda 4 – TA' QALI Stadium – TA' QALI Villagg – RABAT", daily 06:05 every 30 min to 21:35, ~4 min to Qawra, 19 min to Mosta, **32 min to Ta' Qali Villagg**, 40 min to Rabat | https://malta.busatlas.uk/timetables/timetable_2025_08.pdf | 2026-10-09 (third-party atlas, Aug 2025 edition) | A |
-| ⤴ TD1 shape: Airport → Rabat → Qawra Arznel → Bugibba → Xemxija → Mellieha → Cirkewwa, hourly from 05:00, ~49 min to Bugibba | https://malta.busatlas.uk/timetables/timetable_2025_06_01.pdf | 2026-10-09 (third-party atlas) | A |
-| ⤴ Route 45 recorded as Mon–Fri peak-only (morning 06:05 every 20 min to 08:45; evening 15:55 every 30 min to 17:55) | https://malta.busatlas.uk/timetables/timetable_2022_10_winter.pdf | 2026-10-09 (third-party atlas, 2022 edition — old) | A |
-| ⤴ Route 186 stop list and 05:45–20:45 / 30-min frequency | https://moovitapp.com/index/en-gb/public_transportation-line-186-Malta-4507-958799-543638-0 | 2026-10-09 (third-party) | A |
-| ⤴ Uber operates in Malta (launched June 2022), no advance booking; Bolt, eCabs, Ryde also operate | https://www.uber.com/global/en/cities/mla/ | 2026-09-23 (previous session) | A |
-| ⤴ Airport white-taxi fixed-fare kiosk is 24/7 in the arrivals hall; the airport's fare-table page 404s and now points to Malta Taxi | https://maltairport.com/transport/bus-service/ | 2026-09-24 (previous session) | A |
-
-## Food, cafes, activities — workstreams B and C
-
-| Claim | URL | Accessed | WS |
-|---|---|---|---|
-| Minoa is an adults-only Mediterranean fusion restaurant on the AX Odycy rooftop; Trattoria Riccardo has a wood-fired oven and a children's play area; Cheeky Monkey Gastropub is the lively option; Luzzu does Mediterranean with a Maltese twist | https://axhotelsmalta.com/malta-restaurants/qawra-st-pauls-bay/ | 2026-10-09 | B |
-| The operator's own Qawra restaurant index lists Minoa, Cheeky Monkey Creperie, Cheeky Monkey Gastropub, Cheeky Monkey Waters, Deck and Keel, Espresso, Luzzu, Mamacita, Medusa, Minoa Deck, Sidestreet Lounge Bar, Trattoria Riccardo | https://axhotelsmalta.com/malta-restaurants/qawra-st-pauls-bay/ | 2026-10-09 | B |
-| Royale Barrel Bistro Bar, Dawret il-Qawra, Qawra SPB 1900 — 4.8 / 195 reviews, brew pub | https://www.tripadvisor.com/Restaurants-g608946-St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B |
-| Venus Restaurant, Buġibba — 4.8 / 2,891, steakhouse and seafood; La Buona Trattoria del Nonno 4.5 / 1,304; La Stalla 4.2 / 1,100 | https://www.tripadvisor.com/Restaurants-g608946-St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B |
-| Nine Lives 4.7 / 2,719; Damiano's Pizzeria 4.6 / 473; Vecchia Napoli 3.9 / 209 (Dawret il-Qawra); Bognor 3.5 / 766 and Vinnie's 3.9 / 577 (both Islet Promenade, Buġibba) | https://www.tripadvisor.com/Restaurants-g608946-zfp43-St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B |
-| 23 Steps Pub & Diner 4.2 / 70 | https://www.tripadvisor.co.uk/Restaurants-g608946-zfp43-St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B |
-| Café del Mar 4.4 / 7,963; Cheeky Monkey Gastropub 4.3 / 2,428; La Buona Trattoria del Nonno 4.6 / 2,272; Ta' Pawla Mother Earth 4.4 / 1,973; Victoria Gastropub 4.2 / 1,750; Ostrica Nera 4.2 / 1,147; Tava Terrace 4.6 / 731; The Sea Cloud 4.8 / 677; Woodhut 4.6 / 530; Knickerbocker 4.4 / 525 | https://things.in/malta/st.-paul's-bay/restaurants | 2026-10-09 | B |
-| Sole by Tarragon (St Paul's Bay) is #2 overall in the Definitive(ly) Good Guide 2026 with Best Service and Best Local Fish; Minoa is top-ten | https://www.restaurantsmalta.com/ | 2026-09-24 (previous session; see `restaurants.html`) | B |
-
-## Conflicts and disagreements found
-
-| Topic | Positions | Resolution used |
-|---|---|---|
-| TWC 2026 prize pool | Organiser: **$1,000,000**. dmarket.com and esports.gg: $500,000 | Organiser's own release wins; the conflict is recorded, not hidden |
-| Trip length | Booking: 13–19 Oct (6 nights). Existing pages: 13–20 Oct (7 nights) | Booking wins; residual text tracked as OQ-01 |
-| Single-journey fare on trip dates | Published winter window ends 13 Jun 2026; summer fare €2.50 | Budget €2.50, treat €2.00 as upside (OQ-02) |
-| 7-day card and Airport Direct | Card detail: excluded. Offers summary: included | Buy airport hops separately; ask at the kiosk |
-| Route 45 operating pattern | Third-party atlas: peak-only. Operator: not read closely enough | Flagged, not asserted (OQ-09) |
-| Route 186 detour mid-October | A cached **2025** snapshot showed a 17–18 Oct weekend detour; the live page shows none, and 17–18 Oct 2026 falls on Sat–Sun, not Fri–Sat | Treated as a re-check item, not a warning (OQ-08) |
-
----
-
-# Session of 9 Oct 2026 (this build — trip-planning pass, PR #11)
-
-## Session of 9 Oct 2026 (this build)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| AX ODYCY hotel: Qawra Coast Road, Qawra SPB 1902, Malta; +356 2354 3000; 4-star, ~600 rooms, all-inclusive options; room list incl. Deluxe sea-view types | https://axhotelsmalta.com/odycy/ | 2026-10-09 | G | verified (search-result read of official site) |
-| AX ODYCY contact page: address Qawra Coast Road, Qawra SPB 1902, Malta; licence H/0175 | https://axhotelsmalta.com/odycy/contact/ | 2026-10-09 | G | verified (search-result read) |
-| AX ODYCY is the refurbished former Seashells/Suncrest resort, Qawra (AX Group) | https://axhotelsmalta.com/news/the-group/opening-of-former-suncrest-hotel/ | 2026-10-09 | G | verified (search-result read) |
-| Apple Maps listing: AX ODYCY, Qawra Coast Road, Qawra SPB 1902, +356 23543000 (aggregator corroboration) | https://maps.apple.com/place?place-id=IE1BB06686A1FE0D5 | 2026-10-09 | G | verified (search-result read) |
-
-## Carried forward from the 23–24 Sep 2026 sessions (full log on sources.html)
-
-The complete historical source log (every URL used by the existing 12 pages, tagged
-Official / Verified / Estimate / Flag, plus the not-found register) lives on the site's
-**sources.html** page. It remains the on-site index; this file is the working master log for
-the 9 Oct 2026 build and accumulates every new source added in this session, workstream by
-workstream. Historical entries are not duplicated here — see `sources.html` § 1–11.
-
-New rows are appended below as each workstream lands.
-
-### Workstream A — Transport (9 Oct 2026)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| Fares: Explore 7-day €25, 12-journey €19, Flex from €21/€27 (+€6 Airport Direct 2-trip add-on), winter €2.00 window stated 19 Oct 2025–13 Jun 2026, Buġibba Terminal sales office, Airport-Direct contradiction | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | A | verified (official, re-read) |
-| Route 186 live; detour toward Buġibba (Gholja 2–Targa not served) | https://www.publictransport.com.mt/route/186/ | 2026-10-09 | A | verified (official) |
-| Route list incl. X1/X2/X3/X4, TD1–TD5, TQ1–TQ4, N-routes current | https://www.publictransport.com.mt/routes-timetables-view-all-routes/ | 2026-10-09 | A | verified (official) |
-| Route 186 stop sequence/frequency (Buġibba–Qawra seafront–Mosta–Ta' Qali Villagg–Rabat, ~30 min, 05:45–20:45); route 214 (Buġibba–Qawra–Rabat–Qali–Balzan–…–Airport) | https://malta.busatlas.uk/timetables/timetable_2025_11.pdf | 2026-10-09 | A | partially verified (third-party atlas, Nov 2025) |
-| TD5 launch: airport–Rabat–Buġibba, €3.00/€1.50, limited window | https://tvmnews.mt/en/news/tallinja-direct-routes-to-airport-and-bugibba-designed-for-tourists-and-residents-alike/ | 2026-10-09 | A | verified (TVM quoting MPT) |
-| Airport→Qawra/Buġibba options comparison (TD5/TD1/214) | https://seaandstone.blog/malta-airport-to-st-pauls-bay-bugibba/ | 2026-10-09 | A | partially verified (guide, Aug 2026) |
-| TD1 hourly €3.50 for Buġibba/St Paul's Bay; airport taxi Qawra/Buġibba €28 | https://airporttocitycenter.com/malta/ | 2026-10-09 | A | partially verified (guide, 27 Sep 2026) |
-| Apr 2025 X→TD change; TD1 corridor incl. Qawra; 214 follows old X3 | https://www.tripadvisor.com/ShowTopic-g190311-i348-k15312071-Bus_routes_to_from_Malta_Airport_are_about_to_change-Malta.html | 2026-10-09 | A | partially verified (community, quoting operator notice) |
-| Airport taxi table (Qawra €28, Buġibba €28, Ta' Qali €21); X-route stop lists | https://www.mappytravel.com/malta-airport-to-city-centre/ | 2026-10-09 | A | partially verified (guide) |
-| Buġibba bus station route summary (186/212/221/222/223/31/45/48/X3/TD13) | https://www.tripadvisor.com/ShowTopic-g608948-i11647-k14099896-Bus_service_Malta-Bugibba_St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | A | partially verified (community, 2022) |
-| TQ1–TQ4 special event shuttles from Ta' Qali; TQ1 north serves Buġibba & Qawra | https://newsbook.com.mt/en/malta-public-transport-provides-special-service-for-earth-garden-2023/ | 2026-10-09 | A | partially verified (2023 event example) |
-| Ride-hailing set (Uber/Bolt/eCabs/Ryde) | https://www.maltadvice.com/en/phv-malta/ | 2026-10-09 | A | partially verified (guide) |
-| Airport transfer price bands (bus €2–3; Bolt/Uber €15–22; taxi €20–25) | https://appsavvytraveller.com/malta-airport-transfers/ | 2026-10-09 | A | estimate (guide, Sep 2026) |
-| Airport→Buġibba/Qawra X3 50–60 min; Valletta→Buġibba 31/41/45 45–60 min | https://maltatravelguides.com/posts/malta-public-bus-tallinja-guide/ | 2026-10-09 | A | partially verified (guide, May 2026) |
-| X routes standard fare + luggage racks; TD list | https://rozie.app/malta-public-transport-areas-a-complete-2026-guide/ | 2026-10-09 | A | partially verified (guide, Jun 2026) |
-| N1 night bus serves Buġibba/Qawra/St Paul's Bay | https://hubpymalta.com/what-to-do/malta-bus-guide.html | 2026-10-09 | A | partially verified (guide, Jan 2026) |
-| Valletta Ferry Services fares/timetable (carried from 24 Sep 2026 verification) | https://www.vallettaferryservices.com/ | 2026-09-24 | A | verified (official) |
-| Gozo Channel / Gozo Highspeed fares + 14 & 17 Oct restricted schedule (carried) | https://www.gozohighspeed.com/pages/fares | 2026-09-24 | A | verified (official) |
-
-### Workstream B — Food (9 Oct 2026)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| AX ODYCY outlets (Cheeky Monkey, Mamacita, Deck & Keel, Sidestreet), address, phone | https://axhotelsmalta.com/odycy/ | 2026-10-09 | B | verified (official) |
-| AX ODYCY 11 F&B outlets; Deck & Keel buffet, Minoa, Medusa sky bar, rooftop Pool Bar | https://www.britishairways.com/en-gb/destinations/hotel-information/Malta/AX-ODYCY/MT-M99-3543835 | 2026-10-09 | B | verified (BA hotel profile) |
-| AX ODYCY room types incl. Deluxe sea view; 11 F&B; nightclub | https://bestloved.com/hotels/ax-odycy/ | 2026-10-09 | B | verified (aggregator profile) |
-| Riccardo/Luzzu "located nearby" (adjacent, not in-house) | https://www.cyplon.co.uk/holidays/europe/malta/qawra/ax-odycy/ | 2026-10-09 | B | verified (aggregator profile) |
-| AX Hotels Qawra dining guide (Riccardo/Luzzu play areas) | https://axhotelsmalta.com/malta-restaurants/qawra-st-pauls-bay/ | 2026-10-09 | B | verified (official) |
-| Bugibba top-10 restaurants (Oct 2026): Venus 4.8/2,900; Ta Pawla 4.3/1,870; Chang Thai 4.7/240 | https://www.tripadvisor.com/Restaurants-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Bugibba seafood list: Acqua Marina 4.6/1,147 (#1); UMI 4.7/81; Ta Pawla address | https://www.tripadvisor.com/Restaurants-g608948-c33-Bugibba_St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Bugibba lunch list: 'a Lanterna 4.7 (#1 lunch) | https://www.tripadvisor.com/Restaurants-g608948-zfp30-Bugibba_St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| St Paul's Bay top-10: Venus #1; Ta' Rożi 4.5/885 | https://www.tripadvisor.com/Restaurants-g608946-St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Qawra seafood list: Zigumar 4.4/293 (#1); Ocean Basket 4.1/1,683; Luzzu 4.5/1,578 | https://www.tripadvisor.com/Restaurants-g608947-c33-Qawra_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Qawra cafés: Cafe Maroc 4.6/216 (#1); Knickerbocker 4.2/694; Mr. Kebab 4.2/341 | https://www.tripadvisor.com/Restaurants-g608947-c8-Qawra_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Qawra cafés (UK mirror): The Meeting Point 5.0/14; Restyle 4.3; Bay Square | https://www.tripadvisor.co.uk/Restaurants-g608947-c8-Qawra_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Qawra breakfast list: Azure 4.8/128 (#1); Ombré Café Bistro 4.9 (DoubleTree); Sapori 4.7; 9 Ball 4.6 | https://www.tripadvisor.com/Restaurants-g608947-zfp2-Qawra_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Restaurants near Qawra Point Beach: Trattoria Riccardo 4.8/2,360; Azure 4.9/139; Kora 4.9/136; Sabi House 4.9/111; Tagine 4.4/1,292 | https://www.tripadvisor.co.nz/RestaurantsNear-g608948-d12875293-Qawra_Point_Beach-Bugibba_St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| St Paul's Bay cafés: Central Perk (Triq Il-Maskli SPB 1482); Bay Square; Dr Juice; Gelatiamo | https://www.tripadvisor.com/Restaurants-g608946-c8-St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Bugibba tourism guide: Fluid Bistro 4.9/387; Nine Lives/Chatterbox/Victoria Gastropub popular | https://www.tripadvisor.com/Tourism-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta-Vacations.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| 9 Ball Café, 366 Triq It-Turisti, Qawra (tel. 21586263) | https://bugibba-malta.com/internet-cafes-international-calls | 2026-10-09 | B | partially verified (local guide) |
-| Café del Mar Malta, Triq it-Trunċiera Qawra SPB 1500, daily 10:00–00:00; CDM Sundays 18 Oct free | https://sundays.com.mt/ | 2026-10-09 | B | verified (official event site) |
-| Luzzu "most prim and proper breakfast" (community) | https://www.tripadvisor.com/ShowTopic-g608947-i10778-k2392833-Best_Breakfast-Qawra_Island_of_Malta.html | 2026-10-09 | B | partially verified (community, 2018) |
-
-### Workstream C — Activities / events near hotel (9 Oct 2026)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| Malta National Aquarium: Qawra Point, Triq It-Trunciera; daily 10:00–20:00; adult €17.90 door/€16.90 online, child €11.90/€10.90, senior €14.90/€13.90, after-4pm adult online €13.90; 50+ tanks/~300 species/12-m main tank; talk programme | https://aquarium.com.mt/tickets/ + https://aquarium.com.mt/ | 2026-10-09 | C | verified (official) |
-| Heritage Malta Multisite Pass exact prices (adult €60.00 / child €30 / student €45 / senior €45), includes aquarium, 30 days, excludes Hypogeum & Valletta Underground | https://aquarium.com.mt/tickets/ | 2026-10-09 | C | verified (official) |
-| CDM Sundays: Sun 18 Oct 2026 FREE at Café del Mar Malta, Triq it-Trunċiera, Qawra SPB 1500; venue daily 10:00–00:00; Oct Sundays 4/11/18/25 free | https://sundays.com.mt/ + https://cafedelmar.com.mt/event/cdm-sundays-3/ | 2026-10-09 | C | verified (official event site) |
-| BLAST SLAM VIII at BLAST Arena Studios, 8–11 Oct; Malta Comic Con at MFCC, 10–11 Oct; Kite & Wind Festival Gozo 17–18 Oct; CDM Sundays series | https://spotlightmalta.com/ | 2026-10-09 | C | partially verified (aggregator) |
-| Anjunadeep Malta, Café del Mar, 8–11 Oct 2026 | https://www.jambase.com/festivals/mt | 2026-10-09 | C | partially verified (aggregator) |
-| Café del Mar artist slots Sat 10 Oct (Catching Flies, CRi, DJ Ruby); Defected Malta 25 Sep–9 Oct | https://www.bandsintown.com/c/valletta-malta | 2026-10-09 | C | partially verified (aggregator) |
-| Boat trips from Buġibba/Qawra: Comino day trips from €20, sunset cruises ~€30, 3-islands ~€30 | https://www.checkyeti.com/en/boat-tours/malta/saint-pauls-bay/boat-tours + https://www.tripadvisor.com/Attractions-g608946-Activities-c55-St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | C | unverified with operators (marketplace listings) |
-| St Paul's Bay attractions: Oracle Casino Qawra; Bugibba nightlife; beaches | https://hubpymalta.com/what-to-do/st-pauls-bay-attractions.html | 2026-10-09 | C | partially verified (guide, Jan 2026) |
-| Internet cafés: Cyber Zone (Triq il-Port Ruman, Qawra SPB 1701); 24/7 Internet Cafe (SPB 3115) | https://www.yabstamalta.com/search/all/1/internet%20cafe | 2026-10-09 | C | partially verified (directory) |
-| 9 Ball Café, 366 Triq It-Turisti, Qawra, tel. 21586263; A.A Internet Cafe, St Paul's Bay | https://bugibba-malta.com/internet-cafes-international-calls | 2026-10-09 | C | partially verified (local guide) |
-| TWC 2026 format page unchanged (12–19 Oct programme; match schedule unpublished); venue address MFCC Ta' Qali ATD 4000 Ħ'Attard | https://world-championship.thunderpick.io/2026-finals/ + https://blast.tv/cs/news/malta-fan-guide | 2026-10-09 | C | verified (official, re-read) |
-| MPL Gżira Utd v Mosta 14 Oct 19:00 (carried); RMYC race start Sat 17 Oct (carried) | https://tickets.mfa.com.mt/ + https://www.rmyc.org/ | 2026-09-24 | C | verified (official, carried) |
-| Gamers Lounge (Msida) / Esports Plaza (Sliema) / Eden Esports (St Julian's) details (carried) | https://gamerslounge.mt/ + https://hopsa.io/en/attractions/malta,jedzenie-picie,esports-plaza-gaming-lounge-69cf83a22b + r/malta | 2026-09-24 | C | partially verified (carried) |
-| Mosta Rotunda landmark description (admission price unverified) | https://en.wikipedia.org/wiki/Mosta_Rotunda | 2026-09-24 | C | partially verified (price unverified) |
-| Weather in window ~20–24 °C days, sea ~23–24 °C (carried) | https://www.tui.co.uk/holidays/weather/europe/malta/october.html + https://www.sunheron.com/europe/malta-weather-october/ | 2026-09-23 | C | estimate (climate normals, carried) |
-
-### Workstream D — Everyday life / customs (9 Oct 2026)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| SIM/eSIM bands: GO Smart S €5.99/1 GB, Smart M €11.99/15 GB, Smart Unlimited €15.99; Epic FREE SIM+€10 credit €10, Data Pack €6.99/4 GB, Value Promo €4.99→€10.99/10 GB | https://www.roafly.com/blog/how-to-get-internet-in-malta | 2026-10-09 | D | partially verified (guide quoting operator pages, May 2026) |
-| Melita Pocket Pass M €10/2 GB, L €15/5 GB; Epic Standard €34.99/mo; GO Freedom €16.99 | https://esimmalta.com/sim-card/ | 2026-10-09 | D | partially verified (aggregator) |
-| Local SIM €10–15/7 days; eSIM €4–15 for 1–10 GB | https://www.malta-spirit.com/guides/malta-sim-card-and-internet/ | 2026-10-09 | D | partially verified (guide, Jul 2026) |
-| eSIM resellers: Nomad 1 GB/7 d $4.50; Ubigi 10 GB/7 d $9; Airalo from $4.50; Holafly from $19 | https://www.nomadesim.com/malta-eSIM + https://cellulardata.ubigi.com/rates-and-coverage/malta-data-plans/malta-10gb-7-days/ + https://wowmaltagozo.com/best-esim-for-tourists-malta/ | 2026-10-09 | D | estimate (reseller sites, point-in-time) |
-| Malta customs allowances verbatim: 200 cig/100 cigarillos/50 cigars/250 g tobacco; 1 L spirits >22% (or 1 L ethyl alcohol >80% or 2 L ≤22%); 16 L beer; 4 L wine; under-17 exclusion; green/red channel | https://maltairport.com/practical-information/security-passport-control/customs/ | 2026-10-09 | D | verified (official airport page) |
-| €430 other-goods air/sea traveller threshold (EU framework) | https://dutyfreeradar.com/guides/eu-duty-free-allowance + Regulation (EC) 1186/2009 art. 41 (framework) | 2026-10-09 | D | partially verified (guides; EC framework) |
-| Plugs Type G 230 V 50 Hz; 112; language; euro/Amex; VAT 18/12/7/5; tipping; water; health/insurance; CEST +9 h; cannabis/CBD; drones; left-hand driving; drinking age 17; embassy; holidays (all carried from 23–24 Sep 2026 verifications) | see sources.html § 6 | 2026-09-23/24 | D | verified/partially verified (carried) |
-
-### Workstream E — Radio (9 Oct 2026)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| BBC Sportsworld episodes Sat 17 Oct & Sun 18 Oct 2026 still listed (13:06/14:06 GMT = 15:06/16:06 Malta) | https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming | 2026-10-09 | E | verified (official, third read) |
-| EPL MW7 = Sat 17/Sun 18/Mon 19 Oct 2026; full fixture list + TV slots | https://www.premierleague.com/en/news/4675097/all-380-fixtures-for-202627-premier-league-season + https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november | 2026-10-09 | E | verified (official) |
-| MW7 cross-check (Guardian; OneFootball "Matchday 7") | https://www.theguardian.com/football/premierleague/fixtures + https://onefootball.com/en/competition/premier-league-9/fixtures | 2026-10-09 | E | verified (corroboration) |
-| DAB+ operator catalogue: Rai 1/2/3, BBC WS, Radio Sportiva present; "Sports Channel" absent | https://dab.com.mt/channels/ | 2026-10-09 | E | verified (official, re-read) |
-| Station directory: FM/AM list; "Talk Sport — DAB+ (Labelled as Sports Channel)"; Calypso DAB+ 12A | https://radioinmalta.com/en/stations/ | 2026-10-09 | E | verified (re-read) |
-| DAB ensembles 6A/6C service tables (observations 13 Jan 2026) | https://www.wohnort.org/dab/malta.html | 2026-09-23 | E | partially verified (receiver observations, carried) |
-| Serie A MD7 (16–19 Oct) official notice (carried) | https://www.legaseriea.it/serie-a/news/quando-si-gioca-anticipi-e-posticipi-fino-alla-12a-giornata | 2026-09-24 | E | verified (official, carried) |
-| UCL MD2 (13/14 Oct) & UEL MD2 (15 Oct) official fixtures (carried) | https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/ + https://www.uefa.com/uefaeuropaleague/news/02a8-2174cafa5bb6-82bbc20c9b92-1000--2026-27-europa-league-all-the-league-phase-fixtures/ | 2026-09-24 | E | verified (official, carried) |
-| NFL Week 6: Texans v Jaguars, Wembley, Sun 18 Oct 15:30 Malta (carried) | https://media.nfl.com/news-and-releases/international/nfl-unveils-2026-international-games-schedule | 2026-09-24 | E | verified (official, carried) |
-| Kalshi: trading from Malta permitted; restricted-jurisdiction list (carried) | https://help.kalshi.com/en/articles/14026044-can-i-trade-on-kalshi-from-outside-the-united-states + https://kalshi-public-docs.s3.amazonaws.com/regulatory/agreement/kalshi_member_agreement.pdf | 2026-09-24 | E | verified (official, carried) |
-| RaiPlay Sound — Tutto il calcio minuto per minuto (programme; per-match assignments unpublished) | https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto | 2026-09-24 | E | verified (official, carried; assignments flagged) |
-
-### Workstream F — Expense planner (9 Oct 2026)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| SFO–MLA RT fare band $611–963 mid-Oct (sampling) | https://www.kayak.com/flight-routes/San-Francisco-SFO/Luqa-Malta-Intl-MLA | 2026-09-23 | F | estimate (point-in-time OTA sampling, carried) |
-| AX ODYCY booking basis (hotel verified; nightly market band €90–160 is an estimate) | https://axhotelsmalta.com/odycy/ | 2026-10-09 | F | verified (official) / estimate (band) |
-| Bus fares (transfers/transport lines) | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-09 | F | verified (official) |
-| Food budget basis (near-hotel lists) | https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html | 2026-10-09 | F | verified (review list, point-in-time) |
-| TWC ticket coverage (Terms §5) | https://world-championship.thunderpick.io/2026-finals/ + https://community.hotspawn.com/giveaways/thunderpick-giveaway/terms | 2026-09-23 | F | verified (official, carried) |
-| Activity price anchors (aquarium official; HM/St John's carried) | https://aquarium.com.mt/tickets/ | 2026-10-09 | F | verified (official) |
-| SIM/eSIM bands | https://www.roafly.com/blog/how-to-get-internet-in-malta | 2026-10-09 | F | partially verified (guide) |
-| Eco-tax €1.50/night 18+, €22.50 cap, from 1 Jul 2026 | https://mta.com.mt/services/environmental-contribution/ | 2026-09-23 | F | verified (official, carried) |
-| DAB+ hardware sold by operator (price not captured) | https://dab.com.mt/dab-products/ | 2026-10-09 | F | partially verified (official page; price estimate) |
-| Health/insurance guidance (State Dept Malta advisory) | https://travel.state.gov/en/international-travel/travel-advisories/malta.html | 2026-09-23 | F | verified (official, carried) |
-| Passport fees $130/+$60/+$22.05 (State Dept; fee sub-URL 404 — flag) | https://travel.state.gov/en/passports.html | 2026-09-24 | F | partially verified (official page; cross-checked, carried) |
-| Prize taxable at FMV (IRS Pub 525; Schedule 1 line 8i) | https://www.irs.gov/publications/p525 | 2026-09-24 | F | verified (official, carried) |
-
-### Gap-fills & carried URLs (9 Oct 2026 — required by the verify gate; full context on sources.html)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| St Paul's Catacombs €6 (Mdina/Rabat item) | https://heritagemalta.mt/explore/st-pauls-catacombs/ | 2026-09-24 | C | verified (official, carried) |
-| Eden Esports Centre (community report) | https://www.reddit.com/r/malta/comments/q5vylk/gaming_places_in_malta/ | 2026-09-24 | C | partially verified (community, carried) |
-| Type G / 230 V / 50 Hz | https://www.electricalsafetyfirst.org.uk/guidance/advice-for-you/when-travelling/travel-adaptor-for-malta/ | 2026-09-23 | D | verified (carried) |
-| 112 / SMS 79770112 | https://www.mca.org.mt/consumer/consumer-tools | 2026-09-23 | D | verified (official, carried) |
-| Maltese + English official; euro since 2008 | https://www.britannica.com/summary/Malta | 2026-09-23 | D | verified (carried) |
-| VAT 18/12/7/5 | https://taxsummaries.pwc.com/malta/corporate/other-taxes | 2026-09-24 | D | verified (carried) |
-| Tipping expectations (community) | https://www.reddit.com/r/malta/comments/oi75rp/whats_the_expectation_on_tipping_in_malta/ | 2026-09-23 | D | partially verified (community, carried) |
-| Tap water potable (WSC) | https://thejournal.mt/tap-water-can-you-and-will-you-drink-it/ | 2026-09-23 | D | verified (carried) |
-| Drone registration | https://www.transport.gov.mt/aviation/drones/tourists-visitng-malta-6832 | 2026-09-23 | D | verified (official, carried) |
-| Drinking age 17 (secondary) | https://www.tripbase.com/drug-laws/malta/alcohol/ | 2026-09-24 | D | partially verified (carried) |
-| US Embassy Malta | https://mt.usembassy.gov/ | 2026-09-23 | D | verified (official, carried) |
-| Public holidays (none in window) | https://www.officeholidays.com/countries/malta/2026 | 2026-09-23 | D | partially verified (carried) |
-| Definitive(ly) Good Guide 2026 Top 10 (Sole by Tarragon #2) | https://restaurantsmalta.com/top-10-restaurants-for-2026-as-voted-by-you/ | 2026-09-24 | B | verified (carried) |
-| Bugibba top-10 (UK mirror; Victoria Gastropub) | https://www.tripadvisor.co.uk/Restaurants-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta.html | 2026-10-09 | B | verified (review list, point-in-time) |
-| Airport Direct service page (TD1 corridor) | https://www.publictransport.com.mt/other-services/airport-direct/ | 2026-10-09 | A | verified (official) |
-| Car-rental day-rate band (estimate) | https://sliemavillamalta.com/malta-airport-guide-transfers/ | 2026-09-23 | A | estimate (carried) |
-
-### Rebase gap-fills (9 Oct 2026, PR #11 merge)
-
-| Claim | URL | Date | WS | Status |
-|---|---|---|---|---|
-| Buffer/incidentals allowance is defined on the Costs page (planning allowance, not a price claim) | https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/costs.html | 2026-10-09 | F | reference (site's own page) |
-| X3 airport express withdrawn 20 Apr 2025; replaced by route 214 (correction merged from the parallel session) | https://www.tripadvisor.com/ShowTopic-g190311-i348-k15312071-Bus_routes_to_from_Malta_Airport_are_about_to_change-Malta.html | 2026-10-09 | A | partially verified (community, quoting the operator's service notice; conflicts with the operator's route index — see data/transport.json transport-x3) |
+## Verified source entries
+| ID | Claim supported | URL | Source type | Accessed (UTC) | Workstream | Verification note |
+|---|---|---|---|---|---|---|
+| H-001 | AX ODYCY's published address is Qawra Coast Road, Qawra SPB 1902, Malta | https://axhotelsmalta.com/odycy/ | official | 2026-10-09 | Shared | Official hotel page search result lists the address. Trip room/date details remain traveler-supplied and are not public booking data. |
+| E-001 | Thunderpick World Championship 2026 Finals are announced for 14–18 October 2026 at BLAST Studios Malta | https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html | official (organizer release) | 2026-10-09 | C / G | Thunderpick announcement republished by PR Newswire; official event-specific schedule/doors not established by this source. |
+| E-002 | Official TWC page lists overall Finals 12–19 Oct, media day 13 Oct, group stage 14–16 Oct, playoffs 17–18 Oct and departure day 19 Oct | https://world-championship.thunderpick.io/2026-finals/ | official | 2026-10-09 | A / C / F / G | Organizer page fetched 9 Oct. These are tournament schedule phases, not individual match or spectator door times. |
+| V-001 | BLAST Arena venue address and attendee entrance requires confirmation from the Thunderpick event-specific source | https://blast.tv/cs/news/malta-fan-guide | official | 2026-10-09 | A / C | BLAST attendee guide for a separate 2026 event says Malta Fairs & Conventions Centre, Ta' Qali, ATD 4000, Ħ'Attard. Do not assume this also supplies October TWC doors/entrance or bus stop; venue-area corroboration only. |
+| T-001 | MPT route 186 serves the Qawra–Ta' Qali/Rabat corridor, publishes a 30-minute scheduled frequency, stop timetables including Qawra and Ta' Qali Stadium, and a 17 Oct 19:00–18 Oct 00:00 detour notice toward Buġibba | https://www.publictransport.com.mt/route/186/ | official | 2026-10-09 | A | Official operator page fetched 9 Oct; live departure/service detail and precise hotel/venue walk must be rechecked. |
+| T-002 | Current official route information for route 214 | https://www.publictransport.com.mt/route/214/ | official | 2026-10-09 | A | MPT route page lists Qawra and a stop labeled Qali 2. Use only after date/time-specific planner and venue walking verification. |
+| T-003 | MPT official route directory | https://www.publictransport.com.mt/routes-timetables-view-all-routes/ | official | 2026-10-09 | A | Use with the Journey Planner for exact hotel/venue and departure date/time. |
+| T-004 | MPT's 2025 route-change summary lists route 214 via Qawra, Rabat, Ta' Qali and Attard | https://www.publictransport.com.mt/service-update-important-changes-to-bus-routes-x1-x2-x3-and-x4-effective-from-20-april-2025/ | official | 2026-10-09 | A | Historical official route notice; not a promise of October 2026 stop-level times. |
+| T-005 | MPT Journey Planner accepts localities, streets and bus-stop names and shows routes, times, interchanges and a map | https://www.publictransport.com.mt/journey-planner/ | official | 2026-10-09 | A | Official MPT planner page; the planner is powered by Google Maps. Enter the precise hotel/venue and session times. |
+| T-006 | MPT fare page publishes winter/summer day ticket rates, a €25 Explore Adult 7-day card, and other card terms; current 2026/27 season dates are not published there | https://www.publictransport.com.mt/fares-and-tickets/ | official | 2026-10-09 | A / F | Page lists €2 winter / €2.50 summer regular day fares, ticket validity 2h, €25 Explore Adult 7-day card, €27 Explore Flex 7-day offer and €19 12 Single Day Journeys card. Seasonal transition shown is 2025/26, not the trip's 2026 dates. |
+| T-007 | MPT Airport Direct service/routes, schedules via route pages, baggage space, displayed fares and Unlimited Travel Card inclusion | https://www.publictransport.com.mt/other-services/airport-direct/ | official | 2026-10-09 | A / F | Official page lists TD1 (hourly) and TD5 (every 60 minutes) to Rabat/Buġibba, luggage space, fares €3 for most TD routes / €3.50 for TD1, and says Unlimited Travel Cards include Airport Direct. Verify the exact stop for AX ODYCY and the specific card terms. |
+| T-008 | Airport says official taxis are available 24h; prepaid fixed-rate tickets at the taxi booth in the Welcomers' Hall; Malta Taxi app also available | https://help.maltairport.com/hc/en-us/articles/360021015579-Where-can-I-get-a-Taxi | official | 2026-10-09 | A | Malta International Airport customer support page fetched 9 Oct; it does not publish a Qawra fare. |
+| T-009 | Malta Airport identifies Malta Taxi as its official taxi provider and links its fare calculation / service | https://maltairport.com/transport/ | official | 2026-10-09 | A | Official airport page fetched 9 Oct; linked Malta Taxi site is the source for a live quote, not a static Qawra rate. |
+| T-010 | Transport Malta taxi licensing, hiring methods, metered maximum tariff structure and surcharges | https://www.transport.gov.mt/Land/Public-Transport/Other-Public-Transport/Taxis-829 | official | 2026-10-09 | A | Government regulator page last updated 6 Apr 2022; do not use the old metered tariff as an airport fixed-price quote. |
+| T-011 | Bolt operates in Malta and shows an estimated fare after entering the trip; pre-booking available up to 90 days | https://bolt.eu/en-mt/rides/ | official | 2026-10-09 | A | Bolt's Malta rider page fetched 9 Oct; no static trip fare published. |
+| T-012 | eCabs provides app/web/phone bookings and displays a fare estimate; estimate may change with actual trip conditions | https://support.ecabs.com.mt/hc/en-us/articles/4409086921361-Pricing-policy | official | 2026-10-09 | A | eCabs support article says upfront estimate and possible re-calculation; static Qawra–Attard quote not published. |
+| T-013 | Uber service availability in Valletta and Malta Airport app-ride options; upfront estimate / average airport-trip statistic | https://www.uber.com/global/en/r/cities/valletta-valletta-mt/ | official | 2026-10-09 | A | Uber's official Malta location page confirms a Valletta ride service. The airport page describes UberX/app rides and upfront estimates; it does not offer Uber taxi rides at MLA or a Qawra–Attard fixed fare. |
+| T-014 | Malta International Airport lists airport rental providers, rental-car pickup location and airport rental information | https://maltairport.com/renting-a-car/ | official | 2026-10-09 | A | Airport page fetched 9 Oct; it does not establish this trip's price, individual driver's terms or parking at the event venue. |
+| T-015 | Malta Taxi service and online quote entry point | https://www.maltataxi.mt/ | official | 2026-10-09 | A | Official service site linked from Malta Airport's taxi page; use for a live quote, not as a static Qawra fare. |
+| B-001 | Trattoria Riccardo official menu page links food/kids menus and lists location, phone, and daily 12:00–22:30 hours | https://trattoriariccardo.mt/menu/ | official | 2026-10-09 | B | Restaurant's own page; current menu PDF dated March 2026. Recheck prices and hours during the stay. |
+| B-002 | Trattoria Riccardo Tripadvisor score, review count, category, platform tier, and list position | https://www.tripadvisor.com/Restaurant_Review-g608947-d26887189-Reviews-Trattoria_Riccardo-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | Listing showed 4.8/5, 2,651 reviews, Italian/Pizza, $$–$$$, and #4/64. Only the score/count are used as a dated platform snapshot; rank is not treated as objective local popularity. |
+| B-003 | Trattoria Riccardo Google Maps card rating and listing details | https://www.google.com/maps/search/?api=1&query=Trattoria%20Riccardo%20Qawra%20Malta | map | 2026-10-09 | B | Limited Google Maps view showed 4.8, address and hours; review count was not exposed. |
+| B-004 | Minoa official site lists Wednesday–Saturday 18:30–22:30 hours, adults-only 16+ policy, menus and booking link | https://minoa.mt/ | official | 2026-10-09 | B | Restaurant-owned site fetched directly; AX ODYCY official dining page also linked. |
+| B-005 | Minoa Tripadvisor rating/count, location, age policy, cuisine and platform tier | https://www.tripadvisor.com/Restaurant_Review-g608947-d26887178-Reviews-Minoa_Mediterranean_Fusion-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | Page showed 5.0/5 from 764 reviews, Level 11 at AX ODYCY, adults-only (16+), $$$$, and #1/64. Ranking deliberately not used as an objective popularity claim. |
+| B-006 | Minoa Google Maps rating/count snapshot | https://www.google.com/maps/search/?api=1&query=Minoa%20Mediterranean%20Fusion%20Qawra%20Malta | map | 2026-10-09 | B | Captured map card showed 4.9 (378 reviews); Google Maps card availability varies in this limited view. |
+| B-007 | Cheeky Monkey Qawra official page lists venue location, hours, last food order, menus and happy-hour statement | https://cheekymonkeymalta.com/qawra/ | official | 2026-10-09 | B | Venue page lists Sun–Thu 12:00–00:00, Fri/Sat 12:00–01:00, last food order 22:30, and daily 16:00–19:00 happy hour. Menu PDFs are dated July 2025; recheck terms. |
+| B-008 | Cheeky Monkey Tripadvisor score/count and platform price tier | https://www.tripadvisor.com/Restaurant_Review-g608947-d8381082-Reviews-Cheeky_Monkey_Gastropub_Qawra-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | Listing showed 4.5/5 from 3,366 reviews and $$–$$$. Google Maps search did not render a venue card in the checked view. |
+| B-009 | Ombré Café Bistro official page lists description, daily hours, meal-service hours, linked menu/booking, and 2026 Tripadvisor badge | https://doubletreemaltaexperience.com/explore/ombre-cafe-bistro/ | official | 2026-10-09 | B | Direct venue/hotel page: daily 08:00–23:00; lunch 12:00–16:00; dinner 18:30–22:00. |
+| B-010 | Ombré Café Bistro Tripadvisor score/count and platform price tier | https://www.tripadvisor.com/Restaurant_Review-g608947-d33264628-Reviews-Ombre_Cafe_Bistro-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | Listing showed 4.9/5 from 145 reviews and $$–$$$. Tripadvisor's award/rank is not presented as universal local popularity. |
+| B-011 | Cafe Maroc official dB Hotels page describes drinks/pastries, daily hours, card-only policy and welcome to non-hotel guests | https://www.dbhotelsresorts.com/en/hotels/db-San-Antonio/Restaurants-Bars/cafe-maroc | official | 2026-10-09 | B | Official page says daily 10:00–23:00, card-only, and that non-hotel guests may visit for coffee/snacks/sweets. |
+| B-012 | Cafe Maroc Tripadvisor rating/count, cuisine/tier, hotel level and listed hours | https://www.tripadvisor.com/Restaurant_Review-g608947-d10954321-Reviews-Cafe_Maroc-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | Listing showed 4.6/5 from 219 reviews, $$–$$$, dB San Antonio Hotel + Spa Level 10, and daily 10:00–23:00. |
+| B-013 | Cafe Maroc Google Maps rating/count, address and listed hours | https://www.google.com/maps/search/?api=1&query=Cafe%20Maroc%20Qawra%20Malta | map | 2026-10-09 | B | Card showed 3.7/5 from 28 reviews, Tourist Street address, and daily 10:00–23:00; score differs from Tripadvisor and must remain separate. |
+| B-014 | 9 Ball Cafe Tripadvisor rating/count, location, platform tier, service categories and visible hours | https://www.tripadvisor.com/Restaurant_Review-g608947-d9804691-Reviews-9_Ball_Cafe-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | Listing showed 4.7/5 from 60 reviews, $ tier, address, breakfast/lunch/dinner/brunch, and a 23:00 closing time. One visible review text describes a different restaurant in Sliema; review narratives need venue-attribution checks. |
+| B-015 | 9 Ball Cafe Google Maps rating/count, address and absence of published hours in the captured card | https://www.google.com/maps/search/?api=1&query=9%20Ball%20Cafe%20Qawra%20Malta | map | 2026-10-09 | B | Card showed 4.5/5 from 533 reviews at 366 Tourist Street and no opening-hours data; this differs from the Tripadvisor count and score. |
+| B-016 | Knickerbocker Tripadvisor rating/count, address, tier and weekly hours | https://www.tripadvisor.com/Restaurant_Review-g608947-d2425124-Reviews-Knickerbocker_Restaurant-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | Listing showed 4.2/5 from 700 reviews, $ tier, Tourist Street SPB 1022, daily 08:30–21:00; no official venue page was captured. |
+| B-017 | Zigumar Tripadvisor rating/count, address, contact, category/tier and listed weekly hours | https://www.tripadvisor.com/Restaurant_Review-g608947-d10347003-Reviews-Zigumar_Restaurant-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | Listing showed 4.4/5 from 293 reviews, seafood/Sicilian, $$–$$$, +356 9906 4380, and daily/weekday split service hours. |
+| B-018 | Zigumar Google Maps rating and limited hours/address card | https://www.google.com/maps/search/?api=1&query=Zigumar%20Restaurant%20Qawra%20Malta | map | 2026-10-09 | B | Card showed 4.6 with no review count and Friday 11:30–23:00 hours; Tripadvisor says Friday begins at noon. |
+| B-019 | Tripadvisor Qawra restaurant list shows live results and explains its ranking method | https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html | review | 2026-10-09 | B | List showed 64 results and states ranks balance member reviews with proximity; nearby businesses may be included. Do not present its rank as an objective local popularity measure. |
+| B-020 | AX ODYCY identifies Minoa Mediterranean Fusion as an on-property restaurant | https://axhotelsmalta.com/odycy/qawra-restaurants/minoa/ | official | 2026-10-09 | B | Official hotel dining page checked as a supplementary location source; current menu/hours are taken from the restaurant's own page in B-004. |
+| R-001 | Rolex Middle Sea Race programme lists a Grand Harbour start at 11:00 on 17 October 2026 | https://www.rolexmiddlesearace.com/race-programme/ | official | 2026-10-09 | C | Official race-programme page; event travel context only. Reconfirm same week for revisions. |
+| R-002 | Royal Malta Yacht Club confirms 17 October 2026 start date | https://rmyc.org/registration-open-for-the-2026-rolex-middle-sea-race/ | official | 2026-10-09 | C | Organizing club announcement. |
+| R-003 | Yachting Malta Coastal Race / registration programme during 12–15 October | https://www.rolexmiddlesearace.com/race-programme/ | official | 2026-10-09 | C | Official programme says registration 12–15 October and coastal race at 10:00 on 14 October; spectator access/details are not assumed. |
+| C-001 | Malta National Aquarium homepage lists daily 10:00–20:00 opening hours | https://aquarium.com.mt/ | official | 2026-10-09 | C / F | Current homepage fetched directly; recheck hours before the October visit. |
+| C-002 | Aquarium ticket FAQ lists last entry 19:30, ticket categories/prices, free 0–3 tickets at the desk, and says advance booking is not required | https://aquarium.com.mt/tickets/ | official | 2026-10-09 | C / F | Current ticket page fetched directly. Legacy address paths were not relied on; exact current street/postcode remains open. |
+| C-003 | Malta Classic Car Collection lists visitor hours; its official indexed listing gives Tourists Street, Qawra SPB 1020 | https://www.classiccarsmalta.com/ | official | 2026-10-09 | C / F | Hours were read on the current official site. The museum-location route returned 404; address was surfaced by an official search result and is flagged for map-pin recheck. |
+| C-004 | Malta Classic Car Collection adult and child admission prices | https://www.classiccarsmalta.com/museum-entrance-tickets | official | 2026-10-09 | C / F | Official ticket page lists adult €10 and child €4.50; child age boundary was not stated in the fetched text. |
+| C-005 | Malta Classic Car Collection access layout and facilities | https://www.classiccarsmalta.com/about-3 | official | 2026-10-09 | C | Official access statement describes entrance steps/ramp, lifts between museum floors, restroom step access, and recommends at least 90 minutes. |
+| C-006 | Esplora's standard visitor hours | https://esplora.org.mt/opening-hours/ | official | 2026-10-09 | C / F | Current page lists Mon–Fri 09:00–15:00 and weekends/public holidays 10:00–17:00. |
+| C-007 | Esplora 2026 standard admission starts at €12 adults / €10 children and students; under-2s free; 19 Oct is a free public Monthly Monday Open Day | https://esplora.org.mt/wp-content/uploads/2026/01/Esplora-Booklet-2026_ENG_DIGITAL.pdf | official | 2026-10-09 | C / F | Official 2026 booklet PDF fetched and parsed directly. The text does not establish whether Planetarium shows/timed activities are included in the free day. |
+| C-008 | Esplora is located at Villa Bighi in Kalkara and offers interactive galleries/Planetarium | https://esplora.org.mt/about/ | official | 2026-10-09 | C / F | Official centre overview fetched directly. Use locality-level address only; confirm exact map pin before travel. |
+| C-009 | The Gamers Lounge official FAQ describes its Msida business as a PC gaming lounge and retail store | https://gamerslounge.mt/faqs | official | 2026-10-09 | C / F | Current FAQ fetched directly. It does not establish casual visitor sessions, booking rules, gaming-session hours or rates. |
+| C-010 | The Gamers Lounge official contact page lists John Borg Street, Msida MSD 1201 and current store hours | https://gamerslounge.mt/contact-us | official | 2026-10-09 | C / F | Page fetched directly; published hours apply to the store and are not treated as gaming-session hours. |
+| C-011 | Malta Esports Association's venue directory lists Eden Esports as a bootcamp facility and does not list Esports Plaza | https://esports.org.mt/esports-venues/ | official | 2026-10-09 | C | Directory fetched directly. Absence from this directory is not evidence that another venue is closed; public access remains unverified. |
+| C-012 | The Eden contact page lists its St Julian's address, phone, contact email and a winter-hours schedule | https://theeden.mt/contact-us | official | 2026-10-09 | C / F | Page fetched directly. Its winter-hours section does not identify the seasonal changeover date; confirm applicability to 13–19 Oct. |
+| C-013 | The Eden's Duckpin page lists lane capacity and adult/junior/family/senior prices | https://theeden.mt/activities/duckpin | official | 2026-10-09 | C / F | Current activity page fetched directly; adult €9.95, junior under 14 €7.95 until 18:00, family pack €30, seniors/guests with special needs €5 with a card; up to six per lane. |
+| C-014 | The Eden X-Cube offers 15-, 30- and 60-minute games for up to six people | https://theeden.mt/activities/x-cube | official | 2026-10-09 | C | Official activity page was checked; the captured text did not publish a price. |
+| C-015 | The Eden XP Arcade credit bundles start at €10 for 90 credits | https://theeden.mt/activities/xp-arcade | official | 2026-10-09 | C / F | Official activity page checked; play cost per game may vary by credit requirement. |
+| C-016 | The Eden lists Disney Trivia Night on 17 Oct 2026, with doors 19:30, quiz 20:00, €10/person and a welcome drink | https://theeden.mt/events/disney-trivia-night | official | 2026-10-09 | C / F | Direct event listing checked; ticket inventory and entry terms can change. |
+| C-017 | The Eden lists Blood on the Clocktower every Wednesday in October at 18:00, age 14+, €10 | https://theeden.mt/events/blood-on-the-clocktower-oct | official | 2026-10-09 | C / F | Direct event listing checked; 14 Oct is in the supplied trip window. Booking availability is not guaranteed. |
+| C-018 | Malta FA ticket page confirms Gżira United FC–Mosta FC on 14 Oct 2026 at 19:00, Tony Bezzina Stadium, with posted ticket categories | https://tickets.mfa.com.mt/matches/gzira-united-fc-vs-mosta-fc-2026-10-14 | official | 2026-10-09 | C / F | Direct match page checked; adult €10, senior €6, under-16 free with ticket collected at entry booths. Recheck schedule and inventory. |
+| C-019 | St John's Co-Cathedral visitor hours, standard ticket prices, audio guides, access caveat and museum refurbishment status | https://www.stjohnscocathedral.com/visit/ | official | 2026-10-09 | C / F | Current visit page fetched directly. It lists Mon–Sat 09:00–16:45, last admission 16:00; closed Sundays/public holidays; wheelchair access with restrictions. |
+| C-020 | St John's Co-Cathedral opens at 11:00 on Thursday 15 October 2026 | https://www.stjohnscocathedral.com/2026/09/23/visitor-notice-october-opening-hours/ | official | 2026-10-09 | C / F | Direct date-specific notice checked; last admission remains 16:00. |
+| C-021 | Fort St Angelo's admission categories, address and access caveats | https://heritagemalta.mt/explore/fort-st-angelo/ | official | 2026-10-09 | C / F | Direct Heritage Malta page lists adult €10, youth/senior/student/concession €6, child €4, infants free; upper fort has steps and page mentions electric-vehicle assistance. |
+| C-022 | Fort St Elmo/National War Museum admission, address, WWI display closure and event-day entry note | https://heritagemalta.mt/explore/fort-st-elmo-national-war-museum/ | official | 2026-10-09 | C / F | Direct Heritage Malta listing checked; admission categories and Section 4 WWI display closure recorded. Event-day noon entry for non-show visitors is confirmed by the In Guardia listing. |
+| C-023 | In Guardia performance is listed for 18 Oct 2026 at 11:00, with show-only prices and a weather-cancellation caveat | https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/ | official | 2026-10-09 | C / F | Direct event page checked; museum-combination ticket is separate; non-performance visitors admitted from 12:00. |
+| C-024 | Heritage Malta Sail & Savour lists race-day viewing at Fort St Angelo and Fort St Elmo on 17 Oct | https://heritagemalta.mt/whats-on/sail-savour/ | official | 2026-10-09 | C / F | Direct event page lists Fort St Angelo VIP 10:00–12:00 (€40 adult/€35 member, 150 places) and Fort St Elmo half-price entry 09:00–12:00 at the door. |
+| C-025 | Heritage Malta's Picnic in the 1800s listing gives 17 Oct, 13:00–16:00 (arrival from 12:45), €55 general/€45 member | https://heritagemalta.mt/whats-on/picnic-in-the-1800s/ | official | 2026-10-09 | C / F | Direct event page checked. A current general opening-hours notice says the Borġ in-Nadur complex is closed due to road works; see C-026 and Q-019 before treating the event as going ahead. |
+| C-026 | Heritage Malta current opening-hours notice says Borġ in-Nadur Prehistoric Complex is closed to visitors until further notice because of road works; general last admission is 30 minutes before closing | https://heritagemalta.mt/opening-hours/ | official | 2026-10-09 | C / F | Current Heritage Malta page fetched directly; its closure notice conflicts with the separate Picnic event listing and requires organizer confirmation. |
+| C-027 | Google Maps public review content for 9 Ball Cafe includes mentions of pool tables/snooker | https://www.google.com/maps/search/?api=1&query=9%20Ball%20Cafe%20Qawra%20Malta | map | 2026-10-09 | C | Review-derived lead only; no operator source confirms current equipment, table availability, charges or age rules. |
+| C-028 | Tripadvisor public review content for 9 Ball Cafe includes mentions of pool tables/snooker | https://www.tripadvisor.com/Restaurant_Review-g608947-d9804691-Reviews-9_Ball_Cafe-Qawra_Island_of_Malta.html | review | 2026-10-09 | C | Anecdotal third-party evidence only; no operator source confirms current table availability, charges or age rules. Cross-references food source IDs B-014–B-015. |
+| C-029 | Esplora visitor-services contact details | https://esplora.org.mt/contact-us/ | official | 2026-10-09 | C | Official contact page linked as a direct follow-up for questions about free-day inclusions and timed experiences; see Q-018. |
+| C-030 | Esports Plaza current website availability | https://esportsplaza.com.mt/ | official | 2026-10-09 | C | Direct request returned HTTP 503. This does not establish closure or public-access status; see C-011 and Q-017. |
+| D-001 | U.S. State Department advisory level and practical personal/coastal safety notes (including theft in tourist areas and dangerous rip currents) | https://travel.state.gov/en/international-travel/travel-advisories/malta.html | official | 2026-10-09 | D | Directly fetched; page displayed Level 1, last updated 9 July 2026. Advisory and warnings can change; recheck before travel. |
+| D-002 | Visa-free short-stay and passport-validity summary for U.S. citizens visiting Malta | https://travel.state.gov/en/international-travel/travel-advisories/malta.html | official | 2026-10-09 | D | Directly fetched; page says no visa for stays of 90 days or less and passport validity at least three months beyond planned departure from Schengen. Applies only if using a qualifying U.S. passport; nationality and prior Schengen days were not supplied. |
+| D-003 | Malta currency, U.S.-issued bankcard ATM access/fees, and limited American Express acceptance | https://travel.state.gov/en/international-travel/travel-advisories/malta.html | official | 2026-10-09 | D | Directly fetched; no individual bank/card fees or venue-level card acceptance inferred. |
+| D-004 | Emergency contact numbers in Malta, including 112 and the 24/7 179 national helpline | https://travel.state.gov/en/international-travel/travel-advisories/malta.html | official | 2026-10-09 | D | State Department page lists 112 for emergency services and 179 for a separate national helpline; the page also lists 179 as 24/7. |
+| D-005 | Official ETIAS status and published standard application fee | https://travel-europe.europa.eu/en/etias | official | 2026-10-09 | D | Directly fetched; ETIAS was not operating and was not collecting applications. Page lists a €20 fee; this is not a claim that ETIAS will apply to this specific trip or that the fee cannot change. |
+| D-006 | EES coverage, biometric/travel-document data and full operational date of 10 April 2026 | https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en | official | 2026-10-09 | D | European Commission page directly fetched; says the system became fully operational 10 April 2026. |
+| D-007 | Commission's dated forecast that ETIAS would follow EES in the last quarter of 2026 | https://home-affairs.ec.europa.eu/news/revised-timeline-ees-and-etias-2025-03-06_en | official | 2026-10-09 | D | Directly fetched 9 Oct; this is a March 2025 planning forecast, not a current launch notice. The live ETIAS page remains the status source. |
+| D-008 | Euro currency; the EU country profile lists Maltese and English among the official EU languages | https://european-union.europa.eu/principles-countries-history/eu-countries/malta_en | official | 2026-10-09 | D | European Union Malta country profile directly checked; used for euro currency and official EU-language listing. For Malta's national official-language status, see D-020. |
+| D-009 | EU declaration threshold for €10,000 or more cash/cash-equivalents when entering or leaving the EU | https://taxation-customs.ec.europa.eu/what-are-rules_en | official | 2026-10-09 | D | European Commission cash-control rules directly fetched; threshold is a declaration requirement, not a maximum amount. Consult page for covered items and procedure. |
+| D-010 | EU/EEA roaming information and advice to check the traveler's own mobile provider's charges | https://www.mca.org.mt/consumer/faqs | official | 2026-10-09 | D | Malta Communications Authority FAQ chunks 1–2 fetched; no price for an unknown U.S. carrier/plan is asserted. |
+| D-011 | Type G plug, 230 V/50 Hz, and adapter-does-not-convert-voltage safety guidance | https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/malta/ | official | 2026-10-09 | D | Electrical Safety First Malta travel guide fetched directly. Specialist safety organization, not a Maltese government source. |
+| D-012 | CDC Malta health/traveler recommendations, prescription-copy advice, medical-care planning, left-side traffic and IDP recommendation | https://wwwnc.cdc.gov/travel/destinations/traveler/none/malta | official | 2026-10-09 | D | Malta Traveler View directly fetched through relevant chunks; page last reviewed 25 Aug 2026. Advice is general CDC guidance; confirm legal/rental requirements with the relevant authority/provider. |
+| D-013 | U.S. Embassy Malta advice on adequate overseas medical coverage, Medicare/Medicaid limits, and emergency number 112 | https://mt.usembassy.gov/medical-assistance/ | official | 2026-10-09 | D | Directly fetched; medical-provider list and insurance terms are not substitutes for a policy-specific coverage check. |
+| D-014 | Malta prescription-medicine legality/original-packaging advice and cannabis/CBD warning | https://travel.state.gov/en/international-travel/travel-advisories/malta.html | official | 2026-10-09 | D | State Department Malta page chunks 2–3 directly fetched. Controlled-substance requirements depend on the medicine; the separate Malta Pharmaceutical Unit traveller-guidelines page failed direct access (Cloudflare DNS/origin error), so no medication-specific permission is inferred. |
+| D-015 | Malta tap-water safety and taste caveat | https://water.org.mt/2019/11/01/is-tap-water-drinkable-in-malta/ | official | 2026-10-09 | D | Water Services Corporation page is dated 1 Nov 2019 and describes taste; the current State Department Malta page also says tap water is generally safe for drinking/cooking. Neither source assesses a particular building's plumbing or tank. |
+| D-016 | Use of a non-Malta/non-EU driving licence for up to 12 months from last entry; left-side driving and seatbelts | https://www.transport.gov.mt/land/driving-licence-783 | official | 2026-10-09 | D | Transport Malta page directly fetched. Rental-company and insurer requirements remain separate and driver-specific. |
+| D-017 | Malta's October time-zone/seasonal-clock context and the EU's last-Sunday-in-October clock-change rule | https://www.consilium.europa.eu/en/policies/seasonal-time-changes/ | official | 2026-10-09 | D | Council of the EU directly fetched; Malta time-zone context cross-checked on the U.S. State Department Malta page. 2026 clocks return to standard time on 25 October, after the supplied stay. |
+| D-018 | Malta International Airport MetOffice rolling forecast as checked 9 Oct: 13–15 Oct highs 23–25°C and lows 18–19°C; later trip dates not yet covered | https://maltametoffice.com/en/forecast/ | official | 2026-10-09 | D | Forecast page directly fetched; rolling seven-day values are volatile and are not presented as a forecast for 16–19 Oct. |
+| D-019 | Malta rainy-season context (October–February) and possible heavy rain, strong winds and flash flooding | https://travel.state.gov/en/international-travel/travel-advisories/malta.html | official | 2026-10-09 | D | State Department Malta page directly fetched; general climate context, not a date-specific forecast. |
+| D-020 | Government of Malta lists Maltese and English as both official languages of Malta | https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx | official | 2026-10-09 | D | Government of Malta's country overview directly fetched; it identifies both as official. This establishes status, not the language preference of an individual business or person. |
+| D-021 | European Commission short-stay visa and Schengen information | https://home-affairs.ec.europa.eu/policies/schengen/visa-policy/applying-schengen-visa_en | official | 2026-10-09 | D | Official EU information page used as a supplementary reference for Schengen short-stay context; the traveler's actual passport and itinerary still govern. |
+| D-022 | Malta Pharmaceutical Unit traveller-guidelines page for medicines | https://deputyprimeminister.gov.mt/en/Pharmaceutical-Unit/Pages/guidelines-for-travellers.aspx | official | 2026-10-09 | D | Direct access failed with a Cloudflare DNS/origin error. No medicine-specific permission or rule is inferred; see D-014 and Q-024. |
+| RAD-001 | BBC World Service Europe and Middle East schedule lists Sportsworld on Saturday 17 October 2026 | https://www.bbc.co.uk/schedules/p02y9rgr/2026/10/17 | official | 2026-10-09 | E | Directly fetched. BBC displays the programme at 09:06 page-local; its adjacent 09:00 BBC News bulletin is timestamped 13:01 GMT, showing a UTC−4 page offset. This gives a 13:06 GMT start, converted to 15:06 Malta local (UTC+2). Recheck schedule; the page's rendered local time depends on offset. |
+| RAD-002 | BBC's 17 October Sportsworld episode is scheduled on BBC World Service except News Internet, described as live sport from around the world, duration 3h53 | https://www.bbc.co.uk/programmes/w1730c92ck0m2cw | official | 2026-10-09 | E | Directly fetched; episode page calls the programme live sport with news/interviews/analysis but does not name a match or team. The 3h53 published duration gives a calculated 18:59 Malta-time end; the next listed BBC programme begins at 19:00. |
+| RAD-003 | BBC World Service Europe and Middle East schedule lists Sportsworld on Sunday 18 October 2026 | https://www.bbc.co.uk/schedules/p02y9rgr/2026/10/18 | official | 2026-10-09 | E | Directly fetched. BBC displays the programme at 10:06 page-local; its adjacent 10:00 BBC News bulletin is timestamped 14:01 GMT, showing a UTC−4 page offset. This gives a 14:06 GMT start, converted to 16:06 Malta local (UTC+2). Recheck schedule; the page's rendered local time depends on offset. |
+| RAD-004 | BBC's 18 October Sportsworld episode is scheduled on BBC World Service except News Internet, described as live sport from around the world, duration 3h53 | https://www.bbc.co.uk/programmes/w1730c92ck0q313 | official | 2026-10-09 | E | Directly fetched; episode page calls the programme live sport with news/interviews/analysis but does not name a match or team. The 3h53 published duration gives a calculated 19:59 Malta-time end; the next listed BBC programme begins at 20:00. |
+| RAD-005 | Digi B Network's DAB+ Malta channel page lists BBC World Service | https://dab.com.mt/channels/ | official | 2026-10-09 | E | Current local operator website directly fetched; no multiplex block/frequency is published on this page, and no in-room signal test was performed. |
+| RAD-006 | Malta's DAB+ operator says its DAB audio/data services can be received in the Maltese Islands | https://dab.com.mt/ | official | 2026-10-09 | E | Digi B Network DAB+ homepage directly fetched; this is general service information, not a guarantee of indoor reception at AX ODYCY. |
+| RAD-007 | Digi B Network multiplex and BBC WS service listed on DAB+ block 6A / 181.936 MHz | https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes | official | 2026-10-09 | E | WorldDAB industry directory directly fetched; it lists BBC WS and the network block/frequency. This is an industry directory, not a current frequency notice from Malta's regulator or the operator; hotel reception remains untested. |

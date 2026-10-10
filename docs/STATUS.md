@@ -1,84 +1,35 @@
-# STATUS (merged)
+# Workstream status
 
-Last updated: 9 Oct 2026 — after the rebase of this branch onto `main` (which had received the
-parallel Qawra re-base via PRs #8/#9) and the merge of both sessions' work. Trip: **13–19 Oct 2026**,
-base **AX ODYCY, Qawra**.
+Last updated: **2026-10-10**. Status labels: `not started`, `in progress`, `blocked`, `verified`, `integrated`.
 
-## Two parallel sessions, one repo (9 Oct 2026)
+| Workstream | Status | Files | Verification and remaining limits | Last updated |
+|---|---|---|---|---|
+| Shared setup | integrated | `docs/PLAN.md`, `docs/SOURCES.md`, `docs/OPEN_QUESTIONS.md`, `docs/HANDOFF.md`, `docs/STATUS.md`, `css/style.css`, `js/site.js` | Shared record schema, responsive shell, navigation, renderer and evidence registers are in place. Six topic datasets contain 70 records; every recorded source URL was reconciled to the source log. | 2026-10-09 |
+| A. Transport | integrated | `data/transport.json`, `pages/transport.html` | Eight source-linked records and route/airport/taxi/rental comparisons are integrated. Route 186's Qawra–Ta' Qali corridor and 17–18 Oct notice are visible; event entrance/session, exact boarding stop/venue walk, detour impact and 2026/27 fare season remain open (Q-003–Q-006). | 2026-10-09 |
+| B. Food & cafés | integrated | `data/food.json`, `pages/food.html` | Eight Qawra-area venues are integrated with dated platform observations kept separate, not averaged. October menus, hours, exact meal costs and platform-access limitations remain as recorded (Q-007, Q-013). | 2026-10-09 |
+| C. Gaming, activities, landmarks & events | integrated | `data/activities.json`, `pages/activities.html` | Twenty source-linked records are integrated. TWC public access, Gamers Lounge public-session pricing, Esports Plaza status, Esplora free-day inclusions and the Picnic/closure conflict remain unresolved (Q-003–Q-004, Q-015–Q-019). | 2026-10-09 |
+| D. Everyday life for a US traveler | integrated | `data/everyday.json`, `pages/everyday.html` | Fourteen records are integrated with linked official/verifiable sources. Actual passport, itinerary, carrier and medication are unknown; ETIAS and weather are volatile; no authoritative fixed tipping percentage was found (Q-011, Q-020–Q-024). | 2026-10-09 |
+| E. Radio sports broadcasts | integrated | `data/radio.json`, `pages/radio.html` | Two date-specific BBC World Service Sportsworld entries are integrated at 15:06 on 17 Oct and 16:06 on 18 Oct Malta time. Published 3h53 duration calculations give 18:59/19:59 ends, immediately before the next schedule entries. No fixture commentary is named; WorldDAB is an industry directory and hotel reception is untested (Q-009–Q-010). | 2026-10-09 |
+| F. Expense planner | integrated | `data/expenses.json`, `pages/expenses.html` | Eighteen source-linked price/unknown records accompany four trip-level and 28 date-specific blank lines. Custom items, quantity arithmetic, budget comparison, optional user-entered FX, local-only storage, CSV export, print and reset are implemented. No meal, taxi, FX, tax, tip, attendance, payment or coverage is assumed; blanks are not free. | 2026-10-09 |
+| G. Site shell, executive summary & integration | integrated | `README.md`, `index.html`, `sources.html`, root compatibility pages, shared CSS/JS and integration docs | Executive summary and navigation now match the supplied 13–19 Oct trip. Legacy topic URLs redirect to current pages and the old prize/legal pages are retired. Local-link, source/schema, date/arithmetic and JSDOM interaction checks pass. A real-device visual audit, shell-based outbound-link test and post-merge GitHub Pages deployment check have not been performed. | 2026-10-09 |
 
-Two sessions worked the same brief in parallel on 9 Oct 2026:
+## Three cumulative review passes
 
-- **Qawra re-base** (`arena/806552e3-maltasupplemental` + `arena/c4fd385c-maltasupplemental`,
-  merged to `main` as PRs #8/#9): verified the hotel and route 186 stop-level detail, added
-  `hotel.html`, the `pages/*.html` summary stubs, `data/{trip,venues,transport}.json`,
-  `docs/{PLAN,SOURCES,OPEN_QUESTIONS,STATUS,HANDOFF,SCHEMA,FINAL_REPORT}.md`,
-  `scripts/check_links.py`, and re-based the index on Qawra. Its merge reconciliation with
-  PR #8 (which had briefly replaced the content pages with stubs) is documented in its
-  STATUS/FINAL_REPORT.
-- **This branch — trip-planning pass** (`arena/8ed16394-maltasupplemental`, PR #11): the full
-  trip-planning build — `itinerary.html`, `qawra.html`, `data/{transport,food,activities,
-  everyday,radio,expenses}.json` + `data/schema.md`, `docs/{PLAN,SOURCES,OPEN_QUESTIONS,STATUS,
-  HANDOFF}.md`, `scripts/verify_site.py`, near-hotel food/activities research, SIM/eSIM +
-  customs sections, the data-driven expense planner, and the 6-night cost model.
+1. **Pass 1 — implement and source-check:** A–F records/pages and shared shell completed; required fields, allowed source/confidence values, ISO check dates, per-file unique record IDs, source-log URLs/IDs and open-question references were checked. The final dataset count is 70 records across six JSON files.
+2. **Pass 2 — independent accuracy review:** rechecked supplied date boundaries and weekday labels, the conditional six-night calculation, all 32 blank starter lines, and the two BBC duration/time-zone calculations. Reviewed source-log coverage for primary/additional data URLs and retained volatile, unpublished, inaccessible or conflicting items as open. The planner exposes 39 unique optional source-price choices; unconfirmed gaming/event items do not get add-to-plan prices.
+3. **Pass 3 — integration and usability:** verified all local HTML paths, fragments and assets; ran `node --check js/site.js` and the CSS brace check; exercised the overview, evidence page and all six topic pages in JSDOM at a 390 px viewport. Shared navigation, mobile-menu state, data rendering, topic search/filter, expense arithmetic, paid/remaining totals, budget/FX inputs, local saving, adding/resetting items and CSV action passed without JavaScript errors.
 
-## Rebase resolution (this branch onto main, 9 Oct 2026)
+## Remaining traveler-specific and pre-trip actions
 
-The rebase produced conflicts on 12 HTML pages, 6 data files, 5 docs files and README.
-Resolution rules applied (union of both workspaces' value; nothing deleted):
+- Confirm the hotel reservation/check-in/out, room total, flights, luggage, arrival/departure times and traveler count; enter only confirmed costs in the planner.
+- Confirm whether and when the traveler will attend TWC, the ticket/access terms and event-specific entrance; then run MPT's date/time Journey Planner for the venue and return, especially around the 17–18 Oct route notice.
+- Recheck fares/card terms, venue prices/hours, event availability, forecast and entry requirements near departure. Confirm personal phone-plan and medication requirements directly with the relevant provider/authority.
+- Recheck the BBC schedule and local DAB+ lineup/reception before the radio slots; do not infer a named match from the Sportsworld listings.
 
-| Conflict | Resolution |
-|---|---|
-| 12 root HTML pages (modify/modify) | **this branch's versions** (comprehensive supersets: they carry the re-base session's date/hotel updates plus the full trip-planning content), then unified: one 15-link navigation on every root page incl. `hotel.html`; `id="eventdays"` anchor added to getting-around § 0 (hotel.html links to it); stop-level route-186 detail (Arznell 950 / Qawra 952, 06:08–21:37 outbound, 21:26 last return) merged in from the re-base session's verified transport data; the X3-withdrawn correction merged into the page and `data/transport.json` (X routes now `unverified`, TD1/TD5/214 primary); "six nights"/"6 nights" strings added for the check_links gate |
-| `css/style.css` (main reduced it to 83 lines) | **this branch's full 470-line stylesheet** + the 5 classes the re-base session's pages need (`.container`, `.correction`, `.withdrawn`, `.stub-banner`) — the reduced CSS would have broken both sessions' pages |
-| `data/transport.json` (add/add) | **this branch's version, merged with the re-base session's corrections** (stop-level detail; X3/X1 → `unverified` with the withdrawal correction and the route-index conflict documented) |
-| `data/{food,everyday,radio,expenses,activities}.json` (add/add) | **this branch's versions** (they are the datasets the root pages mirror, enforced by `scripts/verify_site.py`) |
-| `data/trip.json`, `data/venues.json` (add/add, no counterpart here) | **taken from main** (reference datasets owned by the re-base session; mirrored by `hotel.html`, enforced by `check_links.py` gate 5) |
-| `docs/{PLAN,SOURCES,OPEN_QUESTIONS,STATUS,HANDOFF}.md` (add/add) | **merged** — both sessions' content, cross-referenced (see each file) |
-| `docs/{SCHEMA,FINAL_REPORT}.md`, `pages/*.html`, `hotel.html`, `scripts/check_links.py` | **taken from main** (additive; hotel.html got the unified nav; SCHEMA.md gained the `guide` source_type) |
-| `README.md` (modify/modify) | **merged** (this branch's session documentation + the re-base note + the project-structure section, updated for the merged repo) |
-| `js/site.js`, `costs.html`, `data/schema.md`, `scripts/verify_site.py`, `itinerary.html`, `qawra.html` | this branch's (no conflict — main didn't touch them, except costs.html which is this branch's 6-night rebuild) |
+## Current execution note
 
-## Workstream status (integrated)
+This session is constrained to branch `arena/785456db-maltasupplemental`. Workstreams were performed serially on that branch, following the file ownership in `docs/PLAN.md`. The static site is ready for repository-level review; GitHub Pages has not yet been verified in a post-merge deployment.
 
-| WS | Topic | Status | Notes |
-|----|-------|--------|-------|
-| A | Transport (incl. hotel→BLAST Arena event-day plan) | **done** | route 186 stop-level verified (re-base session) + merged; X-route conflict documented; app confirmation on the day |
-| B | Food & cafés (incl. near-hotel) | **done** | near-hotel section (16 restaurants + 7 cafés) + hotel.html's on-site dataset (venues.json) |
-| C | Activities, gaming, landmarks, events near hotel | **done** | qawra.html + hotel.html; OQ-05 resolved (negative) |
-| D | Everyday life (US traveler) + customs/entry | **done** | SIM/eSIM bands + official customs card added |
-| E | Radio sports broadcasts, official schedules | **done** | re-verified 9 Oct (T−4); DAB+ re-scan on arrival |
-| F | Expense planner (data-driven) | **done** | data/expenses.json + costs.html § 5b; 6-night model |
-| G | Integration: itinerary, exec summary, nav, README, sources, rebase | **done** | nav unified on 15 pages; both gates green |
+## Latest-main reconciliation
 
-## Verification gates (both green after the merge, 9 Oct 2026)
-
-- `python3 scripts/verify_site.py` → **PASS** — JSON validity + schema for 8 data files /
-  140 items; data↔page consistency for the 6 page-mirrored topics across 15 pages; internal
-  links + anchors; HTML tag balance; source-log coverage (every data `source_url` logged in
-  docs/SOURCES.md).
-- `python3 scripts/check_links.py` → **PASS** (run after the merge — see commit) — internal
-  links + anchors incl. the pages/ stubs; navigation identical on all 15 root pages (incl.
-  hotel.html); data schema for all 8 files; the 13 load-bearing page assertions; forbidden
-  patterns (no bare `Route X3`, no unverified Popeye route, gaming guard).
-- `node --check js/site.js` OK; all 15 root pages + pages/ stubs served locally HTTP 200.
-
-## Pass log (this branch)
-
-- **Pass 1** (implement + verify): done 9 Oct 2026 — see the pre-rebase log (verify gate
-  green; 14 pages HTTP 200; load-bearing sources re-read).
-- **Pass 2** (bugs / assumptions / edge cases): done 9 Oct 2026 — caught and fixed a
-  mis-added cost subtotal ($355/$556 → $370/$566), a stray `</html>` on radio.html, several
-  batched edits that reported success but didn't persist (re-applied + grep-verified),
-  stale 13–20 Oct references, pager/nav misalignment, a Sliema-base leftover; entity-aware
-  page matching added to the verify gate.
-- **Pass 3** (line-by-line re-check vs the original request): done 9 Oct 2026 — checklist
-  kept in the pre-rebase STATUS; re-run after the rebase with both gates green.
-- **Rebase pass** (9 Oct 2026): the table above + both gates re-run green on the merged tree.
-
-## Corrections applied in this branch's session
-
-- Trip window updated site-wide from 13–20 Oct (7 nights) to the confirmed **13–19 Oct 2026
-  (6 nights)**; hotel base **AX ODYCY, Qawra**; cost model recomputed ($370/$566/$866
-  out-of-pocket; $790/$1,133/$1,646 incl. est. tax); calculator defaults updated.
-- X3/X1 airport expresses downgraded to `unverified` with the withdrawal correction merged
-  (the re-base session's finding), TD1/TD5/214 made primary.
+While PR #12 was open, `main` advanced with a parallel refocus change. Its added hotel/base/itinerary drafts asserted an unprovided room type, SFO departure and event attendance. This branch keeps the user-supplied-only trip facts: those routes are now noindex redirects, and the unused conflicting `data/trip.json` / `data/venues.json` copies were removed. The six topic datasets remain canonical. The upstream schema documentation and verification-script entry points were retained and corrected for this site's `records` structure and Pages-safe paths.

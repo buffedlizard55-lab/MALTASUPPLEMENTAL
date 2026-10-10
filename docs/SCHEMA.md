@@ -1,23 +1,5 @@
-# Data Schema
+# Shared data schema
 
-Every item in the `data/*.json` files must follow this structure:
+The canonical topic-record schema is documented in [`data/schema.md`](../data/schema.md) and established in [`docs/PLAN.md`](PLAN.md). All A–F JSON files use a `records` array and the same required keys: `id`, `name`, `category`, `area`, `address`, `hours`, `price_range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`.
 
-```json
-[
-  {
-    "id": "unique-id",
-    "name": "Name of the place, event, or item",
-    "category": "Broad category (e.g., 'Restaurant', 'Bus Route', 'FM Station')",
-    "area": "Geographic area (e.g., 'Qawra', 'Attard', 'Island-wide')",
-    "address": "Physical address if applicable",
-    "hours": "Operating hours",
-    "price_range": "Price range (e.g., 'Free', '€10-€20', '€€')",
-    "description": "Short description",
-    "source_url": "URL verifying the information",
-    "source_type": "official | map | review | social | guide",
-    "date_checked": "YYYY-MM-DD",
-    "confidence": "verified | partially verified | unverified",
-    "notes": "Any additional context or limitations"
-  }
-]
-```
+Allowed `source_type` values are `official`, `map`, `review`, and `social`; allowed confidence values are `verified`, `partially verified`, and `unverified`. Missing or volatile facts stay explicitly unknown, and every source URL is recorded in [`docs/SOURCES.md`](SOURCES.md).
