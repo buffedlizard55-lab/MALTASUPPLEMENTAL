@@ -1,0 +1,575 @@
+{
+  "topic": "food",
+  "title": "Food & cafés near Qawra",
+  "intro": "A practical, source-linked shortlist for an AX ODYCY base in Qawra, with café and restaurant options nearby plus three useful Valletta food stops. Menu prices, hours and review counts are snapshots checked 9 October 2026; follow the linked business source for the latest details.",
+  "date_checked": "2026-10-09",
+  "notes": [
+    "Hotel stay is the traveller-provided base. Do not assume a hotel meal plan, buffet walk-in access or outside-visitor access; ask the venue if that affects your plan.",
+    "All numeric menu examples are in euros and are examples, not a per-person meal estimate. Where no current price was visible, it is marked as not published rather than estimated.",
+    "Tripadvisor and Google Maps ratings/counts are dated platform snapshots, not endorsements or permanent rankings. Individual review text is not used as a factual claim.",
+    "Platform access audit: Tripadvisor pages were directly accessible for selected listings; Google Maps was directly accessible for Cheeky Monkey, Venus and Is-Suq Tal-Belt. Yelp, Facebook, Instagram, TikTok and Reddit attempts returned HTTP 403; X search also returned HTTP 403. One previously accessible X post was unrelated to this shortlist. No content from blocked platforms is represented as observed; search snippets were used only to locate candidate sources.",
+    "Important hours conflicts are called out on the affected listings. Reconfirm directly before a specific dinner or event-day plan, especially for Sunday service and late returns.",
+    "Valletta listings are wider-island options for a day in the capital; this page does not estimate journey times. Check the Transport page / official planner for a date-specific route."
+  ],
+  "platform_audit": [
+    {
+      "platform": "Tripadvisor",
+      "status": "Accessible for selected pages",
+      "scope": "Restaurant listing pages were directly opened for selected Qawra, Bugibba, St Paul's Bay and Valletta businesses. The guide records aggregate rating/count snapshots only and does not treat them as quality verification.",
+      "checked": "2026-10-09"
+    },
+    {
+      "platform": "Google Maps",
+      "status": "Partially accessible",
+      "scope": "Direct listing pages were opened for Cheeky Monkey Gastropub, Venus and Is-Suq Tal-Belt. Peking's own website displays a Google aggregate, but its outbound g.page link returned HTTP 500; that aggregate is attributed to the business website rather than described as a direct Google-page check.",
+      "checked": "2026-10-09"
+    },
+    {
+      "platform": "Yelp",
+      "status": "HTTP 403",
+      "scope": "Direct review/search requests were blocked; no Yelp content is presented as observed.",
+      "checked": "2026-10-09"
+    },
+    {
+      "platform": "Facebook",
+      "status": "HTTP 403",
+      "scope": "Direct business-page requests were blocked; no Facebook posts or reviews are presented as observed.",
+      "checked": "2026-10-09"
+    },
+    {
+      "platform": "Instagram",
+      "status": "HTTP 403",
+      "scope": "Direct profile requests were blocked; no Instagram content is presented as observed.",
+      "checked": "2026-10-09"
+    },
+    {
+      "platform": "TikTok",
+      "status": "HTTP 403",
+      "scope": "A Qawra/Malta restaurant search and a venue-profile request were blocked; no TikTok content is presented as observed.",
+      "checked": "2026-10-09"
+    },
+    {
+      "platform": "Reddit",
+      "status": "HTTP 403",
+      "scope": "Direct requests were blocked; no Reddit content is presented as observed.",
+      "checked": "2026-10-09"
+    },
+    {
+      "platform": "X / Twitter",
+      "status": "Limited",
+      "scope": "The search endpoint returned HTTP 403. A previously accessible public post was unrelated to Qawra dining; no X claim is used.",
+      "checked": "2026-10-09"
+    }
+  ],
+  "sections": [
+    {
+      "id": "hotel-and-nearby",
+      "title": "At AX ODYCY and around Qawra",
+      "lead": "Useful on-site choices first, followed by nearby cafés and restaurants. The hotel’s published times do not establish that a meal is included in your booking.",
+      "items": [
+        {
+          "id": "espresso-odycy",
+          "name": "Espresso Grab & Go",
+          "category": "Coffee bar / grab-and-go",
+          "area": "AX ODYCY, Qawra",
+          "address": "AX ODYCY Hotel, Level 0, Qawra Coast Road, Qawra SPB 1902, Malta",
+          "hours": "Daily, 24 hours (as published by AX Hotels).",
+          "price_range": "An official food-and-beverage menu is linked; current item prices were not transcribed. Ask before budgeting.",
+          "description": "Hotel coffee bar serving barista coffees, fresh juices and snacks. The hotel page describes it as open round the clock; the page does not state whether non-hotel visitors may enter.",
+          "source_url": "https://axhotelsmalta.com/odycy/qawra-restaurants/espresso-grab-and-go/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Convenient for an early start or late return if you are staying at AX ODYCY. Access is not independently confirmed for outside visitors.",
+          "supporting_sources": [
+            {
+              "claim": "AX Hotels links an Espresso food-and-beverage menu PDF from this page.",
+              "url": "https://axhotelsmalta.com/wp-content/uploads/2025/07/Espresso-Menu.pdf",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "deck-keel",
+          "name": "Deck & Keel",
+          "category": "Hotel buffet restaurants",
+          "area": "AX ODYCY, Qawra",
+          "address": "AX ODYCY Hotel, Qawra Coast Road, Qawra SPB 1902, Malta (Deck and Keel are separately located inside the hotel).",
+          "hours": "Deck: breakfast 05:30–10:00; lunch 12:30–14:30; snacks 16:00–17:00 (Sunday 16:30–17:30); dinner 18:00–21:30. Keel: breakfast 08:00–11:00; lunch 12:30–14:30; dinner 18:30–21:30. Published hotel schedule; reconfirm for your stay.",
+          "price_range": "Not published on the restaurant page. Ask whether walk-ins/non-residents are accepted and for the current buffet price.",
+          "description": "Two on-site buffet restaurants with separate meal sittings. The published schedule is useful for planning around a hotel stay, but does not say that these meals are included in any particular room booking.",
+          "source_url": "https://axhotelsmalta.com/odycy/qawra-restaurants/deck-keel-restaurant/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Check the hotel's meal-plan terms separately; this listing does not establish what is included in the traveller's reservation. A walk-in tariff was not found.",
+          "supporting_sources": []
+        },
+        {
+          "id": "trattoria-riccardo",
+          "name": "Trattoria Riccardo",
+          "category": "Italian restaurant / pizza",
+          "area": "AX ODYCY, Qawra",
+          "address": "Level -1, AX ODYCY Hotel, Qawra Coast Road, Qawra SPB 1902, Malta",
+          "hours": "Monday–Sunday 12:00–22:30, according to the restaurant's current page.",
+          "price_range": "Current official menu examples: pasta €9.75–€17.50; mains €15.50–€29.50. Check the linked menu PDF for the full, current list.",
+          "description": "Hotel-based Italian restaurant with a current food-and-beverage menu and online table-booking link. A convenient full-meal option at the Qawra base.",
+          "source_url": "https://trattoriariccardo.mt/menu/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Tripadvisor snapshot: 4.8/5 from 2,651 reviews on 2026-10-09; this is a dated platform aggregate, not a ranking guarantee.",
+          "supporting_sources": [
+            {
+              "claim": "The official March 2026 menu PDF lists pasta and main-course examples, including tagliatelle al ragù €15.50 and tagliata di manzo €29.50.",
+              "url": "https://trattoriariccardo.mt/wp-content/uploads/2026/03/Trattoria-Riccardo-Menu.pdf",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed 4.8/5 and 2,651 reviews for Trattoria Riccardo.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d26887189-Reviews-Trattoria_Riccardo-Qawra_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "minoa",
+          "name": "Minoa Mediterranean Fusion",
+          "category": "Fine dining / Mediterranean fusion",
+          "area": "AX ODYCY, Qawra",
+          "address": "AX ODYCY Hotel, Qawra Coast Road, Qawra SPB 1902, Malta",
+          "hours": "Wednesday–Saturday 18:30–22:30, according to the restaurant's published information. Adults-only, 16+.",
+          "price_range": "Official tasting menus: €70 per guest (vegetarian) and €80 per guest (standard). À la carte prices are shown on the linked live menu.",
+          "description": "Hotel restaurant offering a Mediterranean-fusion menu and tasting-menu option. Reserve ahead and check the current menu; the tasting menu is a whole-table order by 20:30 according to the restaurant page.",
+          "source_url": "https://minoa.mt/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Tripadvisor snapshot: 5.0/5 from 764 reviews on 2026-10-09. The score/count are a dated platform aggregate, not a quality guarantee. Confirm the 16+ policy and availability when booking.",
+          "supporting_sources": [
+            {
+              "claim": "The official food menu lists vegetarian tasting at €70 and standard tasting at €80 per guest, ordered by the whole table by 20:30.",
+              "url": "https://minoa.mt/restaurant-menu/",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed 5.0/5 and 764 reviews for Minoa.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d26887178-Reviews-Minoa_Mediterranean_Fusion-Qawra_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "medusa",
+          "name": "Medusa Sky Bar",
+          "category": "Adults-only rooftop bar",
+          "area": "AX ODYCY, Qawra",
+          "address": "Level 10, AX ODYCY Hotel, Dawret il-Qawra, St Paul's Bay SPB 1902, Malta",
+          "hours": "Monday–Sunday 20:30–01:30, according to the venue's contact page. Adults-only, 18+.",
+          "price_range": "No current drink-menu price was verified; consult the venue before budgeting.",
+          "description": "Hotel rooftop sky bar on level 10. Treat it as a drinks/night-out option, not a confirmed full-meal venue; check entry, booking and event arrangements with the hotel.",
+          "source_url": "https://medusa.mt/contact/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "The operator's page states the opening schedule and 18+ rule; it does not establish whether hotel guests need a reservation or whether an event changes access.",
+          "supporting_sources": []
+        },
+        {
+          "id": "cheeky-monkey-gastropub",
+          "name": "Cheeky Monkey Gastropub",
+          "category": "Gastropub",
+          "area": "Qawra",
+          "address": "Qawra Coast Road, Qawra, St Paul's Bay, Malta",
+          "hours": "Sunday–Thursday 12:00–00:00; Friday–Saturday 12:00–01:00. Last food order 22:30. Happy hour 16:00–19:00, as published by the business.",
+          "price_range": "Official menu examples span €8.25 for a snack to €26.50 for a main; these are item examples, not a meal budget.",
+          "description": "Casual restaurant/bar with a broad menu of snacks, sandwiches, burgers and mains. The operator publishes a late-evening food cutoff, which is useful if you return after an event.",
+          "source_url": "https://cheekymonkeymalta.com/qawra/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Google Maps showed a 4.5/5 rating in the limited listing view on 2026-10-09. The extracted review count varied between page fragments and is deliberately omitted. Hours/menu may change; confirm happy-hour terms directly.",
+          "supporting_sources": [
+            {
+              "claim": "The official food-menu PDF lists snack and main-course examples and an allergen/cross-contact warning.",
+              "url": "https://cheekymonkeymalta.com/wp-content/uploads/2025/07/Cheeky-Monkey-Qawra-Food-Menu.pdf",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Google Maps listing displayed a 4.5/5 aggregate; review-count fragments were inconsistent, so no count is quoted.",
+              "url": "https://www.google.com/maps?cid=15435782340775555842",
+              "source_type": "map",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "cheeky-monkey-creperie",
+          "name": "Cheeky Monkey Crêperie",
+          "category": "Café / crêpes and waffles",
+          "area": "Qawra",
+          "address": "Dawret il-Qawra, St Paul's Bay, Malta",
+          "hours": "Daily 08:00–23:00, as published by the business.",
+          "price_range": "Official menu examples: build-your-own crêpes/waffles from €5.00; named crêpes €5.50–€7.75; tea €1.85 and coffee from €1.95. Menu says prices include VAT.",
+          "description": "Breakfast-friendly café and dessert stop serving crêpes, waffles, ice cream, coffee and other drinks. An easy option when a full restaurant meal is not needed.",
+          "source_url": "https://cheekymonkeymalta.com/creperie/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Menu prices are taken from the directly accessible business PDF; ask staff about allergens because the menu warns that cross-contact cannot be ruled out.",
+          "supporting_sources": [
+            {
+              "claim": "The official crêperie menu PDF lists its crêpes, waffles, drinks and prices and states prices include VAT.",
+              "url": "https://cheekymonkeymalta.com/wp-content/uploads/2024/12/Cheeky-Monkey-Creperie-Menu.pdf",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "lovage-bistro",
+          "name": "Lovage Bistro",
+          "category": "Bistro / Mediterranean",
+          "area": "Qawra",
+          "address": "Triq l-Imhar, Qawra, St Paul's Bay, Malta",
+          "hours": "Official site: Tuesday–Saturday 18:30–22:00; closed Sunday and Monday. Tripadvisor lists Sunday service, so Sunday hours conflict; call or use the official booking page before planning a Sunday dinner.",
+          "price_range": "Current official menu examples: starters €11–€14; mains €26–€30.",
+          "description": "Evening bistro with an online menu and booking information. A higher-priced dinner option in Qawra; the official schedule is the safer source for planning.",
+          "source_url": "https://www.lovagebistro.com/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "Phone +356 7959 4098. Tripadvisor snapshot: 4.7/5 from 576 reviews on 2026-10-09. The official website says Sunday closed while the Tripadvisor listing shows Sunday 19:00–22:30; do not assume Sunday service.",
+          "supporting_sources": [
+            {
+              "claim": "The official online menu lists current starter and main-course examples.",
+              "url": "https://www.lovagebistro.com/menu/",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed 4.7/5 from 576 reviews and a Sunday-hours listing that differs from the operator's site.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d4814892-Reviews-Lovage_Bistro-Qawra_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "venus-restaurant",
+          "name": "Venus Restaurant",
+          "category": "Mediterranean restaurant / seafood",
+          "area": "Buġibba, St Paul's Bay",
+          "address": "Pioneer Road / Triq il-Gandoffli, Buġibba, St Paul's Bay, Malta",
+          "hours": "Google Maps and Tripadvisor both list daily 18:00–22:30. The restaurant's own pages checked here do not publish hours; confirm directly if timing matters.",
+          "price_range": "Official menu examples include chicken €23.50, rabbit €26.50 and beef Wellington €35; daily specials/fish may be priced differently.",
+          "description": "Family-run Mediterranean restaurant with daily specials and seafood/meat dishes. The operator's menu and contact page are available online; reservation is advisable for dinner.",
+          "source_url": "https://venusrestaurantmalta.com/contact-us/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "Phone +356 9984 6767. Platform snapshots on 2026-10-09: Google Maps 4.9/5 (count fragments varied) and Tripadvisor 4.8/5 from 2,900 reviews. Scores differ by platform; neither is a guarantee of quality.",
+          "supporting_sources": [
+            {
+              "claim": "The official menu lists dish prices and identifies menu examples; some daily specials are separate.",
+              "url": "https://venusrestaurantmalta.com/menu/",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Google Maps listing showed 4.9/5 and daily 18:00–22:30 hours in the captured view.",
+              "url": "https://www.google.com/maps?cid=10128219066952318843",
+              "source_type": "map",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed 4.8/5 from 2,900 reviews and daily 18:00–22:30 hours.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g608948-d1385602-Reviews-Venus_Restaurant-Bugibba_St_Paul_s_Bay_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "ta-pawla",
+          "name": "Ta' Pawla Restaurant",
+          "category": "Maltese / local and Mediterranean cuisine",
+          "area": "Buġibba, St Paul's Bay",
+          "address": "320 Triq It-Turisti, St Paul's Bay, Malta",
+          "hours": "Tripadvisor currently lists Monday–Saturday 18:00–23:00 and Sunday 12:00–16:00 plus 18:00–23:00. The business website checked here does not publish hours; call before relying on this schedule.",
+          "price_range": "No current euro price list was verified in the accessible official menu text; ask for the current à-la-carte or set-menu prices.",
+          "description": "Family-run restaurant describing its offer as traditional Maltese, Italian and Mediterranean food, including fish, meat, pasta, salads and pizza. The official menu page also mentions vegetarian and gluten-free options.",
+          "source_url": "https://tapawlarestaurant.com/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "Phone +356 9949 2049. Tripadvisor snapshot: 4.3/5 from 1,872 reviews on 2026-10-09. The schedule and address are review-platform listing data, not a confirmed operator timetable.",
+          "supporting_sources": [
+            {
+              "claim": "The official restaurant page describes its Maltese/Italian/Mediterranean offer and links to the menu.",
+              "url": "https://tapawlarestaurant.com/menu/",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed the 4.3/5 aggregate, address and listed hours.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g608948-d2696415-Reviews-Ta_Pawla-Bugibba_St_Paul_s_Bay_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Booknbook's business profile lists the address and telephone number; no timetable was visible in the fetched page.",
+              "url": "https://www.booknbook.mt/restaurant/ta-pawla-mother-earth-restaurant/profile",
+              "source_type": "map",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "made-in-sud",
+          "name": "Made in Sud Pizzeria",
+          "category": "Pizza restaurant",
+          "area": "St Paul's Bay",
+          "address": "Triq il-Patri Ġużepp Calleja, St Paul's Bay, Malta (use the map pin or phone for the exact entrance; postal codes vary among listings).",
+          "hours": "Tripadvisor and Apple Maps both list Monday closed and evening service, but weekday start times differ by up to 30 minutes. Wolt lists delivery Tuesday–Sunday 18:00–23:30; this is a delivery window, not proof of dine-in hours. Call to confirm.",
+          "price_range": "Tripadvisor shows its relative '$' band, not a euro quote. No current first-party dine-in menu price was verified; check the menu before budgeting.",
+          "description": "Pizzeria specializing in Neapolitan pizza and Italian food. Tripadvisor and Apple Maps provide matching street/phone details; the linked business Facebook page was inaccessible in this audit.",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g608946-d10624958-Reviews-Made_in_Sud_Pizzeria-St_Paul_s_Bay_Island_of_Malta.html",
+          "source_type": "review",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "Phone +356 2702 0248. Tripadvisor snapshot: 4.7/5 from 1,121 reviews on 2026-10-09. A separate Tripadvisor record with a similar name also appeared; counts have not been combined. Apple Maps and Tripadvisor dine-in listings differ slightly on hours.",
+          "supporting_sources": [
+            {
+              "claim": "Apple Maps lists the pizzeria, phone, address and an evening schedule; its listed times differ slightly from Tripadvisor.",
+              "url": "https://maps.apple.com/place?place-id=I61F298C3C83BBB3B",
+              "source_type": "map",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Wolt lists the venue's delivery schedule as Tuesday–Sunday 18:00–23:30 and Monday closed.",
+              "url": "https://wolt.com/en/mlt/malta/restaurant/made-in-sud",
+              "source_type": "map",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "peking-qawra",
+          "name": "Peking To-Go & Peking Street Food",
+          "category": "Chinese / Asian restaurant and street food",
+          "area": "Triq it-Turisti, Qawra / Buġibba",
+          "address": "Triq it-Turisti, San Pawl il-Baħar, Malta (the postal code differs among listings).",
+          "hours": "Peking To-Go: Monday–Sunday 12:00–22:30. Peking Street Food next door: Monday–Sunday 10:00–23:00, as displayed on the current official homepage. Tripadvisor's single listing says open until 23:00; use the operator's separate schedules for the two kitchens.",
+          "price_range": "Official homepage sample dishes are €9.80–€13.50; examples only, not the full menu or a per-person estimate.",
+          "description": "The current business website describes two neighbouring kitchens: a family Chinese restaurant/takeaway and a modern Asian street-food kitchen. It links to separate ordering/booking routes and shows the current address and service windows.",
+          "source_url": "https://www.pekingmalta.com/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "Phone +356 2158 0696. Tripadvisor snapshot: 4.4/5 from 917 reviews. The business homepage embeds a Google 4.6/847 summary, but its outbound g.page link returned HTTP 500; that Google aggregate is attributed to the business homepage and was not directly rechecked on Google Maps.",
+          "supporting_sources": [
+            {
+              "claim": "Tripadvisor displayed 4.4/5 from 917 reviews and one Qawra listing with hours until 23:00.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d2189077-Reviews-Peking-Qawra_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "nine-lives",
+          "name": "Nine Lives",
+          "category": "Beachfront restaurant / bar",
+          "area": "Perched Beach, St Paul's Bay",
+          "address": "Perched Beach, St Paul's Bay, Malta",
+          "hours": "Daily 09:00–23:00, according to the venue's current FAQ.",
+          "price_range": "Official menu examples: starters €9.95–€16.50; mains €16.00–€34.50; sharing platters €37–€120. Check the linked menu for current items.",
+          "description": "Seafront venue with breakfast, brunch, sushi, pizza, pasta, mains and cocktails. The official page says walk-ins are welcome, while recommending a booking for sunset tables and weekend evenings; beach-sunbed access is a separate reservation.",
+          "source_url": "https://ninelivesmalta.com/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Tripadvisor snapshot: 4.7/5 from 2,873 reviews on 2026-10-09. Rating/count are a platform snapshot, not an endorsement.",
+          "supporting_sources": [
+            {
+              "claim": "The official current menu lists food prices and describes the menu range.",
+              "url": "https://ninelivesmalta.com/menu/",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed 4.7/5 from 2,873 reviews for Nine Lives.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g608948-d17430471-Reviews-Nine_Lives-Bugibba_St_Paul_s_Bay_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "cafe-maroc",
+          "name": "Café Maroc",
+          "category": "Café / drinks and light snacks",
+          "area": "Qawra",
+          "address": "db San Antonio Hotel & Spa, Tourist Street, Qawra, Malta",
+          "hours": "The currently fetched official hotel page says Monday–Sunday 10:00–23:00. An earlier extracted version of the same first-party page showed 08:30–23:00; confirm with the hotel if an early opening matters.",
+          "price_range": "No current item prices were visible on the official page; it links to the venue menu.",
+          "description": "Coffee, hot and cold drinks, pastries, cakes and snacks inside db San Antonio. The hotel explicitly welcomes non-hotel guests; its current page says the outlet is card-only.",
+          "source_url": "https://www.dbhotelsresorts.com/en/hotels/db-San-Antonio/Restaurants-Bars/cafe-maroc",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "Tripadvisor snapshot: 4.6/5 from 219 reviews on 2026-10-09; its listing also shows 10:00–23:00. Earlier official-page extraction differed on the morning opening time, so do not rely on 08:30 without reconfirming.",
+          "supporting_sources": [
+            {
+              "claim": "The official hotel page describes the café, gives its current hours and says non-hotel guests may visit; it also states card-only payment.",
+              "url": "https://www.dbhotelsresorts.com/en/hotels/db-San-Antonio/Restaurants-Bars/cafe-maroc",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed 4.6/5 from 219 reviews and hours 10:00–23:00.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g608947-d10954321-Reviews-Cafe_Maroc-Qawra_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "micheles-cafe",
+          "name": "Michele's Cafe",
+          "category": "Café / breakfast",
+          "area": "St Paul's Bay",
+          "address": "Tourist Street, St Paul's Bay 1672, Malta",
+          "hours": "Tripadvisor listing: Sunday 06:00–22:00; Monday–Thursday 06:00–21:00; Friday–Saturday 06:00–22:00. No current first-party hours source was found; call before planning breakfast.",
+          "price_range": "Not published in an accessible current first-party menu.",
+          "description": "A café listed for breakfast and European-style food on Tourist Street. Use its current map/review listing for contact and directions; the accessible official social link was not available in this audit.",
+          "source_url": "https://www.tripadvisor.com/Restaurant_Review-g608946-d15237947-Reviews-Michele_s_Cafe-St_Paul_s_Bay_Island_of_Malta.html",
+          "source_type": "review",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "Phone +356 2757 9505. Tripadvisor snapshot: 4.7/5 from 459 reviews on 2026-10-09. Opening times are a platform listing only and have not been confirmed by the operator.",
+          "supporting_sources": []
+        }
+      ]
+    },
+    {
+      "id": "valletta-food-stops",
+      "title": "Valletta day-out food stops",
+      "lead": "These are useful wider-island options to pair with time in the capital. Their menus and schedules are separate from the Qawra-area shortlist; verify transport and same-day opening before setting the itinerary.",
+      "items": [
+        {
+          "id": "caffe-cordina",
+          "name": "Caffe Cordina",
+          "category": "Historic café / patisserie",
+          "area": "Valletta",
+          "address": "244 Republic Street, Valletta VLT 1114, Malta",
+          "hours": "Official contact page: Monday–Saturday 07:30–21:00; Sunday 07:30–15:00. Tripadvisor lists different Sunday hours; prefer the operator's page and confirm on the day.",
+          "price_range": "Official online shop examples: cannoli €4.35–€5.03. The linked dining-menu PDF is dated May 2024 and includes pastizzi at €1.50 and a full breakfast at €13.50; verify these older menu prices before budgeting.",
+          "description": "Long-established Valletta café and patisserie serving coffee, sweets, breakfast and meals. The business dates its story to 1837 and publishes a current contact page and menu link.",
+          "source_url": "https://caffecordina.com/contact-us/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "Tripadvisor snapshot: 3.9/5 from 4,733 reviews on 2026-10-09. The official schedule differs from the Tripadvisor listing, especially Sunday; use the official hours and recheck before travel.",
+          "supporting_sources": [
+            {
+              "claim": "The official linked dining menu contains breakfast and snack prices; the PDF is dated May 2024.",
+              "url": "https://caffecordina.com/wp-content/uploads/2024/05/CC-Menu.pdf",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "The official homepage displays current online-shop prices for two cannoli products.",
+              "url": "https://caffecordina.com/",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed 3.9/5 from 4,733 reviews and a Sunday schedule that differs from the official contact page.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g190328-d743935-Reviews-Caffe_Cordina-Valletta_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "ta-nenu-valletta",
+          "name": "Ta' Nenu",
+          "category": "Traditional Maltese restaurant / ftira bakery",
+          "area": "Valletta",
+          "address": "143 St Dominic Street, Valletta VLT 1605, Malta",
+          "hours": "Daily lunch 12:00–14:30 and dinner 17:30–22:00, according to the operator's current booking/contact information.",
+          "price_range": "Official February 2026 menu examples: traditional ftajjar €13.50–€15.50; listed main courses €19.50–€24.50. See the current PDF for all menu items.",
+          "description": "Traditional Maltese restaurant focused on ftira and local dishes, including rabbit and other Maltese specialties. The current website is branded Ta' Nenu (formerly Nenu The Artisan Baker) and offers a reservation request form.",
+          "source_url": "https://tanenu.com/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Phone +356 2258 1535. Tripadvisor snapshot: 4.5/5 from 1,858 reviews on 2026-10-09. The 2026 menu is first-party; menu prices and hours can still change.",
+          "supporting_sources": [
+            {
+              "claim": "The official February 2026 menu lists current ftajjar and main-course examples in euros.",
+              "url": "https://tanenu.com/wp-content/uploads/2026/02/ta_nenu_menu_2026.pdf",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "The official booking/contact content lists the Valletta address, phone, daily meal periods and reservation request terms.",
+              "url": "https://tanenu.com/#reservation",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "Tripadvisor displayed 4.5/5 from 1,858 reviews and the Valletta address.",
+              "url": "https://www.tripadvisor.com/Restaurant_Review-g190328-d2526643-Reviews-Ta_Nenu-Valletta_Island_of_Malta.html",
+              "source_type": "review",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        },
+        {
+          "id": "is-suq-tal-belt",
+          "name": "Is-Suq Tal-Belt — Valletta Food Market",
+          "category": "Food court / covered market",
+          "area": "Valletta",
+          "address": "Triq il-Merkanti, Valletta VLT 1175, Malta",
+          "hours": "Google Maps listing checked 2026-10-09: Monday–Wednesday 11:00–22:00, Thursday 11:00–20:00, Friday–Sunday 11:00–22:00. The retrieved official Food Court page did not expose a complete schedule; confirm same-day hours with the operator.",
+          "price_range": "Varies by stall; there is no single food-court price list. Check the current stall menu linked from the operator's page.",
+          "description": "Covered food court and market in Valletta with international and Maltese options, including the separately listed grocery market downstairs. The current food-court page lists 14 entries, one marked 'Coming Soon'; check which stalls are operating on the visit date.",
+          "source_url": "https://issuqtalbelt.com/food-court/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "A useful group option when people want different cuisines, but individual vendors and opening times can vary. Google Maps snapshot: 4.3/5 from 8,582 reviews on 2026-10-09; its schedule is third-party listing data, so verify it with the operator before a late meal.",
+          "supporting_sources": [
+            {
+              "claim": "The operator's Food Court page describes its vendor mix and currently lists 14 entries, including one marked 'Coming Soon'.",
+              "url": "https://issuqtalbelt.com/food-court/",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "The direct Google Maps listing displays the market name, Triq il-Merkanti address, hours and a 4.3/5 rating from 8,582 reviews.",
+              "url": "https://www.google.com/maps/search/Is-Suq+Tal-Belt+Valletta/",
+              "source_type": "map",
+              "date_checked": "2026-10-09"
+            },
+            {
+              "claim": "The operator's Contact page describes Is-Suq Tal-Belt as being in central Valletta and gives public-transport and ferry access context.",
+              "url": "https://issuqtalbelt.com/contact-us/",
+              "source_type": "official",
+              "date_checked": "2026-10-09"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

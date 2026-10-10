@@ -1,0 +1,245 @@
+{
+  "topic": "transport",
+  "title": "Airport, Qawra & event-day transport",
+  "intro": "A source-checked guide to Malta International Airport, AX ODYCY in Qawra, and BLAST Arena Studios at MFCC in Ta’ Qali. Route 186 is the direct hotel-area-to-venue corridor; use Malta Public Transport’s date-and-time planner before each journey.",
+  "date_checked": "2026-10-09",
+  "notes": [
+    "Trip dates supplied by the traveller: AX ODYCY, 13–19 October 2026 (six nights). The organizer’s logistics run 12–19 October; competition days are 14–18 October. Match start/end times and spectator access are not in the checked TWC page.",
+    "Recommended public-transport starting points: Arznell bus stop 950 in Qawra and Stadium bus stop 2194 in Ta’ Qali. Confirm the hotel-side walking point and the route on the day in the official Journey Planner / tallinja app.",
+    "A Route 186 detour is listed for Saturday 17 October 2026, 19:00–approximately 00:00 toward Buġibba. The notice says stops from Gholja 2 through Targa will not be served; Arznell is not in that stated range, but check live service before returning.",
+    "The currently captured MPT fare page does not publish the ordinary single fare for October 2026. Its €2 single fare applies only to 19 October 2025–13 June 2026. Do not use that expired fare as a trip-week quote."
+  ],
+  "comparison_table": [
+    {
+      "option": "Airport Direct TD1 — airport to Qawra",
+      "convenience": "Direct to Arznell stop 950; hourly service; Airport Direct buses have luggage space. No advance booking is required.",
+      "published_cost": "€3.50 per passenger for TD1 without an Unlimited Travel Card (current MPT page; reconfirm in October 2026).",
+      "value": "Lowest posted door-to-stop fare found for the airport leg; suitable with luggage if the hourly departure fits.",
+      "feasibility": "High for daytime arrivals; check the scheduled departure and walking route from Arznell to the hotel.",
+      "sources": [
+        {"label": "MPT Airport Direct", "url": "https://www.publictransport.com.mt/other-services/airport-direct/"},
+        {"label": "MPT TD1 timetable", "url": "https://www.publictransport.com.mt/route/TD1/"}
+      ]
+    },
+    {
+      "option": "Route 186 — Qawra to Ta’ Qali / MFCC",
+      "convenience": "One bus, no transfer: Arznell 950 to Stadium 2194. The Stadium stop is the Ta’ Qali stop to enter in the planner; use a map for the final walk to MFCC.",
+      "published_cost": "October 2026 single fare not confirmed. The MPT page currently lists an adult 7-day Explore card at €25; check its terms and the trip-week fare before buying.",
+      "value": "Best value for routine event-day journeys if the published schedule fits; substantially less convenient if the event runs beyond the last bus.",
+      "feasibility": "High for daytime journeys. The current timetable is not an October 2026 event-day guarantee; the 17 October evening detour and last departure need checking.",
+      "sources": [
+        {"label": "MPT Route 186", "url": "https://www.publictransport.com.mt/route/186/"},
+        {"label": "MPT Journey Planner", "url": "https://www.publictransport.com.mt/journey-planner/"},
+        {"label": "MPT latest service updates", "url": "https://www.publictransport.com.mt/latest-service-updates/"}
+      ]
+    },
+    {
+      "option": "Official Malta Taxi",
+      "convenience": "Door-to-door and app/phone booking are available; Malta International Airport identifies Malta Taxi as its official taxi service.",
+      "published_cost": "Live quote required; no Qawra fare was captured.",
+      "value": "Best for late arrivals, luggage, or a return after the last bus; quote before travel.",
+      "feasibility": "High, subject to a live booking/quote and vehicle availability.",
+      "sources": [
+        {"label": "Malta International Airport transport", "url": "https://maltairport.com/transport/"},
+        {"label": "Malta Taxi", "url": "https://www.maltataxi.mt/"}
+      ]
+    },
+    {
+      "option": "App-based ride — Bolt, eCabs or Uber",
+      "convenience": "On-demand or app-booked door-to-door trip; enter the exact hotel or MFCC map pin and compare a live quote.",
+      "published_cost": "Dynamic live quote; no trip-specific price was observed.",
+      "value": "Potentially convenient for small groups or a post-event return; compare the app fare with the official taxi quote at booking time.",
+      "feasibility": "Check that the app accepts the pickup pin in Qawra / Ta’ Qali and that a driver is available before relying on it.",
+      "sources": [
+        {"label": "Bolt Valletta service page", "url": "https://bolt.eu/en/cities/valletta/"},
+        {"label": "eCabs", "url": "https://ecabs.com.mt/"},
+        {"label": "Uber Valletta service page", "url": "https://www.uber.com/global/en/r/cities/valletta-valletta-mt/"}
+      ]
+    },
+    {
+      "option": "Airport rental car",
+      "convenience": "Airport rental offices are in Park East, a separate building described by the airport as a three-minute walk from the terminal.",
+      "published_cost": "Supplier and dates required for a quote; no rental price was captured.",
+      "value": "Useful only if the itinerary adds independent multi-stop exploration; not needed to reach the event on the direct Route 186 corridor.",
+      "feasibility": "Available from airport suppliers; compare rental, insurance, parking and fuel terms before booking.",
+      "sources": [
+        {"label": "Malta International Airport car rental", "url": "https://maltairport.com/renting-a-car/"},
+        {"label": "MPT Route 186", "url": "https://www.publictransport.com.mt/route/186/"}
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "event-venue-and-route",
+      "title": "BLAST Arena Studios and the direct bus corridor",
+      "lead": "The venue address is cross-checked against BLAST and MFCC sources. MPT lists one direct route between the hotel-area stop and the Ta’ Qali stop.",
+      "items": [
+        {
+          "id": "blast-arena-mfcc",
+          "name": "BLAST Arena Studios at MFCC",
+          "category": "Event venue",
+          "area": "Ta’ Qali / Ħ’Attard",
+          "address": "Malta Fairs & Conventions Centre, Millennium Stand, Level 1, National Stadium, Ta’ Qali, ATD 4000, Malta",
+          "hours": "TWC 2026 match/session times and public doors are not published in the checked organizer page.",
+          "price_range": "Spectator access / ticket information not published in the checked TWC source.",
+          "description": "BLAST’s attendee guide names “Malta Fairs & Conventions Centre - BLAST Arena Studios” and gives Ta’ Qali, ATD 4000, Ħ’Attard. MFCC’s own contact page supplies the fuller Millennium Stand / National Stadium address. Thunderpick’s TWC page confirms a Malta LAN and the event logistics, but does not identify the street address or spectator arrangements.",
+          "source_url": "https://blast.tv/cs/news/malta-fan-guide",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "The BLAST page is for another Malta event, so it verifies the general venue identity/address, not TWC-specific tickets, entrance, match times or spectator access.",
+          "supporting_sources": [
+            {"claim": "MFCC’s official contact page lists Millennium Stand, Level 1, National Stadium, Ta’ Qali, ATD 4000.", "url": "https://mfcc.com.mt/contact-us/", "source_type": "official", "label": "MFCC contact address"},
+            {"claim": "Thunderpick lists arrival 12 Oct, media day 13 Oct, groups 14–16 Oct, playoffs 17–18 Oct, departure 19 Oct, and Malta as the LAN location.", "url": "https://world-championship.thunderpick.io/2026-finals/", "source_type": "official", "label": "Thunderpick TWC 2026 schedule"}
+          ]
+        },
+        {
+          "id": "route-186-qawra-stadium",
+          "name": "Qawra ↔ Ta’ Qali: MPT Route 186",
+          "category": "Direct bus route",
+          "area": "Arznell, Qawra ↔ Stadium, Ta’ Qali",
+          "address": "Board at Arznell stop 950 in Qawra; alight at Stadium stop 2194 in Ta’ Qali. Confirm the correct direction and final walk in the official planner.",
+          "hours": "The current MPT stop timetable shows regular departures at roughly 30-minute intervals; the page is not a date-specific October 2026 itinerary. Check the 2026 travel date and return direction in the tallinja app / Journey Planner.",
+          "price_range": "October 2026 single fare not published on the captured MPT page. The current page lists Explore Adult 7-day at €25; check trip-week terms before purchase.",
+          "description": "MPT lists Route 186 between Buġibba and Rabat and shows both Arznell (950) and Stadium (2194) on its stop timetable. It is the researched no-transfer option from the Qawra hotel area to the Ta’ Qali/MFCC area. Use the MPT planner with the exact date/time for live directions; the official source does not confirm the footpath from stop 2194 to the entrance.",
+          "source_url": "https://www.publictransport.com.mt/route/186/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "The route and stop IDs are verified. Exact event-day timetable, stop-to-hotel walking distance, journey duration, venue entrance walk and trip-week fare still need a date-specific check.",
+          "supporting_sources": [
+            {"claim": "MPT Journey Planner accepts a travel date/time and reports suggested routes, bus times and travel times.", "url": "https://www.publictransport.com.mt/journey-planner/", "source_type": "official", "label": "MPT Journey Planner"},
+            {"claim": "The hotel’s official address is Qawra Coast Road, Qawra, Malta.", "url": "https://axhotelsmalta.com/odycy/", "source_type": "official", "label": "AX ODYCY hotel address"},
+            {"claim": "The BLAST guide gives MFCC / BLAST Arena Studios as the event-venue name and Ta’ Qali, ATD 4000, Ħ’Attard as the address.", "url": "https://blast.tv/cs/news/malta-fan-guide", "source_type": "official", "label": "BLAST venue guide"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airport-to-hotel",
+      "title": "Malta Airport ↔ AX ODYCY",
+      "lead": "Airport Direct TD1 is the researched scheduled service to the Qawra hotel area. Malta Taxi and app rides are door-to-door alternatives when timing or luggage makes the bus less practical.",
+      "items": [
+        {
+          "id": "td1-airport-arznell",
+          "name": "Airport Direct TD1 to Arznell (950)",
+          "category": "Airport bus",
+          "area": "Malta International Airport ↔ Qawra",
+          "address": "Airport bus terminal ↔ Arznell stop 950; walk onward to AX ODYCY at Qawra Coast Road. Confirm the exact hotel-side walking route in the planner.",
+          "hours": "MPT describes TD1 as hourly. The official TD1 page publishes stop-by-stop times; check the departure from the correct airport stop for the arrival date.",
+          "price_range": "€3.50 per passenger for TD1 if not travelling on an Unlimited Travel Card, according to MPT’s current Airport Direct page; confirm current card terms/fare before travel.",
+          "description": "MPT says Airport Direct TD1 serves the Airport, Buġibba and northern destinations hourly; the official TD1 timetable lists Arznell stop 950. Airport Direct buses provide luggage space and do not require pre-booking. This is the lowest posted one-seat airport option found for the hotel area; the exact journey time and final walk should be checked in MPT’s planner.",
+          "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "TD1’s general route, hourly frequency, current price and Arznell stop are verified from MPT pages. Do not treat the currently captured fare/timetable as a guaranteed October 2026 quote or schedule.",
+          "supporting_sources": [
+            {"claim": "MPT’s Route TD1 timetable contains Arznell stop 950 and scheduled stop times.", "url": "https://www.publictransport.com.mt/route/TD1/", "source_type": "official", "label": "MPT TD1 timetable"},
+            {"claim": "Malta International Airport lists Airport Direct TD1 among airport bus services.", "url": "https://maltairport.com/transport/bus-service/", "source_type": "official", "label": "Malta Airport bus service"},
+            {"claim": "AX ODYCY’s published address is Qawra Coast Road, Qawra, Malta.", "url": "https://axhotelsmalta.com/odycy/", "source_type": "official", "label": "AX ODYCY"}
+          ]
+        },
+        {
+          "id": "official-malta-taxi",
+          "name": "Malta Taxi — official airport taxi option",
+          "category": "Taxi",
+          "area": "Malta International Airport ↔ Qawra / Ta’ Qali",
+          "address": "Airport arrivals / booked pickup; enter AX ODYCY or MFCC as the destination in the official fare calculator.",
+          "hours": "The Malta Taxi site states 24/7 availability; confirm booking and pickup instructions for the date.",
+          "price_range": "Live quote required; no Qawra or MFCC fare was captured.",
+          "description": "Malta International Airport identifies Malta Taxi as the official taxi service and links its fare calculator. Malta Taxi’s own site offers app and phone booking. This is the practical door-to-door option for heavy luggage, a missed hourly bus or a late post-match trip; obtain a quote before booking.",
+          "source_url": "https://maltairport.com/transport/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Official airport/operator identity and booking channels verified. No fare quote, trip duration or event-time car availability was obtained.",
+          "supporting_sources": [
+            {"claim": "Malta Taxi describes app/phone bookings and 24/7 availability.", "url": "https://www.maltataxi.mt/", "source_type": "official", "label": "Malta Taxi booking page"}
+          ]
+        },
+        {
+          "id": "app-ride-options",
+          "name": "App-based rides — Bolt, eCabs and Uber",
+          "category": "Ride-hailing",
+          "area": "Malta; confirm Qawra / Ta’ Qali pickup availability in each app",
+          "address": "Use the hotel or MFCC map pin as the pickup/drop-off point in the chosen app.",
+          "hours": "App-dependent; check live availability at the time of travel.",
+          "price_range": "Dynamic app quote; no trip-specific price observed.",
+          "description": "Bolt and Uber publish Valletta service pages; eCabs offers a booking app. These are comparison options rather than guaranteed event-day pickups: enter the exact Qawra or Ta’ Qali pin and compare the price and driver availability before choosing. Do not use an old web estimate as a trip quote.",
+          "source_url": "https://bolt.eu/en/cities/valletta/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "First-party service pages were checked, but no live booking or price quote was observed for Qawra, MFCC, or the event week.",
+          "supporting_sources": [
+            {"claim": "eCabs describes its ride-booking app and ride service.", "url": "https://ecabs.com.mt/", "source_type": "official", "label": "eCabs official site"},
+            {"claim": "Uber’s official Valletta page offers ride requests and price estimates through its app.", "url": "https://www.uber.com/global/en/r/cities/valletta-valletta-mt/", "source_type": "official", "label": "Uber Valletta"}
+          ]
+        },
+        {
+          "id": "airport-rental-car",
+          "name": "Airport rental car",
+          "category": "Car rental",
+          "area": "Malta International Airport",
+          "address": "Rental-company offices are in Park East, a separate building stated by the airport to be a three-minute walk from the terminal.",
+          "hours": "Supplier-specific; confirm collection and return hours directly with the chosen rental company.",
+          "price_range": "Supplier, car, dates and insurance required for a quote; no trip-specific price observed.",
+          "description": "Malta Airport lists numerous rental suppliers at Park East. For the fixed AX ODYCY–MFCC event corridor, Route 186 offers a direct bus, so a rental car is not needed just to commute. Consider a car only if the rest of the itinerary justifies the rental and parking/insurance terms.",
+          "source_url": "https://maltairport.com/renting-a-car/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "verified",
+          "notes": "Airport location and supplier list are verified; no rental price, parking availability or itinerary-specific value estimate was obtained.",
+          "supporting_sources": [
+            {"claim": "MPT Route 186 lists the direct Arznell–Stadium corridor.", "url": "https://www.publictransport.com.mt/route/186/", "source_type": "official", "label": "MPT Route 186"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fares-and-event-day-caveats",
+      "title": "Fare notes and the 17 October return",
+      "lead": "The event’s match timetable is unknown, so the last-bus risk is more important than an assumed match end time.",
+      "items": [
+        {
+          "id": "mpt-fare-snapshot",
+          "name": "MPT fare snapshot — re-check before the trip",
+          "category": "Fare / travel card",
+          "area": "Malta and Gozo bus network",
+          "address": "Not applicable",
+          "hours": "Not applicable",
+          "price_range": "MPT currently lists €25 for Explore Adult 7-day and €3.50 for an individual TD1 Airport Direct trip without an Unlimited Travel Card. The published €2 regular single-day fare is explicitly dated 19 Oct 2025–13 Jun 2026 only.",
+          "description": "The MPT fare page describes the seven-day Explore Adult pass and publishes TD1’s current single fare, but its €2 seasonal day fare ends on 13 June 2026. Because the trip is in October 2026, do not carry forward the expired €2 fare; check the date-specific fare and the current pass conditions when booking.",
+          "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "The cited card and TD1 prices are the values published on the checked page, not a guaranteed quote for 13–19 October 2026. No future seasonal single fare was found.",
+          "supporting_sources": [
+            {"claim": "MPT Airport Direct states the single TD1 price and card-related fare conditions.", "url": "https://www.publictransport.com.mt/other-services/airport-direct/", "source_type": "official", "label": "Airport Direct fares"}
+          ]
+        },
+        {
+          "id": "route-186-oct17-detour",
+          "name": "Route 186 — Saturday 17 October evening service notice",
+          "category": "Service update",
+          "area": "Route 186, toward Buġibba",
+          "address": "Stops from Gholja 2 through Targa are listed as not served during the detour; the notice does not name Arznell 950 among the skipped stops.",
+          "hours": "MPT lists the detour weekly Friday/Saturday 19:00–approximately 00:00, starting 17 October; the notice’s first end time is approximately 18 October 00:00.",
+          "price_range": "No fare change stated.",
+          "description": "MPT’s live service-update page publishes a Route 186 diversion toward Buġibba on Saturday 17 October 2026 from 19:00 until approximately midnight, with stops from Gholja 2 through Targa not served. This overlaps the playoffs date. The exact TWC match end time is not published, so plan the final return only after checking that day’s MPT update and last-bus times; keep an app/official taxi quote as a backup.",
+          "source_url": "https://www.publictransport.com.mt/latest-service-updates/",
+          "source_type": "official",
+          "date_checked": "2026-10-09",
+          "confidence": "partially verified",
+          "notes": "The notice is a published operator update; actual route operation, whether a later update changes it, and its practical effect on the Arznell-to-hotel leg must be re-checked on 17 October. No exact post-match public-transport return is guaranteed here.",
+          "supporting_sources": [
+            {"claim": "The TWC page identifies 17–18 October as the playoff dates and does not publish match/session start or end times.", "url": "https://world-championship.thunderpick.io/2026-finals/", "source_type": "official", "label": "TWC 2026 organizer schedule"},
+            {"claim": "MPT Route 186 timetable lists Arznell 950 and Stadium 2194; use the current timetable to confirm the return direction.", "url": "https://www.publictransport.com.mt/route/186/", "source_type": "official", "label": "Route 186 stop timetable"}
+          ]
+        }
+      ]
+    }
+  ]
+}
