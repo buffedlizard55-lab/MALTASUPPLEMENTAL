@@ -18,6 +18,7 @@ The hotel and trip details above are the user's brief—not proof of a reservati
 - [`pages/everyday.html`](pages/everyday.html) — entry systems, money, phone, power, health, safety and weather
 - [`pages/expenses.html`](pages/expenses.html) — browser-only EUR expense worksheet with optional user-entered USD conversion
 - [`pages/sources.html`](pages/sources.html) — claim-level source register, unresolved questions, limitations and next steps
+- [`docs/FINAL_REPORT.md`](docs/FINAL_REPORT.md) — detailed final report, review-pass results, limitations and traveler next steps
 
 ## Evidence and limitations
 
@@ -31,7 +32,7 @@ This is a planning reference, not immigration, legal, tax, medical, insurance or
 
 ## How the site works
 
-This is a dependency-free static site. Topic data lives in `data/*.json`; each record follows the shared schema documented in [`docs/PLAN.md`](docs/PLAN.md). Topic pages in `pages/` use a small shared renderer in `js/site.js` and the responsive stylesheet in `css/style.css`. The expense calculator is local to its page.
+This is a dependency-free static site. Topic data lives in `data/*.json`; each record follows the shared schema documented in [`docs/SCHEMA.md`](docs/SCHEMA.md). The serial work plan and ownership boundaries are in [`docs/PLAN.md`](docs/PLAN.md). Topic pages in `pages/` use a small shared renderer in `js/site.js` and the responsive stylesheet in `css/style.css`. The expense calculator is local to its page. After editing source or open-question logs, regenerate their embedded page snapshot with `python3 scripts/build_sources_page.py`; run `python3 scripts/verify_site.py` for local integration checks.
 
 To preview from the repository root, run a static HTTP server (for example `python3 -m http.server 8000 --bind 0.0.0.0`) and open the root page. The JSON renderer requires HTTP(S), not a `file://` URL.
 

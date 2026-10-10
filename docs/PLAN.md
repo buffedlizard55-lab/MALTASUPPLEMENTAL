@@ -1,5 +1,7 @@
 # Malta trip site — implementation plan
 
+Last updated: 10 October 2026
+
 ## Repository review (starting point)
 
 The repository is a dependency-free static HTML/CSS/JS site with twelve top-level pages and one shared stylesheet/script. It already contains extensive research, but it is centered on an earlier prize-dossier scenario (13–20 October, a different hotel assumption, and extensive Hotspawn/legal/tax material), has no structured `data/` source of truth, and many claims were checked on 23–24 September rather than the current 9 October 2026. The requested trip is now specified as AX ODYCY, Qawra, 13–19 October 2026; event-day transport, practical tourism, an expense template, and verifiable limits are the priorities. Current facts and trip-specific assumptions must be rechecked before reuse.
@@ -37,3 +39,8 @@ The session is pinned to one Arena branch and there is no parallel sub-agent/bra
 - Every factual item must have a source URL, access date, source type, confidence and caveat; page text is generated from or directly matches its data. Do not turn search snippets, review counts, or a route planner into a verified service guarantee.
 - Validate JSON; compare page links/data; check internal links, page responses, mobile navigation/layout, and JS; run the requested three review passes on the integrated site.
 - Any trip-specific fact not verified by a primary source stays in `docs/OPEN_QUESTIONS.md` and is described as unconfirmed on the site.
+
+## Repeatable integration helpers
+
+- Run `python3 scripts/build_sources_page.py` after updating `docs/SOURCES.md` or `docs/OPEN_QUESTIONS.md`; it rebuilds the embedded source and question snapshots on `pages/sources.html`.
+- Run `python3 scripts/verify_site.py` from any directory to check the shared JSON schema, source-log coverage, local links and fragments, navigation parity, accessibility references, and JSON record filters. It does not fetch external sites or automate visual browser rendering.
