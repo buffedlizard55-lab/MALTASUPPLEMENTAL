@@ -6,7 +6,7 @@ The repository is a hand-authored static HTML/CSS/JavaScript site with no applic
 
 ## Shared setup (serial, before topic work)
 
-1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`.
+1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`. The canonical `data/record.schema.json` and offline validator enforce these exact 13 keys; the `source_type` values are `official`, `map`, `review`, `social`, and `directory`.
 2. Preserve a dependency-free static site. Topic pages render from their workstream JSON data; the expense planner uses a blank-by-default editable form backed by its expense JSON categories.
 3. Maintain `docs/SOURCES.md` (claim, URL, UTC access date, workstream, limitation), `docs/OPEN_QUESTIONS.md` (missing/conflicting details), `docs/STATUS.md` (progress/blockers), and `docs/HANDOFF.md` (cross-topic findings).
 4. Prefer primary operator, organizer, venue, station, government, or official provider pages for current details. Label review/social snapshots separately. Do not present a fixture list as radio carriage or a route-level bus timetable as a door-to-door trip.
@@ -16,7 +16,7 @@ The repository is a hand-authored static HTML/CSS/JavaScript site with no applic
 
 | Workstream | Owned data file | Owned page | Scope | Dependencies |
 |---|---|---|---|---|
-| A. Transport | `data/transport.json` | `getting-around.html` | MLA airport ↔ AX ODYCY; Qawra ↔ named BLAST Arena Studios/MFCC, Attard; event-day public transit; ferries, ride-hailing/taxi, car hire; practical mode comparison. Treat trip dates and booking inputs as user-supplied; independently verify route/event facts where possible. | Shared schema and page renderer. |
+| A. Transport | `data/transport.json` | `getting-around.html` | MLA airport ↔ AX ODYCY; Qawra ↔ user-supplied BLAST Arena Studios destination, with MFCC/Ta’ Qali treated only as an unconfirmed venue-area lead; event-day public transit; ferries, ride-hailing/taxi, car hire; practical mode comparison. Treat trip dates and booking inputs as user-supplied; independently verify route/event facts where possible. | Shared schema and page renderer. |
 | B. Food & cafés | `data/food.json` | `restaurants.html` | Sourced restaurant, café, and casual-eating shortlist convenient to Qawra/AX ODYCY, with locality and official/map/review/social evidence. Publish live hours/prices only where checked and disclose inaccessible platforms. | Shared schema and page renderer. |
 | C. Activities, landmarks & events | `data/activities.json` | `activities.html` | Gaming centres, recreation, landmarks, and dated public events during 13–19 October. Distinguish confirmed listings from seasonal/undated suggestions; do not infer spectator access. | Shared schema and page renderer; event/transport cross-notes go to `docs/HANDOFF.md`. |
 | D. Everyday life for a U.S. traveler | `data/everyday.json` | `everyday.html` | Power, mobile service, currency/cards, tipping, safety/emergency/health, entry pointers, language, weather, and practical adaptation. Qualify advice that depends on passport, device, or itinerary. | Shared schema and page renderer. |
