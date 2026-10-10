@@ -1,102 +1,160 @@
-/* MALTASUPPLEMENTAL — site.js
-   1) Mobile nav toggle
-   2) Budget calculator on costs.html (pure client-side, no external calls)
-*/
-(function () {
-  "use strict";
+/* Malta Field Guide shared behavior: accessible mobile navigation and JSON fact cards. */
+(() => {
+  'use strict';
 
-  // ---------- mobile nav ----------
-  var toggle = document.querySelector(".nav-toggle");
-  var nav = document.querySelector(".main-nav");
-  if (toggle && nav) {
-    toggle.addEventListener("click", function () {
-      var open = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-      toggle.textContent = open ? "Close menu" : "Menu";
+  function setupNavigation() {
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.primary-nav');
+    if (!toggle || !nav) return;
+
+    const setOpen = (open) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Close main navigation' : 'Open main navigation');
+      nav.classList.toggle('open', open);
+    };
+
+    toggle.setAttribute('aria-label', 'Open main navigation');
+    toggle.addEventListener('click', () => {
+      setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+    });
+    nav.addEventListener('click', (event) => {
+      if (event.target.closest('a')) setOpen(false);
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    document.addEventListener('click', (event) => {
+      if (toggle.getAttribute('aria-expanded') === 'true' &&
+          !nav.contains(event.target) && !toggle.contains(event.target)) {
+        setOpen(false);
+      }
     });
   }
 
-  // ---------- budget calculator ----------
-  var calc = document.getElementById("budget-calc");
-  if (!calc) return;
-
-  var EURUSD = 1.145; // labelled estimate, close of 22 Sep 2026 (TradingEconomics via MALTA dossier)
-
-  var ids = {
-    nights: "c_nights",
-    airfareCovered: "c_airfare",
-    hotelCovered: "c_hotel",
-    foodPerDay: "c_food",
-    transport: "c_transport",
-    transfers: "c_transfers",
-    activities: "c_activities",
-    sim: "c_sim",
-    ecoTax: "c_eco",
-    buffer: "c_buffer",
-    extras: "c_extras",
-    taxRate: "c_taxrate"
-  };
-
-  function num(id, fallback) {
-    var el = document.getElementById(id);
-    if (!el) return fallback;
-    var v = parseFloat(el.value);
-    if (isNaN(v) || v < 0) return fallback; // clamp negatives/NaN to the safe default
-    return v;
+  function make(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text !== undefined && text !== null) node.textContent = String(text);
+    return node;
   }
 
-  function render() {
-    var nights = num(ids.nights, 7);
-    var days = nights + 1;
-
-    var airfare = num(ids.airfareCovered, 0);      // $ you pay (0 if covered)
-    var hotel = num(ids.hotelCovered, 0);          // $ you pay (0 if covered)
-    var food = num(ids.foodPerDay, 30) * days;     // $
-    var transport = num(ids.transport, 45);        // $ (matches input default)
-    var transfers = num(ids.transfers, 45);        // $ (matches input default)
-    var activities = num(ids.activities, 80);      // $
-    var sim = num(ids.sim, 15);                    // $
-    var ecoTax = num(ids.ecoTax, 12);              // $ (€1.50/night x 7 nights x1.145 = ~$12; €22.50 visit cap unreachable in 7 nights)
-    var buffer = num(ids.buffer, 150);             // $
-    var extras = num(ids.extras, 0);               // $ fixed extras: bag fees, insurance, passport renewal, DAB+ radio
-
-    var total = airfare + hotel + food + transport + transfers + activities + sim + ecoTax + buffer + extras;
-
-    // Tax: only on the FMV of what the prize actually pays for. Each covered element ("0" = covered)
-    // contributes its estimated market value; anything you pay yourself is not prize income.
-    var fmv = (airfare === 0 ? 1100 : 0) + (hotel === 0 ? 900 : 0) + 100; // ticket est $100 (always covered)
-    var taxRate = num(ids.taxRate, 27) / 100;      // combined federal + California estimate
-    var tax = fmv * taxRate;
-
-    var out = total + tax;
-
-    var el = document.getElementById("calc-out");
-    if (!el) return;
-
-    el.innerHTML =
-      '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;align-items:baseline">' +
-      '<span>Your estimated out-of-pocket: <span class="big">$' + Math.round(out).toLocaleString() + "</span></span>" +
-      '<span class="muted" style="color:#9fb0c3">EUR/USD ' + EURUSD + " (est.)</span></div>" +
-      "<ul>" +
-      "<li>Flights (you pay): $" + Math.round(airfare).toLocaleString() + "</li>" +
-      "<li>Hotel (you pay): $" + Math.round(hotel).toLocaleString() + "</li>" +
-      "<li>Food $" + num(ids.foodPerDay, 30) + "/day × " + days + " days: $" + Math.round(food).toLocaleString() + "</li>" +
-      "<li>Local transport: $" + Math.round(transport).toLocaleString() + "</li>" +
-      "<li>Airport transfers: $" + Math.round(transfers).toLocaleString() + "</li>" +
-      "<li>Activities / extra entry fees: $" + Math.round(activities).toLocaleString() + "</li>" +
-      "<li>Local SIM / eSIM: $" + Math.round(sim).toLocaleString() + "</li>" +
-      "<li>Eco-tax (hotel pass-through): $" + Math.round(ecoTax).toLocaleString() + "</li>" +
-      "<li>Buffer / incidentals: $" + Math.round(buffer).toLocaleString() + "</li>" +
-      "<li>Fixed extras (bags, insurance, passport, radio): $" + Math.round(extras).toLocaleString() + "</li>" +
-      "<li>Est. US tax on prize FMV (~$" + Math.round(fmv).toLocaleString() + " covered × " + num(ids.taxRate, 27) + "%): $" + Math.round(tax).toLocaleString() + "</li>" +
-      "</ul>" +
-      '<p class="small" style="color:#8fa1b5;margin:10px 0 0">Estimate only — not tax advice. "0" in flights/hotel = covered by the prize. The calculator runs entirely in your browser.</p>';
+  function safeHttpUrl(value) {
+    try {
+      const url = new URL(value, document.baseURI);
+      return url.protocol === 'https:' || url.protocol === 'http:' ? url.href : null;
+    } catch (_) {
+      return null;
+    }
   }
 
-  Object.keys(ids).forEach(function (k) {
-    var el = document.getElementById(ids[k]);
-    if (el) el.addEventListener("input", render);
-  });
+  function addFact(parent, label, value) {
+    if (!value || String(value).trim() === '') return;
+    const row = make('div', 'record-fact');
+    const strong = make('strong', '', `${label}: `);
+    row.append(strong, document.createTextNode(String(value)));
+    parent.append(row);
+  }
 
-  render();
+  function humanDate(iso) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(iso || '')) return iso || 'Date not recorded';
+    const date = new Date(`${iso}T00:00:00Z`);
+    return `Checked ${new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(date)}`;
+  }
+
+  function makeRecordCard(record) {
+    const article = make('article', 'record-card');
+    const safeId = String(record.id || '').replace(/[^a-zA-Z0-9_-]/g, '-');
+    if (safeId) article.id = safeId;
+
+    const header = make('header', 'record-card-head');
+    const headingGroup = document.createElement('div');
+    headingGroup.append(make('span', 'record-category', record.category || 'Guide listing'));
+    headingGroup.append(make('h3', '', record.name || 'Untitled record'));
+    header.append(headingGroup);
+
+    const confidence = String(record.confidence || 'unverified').toLowerCase();
+    const confidenceClass = confidence.replace(/[^a-z]+/g, '-').replace(/^-|-$/g, '') || 'unverified';
+    header.append(make('span', `confidence-badge confidence-${confidenceClass}`, confidence));
+    article.append(header);
+
+    if (record.area) article.append(make('p', 'record-area', record.area));
+    if (record['price range']) {
+      const price = make('p', 'record-price');
+      price.append(make('strong', '', 'Price / range: '));
+      price.append(document.createTextNode(String(record['price range'])));
+      article.append(price);
+    }
+    if (record.description) article.append(make('p', 'record-description', record.description));
+
+    const facts = make('div', 'record-facts');
+    addFact(facts, 'Address', record.address);
+    addFact(facts, 'Hours / date', record.hours);
+    if (facts.childElementCount) article.append(facts);
+
+    const footer = make('footer', 'record-card-footer');
+    footer.append(make('span', '', humanDate(record.date_checked)));
+    footer.append(make('span', 'source-kind', record.source_type || 'source type not recorded'));
+    article.append(footer);
+
+    const sourceUrl = safeHttpUrl(record.source_url);
+    if (sourceUrl) {
+      const link = make('a', 'source-link', 'Open cited source ↗');
+      link.href = sourceUrl;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      article.append(link);
+    }
+
+    if (record.notes) {
+      const details = make('details', 'record-notes');
+      details.append(make('summary', '', 'Source note & caveats'));
+      details.append(make('p', '', record.notes));
+      article.append(details);
+    }
+    return article;
+  }
+
+  async function renderRecordList(container) {
+    const source = container.dataset.recordSource;
+    if (!source) return;
+    container.setAttribute('aria-busy', 'true');
+
+    try {
+      const response = await fetch(new URL(source, document.baseURI), { credentials: 'same-origin' });
+      if (!response.ok) throw new Error(`Source returned ${response.status}`);
+      const records = await response.json();
+      if (!Array.isArray(records)) throw new Error('The data file is not a JSON record array.');
+
+      const requested = (container.dataset.recordFilter || '')
+        .split(',').map((value) => value.trim()).filter(Boolean);
+      const byId = new Map(records.map((record) => [String(record.id), record]));
+      const selected = requested.length ? requested.map((id) => byId.get(id)).filter(Boolean) : records;
+      const missing = requested.filter((id) => !byId.has(id));
+      container.replaceChildren();
+
+      if (!selected.length) {
+        container.append(make('p', 'empty-state', 'No matching source records were found. Please check the source file and page filter.'));
+      } else {
+        selected.forEach((record) => container.append(makeRecordCard(record)));
+      }
+      if (missing.length) {
+        const alert = make('p', 'load-error', `Source records not found: ${missing.join(', ')}. This page needs an integration review.`);
+        alert.setAttribute('role', 'status');
+        container.append(alert);
+      }
+    } catch (error) {
+      container.replaceChildren();
+      const message = make('p', 'load-error', `This source list could not be loaded (${error.message}). Open the guide through a web server or GitHub Pages rather than as a local file.`);
+      message.setAttribute('role', 'status');
+      container.append(message);
+    } finally {
+      container.removeAttribute('aria-busy');
+    }
+  }
+
+  setupNavigation();
+  document.querySelectorAll('[data-record-source]').forEach((container) => renderRecordList(container));
 })();

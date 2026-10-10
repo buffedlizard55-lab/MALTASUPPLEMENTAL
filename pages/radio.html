@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Official BBC live-sports radio schedules during the Malta trip, with Malta-local time conversions and honest DAB/streaming access caveats.">
+  <meta name="theme-color" content="#102b2a">
+  <title>Live radio sport | Malta Field Guide</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Malta Field Guide home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>Malta Field Guide<small>13–19 October 2026</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Toggle navigation</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="../index.html">Overview</a>
+      <a href="transport.html">Transport</a>
+      <a href="food.html">Food &amp; cafés</a>
+      <a href="activities.html">Activities &amp; gaming</a>
+      <a href="radio.html" aria-current="page">Live radio</a>
+      <a href="everyday.html">Practical</a>
+      <a href="expenses.html">Expense planner</a>
+      <a href="sources.html">Sources &amp; report</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page-shell">
+    <div class="eyebrow">Workstream E · schedules checked 9 October 2026</div>
+    <section class="hero hero-compact" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="kicker">Official programme listings · times converted to Malta</p>
+        <h1 id="page-title">Live sport on the radio</h1>
+        <p class="hero-lede">BBC schedules currently list live football commentary on 17–18 October and Sportsworld on both weekend days. This page separates the existence of a UK programme from whether the signal or stream will work in Qawra.</p>
+      </div>
+      <aside class="hero-note">
+        <span class="status-pill status-warning">Access is not guaranteed</span>
+        <p>Malta's DAB+ channel list includes BBC World Service. It does not list BBC Radio 5 Live or Sports Extra. Internet listening in Malta, hotel reception and your radio's DAB+ compatibility were not verified.</p>
+        <p class="small-note">Schedule pages are dynamic; recheck close to the broadcast.</p>
+      </aside>
+    </section>
+
+    <section class="callout callout-info" aria-labelledby="time-note-title">
+      <div class="callout-icon" aria-hidden="true">⏱</div>
+      <div>
+        <h2 id="time-note-title">How to read these times</h2>
+        <p>Times in each record show both the broadcaster's UK or GMT schedule time and a Malta-local conversion. On 17–18 October the UK is on BST (UTC+1) and Malta is on CEST (UTC+2), so Malta is one hour ahead of the UK and two hours ahead of GMT. BBC schedule pages also display a browser-dependent “local time”; this guide uses the GMT metadata for Sportsworld and the UK broadcast times on the BBC match pages for football.</p>
+        <p class="small-note">The conversion is a calculation from the published schedule and EU clock-change rule, not an additional broadcast guarantee.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="saturday" aria-labelledby="saturday-title">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Weekend schedules</p>
+          <h2 id="saturday-title">Saturday 17 October</h2>
+        </div>
+        <span class="section-index">01</span>
+      </div>
+      <div class="record-list record-list-grid" data-record-source="../data/radio.json" data-record-filter="radio-world-service-sportsworld-17,radio-5sports-mancity-17,radio-5live-brentford-liverpool-17,radio-5live-newcastle-villa-17" aria-live="polite">
+        <p class="loading-state">Loading Saturday radio schedule…</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="sunday" aria-labelledby="sunday-title">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Weekend schedules</p>
+          <h2 id="sunday-title">Sunday 18 October</h2>
+        </div>
+        <span class="section-index">02</span>
+      </div>
+      <div class="record-list record-list-grid" data-record-source="../data/radio.json" data-record-filter="radio-world-service-sportsworld-18,radio-5extra-brighton-palace-18,radio-5extra2-bournemouth-sunderland-18,radio-5live-leeds-united-man-utd-18,radio-5live-nottingham-arsenal-18" aria-live="polite">
+        <p class="loading-state">Loading Sunday radio schedule…</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="reception" aria-labelledby="reception-title">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">The signal matters</p>
+          <h2 id="reception-title">What is actually listed in Malta</h2>
+        </div>
+        <span class="section-index">03</span>
+      </div>
+      <div class="record-list" data-record-source="../data/radio.json" data-record-filter="radio-dab-malteselisting" aria-live="polite">
+        <p class="loading-state">Loading local reception notes…</p>
+      </div>
+      <div class="info-grid two-up">
+        <article class="info-card">
+          <h3>Best verified over-the-air lead</h3>
+          <p>BBC World Service appears in the Maltese DAB+ operator list, so that is the only channel in this schedule with current local terrestrial carriage evidence. The broadcaster cautions that some UK DAB receivers may use a codec that does not support Malta's DAB+ service.</p>
+          <a href="https://dab.com.mt/channels/" target="_blank" rel="noopener">Check the DAB+ channel list ↗</a>
+        </article>
+        <article class="info-card">
+          <h3>BBC Radio 5 Live / Sports Extra</h3>
+          <p>The match pages confirm UK programme schedules. They do not confirm an FM/DAB signal in Malta or that an online stream is available to a visitor outside the UK. Check BBC's own player and access terms from Malta before relying on it.</p>
+          <p class="small-note">No alternate station's named match assignment or Malta reception was verified for the remaining trip dates.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section small-section" aria-labelledby="last-check-title">
+      <h2 id="last-check-title">Before you tune in</h2>
+      <ul class="compact-list">
+        <li>Re-open the BBC programme pages for time or fixture changes.</li>
+        <li>Convert to Malta time only after checking the current local-clock offset.</li>
+        <li>Test the actual receiver/stream in Malta; a listing on a national channel page does not guarantee signal at the hotel.</li>
+        <li>Sportsworld is a live-sport program; its listing does not promise commentary on a particular match.</li>
+      </ul>
+      <p class="source-stamp">No named radio commentary was verified for 13–16 or 19 October in the official schedules reviewed. This is a research limit, not proof that no live sport will air. All sources are logged in <a href="sources.html">Sources &amp; final report</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Malta Field Guide</strong> · Personal trip-planning reference · 13–19 October 2026</p>
+      <p><a href="sources.html">Sources, unresolved questions &amp; final report</a> <span class="separator">·</span> <a href="../index.html">Back to overview</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A browser-only Malta trip expense worksheet with editable costs, an official Malta accommodation-contribution calculation and sourced price references.">
+  <meta name="theme-color" content="#102b2a">
+  <title>Expense planner | Malta Field Guide</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Malta Field Guide home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span>Malta Field Guide<small>13–19 October 2026</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Toggle navigation</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="../index.html">Overview</a>
+      <a href="transport.html">Transport</a>
+      <a href="food.html">Food &amp; cafés</a>
+      <a href="activities.html">Activities &amp; gaming</a>
+      <a href="radio.html">Live radio</a>
+      <a href="everyday.html">Practical</a>
+      <a href="expenses.html" aria-current="page">Expense planner</a>
+      <a href="sources.html">Sources &amp; report</a>
+    </nav>
+  </header>
+
+  <main id="main" class="page-shell">
+    <div class="eyebrow">Workstream F · editable planning worksheet</div>
+    <section class="hero hero-compact" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="kicker">No guessed airfare, hotel quote or exchange rate</p>
+        <h1 id="page-title">Trip expense planner</h1>
+        <p class="hero-lede">Enter amounts you know, leave the unknowns blank, and get an instant euro subtotal. This is a browser-only worksheet: it sends nothing to a server and does not save your entries after a reload.</p>
+      </div>
+      <aside class="hero-note">
+        <span class="status-pill status-info">Start with these editable assumptions</span>
+        <ul class="compact-list">
+          <li>1 traveler; edit as needed.</li>
+          <li>7 calendar trip days: 13–19 October, inclusive.</li>
+          <li>6 hotel nights assumes 13 Oct check-in and 19 Oct checkout.</li>
+          <li>Number of guests aged 18+ is not supplied; enter it to calculate the accommodation contribution.</li>
+        </ul>
+        <p class="small-note">Dates/guest count are planning defaults, not confirmed booking details.</p>
+      </aside>
+    </section>
+
+    <section class="planner-layout" aria-label="Expense calculator and summary">
+      <form id="expense-form" class="expense-form" autocomplete="off" onsubmit="return false;">
+        <div class="section-heading planner-heading">
+          <div>
+            <p class="kicker">Fill what you know</p>
+            <h2>Your out-of-pocket costs</h2>
+          </div>
+          <button class="button button-quiet" type="reset">Clear / restore defaults</button>
+        </div>
+        <p class="form-help">All money fields are total euros (€) unless they say “per person per day.” Blank means not priced yet; enter <strong>0</strong> only if it is covered or there is no cost. Add the amount you expect to pay, not an advertised price for an item you may not buy.</p>
+
+        <fieldset class="planner-fieldset">
+          <legend>Trip size</legend>
+          <div class="input-grid input-grid-compact">
+            <label class="input-label" for="trip-days">Calendar days
+              <input id="trip-days" name="tripDays" type="number" min="1" max="60" step="1" value="7" inputmode="numeric">
+              <small>Default counts 13–19 Oct inclusive.</small>
+            </label>
+            <label class="input-label" for="traveler-count">Travelers in this budget
+              <input id="traveler-count" name="travelers" type="number" min="1" max="20" step="1" value="1" inputmode="numeric">
+              <small>Used to multiply daily food spending.</small>
+            </label>
+            <label class="input-label" for="hotel-nights">Hotel nights
+              <input id="hotel-nights" name="nights" type="number" min="0" max="60" step="1" value="6" inputmode="numeric">
+              <small>Default check-in 13 Oct / check-out 19 Oct.</small>
+            </label>
+            <label class="input-label" for="adult-count">Guests aged 18+ at start of visit
+              <input id="adult-count" name="adultCount" type="number" min="0" max="20" step="1" inputmode="numeric" placeholder="Not supplied">
+              <small>No age was supplied. Enter only guests who will be 18+ at the start of the visit; this count is used for the official accommodation contribution.</small>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="planner-fieldset">
+          <legend>Core trip costs</legend>
+          <div class="input-grid">
+            <label class="input-label" for="flight-cost">Flights · total you pay (€)
+              <input id="flight-cost" name="flightCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Enter your out-of-pocket total; no route/fare has been verified.</small>
+            </label>
+            <label class="input-label" for="hotel-cost">Hotel room · total you pay (€)
+              <input id="hotel-cost" name="hotelCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Room quote and whether a third party covers it are not known.</small>
+            </label>
+            <label class="input-label" for="food-cost">Meals &amp; cafés · per person per day (€)
+              <input id="food-cost" name="foodCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Multiplied by calendar days × travelers above.</small>
+            </label>
+            <label class="input-label" for="airport-cost">Airport transfers · total (€)
+              <input id="airport-cost" name="airportCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Enter a quote/actual cost; no transfer is assumed.</small>
+            </label>
+            <label class="input-label" for="other-transit-cost">Other local transport · total (€)
+              <input id="other-transit-cost" name="otherTransitCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Cards, ferries, taxi or other costs—do not repeat bus fares entered below.</small>
+            </label>
+            <label class="input-label" for="activity-cost">Activities &amp; tickets · total (€)
+              <input id="activity-cost" name="activityCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Sum only the events/attractions you choose and can still book.</small>
+            </label>
+            <label class="input-label" for="phone-cost">Phone / roaming · total (€)
+              <input id="phone-cost" name="phoneCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Check your carrier and plan before estimating.</small>
+            </label>
+            <label class="input-label" for="insurance-cost">Travel insurance · total (€)
+              <input id="insurance-cost" name="insuranceCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Policy and medical coverage are traveler-specific.</small>
+            </label>
+            <label class="input-label" for="other-cost">Other / contingency · total (€)
+              <input id="other-cost" name="otherCost" type="number" min="0" step="0.01" inputmode="decimal" placeholder="Not priced">
+              <small>Cash, card fees, shopping or an allowance you choose.</small>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="planner-fieldset">
+          <legend>Optional bus-fare range</legend>
+          <p class="fieldset-note">MPT's current page lists €2.00 winter and €2.50 summer day-service single fares, each valid two hours; its dated winter season ends in June. The October 2026 seasonal fare is not confirmed. This estimate excludes passes, airport-direct services and taxi trips.</p>
+          <div class="input-grid input-grid-compact">
+            <label class="input-label" for="bus-rides">Separately paid day-service single journeys
+              <input id="bus-rides" name="busRides" type="number" min="0" max="500" step="1" inputmode="numeric" placeholder="Not priced">
+              <small>Enter 0 only if none; if using a pass instead, leave blank and enter its cost above.</small>
+            </label>
+            <div class="range-preview" id="bus-range-preview" aria-live="polite">Range: not included until you enter a journey count.</div>
+          </div>
+        </fieldset>
+
+        <fieldset class="planner-fieldset">
+          <legend>Accommodation contribution</legend>
+          <p class="fieldset-note">MTA's rate effective 1 July 2026 is €1.50 per night for each guest aged 18+ at the start of the visit, capped at €22.50 per person per visit. The MTA says it must be itemized separately. This planner assumes the licensed-hotel charge is your cost until you confirm otherwise.</p>
+          <label class="check-label" for="include-contribution">
+            <input id="include-contribution" name="includeContribution" type="checkbox" checked>
+            Include the calculated contribution in my subtotal
+          </label>
+          <p id="contribution-preview" class="range-preview" aria-live="polite">Enter the number of eligible guests aged 18+ to calculate this contribution; no age is assumed.</p>
+        </fieldset>
+
+        <fieldset class="planner-fieldset">
+          <legend>Optional USD comparison</legend>
+          <label class="input-label input-label-narrow" for="usd-rate">Your chosen exchange rate · USD per €1
+            <input id="usd-rate" name="usdRate" type="number" min="0" step="0.0001" inputmode="decimal" placeholder="Leave blank for EUR only">
+            <small>No exchange rate is supplied or assumed; use your card/bank rate if useful.</small>
+          </label>
+        </fieldset>
+      </form>
+
+      <aside class="planner-summary" aria-labelledby="summary-title">
+        <div class="summary-card">
+          <p class="kicker">Updates as you type</p>
+          <h2 id="summary-title">Your working subtotal</h2>
+          <p id="expense-total" class="expense-total" aria-live="polite">—</p>
+          <p id="expense-caption" class="summary-caption">Subtotal includes only entered amounts, the entered bus range (if any), and the checked contribution estimate.</p>
+          <div id="expense-breakdown" class="expense-breakdown" aria-live="polite"></div>
+          <div class="missing-costs">
+            <h3>Still unpriced</h3>
+            <p id="missing-costs">Flights, hotel, meals, airport transfer, local transport, activities, phone, insurance, other costs and bus rides.</p>
+          </div>
+          <p id="usd-total" class="usd-total" hidden></p>
+          <p class="summary-warning"><strong>Not a complete trip estimate yet.</strong> Blank costs are excluded, not treated as free. Check quotes, coverage, bus fares and ticket availability before relying on a total.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="content-section" aria-labelledby="cost-anchors-title">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Dated source snapshots</p>
+          <h2 id="cost-anchors-title">Useful verified price anchors</h2>
+        </div>
+        <span class="section-index">01</span>
+      </div>
+      <p>These are published examples, not a personal itinerary or a forecast total. Prices can change; event ticket availability and the access caveats below remain important. Copy chosen costs into the calculator above.</p>
+      <div class="record-list record-list-grid" data-record-source="../data/expenses.json" aria-live="polite">
+        <p class="loading-state">Loading sourced cost references…</p>
+      </div>
+    </section>
+
+    <section class="content-section small-section" aria-labelledby="method-title">
+      <h2 id="method-title">What this total does—and does not—mean</h2>
+      <ul class="compact-list">
+        <li>All totals are in euros. The optional USD view uses only a rate you type; no live rate is fetched.</li>
+        <li>The environmental contribution estimate is per eligible adult, per night, capped per person per visit; untick it if confirmed covered or not applicable.</li>
+        <li>The bus calculator multiplies separately paid day-service rides by the currently published €2.00–€2.50 seasonal range. October's applicable rate is unresolved; a card/pass or direct service may price differently.</li>
+        <li>There is no airfare, hotel room quote, taxi quote, meal budget, insurance quote, exchange rate or assumed prize coverage in this worksheet.</li>
+        <li>Amounts are processed only in this page's browser session; refreshing resets the form.</li>
+      </ul>
+      <p class="source-stamp">Official price claims, date checked, and unresolved details are logged in <a href="sources.html">Sources &amp; final report</a> and <a href="sources.html#open-questions">Open questions</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Malta Field Guide</strong> · Personal trip-planning reference · 13–19 October 2026</p>
+      <p><a href="sources.html">Sources, unresolved questions &amp; final report</a> <span class="separator">·</span> <a href="../index.html">Back to overview</a></p>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const form = document.getElementById('expense-form');
+      if (!form) return;
+
+      const fields = {
+        days: document.getElementById('trip-days'),
+        travelers: document.getElementById('traveler-count'),
+        nights: document.getElementById('hotel-nights'),
+        adults: document.getElementById('adult-count'),
+        airfare: document.getElementById('flight-cost'),
+        hotel: document.getElementById('hotel-cost'),
+        meals: document.getElementById('food-cost'),
+        airport: document.getElementById('airport-cost'),
+        transit: document.getElementById('other-transit-cost'),
+        activities: document.getElementById('activity-cost'),
+        phone: document.getElementById('phone-cost'),
+        insurance: document.getElementById('insurance-cost'),
+        other: document.getElementById('other-cost'),
+        rides: document.getElementById('bus-rides'),
+        contribution: document.getElementById('include-contribution'),
+        usdRate: document.getElementById('usd-rate')
+      };
+
+      const money = (value) => new Intl.NumberFormat('en-IE', {
+        style: 'currency', currency: 'EUR', minimumFractionDigits: 2, maximumFractionDigits: 2
+      }).format(value);
+      const read = (input) => input.value.trim() === '' ? null : Number(input.value);
+      const safeCount = (input) => Math.max(0, Number(input.value) || 0);
+      const labels = {
+        airfare: 'Flights', hotel: 'Hotel room', meals: 'Meals & cafés', airport: 'Airport transfers',
+        transit: 'Other local transport', activities: 'Activities & tickets', phone: 'Phone / roaming',
+        insurance: 'Travel insurance', other: 'Other / contingency', rides: 'Bus journey count'
+      };
+
+      function update() {
+        const days = safeCount(fields.days);
+        const travelers = safeCount(fields.travelers);
+        const nights = safeCount(fields.nights);
+        const adultCountValue = read(fields.adults);
+        const adults = adultCountValue === null ? 0 : Math.max(0, adultCountValue);
+        const rideCount = read(fields.rides);
+        const busLow = rideCount === null ? 0 : Math.max(0, rideCount) * 2;
+        const busHigh = rideCount === null ? 0 : Math.max(0, rideCount) * 2.5;
+        const contributionValue = adultCountValue === null ? null : Math.min(nights * 1.5, 22.5) * adults;
+        const entered = {};
+        Object.keys(labels).forEach((key) => {
+          entered[key] = read(fields[key]);
+        });
+
+        const fixed = ['airfare', 'hotel', 'airport', 'transit', 'activities', 'phone', 'insurance', 'other']
+          .reduce((sum, key) => sum + (entered[key] === null ? 0 : Math.max(0, entered[key])), 0);
+        const mealsTotal = entered.meals === null ? 0 : Math.max(0, entered.meals) * days * travelers;
+        const contributionTotal = fields.contribution.checked && contributionValue !== null ? contributionValue : 0;
+        const low = fixed + mealsTotal + busLow + contributionTotal;
+        const high = fixed + mealsTotal + busHigh + contributionTotal;
+        const formatter = (n) => money(n);
+        const hasAnyKnownCost = Object.keys(labels).some((key) => entered[key] !== null) ||
+          (fields.contribution.checked && contributionValue !== null);
+        const totalNode = document.getElementById('expense-total');
+        totalNode.textContent = !hasAnyKnownCost ? '—' :
+          (rideCount === null || busLow === busHigh ? formatter(low) : `${formatter(low)}–${formatter(high)}`);
+        document.getElementById('expense-caption').textContent = hasAnyKnownCost
+          ? 'Subtotal includes only entered amounts, the entered bus range (if any), and the checked contribution estimate.'
+          : 'No cost amounts are priced yet. Blank fields are excluded, and no guest age is assumed for the accommodation contribution.';
+
+        const parts = [];
+        if (entered.airfare !== null) parts.push(`Flights ${formatter(Math.max(0, entered.airfare))}`);
+        if (entered.hotel !== null) parts.push(`Hotel ${formatter(Math.max(0, entered.hotel))}`);
+        if (entered.meals !== null) parts.push(`Meals ${formatter(mealsTotal)} (${days} days × ${travelers} traveler${travelers === 1 ? '' : 's'})`);
+        if (entered.airport !== null) parts.push(`Airport transfer ${formatter(Math.max(0, entered.airport))}`);
+        if (entered.transit !== null) parts.push(`Other transit ${formatter(Math.max(0, entered.transit))}`);
+        if (entered.activities !== null) parts.push(`Activities ${formatter(Math.max(0, entered.activities))}`);
+        if (entered.phone !== null) parts.push(`Phone ${formatter(Math.max(0, entered.phone))}`);
+        if (entered.insurance !== null) parts.push(`Insurance ${formatter(Math.max(0, entered.insurance))}`);
+        if (entered.other !== null) parts.push(`Other ${formatter(Math.max(0, entered.other))}`);
+        if (rideCount !== null) parts.push(`Bus fares ${formatter(busLow)}–${formatter(busHigh)} (${Math.max(0, rideCount)} rides × €2.00–€2.50)`);
+        if (fields.contribution.checked && contributionValue !== null) parts.push(`Accommodation contribution estimate ${formatter(contributionValue)}`);
+        if (fields.contribution.checked && contributionValue === null) parts.push('Accommodation contribution: enter eligible guest count to calculate; not included yet.');
+        if (!parts.length) parts.push('No user-entered trip costs yet.');
+        document.getElementById('expense-breakdown').textContent = parts.join(' · ');
+
+        const missing = Object.keys(labels)
+          .filter((key) => entered[key] === null)
+          .map((key) => labels[key]);
+        if (fields.contribution.checked && adultCountValue === null) missing.push('eligible guest count for the accommodation contribution');
+        document.getElementById('missing-costs').textContent = missing.length
+          ? missing.join(', ') + (fields.contribution.checked ? '' : ', accommodation contribution (excluded)')
+          : (fields.contribution.checked ? 'All cost fields have an entry; verify prices and coverage.' : 'All cost fields have an entry; accommodation contribution is excluded until confirmed.');
+
+        const busPreview = document.getElementById('bus-range-preview');
+        busPreview.textContent = rideCount === null
+          ? 'Range: not included until you enter a journey count.'
+          : `Planning range: ${formatter(busLow)}–${formatter(busHigh)} for ${Math.max(0, rideCount)} separately paid day-service journey${Math.max(0, rideCount) === 1 ? '' : 's'} (October rate unconfirmed).`;
+
+        document.getElementById('contribution-preview').textContent = adultCountValue === null
+          ? `Enter the number of eligible guests aged 18+ to calculate this contribution; no age is assumed. ${fields.contribution.checked ? 'It is not added until calculated.' : 'It is excluded from the subtotal.'}`
+          : `Estimated contribution: ${formatter(contributionValue)} (${adults} guest${adults === 1 ? '' : 's'} aged 18+ × ${nights} night${nights === 1 ? '' : 's'}, capped at €22.50 per person). ${fields.contribution.checked ? 'Included.' : 'Not included in subtotal.'}`;
+
+        const rate = read(fields.usdRate);
+        const usdNode = document.getElementById('usd-total');
+        if (rate !== null && rate > 0) {
+          const usd = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2 });
+          usdNode.hidden = false;
+          usdNode.textContent = `Optional conversion at your entered rate: ${usd.format(low * rate)}${low === high ? '' : `–${usd.format(high * rate)}`} (USD per €1 = ${rate}).`;
+        } else {
+          usdNode.hidden = true;
+          usdNode.textContent = '';
+        }
+      }
+
+      form.addEventListener('input', update);
+      form.addEventListener('change', update);
+      form.addEventListener('submit', (event) => event.preventDefault());
+      form.addEventListener('reset', () => window.setTimeout(update, 0));
+      update();
+    })();
+  </script>
+</body>
+</html>
