@@ -39,7 +39,7 @@ All 24 unresolved items and proposed evidence/actions are recorded in `docs/OPEN
 - JSDOM exercised shared navigation, data rendering, search/filtering and expense interactions at a 390 px viewport; it is not a real-device visual/accessibility audit.
 - The current source inventory flags direct-access failures and platform limitations. WorldDAB is an industry directory rather than the local DAB operator; hotel indoor radio reception has not been measured.
 - No actual booking, flight itinerary, tournament ticket, attendance schedule, roaming plan, medicine list, exchange rate, taxes/tips or supplier quotes are inferred.
-- GitHub Pages is configured to publish `main` from the repository root. The offline integration gate does not observe the live Pages build or guarantee actual browser rendering; recheck publication and appearance after future content changes.
+- GitHub Pages is configured to publish `main` from the repository root; the GitHub Pages API reported the post-merge build for `c4a33ec` as `built`. This confirms the build state, not the live browser rendering, external link liveness or real-device appearance; recheck after future content changes.
 - This guide is a personal planning aid, not legal, tax, medical or immigration advice, a live dispatch service, or a guarantee of availability or access.
 
 ## Verification record
