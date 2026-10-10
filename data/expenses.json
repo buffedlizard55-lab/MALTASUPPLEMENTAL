@@ -1,7 +1,7 @@
 {
   "topic": "expenses",
   "title": "Quick-fill Malta expense planner",
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-10",
   "intro": "A blank-by-default planner for 13–19 October 2026. Enter full trip/party amounts in euros (€) consistently; no flight, hotel, meal, fare, ticket, or reimbursement amount has been assumed.",
   "records": [
     {
@@ -36,18 +36,18 @@
     },
     {
       "id": "hotel-separate-charges",
-      "name": "Hotel taxes, deposits, or other separately billed charges",
+      "name": "Hotel taxes, environmental contribution, deposits, or other separately billed charges",
       "category": "Travel & bookings",
       "area": "Qawra",
       "address": "AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Malta",
       "hours": "Not applicable",
-      "price range": "Not published; enter only if separately billed",
-      "description": "Optional line for charges shown separately on the confirmed hotel invoice. Do not duplicate amounts already included in the accommodation total.",
-      "source_url": "https://axhotelsmalta.com/odycy/",
+      "price range": "Environmental contribution: €1.50 per person per night for guests aged 18+, from 1 July 2026; maximum €22.50 per person per visit. Six chargeable nights would be €9 per eligible adult.",
+      "description": "Optional line for charges shown separately on the confirmed hotel invoice. The Malta Tourism Authority states an environmental contribution of €1.50 per night per person aged 18 or over from 1 July 2026, capped at €22.50 per person per visit. A six-night stay would be €9 per eligible adult only if all six nights are billable; this is a conditional calculation, not the traveler’s confirmed amount. Do not duplicate amounts already included in the accommodation total.",
+      "source_url": "https://mta.com.mt/services/environmental-contribution/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
-      "confidence": "unverified",
-      "notes": "No tax, deposit, or fee amount is assumed. Confirm which items are included in the booking before entering a separate amount."
+      "date_checked": "2026-10-10",
+      "confidence": "partially verified",
+      "notes": "MTA’s published rate, age threshold, per-person cap and effective date were checked 10 Oct 2026. The MTA says the contribution must appear as a separate item on the invoice/fiscal receipt. Whether anything is due on this booking depends on actual billable nights, guest ages and the hotel’s invoice; see OQ-23 in docs/OPEN_QUESTIONS.md. No personalized amount has been prefilled."
     },
     {
       "id": "travel-insurance",
