@@ -23,7 +23,7 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 
 ## Key findings and limits
 
-- **Event and venue:** official Thunderpick sources list the Group Stage and Playoffs dates. The BLAST guide supplies venue/address corroboration only; public spectator access, ticket arrangements, door times, and event-day entrance instructions were not confirmed.
+- **Event and venue:** the official Thunderpick page lists the 12–19 October event window and Malta as its location. The Thunderpick release names BLAST Studios Malta; MFCC/Ta’ Qali is venue-area context from a BLAST guide for a different event, not a confirmed TWC address/pin. Public spectator access, ticket arrangements, door times, and the event-day entrance remain unconfirmed.
 - **Event-day transit:** Route 186 is the leading public-bus corridor between Qawra and Ta’ Qali; Route 214 is an alternate to compare. MPT’s static listing shows Qawra stop 952 at 06:10–21:38. The normal Rabat-to-Buġibba return runs via St Paul’s Bay/Buġibba, not the Qawra seafront, with a final listed arrival at Buġibba Bay 1 at 21:26—this is not a guaranteed hotel return. MPT also lists a 17 October evening diversion (19:00 to approximately midnight); confirm the exact stops, walking segments, live timetable, and detour impact close to travel.
 - **Radio:** NET FM is listed at FM 101 MHz and has recurring weekend sports shows; its grid does not explicitly state a time zone. Malta’s DAB+ directory lists Radio Sportiva and BBC World Service. WorldDAB lists BBC World Service on Digi B Network block 6A at 181.936 MHz, but reception at the hotel/event venue is untested and Radio Sportiva’s current block/frequency was not found. No radio carriage of the TWC, Gżira United–Mosta, or Rolex Middle Sea Race was confirmed.
 - **Hotel environmental contribution:** Malta Tourism Authority guidance checked 10 October states €1.50 per night per person aged 18+ from 1 July 2026, capped at €22.50 per eligible person per visit. Six chargeable nights would be €9 per eligible adult, conditionally; actual billable nights, guest ages, and the hotel invoice determine the amount. The planner does not prefill a personal charge.
@@ -38,7 +38,7 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 - [`docs/STATUS.md`](docs/STATUS.md) — workstream progress and blockers.
 - [`docs/HANDOFF.md`](docs/HANDOFF.md) — cross-workstream discoveries and follow-ups.
 - [`docs/PLAN.md`](docs/PLAN.md) — scope, ownership, and verification plan.
-- [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions; topic records use the exact common key `price_range`.
+- [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions; topic records use the exact requested common key `price range`.
 - [`data/record.schema.json`](data/record.schema.json) — canonical machine-readable schema for the exact 13 fields.
 
 ## Build, preview, and deployment
