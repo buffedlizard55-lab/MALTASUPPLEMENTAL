@@ -1,46 +1,72 @@
-# Malta Field Guide
+# Malta Trip Companion
 
-A clean, mobile-friendly, source-led tourism and recreation guide for the requested Malta trip scenario:
+A mobile-friendly, source-linked static guide and editable expense planner for the supplied **13–19 October 2026** stay at **AX ODYCY Malta, Qawra**.
 
-- **Dates:** 13–19 October 2026
-- **Base:** AX ODYCY, Deluxe sea-view room, Qawra Coast Road, Qawra SPB 1902
-- **Trip topics:** transport (including event-day planning for BLAST Arena Studios / Ta’ Qali), food and cafés, gaming, landmarks and events, U.S.-traveler practicalities, scheduled live sports radio, an editable expense planner, sources, open questions and a final report.
+> **Trip facts supplied for planning:** AX ODYCY Malta, Qawra Coast Road, Qawra SPB 1902; travel window 13–19 October 2026. Those seven calendar dates equal six hotel nights only if the booking is check-in on 13 October and check-out on 19 October. Flight details, arrival/departure times, traveler count, confirmed tournament attendance and room total were not supplied.
 
-The hotel and trip details above are the user's brief—not proof of a reservation, airfare, coverage or personal itinerary.
+## Executive summary
 
-## Start here
+The site brings the trip's practical research into six focused topics: transport, food and cafés, activities and landmarks, everyday U.S.-traveler guidance, scheduled live-sport radio, and a quick-fill expense planner. Topic pages show structured records with source links, source types, check dates, confidence labels and caveats. Unknown hours, prices, access rules and schedules are identified rather than filled in with guesses.
 
-- [`index.html`](index.html) — executive summary, dated trip overview and guide navigation
-- [`pages/transport.html`](pages/transport.html) — airport and Qawra/Ta’ Qali transport notes, live-planner checks and fare caveats
-- [`pages/food.html`](pages/food.html) — source-linked food, cafés and review-source limitations
-- [`pages/activities.html`](pages/activities.html) — gaming, attractions, landmarks and dated events
-- [`pages/radio.html`](pages/radio.html) — official BBC live-sport schedules, Malta-time conversions and reception caveats
-- [`pages/everyday.html`](pages/everyday.html) — entry systems, money, phone, power, health, safety and weather
-- [`pages/expenses.html`](pages/expenses.html) — browser-only EUR expense worksheet with optional user-entered USD conversion
-- [`pages/sources.html`](pages/sources.html) — claim-level source register, unresolved questions, limitations and next steps
-- [`docs/FINAL_REPORT.md`](docs/FINAL_REPORT.md) — detailed final report, review-pass results, limitations and traveler next steps
+The event-day transport page compares public and private options and identifies routes to check in the official operator planner. It is not a confirmed door-to-door itinerary: session times, the event-specific public entrance, the best hotel-side stop and the effect of the 17–18 October route notice still need date- and time-specific verification. The event page likewise does not establish spectator access or ticket terms.
+
+The expense planner begins with blank, editable lines. It does not assume a meal allowance, taxi price, exchange rate, tax, tip, event attendance, payment or outside coverage. Optional published fare/admission references are not added unless selected. Planner entries stay in the current browser on the current device; they are not uploaded or synced.
+
+## Browse the guide
+
+| Topic | Page | What's there |
+|---|---|---|
+| Overview | [Trip summary](index.html) | Trip facts, the six topic links, priority caveats and research registers |
+| Transport | [Getting around](pages/transport.html) | Airport options, local transport and event-day route comparisons; live timetable and access limitations |
+| Food | [Food and cafés](pages/food.html) | Qawra-area options, venue details and separately dated review-platform signals |
+| Activities | [Activities and sights](pages/activities.html) | Landmarks, gaming leads and dated event listings with access/availability caveats |
+| Everyday travel | [Practical guidance](pages/everyday.html) | Source-linked U.S.-traveler, entry, money, phone, health, weather and local-practice checks |
+| Radio | [Scheduled live-sport radio](pages/radio.html) | Officially listed broadcasts during the trip, Malta-local time calculations and reception limits |
+| Budget | [Expense planner](pages/expenses.html) | Editable itinerary lines, totals, optional user-entered USD conversion, local saving, CSV and print |
+| Evidence | [Sources and open questions](sources.html) | How evidence is recorded, checked and qualified |
 
 ## Evidence and limitations
 
-Research snapshots were checked on **9 October 2026**. Schedules, fares, event access, menus, prices, opening hours, border procedures and weather can change; recheck current operator/government pages before relying on them. TWC-specific public spectator access, a confirmed event entrance, exact event-day bus/return journey, and booking/coverage details are unresolved. Unverified details are marked; this guide does not guess them.
+- The topic records are in `data/*.json`; the pages under `pages/` render from those records. Each record follows the common fields in [`data/schema.md`](data/schema.md), including the exact `price range` key. Follow the source links on each record for the original evidence.
+- The full source register is [`docs/SOURCES.md`](docs/SOURCES.md); unresolved decisions and source gaps are in [`docs/OPEN_QUESTIONS.md`](docs/OPEN_QUESTIONS.md). Cross-topic findings are in [`docs/HANDOFF.md`](docs/HANDOFF.md), and progress is in [`docs/STATUS.md`](docs/STATUS.md).
+- Research is a dated snapshot, checked **9 October 2026**. Fares, hours, event listings, border/entry requirements, weather and schedules can change. Re-open the linked official operator, organizer or government source before booking or travelling.
+- Some requested review/social platforms or operator subpages could not be accessed. Those limits and conflicts are stated in the relevant records and open-question register; inaccessible information is not treated as confirmed.
+- This is a trip-planning aid, not live dispatch, a booking service, legal/tax/medical/immigration advice, or a guarantee of event access, radio reception or venue availability.
 
-The expense worksheet runs in the visitor's browser and does not send or persist entered amounts. Blank costs are shown as unpriced rather than free. It does not invent airfare, hotel, meal, taxi, insurance or foreign-exchange prices.
+## Verify and run locally
 
-The requested review platforms were also researched. Direct access was limited or blocked on several services; the exact evidence and limitations are documented in [`docs/SOURCES.md`](docs/SOURCES.md) and on the report page. Lack of access is not treated as proof that reviews or services do not exist.
+Run the portable offline integration gate from the repository root:
 
-This is a planning reference, not immigration, legal, tax, medical, insurance or financial advice.
+```bash
+python3 scripts/verify_site.py
+```
 
-## How the site works
+It checks the JSON contract, source/question references, date and expense arithmetic, local paths/fragments, responsive-shell markers and compatibility redirects. It does not test external link liveness or replace a real-device visual review.
 
-This is a dependency-free static site. Topic data lives in `data/*.json`; each record follows the shared schema documented in [`docs/SCHEMA.md`](docs/SCHEMA.md). The serial work plan and ownership boundaries are in [`docs/PLAN.md`](docs/PLAN.md). Topic pages in `pages/` use a small shared renderer in `js/site.js` and the responsive stylesheet in `css/style.css`. The expense calculator is local to its page. After editing source or open-question logs, regenerate their embedded page snapshot with `python3 scripts/build_sources_page.py`; run `python3 scripts/verify_site.py` for local integration checks.
+The site uses plain HTML, CSS and JavaScript without a build step or package dependencies. Serve the repository root over HTTP so the topic pages can fetch their JSON data:
 
-To preview from the repository root, run a static HTTP server (for example `python3 -m http.server 8000 --bind 0.0.0.0`) and open the root page. The JSON renderer requires HTTP(S), not a `file://` URL.
+```bash
+python3 -m http.server 8000
+```
 
-To publish with GitHub Pages, select the `main` branch and repository root (`/`) as the Pages source after the pull request has been merged. The expected project-site URL is `https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/`; publication was not assumed by this repository content.
+Then open `http://localhost:8000/`. Do not open the data-driven pages as `file://` URLs. GitHub Pages can serve the same static site from the repository root.
 
-## Updating claims
+## Repository layout
 
-1. Recheck the primary source and record its URL, access date and scope in `docs/SOURCES.md`.
-2. Update the appropriate topic JSON record and its page wording together; use the shared fields and confidence values exactly.
-3. Put unresolved details in `docs/OPEN_QUESTIONS.md` and cross-topic dependencies in `docs/HANDOFF.md`.
-4. Update `docs/STATUS.md` and repeat the integrated link, mobile, accessibility, data/page and factual review passes.
+```text
+index.html                 Executive summary
+pages/                     Six topic pages
+data/                      Structured research and planner starter data
+  schema.md                Common topic-record schema
+css/style.css              Responsive shared visual system
+js/site.js                 Shared navigation and data renderer
+scripts/verify_site.py     Offline integration gate (standard library only)
+docs/PLAN.md               Scope, schema, ownership and review passes
+docs/SCHEMA.md             Shared schema overview
+docs/SOURCES.md            Source and verification log
+docs/OPEN_QUESTIONS.md     Unresolved items and next actions
+docs/HANDOFF.md            Cross-workstream research handoffs
+docs/STATUS.md             Workstream progress
+```
+
+Legacy top-level topic URLs are retained as small redirects to the current pages; outdated prize/legal content is not part of this travel companion.

@@ -3,15 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex">
-  <meta http-equiv="refresh" content="0; url=pages/sources.html">
-  <link rel="canonical" href="pages/sources.html">
-  <title>Sources & final report | Malta Field Guide</title>
+  <meta name="description" content="How the Malta Trip Companion records sources, confidence, access limitations and unresolved questions for the 13–19 October 2026 trip.">
+  <title>Sources &amp; Verification · Malta Trip Companion</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <main>
-    <h1>This page has moved</h1>
-    <p>The legacy page has been replaced by the source-led Malta Field Guide. Continue to <a href="pages/sources.html">Sources & final report</a>.</p>
+<body data-root=".">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="site-header"></header>
+
+  <main id="main-content" class="page page-narrow">
+    <p class="eyebrow">Evidence · limitations · next checks</p>
+    <h1 class="page-title">Sources and verification</h1>
+    <p class="page-intro">Research snapshot checked on 9 October 2026. Use the source links on each topic record to inspect the original listing; check volatile details again before paying, booking or travelling.</p>
+
+    <div class="callout">
+      <p><strong>Where evidence appears:</strong> topic pages are built from structured JSON records. Each card shows a source link, source type, checked date, confidence label and notes. The source register connects individual claims to their evidence; the open-questions register records information that is missing, conflicting or personal to the traveler.</p>
+    </div>
+
+    <h2>Evidence registers</h2>
+    <p>These registers are maintained in the repository. Open the rendered file view on GitHub, or the source Markdown file when browsing a local checkout.</p>
+    <div class="grid">
+      <article class="card" id="source-register">
+        <p class="card-kicker">Claim-by-claim record</p>
+        <h3>Source log</h3>
+        <p>Source IDs, supported claims, URLs, source types, access dates and verification notes.</p>
+        <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/SOURCES.md" target="_blank" rel="noopener noreferrer">View the source log on GitHub</a> · <a href="docs/SOURCES.md">Open repository file</a></p>
+      </article>
+      <article class="card" id="open-questions">
+        <p class="card-kicker">Unknowns and conflicts</p>
+        <h3>Open questions</h3>
+        <p>Each item identifies its impact, evidence needed, owner and current status.</p>
+        <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/OPEN_QUESTIONS.md" target="_blank" rel="noopener noreferrer">View open questions on GitHub</a> · <a href="docs/OPEN_QUESTIONS.md">Open repository file</a></p>
+      </article>
+      <article class="card" id="handoff">
+        <p class="card-kicker">Cross-topic findings</p>
+        <h3>Workstream handoff</h3>
+        <p>Relevant leads that another topic must verify before using as a claim.</p>
+        <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/HANDOFF.md" target="_blank" rel="noopener noreferrer">View handoff notes on GitHub</a> · <a href="docs/HANDOFF.md">Open repository file</a></p>
+      </article>
+      <article class="card" id="status">
+        <p class="card-kicker">Build and review progress</p>
+        <h3>Project status</h3>
+        <p>Completed research, test coverage, integration work and remaining checks.</p>
+        <p><a href="https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/docs/STATUS.md" target="_blank" rel="noopener noreferrer">View project status on GitHub</a> · <a href="docs/STATUS.md">Open repository file</a></p>
+      </article>
+    </div>
+
+    <h2>How to read the topic records</h2>
+    <ul>
+      <li><strong>Source type:</strong> <code>official</code> means a venue, operator, organizer, broadcaster or public authority; <code>map</code>, <code>review</code> and <code>social</code> distinguish other evidence rather than elevating it to official confirmation.</li>
+      <li><strong>Confidence:</strong> <code>verified</code> applies to the specific claim supported by the linked evidence; <code>partially verified</code> signals that a detail or condition remains open; <code>unverified</code> marks a lead that should not be treated as a confirmed service, price or schedule.</li>
+      <li><strong>Unknown values:</strong> missing hours, addresses, costs and schedules are left blank or explicitly identified as not published/not verified. A planner blank is not a zero-cost claim.</li>
+      <li><strong>Conflicts and access limits:</strong> differing listings, unavailable platforms, incomplete schedules, and untested reception are disclosed in the relevant records and registers. They are not resolved by guessing or averaging.</li>
+      <li><strong>Point-in-time facts:</strong> prices, hours, review counts, weather, event status, transport and entry rules can change. Confirm with the original source close to the date of use.</li>
+    </ul>
+
+    <h2>Browse the underlying data</h2>
+    <div class="grid">
+      <a class="card" href="data/transport.json"><h3>Transport data</h3><p>Route, airport, fare and mobility records.</p></a>
+      <a class="card" href="data/food.json"><h3>Food data</h3><p>Venue facts and separate platform snapshots.</p></a>
+      <a class="card" href="data/activities.json"><h3>Activities data</h3><p>Attractions, gaming leads and event records.</p></a>
+      <a class="card" href="data/everyday.json"><h3>Everyday travel data</h3><p>Practical guidance and traveler-specific caveats.</p></a>
+      <a class="card" href="data/radio.json"><h3>Radio data</h3><p>Scheduled broadcasts and Malta reception notes.</p></a>
+      <a class="card" href="data/expenses.json"><h3>Expense planner data</h3><p>Blank starter lines and optional source-linked price references.</p></a>
+    </div>
+
+    <p class="small">The trip details in the overview were supplied by the traveler. They do not imply a confirmed hotel booking, flight schedule, tournament attendance or spectator access. For the trip guide, return to the <a href="index.html">overview</a>.</p>
   </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

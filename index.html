@@ -3,228 +3,97 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A source-led, mobile-friendly tourism and recreation guide for a Malta stay based in Qawra, 13–19 October 2026.">
-  <meta name="theme-color" content="#102b2a">
-  <title>Malta Field Guide | Qawra · 13–19 October 2026</title>
+  <meta name="description" content="A source-linked, mobile-friendly Malta trip companion for 13–19 October 2026: transport, food, activities, everyday travel, live-sport radio and an editable expense planner.">
+  <title>Malta Trip Companion · 13–19 October 2026</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/site.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Malta Field Guide home">
-      <span class="brand-mark" aria-hidden="true">M</span>
-      <span>Malta Field Guide<small>13–19 October 2026</small></span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-      <span class="sr-only">Toggle navigation</span><span aria-hidden="true">☰</span>
-    </button>
-    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-      <a href="index.html" aria-current="page">Overview</a>
-      <a href="pages/transport.html">Transport</a>
-      <a href="pages/food.html">Food &amp; cafés</a>
-      <a href="pages/activities.html">Activities &amp; gaming</a>
-      <a href="pages/radio.html">Live radio</a>
-      <a href="pages/everyday.html">Practical</a>
-      <a href="pages/expenses.html">Expense planner</a>
-      <a href="pages/sources.html">Sources &amp; report</a>
-    </nav>
-  </header>
+<body data-root=".">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="site-header"></header>
 
-  <main id="main" class="page-shell home-shell">
-    <div class="eyebrow">Malta · Mediterranean field guide</div>
-    <section class="hero hero-home" aria-labelledby="page-title">
-      <div class="hero-copy">
-        <p class="kicker">A practical guide, built from checked sources</p>
-        <h1 id="page-title">Qawra as your base.<br>Malta at your pace.</h1>
-        <p class="hero-lede">Tourism, food, transport, gaming, events and everyday essentials for 13–19 October 2026—with an honest line between what is scheduled and what still needs confirmation.</p>
-        <div class="button-row">
-          <a class="button button-primary" href="pages/expenses.html">Open the expense planner <span aria-hidden="true">→</span></a>
-          <a class="button button-secondary" href="pages/transport.html#event-route">Plan the Ta’ Qali trip <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-      <aside class="hero-note home-stay" id="trip-base" aria-label="Requested trip base">
-        <span class="status-pill status-info">Trip brief</span>
-        <h2>AX ODYCY</h2>
-        <p><strong>Deluxe sea-view room</strong><br>Qawra Coast Road, Qawra SPB 1902</p>
-        <p>These are the requested trip details—not confirmation of a hotel booking or what is included in the rate.</p>
-        <p class="small-note">Base: Qawra · Malta local time: CEST (UTC+2) during the trip</p>
-      </aside>
-    </section>
-
-    <section class="callout callout-warning priority-callout" aria-labelledby="priority-title">
-      <div class="callout-icon" aria-hidden="true">!</div>
-      <div>
-        <p class="kicker">Read this first</p>
-        <h2 id="priority-title">Thunderpick spectator access is not confirmed</h2>
-        <p>The organizer lists a Malta LAN, group stage 14–16 October and playoffs 17–18 October. It does <strong>not</strong> currently confirm public admission, tickets, match start times, a TWC-specific entrance or public venue details. BLAST's MFCC address listing is for a different 2026 event. Confirm with the organizer before travelling to Ta’ Qali.</p>
-        <a href="pages/activities.html#dated-events">See event evidence &amp; caveats ↗</a>
-        <span class="separator">·</span>
-        <a href="pages/transport.html#event-route">See event-day transport checks ↗</a>
+  <main id="main-content" class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Malta · 13–19 October 2026</p>
+      <h1 id="page-title">A practical trip companion for Qawra</h1>
+      <p>Source-linked planning for getting around, finding food, choosing activities, handling everyday travel details, checking scheduled sports radio and building an itinerary budget—without filling missing facts by guesswork.</p>
+      <div class="hero-actions">
+        <a class="button" href="pages/expenses.html">Open the expense planner</a>
+        <a class="button-secondary" href="pages/transport.html">Plan transport</a>
       </div>
     </section>
 
-    <section class="content-section" aria-labelledby="summary-title">
-      <div class="section-heading">
-        <div>
-          <p class="kicker">Executive summary</p>
-          <h2 id="summary-title">The essentials in one minute</h2>
-        </div>
-        <span class="section-index">01</span>
+    <section aria-labelledby="trip-basics">
+      <h2 id="trip-basics">Trip basics</h2>
+      <div class="callout">
+        <p><strong>Hotel supplied for this plan:</strong> AX ODYCY Malta, Qawra Coast Road, Qawra SPB 1902.</p>
+        <p><strong>Dates supplied:</strong> 13–19 October 2026 (seven calendar dates). Six hotel nights applies only if the reservation is check-in on 13 October and check-out on 19 October. The booking, room total, flight details, arrival/departure times, traveler count and tournament sessions to attend have not been supplied.</p>
       </div>
-      <div class="summary-grid">
-        <article class="summary-tile summary-alert">
-          <span class="summary-icon" aria-hidden="true">↔</span>
-          <h3>Ta’ Qali transport</h3>
-          <p>Route 186 is scheduled every 30 minutes between Qawra and Ta’ Qali; it is the strongest bus candidate, not a confirmed TWC transfer. Verify the entrance, return and 17 October detour.</p>
-          <a href="pages/transport.html">Live-check the route ↗</a>
-        </article>
-        <article class="summary-tile">
-          <span class="summary-icon" aria-hidden="true">€</span>
-          <h3>Fare boundary</h3>
-          <p>MPT currently shows €2 winter / €2.50 summer day fares; its checked winter window ends in June. October's applicable single fare is unresolved.</p>
-          <a href="pages/expenses.html">Build a cost range ↗</a>
-        </article>
-        <article class="summary-tile">
-          <span class="summary-icon" aria-hidden="true">◎</span>
-          <h3>Entry &amp; passport</h3>
-          <p>For a U.S. passport holder, official U.S. guidance lists no tourist visa for short stays. EES is live; ETIAS status was not active on 9 Oct. Recheck before travel.</p>
-          <a href="pages/everyday.html#before-you-fly">Read the official-status snapshot ↗</a>
-        </article>
-        <article class="summary-tile">
-          <span class="summary-icon" aria-hidden="true">♫</span>
-          <h3>Live radio sport</h3>
-          <p>BBC schedules live-sport programmes 17–18 Oct. Malta DAB+ lists World Service; Radio 5 Live/Sports Extra and online access are not confirmed locally.</p>
-          <a href="pages/radio.html">View the dated schedule ↗</a>
-        </article>
+      <div class="callout warning">
+        <p><strong>Before relying on event-day directions:</strong> the transport page points to current route/operator evidence, but a final door-to-door plan still needs the event-specific public entrance, confirmed session time, exact stops and a live date/time planner check. Spectator access and ticket terms are not treated as confirmed.</p>
       </div>
     </section>
 
-    <section class="content-section" aria-labelledby="dates-title">
-      <div class="section-heading">
-        <div>
-          <p class="kicker">A date-aware overview</p>
-          <h2 id="dates-title">What is listed during the stay</h2>
-        </div>
-        <span class="section-index">02</span>
-      </div>
-      <p class="section-intro">This is a schedule of dated listings, not a booked itinerary. Flight times, TWC access and personal plans are not supplied.</p>
-      <div class="date-grid">
-        <article class="date-card">
-          <div class="date-head"><span>Tue</span><strong>13</strong><small>OCT</small></div>
-          <div><h3>Media day</h3><p>Thunderpick lists a media day. It is not listed as public; arrival time is unknown.</p></div>
-        </article>
-        <article class="date-card">
-          <div class="date-head"><span>Wed</span><strong>14</strong><small>OCT</small></div>
-          <div><h3>Group stage</h3><p>Gżira United v Mosta is also listed for 19:00 in Paola (optional; current adult ticket listing €10).</p></div>
-        </article>
-        <article class="date-card">
-          <div class="date-head"><span>Thu</span><strong>15</strong><small>OCT</small></div>
-          <div><h3>Group stage</h3><p>Organizer-listed TWC competition day; public access and match times unconfirmed.</p></div>
-        </article>
-        <article class="date-card">
-          <div class="date-head"><span>Fri</span><strong>16</strong><small>OCT</small></div>
-          <div><h3>Group stage</h3><p>Organizer-listed TWC competition day; use the live bus planner for any outing.</p></div>
-        </article>
-        <article class="date-card date-card-highlight">
-          <div class="date-head"><span>Sat</span><strong>17</strong><small>OCT</small></div>
-          <div><h3>Playoffs · harbour race</h3><p>Rolex Middle Sea Race start is listed for 11:00. Heritage Malta lists a 13:00–16:00 picnic (tickets/access not confirmed). MPT notes a Route 186 evening detour.</p><p class="small-note">BBC live radio schedules ↗ <a href="pages/radio.html#saturday">Saturday listings</a></p></div>
-        </article>
-        <article class="date-card date-card-highlight">
-          <div class="date-head"><span>Sun</span><strong>18</strong><small>OCT</small></div>
-          <div><h3>Playoffs · In Guardia</h3><p>Heritage Malta lists In Guardia at 11:00. CDM Sundays is advertised in Qawra, but party-ticket entry time conflicts with the FAQ.</p><p class="small-note">BBC live radio schedules ↗ <a href="pages/radio.html#sunday">Sunday listings</a></p></div>
-        </article>
-        <article class="date-card">
-          <div class="date-head"><span>Mon</span><strong>19</strong><small>OCT</small></div>
-          <div><h3>Departure day</h3><p>Organizer lists departure. Your flight time and hotel checkout are unknown; keep the day flexible.</p></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="guide-title">
-      <div class="section-heading">
-        <div>
-          <p class="kicker">Explore by need</p>
-          <h2 id="guide-title">Your field guide</h2>
-        </div>
-        <span class="section-index">03</span>
-      </div>
-      <div class="guide-grid">
-        <a class="guide-card guide-card-large" href="pages/transport.html">
-          <span class="guide-card-icon" aria-hidden="true">↗</span>
-          <span class="guide-label">Get there, come back</span>
-          <h3>Transport &amp; event-day route</h3>
-          <p>Airport options, bus cards and the Qawra–Ta’ Qali Route 186 corridor—with live-planner, detour and return-trip cautions.</p>
-          <span class="guide-arrow" aria-hidden="true">→</span>
+    <section id="topics" aria-labelledby="topic-heading">
+      <h2 id="topic-heading">Explore the guide</h2>
+      <div class="grid">
+        <a class="card" href="pages/transport.html">
+          <p class="card-kicker">Airport · bus · taxi · rental</p>
+          <h3>Getting around</h3>
+          <p>Compare ways to travel from the airport and around Malta, including event-day bus routes to check. Live departure times, fare-season details and the venue walk need confirmation.</p>
         </a>
-        <a class="guide-card" href="pages/food.html">
-          <span class="guide-card-icon" aria-hidden="true">☕</span>
-          <span class="guide-label">Eat around the islands</span>
-          <h3>Food &amp; cafés</h3>
-          <p>Source-linked menus, dated euro-price examples and honest review-access notes.</p>
-          <span class="guide-arrow" aria-hidden="true">→</span>
+        <a class="card" href="pages/food.html">
+          <p class="card-kicker">Restaurants · cafés · Qawra</p>
+          <h3>Food and drink</h3>
+          <p>Browse nearby options, venue facts and dated review snapshots. Google Maps and Tripadvisor signals are kept separate rather than blended into a made-up ranking.</p>
         </a>
-        <a class="guide-card" href="pages/activities.html">
-          <span class="guide-card-icon" aria-hidden="true">✦</span>
-          <span class="guide-label">Make room for play</span>
-          <h3>Activities &amp; gaming</h3>
-          <p>Events, indoor activities, landmarks and the difference between listed dates and confirmed access.</p>
-          <span class="guide-arrow" aria-hidden="true">→</span>
+        <a class="card" href="pages/activities.html">
+          <p class="card-kicker">Landmarks · gaming · dated events</p>
+          <h3>Things to do</h3>
+          <p>Find source-linked attractions and trip-window listings, with access, ticket and schedule caveats visible—including leads that still need direct confirmation.</p>
         </a>
-        <a class="guide-card" href="pages/everyday.html">
-          <span class="guide-card-icon" aria-hidden="true">＋</span>
-          <span class="guide-label">Travel with confidence</span>
-          <h3>Practical details</h3>
-          <p>Entry systems, money, power, phone, water, health, safety, weather and an editable checklist.</p>
-          <span class="guide-arrow" aria-hidden="true">→</span>
+        <a class="card" href="pages/everyday.html">
+          <p class="card-kicker">U.S. traveler · practical checks</p>
+          <h3>Everyday Malta</h3>
+          <p>Review entry and health references, money, phone, power, safety, weather and local practicalities. Personal requirements and volatile rules need a final check.</p>
         </a>
-        <a class="guide-card" href="pages/radio.html">
-          <span class="guide-card-icon" aria-hidden="true">♫</span>
-          <span class="guide-label">A live fixture window</span>
-          <h3>Radio sports schedule</h3>
-          <p>Official BBC programme listings, Malta-time conversions and the DAB/stream availability caveat.</p>
-          <span class="guide-arrow" aria-hidden="true">→</span>
+        <a class="card" href="pages/radio.html">
+          <p class="card-kicker">Official schedule · local reception</p>
+          <h3>Live-sport radio</h3>
+          <p>See the date-specific broadcasts that met the research threshold, Malta-local time calculations and the important distinction between live sport and named match commentary.</p>
         </a>
-        <a class="guide-card guide-card-accent" href="pages/expenses.html">
-          <span class="guide-card-icon" aria-hidden="true">€</span>
-          <span class="guide-label">No made-up totals</span>
-          <h3>Quick expense planner</h3>
-          <p>Enter quotes and out-of-pocket amounts; see a bus-fare range and official accommodation contribution estimate.</p>
-          <span class="guide-arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="guide-card guide-card-source" href="pages/sources.html">
-          <span class="guide-card-icon" aria-hidden="true">⌕</span>
-          <span class="guide-label">Check every claim</span>
-          <h3>Sources &amp; final report</h3>
-          <p>Claim-level source log, unresolved questions, access limits, limitations and next actions.</p>
-          <span class="guide-arrow" aria-hidden="true">→</span>
+        <a class="card" href="pages/expenses.html">
+          <p class="card-kicker">Quick-fill · editable · EUR-first</p>
+          <h3>Trip expense planner</h3>
+          <p>Enter costs as they become known, track paid amounts and compare an optional budget limit. Save on this device, export CSV or print; no price or exchange rate is preloaded as your cost.</p>
         </a>
       </div>
     </section>
 
-    <section class="content-section home-next" aria-labelledby="next-title">
-      <div class="section-heading">
-        <div>
-          <p class="kicker">A few things to verify</p>
-          <h2 id="next-title">Before you rely on the plan</h2>
-        </div>
-        <span class="section-index">04</span>
+    <section aria-labelledby="recheck-heading">
+      <h2 id="recheck-heading">Important limits and rechecks</h2>
+      <ul>
+        <li>Arrival/departure details, hotel booking confirmation, traveler-specific entry information and selected tournament sessions remain unknown.</li>
+        <li>Event access/entrance and date-specific public transport are not finalized; check organizer and operator information for the actual session.</li>
+        <li>Fares, venue hours, tickets, event listings, weather, radio schedules and entry rules can change. The research snapshot is dated <strong>9 October 2026</strong>; re-open the linked official source before acting.</li>
+        <li>Unavailable or conflicting information is recorded as open—not silently converted into a price, schedule, guarantee or recommendation.</li>
+      </ul>
+      <p>For the complete evidence trail and the next action for each unresolved item, open the <a href="sources.html">sources and open questions page</a>, the <a href="sources.html#source-register">source register</a> or the <a href="sources.html#open-questions">open-questions register</a>.</p>
+    </section>
+
+    <section id="verification" aria-labelledby="verification-heading">
+      <h2 id="verification-heading">How the guide is verified</h2>
+      <p>Topic pages are rendered from structured records. Each record retains its source URL, source type, check date, confidence and notes; the registers preserve source-level claims, known gaps and cross-topic handoffs.</p>
+      <div class="grid">
+        <a class="card" href="sources.html"><h3>Evidence overview</h3><p>How source claims, confidence and access limitations are shown.</p></a>
+        <a class="card" href="sources.html#source-register"><h3>Source register</h3><p>Claim-by-claim URLs, access dates and verification notes.</p></a>
+        <a class="card" href="sources.html#open-questions"><h3>Open questions</h3><p>Unknowns, why they matter and what would resolve them.</p></a>
+        <a class="card" href="sources.html#status"><h3>Workstream status</h3><p>Current implementation and remaining integration checks.</p></a>
       </div>
-      <div class="next-grid">
-        <div class="next-item"><span class="next-num">01</span><p>Confirm TWC spectator access and the exact entrance with the organizer.</p></div>
-        <div class="next-item"><span class="next-num">02</span><p>Check the event-day bus in Tallinja in both directions; save a taxi fallback.</p></div>
-        <div class="next-item"><span class="next-num">03</span><p>Verify ETIAS/EES and passport eligibility against your own itinerary.</p></div>
-        <div class="next-item"><span class="next-num">04</span><p>Recheck attraction tickets, radio reception and the weather close to travel.</p></div>
-      </div>
-      <p class="source-stamp">All evidence snapshots were checked on 9 October 2026. Use the <a href="pages/sources.html#open-questions">open-question register</a> for the full list of unresolved details.</p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p><strong>Malta Field Guide</strong> · A source-led personal trip-planning reference · 13–19 October 2026</p>
-      <p><a href="pages/sources.html">Sources &amp; final report</a> <span class="separator">·</span> <a href="pages/expenses.html">Expense planner</a></p>
-    </div>
-  </footer>
+  <footer id="site-footer"></footer>
+  <noscript><p class="callout warning">The topic pages and shared navigation need JavaScript. The key trip dates and planning limitations are shown above; enable JavaScript or open the site from a local HTTP server or GitHub Pages to use the interactive pages.</p></noscript>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

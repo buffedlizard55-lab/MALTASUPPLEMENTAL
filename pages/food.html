@@ -3,160 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Source-checked restaurants and cafés in AX ODYCY and Qawra, with menus, dated price examples, hours and review-access limitations.">
-  <meta name="theme-color" content="#102b2a">
-  <title>Food &amp; cafés | Malta Field Guide</title>
+  <meta name="description" content="Source-linked restaurants and cafés around AX ODYCY in Qawra, with official hours and separate, dated Google Maps and Tripadvisor review snapshots.">
+  <title>Food &amp; Cafés · Malta Trip Companion</title>
   <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/site.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="../index.html" aria-label="Malta Field Guide home">
-      <span class="brand-mark" aria-hidden="true">M</span>
-      <span>Malta Field Guide<small>13–19 October 2026</small></span>
-    </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-      <span class="sr-only">Toggle navigation</span><span aria-hidden="true">☰</span>
-    </button>
-    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-      <a href="../index.html">Overview</a>
-      <a href="transport.html">Transport</a>
-      <a href="food.html" aria-current="page">Food &amp; cafés</a>
-      <a href="activities.html">Activities &amp; gaming</a>
-      <a href="radio.html">Live radio</a>
-      <a href="everyday.html">Practical</a>
-      <a href="expenses.html">Expense planner</a>
-      <a href="sources.html">Sources &amp; report</a>
-    </nav>
-  </header>
+<body data-root="..">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="site-header"></header>
+  <main id="main-content" class="page">
+    <p class="eyebrow">Food &amp; drink · Qawra</p>
+    <h1 class="page-title">Where to eat around AX ODYCY</h1>
+    <p class="page-intro">A source-linked shortlist of cafés and restaurants in Qawra, including two dining options on the AX ODYCY premises. Venue facts and review signals come from different sources, so check the links and confirm hours, menus and availability again during the 13–19 October stay.</p>
 
-  <main id="main" class="page-shell">
-    <div class="eyebrow">Workstream B · reviewed 9 October 2026</div>
-    <section class="hero hero-compact" aria-labelledby="page-title">
-      <div class="hero-copy">
-        <p class="kicker">Qawra · Buġibba · St Paul’s Bay</p>
-        <h1 id="page-title">Food, coffee &amp; easy dinners</h1>
-        <p class="hero-lede">A small, practical shortlist around AX ODYCY: 24-hour coffee, nearby casual food, an Italian trattoria, a rooftop splurge and a local seafood option—with menu dates and access caveats shown clearly.</p>
-      </div>
-      <aside class="hero-note">
-        <span class="status-pill status-info">Prices are in euros</span>
-        <p>Examples below come from venue menus, not a promise of your final bill. Your room’s meal plan, allergies, dietary needs, reservation and card acceptance have not been verified.</p>
-        <p class="small-note">Last source check: 9 Oct 2026 · menus can change</p>
-      </aside>
-    </section>
-
-    <section class="content-section" aria-labelledby="quick-picks-title">
-      <div class="section-heading">
-        <div>
-          <p class="kicker">At a glance</p>
-          <h2 id="quick-picks-title">Choose by situation</h2>
-        </div>
-        <span class="section-index">01</span>
-      </div>
-      <div class="info-grid three-up">
-        <article class="info-card info-card-accent">
-          <p class="card-label">Late arrival or quick bite</p>
-          <h3>Espresso Grab &amp; Go</h3>
-          <p>At hotel level 0; AX lists it open 24/7. A July 2025 menu has coffee, sandwiches and salads, so verify current prices.</p>
-          <a href="#venues">See venue listings ↓</a>
-        </article>
-        <article class="info-card">
-          <p class="card-label">Easy dinner</p>
-          <h3>Trattoria Riccardo or Cheeky Monkey</h3>
-          <p>Both are on or beside the hotel. Check the live menu and reserve at Trattoria Riccardo if you want a set dinner time.</p>
-          <a href="#venues">See venue listings ↓</a>
-        </article>
-        <article class="info-card">
-          <p class="card-label">Plan-ahead meal</p>
-          <h3>Minoa rooftop</h3>
-          <p>Higher-priced tasting menus, ages 16+, and dinner Wednesday–Saturday only on the published schedule.</p>
-          <a href="#venues">See venue listings ↓</a>
-        </article>
-      </div>
-      <div class="callout callout-warning">
-        <div class="callout-icon" aria-hidden="true">!</div>
-        <div>
-          <h3>Meal-plan coverage is not known</h3>
-          <p>The trip brief gives a room type, not whether breakfast, half-board or all-inclusive meals are included. Confirm directly with AX ODYCY before you use these menu examples as out-of-pocket estimates.</p>
-          <a href="https://axhotelsmalta.com/odycy/contact/" target="_blank" rel="noopener">AX ODYCY contact details ↗</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section" id="venues" aria-labelledby="venues-title">
-      <div class="section-heading">
-        <div>
-          <p class="kicker">Menus, prices &amp; opening hours</p>
-          <h2 id="venues-title">A source-checked shortlist</h2>
-        </div>
-        <span class="section-index">02</span>
-      </div>
-      <p class="section-intro">The official venue pages and menus are the primary sources for identity, hours and example prices. Older PDFs are labeled by date; for missing prices, the guide says “not verified” rather than estimating.</p>
-      <div class="record-list record-list-grid" data-record-source="../data/food.json" data-record-filter="food-espresso,food-trattoria-riccardo,food-minoa,food-cheeky-monkey,food-venus,food-ombre" aria-live="polite">
-        <p class="loading-state">Loading food and café records…</p>
-      </div>
-    </section>
-
-    <section class="content-section" id="local-status" aria-labelledby="status-title">
-      <div class="section-heading">
-        <div>
-          <p class="kicker">Avoid a wasted trip</p>
-          <h2 id="status-title">Temporary closure to recheck</h2>
-        </div>
-        <span class="section-index">03</span>
-      </div>
-      <div class="record-list" data-record-source="../data/food.json" data-record-filter="food-luzzu-closure" aria-live="polite">
-        <p class="loading-state">Loading local venue status…</p>
-      </div>
-    </section>
-
-    <section class="content-section" id="review-notes" aria-labelledby="reviews-title">
-      <div class="section-heading">
-        <div>
-          <p class="kicker">Review research &amp; limitations</p>
-          <h2 id="reviews-title">What online feedback can—and cannot—say</h2>
-        </div>
-        <span class="section-index">04</span>
-      </div>
-      <div class="review-grid">
-        <article class="info-card">
-          <h3>Tripadvisor snapshots</h3>
-          <p>Search-result snippets showed dynamic ratings and review counts for several shortlisted venues; country-specific Tripadvisor pages did not always show the same totals. A few recent text snippets mentioned both positive experiences and ordinary service/dietary caveats. They are dated third-party signals—not a ranking, guarantee, or substitute for checking the menu.</p>
-          <p class="small-note">Links and the exact observed snapshot notes are attached to each venue record and in the source log.</p>
-        </article>
-        <article class="info-card">
-          <h3>Other requested platforms</h3>
-          <ul class="compact-list">
-            <li><strong>Google Maps:</strong> the query rendered a loading screen; no star ratings or review text were inspected.</li>
-            <li><strong>Yelp:</strong> search results surfaced U.S. place-name lookalikes, not Malta island; direct fetch returned 403.</li>
-            <li><strong>Instagram, TikTok, Facebook:</strong> direct fetches returned 403; indexed profiles do not verify recent posts or comments.</li>
-            <li><strong>Reddit:</strong> older/anecdotal search snippets appeared; direct fetch returned 403.</li>
-            <li><strong>X:</strong> results were old or unrelated and were not used for current venue claims.</li>
-          </ul>
-        </article>
-      </div>
-      <div class="callout callout-info">
-        <div class="callout-icon" aria-hidden="true">i</div>
-        <div>
-          <h3>Dietary and access checks</h3>
-          <p>No personal dietary, allergy, mobility or budget preferences were provided. Menu symbols and review comments do not guarantee safe allergen handling or step-free access. Contact the venue directly for current ingredients, cross-contact practices, reservation availability and accessibility.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="content-section small-section" aria-labelledby="price-note-title">
-      <h2 id="price-note-title">How to use the price examples</h2>
-      <p>These are item prices—not meal totals. They exclude any extra drink, service charge or optional tip unless the linked menu explicitly says otherwise. Most sample prices come from official menus checked on 9 October 2026; Espresso and Cheeky Monkey menus are dated July 2025, and the older Luzzu menu is intentionally not used.</p>
-      <p class="source-stamp">Primary restaurant/menu pages and platform-access attempts are logged in <a href="sources.html">Sources &amp; final report</a>. Review counts can change after this check.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p><strong>Malta Field Guide</strong> · Personal trip-planning reference · 13–19 October 2026</p>
-      <p><a href="sources.html">Sources, unresolved questions &amp; final report</a> <span class="separator">·</span> <a href="../index.html">Back to overview</a></p>
+    <div class="callout">
+      <p><strong>Convenient first checks:</strong> Trattoria Riccardo and Minoa are listed inside AX ODYCY, so they are no-transfer dining options. Minoa is adults-only (16+); its official page lists Wednesday–Saturday evening service. Open the record below for the menu, booking and source links.</p>
     </div>
-  </footer>
+
+    <div class="callout warning">
+      <p><strong>Ratings are separate snapshots, not a verdict.</strong> Google Maps and Tripadvisor scores and review counts can differ substantially for the same place. Each card preserves the platform, count where visible, and check date; nothing is averaged. Review-site rankings are omitted as an objective “most popular” order.</p>
+    </div>
+
+    <section id="topic-records" data-topic-data="../data/food.json" aria-live="polite">
+      <p class="load-error">Loading food and café research…</p>
+    </section>
+
+    <h2>How to use the review signals</h2>
+    <p>The strongest cross-platform comparisons in this check were Cafe Maroc (Google Maps 3.7/28; Tripadvisor 4.6/219), 9 Ball Cafe (4.5/533; 4.7/60), Minoa (4.9/378; 5.0/764), and Zigumar (4.6 with no Google count shown; 4.4/293). All figures are dated 9 October 2026 and are repeated on the relevant venue cards with their source links. The different counts and scores are not directly interchangeable.</p>
+    <p>Tripadvisor’s Qawra list describes a platform ranking that uses review signals and proximity, and its listings can include nearby businesses. This page therefore does not turn those ranks into a universal local-popularity claim. See the <a href="https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html" target="_blank" rel="noopener noreferrer">Tripadvisor Qawra restaurant list</a> and source-log entry B-019.</p>
+
+    <h2>Research limits</h2>
+    <p>Individual Tripadvisor pages were accessible for the listed venues. Google Maps returned usable cards for only some listings and showed a limited view; where no score was captured, none is claimed. The direct Yelp and public Facebook, Instagram, TikTok, Reddit and X pages tested returned HTTP 403 in this research environment. Yelp search results pointed to US places named Malta, not Malta the country, so Yelp/social results were not used as Qawra review or popularity evidence. Details and recheck actions are recorded under Q-007 and Q-013 in the <a href="../sources.html#open-questions">open-questions register</a>.</p>
+    <p class="small">All listed rating counts, prices and directory hours can change. Confirm current service with the business before travelling or budgeting. Menu links are provided where an official venue page made them available; an exact EUR spend has not been inferred from a platform price tier.</p>
+    <p class="small"><a href="../sources.html#source-register">Source and verification log</a> · <a href="../sources.html#open-questions">Open questions</a></p>
+  </main>
+  <footer id="site-footer"></footer>
+  <noscript><p class="callout warning">JavaScript is required to load the source-linked food records. Open this page from GitHub Pages or a local HTTP server, not as a file:// URL.</p></noscript>
+  <script src="../js/site.js" defer></script>
 </body>
 </html>

@@ -1,152 +1,93 @@
-[
-  {
-    "id": "radio-world-service-sportsworld-17",
-    "name": "Sportsworld · BBC World Service · Saturday 17 October",
-    "category": "Scheduled live-sport program · magazine, not a named match feed",
-    "area": "Malta local-time conversion; World Service listed on Malta DAB+",
-    "address": "Radio / DAB+ / online; AX ODYCY reception and the traveler's receiver were not tested.",
-    "hours": "13:06 GMT per BBC schedule = 15:06 Malta CEST (UTC+2). Confirm the final schedule before tuning in.",
-    "price range": "No listening price or online availability in Malta was confirmed.",
-    "description": "BBC World Service schedules Sportsworld, described as live sport from around the world with news, interviews and analysis. The official listing does not identify a particular match commentary. Malta's DAB+ operator lists BBC World Service; reception at the hotel is not guaranteed.",
-    "source_url": "https://www.bbc.co.uk/schedules/p02y9rgr/2026/10/17",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC episode page: https://www.bbc.co.uk/programmes/w1730c92ck0m2cw · Malta DAB+ operator's channel list: https://dab.com.mt/channels/ . BBC schedule time is converted from GMT to Malta CEST; the schedule page's displayed 'local time' is browser-dependent. No match-specific commentary is promised."
-  },
-  {
-    "id": "radio-world-service-sportsworld-18",
-    "name": "Sportsworld · BBC World Service · Sunday 18 October",
-    "category": "Scheduled live-sport program · magazine, not a named match feed",
-    "area": "Malta local-time conversion; World Service listed on Malta DAB+",
-    "address": "Radio / DAB+ / online; AX ODYCY reception and the traveler's receiver were not tested.",
-    "hours": "14:06 GMT per BBC schedule = 16:06 Malta CEST (UTC+2). Confirm the final schedule before tuning in.",
-    "price range": "No listening price or online availability in Malta was confirmed.",
-    "description": "BBC World Service schedules Sportsworld, described as live sport from around the world with news, interviews and analysis. The official listing does not identify a particular match commentary. Malta's DAB+ operator lists BBC World Service; reception at the hotel is not guaranteed.",
-    "source_url": "https://www.bbc.co.uk/schedules/p02y9rgr/2026/10/18",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC episode page: https://www.bbc.co.uk/programmes/w1730c92ck0q313 · Malta DAB+ operator's channel list: https://dab.com.mt/channels/ . BBC schedule time is converted from GMT to Malta CEST; the schedule page's displayed 'local time' is browser-dependent. No match-specific commentary is promised."
-  },
-  {
-    "id": "radio-5sports-mancity-17",
-    "name": "Manchester City v Ipswich Town · BBC Radio 5 Sports Extra",
-    "category": "Scheduled live Premier League commentary",
-    "area": "UK radio schedule; Malta over-the-air carriage not confirmed",
-    "address": "BBC Radio 5 Sports Extra (UK service); no Malta transmitter/carriage confirmed.",
-    "hours": "Saturday 17 October 2026 at 14:45 BST = 15:45 Malta CEST. Premier League kickoff is listed at 15:00 BST / 16:00 Malta.",
-    "price range": "No price or Malta online-access terms confirmed.",
-    "description": "BBC lists live commentary of Manchester City v Ipswich Town on BBC Radio 5 Sports Extra. The channel is not listed on the Malta DAB+ operator page; do not assume UK audio streaming works in Malta.",
-    "source_url": "https://www.bbc.co.uk/programmes/m00334k6",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC match programme and time: https://www.bbc.co.uk/programmes/m00334k6 . Premier League October schedule confirms the fixture and 15:00 BST kickoff: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november . Malta's DAB+ list shows BBC World Service but not BBC Radio 5: https://dab.com.mt/channels/ ."
-  },
-  {
-    "id": "radio-5live-brentford-liverpool-17",
-    "name": "Brentford v Liverpool · BBC Radio 5 Live",
-    "category": "Scheduled live Premier League commentary",
-    "area": "UK radio schedule; Malta over-the-air carriage not confirmed",
-    "address": "BBC Radio 5 Live (UK service); no Malta transmitter/carriage confirmed.",
-    "hours": "Saturday 17 October 2026 at 15:00 BST = 16:00 Malta CEST. Premier League kickoff is listed at 15:00 BST.",
-    "price range": "No price or Malta online-access terms confirmed.",
-    "description": "BBC lists live commentary of Brentford v Liverpool plus updates from the day's 15:00 matches. The channel is not listed on Malta's DAB+ operator page; listening online from Malta is not confirmed.",
-    "source_url": "https://www.bbc.co.uk/programmes/m00332zg",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC match programme: https://www.bbc.co.uk/programmes/m00332zg . Premier League schedule: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november . Malta DAB+ list: https://dab.com.mt/channels/ ."
-  },
-  {
-    "id": "radio-5live-newcastle-villa-17",
-    "name": "Newcastle United v Aston Villa · BBC Radio 5 Live",
-    "category": "Scheduled live Premier League commentary",
-    "area": "UK radio schedule; Malta over-the-air carriage not confirmed",
-    "address": "BBC Radio 5 Live (UK service); no Malta transmitter/carriage confirmed.",
-    "hours": "Saturday 17 October 2026 at 17:30 BST = 18:30 Malta CEST. Premier League kickoff is listed at 17:30 BST.",
-    "price range": "No price or Malta online-access terms confirmed.",
-    "description": "BBC lists live commentary of Newcastle United v Aston Villa. The channel is not listed on Malta's DAB+ operator page; listening online from Malta is not confirmed.",
-    "source_url": "https://www.bbc.co.uk/programmes/m00332zl",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC match programme: https://www.bbc.co.uk/programmes/m00332zl . Premier League schedule: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november . Malta DAB+ list: https://dab.com.mt/channels/ ."
-  },
-  {
-    "id": "radio-5extra-brighton-palace-18",
-    "name": "Brighton & Hove Albion v Crystal Palace · BBC Radio 5 Sports Extra",
-    "category": "Scheduled live Premier League commentary",
-    "area": "UK radio schedule; Malta over-the-air carriage not confirmed",
-    "address": "BBC Radio 5 Sports Extra (UK service); no Malta transmitter/carriage confirmed.",
-    "hours": "Sunday 18 October 2026 at 13:55 BST = 14:55 Malta CEST; match kickoff listed at 14:00 BST / 15:00 Malta.",
-    "price range": "No price or Malta online-access terms confirmed.",
-    "description": "BBC lists live commentary of Brighton & Hove Albion v Crystal Palace on BBC Radio 5 Sports Extra. The channel is not listed on Malta's DAB+ operator page; listening online from Malta is not confirmed.",
-    "source_url": "https://www.bbc.co.uk/programmes/m00335hm",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC match programme: https://www.bbc.co.uk/programmes/m00335hm . Premier League schedule: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november . Malta DAB+ list: https://dab.com.mt/channels/ ."
-  },
-  {
-    "id": "radio-5extra2-bournemouth-sunderland-18",
-    "name": "Bournemouth v Sunderland · BBC Radio 5 Sports Extra 2",
-    "category": "Scheduled live Premier League commentary",
-    "area": "UK radio schedule; Malta over-the-air carriage not confirmed",
-    "address": "BBC Radio 5 Sports Extra 2 (UK service); no Malta transmitter/carriage confirmed.",
-    "hours": "Sunday 18 October 2026; kickoff listed at 14:00 BST / 15:00 Malta. BBC says full commentary is on Sports Extra 2; a separate programme start time was not displayed in the checked page.",
-    "price range": "No price or Malta online-access terms confirmed.",
-    "description": "BBC's Brighton v Crystal Palace programme page says full commentary of Bournemouth v Sunderland is on BBC Radio 5 Sports Extra 2. The Premier League lists the fixture at 14:00 BST. The channel is not listed on Malta's DAB+ operator page; listening online from Malta is not confirmed.",
-    "source_url": "https://www.bbc.co.uk/programmes/m00335hm",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC programme page lists this parallel commentary: https://www.bbc.co.uk/programmes/m00335hm . Premier League schedule: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november . Malta DAB+ list: https://dab.com.mt/channels/ . Exact radio start time not independently found."
-  },
-  {
-    "id": "radio-5live-leeds-united-man-utd-18",
-    "name": "Leeds United v Manchester United · BBC Radio 5 Live",
-    "category": "Scheduled live Premier League commentary",
-    "area": "UK radio schedule; Malta over-the-air carriage not confirmed",
-    "address": "BBC Radio 5 Live (UK service); no Malta transmitter/carriage confirmed.",
-    "hours": "Sunday 18 October 2026 at 14:00 BST = 15:00 Malta CEST. Premier League kickoff is listed at 14:00 BST.",
-    "price range": "No price or Malta online-access terms confirmed.",
-    "description": "BBC lists live commentary of Leeds United v Manchester United on BBC Radio 5 Live. The channel is not listed on Malta's DAB+ operator page; listening online from Malta is not confirmed.",
-    "source_url": "https://www.bbc.co.uk/programmes/m003334l",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC match programme: https://www.bbc.co.uk/programmes/m003334l . Premier League schedule: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november . Malta DAB+ list: https://dab.com.mt/channels/ ."
-  },
-  {
-    "id": "radio-5live-nottingham-arsenal-18",
-    "name": "Nottingham Forest v Arsenal · BBC Radio 5 Live",
-    "category": "Scheduled live Premier League commentary",
-    "area": "UK radio schedule; Malta over-the-air carriage not confirmed",
-    "address": "BBC Radio 5 Live (UK service); no Malta transmitter/carriage confirmed.",
-    "hours": "Sunday 18 October 2026 at 16:30 BST = 17:30 Malta CEST. Premier League kickoff is listed at 16:30 BST.",
-    "price range": "No price or Malta online-access terms confirmed.",
-    "description": "BBC lists live commentary of Nottingham Forest v Arsenal on BBC Radio 5 Live. The channel is not listed on Malta's DAB+ operator page; listening online from Malta is not confirmed.",
-    "source_url": "https://www.bbc.co.uk/programmes/m003334q",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "BBC match programme: https://www.bbc.co.uk/programmes/m003334q . Premier League schedule: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november . Malta DAB+ list: https://dab.com.mt/channels/ ."
-  },
-  {
-    "id": "radio-dab-malteselisting",
-    "name": "Malta DAB+ channel list — BBC World Service only among the BBC schedules checked",
-    "category": "Radio reception · terrestrial access caveat",
-    "area": "Malta DAB+ network",
-    "address": "DAB+ service; reception at AX ODYCY and receiver compatibility were not tested.",
-    "hours": "Channel list checked 9 October 2026; recheck near arrival.",
-    "price range": "No receiver or data-stream price quoted.",
-    "description": "The DAB+ operator's published channel list includes BBC World Service. It does not list BBC Radio 5 Live or BBC Radio 5 Sports Extra. The list supports a channel-carriage finding only, not a signal-strength promise or an internet-stream guarantee.",
-    "source_url": "https://dab.com.mt/channels/",
-    "source_type": "official",
-    "date_checked": "2026-10-09",
-    "confidence": "partially verified",
-    "notes": "Malta DAB+ channel list: https://dab.com.mt/channels/ . BBC listening guidance says Malta DAB+ can carry BBC World Service but warns some UK-purchased DAB radios may use an incompatible codec: https://www.bbc.co.uk/worldservice/mobile/institutional/2009/03/000000_digitallistening.shtml ."
-  }
-]
+{
+  "heading": "Date-specific BBC World Service sports slots · checked 9 October 2026",
+  "records": [
+    {
+      "id": "radio-sportsworld-2026-10-17",
+      "name": "BBC World Service · Sportsworld · Saturday 17 October",
+      "category": "Live sports programme · Saturday",
+      "area": "Malta · BBC World Service on DAB+",
+      "address": "Not applicable — radio service",
+      "hours": "Saturday 17 October 2026, 15:06–18:59 Malta local time (CEST, UTC+2) by the published 3-hour-53-minute episode duration; the next BBC schedule entry begins at 19:00 Malta time.",
+      "price range": "No receiver, mobile-data or streaming cost is quoted. DAB+ is the local over-the-air reception route; device capability and reception should be checked.",
+      "description": "BBC World Service's date-specific programme page schedules Sportsworld, described as live sport from around the world with news, interviews and analysis. The Malta-local start time is converted from the BBC schedule. The listing does not name a particular match or guarantee match commentary; this is a live sports programme slot, not a confirmed match-specific feed.",
+      "source_url": "https://www.bbc.co.uk/programmes/w1730c92ck0m2cw",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "RAD-001, RAD-002, RAD-005–RAD-007. BBC lists the episode on BBC World Service except News Internet. The live programme content is scheduled, but no individual match/commentary is identified. The current Malta DAB+ operator channel list names BBC World Service; reception inside AX ODYCY has not been measured. Recheck schedule and DAB+ reception before the date; see Q-009 and Q-010.",
+      "details": {
+        "malta_time": "15:06–18:59 CEST (UTC+2) on Saturday 17 October by the episode duration; next BBC schedule entry begins at 19:00 Malta time.",
+        "bbc_schedule_basis": "The BBC Europe and Middle East schedule renders the programme at 09:06 page-local. Its adjacent 09:00 BBC News bulletin is timestamped 13:01 GMT, indicating a UTC−4 rendered offset; applying that offset gives a 13:06 GMT start, which is 15:06 in Malta (UTC+2). The episode page gives a duration of 3 hours 53 minutes, yielding a calculated end of 18:59 Malta time; the next BBC schedule entry begins at 19:00.",
+        "broadcast_service": "BBC World Service (except News Internet).",
+        "reception": "DAB+; the Malta DAB+ operator's current channels page lists BBC World Service. A WorldDAB industry directory lists the Digi B Network multiplex as block 6A / 181.936 MHz; the operator's channel page does not publish a frequency, and no signal test was made at the hotel.",
+        "content_limit": "No specific fixture, team or match commentary is named in the dated BBC listing."
+      },
+      "additional_sources": [
+        {
+          "label": "BBC World Service Europe and Middle East schedule — Saturday 17 October 2026",
+          "url": "https://www.bbc.co.uk/schedules/p02y9rgr/2026/10/17",
+          "type": "official"
+        },
+        {
+          "label": "Digi B Network / DAB+ Malta current channel list (lists BBC World Service)",
+          "url": "https://dab.com.mt/channels/",
+          "type": "official"
+        },
+        {
+          "label": "Digi B Network DAB+ information and reception context",
+          "url": "https://dab.com.mt/",
+          "type": "official"
+        },
+        {
+          "label": "WorldDAB Malta multiplex directory (industry directory; lists block 6A and BBC WS)",
+          "url": "https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "radio-sportsworld-2026-10-18",
+      "name": "BBC World Service · Sportsworld · Sunday 18 October",
+      "category": "Live sports programme · Sunday",
+      "area": "Malta · BBC World Service on DAB+",
+      "address": "Not applicable — radio service",
+      "hours": "Sunday 18 October 2026, 16:06–19:59 Malta local time (CEST, UTC+2) by the published 3-hour-53-minute episode duration; the next BBC schedule entry begins at 20:00 Malta time.",
+      "price range": "No receiver, mobile-data or streaming cost is quoted. DAB+ is the local over-the-air reception route; device capability and reception should be checked.",
+      "description": "BBC World Service's date-specific programme page schedules Sportsworld, described as live sport from around the world with news, interviews and analysis. The Malta-local start time is converted from the BBC schedule. The listing does not name a particular match or guarantee match commentary; this is a live sports programme slot, not a confirmed match-specific feed.",
+      "source_url": "https://www.bbc.co.uk/programmes/w1730c92ck0q313",
+      "source_type": "official",
+      "date_checked": "2026-10-09",
+      "confidence": "partially verified",
+      "notes": "RAD-003–RAD-007. BBC lists the episode on BBC World Service except News Internet. The live programme content is scheduled, but no individual match/commentary is identified. The current Malta DAB+ operator channel list names BBC World Service; reception inside AX ODYCY has not been measured. Recheck schedule and DAB+ reception before the date; see Q-009 and Q-010.",
+      "details": {
+        "malta_time": "16:06–19:59 CEST (UTC+2) on Sunday 18 October by the episode duration; next BBC schedule entry begins at 20:00 Malta time.",
+        "bbc_schedule_basis": "The BBC Europe and Middle East schedule renders the programme at 10:06 page-local. Its adjacent 10:00 BBC News bulletin is timestamped 14:01 GMT, indicating a UTC−4 rendered offset; applying that offset gives a 14:06 GMT start, which is 16:06 in Malta (UTC+2). The episode page gives a duration of 3 hours 53 minutes, yielding a calculated end of 19:59 Malta time; the next BBC schedule entry begins at 20:00.",
+        "broadcast_service": "BBC World Service (except News Internet).",
+        "reception": "DAB+; the Malta DAB+ operator's current channels page lists BBC World Service. A WorldDAB industry directory lists the Digi B Network multiplex as block 6A / 181.936 MHz; the operator's channel page does not publish a frequency, and no signal test was made at the hotel.",
+        "content_limit": "No specific fixture, team or match commentary is named in the dated BBC listing."
+      },
+      "additional_sources": [
+        {
+          "label": "BBC World Service Europe and Middle East schedule — Sunday 18 October 2026",
+          "url": "https://www.bbc.co.uk/schedules/p02y9rgr/2026/10/18",
+          "type": "official"
+        },
+        {
+          "label": "Digi B Network / DAB+ Malta current channel list (lists BBC World Service)",
+          "url": "https://dab.com.mt/channels/",
+          "type": "official"
+        },
+        {
+          "label": "Digi B Network DAB+ information and reception context",
+          "url": "https://dab.com.mt/",
+          "type": "official"
+        },
+        {
+          "label": "WorldDAB Malta multiplex directory (industry directory; lists block 6A and BBC WS)",
+          "url": "https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes",
+          "type": "official"
+        }
+      ]
+    }
+  ]
+}
