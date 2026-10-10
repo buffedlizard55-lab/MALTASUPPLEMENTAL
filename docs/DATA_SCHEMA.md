@@ -10,7 +10,7 @@ Every record in `data/*.json` uses the same fields; topic-specific record shapes
 | `area` | Malta locality/region or planning scope such as `Trip-wide`. |
 | `address` | Published address; use `Not published` when unavailable. Expense categories may use `Not applicable` because they are not places. |
 | `hours` | Source-published hours/schedule; use `Not published` or `Not applicable` when appropriate. |
-| `price_range` | Source-published current price or an explicit state such as `Not published`, `Not set`, or `Varies`; identify estimates as estimates. |
+| `price range` | Source-published current price or an explicit state such as `Not published`, `Not set`, or `Varies`; identify estimates as estimates. |
 | `description` | The sourced claim(s) shown to visitors. Keep uncertainty explicit. |
 | `source_url` | Primary URL used to check the record. Related corroboration may be listed in `notes` and `docs/SOURCES.md`. |
 | `source_type` | Exactly one of `official`, `map`, `review`, or `social`. |

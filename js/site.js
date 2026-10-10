@@ -132,7 +132,7 @@
     var dl = make("dl", "record-details");
     detail(dl, "Address / area", record.address && record.address !== "Not published" ? record.address : record.area + " — address not published");
     detail(dl, "Hours / schedule", record.hours);
-    detail(dl, "Price", record.price_range);
+    detail(dl, "Price", record["price range"]);
     article.appendChild(dl);
 
     if (record.notes) {
@@ -189,7 +189,7 @@
         var category = select ? select.value : "";
         var filtered = records.filter(function (r) {
           var matchesCategory = !category || r.category === category;
-          var haystack = [r.name, r.category, r.area, r.address, r.description, r.hours, r.price_range, r.notes].join(" ").toLowerCase();
+          var haystack = [r.name, r.category, r.area, r.address, r.description, r.hours, r["price range"], r.notes].join(" ").toLowerCase();
           return matchesCategory && (!query || haystack.indexOf(query) !== -1);
         });
         host.replaceChildren();

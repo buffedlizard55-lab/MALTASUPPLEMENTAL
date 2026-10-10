@@ -19,7 +19,7 @@ REQUIRED_FIELDS = {
     "area",
     "address",
     "hours",
-    "price_range",
+    "price range",
     "description",
     "source_url",
     "source_type",

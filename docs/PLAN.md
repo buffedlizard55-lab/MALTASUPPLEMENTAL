@@ -6,7 +6,7 @@ The repository is a hand-authored static HTML/CSS/JavaScript site with no applic
 
 ## Shared setup (serial, before topic work)
 
-1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price_range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`.
+1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`.
 2. Preserve a dependency-free static site. Topic pages render from their workstream JSON data; the expense planner uses a blank-by-default editable form backed by its expense JSON categories.
 3. Maintain `docs/SOURCES.md` (claim, URL, UTC access date, workstream, limitation), `docs/OPEN_QUESTIONS.md` (missing/conflicting details), `docs/STATUS.md` (progress/blockers), and `docs/HANDOFF.md` (cross-topic findings).
 4. Prefer primary operator, organizer, venue, station, government, or official provider pages for current details. Label review/social snapshots separately. Do not present a fixture list as radio carriage or a route-level bus timetable as a door-to-door trip.
