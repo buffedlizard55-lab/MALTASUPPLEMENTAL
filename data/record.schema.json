@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/main/data/record.schema.json",
+  "title": "Malta trip record",
+  "description": "Canonical schema for every record in data/*.json. Dataset-level metadata is defined by each topic file; each record uses exactly these 13 fields.",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "category": { "type": "string", "minLength": 1 },
+    "area": { "type": "string" },
+    "address": { "type": "string" },
+    "hours": { "type": "string" },
+    "price_range": { "type": "string" },
+    "description": { "type": "string", "minLength": 1 },
+    "source_url": { "type": "string", "format": "uri" },
+    "source_type": { "type": "string", "enum": ["official", "map", "review", "social"] },
+    "date_checked": { "type": "string", "format": "date" },
+    "confidence": { "type": "string", "enum": ["verified", "partially verified", "unverified"] },
+    "notes": { "type": "string" }
+  },
+  "required": [
+    "id",
+    "name",
+    "category",
+    "area",
+    "address",
+    "hours",
+    "price_range",
+    "description",
+    "source_url",
+    "source_type",
+    "date_checked",
+    "confidence",
+    "notes"
+  ],
+  "additionalProperties": false
+}

@@ -4,7 +4,7 @@ A mobile-friendly, source-linked travel guide for the trip window **13–19 Octo
 
 **Published guide:** <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/>
 
-The official Thunderpick page checked on 9 October lists the 2026 Finals Group Stage on 14–16 October and Playoffs on 17–18 October. Thunderpick names BLAST Studios Malta; a BLAST attendee guide for a different event identifies the studio as being at the Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, Ħ’Attard. Neither source confirms this traveler’s spectator access, ticket, daily public door times, or exact entrance. Those details remain open.
+The official Thunderpick page rechecked on 10 October lists the overall 2026 event window as 12–19 October (arrival 12th, media day 13th, Group Stage 14–16th, Playoffs 17–18th, departure 19th). The Thunderpick-issued release names BLAST Studios Malta; a BLAST attendee guide for a different event gives MFCC/Ta’ Qali venue-area context only. Neither confirms this traveler’s spectator access, ticket, daily public door times, exact event entrance, or transport. Those details remain open.
 
 This is a dated research and planning aid, not a booking or guarantee of future opening hours, fares, availability, event access, radio reception, or programme carriage.
 
@@ -25,8 +25,8 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 
 - **Event and venue:** official Thunderpick sources list the Group Stage and Playoffs dates. The BLAST guide supplies venue/address corroboration only; public spectator access, ticket arrangements, door times, and event-day entrance instructions were not confirmed.
 - **Event-day transit:** Route 186 is the leading public-bus corridor between Qawra and Ta’ Qali; Route 214 is an alternate to compare. MPT’s static listing shows Qawra stop 952 at 06:10–21:38. The normal Rabat-to-Buġibba return runs via St Paul’s Bay/Buġibba, not the Qawra seafront, with a final listed arrival at Buġibba Bay 1 at 21:26—this is not a guaranteed hotel return. MPT also lists a 17 October evening diversion (19:00 to approximately midnight); confirm the exact stops, walking segments, live timetable, and detour impact close to travel.
-- **Radio:** NET FM is listed at FM 101 MHz and has recurring weekend sports shows; its grid does not explicitly state a time zone. Malta’s DAB+ directory lists Radio Sportiva and BBC World Service. [WorldDAB lists BBC World Service on Digi B Network block 6A at 181.936 MHz](https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes), but reception at the hotel/event venue is untested and Radio Sportiva’s current block/frequency was not found. No radio carriage of the TWC, Gżira United–Mosta, or Rolex Middle Sea Race was confirmed.
-- **Hotel environmental contribution:** [Malta Tourism Authority guidance](https://mta.com.mt/services/environmental-contribution/) checked 10 October states €1.50 per night per person aged 18+ from 1 July 2026, capped at €22.50 per eligible person per visit. Six chargeable nights would be €9 per eligible adult, conditionally; actual billable nights, guest ages, and the hotel invoice determine the amount. The planner does not prefill a personal charge.
+- **Radio:** NET FM is listed at FM 101 MHz and has recurring weekend sports shows; its grid does not explicitly state a time zone. Malta’s DAB+ directory lists Radio Sportiva and BBC World Service. WorldDAB lists BBC World Service on Digi B Network block 6A at 181.936 MHz, but reception at the hotel/event venue is untested and Radio Sportiva’s current block/frequency was not found. No radio carriage of the TWC, Gżira United–Mosta, or Rolex Middle Sea Race was confirmed.
+- **Hotel environmental contribution:** Malta Tourism Authority guidance checked 10 October states €1.50 per night per person aged 18+ from 1 July 2026, capped at €22.50 per eligible person per visit. Six chargeable nights would be €9 per eligible adult, conditionally; actual billable nights, guest ages, and the hotel invoice determine the amount. The planner does not prefill a personal charge.
 - **Expense planner:** all budget and actual amounts start blank. Enter amounts in euros on a consistent whole-trip/party basis. The planner stores inputs in this browser/device only, does not send them to a server, exports a CSV backup, and can clear saved entries. Reference URLs are not price quotes.
 - **Research-platform limits:** sampled TripAdvisor and a small number of Google Maps profile views informed parts of the food/activities research. Direct Yelp, Instagram, TikTok, Facebook, and X requests, and Reddit refreshes, were blocked or returned HTTP 403 in the relevant checks. Platform coverage is not comprehensive; see the dated notes in `docs/SOURCES.md` and the topic pages.
 - **Open questions:** exact event access/times, saved date-specific transit route and return, 17 October diversion impact, trip-week radio schedule/carriage, current business hours/status conflicts, traveler-specific entry/insurance/device details, and the booking itinerary remain unresolved as noted in `docs/OPEN_QUESTIONS.md`.
@@ -38,7 +38,8 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 - [`docs/STATUS.md`](docs/STATUS.md) — workstream progress and blockers.
 - [`docs/HANDOFF.md`](docs/HANDOFF.md) — cross-workstream discoveries and follow-ups.
 - [`docs/PLAN.md`](docs/PLAN.md) — scope, ownership, and verification plan.
-- [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions; topic records use the exact common key `price range`.
+- [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions; topic records use the exact common key `price_range`.
+- [`data/record.schema.json`](data/record.schema.json) — canonical machine-readable schema for the exact 13 fields.
 
 ## Build, preview, and deployment
 
@@ -53,4 +54,4 @@ python3 -m http.server 8080
 
 An HTTP server is needed for browser `fetch()` and the expense planner’s `localStorage` behavior. The deployed planner saves only in the current browser/device; export a CSV before switching devices or clearing browser data.
 
-The Pages workflow and local validation script check JSON/schema, JavaScript syntax, topic-page/data wiring, and local links. External websites are not guaranteed to remain available; re-open primary sources before acting on date-sensitive information.
+The Pages workflow and local validator check the exact 13-field record schema and enums, HTTPS primary URLs and their source-log coverage, JavaScript syntax, topic-page/data wiring, and local links. External websites are not guaranteed to remain available; re-open primary sources before acting on date-sensitive information.
