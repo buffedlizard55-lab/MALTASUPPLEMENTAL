@@ -9,7 +9,7 @@
 
 The site is a mobile-friendly, static Malta tourism and recreation guide with an overview, six topic pages, shared navigation, an evidence dashboard, and an editable expense planner. Six JSON files hold **85 common-schema records** with source type, check date, confidence, and caveats. Unknowns are stated rather than guessed.
 
-The traveler supplied the trip dates and destinations, not the hotel booking, room category, flights, party size, arrival/departure times, or tournament attendance. Six nights applies only if check-in is 13 October and check-out is 19 October. The guide does not assume that booking condition, event access, or an itinerary.
+The traveler supplied the hotel name/address, Deluxe Sea-View room type, trip dates, and event location. Those are planning inputs; the hotel reservation, rate, deposit, check-in/out times, flights, party size, arrival/departure times, and tournament attendance were not provided. Six hotel nights applies only if check-in is 13 October and check-out is 19 October; the guide does not assume that booking condition, event access, or an itinerary.
 
 ## Verified deliverables and research findings
 
@@ -32,7 +32,7 @@ Repeat the repository's offline gate with `python3 scripts/validate_site.py`. It
 
 ## Open questions and traveler actions
 
-1. Confirm the hotel reservation, actual check-in/out, room details, booking total, and separately billed charges.
+1. Confirm the hotel reservation, actual check-in/out, booking total, separately billed charges, and that the booked room matches the supplied Deluxe Sea-View room type.
 2. Provide flight details, airports, baggage, arrival/departure times, and traveler count before finalizing transfers or total costs.
 3. Confirm whether/when the traveler will attend the event, ticket/access terms, session times, and the event-specific public entrance. Then run the official Malta Public Transport planner for the outbound and late-return trip, including the 17 October notice.
 4. Recheck 2026/27 fares/cards, live venue hours/menus, event availability, attraction access, and weather before travel.
