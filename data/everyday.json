@@ -7,7 +7,7 @@
     {
       "id": "malta-electricity",
       "name": "Power adapters and voltage",
-      "category": "Packing & utilities",
+      "category": "Power, connectivity & weather",
       "area": "Malta",
       "address": "Not applicable — island-wide electrical standard",
       "hours": "Not applicable",
@@ -22,22 +22,22 @@
     {
       "id": "malta-currency-cards",
       "name": "Currency and card planning",
-      "category": "Money & payments",
+      "category": "Money, cards & tipping",
       "area": "Malta",
       "address": "Not applicable — island-wide currency",
       "hours": "Not applicable",
-      "description": "The Government of Malta identifies the euro as the national currency. Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars.",
+      "description": "The Government of Malta and the U.S. State Department confirm the euro (€) is the national currency; the State Department also notes that American Express credit cards are not widely accepted and that ATMs accept U.S.-issued bankcards (though cash withdrawals frequently incur an ATM fee). Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars or American Express.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. No bank, exchange rate, or card-acceptance guarantee is made here.",
+      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. The U.S. State Department Malta page (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 0–1 read 11 Oct 2026) explicitly states that the euro is the official currency, American Express is not widely accepted, ATMs accept U.S.-issued bankcards (often with an ATM fee), and the currency limit is €10,000 or equivalent on entry and on exit.",
       "price range": "Use euro (€) as the reference currency; exchange and card fees depend on your provider"
     },
     {
       "id": "malta-language",
       "name": "Language",
-      "category": "Local basics",
+      "category": "Language, time, driving & local laws",
       "area": "Malta",
       "address": "Not applicable — national languages",
       "hours": "Not applicable",
@@ -52,7 +52,7 @@
     {
       "id": "malta-local-time",
       "name": "Local time during the trip",
-      "category": "Local basics",
+      "category": "Language, time, driving & local laws",
       "area": "Malta",
       "address": "Not applicable",
       "hours": "13–19 October 2026: Central European Summer Time (CEST), UTC+2. Daylight saving time ends on Sunday 25 October 2026.",
@@ -67,7 +67,7 @@
     {
       "id": "us-passport-schengen",
       "name": "Entry rules if travelling on a U.S. passport",
-      "category": "Entry & border",
+      "category": "Entry, passport, EES & ETIAS",
       "area": "Malta / Schengen Area",
       "address": "Not applicable",
       "hours": "Not applicable — entry requirements apply at the external Schengen border",
@@ -82,7 +82,7 @@
     {
       "id": "ees-border-system",
       "name": "EU Entry/Exit System (EES) at the border",
-      "category": "Entry & border",
+      "category": "Entry, passport, EES & ETIAS",
       "area": "External borders of participating European countries, including Malta",
       "address": "Not applicable",
       "hours": "Fully operational at participating external border crossings from 10 April 2026; processing time depends on the border crossing and queue",
@@ -97,7 +97,7 @@
     {
       "id": "etias-status-2026-10",
       "name": "ETIAS travel authorisation status",
-      "category": "Entry & border",
+      "category": "Entry, passport, EES & ETIAS",
       "area": "European countries requiring ETIAS, including Malta",
       "address": "Not applicable",
       "hours": "Official EU site checked 11 October 2026: not operational; no applications collected; exact launch date unannounced.",
@@ -112,22 +112,22 @@
     {
       "id": "emergency-medical-112",
       "name": "Emergency number and health cover",
-      "category": "Safety & health",
+      "category": "Safety, health & emergency contacts",
       "area": "Malta",
       "address": "Not applicable — emergency services are island-wide",
-      "hours": "112 emergency service: 24 hours a day",
-      "description": "The Maltese health ministry lists 112 for emergency ambulance, fire, and police services. If you need urgent help, call 112. The U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure; do not assume a U.S. health plan covers care abroad.",
+      "hours": "112 emergency service and 179 national helpline: 24 hours a day",
+      "description": "Both the Maltese health ministry and the U.S. State Department Malta advisory list 112 for emergency ambulance, fire, and police services (plus 179 for Malta’s 24/7 national helpline and 116-006 for victim support). Medical care in Malta is not free to visitors and private hospitals often require upfront payment; the U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure.",
       "source_url": "https://health.gov.mt/services/health-services/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance recommends travel insurance, including medical and evacuation assistance: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. Independently re-read 11 October: the ministry’s HelpLines and Support table explicitly lists Emergency — Ambulance, Fire, and Police: 112, 24/7. This resolves the contrary upstream claim that the number was not on the page.",
-      "price range": "Costs/coverage depend on treatment and insurance; not stated here"
+      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 1–2 read 11 October): explicitly confirms dialing 112 for ambulance, fire brigade, police, and emergency medical services (plus 179 for the 24/7 national helpline, 1579 for mental health, and 116-006 for victim support), notes that medical care is not free to visitors and private hospitals often require upfront payment, and states that no vaccinations are required and tap water is generally safe to drink. Independently re-read 11 October: the ministry’s HelpLines and Support table also explicitly lists Emergency — Ambulance, Fire, and Police: 112, 24/7.",
+      "price range": "Costs/coverage depend on treatment and insurance; private hospitals often require upfront payment"
     },
     {
       "id": "us-embassy-malta",
       "name": "U.S. Embassy Malta contact",
-      "category": "Safety & health",
+      "category": "Safety, health & emergency contacts",
       "area": "Ta’ Qali, Attard",
       "address": "U.S. Embassy Malta, Ta’ Qali National Park Street, Attard ATD 4000, Malta",
       "hours": "Emergency after-hours number is the same main number; routine services require the embassy’s current appointment guidance",
@@ -142,7 +142,7 @@
     {
       "id": "coastal-safety",
       "name": "Coastal safety and current advisory",
-      "category": "Safety & health",
+      "category": "Safety, health & emergency contacts",
       "area": "Malta’s beaches and coastline",
       "address": "Not applicable — follow local beach/lifeguard notices",
       "hours": "Not applicable",
@@ -157,7 +157,7 @@
     {
       "id": "left-hand-driving",
       "name": "Road orientation if taking a car or crossing streets",
-      "category": "Getting around",
+      "category": "Language, time, driving & local laws",
       "area": "Malta",
       "address": "Not applicable",
       "hours": "Not applicable",
@@ -172,7 +172,7 @@
     {
       "id": "cannabis-cbd-warning",
       "name": "Do not bring cannabis or CBD products",
-      "category": "Local laws & customs",
+      "category": "Language, time, driving & local laws",
       "area": "Malta border and local law",
       "address": "Not applicable",
       "hours": "Not applicable",
@@ -187,7 +187,7 @@
     {
       "id": "malta-mobile-options",
       "name": "Mobile data: check roaming or a local prepaid SIM/eSIM",
-      "category": "Phone & connectivity",
+      "category": "Power, connectivity & weather",
       "area": "Malta",
       "address": "GO and Melita offer online/app and shop-based prepaid options; no specific shop selected",
       "hours": "Service and shop support hours vary by provider",
@@ -202,7 +202,7 @@
     {
       "id": "october-weather-forecast",
       "name": "October weather: check the local forecast, not a fixed assumption",
-      "category": "Weather & packing",
+      "category": "Power, connectivity & weather",
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
       "hours": "11 October Met Office snapshot: 13 Oct isolated showers 26/19°C; 14 Oct mainly sunny 24/18°C; 15–16 Oct mainly sunny 25/17°C; 17 Oct mainly cloudy 23/18°C. Forecast does not yet include 18–19 Oct.",
@@ -217,7 +217,7 @@
     {
       "id": "tipping-no-fixed-rate-verified",
       "name": "Tipping: no fixed percentage verified",
-      "category": "Local laws & customs — open research item",
+      "category": "Money, cards & tipping",
       "area": "Malta",
       "address": "Not applicable",
       "hours": "Not applicable",

@@ -76,3 +76,7 @@ evidence and edge-case fixes; Pass 3 full regression and original-request audit.
 Commit/push this session branch, create an explicit PR, wait for checks, merge that
 PR by explicit number, then check Pages deployment. Report unresolved requirements
 as unresolved, not as fully verified completion.
+
+## Additional 11 October verification pass (`arena/c4522181-maltasupplemental`, PR #28)
+
+Merged `origin/main` (`7ec0943`) and layered: (1) the `scripts/validate_site.py` regression guard for `record["price range"]`, (2) `mode-comparison-summary` in `data/transport.json` (125 total site records), (3) bidirectional `Il-Qawra` stop `Arznell (950)` times from `https://www.publictransport.com.mt/route/TD1/`, (4) U.S. State Department confirmation of `112` emergency services, private-hospital payment expectations, and AmEx/ATM notes from `https://travel.state.gov/en/international-travel/travel-advisories/malta.html`, and (5) BBC *Sportsworld*’s 11 Oct EPL billing (`https://www.bbc.co.uk/programmes/w1730c9208pxyf8`).

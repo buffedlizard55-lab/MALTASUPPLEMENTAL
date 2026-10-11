@@ -44,9 +44,9 @@
       "description": "A currently published Malta Public Transport notice says Route 186 is diverted on Friday/Saturday evenings from 19:00, starting 17 October, and that stops from Gholja 2 through Targa toward Buġibba will not be served. This overlaps the TWC Playoffs weekend and may matter for the return journey. The notice does not publish TWC-specific service details; check the live planner and service updates before relying on a particular stop or departure.",
       "source_url": "https://www.publictransport.com.mt/latest-service-updates/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The notice specifies affected stops, not a total cancellation of Route 186. It does not itself confirm whether a particular post-event bus will serve the required Qawra stop. Recheck the operator’s updates and planner on the day.",
+      "notes": "The notice specifies affected stops, not a total cancellation of Route 186. It does not itself confirm whether a particular post-event bus will serve the required Qawra stop. Also listed on the MPT service-updates page on 11 October 2026: Stop Saqqajja (ID 4627) closed for construction until approximately 1 January on Routes 109, 109A, 181, 182, 186, 201, 202, 50, 51, 52, 53, 56 and N52, plus Tuesday 13 October (09:30–17:30) construction detours on Attard Routes 54 and 106. Recheck the operator’s updates and planner on the day.",
       "price range": "Normal route fare; no separate event fare stated"
     },
     {
@@ -96,17 +96,17 @@
     },
     {
       "id": "airport-direct-td1-qawra",
-      "name": "Malta Airport ↔ Qawra by Airport Direct TD1",
+      "name": "Malta Airport ↔ Qawra by Airport Direct TD1 (Il-Qawra stop Arznell 950)",
       "category": "Airport transfer",
       "area": "Malta International Airport ↔ Qawra / Buġibba / north Malta",
-      "address": "Airport bus terminal; MPT’s Route TD1 timetable includes Qawra stop Arznell 950. Confirm the stop nearest the hotel entrance in the planner.",
-      "hours": "MPT lists TD1 departures hourly; use the live timetable for the flight arrival time",
-      "description": "This is the most straightforward published public-bus option from Malta International Airport toward Qawra: Airport Direct TD1 runs from the airport toward Cirkewwa via Buġibba and the Qawra area, and its operator timetable lists the Arznell stop in Qawra. The airport terminal is signposted from arrivals. Buses have luggage space; no advance booking is required. The precise walk from the stop to AX ODYCY was not independently measured.",
+      "address": "Airport bus terminal (Airport 1 stop 2550 outbound; Airport 3 stop 2552 return) ↔ Il-Qawra stop Arznell (ID 950) and Buġibba stops Sajf (947), Bugibba Bay 8 (2339), and Wileg (955). Confirm the stop nearest the hotel entrance in the planner.",
+      "hours": "MPT’s Route TD1 timetable (read 11 Oct 2026) lists hourly departures from Airport 1 (stop 2550) on the hour from 05:00 to 00:00, reaching Il-Qawra stop Arznell (950) at 05:42–00:35; return departures toward Airport 3 (stop 2552) serve Il-Qawra stop Arznell (950) hourly at 05:28–23:26 on weekdays and 05:27–23:27 on weekends.",
+      "description": "This is the most straightforward published public-bus option from Malta International Airport toward Qawra: Airport Direct TD1 runs from the airport toward Ċirkewwa via Buġibba and the Qawra area, and its operator timetable confirms service at Il-Qawra stop Arznell (ID 950) in both directions. The airport terminal is signposted from arrivals. Buses have luggage space; no advance booking is required. The precise walk from stop Arznell 950 to AX ODYCY was not independently measured.",
       "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/. Independently re-read 11 October: the Airport 1 outbound sequence includes Arznell 950 in Il-Qawra. This supports route-level Qawra service but not the hotel walk or a flight-specific departure.",
+      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/. Independently re-read 11 October (chunks 7–9): both the Airport 1 outbound sequence (05:42–00:35 at Arznell 950) and the Ċirkewwa-to-Airport 3 return sequence (05:28–23:26 weekday / 05:27–23:27 weekend at Arznell 950) serve Il-Qawra stop Arznell 950. This supports route-level Qawra service in both directions, while the hotel walk and flight-specific departure still require a journey-planner check.",
       "price range": "€3.50 per passenger on TD1 without an eligible unlimited travel card; cash or contactless onboard"
     },
     {
@@ -228,6 +228,21 @@
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Independently read 11 October: operator page offers several vehicle classes but contains conflicting UberXL capacity copy (six and eight). Do not rely on a seat count from that page; check the actual app vehicle/capacity, quote and pickup instructions. https://www.uber.com/global/en/r/cities/valletta-valletta-mt/"
+    },
+    {
+      "id": "mode-comparison-summary",
+      "name": "Transport mode comparison — convenience, price, value & feasibility",
+      "category": "Bus fares",
+      "area": "Malta-wide (Airport, Qawra, Ta’ Qali & island connections)",
+      "address": "Not applicable — mode-by-mode comparison across published operator services",
+      "hours": "Depends on selected mode: Route 186 Qawra stop 952 listed 06:09–21:39 (30-min frequency) with last listed return from Ta’ Qali Stadium at 20:53 (arriving Buġibba Bay at 21:27); TD1 hourly; app ride-hailing/taxis on demand; ferries by seasonal timetable",
+      "price range": "Bus: €2.50 summer / €2.00 winter day ticket, €3.50 TD1, €19 12-journey, €25 7-day Explore Adult, €27 7-day Explore Flex; Ferries: €3–€8.50 published adult fares; Ride-hailing/taxis & car hire: live quote required",
+      "description": "Public buses offer the lowest published fares (Airport Direct TD1 €3.50 without an eligible unlimited card; day tickets €2.50 summer / €2.00 winter; €19 12-journey card; €25 Explore Adult or €27 Explore Flex 7-day card) and direct scheduled corridors (TD1 and Route 214 for the airport; Route 186 and Route 214 between Qawra and Ta’ Qali), but require checking stop-to-door walks, the Route 186 return cutoff from Ta’ Qali Stadium (20:53, arriving Buġibba Bay at 21:27 rather than the Qawra seafront), and the Saturday 17 October 19:00–00:00 Route 186 detour. Ride-hailing and taxis (Bolt, eCabs, Malta Taxi) give the highest door-to-door convenience and best late-return feasibility at dynamic app/dispatch prices. Rental cars (airport Park East Level 1) add flexibility for rural trips but are not required for Qawra or Ta’ Qali and involve left-hand traffic, narrow/congested roads, parking, fuel, and insurance costs. Ferries serve fixed water corridors (Valletta ↔ Sliema/Three Cities; Malta ↔ Gozo) subject to weather and the 14/17 October Gozo Highspeed race restrictions.",
+      "source_url": "https://www.publictransport.com.mt/journey-planner/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Synthesizes the verified operator sources in this dataset: MPT planner https://www.publictransport.com.mt/journey-planner/ , Route 186 https://www.publictransport.com.mt/route/186/ , Route 214 https://www.publictransport.com.mt/route/214/ , Airport Direct https://www.publictransport.com.mt/other-services/airport-direct/ , MPT fares https://www.publictransport.com.mt/fares-and-tickets/ , MPT service updates https://www.publictransport.com.mt/latest-service-updates/ , Bolt https://bolt.eu/en/cities/malta/ , eCabs https://ecabs.com.mt/ , Malta Taxi https://www.maltataxi.mt/ , Airport car rental https://maltairport.com/renting-a-car/ , Valletta Ferry Services https://www.vallettaferryservices.com/ , Gozo Channel https://www.gozochannel.com/ferry/fares/passenger/ , and Gozo Highspeed https://gozohighspeed.com/pages/fares ."
     }
   ]
 }
