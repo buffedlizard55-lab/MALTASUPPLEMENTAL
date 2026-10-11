@@ -1,6 +1,20 @@
 # Malta trip guide — work plan
 
-## Current delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026)
+## Post-merge follow-up session — `arena/9f6f35c7-maltasupplemental` (11 October 2026)
+
+This session began as a serial re-implementation of PR #42, which could not be merged locally from this shallow checkout. While the branch was being finished, PR #42 was merged into `main` (`5cdea68`, squashed `fbb7aa4`), so the branch was reconciled to `main` and now carries only net-new corrections; duplicate event content was dropped in favour of the merged version.
+
+| Workstream | Owned files | Kept after reconciliation |
+|---|---|---|
+| A · Transport | `data/transport.json`, `getting-around.html` | None — merged PR #42 versions kept unchanged (including `tq-event-special-services` and `white-taxi-official-tariff`). |
+| C · Activities | `data/activities.json`, `activities.html` | `twc-2026-teams-format` and `twc-finals-2026` refreshed for the 9 October Virtus.pro → NIP substitution; the callout says "free in-person admission" and links the CS2 event guide. |
+| E · Radio | `radio.html` | Stream bullet credits the organiser's own release naming Twitch/Kick/YouTube; a station app is an internet feed, not radio. |
+| F · Expenses | `data/expenses.json`, `costs.html` | Data unchanged (merged version kept); page fixes: event-access bullet and quick-use note reflect the free 18+ reservation, the taxi row is budgeted as the event-night return, and the example quick-fill line no longer suggests a ticket price. |
+| G · Integration | `index.html`, `js/site.js`, `scripts/validate_site.py`, `tests/site.spec.js`, `docs/*` | Nav (9 destinations), validator (7 datasets) and Playwright (320/360/768/1440 px) are the merged versions; docs record this follow-up (PLAN, FINAL_REPORT, AUDIT). |
+
+Evidence: every changed claim was read from its live page on 11 October 2026; the NIP substitution URLs were already logged in `docs/SOURCES.md`. No record was added, removed or renamed; all dataset counts match `main`. Gates: validator PASS (7 datasets / 176 records / 307 logged URLs / 15 pages / 181 link attributes / 9 nav / 25 expense rows), JavaScript syntax PASS, Playwright 11/11 PASS, `git diff --check` clean. Protocol note: Arena fixes the session to one branch, so the per-workstream protocol is executed serially on this branch with the same ownership boundaries.
+
+## Previous delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026)
 
 The repository and PR #33 were reviewed before integration. This fixed Arena branch began at PR #33 head `854c1e16d94caa6cd7ae35ee44a0040bc5d036fd` (merge base `eeeb648d143299462ac52b00a7bc3749d36ca152`). The required upstream snapshot is `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, including PR #39 and its accumulated PR #40/#41 work. A non-fast-forward merge of that exact `origin/main` commit is in progress on this branch; PR #33’s own corrections and evidence limits must be retained. No commit, push, PR merge or Pages verification has yet been completed.
 

@@ -4,6 +4,16 @@
 **Session branch:** `arena/27302b08-maltasupplemental` (based on `main` at `b307c51`)
 **Integrated in this session:** pull request **#42** — workstream H, the CS2 event guide (`data/event.json`, `event.html`, two transport records, fare/taxi/venue evidence)
 
+## Post-merge follow-up addendum — branch `arena/9f6f35c7-maltasupplemental`
+
+PR #42 ("Add CS2 event guide (workstream H)") was merged into `main` at `5cdea68` (squashed `fbb7aa4`) on 11 October 2026 while this session was completing a parallel, independently re-verified re-implementation of the same guide. The merge superseded that parallel content, so the branch was reconciled to the new `main` and now contributes only net-new corrections — no record added, removed or renamed.
+
+The follow-up corrections: the costs-page event-access wording and quick-fill example (the old "no public sale" text and the ticket-price example are gone), the activities callout's "free in-person admission" wording with a link to the CS2 event guide, the radio page's stream wording crediting the organiser's own named channels, and the activities tournament records updated for the 9 October Virtus.pro → Ninjas in Pyjamas substitution. Claim-level evidence is in `docs/AUDIT_2026-10-11.md`.
+
+Integration state on this branch: 7 datasets / **176 exact-schema records** (transport 28, food 38, activities 39, everyday 18, radio 20, expenses 25, event 8) / **307 unique logged record URLs** / 15 HTML pages / **181 link attributes** / 9 navigation destinations / 25 expense rows. Gates: `validate_site.py` PASS, `check_javascript.py` PASS, `node --check js/site.js` PASS, `npm test` PASS (11/11 Playwright at 320/360/768/1440 px with axe), `git diff --check` clean. The event guide itself — `data/event.json` (8 records) and `event.html` — is the merged `main` version.
+
+Delivery: the branch is pushed and PR #44 carries these corrections; the merge of PR #44 into `main` and the resulting Pages build are reported only once observed.
+
 ## Scope and integration
 
 This session opened with the repository already mature: a static, JSON-backed Malta trip guide and a blank-by-default expense planner, published from `main` root via GitHub Pages. One pull request (#42) was still **open and conflicting** with `main` on five files. The session therefore (a) integrated that work by content rather than by side, (b) re-read the load-bearing sources itself instead of inheriting earlier notes, and (c) ran the three cumulative passes on the integrated result.
