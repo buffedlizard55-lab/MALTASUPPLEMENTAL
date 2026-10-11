@@ -167,3 +167,14 @@ Cross-workstream findings from this pass. Each note records who needs to know an
 - **Withdrawn:** this branch’s “18–19 October is not forecast” limitation. `main` located the **Met Office Valletta** view reaching 12–19 October, which is strictly better; this branch’s Beaufort/UV enrichment of the narrower Malta Met Office snapshot was dropped rather than layered on top.
 
 **Merged tree:** 7 data files / **175 records** (transport 27, event 8, food 38, activities 39, everyday 18, radio 20, expenses 25) / 9 active pages / 9 nav destinations / 305 logged record URLs. Gates: validator PASS, `check_javascript.py` PASS, `node --check` PASS, **Playwright 10/10 PASS** (49.0s, including `main`’s itinerary quick-fill regression).
+
+
+## Session `arena/27302b08-maltasupplemental` — 11 October 2026 (integration pass)
+
+- **H → A (transport):** the event's own listing displays a **free** "Reserve a spot" ticket block under a **"Sales end soon"** notice, and its agenda rows now render end times (Wed/Thu to 22:30, Fri to 21:00). The listed finishes still outlast the last usable Route 186 return, so the late-return conclusion is unchanged — but nothing has been reserved, so the recommendation is to reserve *before* travelling.
+- **A → D/F (hotel services):** AX ODYCY's FAQ states Guest Relations arranges taxis through a firm offering **fixed charges**, and that car hire is available through Guest Relations with a licence from the traveller's country of origin (drive on the left). New transport record `ax-odycy-guest-relations-taxi` carries this; the expense planner must still treat any fare as unquoted.
+- **D → F (tipping):** operator-published guidance (10–15% expectation; no service charge at AX ODYCY) now exists and conflicts with secondary guides (5–10%). The row is `partially verified`, not a prefilled percentage, and the planner must not pre-select a tip rate.
+- **D → C (power):** the hotel's FAQ documents three Type G sockets plus two-pin continental sockets per room, and a **110 V razor-only** bathroom socket. Anyone planning to plug a US charger into that socket should not; the adapter advice stands.
+- **C → F (room naming):** the hotel's room list distinguishes a **"Deluxe Room with Side Sea View"**. The supplied "Deluxe sea view" must be matched against the booking confirmation rather than assumed.
+- **A → F (fare):** the operator's only dated fare statement is the expired winter window (19 Oct 2025 – 13 Jun 2026). €2.50 remains a planning inference; the row says so and stays blank by default.
+- **E → C/F (radio):** NET FM's grid was re-read and is unchanged; no new Malta carriage evidence, no physical reception test, and the Kalshi eligibility question stays account-specific.

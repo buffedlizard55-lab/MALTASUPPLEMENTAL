@@ -215,6 +215,21 @@
       "price range": "Live quote required; no trip fare independently verified"
     },
     {
+      "id": "ax-odycy-guest-relations-taxi",
+      "name": "Taxis arranged by the hotel's Guest Relations — fixed charges",
+      "category": "On-demand transport",
+      "area": "AX ODYCY, Qawra Coast Road, Qawra SPB 1902",
+      "address": "Arranged through AX ODYCY Guest Relations / front desk, Qawra Coast Road, Qawra",
+      "hours": "Arranged on request; no published hours. The hotel's FAQ presents this as a service for guests rather than a scheduled service.",
+      "price range": "The hotel states it organises taxis through a firm that offers fixed charges. No rate card or example fare is published, so ask for the fixed price before booking. For comparison, Transport Malta's regulated metered maximum from the same area works out around €19–€26 for 10–15 km at the published bands (this project's arithmetic, not a quote).",
+      "description": "This is the simplest stated route to a pre-arranged return from the event: AX ODYCY's own FAQ says taxis can be organised from Guest Relations through a reputable firm offering fixed charges. That matters directly to this trip because every published event day outlasts the last usable Route 186 return, so the realistic plan is a booked car — and a hotel-arranged fixed charge is an alternative to a dynamic app quote. The hotel does not publish which firm it uses, the fixed prices, or how far in advance to ask, and no fare was obtained for this guide.",
+      "source_url": "https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Read directly from AX ODYCY's FAQ on 11 October 2026: https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out — \"From Guest Relations we can organise taxis through a reputable firm which offers fixed charges.\" The same FAQ page states that taxi services 'can be arranged by our Guest Relations' and links guests to Malta Public Transport for public transport: https://www.publictransport.com.mt/ . That is a hotel self-description: no operator name, rate card, availability guarantee or booking channel was published, and no quote was requested by this project. Compare any fixed charge against Transport Malta's published MAXIMUM metered tariff (https://www.transport.gov.mt/land/public-transport/other-public-transport/taxis-829 , footer 'Page last updated: 06/04/2022') and against a live Bolt/eCabs quote before committing. Ask the hotel to confirm in writing for the event nights, since 14–18 October includes evening street detours around Ta' Qali and Mosta."
+    },
+    {
       "id": "white-taxi-official-tariff",
       "name": "Official white-taxi meter tariff — the legal maximum you can be charged",
       "category": "On-demand transport",
@@ -241,7 +256,7 @@
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "The airport page lists participating rental firms. Driving-side and road-safety advice is covered in the Everyday Guide; rental terms, parking and event-day congestion were not priced or checked.",
+      "notes": "The airport page lists participating rental firms. Driving-side and road-safety advice is covered in the Everyday Guide; rental terms, parking and event-day congestion were not priced or checked. The hotel's FAQ (read 11 Oct 2026) states that car-rental facilities are available through Guest Relations, that a valid driving licence from the traveller's country of origin is required and that driving in Malta is on the left: https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out . See the Everyday guide's left-hand-driving record; no rental price, insurance term or event-day parking was verified.",
       "price range": "Not quoted; compare date-specific rental, insurance, fuel and parking charges"
     },
     {
