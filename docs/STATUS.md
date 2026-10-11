@@ -12,7 +12,7 @@
 |---|---|---|
 | **A · Transport** | Service-updates page re-read a fourth time (17–18 October cluster enumerated: Routes 186, 202, 260, 47, 103, 45, 405, 238, 203, 280, 31, 41, 42, 48, N48); TQ1/TQ2 definitions and the March 2026 Ta' Qali special-service precedent added; fares page re-read unchanged | No TWC/TQ notice published; date-specific planner run, attendee gate, measured walks, onward Buġibba→Qawra leg and a live taxi quote still open; Friday 16 October diversion question unresolved |
 | **B · Food & cafés** | One data-integrity fix: the `espresso-odycy` record (hotel 24/7 coffee bar) was carrying Minoa's hours, address, menu URL and review figures; it was rebuilt from the operator's own Espresso page fetched 11 October 2026 and a regression test now guards the separation. Otherwise unchanged — dated TripAdvisor review-volume snapshot and access limits retained | Platform refreshes (Yelp/Instagram/TikTok/Facebook/Reddit/X) remain unavailable; menus, hours and closures need direct reconfirmation |
-| **C · Gaming, activities, landmarks & events** | Ticketing listing re-read 11 October: still “Sales end soon”, free, 18+, venue coordinates 35.8957343/14.4168839, six visible lineup names plus “View all”, Sat/Sun agenda still hidden | Reservation/inventory, gate, ID rules, per-day scanning, weekend agenda and the 18:00 vs 18:30 opener outlier stay open |
+| **C · Gaming, activities, landmarks & events** | Ticketing listing re-read 11 October: still “Sales end soon”, ages 18+, venue coordinates 35.8957343/14.4168839, six visible lineup names plus “View all”, Sat/Sun agenda still hidden; the word “Free” appeared only on a “You might also like” card in this read, so the price stays flagged for checkout | Reservation/inventory, gate, ID rules, per-day scanning, weekend agenda and the 18:00 vs 18:30 opener outlier stay open |
 | **D · U.S.-traveler essentials** | Weather record extended: national panel corroborated by a second Maltese outlet for 13–17 October and three third-party forecasts read for 18–19 October, labelled as leads | Personal entry/insurance/device facts unknown; 18–19 October still outside the national panel |
 | **E · Sports radio** | Three new records (BFBS Radio 2 non-Malta negative; PBS Radju Malta/Radju Malta 2 carriage lead; trip-window sport calendar) and a new dated trip-window live-sport table; EPL fixtures independently corroborated; talkSPORT “DAB+: 6C (Malta)” infobox lead recorded | No receiver scan, no confirmed Malta carriage of any named match, “Sports Channel” identity still unresolved, no radio carriage proven for the NFL London game |
 | **F · Expense planner** | Unchanged: blank by default, quick-fill preview, local-only autosave, CSV export, validated JSON backup | Await the itinerary; enter only confirmed amounts |
@@ -24,6 +24,24 @@
 **Last updated:** 11 October 2026 (UTC)
 **Current session branch:** `arena/67d511d1-maltasupplemental`
 **Snapshot boundary:** Current-session addendum below; later sections are historical mainline snapshots, not a live dashboard.
+
+## Current session addendum — `arena/08099cd9-maltasupplemental` (11 October 2026)
+
+**Stage:** verification pass complete on the branch from `ae69ab1` (equal to `origin/main`). Local gates were green before the edits (validator, JavaScript check, 23/23 Playwright).
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Fares page re-read: €2.50 summer and €2.00 winter wording, €19 / €25 / €21 / €27 products and the €6 Airport Direct add-on match the record. | No saved hotel-to-venue journey; timetable grids not re-read; the 19 Oct winter switch is not a printed 2026/27 changeover; no live taxi quote. |
+| **B · Food & cafés** | No new reads. | Yelp, Instagram, TikTok, Facebook, Reddit and X direct access still blocked or unverified. Not a universal popularity ranking. |
+| **C · Event & activities** | Organiser page, Eventbrite, HLTV NIP and talent articles, and Liquipedia extract re-read. Dates, format, NIP replacement and CEST clocks confirmed. The “Free” claim is now recorded with its actual evidence. | Ticket-block price, inventory, Saturday/Sunday agenda and whether one reservation covers all days remain unconfirmed. Organiser's own page does not list team names, so team evidence is third-party. |
+| **D · Everyday** | ETIAS official page re-read: not in operation. | Pre-departure recheck of ETIAS and EES (the EES conflict is still open). |
+| **E · Sports radio** | Radio In Malta directory re-read: talkSPORT labelled “Sports Channel” on DAB+ (no block). Radio Sportiva is listed on DAB+ with no block. | No receiver scan; no named-match carriage on a Malta multiplex; 6C vs 12A still conflicting. |
+| **F · Expense planner** | Unchanged. | Needs the traveler's itinerary and confirmed charges. |
+| **G · Integration** | Session notes, SOURCES, OPEN_QUESTIONS, HANDOFF and README updated; gates rerun. | PR and merge are recorded in the final report. |
+
+**Corrections made this session:** the event-ticket note no longer says the ticket block showed “Free” on this read (HLTV corroborates free entry instead).
+
+**Not claimed:** no Google reviews, Yelp, Instagram, TikTok, Facebook, Reddit or X access was achieved in this session; the Thunderpick root domain returned 401 to the fetch tool.
 
 ## Current session addendum — `arena/67d511d1-maltasupplemental` (11 October 2026)
 

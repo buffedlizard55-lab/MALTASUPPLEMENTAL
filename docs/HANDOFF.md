@@ -6,13 +6,22 @@
 - **E → G (fixtures):** the 17–19 October EPL clocks are now corroborated by three independent listings (Premier League amendment article, BBC Sport scores & fixtures, Sky Sports/live-footballontv). Malta is UK+1 until 25 October. A calendar or a market listing is still not radio carriage.
 - **A → G (transport re-reads):** fourth read of the service-updates page — the 17–18 October cluster is now enumerated in full (186, 202, 260, 47, 103, 45, 405, 238, 203, 280, 31, 41, 42, 48, N48), the older Route 186 April notice still runs 20:00–00:00, and still **no TWC/TQ service** is published. TQ1/TQ2 corridor definitions and a March 2026 Ta’ Qali post-event Buġibba/St Paul’s Bay precedent are recorded as precedent only. Friday 16 October diversion applicability stays open.
 - **D → G (weather):** Times of Malta reprints the national 13–17 October panel with identical values (corroboration, not a new model); three third-party forecasts cover 18–19 October and agree only on rain risk. Do not present third-party 18–19 October values as the national forecast.
-- **C → G (event):** the ticketing listing was re-read and has not changed: “Sales end soon”, free, 18+, same three visible agenda days, six team names plus “View all”. Venue map coordinates 35.8957343 / 14.4168839 can be handed to a taxi or ride-hailing driver.
+- **C → G (event):** the ticketing listing was re-read and has not changed except for the price wording: “Sales end soon”, ages 18+, the same three visible agenda days, six team names plus “View all”. On this read “Free” appeared only on a “You might also like” card rather than in the ticket block, so free entry stays corroborated-by-HLTV but unconfirmed at checkout. Venue map coordinates 35.8957343 / 14.4168839 can be handed to a taxi or ride-hailing driver.
 - **B → G (food, data fix):** the canonical `espresso-odycy` record was found carrying Minoa's facts (rooftop hours 18:30–22:30 / 16+ / €70–€80 tasting, Level 11 address, minoa.mt menu URL, Minoa TripAdvisor figures). It has been rebuilt from the operator's Espresso page (Level 0, 24/7 coffee bar, menu PDF linked but not priced), the correction is noted in the record, and `tests/review.spec.js` now fails if the two records' hours, addresses, sources or price claims drift back together. Use Espresso for early/late snack-and-coffee needs only; do not quote it a price.
 - **B → G (food):** no new platform access this pass. Do not re-assert the dated review-volume snapshot as a fresh capture; it remains one platform, one date, one radius.
 - **F → traveler:** planner unchanged and blank; enter only confirmed amounts.
 
 
 **Session:** `arena/dd9dd00c-maltasupplemental` · **updated:** 11 October 2026 UTC.
+
+**Session:** `arena/08099cd9-maltasupplemental` · **updated:** 11 October 2026 UTC.
+
+- **C → G:** The Eventbrite ticket block did not show “Free” in the 11 Oct read; the record now says so. HLTV's 2 Oct article corroborates free entry through an Eventbrite link. Keep the price flagged until checkout is checked.
+- **D → G:** The official EU ETIAS page still says “not in operation” today. The record is unchanged and needs a pre-departure recheck.
+- **E → G:** The Radio In Malta directory corroborates the talkSPORT “Sports Channel” label on DAB+ (block not given). Keep the 6C/12A conflict open; do not treat the directory as a schedule.
+- **A → traveler:** No change to the transport record. The first fares chunk and the Route 186 index were re-read. Timetable grids remain the 11 Oct evidence.
+
+## Previous handoff — `arena/dd9dd00c-maltasupplemental` · 11 October 2026 UTC
 
 - **A → G:** Service updates re-read in full. Route 186 October diversion remains Friday/Saturday 19:00–00:00 starting 17 October and ending 18 October at midnight, Gholja 2 through Targa toward Buġibba. A separate notice closes Saqqajja stop 4627 on Route 186 until “January 1” with no year. An earlier same-day operator trace places that stop before Stadium 2194 on the return. This pass did not re-walk the chain, so do not tell the traveler the Stadium stop is closed or guaranteed to be served.
 - **C → A/E:** Eventbrite still hides Saturday/Sunday agenda and FAQ answers. Its visible lineup names Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all. HLTV, Hotspawn and Liquipedia say NIP replaced Virtus.pro and name PARIVISION in Group B. That is not radio carriage, and the 16 September organizer release still named Virtus.pro.
