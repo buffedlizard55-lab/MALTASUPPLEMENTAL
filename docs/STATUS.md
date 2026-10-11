@@ -78,6 +78,14 @@ records / 317 unique record URLs / 15 HTML pages / 234 link attributes / 9 navig
 `python3 scripts/check_javascript.py` — PASS. `npx playwright test` — 21/21 passed. Manual Chromium pass at 390 px and
 1280 px: zero horizontal overflow and zero console errors on the three pages changed this session.
 
+## Delivery observed — session `arena/09cdfbf0-maltasupplemental`
+
+PR **#51** (head `a20368c`) merged into `main` on **11 October 2026 at 17:13:35 UTC** as merge commit `6859c46`. Its required
+check, run [38158610565](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38158610565) (“Schema, browser
+and accessibility checks”), passed. The GitHub Pages latest-build record for that commit reports **built**, 17:13:36 → 17:13:53
+UTC. No browser-level fetch of the live site was possible in this session (network policy allows only GitHub API and
+package-registry hosts), so this is a build-state observation and not a content verification.
+
 ## Traveler-time follow-up
 
 The repository merge, required PR check and Pages build record are complete. Remaining work needs traveler-specific information or a check close to the trip:
