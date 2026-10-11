@@ -17,7 +17,7 @@
 
 ## Update — PR #42 merged; follow-up pass (`arena/9f6f35c7-maltasupplemental`, 11 October 2026)
 
-- `main` is now at `5cdea68`: PR #42 was merged 15:43 UTC (squashed `fbb7aa4`) and carries the CS2 event guide — `data/event.json` (8 records), the full `event.html`, the TQ-special-service and taxi-tariff transport records, the event-day expense rows, nine navigation destinations and a seven-dataset validator.
+- `main` had moved to `5cdea68` (PR #42 merged 15:43 UTC, squashed `fbb7aa4`; `main` has since advanced through the PR #43 integration, `94733df`) and carries the CS2 event guide — `data/event.json` (8 records), the full `event.html`, the TQ-special-service and taxi-tariff transport records, the event-day expense rows, nine navigation destinations and a seven-dataset validator.
 - The fixed follow-up branch was reconciled to that `main` and contributes only net-new corrections: costs-page event-access wording and quick-fill example; the activities callout wording + CS2-event-guide link; the radio stream wording; and the activities tournament records updated for the 9 October Virtus.pro → NIP substitution. No record was added, removed or renamed.
 - Counts and gates on the reconciled branch: validator **PASS** (7 datasets / 176 records / 307 logged URLs / 15 HTML pages / 181 link attributes / 9 nav destinations / 25 expense rows); `check_javascript.py` and `node --check js/site.js` **PASS**; `npm test` **PASS** (11/11 Playwright, 320/360/768/1440 px, axe, parity, planner); `git diff --check` **PASS**.
 - Open items are unchanged from the sections below and `docs/OPEN_QUESTIONS.md`: the FAQ answers, the Saturday/Sunday agenda, the attendee gate and walk, the TQ1 monitor, the October single fare, and the taxi tariff's April-2022 vintage.
