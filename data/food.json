@@ -2,12 +2,12 @@
   "topic": "Food & cafés",
   "title": "Food & cafés in Malta",
   "last_updated": "2026-10-11",
-  "intro": "A source-backed shortlist centered on AX ODYCY and Qawra, with a few clearly labeled farther outings. Operator pages and menus are primary; review ratings, counts and guide positions are dated snapshots, not stable quality measures. Direct TripAdvisor profiles were checked on 9 October 2026 and the TripAdvisor Qawra/Buġibba “10 best” pages were read again on 11 October 2026 (rankings and review counts captured in a dedicated record). Limited Google Maps profile views loaded for Minoa and Trattoria Riccardo only. Yelp, Instagram, TikTok, Facebook and X requests returned HTTP 403; five Reddit threads last read on 24 September could not be refreshed on 9 October (HTTP 403), and a search-engine view of one 2021 Reddit thread is dated and anecdotal. TripAdvisor currently labels The Meeting Point Cafe & Snacks Bar CLOSED, without independent operator confirmation. Luzzu’s operator says it is closed for refurbishment; no reopening date is published. Recheck hours, menu prices, status and reservations before travelling.",
+  "intro": "A source-backed shortlist centered on AX ODYCY and Qawra, with a few clearly labeled farther outings. Operator pages and menus are primary; review ratings, counts and guide positions are dated snapshots, not stable quality measures. Direct TripAdvisor profiles were checked on 9 October 2026 and the TripAdvisor Qawra/Buġibba “10 best” pages were read again on 11 October 2026 (rankings and review counts captured in a dedicated record). Limited Google Maps profile views loaded for Minoa and Trattoria Riccardo only. Yelp, Instagram, TikTok, Facebook and X requests returned HTTP 403; five Reddit threads last read on 24 September could not be refreshed on 9 October (HTTP 403), and search-engine views of Reddit threads are dated and anecdotal (including one February 2025 r/malta thread captured as its own record). TripAdvisor currently labels The Meeting Point Cafe & Snacks Bar CLOSED, without independent operator confirmation. Luzzu’s operator says it is closed for refurbishment; no reopening date is published. Recheck hours, menu prices, status and reservations before travelling.",
   "records": [
     {
       "id": "tripadvisor-popularity-snapshot-2026-10-11",
       "name": "“Most popular” snapshot — TripAdvisor Qawra and Buġibba lists read 11 October 2026",
-      "category": "Review-platform snapshots (dated)",
+      "category": "Platform & community snapshots",
       "area": "Qawra (Saint Paul’s Bay) and Buġibba / St Paul’s Bay",
       "address": "Not applicable — aggregated platform ranking; each venue’s own address is in its record",
       "hours": "Snapshot taken 11 October 2026. TripAdvisor “10 best restaurants in Qawra/Buġibba” pages: Qawra order 1 Trattoria Riccardo 4.8 (2,651 reviews), 2 Minoa Mediterranean Fusion 5.0 (764), then Cheeky Monkey Gastropub 4.5 (3,366), Woodhut Pub & Diner 4.6 (597), Luzzu 4.5 (1,582), Churchill’s 4.5 (518), Knickerbocker 4.2 (700), 9 Ball Cafe 4.7 (60), Quattro Fratelli 3.7 (622), Ocean Basket 5.0 (266), Deck & Keel 4.9 (969). Buġibba order 1 Venus 4.8 (2,900), 2 Nine Lives 4.7 (2,870), plus Fluid Bistro & Steak House 4.9 (990), Ta’ Rożi 4.5 (885), Victoria Gastropub 4.3 (2,128), La Stalla 4.2 (1,103), Travellers Cafe/Bar 4.6 (293), Bugies 4.5 (248), Ta’ Pawla 4.3 (1,870), Kora 4.9 (180).",
@@ -17,7 +17,7 @@
       "source_type": "review",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "TripAdvisor “THE 10 BEST Restaurants in Qawra” page read 11 October 2026: https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html ; companion Buġibba list: https://www.tripadvisor.com/Restaurants-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta.html . Both are review-platform pages: the ranking is the platform’s own ordering at that moment, review counts shift daily, and a “view” ranking also exists separately. This record deliberately duplicates no operator facts — hours, menus and status come from the individual venue records. Yelp, Instagram, TikTok, Facebook and X page requests were still blocked in this session’s checks (HTTP 403 as previously logged); a search-engine view of one 2021 Reddit thread on Malta gaming places surfaced but is dated and anecdotal and is not used as a ranking source: https://www.reddit.com/r/malta/comments/q5vylk/gaming_places_in_malta/ ."
+      "notes": "TripAdvisor “THE 10 BEST Restaurants in Qawra” page read 11 October 2026: https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html ; companion Buġibba list: https://www.tripadvisor.com/Restaurants-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta.html . Both are review-platform pages: the ranking is the platform’s own ordering at that moment, review counts shift daily, and a “view” ranking also exists separately. This record deliberately duplicates no operator facts — hours, menus and status come from the individual venue records. Yelp, Instagram, TikTok, Facebook and X page requests were still blocked in this session’s checks (HTTP 403 as previously logged); a search-engine view of one 2021 Reddit thread on Malta gaming places surfaced but is dated and anecdotal and is not used as a ranking source: https://www.reddit.com/r/malta/comments/q5vylk/gaming_places_in_malta/ . A search-result view of the same pages on 11 October displayed slightly different counts on some listings (e.g. Fluid Bistro & Steak House ~386–387 on the “10 best” view vs 990 on the main list; the .co.uk domain showed smaller counts again), which is normal platform variance — do not blend the numbers. The Qawra page also named delivery/takeout/cheap-eat favourites (Peking, Chaplin’s, Mr. Kebab, Knickerbocker, Diana’s Pub)."
     },
     {
       "id": "minoa-ax-odycy",
@@ -543,6 +543,36 @@
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Rating/count and quoted snippets from the TripAdvisor listing page at the 11 October 2026 check. No official website, menu, hours or reservation channel was verified. Ratings and counts change; a high rating is diner opinion, not measured quality."
+    },
+    {
+    "id": "fluid-bistro-bugibba",
+    "name": "Fluid Bistro & Steak House",
+    "category": "Nearby Qawra, Buġibba & St Paul's Bay — restaurants",
+    "area": "Buġibba",
+    "address": "Buġibba / St Paul's Bay (approx. 0.5 mi from the TripAdvisor Buġibba centre reference point); exact street address to confirm in the listing.",
+    "hours": "Not verified in this session; platform “open now” flags change daily. Check the listing or call before going.",
+    "price range": "TripAdvisor price band $$–$$$ as displayed 11 Oct 2026 (relative band, not a euro quote); no current menu price verified.",
+    "description": "American-style bistro and steakhouse in Buġibba shown at 4.9/5 from roughly 386–387 reviews in TripAdvisor's Buġibba “best restaurants” views on 11 October 2026, with review text praising ribs and burgers. Popularity snapshot only; no official site, menu or hours were verified in this session.",
+    "source_url": "https://www.tripadvisor.com/Restaurants-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta.html",
+    "source_type": "review",
+    "date_checked": "2026-10-11",
+    "confidence": "partially verified",
+    "notes": "Snapshot read via search-engine result view of the TripAdvisor Buġibba listing on 11 October 2026; ratings/counts are mutable. No first-party website, address, hours, menu or prices were verified; treat as a lead to confirm, not a booked option."
+    },
+    {
+    "id": "reddit-bugibba-weekday-eats-2025",
+    "name": "Reddit r/malta — weekday eats around Buġibba (Feb 2025 thread)",
+    "category": "Platform & community snapshots",
+    "area": "Buġibba / St Paul's Bay",
+    "address": "Not applicable — community thread, not a single venue.",
+    "hours": "Not applicable; community comments do not establish current hours or status.",
+    "price range": "Not a price source.",
+    "description": "A public r/malta thread asking for places open during the work week (posted 18 February 2025) surfaced these recurring community suggestions around Buġibba/Qawra: Damiano's (Italian), Made in Sud (Neapolitan pizza), Lovage Bistro, Venus, Chatterbox, New Madras, Happy Pigs Tavern (Bulgarian/Eastern European), Mizzica (Buġibba square), Su Swagat and Gandhi (Indian), The Taverna, Pink Garlic, Pactos, LoA and Umi. Anecdotal community opinion only — several of these venues already have their own records on this guide with stronger sources.",
+    "source_url": "https://www.reddit.com/r/malta/comments/1isfuk9/places_to_eat_around_buggiba_that_are_open_during/",
+    "source_type": "social",
+    "date_checked": "2026-10-11",
+    "confidence": "partially verified",
+    "notes": "Thread content was surfaced via search-engine result view on 11 October 2026; direct reddit.com fetches returned HTTP 403 in the earlier 9 October attempts. Other community threads read in earlier passes are listed in docs/SOURCES.md. Comments are dated opinions, not status or quality guarantees; confirm each venue independently."
     }
   ]
 }
