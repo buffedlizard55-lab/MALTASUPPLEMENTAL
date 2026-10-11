@@ -2,7 +2,7 @@
   "topic": "everyday",
   "title": "Everyday guide for a U.S. traveler in Malta",
   "last_updated": "2026-10-11",
-  "intro": "Practical, source-checked essentials for the 13–19 October 2026 trip: entry pointers, money, power, phone service, local time, safety, and health. Entry rules depend on the passport used; forecast snapshots and provider offers can change. Links point to government, EU, safety, weather, and operator sources.",
+  "intro": "Practical, source-checked essentials for the 13–19 October 2026 trip: entry pointers, money, power, phone service, local time, safety, health, and a dated forecast that now covers all seven days. Entry rules depend on the passport used, and the EES picture carries a recorded conflict between the official EU position and secondary reporting of Malta-specific delays — either way, allow generous time at the border on arrival and departure. Forecast snapshots and provider offers can change. Links point to government, EU, safety, weather, and operator sources.",
   "records": [
     {
       "id": "malta-electricity",
@@ -201,17 +201,17 @@
     },
     {
       "id": "october-weather-forecast",
-      "name": "October weather: check the local forecast, not a fixed assumption",
+      "name": "Weather for 13–19 October 2026 — dated forecast, all seven trip days now covered",
       "category": "Power, connectivity & weather",
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
-      "hours": "11 October Met Office snapshot: 13 Oct isolated showers 26/19°C; 14 Oct mainly sunny 24/18°C; 15–16 Oct mainly sunny 25/17°C; 17 Oct mainly cloudy 23/18°C. Forecast does not yet include 18–19 Oct.",
-      "description": "This is a dated forecast snapshot, not a trip guarantee. The Malta Met Office page is refreshed; recheck all seven dates shortly before departure and before sea activities. Pack for possible wind or showers as well as warm daytime weather, and follow marine/lifeguard notices.",
+      "hours": "Malta Met Office seven-day view read on 11 October 2026: Tue 13 Oct isolated showers, high 26°C / low 19°C, NW force 3–4, UV 5; Wed 14 Oct mainly sunny, 24 / 18, N force 4 to NNW 3–4; Thu 15 Oct mainly sunny, 25 / 17, NE force 3 to variable 2–3; Fri 16 Oct mainly sunny, 25 / 17, W force 2–3 to WNW 3–4; Sat 17 Oct mainly cloudy, 23 / 18, WNW force 3–4 to W 2–3. UK Met Office Valletta, updated 12:27 on 10 October 2026, extends the view: Sun 18 Oct sunny intervals, 23 / 21, and Mon 19 Oct sunny intervals, 23 / 21, both flagged as long-range BETA.",
+      "description": "A dated forecast snapshot covering all seven trip days, not a guarantee. The Malta Met Office — the national meteorological service — supplies 13–17 October; its own seven-day view did not yet reach 18–19 October when read on 11 October, so those two days come from the UK Met Office's Valletta forecast, whose 18–19 October entries are explicitly marked as long-range BETA and are therefore less reliable than the nearer days. The overall picture is warm and mostly dry with daytime highs in the low-to-mid 20s Celsius, one shower-prone arrival day on Tuesday 13 October, and noticeable wind on several days, with gusts strongest on 14 October. Pack for warm days, a light layer for wind and evening, and a shower layer for arrival day. Recheck all seven dates shortly before departure and again on the day of any sea, boat or cliff-top activity, and follow marine and lifeguard notices.",
       "source_url": "https://maltametoffice.com/en/forecast/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Official seven-day view fetched 11 October: https://maltametoffice.com/en/forecast/. This snapshot replaces the older 9 October forecast; 18–19 October lie beyond this view. Recheck before outdoor or sea activities; these are forecasts, not observed conditions.",
+      "notes": "Malta Met Office seven-day view read directly on 11 October 2026: https://maltametoffice.com/en/forecast/ (homepage forecast panel https://maltametoffice.com/ ). This snapshot replaces the earlier 9 and 11 October views for 13–17 October. UK Met Office Valletta forecast read on 11 October 2026: https://weather.metoffice.gov.uk/forecast/sq6k4r011 , page states \"Updated: 12:27pm on 10 October 2026\" and marks its 18–19 October days as BETA; its long-range panel gives Sat 17 Oct highest 22–23 / lowest 21–22 and Mon 19 Oct highest 22–23 / lowest 20–22. The two services differ slightly for 17 October (Malta Met Office high 23, UK Met Office high 23 with a long-range band of 22–23), which is normal between models and is reported rather than reconciled. Winds are given in Beaufort force as published. These are forecasts, not observed conditions; no sea-state, lifeguard or warning notice was checked for the trip dates.",
       "price range": "Not applicable"
     },
     {
@@ -228,6 +228,21 @@
       "confidence": "unverified",
       "notes": "Visit Malta’s essential-information page was checked but its rendered page did not provide tipping guidance: https://www.visitmalta.com/en/essential-information/. Secondary guides disagreed: https://horizonjumpers.com/malta-tipping-guide/ and https://www.malta-spirit.com/guides/malta-currency-and-payment/. These are not treated as official rules; confirm any specific service charge on the venue’s bill.",
       "price range": "No percentage recommended; check the bill for any service charge"
+    },
+    {
+      "id": "ees-malta-implementation-conflict",
+      "name": "EES at Malta's border — official position versus reported delays",
+      "category": "Entry, passport, EES & ETIAS",
+      "area": "Malta external Schengen border, including Malta International Airport",
+      "address": "Not applicable — border procedure",
+      "hours": "Applies at the border crossing on arrival and departure; processing time depends on the crossing and the queue.",
+      "description": "Plan for extra time at the border and do not assume the fast path. The official EU position is that the progressive rollout ended on 9 April 2026 and that from 10 April 2026 EES is fully operational at all external border crossing points of the countries using it. Separately, secondary travel-visa reporting from September 2026 says Malta is among nine Schengen countries that told the European Commission they cannot yet enforce EES in full, citing technical failures, infrastructure gaps and congestion risk, with the EU informally permitting the delay and no clear time limit. Those two statements conflict. The practical consequence for a traveller is the same either way: biometric registration may or may not be in use at the crossing you arrive at, queues have been reported as long during 2026, and neither source publishes Malta-specific wait times. Allow generous time on both the arrival and the departure day, keep the passport you travelled on to hand, and follow the instructions of border officers and any signage for self-service kiosks. A biometric passport is needed only to use optional self-service equipment, not in principle to cross.",
+      "source_url": "https://travel-europe.europa.eu/en/ees/faq",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "The official EU FAQ was read directly on 11 October 2026 and states: \"This progressive implementation lasted until 9 April 2026. From 10 April 2026, the EES is fully operational at all external border crossing points of the European countries using the system.\" It also confirms that for a visa-exempt traveller the system stores four fingerprints and a facial image, that fingerprints of children under 12 are not scanned, that a biometric passport is only needed for self-service equipment, and that the 90-days-in-any-180-days limit is calculated as a single period across all EES countries: https://travel-europe.europa.eu/en/ees/faq . Legal basis cited there: Regulation (EU) 2017/2226 and Regulation (EU) 2025/1534. The Malta-specific delay claim is secondary and NOT official: https://www.visasupdate.com/post/ees-implementation-delay-schengen-nine-countries-2026 (16 September 2026), which lists Malta as \"not operating EES at all borders and all times\". Two further secondary sources were seen and are consistent with the official date but not with the Malta detail: https://www.abta.com/tips-and-advice/planning-and-booking-a-holiday/upcoming-changes-travel-europe (updated 17 August 2026) and https://schengentraveler.com/entry-exit-system-ees/ (August 2026, which also reports long 2026 border waits and an ETIAS slip to 2027). No Malta government or eu-LISA statement confirming or denying the Malta delay was found in this session, so the conflict is recorded rather than resolved. Queue times are not published by any source checked.",
+      "price range": "No EES fee is stated by the EU."
     }
   ]
 }

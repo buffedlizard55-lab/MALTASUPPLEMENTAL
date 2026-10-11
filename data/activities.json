@@ -2,7 +2,7 @@
   "topic": "activities",
   "title": "Activities, landmarks & events in Malta",
   "last_updated": "2026-10-11",
-  "intro": "A source-checked shortlist for the 13–19 October 2026 stay: confirmed event dates, ticketed activities, sights, and gaming-venue status. TWC spectator access and daily match times remain unconfirmed. Google Maps currently marks three legacy public PC/esports-centre listings as permanently closed; The Eden XP Arcade is a separate, current general arcade/VR option, not a PC LAN café. Recheck operators and live schedules before travelling.",
+  "intro": "A source-checked shortlist for the 13–19 October 2026 stay: confirmed event dates, ticketed activities, sights, and gaming-venue status. TWC spectator access and daily match times remain unconfirmed. Google Maps currently marks three legacy public PC/esports-centre listings as permanently closed; The Eden XP Arcade is a separate, current general arcade/VR option, not a PC LAN café. Saturday 17 October is the busiest verified day: a ticketed open-air dance event starts at 22:00 at UNO Malta in Ta’ Qali and the Ħamrun Chocolate Festival runs in the daytime. Two well-known Malta events were checked and excluded because they fall outside the trip window — Valletta Waterfront Oktoberfest (7–9 October) and PLAYCON at MFCC (20–22 November). Recheck operators and live schedules before travelling.",
   "records": [
     {
       "id": "ax-odycy-base-hotel",
@@ -483,6 +483,51 @@
       "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "Independently read 11 October: parish visitor page directly lists weekday/weekend hours and last entries, €5 short visit and€8 whole experience (inner dome balcony in the €8 tier), and routes 45/186/31/48/280 from Qawra Bus Terminus. Address and service interruptions not established; confirm when booking. https://mostachurch.com/?lang=en"
+    },
+    {
+      "id": "uno-malta-dash-berlin-2026-10-17",
+      "name": "Jeffrey Sutorius (known as Dash Berlin) at UNO Malta — Saturday 17 October 2026",
+      "category": "Tournament & trip-window events (13–19 Oct)",
+      "area": "Ta' Qali, Ħ'Attard — the same area as the event venue",
+      "address": "UNO Malta, Crafts, ATD, Attard ATD 4000, Malta. The ticketing platform's map link gives coordinates 35.8913746, 14.4192547.",
+      "hours": "Saturday 17 October 2026 from 22:00. The ticketing page lists the start time only; no end time is published there.",
+      "price range": "Tickets from €10.00 on EventWorks, plus any booking fee. EventWorks terms state tickets are non-refundable unless the organiser instructs otherwise and that the booking fee is not refunded.",
+      "description": "A ticketed open-air dance event at UNO Malta in Ta' Qali, Attard on the Saturday night of the CS2 playoffs. It matters to this trip for two reasons beyond the music. First, UNO Malta is in the same Ta' Qali / Attard ATD 4000 area as the venue context recorded for the event, so a large crowd will be moving through that area late on 17 October. Second, Malta Public Transport lists a cluster of evening detours across the Mosta, Rotunda and Ta' Qali P&R corridor from 19:00 on Friday and Saturday starting 17 October, including Route 186 toward Buġibba omitting Gholja 2 through Targa. MPT does not name a cause, so the link is plausible but not stated by the operator. If you are at the tournament that evening, expect road pressure and reduced bus options in the Ta' Qali area after 19:00 and plan a taxi or ride-hailing return.",
+      "source_url": "https://eventworks.mt/dash-berlin-17th-oct",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Event, date, start time, venue address, coordinates and the €10.00 starting price were read directly from the official ticketing platform on 11 October 2026: https://eventworks.mt/dash-berlin-17th-oct . Presented by One Off Events and Global Dance Events. EventWorks terms on that page allow the promoter to add, withdraw or substitute artists and to vary programme, times, seating and capacity without notice, and to postpone or cancel for adverse weather or other causes, so recheck before travelling. The artist name is Jeffrey Sutorius, billed as Dash Berlin. Third-party listings (https://spotlightmalta.com/event/one-off-events-pres-dash-berlin and https://allevents.in/attard/dash-berlin-main-room-uno-malta/200026283251114) add a 04:00 finish, a support line-up and an early-bird phone number; those details come from aggregators, not the ticketing platform, and are not treated as confirmed. Age limit, door policy and remaining ticket inventory were not published on the page checked. MPT detour cluster: https://www.publictransport.com.mt/latest-service-updates/ . This is not evidence of any connection to the Thunderpick World Championship, and attending is not assumed in the expense planner."
+    },
+    {
+      "id": "hamrun-chocolate-festival-2026-10-17",
+      "name": "Ħamrun Chocolate Festival — Saturday 17 October 2026",
+      "category": "Tournament & trip-window events (13–19 Oct)",
+      "area": "Ħamrun — central Malta, between Valletta and the Ta' Qali area",
+      "address": "St Joseph High Street (Strada Rjali), Ħamrun town centre, per the organiser's own announcement and a Maltese events guide.",
+      "hours": "Saturday 17 October 2026. The 10:30–18:00 window comes from a Maltese events guide, not from the organiser's page, so treat the hours as provisional.",
+      "price range": "The events guide lists entry as free. Food, drink and stall purchases cost extra and are not priced here.",
+      "description": "A free street festival of chocolate, artisan stalls, live demonstrations, sculptures and family entertainment along Ħamrun's main street, organised by the Ħamrun Local Council. It is a daytime option on the Saturday of the playoffs and sits on the Valletta–Mosta corridor, so it can be combined with a Valletta or Ta' Qali day. It finishes in the evening, well before the Ta' Qali detour window, which makes it a lower-risk Saturday choice than an evening event in that area.",
+      "source_url": "https://www.facebook.com/hamrunchocolatefestival/",
+      "source_type": "social",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "The organiser's own Facebook page states that the Ħamrun Chocolate Festival returns on 17 October 2026 on Strada Rjali, and its call-for-artisans artwork carries the date 17th Oct. 2026: https://www.facebook.com/hamrunchocolatefestival/ . Facebook could not be fetched directly in this environment, so the wording is taken from a dated search-index snapshot of that page and is labelled social rather than official. The street name, 10:30–18:00 hours, free entry and Local Council organiser come from a secondary Maltese guide: https://www.maltainfoguide.com/hamrun-chocolate-festival-malta.html and https://www.maltainfoguide.com/activities-in-malta-october.html . An older listing for a 2022 edition shows the festival has previously run in late October, so the date should be reconfirmed with the Local Council close to the day: https://www.whatson.com.mt/en/home/events/19329/the-hamrun-chocolate-festival.htm . No admission, crowd-control, parking or public-transport detail was verified."
+    },
+    {
+      "id": "playcon-2026-mfcc-outside-window",
+      "name": "PLAYCON 2026 at MFCC — gaming and esports expo, but NOT during this trip",
+      "category": "Outside the trip window — do not plan around it",
+      "area": "Malta Fairs & Conventions Centre (MFCC), Ta' Qali, Ħ'Attard",
+      "address": "Malta Fairs & Conventions Centre (MFCC), Millennium Stand, Level 1, The National Stadium, Ħ'Attard ATD 4000, Malta — as published by the official ticketing platform.",
+      "hours": "Friday 20 November 2026 19:00–22:30 (Mythic Pass); Saturday 21 November 10:30–22:30; Sunday 22 November 10:30–19:00. An associated PLAYCON Summit runs 18–19 November 09:00–16:00.",
+      "price range": "Not checked — the event is outside the 13–19 October trip window and no price is relevant to this itinerary.",
+      "description": "Recorded deliberately so it is not mistaken for a trip option. PLAYCON is Malta's gaming, esports, game-development and cosplay expo, and its sixth edition runs 20–22 November 2026 — about a month after this trip ends. It is included here for one useful reason: the official ticketing platform publishes the MFCC address as Millennium Stand, Level 1, The National Stadium, Ħ'Attard ATD 4000, which independently corroborates the venue-area address already recorded as context for the October event. That corroborates an area and a building, not a tournament entrance, a ticket, or spectator access. If you want a gaming expo on this trip, none was verified inside 13–19 October.",
+      "source_url": "https://eventworks.mt/playcon-2026",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Dates, opening hours and the MFCC address were read from the official ticketing platform listing on 11 October 2026: https://eventworks.mt/playcon-2026 . The associated summit is https://eventworks.mt/playcon-summit-2026 and https://summit.playcon.eu/ . A secondary listing gives 19–22 November and mentions the global launch weekend of a major console title with a guest appearance; those details are aggregator-sourced and are not relied on: https://spotlightmalta.com/event/playcon-2026-at-mfcc . This record must not be used as evidence about the Thunderpick World Championship venue, entrance, ticketing or access — it is a different event, organised by a different promoter, five weeks later."
     }
   ]
 }
