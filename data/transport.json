@@ -2,7 +2,7 @@
   "topic": "transport",
   "title": "Getting around Malta",
   "last_updated": "2026-10-11",
-  "intro": "Start with the organizer’s actual attendee location and daily finish time. Route 186 and Route 214 are public-bus candidates between Qawra and Ta’ Qali, not confirmed hotel-to-entrance journeys. Use the date-specific MPT planner for both directions and keep a live-quote taxi fallback, especially for the 17 October evening diversion.",
+  "intro": "Start with the organizer’s actual attendee location and daily finish time. Route 186 and Route 214 are public-bus candidates between Qawra and Ta’ Qali, not confirmed hotel-to-entrance journeys. Malta Public Transport’s published fares were read directly on 11 October 2026 (single day-route journeys €2.50 in the summer window / €2.00 in winter, €3.00 night and Tallinja Direct, €3.50 on TD1, €19 for 12 journeys, €25 for the 7-day Explore Adult card), and travel cards can be bought at the Buġibba Terminal. Ticket-holder access to the Thunderpick Finals is still unconfirmed; use the date-specific planner for both directions and keep a live-quote taxi fallback, especially for the 17 October evening diversion.",
   "records": [
     {
       "id": "twc-2026-venue-dates",
@@ -10,14 +10,14 @@
       "category": "Event-day planning",
       "area": "Ta’ Qali / Ħ’Attard",
       "address": "BLAST Arena Studios venue-area reference: MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000, Malta, as listed for another BLAST event by EventWorks. The TWC attendee pin, gate and entrance are not confirmed.",
-      "hours": "Official TWC page lists the overall event window 12–19 October 2026: arrival 12 October, media day 13 October, Group Stage 14–16 October, Playoffs 17–18 October, departure 19 October. It does not publish daily public match/door times or attendee instructions.",
-      "description": "The official Thunderpick page confirms the phase dates and Malta as the location; a Thunderpick-issued release names BLAST Studios Malta. A BLAST guide and an EventWorks ticketing listing for separate events corroborate MFCC/Ta’ Qali venue-area context. The exact TWC attendee pin, entrance, access and daily public times remain unconfirmed.",
+      "hours": "Official TWC page lists the overall event window 12–19 October 2026: arrival 12 October, media day 13 October, Group Stage 14–16 October, Playoffs 17–18 October, departure 19 October. It does not publish daily public match/door times, ticket sales or attendee instructions. Independent esports press repeats a 14–18 October competition window at the BLAST Arena studio.",
+      "description": "The official Thunderpick page confirms the phase dates and Malta as the location; a Thunderpick-issued release names BLAST Studios Malta, and independent esports press places the tournament at the BLAST Arena studio in Ta’ Qali, Attard. BLAST’s Malta ticketing partner describes a 1,000 m² studio in Ta’ Qali that hosts ticketed events with a live studio audience for BLAST-run tournaments — precedent only, because this event is operated by GAM3RS_X. No public ticket sale or spectator policy for these Finals was found on 11 October 2026, so attendee access is unconfirmed rather than refused.",
       "source_url": "https://world-championship.thunderpick.io/2026-finals/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The official Thunderpick page was rechecked 11 October. Thunderpick’s announcement names BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . BLAST’s attendee guide is for a previous, separate event and gives the MFCC address: https://blast.tv/cs/news/malta-fan-guide . Neither confirms the TWC attendee pin, attendee entrance, tickets, exact daily match/door times, or event transport. Do not transfer earlier BLAST event access rules. Official 9 October X post points to an opening-day schedule, but its attached image was not available in extracted text; no match times inferred: https://x.com/thunderpickco/status/2108604711968317828. Independently re-read 11 October: EventWorks lists BLAST Arena Studios Malta at MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000 for a July BLAST Bounty event: https://eventworks.mt/premier-bounty-presented-by-polymarket. The VisitMalta.co.uk business directory separately lists MFCC South Gate National Stadium, Attard: https://www.visitmalta.co.uk/business-directory/business/blast-arena-studios-malta. These corroborate venue-area context, not TWC access, spectator instructions or a safe final walk. Upstream Liquipedia evidence remains archived; no fresh check or organizer endorsement of that source is asserted.",
-      "price range": "Spectator ticket price/access not verified"
+      "notes": "The official Thunderpick page was rechecked 11 October 2026. Thunderpick’s announcement names BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . BLAST’s attendee guide is for a previous, separate event and gives the MFCC address: https://blast.tv/cs/news/malta-fan-guide . Neither confirms the TWC attendee pin, attendee entrance, tickets, or exact daily match/door times. Do not transfer earlier BLAST event access rules. Official 9 October X post points to an opening-day schedule, but its attached image was not readable in extracted text; no match times inferred: https://x.com/thunderpickco/status/2108604711968317828 . Re-read 11 October 2026: EventWorks, BLAST’s Malta ticketing partner, lists BLAST Arena Studios Malta at MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000 and sells studio-audience tickets for BLAST-run events (from €10.00 for the July 2026 BLAST Premier Bounty): https://eventworks.mt/premier-bounty-presented-by-polymarket ; it also describes the studio as 1,000 m² in Ta’ Qali: https://eventworks.mt/blog/blast-slam-viii-malta-dota-2-october-2026 . Times of Malta reported BLAST’s three-year, nine-event Ta’ Qali base: https://timesofmalta.com/article/danish-esports-brand-blast-sets-base-ta-qali.1114836 . HLTV independently places the tournament on 14–18 October at the BLAST Arena studio: https://www.hltv.org/news/45525/falcons-and-furia-headline-thunderpick-world-championship-team-list . Thunderpick says all matches will be broadcast live on its Twitch, Kick and YouTube channels: https://esportsbrief.substack.com/p/thunderpick-world-championship-2026-return and https://g3newswire.com/thunderpick-world-championship-returns-to-malta-with-1m-prize-pool/ . An esports event directory lists the tournament with dates but no ticket link: https://visitesports.com/locations/mt/malta . Absence of a ticket listing is not proof that none exists — confirm with the organizer before travelling.",
+      "price range": "Spectator ticket price/access not verified — no public sale found; BLAST-run events at the same studio sold tickets from €10.00 (July 2026 precedent only)"
     },
     {
       "id": "qawra-taqali-route-186",
@@ -31,8 +31,8 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The 11 October extracted timetable shows Qawra 952 and Stadium 6227 in the outbound sequence, with several time variants; day-type context was not established, so earlier 06:10–21:38 / 21:26 bounds have been removed rather than treated as trip-day guarantees. Date-specific planner: https://www.publictransport.com.mt/journey-planner/. Saturday 17 October evening diversion: https://www.publictransport.com.mt/latest-service-updates/. October single-fare period is unclear on the dated fare chart: https://www.publictransport.com.mt/fares-and-tickets/. Return Stadium 2194 was independently re-read on 11 October. Outbound 6227 and return 2194 are different direction stops; no single clock range from the multi-variant static timetable is asserted.",
-      "price range": "Regular day-route fare; MPT lists €2 winter / €2.50 summer cash-contactless rates, but the applicable 2026 October fare window was not established"
+      "notes": "The 11 October extracted timetable shows Qawra 952 and Stadium 6227 in the outbound sequence, with several time variants; day-type context was not established, so earlier 06:10–21:38 / 21:26 bounds have been removed rather than treated as trip-day guarantees. Date-specific planner: https://www.publictransport.com.mt/journey-planner/. Saturday 17 October evening diversion: https://www.publictransport.com.mt/latest-service-updates/. October single-fare period is unclear on the dated fare chart: https://www.publictransport.com.mt/fares-and-tickets/. Return Stadium 2194 was independently re-read on 11 October. Outbound 6227 and return 2194 are different direction stops; no single clock range from the multi-variant static timetable is asserted. Fare context added 11 October 2026 from the operator’s published table: https://www.publictransport.com.mt/fares-and-tickets/ . Route 186 is a day route, so a single journey costs the day-route price (€2.50 summer planning figure) and is included in the 7-day Explore Adult card; travel cards can be bought at the Buġibba Terminal, the closest listed sales office to Qawra: https://www.publictransport.com.mt/office-and-ticket-machine/ .",
+      "price range": "Regular day-route single fare: €2.50 in the operator’s summer table, €2.00 winter (2-hour validity with free transfers); covered by the Explore Adult 7-day card (€25) but not by the 7-day Explore card on tallinja Direct routes"
     },
     {
       "id": "route-186-oct17-detour",
@@ -77,7 +77,7 @@
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
       "notes": "The Route 214 page showed a detour notice for 11 October only when checked; it is outside the trip window, not a guarantee of unchanged service later. Journey planner: https://www.publictransport.com.mt/journey-planner/.",
-      "price range": "Regular day-route fare; exact October 2026 seasonal fare not established"
+      "price range": "Regular day-route single fare: €2.50 (summer table) / €2.00 winter; included in the 7-day Explore Adult card (€25)"
     },
     {
       "id": "mpt-night-routes-late-return",
@@ -106,7 +106,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/. Independently re-read 11 October (chunks 7–9): both the Airport 1 outbound sequence (05:42–00:35 at Arznell 950) and the Ċirkewwa-to-Airport 3 return sequence (05:28–23:26 weekday / 05:27–23:27 weekend at Arznell 950) serve Il-Qawra stop Arznell 950. This supports route-level Qawra service in both directions, while the hotel walk and flight-specific departure still require a journey-planner check.",
+      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/. Independently re-read 11 October (chunks 7–9): both the Airport 1 outbound sequence (05:42–00:35 at Arznell 950) and the Ċirkewwa-to-Airport 3 return sequence (05:28–23:26 weekday / 05:27–23:27 weekend at Arznell 950) serve Il-Qawra stop Arznell 950. This supports route-level Qawra service in both directions, while the hotel walk and flight-specific departure still require a journey-planner check. Fare context re-verified 11 October 2026 against the operator’s own table, which lists Tallinja Direct routes at €3.00 and TD1 at €3.50: https://www.publictransport.com.mt/fares-and-tickets/ . The same page states that the 7-day Explore Adult card excludes tallinja Direct routes, while the 12 Single Day Journeys card may be used on the Airport Direct service at a cost of two journeys per trip.",
       "price range": "€3.50 per passenger on TD1 without an eligible unlimited travel card; cash or contactless onboard"
     },
     {
@@ -126,18 +126,48 @@
     },
     {
       "id": "mpt-fares-cards",
-      "name": "Bus fares and visitor travel cards",
+      "name": "Bus fares, travel cards and where to buy them",
       "category": "Bus fares",
       "area": "Malta and Gozo",
       "address": "Tickets may be purchased onboard by cash or contactless; sales points and machines are listed by MPT",
-      "hours": "Tickets on bus; card validity depends on the selected product",
-      "description": "MPT lists several distinct visitor products: 12 Single Day Journeys (€19), Explore Flex four-day (€21) and seven-day (€27), and a separate Explore Adult seven-day (€25). Do not substitute their names or assume identical inclusions. The Flex unlimited offers explicitly include day, night, Airport Direct and special services. The €25 Adult paragraph excludes tallinja Direct, while the page’s general seven-day overview mentions Airport Direct; clarify the exact card with MPT before buying. Single tickets paid onboard are valid two hours with transfers.",
+      "hours": "Published fare table read 11 October 2026: day routes €2.50 summer / €2.00 winter per single journey; night routes (N) €3.00; Special Services (S) €3.00; tallinja Direct (TD) €3.00; TD1 €3.50. Singles are valid two hours with free transfers, cost the same in cash or by contactless card, and a €50 fine applies without a valid ticket. Travel cards: 12 Single Day Journeys €19 (shareable; night/Airport Direct consume two journeys; valid six months from first use); Explore Adult 7-day €25 (day and night routes plus select Special Services, excludes Tallinja Direct; individual use); Explore Child 7-day €7 (ages 4–10; under 4 travel free); Explore Flex 4-day €21 / 7-day €27; Explore Flex sightseeing bundles €36–€74 depending on days and inclusions.",
+      "description": "Malta Public Transport’s own fare page was read on 11 October 2026, replacing the earlier inference from third-party summaries. Every published tourist ticket type is now recorded with the operator as the source, including the two-hour transfer window, the €50 no-valid-ticket fine and the sales channels. The page states that the €2.00 winter fare applied from 19 October 2025 to 13 June 2026 and lists the summer day-route fare as €2.50, but it does not print the 2026/27 winter start date, so the exact seasonal boundary for the trip is recorded separately as an open item.",
       "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The current page’s only explicit winter effective range is 19 October 2025–13 June 2026, which does not resolve the trip’s October 2026 fare boundary. Timetable season and fare season are different questions. The shareable 12-journey overview says night/Airport Direct use two journeys per trip and expires six months after first use. TD1 single is €3.50. Personalized Tallinja free-travel rules are not visitor-card rules. Confirm product activation/expiry and inclusion before buying: https://www.publictransport.com.mt/office-and-ticket-machine/.",
-      "price range": "Checked 11 Oct: €19 shareable 12 Single Day Journeys; Explore Flex €21 / 4 days or €27 / 7 days (non-shareable). The page separately lists Explore Adult 7 Day €25 with different stated exclusions. Day single €2 winter / €2.50 summer; October seasonal boundary not verified."
+      "notes": "Official fare table and travel-card terms read 11 October 2026: https://www.publictransport.com.mt/fares-and-tickets/ . Sales offices and card machines: https://www.publictransport.com.mt/office-and-ticket-machine/ . The same page states the €2.00 winter fare applied 19 October 2025 – 13 June 2026 and lists a separate summer day-route fare of €2.50; it does not state the 2026/27 winter start date. Card conditions as published: the 7-day Explore Adult card is individual and excludes tallinja Direct routes; the 12-journey card is shareable. Recheck the day before travel, because seasonal prices and card inclusions change.",
+      "price range": "Official operator fares: single day route €2.50 summer / €2.00 winter; night, Special Services and Tallinja Direct €3.00; TD1 €3.50; 12 Single Day Journeys €19; Explore Adult 7-day €25; Explore Child 7-day €7; Explore Flex 4-day €21 / 7-day €27"
+    },
+    {
+      "id": "mpt-seasonal-fare-window-2026",
+      "name": "Which single-journey fare applies during 13–19 October 2026",
+      "category": "Bus fares",
+      "area": "Malta and Gozo",
+      "address": "Not applicable — fare rules",
+      "hours": "Malta Public Transport’s fare page read 11 October 2026 lists day-route singles at €2.50 (summer) and €2.00 (winter) and states that the €2.00 winter fare applied from 19 October 2025 to 13 June 2026. It does not print the start date of the 2026/27 winter period.",
+      "description": "The trip runs 13–19 October 2026. On the operator’s own pattern the cheaper winter single begins after 19 October, so the higher summer single price is the planning figure to budget for this trip; the operator’s page does not state the 2026/27 changeover date, so this remains a planning inference, not a published trip-week fare. Budget either way with the day-route single (€2.50), or buy a travel card, which removes the uncertainty for a multi-day stay.",
+      "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Evidence: the official fare table and the sentence “With effect from 19 October 2025 to 13 June 2026, the winter fare of €2.00 … applies”: https://www.publictransport.com.mt/fares-and-tickets/ . The trip window (13–19 October) sits inside a period the operator prices as summer on its own published table, but no 2026/27 winter start date is printed, and third-party guides that assert specific changeover dates are not operator sources and were not adopted. Resolve by rechecking the operator page or the tallinja app immediately before travel.",
+      "price range": "Planning figure €2.50 per single day-route journey during the trip; €2.00 winter rate expected to resume after 19 October 2026 (not published on the checked page)"
+    },
+    {
+      "id": "mpt-card-sales-points",
+      "name": "Where to buy bus tickets and travel cards near Qawra",
+      "category": "Bus fares",
+      "area": "Malta International Airport, Valletta, Buġibba (Qawra side) and Sliema",
+      "address": "Sales offices: Welcomer’s Hall and Baggage Reclaim, Malta International Airport; Valletta Terminal; Buġibba Terminal; Sliema Ferries. Card-dispensing machines in tourist areas and retail outlets such as Agenda, 8TillLate and WH Smith.",
+      "hours": "Not published on the checked pages; office opening hours were not verified. On-bus purchase is always possible with cash or a contactless bank card or phone.",
+      "description": "The operator lists the Buġibba Terminal as a travel-card sales office, which is the closest listed sales point to the AX ODYCY base in Qawra, and also sells cards at the airport on arrival and at Valletta Terminal and Sliema Ferries. Buying on board is possible for single journeys; cards are the cheaper option for a six-night stay with repeated event travel and sightseeing.",
+      "source_url": "https://www.publictransport.com.mt/office-and-ticket-machine/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Sales-point list linked from the official fare page read 11 October 2026: https://www.publictransport.com.mt/fares-and-tickets/ and https://www.publictransport.com.mt/office-and-ticket-machine/ . Retail-outlet names are the operator’s own examples. Buġibba Terminal was not visited and its office hours, stock and payment methods were not verified; airport offices are in the Welcomer’s Hall and at Baggage Reclaim.",
+      "price range": "Cards as published: 12 Single Day Journeys €19; Explore Adult 7-day €25; Explore Child 7-day €7; Explore Flex 4-day €21 / 7-day €27; single on-bus journeys €2.50 summer / €2.00 winter"
     },
     {
       "id": "malta-ride-hailing-taxis",
@@ -216,18 +246,18 @@
     },
     {
       "id": "uber-malta",
-      "name": "Uber in Malta",
+      "name": "Ride-hailing in Malta — Bolt, eCabs and the conflicting Uber status",
       "category": "On-demand transport",
-      "area": "Malta (Uber city page for Valletta)",
+      "area": "Malta (provider pages and two conflicting 2026 guides); coverage in Qawra and at the Ta’ Qali venue not verified",
       "address": "Pickup/drop-off set in the Uber app",
-      "hours": "Uber’s Valletta city page advertises requests 24/7 and reservations up to 30 days ahead. Supply in Qawra/Ta’ Qali was not checked.",
-      "price range": "Live in-app quote; no Qawra–Ta’ Qali or airport fare checked",
-      "description": "Uber’s own Valletta page advertises ride requests and advance reservations. It can be another app to compare alongside Bolt/eCabs, but no Qawra–Ta’ Qali or airport price, wait time or car availability was tested.",
-      "source_url": "https://www.uber.com/global/en/r/cities/valletta-valletta-mt/",
+      "hours": "App-based, on demand; provider pages describe 24/7 requesting but no trip-time availability or waiting time was verified.",
+      "price range": "Live in-app quotes only: Uber’s own page quotes about €20 for an average 19-minute UberX trip from MLA; no Qawra–Ta’ Qali or event-night price verified, and third-party airport-to-Buġibba estimates (roughly €25–€35) are guide figures, not quotes",
+      "description": "Two ride-hailing providers are documented as operating in Malta: Bolt, described in Maltese national media as the leading ride-hailing platform on the islands and offering English-language service through its Malta pages, and eCabs, a long-standing Maltese operator with pre-booking. Uber’s position is contradictory in the sources checked on 11 October 2026: Uber publishes a Malta airport page that mentions UberX rides with an average €20 fare for roughly 19-minute trips from MLA, while two 2026 third-party guides state that Uber does not operate in Malta. Treat Bolt and eCabs as the reliable options, confirm Uber in the app on arrival, and never accept an unlicensed driver approaching inside the terminal.",
+      "source_url": "https://www.uber.com/global/en/r/airports/mla/taxi/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Independently read 11 October: operator page offers several vehicle classes but contains conflicting UberXL capacity copy (six and eight). Do not rely on a seat count from that page; check the actual app vehicle/capacity, quote and pickup instructions. https://www.uber.com/global/en/r/cities/valletta-valletta-mt/"
+      "notes": "Uber’s Malta airport page read 11 October 2026: https://www.uber.com/global/en/r/airports/mla/taxi/ (it says taxis are not available for MLA rides and points riders to UberX, quoting an average €20 for a 19-minute trip). Conflicting third-party guides also read 11 October 2026: https://www.malta-spirit.com/guides/taxis-bolt-and-ride-share-malta/ and https://hubpymalta.com/what-to-do/malta-airport-guide.html (both say Uber does not operate in Malta). Bolt’s presence in Malta is reported by Times of Malta: https://timesofmalta.com/article/bolt-becomes-first-ridehailing-app-available-maltese.1117399 , with provider pages at https://bolt.eu/en/cities/malta/ and https://bolt.eu/en/airports/mla/ . eCabs: https://ecabs.com.mt/ . No Qawra–Ta’ Qali quote, event-night supply, pickup point or waiting time was verified for any provider; compare live quotes and keep the bus as the priced fallback."
     },
     {
       "id": "mode-comparison-summary",
@@ -236,13 +266,13 @@
       "area": "Malta-wide (airport, Qawra, Ta’ Qali and island connections)",
       "address": "Not applicable — mode-by-mode comparison across published operator services",
       "hours": "Depends on mode and date. Route 186 and TD1 are published options; exact trip-date routing, safe walks, service changes and event access require the live operator planner and confirmed destination.",
-      "price range": "Published bus products include €3.50 Airport Direct TD1, €19 shareable 12-journey, €25 Explore Adult and €27 Explore Flex 7-day cards; seasonal single fares show €2 winter / €2.50 summer without an October 2026 effective window. Taxi/ride-hailing and car hire need live quotes; ferry fares depend on route.",
-      "description": "Public buses offer the lowest published fares and scheduled corridors when the live route fits; compare the actual ride count and card terms before deciding value. Route 186 lists Qawra stop 952 toward Ta’ Qali Stadium 6227, while the return boards the opposite-side Stadium 2194 toward Buġibba—not Qawra seafront—and the last listed departure is 20:53 (Buġibba Bay 1 arrival 21:27). MPT lists a 17 October evening diversion. Airport Direct TD1 serves Il-Qawra Arznell stop 950 in both timetable directions; its trip-specific departure and walk to AX ODYCY still need the planner. Taxi/ride-hailing offers greater door-to-door convenience, but fares and event availability require a live quote and confirmed pickup. An approximately €25 airport taxi figure is old third-party information, not an official fare. Rental cars add multi-stop flexibility but also fuel, parking, insurance/excess and driving responsibilities. Ferries serve fixed island/water corridors, not the Qawra–Ta’ Qali commute. Use buses for planned daytime trips when the date-specific route and return fit; keep a live taxi/ride-hailing quote as a late-return backup; rent a car only when the actual itinerary justifies the total costs. No door-to-door event plan is established.",
+      "price range": "Verified operator prices for budgeting: day-route single €2.50 summer / €2.00 winter (2-hour transfers); night, Special Services and Tallinja Direct €3.00; TD1 €3.50; 12 Single Day Journeys €19; Explore Adult 7-day €25; Explore Child €7; Explore Flex 4-day €21 / 7-day €27; €50 fine without a valid ticket. Taxi/ride-hailing and car hire need live quotes; ferry fares depend on route.",
+      "description": "Convenience, price, value and feasibility compared for the Qawra base: public buses are the only fully publicly priced mode, and on 11 October 2026 the operator’s own fare table, card terms and sales points were read directly so the planner can use exact figures instead of inferred ones. Route 186 connects Qawra to Ta’ Qali with a return via Buġibba; taxis and ride-hailing are door-to-door but unquoted; a rental car only makes sense if the traveler accepts left-side driving, insurance excess and unverified venue parking. The unresolved variables are the confirmed TWC access/entrance, the daily finish time and the 17 October evening diversion.",
       "source_url": "https://www.publictransport.com.mt/journey-planner/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Comparison uses operator and provider sources in this dataset: MPT planner https://www.publictransport.com.mt/journey-planner/ ; Route 186 https://www.publictransport.com.mt/route/186/ ; Route 214 https://www.publictransport.com.mt/route/214/ ; Airport Direct https://www.publictransport.com.mt/other-services/airport-direct/ and TD1 timetable https://www.publictransport.com.mt/route/TD1/ ; fares https://www.publictransport.com.mt/fares-and-tickets/ ; service updates https://www.publictransport.com.mt/latest-service-updates/ ; night routes https://www.publictransport.com.mt/new-night-routes/ ; Bolt https://bolt.eu/en/cities/malta/ ; eCabs https://ecabs.com.mt/ ; Uber https://www.uber.com/global/en/r/cities/valletta-valletta-mt/ ; Malta Taxi https://www.maltataxi.mt/ ; airport rental https://maltairport.com/renting-a-car/ ; Valletta Ferry Services https://www.vallettaferryservices.com/ ; Gozo Channel https://www.gozochannel.com/ferry/fares/passenger/ ; Gozo Highspeed https://gozohighspeed.com/pages/fares . TD1 Arznell 950 departure/direction and hotel walking distance remain trip-planner checks. No taxi/rental quote, physical route test, exact TWC location, or door-to-door event journey was established. October single-fare validity remains open."
+      "notes": "Comparison uses operator and provider sources in this dataset: MPT planner https://www.publictransport.com.mt/journey-planner/ ; Route 186 https://www.publictransport.com.mt/route/186/ ; Route 214 https://www.publictransport.com.mt/route/214/ ; Airport Direct https://www.publictransport.com.mt/other-services/airport-direct/ and TD1 timetable https://www.publictransport.com.mt/route/TD1/ ; fares https://www.publictransport.com.mt/fares-and-tickets/ ; service updates https://www.publictransport.com.mt/latest-service-updates/ ; night routes https://www.publictransport.com.mt/new-night-routes/ ; Bolt https://bolt.eu/en/cities/malta/ ; eCabs https://ecabs.com.mt/ ; Uber https://www.uber.com/global/en/r/cities/valletta-valletta-mt/ ; Malta Taxi https://www.maltataxi.mt/ ; airport rental https://maltairport.com/renting-a-car/ ; Valletta Ferry Services https://www.vallettaferryservices.com/ ; Gozo Channel https://www.gozochannel.com/ferry/fares/passenger/ ; Gozo Highspeed https://gozohighspeed.com/pages/fares . TD1 Arznell 950 departure/direction and hotel walking distance remain trip-planner checks. No taxi/rental quote, physical route test, exact TWC location, or door-to-door event journey was established. October single-fare validity remains open. Repriced 11 October 2026 from the operator’s published table and card terms: https://www.publictransport.com.mt/fares-and-tickets/ . The same page confirms the two-hour transfer window, the excluded tallinja Direct routes from the 7-day Explore card, and the €50 fine for travelling without a valid ticket."
     }
   ]
 }
