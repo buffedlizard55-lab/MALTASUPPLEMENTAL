@@ -1,6 +1,28 @@
 # Malta trip guide — work plan
 
-## Current delivery session — `arena/d840a59d-maltasupplemental` (11 October 2026)
+## Current session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
+
+Repository review found the existing static Pages shell, canonical 13-field record schema, per-topic JSON data/pages, source log, open-questions/status records, expense planner, CI workflow and browser tests. Preserve them; do not create duplicate structure. Shared setup is already present and will be kept serial: verify `data/record.schema.json`, existing navigation/renderer and CSS tokens, and the master-source row format before topic work. This Arena session has one fixed branch and no isolated workstream runner, so A–F research/edits run one at a time with the listed ownership; G updates shared presentation/docs after topic work. Cross-stream discoveries go to `docs/HANDOFF.md`/`docs/OPEN_QUESTIONS.md`, not another stream's page/data file. During the session, `origin/main` advanced beyond the starting `250e6bd` through PRs #51–#56. The fixed branch was rebased onto the latest `origin/main` at `6da8aba`, preserving the merged source-led popularity, gaming, entry, event/overview and reporting updates before the final integration pass.
+
+| Stream | Owned files | Dependencies / deliverable |
+|---|---|---|
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Depends on advertised event venue, agenda and hotel input; compare airport and event-day modes, fares/value, last return and caveats. |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | Depends on location/area inputs; categorize sourced hotel/Qawra/wider-island options and state review-platform access limits. |
+| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html` (and retained `data/event.json`, `event.html`) | Depends on dated event/venue sources; distinguish current admission/status from closed, historical or unverified leads. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Depends on the U.S. traveler context; verify plugs, SIM, payments/tipping, safety/health, customs, language and date-sensitive entry/weather. |
+| **E · Sports radio** | `data/radio.json`, `radio.html` | Depends on official station schedules plus Malta FM/DAB+ directory evidence; keep schedule, carriage, device compatibility and physical reception distinct. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html` | Depends on A–E category taxonomy and eventual traveler itinerary; keep blank until actual amounts, preview before quick-fill and test private backup/export. |
+| **G · Site shell, executive summary & navigation (last)** | `index.html`, `js/site.js`, `css/style.css`, `sources.html`, `README.md`, integration tests/docs as needed | Integrates A–F and event work after their facts stabilize; run local-link, data/page, accessibility, mobile/desktop and planner checks. |
+
+## Verification gates / passes
+
+1. **Pass 1:** preserve the shared schema/source-log format; re-read the highest-risk event, transport and radio sources; implement data-backed topic-page additions and log each claim/source/date.
+2. **Pass 2:** adversarially review route/date/fare inference, ticket and radio access, platform coverage, mobile layout, source URLs, navigation and planner edge cases; fix or mark open.
+3. **Pass 3:** map the full user request against the integrated site, check all owned data/page source links and open questions, run the complete validation/browser suite, then report only observed PR/Pages states.
+
+No parallel branch or agent is claimed. Work stays on the fixed Arena branch and within one workstream's owned files at a time; G handles shared integration last.
+
+## Previous mainline session — `arena/d840a59d-maltasupplemental` (11 October 2026)
 
 Fixed Arena branch, started at `main` `250e6bd0ea5722cbad5a5ec21fc3117f2eee8fe0` (PR #48 merge) with a clean tree. Arena provides no isolated workstream runner, so A–G executed serially with the same file-ownership boundaries: A owned `data/transport.json` and `getting-around.html`, C/H owned `data/event.json` and `event.html`, E owned `data/radio.json` and `radio.html`, and G owned shared documentation, tests and the README. Cross-topic findings went to `docs/HANDOFF.md`; nothing unresolved was written as fact.
 

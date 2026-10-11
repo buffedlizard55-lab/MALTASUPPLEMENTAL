@@ -173,3 +173,22 @@ body, .hero p, .card { overflow-wrap: anywhere; }
   body, .hero { background: white; color: #172b3e; }
   .hero h1, .hero p, .hero .eyebrow, .hero a { color: #172b3e; }
 }
+
+/* Accessible radio schedule: semantic table on desktop, labelled reading cards on phones. */
+.table-wrap { width: 100%; margin: 16px 0; overflow-x: auto; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); }
+.radio-listening { width: 100%; border-collapse: collapse; text-align: left; }
+.radio-listening caption { padding: 12px 14px; text-align: left; }
+.radio-listening th, .radio-listening td { padding: 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.radio-listening th { color: #fff; background: var(--navy); font-size: .9rem; }
+.radio-listening td { overflow-wrap: anywhere; }
+.radio-listening tbody tr:last-child td { border-bottom: 0; }
+@media (max-width: 720px) {
+  .table-wrap { overflow: visible; border: 0; background: transparent; }
+  .radio-listening, .radio-listening tbody { display: block; width: 100%; }
+  .radio-listening thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); clip-path: inset(50%); white-space: nowrap; }
+  .radio-listening tr { display: block; margin: 0 0 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); box-shadow: var(--shadow); }
+  .radio-listening td { display: grid; grid-template-columns: minmax(100px, .38fr) minmax(0, 1fr); gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  .radio-listening td::before { content: attr(data-label); color: var(--muted); font-size: .8rem; font-weight: 800; }
+  .radio-listening tbody tr:last-child td { border-bottom: 1px solid var(--line); }
+  .radio-listening tbody tr td:last-child { border-bottom: 0; }
+}

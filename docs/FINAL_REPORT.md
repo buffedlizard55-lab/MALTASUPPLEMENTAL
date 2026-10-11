@@ -1,6 +1,45 @@
 # Malta trip guide — final report
 
-## This session — `arena/dd9dd00c-maltasupplemental` (11 October 2026)
+## Current session — `arena/67d511d1-maltasupplemental` (11 October 2026 UTC)
+
+### Delivery summary
+
+This session reviewed the integrated repository rather than replacing it. The site already contained GitHub Pages-ready static HTML, shared navigation/renderer, responsive tokens, seven topic datasets using the exact 13-field record schema, a master source log, open questions, workstream status, a blank-by-default expense planner and a Playwright/axe suite. `docs/PLAN.md` now records the current session's owners/dependencies and the serial execution limit (Arena provides a single fixed branch, so no separate workstream agents or branches are claimed).
+
+The new work focused on the radio requirement and integration quality. Live official-source checks refreshed the Thunderpick/Eventbrite listing, MPT Route 186/fares/service notices, Transport Malta taxi tariff, AX ODYCY property listing, BBC episode records, NET FM schedule, Rai Radio 1 programme, the Malta DAB+ directory and Radio Sportiva's current weekly grid. The Sports Radio subpage now has a 13–19 October trip-week table and a receiver scan checklist; it separates dated BBC programme starts from recurring NET/Radio Sportiva/Rai schedules and from named-match carriage. The table has a semantic desktop layout and labelled mobile cards. The rebased tree also preserves a dated TripAdvisor review-volume snapshot for nearby food alongside its count drift, relevance/sponsored-order caveats; this is not a universal rating/popularity ranking. Review-platform access limits remain explicit, and no sentiment is inferred from blocked sources.
+
+### Highest-value verified findings and boundaries
+
+- **Thunderpick / admission:** the official ticketing listing advertises the in-person 18+ event at BLAST Arena Studios Malta, MFCC South Gate National Stadium, Attard, 14–18 October; the displayed ticket card says “Free / Reserve a spot.” Visible agenda rows cover 14–16 October only, and Wednesday/Thursday row end times (22:30) conflict with the 22:00 listing header. This does not establish the user's reservation, current inventory, day validity, attendee gate, or weekend agenda.
+- **Event-day transport:** the MPT Route 186 page lists the Qawra 952 → Ta’ Qali Stadium 6227 outbound corridor; the opposite-direction Stadium 2194 return grids end at 20:53/20:54 and terminate at Buġibba Bay 1 rather than Il-Qawra. These are static operator grids with unlabelled variants, not saved date-specific journeys or a full-network last-bus result. A second onward bus is a candidate, not a confirmed transfer. Route 202/night-bus chains and the TQ1 service remain unverified. No actual pickup/gate walk, live taxi quote or measured hotel-to-venue road distance is claimed.
+- **Fares / taxi comparison:** MPT's official page lists €2.50 summer / €2.00 winter day singles and other cards, but the printed seasonal window ends 13 June 2026; the likely 13–18 / 19 October split is secondary-source inference, not operator confirmation. Transport Malta's tariff page gives maximum meter rates but its footer says last updated 06/04/2022; maxima are not a quote. Bus is the only mode with an applicable operator-published price table; ride-hailing, rental total and current taxi price remain live-quote checks.
+- **Terrestrial sports radio:** BBC episode metadata gives Sportsworld starts at 15:06 Malta time on 17 Oct and 16:06 on 18 Oct (each 13,980 seconds / 3 h 53 min); the descriptions are general live sport, not named-match assignments. The Saturday programme starts after the 13:30 EPL kickoff and its scheduled duration overlaps later 16:00/18:30 kickoffs; Sunday starts after 15:00 kickoffs and overlaps the 17:30 kickoff by clock only. Radio Sportiva's official grid currently lists weekday/weekend sports programmes at 15:05–17:00, but its specifically dated “Sportiva Live” callouts visible on 11 Oct cover 5–11 Oct, not the user's dates. NET FM and Rai have recurring grids but no verified trip-week named fixture list. Radio in Malta and a historical RadioBlog report label “Sports Channel (Talk Sport)” on DAB+ 6C (185.360 MHz); WorldDAB lists a generic channel on 12A, a crowd-edited list associates RAVE Radio with 185.36 MHz, and the operator's visible directory showed no sports tile. The sources do not establish which current block, identity or relay is correct; **scan 6C and 12A without ranking either**. No compatible receiver scan, relay-feed check, indoor signal, named match on a Malta frequency or Kalshi-to-broadcast link is verified.
+- **Food / social research:** the repository contains source-linked listings and dated review snapshots. Google Maps / TripAdvisor coverage was limited; Yelp, Instagram, TikTok, Facebook, Reddit and X endpoints were blocked or limited in recorded checks. This is not comprehensive review sampling; “most popular” is not represented as a universal ranking.
+- **Trip-specific unknowns:** the supplied hotel/room/date information and event intention are user inputs, not booking confirmation. Traveler's exact itinerary, party size/ages, flights, hotel invoice/meal plan, insurance, SIM/device, tickets and personal expenses remain unknown. The planner therefore starts blank and does not assume bookings or spending.
+
+### Passes and observed local gates
+
+1. **Pass 1 — implementation and evidence:** repository/schema reviewed first; preserved the existing topic structure and source-log format; added the trip-week radio view, receiver steps, official Radio Sportiva schedule evidence, and source/open-question entries.
+2. **Pass 2 — adversarial review:** corrected the BBC interval language so the pages use verified start times and published duration rather than an unverified end minute; corrected the claim that Sportsworld starts before the Saturday 13:30 or Sunday 15:00 kickoffs; separated recurring Sportiva/NET/Rai grids from dated named matches; retained the 6C/12A conflict as an unresolved scan lead; checked that unknown route, ticket and reception claims remain caveated; added responsive table labels and a browser assertion.
+3. **Pass 3 — original-request audit:** mapped transport, food/review-platform limits, gaming/activities, everyday US guidance, radio/Kalshi context, expenses, executive summary/navigation and source/open-question logs to the original request. The complete suite passed on `19b00d0`; after PR #53 merged to `main` during delivery, the fixed branch was rebasing onto `21d13d1`. Final Pass 3 and regression gates on that newest integrated tree remain pending and are not claimed below.
+
+**Last complete local checks (on `origin/main` `19b00d0`, before PR #53 merged):** `python3 scripts/validate_site.py` passed with 7 datasets / 196 exact-schema records / 317 unique record URLs / 15 HTML pages / 249 link attributes / 9 shared navigation destinations / 25 expense rows. `python3 scripts/check_javascript.py`, `node --check js/site.js`, and `git diff --check` passed. `npm test` passed **22/22**, including axe runs at 320/360/768/1024/1440 px and radio listening-table assertions at 320/360/720/1440 px. The latest main base is now `21d13d1`; rerun those gates after completing the current rebase. Automated checks do not prove ticket availability, external URL liveness, date-specific buses, or radio signal.
+
+### Still needed / next-session priorities
+
+1. Confirm the traveler’s ticket reservation, attendee gate, acceptable ID, per-day scanning/validity, accessibility, exact time zone and 17–18 October agenda with Hotspawn/Thunderpick.
+2. Run MPT's journey planner for each event date with the actual hotel and gate in both directions; verify stop sides, safe walks, onward Qawra transfer, 17 October diversion impact and any TQ notice. Obtain a live, all-in ride-hailing/hotel taxi quote for the late return before committing to bus-or-taxi decisions; do not treat static timetable leads as a saved itinerary.
+3. In Malta, scan DAB+ 6A/6C/12A and the listed FM frequencies at AX ODYCY and the event location. Ask BBC/Digi B, Radio Sportiva, NET, Rai, Vibe and the “Sports Channel” operator about the named fixtures; log service, time, frequency/block, language and audio actually received.
+4. Refresh restaurant menus/hours/closures, gaming access, museum/event availability, weather and transit notices close to departure. The blocked social/review-platform gap and small Maps/TripAdvisor sample remain research limits.
+5. When the itinerary arrives, enter actual booking/receipt values in the planner; check the quick-fill preview, avoid double-counting aggregate and daily rows, and save a private JSON backup (CSV is for spreadsheets/manual entry).
+
+**Delivery state at report draft:** PR #55 is open, but `main` advanced after it was created. The fixed branch must be rebased/pushed and PR checks/mergeability re-observed; no merge or Pages build for PR #55 is yet verified.
+
+---
+
+## Prior mainline report and audit history
+
+## Previous mainline session — `arena/dd9dd00c-maltasupplemental` (11 October 2026)
 
 Passes 1–3 were run on the tree that started at `250e6bd` (PR #48 on `main`). Arena does not allow a second branch, so workstreams A–F were sequential file owners on this branch and G integrated last.
 

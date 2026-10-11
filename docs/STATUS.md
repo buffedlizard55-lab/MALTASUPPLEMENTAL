@@ -1,7 +1,28 @@
 # Delivery status — Malta trip guide
 
 **Last updated:** 11 October 2026 (UTC)
-**This session:** `arena/dd9dd00c-maltasupplemental`, started at `250e6bd` (PR #48 merge). Workstream branches were not created because Arena locks the session branch.
+**Current session branch:** `arena/67d511d1-maltasupplemental`
+**Snapshot boundary:** Current-session addendum below; later sections are historical mainline snapshots, not a live dashboard.
+
+## Current session addendum — `arena/67d511d1-maltasupplemental` (11 October 2026)
+
+**Stage:** Passes 1–2 are complete; final Pass 3 and the full local suite must be rerun after integrating the newly merged PR #53. PR #55 is open from this fixed branch; its mergeability/checks have not yet been re-established after `main` advanced to `21d13d1`. Pages verification is pending.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Existing source-backed comparison preserved; key sources freshly re-read (Eventbrite, Thunderpick, MPT Route 186, fares, service updates, Transport Malta tariff) | No date-specific MPT journey saved; actual gate/walk and day-type grid unknown; later bus chains and taxi quote remain unverified; TQ1 has no timetable. |
+| **B · Food & cafés** | Latest-main food shortlist plus dated TripAdvisor review-volume snapshot retained; count drift and Featured/sponsored-order limits are stated | Google Maps/TripAdvisor sampling limited; Yelp, Instagram, TikTok, Facebook, Reddit and X direct refreshes are blocked/limited in recorded checks; no universal rating/popularity ranking. Reconfirm menus, hours, closures. |
+| **C · Gaming, landmarks & events** | Existing event/sight data and event desk retained; organizer dates freshly re-read | Personal event reservation, weekend agenda, attendee gate and volatile hours/availability remain traveler/organizer checks; no current walk-in PC café verified. |
+| **D · U.S.-traveler essentials** | Existing official-source guide retained | Personal entry, insurance, room/equipment, phone plan and invoice remain unknown; weather is a dated forecast, not guarantee. |
+| **E · Sports radio** | Fresh BBC/NET/Rai/Radio Sportiva/DAB source reads; added a 13–19 Oct listening table, receiver checklist and recurring Radio Sportiva weekday/weekend grid; recorded the competing 6C/12A/RAVE listings | No receiver scan, local reception or named-match Malta carriage confirmed; Sports Channel identity/block and exact relay content remain unresolved. |
+| **F · Expense planner** | Existing blank-by-default quick-fill, totals, local save, CSV and validated JSON backup retained; not prefilled | Await actual itinerary/party/booking data; only enter confirmed quotes and charges. |
+| **G · Shell / executive summary / integration (last)** | Latest-main overview/popularity and practical-guide updates preserved; radio table has mobile-labelled cards and a desktop semantic-table layout; source/open-question docs updated | PR #55 exists but main advanced after it opened; rebase, rerun checks, push the fixed branch, refresh PR checks/mergeability, then merge and record the Pages build. |
+
+**Fresh evidence (11 October UTC):** Eventbrite listing; Thunderpick official phase page; MPT Route 186, fares and latest service notices; Transport Malta taxi page (footer 06/04/2022); Digi B operator directory; WorldDAB; Radio in Malta 6C; 2023 RadioBlog 6C observation; conflicting RAVE/185.36 list; BBC episode JSON and upcoming list; NET FM weekly grid; Radio Sportiva official weekday/weekend grid; Rai programme page; AX ODYCY property page. Exact URLs and limits are in `docs/SOURCES.md`; unresolved claims are in `docs/OPEN_QUESTIONS.md`.
+
+**Last complete local gates (on `19b00d0`, before PR #53 merged):** `validate_site.py` passed with 7 datasets / 196 exact-schema records / 317 source-log URLs / 15 HTML pages / 249 link attributes / 9 navigation destinations / 25 expense rows; JavaScript syntax and `git diff --check` passed. `npm test` passed **22/22**, including axe at 320/360/768/1024/1440 px and radio-table reading at 320/360/720/1440 px. This does not certify the newer merged tree; rerun after the current rebase, and remember these gates cannot prove external listing truth, date-specific buses or RF reception.
+
+## Previous mainline session snapshot — `arena/dd9dd00c-maltasupplemental`
 
 | Workstream | Status | Blocker |
 |---|---|---|
