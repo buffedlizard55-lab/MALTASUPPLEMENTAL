@@ -224,3 +224,27 @@ test('quick-fill keeps refundable holds out of totals and flags explicit wrong y
   await expect(page.locator('#budget-total')).toHaveText('€12.50');
   for (const id of ['hotel-stay','hotel-separate-charges','car-rental','daily-2026-10-14']) await expect(page.locator(budget(id))).toHaveValue('');
 });
+
+test('date-by-date transport plan and opening matchups render from canonical records', async ({page}) => {
+  await page.goto('getting-around.html#event-day-by-date');
+  await expect(page.locator('#event-day-by-date .day-plan > li')).toHaveCount(7);
+  expect(await page.locator('#event-day-by-date time').evaluateAll(n => n.map(x => x.dateTime))).toEqual([
+    '2026-10-13','2026-10-14','2026-10-15','2026-10-16','2026-10-17','2026-10-18','2026-10-19'
+  ]);
+  const plan = data('transport').records.find(r => r.id === 'event-day-transport-by-date');
+  await expect(page.locator('#event-day-transport-by-date h3')).toHaveText(plan.name);
+  await expect(page.locator('#event-day-transport-by-date .record-notes p')).toHaveText(plan.notes);
+  // Every evidence link inside the derived plan must resolve to a rendered record card.
+  const hrefs = await page.locator('#event-day-by-date a[href^="#"]').evaluateAll(a => a.map(x => x.getAttribute('href')));
+  expect(hrefs.length).toBeGreaterThanOrEqual(7);
+  for (const href of hrefs) await expect(page.locator(href), href).toBeVisible();
+  await page.goto('event.html#opening-matchups');
+  await expect(page.locator('#opening-matchups .card')).toHaveCount(3);
+  await page.goto('event.html#twc-opening-matchups-14-oct');
+  await expect(page.locator('#event-evidence')).toHaveAttribute('open', '');
+  const matchup = data('event').records.find(r => r.id === 'twc-opening-matchups-14-oct');
+  await expect(page.locator('#twc-opening-matchups-14-oct')).toBeInViewport();
+  await expect(page.locator('#twc-opening-matchups-14-oct h3')).toHaveText(matchup.name);
+  await expect(page.locator('#twc-opening-matchups-14-oct dd').nth(1)).toHaveText(matchup.hours);
+  await expect(page.locator('#twc-opening-matchups-14-oct .record-notes p')).toHaveText(matchup.notes);
+});

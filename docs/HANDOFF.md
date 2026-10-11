@@ -116,3 +116,12 @@ A/B/C/E→G: preserve independentlycheckedUber,Fontanella,TaMarija,AviationMuseu
 ## Later-main reconciliation review
 
 Before delivery, main advanced through PRs #45, #44 and #47 to `852343f`. Their net code intent is retained: no stale “no public sale” bullet or ticket-price example, event-guide links, organizer-backed internet-stream wording and the NIP update. Current canonical data/projections already implement these without reinstating mandatory taxi purchases or treating the old meter page as current legal clearance. Their earlier delivery receipts are historical: [main's report at 852343f](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/blob/852343f6fa02e8565c48ce42680feaae24273f3f/docs/FINAL_REPORT.md), not claims that this session performed those operations.
+
+## 11 October 2026 — session `arena/d840a59d-maltasupplemental`
+
+| From → to | Finding | Follow-up owner |
+|---|---|---|
+| A → G/F | The published Route 186 grids plus the published agenda now yield a per-date transport decision for all seven trip days; it is rendered on `getting-around.html#event-day-by-date` and stored canonically as `event-day-transport-by-date`. Every derived figure (the ~20:40 boarding recommendation, the “no bus return after the finish” reading) is labelled derived, not verified. | F must not prefill any taxi amount; A must refresh the table if the organiser publishes the weekend agenda or MPT announces a TQ service. |
+| C/H → G | Malta-local match clocks for the 14 October openers are pinned at 10:30 / 13:00 / 15:30 / 18:00 by comparing two renderings of the same bracket table six hours apart. This is the first clock evidence in the project that is timezone-reconciled rather than assumed. | E must not treat these clocks as radio evidence; G keeps them out of the expense planner. |
+| E → C/G | The DAB+ operator directory contains no “Sports Channel”; Radio Sportiva is the only sports-branded entry, and Vibe FM’s football page is still on the 2025/26 season. Both facts narrow the radio expectations rather than adding a station. | C should not list any station as a match-listening plan; the receiver scan remains a traveller action. |
+| A → D | Stop Saqqajja (4627) is closed on thirteen routes including 186 and 202 until about 1 January. It does not affect the Qawra or Stadium stops, but it is a live corridor disruption worth mentioning if an improvised connection is needed. | D keeps it out of the everyday guide; it belongs to transport only. |

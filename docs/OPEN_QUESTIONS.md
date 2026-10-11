@@ -93,3 +93,24 @@ The regulator's current webpage read has a 06/04/2022 footer. This dates the pag
 ## Software and delivery boundary
 
 The expense planner requires actual inputs and user review; autosave is device/browser-local and can be denied or cleared. JSON restores only this EUR/trip format after validation and consent; CSV does not automatically restore. Keep private backups. Automated tests and local links do not prove external link liveness, payments, services or physical conditions. See `STATUS.md` and `FINAL_REPORT.md` for observed test/delivery gates, not older session completion claims.
+
+## 11 October 2026 — second verification session (`arena/d840a59d-maltasupplemental`)
+
+Fresh reads two days before the trip advanced four items and left the rest unchanged. Nothing below is a booking, a physical test or an RF measurement.
+
+**Advanced**
+
+| Item | What the fresh read established | What is still open |
+|---|---|---|
+| Match clocks on 14 October | A direct read of the bracket report showed 04:30 / 07:00 / 09:30 / 12:00 and a search-index rendering of the same table showed 10:30 / 13:00 / 15:30 / 18:00 — exactly the EDT-to-CEST offset — so the Malta local starts are 10:30, 13:00, 15:30 and 18:00, corroborated by the listing’s own “games 10:30” row. | The organiser still publishes no per-match running order; clocks can move for broadcast selection; the 15–18 October order is unconfirmed. |
+| OQ-28 “Sports Channel” | The Malta DAB+ operator’s own directory was read in full (38 rendered entries) and contains no “Sports Channel”; the only sports-branded entry is Radio Sportiva. | A “Load more” control means absence is not exhaustive. The 6C-vs-12A conflict is unresolved and no receiver scan has been done, so no service name, block or named match is confirmed. |
+| Vibe FM football | The station’s Malta Premier page still carries the “2025/2026 Season” label with a May 2026 post as its newest entry, so no trip-week Vibe football broadcast is published. | Whether Vibe covers 2026/27 matches at all during 13–19 October; ask the station locally. |
+| OQ-H3 TQ1 event service | TQ1’s page still says “Timetable not available!”, and the complete latest-service-updates page (all three chunks) published no TQ or Thunderpick/BLAST service. | A special service can still appear days beforehand; recheck daily during 14–18 October. |
+
+**New official notice recorded:** stop **Saqqajja (ID 4627)** is closed for construction on Routes 109, 109A, 181, 182, 186, 201, 202, 50, 51, 52, 53, 56 and N52 until about 1 January. It is not the traveler’s boarding or alighting stop, but it does affect two of the venue-corridor routes and is worth knowing if a connection is improvised.
+
+**Unchanged and still open:** current Eventbrite inventory and this traveler’s reservation; the Saturday 17 / Sunday 18 agenda (still behind “Show all agenda”); the nine unanswered FAQ items including day validity, scanning, parking, catering and transferability; the attendee gate and both unmeasured walks; the date-specific Buġibba → Qawra onward connection; the operator-dated October single fare; a live taxi/ride-hailing quote; a physical FM/DAB+ scan and any named-match carriage; the 18–19 October forecast beyond the Met Office Valletta BETA rows; the MTA environmental-contribution invoice treatment; and the blocked or partial review-platform coverage (Yelp, Instagram, TikTok, Facebook, X, Reddit).
+
+### Clock outlier to recheck (11 October 2026)
+
+The 14 October opening clocks are corroborated twice — the bracket report read in two renderings six hours apart, and the bracket wiki’s own EDT labels converted to CEST — and both give **10:30, 13:00, 15:30 and 18:00** Malta time. One row in `docs/SOURCES.md` cites **18:30 CEST** for the fourth opener. The two conversions say 18:00 (12:00 EDT + 6 h), so 18:00 is what the site uses; the 18:30 entry is recorded here as an unresolved outlier rather than being averaged away. Recheck the organiser’s live bracket before relying on the last match’s start time.

@@ -1,5 +1,18 @@
 # Malta trip guide — work plan
 
+## Current delivery session — `arena/d840a59d-maltasupplemental` (11 October 2026)
+
+Fixed Arena branch, started at `main` `250e6bd0ea5722cbad5a5ec21fc3117f2eee8fe0` (PR #48 merge) with a clean tree. Arena provides no isolated workstream runner, so A–G executed serially with the same file-ownership boundaries: A owned `data/transport.json` and `getting-around.html`, C/H owned `data/event.json` and `event.html`, E owned `data/radio.json` and `radio.html`, and G owned shared documentation, tests and the README. Cross-topic findings went to `docs/HANDOFF.md`; nothing unresolved was written as fact.
+
+Session objectives and what was delivered:
+
+1. **Re-verify the highest-risk claims again, two days before the trip.** Fresh reads of the Eventbrite listing, the MPT fare page, the complete MPT service-updates page, the Route 186 grids, the TQ1 page, the Malta DAB+ operator directory, Vibe FM’s football page and the HLTV bracket report. Each read is logged with its date in `docs/SOURCES.md`.
+2. **Close the core requirement — public transport on the event days, day by day.** New canonical record `event-day-transport-by-date` plus `getting-around.html#event-day-by-date`: one outbound plan, one return constraint and one action for each of the seven trip days, with every derived figure labelled as derived.
+3. **Fix an unverified assumption found in this session’s own draft.** The bracket clocks initially taken from a search rendering had no stated timezone; a direct read of the same table differed by exactly six hours, which pinned the Malta local starts at 10:30 / 13:00 / 15:30 / 18:00 and produced the new `twc-opening-matchups-14-oct` record and `event.html#opening-matchups` section.
+4. **Keep the radio section honest.** The operator directory read in full shows no “Sports Channel” and only Radio Sportiva as sports-branded; Vibe FM’s football page is still on the 2025/26 season. Both narrow the claims; no station was added as a listening plan.
+5. **Verify and deliver.** Full local gate suite green (validator, JavaScript check, 22/22 Playwright), then a PR from this branch only, merged by explicit number, with observed GitHub/Pages state reported rather than predicted.
+
+## Current delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
 ## Current session — `arena/dd9dd00c-maltasupplemental` (11 October 2026)
 
 Arena fixes this session to `arena/dd9dd00c-maltasupplemental` and does not provide isolated workstream branches. A–F therefore run serially on this branch, each editing only its owned data file plus matching notes. G edits shared pages, navigation hubs, docs and delivery last. Cross-topic findings go to `docs/HANDOFF.md`. Unverified gaps stay in `docs/OPEN_QUESTIONS.md`.

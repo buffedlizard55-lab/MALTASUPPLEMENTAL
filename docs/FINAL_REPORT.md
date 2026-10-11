@@ -36,6 +36,30 @@ Reservation, inventory, gate, weekend agenda, an organizer-page confirmation of 
 **Session branch:** `arena/502e2dae-maltasupplemental`
 **Baseline:** `origin/main` at `b307c51` (merge of PR #33), reconciled with `origin/main` at `852343f` (parallel-session PRs #42–47) via a conflict-resolved merge that keeps both sessions' net-new corrections.
 
+## Latest pass — session `arena/d840a59d-maltasupplemental` (11 October 2026)
+
+**Baseline:** `main` at `250e6bd0ea5722cbad5a5ec21fc3117f2eee8fe0` (PR #48 merge), clean tree at session start. All work ran serially on the fixed branch under the existing A–G ownership boundaries.
+
+### What this pass added
+
+1. **The core transport requirement is now answered per date.** `data/transport.json` gains `event-day-transport-by-date`, rendered at `getting-around.html#event-day-by-date`: for each of the seven trip days it states the outbound plan (Route 186 toward Rabat from Qawra 952, 30-minute pattern, Stadium 6227 about 25–33 minutes later), the return constraint (last listed Stadium 2194 departures 20:53/20:54, terminus Buġibba Bay 1 with no Il-Qawra stop), and one action. The 17 October row carries the diversion window and the fourteen-route detour cluster; the 19 October row carries the airport options. Every derived figure — the ~20:40 boarding recommendation and the “no bus return after the finish” reading — is labelled derived rather than verified, and the unknowns (weekend agenda, gate, walks, onward connection, live quotes) are listed inside the record.
+2. **Match clocks are now timezone-reconciled instead of assumed.** `data/event.json` gains `twc-opening-matchups-14-oct`, rendered at `event.html#opening-matchups`. A direct read of the bracket report displayed the four 14 October openers at 04:30 / 07:00 / 09:30 / 12:00; a search-index rendering of the same table read the same day displayed 10:30 / 13:00 / 15:30 / 18:00. The two differ by exactly the EDT-to-CEST offset, which pins the Malta local starts at 10:30, 13:00, 15:30 and 18:00 — corroborated by the ticketing listing’s own “games 10:30” row. This corrected this session’s own first draft, which had quoted the later clocks with no zone evidence.
+3. **Radio claims were narrowed, not expanded.** The Malta DAB+ operator directory was read in full (38 rendered entries): there is no service named “Sports Channel”, and the only sports-branded entry is Radio Sportiva; a “Load more” control means the absence is still not exhaustive. Vibe FM’s own Malta Premier page still carries the “2025/2026 Season” label with a May 2026 post as its newest entry, so no trip-week Vibe football broadcast is published. TQ1’s page still reads “Timetable not available!”, and the complete service-updates page published no TQ or Thunderpick/BLAST event service.
+4. **A new official disruption is recorded:** stop Saqqajja (ID 4627) is closed for construction on Routes 109, 109A, 181, 182, 186, 201, 202, 50, 51, 52, 53, 56 and N52 until about 1 January. It is not the traveler’s boarding or alighting stop, but it affects two venue-corridor routes.
+
+### Verification performed in this pass
+
+| Check | Result |
+|---|---|
+| `python3 scripts/validate_site.py` | PASS — 7 JSON files / **199** exact-schema records after the latest-`main` merge (transport 30, food 48, activities 47, everyday 19, radio 21, expenses 25, event 9); 319 unique record URLs present in `docs/SOURCES.md`; 15 HTML pages / 325 link attributes; 9 navigation destinations; 25 expense rows |
+| `python3 scripts/check_javascript.py` | PASS — shared and inline JavaScript syntax |
+| `npx playwright test` | PASS — **22/22**, including the 320/360/768/1024/1440 px layout and axe sweeps and the new test asserting the seven per-date plan rows, their `datetime` attributes, the canonical record rendering and the event matchups deep link |
+| Fresh source reads (all 11 October 2026) | Eventbrite listing (full), MPT fares, MPT service updates (all three chunks), Route 186 grids and notices, TQ1, DAB+ operator directory (both chunks), Vibe FM football page, HLTV bracket report |
+
+### Limits that remain
+
+Nothing in this pass is a booking, an admission, a live quote, a physical journey, an RF measurement or a personal purchase. The Saturday/Sunday agenda, the traveler’s reservation, the attendee gate, both walks, the dated Buġibba → Qawra connection, the operator-dated October single fare, any named-match radio carriage and the expense inputs are all still open and are listed in `docs/OPEN_QUESTIONS.md`. Review-platform coverage (Yelp, Instagram, TikTok, Facebook, X, Reddit) remains partial or blocked; no popularity ranking is asserted.
+
 ### CS2 event and access
 
 This session ran the requested multi-pass protocol over the integrated tree: **Pass 1** implemented and verified the full request; **Pass 2** reviewed for bugs, missing requirements, incorrect assumptions and edge cases; **Pass 3** re-checked the implementation against the original request and improved accuracy, reliability and completeness. The highest-risk factual claims (event listing, Route 186 return, fare seasons, card terms, radio schedules) were re-verified line by line against live sources on 11 October 2026 before any wording changed. Mid-session, the parallel work merged upstream (PRs #42–47: the `event.html` CS2 event guide + `data/event.json`, the TQ1 special-event-service lead, the Transport Malta taxi-tariff record, AX ODYCY FAQ evidence and an MTA guideline re-read) was reconciled into this branch by content, with both sides' corrections preserved.
