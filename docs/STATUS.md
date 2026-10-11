@@ -1,6 +1,19 @@
 # Delivery status — Malta trip guide (11 October 2026, session `arena/27302b08-maltasupplemental`)
 
-> **Snapshot boundary:** this status describes the integrated tree and the gates actually run in this session. GitHub outcomes (PR state, checks, Pages build) are recorded only after they are observed; while the delivery steps are still pending this file says so explicitly. Nothing here is a live dashboard.
+> **Snapshot boundary:** this status describes the integrated tree, the gates actually run in this session, and the GitHub outcomes for **pull request #43** only after each was observed. Nothing here is a live dashboard.
+
+## Delivery state (observed)
+
+| Step | Observed result |
+|---|---|
+| Pull request | **#43** — `arena/27302b08-maltasupplemental` → `main`, opened 11 October 2026 |
+| CI on the PR | **SUCCESS** — "Schema, browser and accessibility checks" (validate + JavaScript gate + 11 Playwright tests) |
+| Conflicts during its life | `main` advanced to `5cdea68` (PR #42 merged upstream) while #43 was open; #43 was re-merged against it, conflicts resolved by content and re-pushed (commit `7817857`) after a line check confirmed main's variants were contained in, or superseded by, this branch's files |
+| Merge | **MERGED** 11 October 2026 15:54:56 UTC, merge commit **`94733df22b670825eb1b39d21d53581d0274e329`** |
+| CI on `main` | **SUCCESS** (run 38153269792) |
+| GitHub Pages | **built** for commit `94733df22b670825eb1b39d21d53581d0274e329` (pages-build-deployment run 38153269670) |
+| Deployed page spot-check | Homepage and `event.html` fetched live after the build: the "Your base: AX ODYCY" section, the refreshed eco-contribution wording, the "Free / Reserve a spot / Sales end soon" ticketing line and the TQ1/taxi-tariff pointers are all present |
+| Pull request #42 | Already **MERGED** upstream by the parallel session at `5cdea68` before this branch was merged; nothing left open
 
 ## Update — PR #42 merged; follow-up pass (`arena/9f6f35c7-maltasupplemental`, 11 October 2026)
 
