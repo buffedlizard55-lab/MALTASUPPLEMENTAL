@@ -723,6 +723,21 @@
       "date_checked": "2026-10-11",
       "confidence": "unverified",
       "notes": "Review-platform capture only; no operator page read. Counts are a live platform snapshot read 11 October 2026, not a fixed fact. A second capture of the same list on a country domain minutes later returned slightly different figures (for example Trattoria Riccardo 1,965 versus 1,991 reviews and Royale Barrel 129 versus 130), so treat every number as approximately correct on that date and volatile afterwards. The page interleaves sponsored entries, and TripAdvisor's own ordering is relevance-based rather than a pure rating or review-count ranking."
+    },
+    {
+      "id": "north-malta-community-picks-search-extract",
+      "name": "Community picks around St Paul's Bay, Qawra and Buġibba — how this list was gathered",
+      "category": "Platform & community snapshots",
+      "area": "St Paul's Bay, Qawra, Buġibba and Mosta — north Malta",
+      "address": "Venue addresses are not recorded here; confirm each venue directly before travelling",
+      "hours": "Not applicable — this record describes a research method and its limits, not opening hours",
+      "price range": "Not applicable — no prices quoted",
+      "description": "Local forums are the one requested platform where ordinary residents answer this exact question, and the answers cluster tightly. Across six r/malta threads from 2022 to 2025 the repeatedly recommended north-Malta venues are Made in Sud (pizza), Zigumar (fish), Venus (Buġibba), Ta' Bertu, Ta' Pawla / Mother Earth on Tourist Street in Qawra, La Sorpresa, Lovage, Gillieru (seafood), Tava Terrace (meat), Nine Lives, Loa (South American), Trattoria del Nonno (Italian), Chatterbox (Indian/Asian), Mizzica (sandwiches, Buġibba Square), New Madras and Su Swagat and Gate of India (Indian, Buġibba), Fins and Gills (fish and chips), Kebab Factory (Qawra, kebabs), and gelato at SottoZero, Mare Azzurro and Gelatiamo. Treat this as a shortlist to check, not a ranking: recommendations repeat because a few names are well known, and several appear in threads from 2022 that may pre-date closures, re-openings and price changes.",
+      "source_url": "https://www.reddit.com/r/malta/comments/1ji5g7f/decent_places_to_eat_in_saint_pauls_bay/",
+      "source_type": "social",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Method and limits: this project's direct requests to https://www.reddit.com/r/malta/comments/1ji5g7f/decent_places_to_eat_in_saint_pauls_bay/ and to old.reddit.com returned HTTP 403 in this environment, so the names above were read from search-result text for those threads rather than from the rendered pages. The other threads drawn on are https://www.reddit.com/r/malta/comments/1duixtr/nice_restaurants_near_st_pauls_bay/ , https://www.reddit.com/r/malta/comments/1ledhea/favourite_indian_restaurants/ , https://www.reddit.com/r/malta/comments/161u1o6/tips_and_places_in_stpauls_bay_for_a_traveller/ , https://www.reddit.com/r/malta/comments/11gchii/looking_for_suggestions_in_st_pauls_bay_for/ and https://www.reddit.com/r/malta/comments/vxa9nt/affordable_delicious_food_recommendations/ , with stated post ages between July 2022 and June 2025. No venue on this list was checked for current trading status, hours or price, and no review count or rating is claimed. Instagram, TikTok, Facebook and X remain unreachable from this environment and are not represented here."
     }
   ]
 }

@@ -708,6 +708,51 @@
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Platform category page captured 11 October 2026 via search extract; the page could not be opened directly in this session. The Eden’s own hours appeared on a second platform capture (Thursday 11:00–00:00, Friday to 01:00, Saturday 10:00–01:00, Sunday and Monday to midnight, Tuesday and Wednesday to midnight) but that capture is undated beyond “2026 Reviews”, so it is a lead, not a timetable. “Temporarily closed” is the platform’s status word and not proof of permanent closure. A tournament organiser, bootcamp or team training session is a different product from walk-in public play and must not be presented as one."
+    },
+    {
+      "id": "international-kite-wind-festival-gharb-2026",
+      "name": "International Kite & Wind Festival — Għarb, Gozo, 17–18 October 2026",
+      "category": "Event listings with unresolved access or details",
+      "area": "San Dimitri area, Għarb, Gozo",
+      "address": "San Dimitri area, Għarb, Gozo — exact field/entrance not published in the source read",
+      "hours": "Listed for 17–18 October 2026. Daily times were not published in the source read.",
+      "price range": "Not published in the source read",
+      "description": "A wind-and-kite festival on Gozo's north-west coast over the same weekend as the CS2 playoffs. Recorded because it is the kind of dated, genuinely local event the traveller asked about, and because choosing it has consequences: Gozo means the ferry plus a cross-island drive or bus on a playoff weekend, so it competes with the event rather than combining with it. Nothing about the programme, entry or timing was verified beyond the listing.",
+      "source_url": "https://spotlightmalta.com/",
+      "source_type": "review",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Search-index extract from an events aggregator read 11 October 2026: https://spotlightmalta.com/ (listing 'INTERNATIONAL KITE & WIND FESTIVAL AT SAN DIMITRI AREA GOZO … October 17-18, 2026'). An aggregator is not the organiser, and no organiser page, venue address, entry fee or start time was obtained. Ferry timetables are held separately in the transport dataset. Not a recommendation to attend."
+    },
+    {
+      "id": "little-leprechauns-studio-theatre-2026",
+      "name": "Little Leprechauns at Studio Theatre — 17–18 October 2026",
+      "category": "Event listings with unresolved access or details",
+      "area": "Malta — venue town not published in the source read",
+      "address": "Studio Theatre — venue town and address not published in the source read",
+      "hours": "Listed for 17–18 October 2026. Times not published in the source read.",
+      "price range": "Not published in the source read",
+      "description": "A theatre listing dated inside the trip window only. Recorded for completeness so the trip-window events list is not silently partial; the venue location, times, age guidance and ticketing were all unverified at the check.",
+      "source_url": "https://spotlightmalta.com/",
+      "source_type": "review",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "Search-index extract from an events aggregator read 11 October 2026: https://spotlightmalta.com/ ('LITTLE LEPRECHAUNS AT STUDIO THEATRE … October 17-18, 2026'). Section title and date only. Do not plan around this listing until a venue and a ticket source are confirmed."
+    },
+    {
+      "id": "malta-comic-con-2026-mfcc",
+      "name": "Malta Comic Con 2026 at MFCC, Ta' Qali — 11–12 October 2026, immediately before the trip",
+      "category": "Outside the trip window — do not plan around it",
+      "area": "Malta Fairs & Conventions Centre, Ta' Qali, ATD 4000 — the same venue complex as the CS2 event",
+      "address": "Malta Fairs & Conventions Centre (MFCC), Millennium Stand, Level 1, The National Stadium, Ta' Qali, ATD 4000",
+      "hours": "11–12 October 2026 — the two days before the traveller's 13 October arrival",
+      "price range": "Not published in the source read",
+      "description": "Worth knowing for one reason: the CS2 event shares a venue complex with MFCC, and this convention occupied it on 11–12 October, the weekend immediately before the traveller arrives. That is venue context — a signal that the site hosts back-to-back events and that set-up and pack-down happen around the CS2 dates — not a trip-window option. It also predates the stay, so the traveller cannot attend it.",
+      "source_url": "https://lovevalletta.com/events",
+      "source_type": "review",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Listing read via search extract of an events calendar on 11 October 2026: https://lovevalletta.com/events ('Malta Comic Con 2026 … October 11–12, 2026 … Malta Fairs & Conventions Centre'). The same calendar entry states the convention is confirmed with the venue. It is outside the 13–19 October stay. No organiser page, ticket outlet or door time was checked; the value of this record is the venue-load context, not the event itself."
     }
   ]
 }
