@@ -4,15 +4,15 @@
 **Session branch:** `arena/ef6c76d6-maltasupplemental`
 **PR under delivery:** #33, “Audit Malta guide sources and expand mobile verification”
 
-## Session addendum — CS2 event guide and supersession of PR #42 (branch `arena/9f6f35c7-maltasupplemental`)
+## Post-merge follow-up addendum — branch `arena/9f6f35c7-maltasupplemental`
 
-The sections below this addendum describe the PR #33 delivery. The current integration on this branch supersedes them in three ways:
+PR #42 ("Add CS2 event guide (workstream H)") was merged into `main` at `5cdea68` (squashed `fbb7aa4`) on 11 October 2026 while this session was completing a parallel, independently re-verified re-implementation of the same guide. The merge superseded that parallel content, so the branch was reconciled to the new `main` and now contributes only net-new corrections — no record added, removed or renamed.
 
-1. **A seventh dataset and a ninth active page.** `data/event.json` (8 records: venue/address/pin, free 18+ reservation, dates and phases, the published daily agenda, Malta-time match clocks, teams/format/prize split, official internet streams, on-site practicalities) renders on a rebuilt `event.html`, replacing the `noindex` “page moved” stub. Navigation carries nine destinations; the validator expects seven datasets; the Playwright suite covers the new page at 320/360/768/1440 px.
-2. **PR #42 is superseded, not merged.** The branch `arena/154ca483-maltasupplemental` (head `0c8e8bb`) is reported `CONFLICTING`, this checkout is a **shallow clone** with no locally resolvable merge base, and its content predates corrections already on `main` (the eco-contribution “15-night” reconciliation and the per-date fare inference were deliberately not re-adopted). Its unique, evidence-backed content — the event dataset/page, the TQ1 special-service watch item, the Transport Malta maximum-taxi-tariff record, the Explore Flex card distinction and the superseded-BBC row — was re-verified against the live sources and re-implemented here. Because the re-implementation uses different record ids (`twc-*`), PR #42 should be closed as superseded rather than merged; note that in the close comment.
-3. **Current counts:** 7 datasets / **171 exact-schema records** / **301 unique logged record URLs** / 15 HTML pages / **167 link attributes** / 9 navigation destinations / 25 expense rows; validator, JavaScript syntax and Playwright gates all pass (see `docs/STATUS.md` for the observed run results and the P2 fixes made after the first green pass: the costs-page event-access wording, the activities callout, the quick-fill example line and the radio stream wording).
+The follow-up corrections: the costs-page event-access wording and quick-fill example (the old "no public sale" text and the ticket-price example are gone), the activities callout's "free in-person admission" wording with a link to the CS2 event guide, the radio page's stream wording crediting the organiser's own named channels, and the activities tournament records updated for the 9 October Virtus.pro → Ninjas in Pyjamas substitution. Claim-level evidence is in `docs/AUDIT_2026-10-11.md`.
 
-Open items, handoffs and the three-pass record for this session are in `docs/OPEN_QUESTIONS.md` (OQ-H…), `docs/HANDOFF.md`, `docs/PLAN.md` and `docs/AUDIT_2026-10-11.md`.
+Integration state on this branch: 7 datasets / **175 exact-schema records** (transport 27, food 38, activities 39, everyday 18, radio 20, expenses 25, event 8) / **305 unique logged record URLs** / 15 HTML pages / **173 link attributes** / 9 navigation destinations / 25 expense rows. Gates: `validate_site.py` PASS, `check_javascript.py` PASS, `node --check js/site.js` PASS, `npm test` PASS (11/11 Playwright at 320/360/768/1440 px with axe), `git diff --check` clean. The event guide itself — `data/event.json` (8 records) and `event.html` — is the merged `main` version.
+
+Delivery: the branch is pushed and PR #44 carries these corrections; the merge of PR #44 into `main` and the resulting Pages build are reported only once observed.
 
 ## Scope and integration
 
@@ -84,3 +84,45 @@ Full claim-specific source rows are in `docs/SOURCES.md`; current unresolved ite
 ## GitHub delivery snapshot
 
 This report captures the local candidate at the PR #33 delivery gate. The final explicit PR merge and any resulting Pages build status are time-dependent GitHub facts and are reported only after they have been checked; this file should not be treated as a live CI/Pages dashboard.
+
+---
+
+## Workstream H addendum — PR #42, 11 October 2026
+
+Everything above describes the PR #33 delivery. **This addendum is authoritative for the current merged tree.**
+
+**This delivery PR:** https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/42 · **Branch:** `arena/154ca483-maltasupplemental`
+
+### H · CS2 event guide — 8 records, ninth active page
+
+`event.html` gives the trip's reason for existing a page of its own: venue address and map pin, ticketing terms (free but reserved, in person, **18+**), the published daily agenda, match clocks in Malta time, the eight-team field including the 9 October Virtus.pro → Ninjas in Pyjamas substitution, format and prize split, broadcast talent, official streams, and on-site practicalities. It was **promoted out of the retired noindex stub set** rather than added beside it, so HTML pages stayed at 15 while active pages went 8 → 9.
+
+Two rules govern the page. **Clocks:** HLTV and Liquipedia both render times in the *fetching client's* timezone, so no third-party clock is copied as a local time; every clock is labelled "Malta time (CEST, UTC+2)" with its anchor shown, and the EDT+6h conversion is admissible only because Eventbrite independently publishes "Games 10:30" for Wed 14 October. **Sources:** the `source_type` enum has no value for a community wiki or esports news site, so every record's `source_url` is official and third-party evidence lives in `notes`.
+
+### Unique contributions beyond the event page
+
+- **`tq-event-special-services`** — MPT runs TQ-numbered special event services out of Ta' Qali, and TQ1's corridor runs through St Paul's Bay and **Qawra** at the €3.00 Special Services fare. Its page showed "Timetable not available!" and no TWC notice was found, so it is recorded as **a possibility to watch for, not a plan**, at `partially verified`, with a daily re-check instruction (OQ-H3).
+- **`white-taxi-official-tariff`** — Transport Malta's published **maximum** meter rates, read directly, with the caveat that the page footer says "last updated 06/04/2022". The worked caps are labelled as this project's arithmetic at assumed distances and **not quotes**; the road distance was never measured (OQ-H7).
+- **Three stale expense rows corrected** — `event-commute`, `taxi-rideshare` and `local-bus-and-cards` still dated from 2026-10-09 and contradicted the transport findings on the same site. The planner remains 25 rows, blank by default, with no invented amounts.
+
+### Aligned to the audit, not against it
+
+PR #33 deliberately downgraded the return-gap finding from `verified` to `partially verified`, reframing it as a **risk from one static Route 186 variant** rather than proof that no later bus exists. This branch's wording was rewritten to match across `index.html`, `README.md`, `event.html`, `getting-around.html` and the three expense rows, so the reconciliation does not silently re-strengthen a claim the audit softened. The TQ1 finding reinforces that caution: it is a second reason not to treat one timetable variant as the whole network.
+
+This branch also **dropped its own duplicate records** rather than layering them on the parallel session's — `event-day-late-return` and `venue-nearest-bus-stops` were superseded by `main`'s `event-day-late-finish-return-gap` and `mfcc-official-bus-186`. One limitation is **withdrawn**: "18–19 October is not forecast" is obsolete, because `main` located the Met Office Valletta view reaching 12–19 October.
+
+### Gates on the merged tree
+
+`python3 scripts/validate_site.py` — **PASS**: 7 JSON files / **175 exact-schema records** (transport 27, event 8, food 38, activities 39, everyday 18, radio 20, expenses 25) / **305 unique record URLs all present in `docs/SOURCES.md`** / 15 HTML pages / 170 link attributes / **9 navigation destinations** / 25 expense rows. `check_javascript.py` and `node --check` — **PASS**. `git diff --check` clean. `npm ci && npm test` — **PASS, 11/11 Playwright**.
+
+### Remaining work suggested for the next session
+
+1. **Expand the ticketing page in a real browser.** The Sat 17 / Sun 18 agenda rows and all nine FAQ answers are client-side and never rendered. Two answers decide real logistics: whether one registration covers all five days, and whether there is on-site parking. A headless-browser fetch step would close a whole class of these gaps at once.
+2. **Watch for TQ1 daily during 14–18 October** (OQ-H3) — the only finding that could replace taxi returns with a €3.00 bus.
+3. **Re-read the taxi tariff for a post-2022 revision and measure one real road distance** (OQ-H7).
+4. **Confirm current inventory and whether a reservation guarantees admission**, and the €0 total at checkout.
+5. **Check whether the organiser republishes the NIP substitution** (OQ-H5), then update `event.json` and `activities.json` in the same pass.
+
+### Limitations that remain
+
+The offline validator cannot test external URL liveness, so a source may rot silently. There is no physical FM/DAB+ receiver scan and no manual graphical screenshot, so radio reception and visual layout are reasoned about rather than observed — though Playwright does cover 360/768/1440 px viewports, responsive overflow and axe WCAG 2A/AA/2.1AA. Client-side content is systematically invisible to server-side fetching. Review-platform coverage remains incomplete: Yelp, Instagram, TikTok, Facebook, X and Reddit returned 403 or login-gated responses. **No ticket has been secured, no journey has been ridden, and no radio has been scanned**; this remains a dated planning aid, not a booking, admission, fare, service or reception guarantee.
