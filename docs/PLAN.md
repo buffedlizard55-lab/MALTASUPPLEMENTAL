@@ -74,6 +74,22 @@ Priorities, in order: (1) confirm the attendee venue, dates, daily times and acc
 
 Two evidence rules adopted here. First, when a source states a window for one season only, any extension to the trip dates is recorded as an inference and kept at “partially verified”, not promoted to “verified” — this is why the October fare conclusion is labelled as an inference from the published winter boundary. Second, when two directories disagree on a technical fact such as a DAB+ block, both readings are published side by side and the action becomes “scan both”, rather than picking the more convenient one.
 
+## Historical reconciliation and verification notes
+
+### Post-merge verification session (after PR #31)
+
+PR #31 was already merged into `main` when this session began, so the session branch started at parity with `main`. This session therefore performed a **forward verification and enrichment pass** rather than a rebase. Work remained on `arena/58d6d232-maltasupplemental` throughout.
+
+Corrections and upgrades made, each traceable to a source read during this session:
+
+1. **Venue disambiguation (workstream A).** “BLAST Arena Studios, Attard” and “Ta’ Qali” are the same complex. Verified from BLAST’s own attendee guide (“Malta Fairs & Conventions Centre – BLAST Arena Studios … Ta Qali, ATD 4000 Ħ’Attard”), EventWorks, GamingMalta and the visitmalta.co.uk directory. The prior dataset hedged this as unresolved; routing is now settled while *access* remains open.
+2. **Two Route 186 detours, not one (A).** The operator’s own route page lists both a recurring Friday/Saturday 20:00–00:00 notice ending ~21 April and a 19:00–00:00 notice starting 17 October. Both omit stops “from Gholja 2 through Targa” toward Buġibba. Only the 17 October one was previously recorded.
+3. **“Sports Channel” upgraded from an unverified lead (E).** Previously recorded as `unverified` with no operator identity. A specialist ensemble listing labels it “Sports Channel (Talk Sport)” at 185.360 MHz, two independent scanner directories place Sports Channel on 185.360 MHz, and the Premier League’s own partner page confirms talkSPORT’s live-commentary rights. It is now `partially verified` and is the page’s primary recommendation, with the identity caveat retained. The WorldDAB 12A placement is recorded as a likely mis-assigned table (its 12A table contains “6c_Test7”/“6c Test12” entries).
+4. **Fixture times converted to Malta time (E).** EPL matchweek 8 and Serie A matchday 7 are now listed in Malta time with the conversion rule stated (Malta CEST = UK BST + 1 hour until both change on 25 October; Italy and Malta share CEST, so Serie A times apply directly).
+5. **Social/review gap partially closed (B).** Reddit threads and TripAdvisor/Google listing snapshots were reachable through search, adding a popularity snapshot and a community shortlist. Yelp, Instagram, TikTok, Facebook and X remained inaccessible; this limitation is disclosed on the page rather than filled with guesses.
+
+No previously verified claim was weakened without cause, and no unsupported claim was introduced. Every URL cited in a record is logged in `docs/SOURCES.md`, which the offline validator enforces.
+
 ## Session plan — 11 October 2026 (branch `arena/b7b7ea21-maltasupplemental`)
 
 ### Repository review conclusion
@@ -123,4 +139,4 @@ All workstreams completed except two deliberate scope decisions, recorded here r
 - **F · Expenses** — **deviation from plan.** The plan said to add the newly verified fare inputs as optional dated reference notes in `data/expenses.json`. That was not done: the same inputs are already published in `mpt-fares-cards` and `trip-fare-scenarios-13-19-oct` on the transport page and summarised in the `index.html` executive summary, so duplicating them into the planner's data file would have added a second place for one fact to go stale while giving the traveller nothing new. `data/expenses.json` and `costs.html` are therefore untouched and the planner remains blank-by-default with all 25 rows intact.
 - **Diff discipline** — a key-order normalisation across all six datasets (the repository stores the 13 fields in two different orders) was started and then **reverted**. It touched 59 records with zero content change, which would have buried the real edits in an unreviewable diff. New records follow the dominant field order of the file they join. Canonicalising the order repo-wide should be its own commit if it is ever wanted.
 
-Gates after the pass on this branch alone: `python3 scripts/validate_site.py` PASS (134 records / 228 URLs / 119 link attributes), `python3 scripts/check_javascript.py` PASS, `npm test` 9/9 Playwright PASS in 36.2s, `git diff --check` clean. **After reconciling with `main`, which had advanced through two further passes to 140 records, the merged tree passes at 149 records / 261 logged URLs / 139 link attributes with 10/10 Playwright tests** (the tenth arrived with `main`). An order-insensitive comparison of every record against `HEAD` confirmed exactly five content changes and six additions, no removals, and no unintended `intro` edits.
+Gates after the pass on this branch alone: `python3 scripts/validate_site.py` PASS (134 records / 228 URLs / 119 link attributes), `python3 scripts/check_javascript.py` PASS, `npm test` 9/9 Playwright PASS in 36.2s, `git diff --check` clean. **After reconciling with `main`, which had advanced through two further passes to 140 records, the merged tree passes at 162 records / 275 logged URLs / 145 link attributes with 10/10 Playwright tests** (the tenth arrived with `main`). An order-insensitive comparison of every record against `HEAD` confirmed exactly five content changes and six additions, no removals, and no unintended `intro` edits.
