@@ -4,6 +4,24 @@
 **Current session branch:** `arena/67d511d1-maltasupplemental`
 **Snapshot boundary:** Current-session addendum below; later sections are historical mainline snapshots, not a live dashboard.
 
+## Current session addendum — `arena/08099cd9-maltasupplemental` (11 October 2026)
+
+**Stage:** verification pass complete on the branch from `ae69ab1` (equal to `origin/main`). Local gates were green before the edits (validator, JavaScript check, 23/23 Playwright).
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Fares page re-read: €2.50 summer and €2.00 winter wording, €19 / €25 / €21 / €27 products and the €6 Airport Direct add-on match the record. | No saved hotel-to-venue journey; timetable grids not re-read; the 19 Oct winter switch is not a printed 2026/27 changeover; no live taxi quote. |
+| **B · Food & cafés** | No new reads. | Yelp, Instagram, TikTok, Facebook, Reddit and X direct access still blocked or unverified. Not a universal popularity ranking. |
+| **C · Event & activities** | Organiser page, Eventbrite, HLTV NIP and talent articles, and Liquipedia extract re-read. Dates, format, NIP replacement and CEST clocks confirmed. The “Free” claim is now recorded with its actual evidence. | Ticket-block price, inventory, Saturday/Sunday agenda and whether one reservation covers all days remain unconfirmed. Organiser's own page does not list team names, so team evidence is third-party. |
+| **D · Everyday** | ETIAS official page re-read: not in operation. | Pre-departure recheck of ETIAS and EES (the EES conflict is still open). |
+| **E · Sports radio** | Radio In Malta directory re-read: talkSPORT labelled “Sports Channel” on DAB+ (no block). Radio Sportiva is listed on DAB+ with no block. | No receiver scan; no named-match carriage on a Malta multiplex; 6C vs 12A still conflicting. |
+| **F · Expense planner** | Unchanged. | Needs the traveler's itinerary and confirmed charges. |
+| **G · Integration** | Session notes, SOURCES, OPEN_QUESTIONS, HANDOFF and README updated; gates rerun. | PR and merge are recorded in the final report. |
+
+**Corrections made this session:** the event-ticket note no longer says the ticket block showed “Free” on this read (HLTV corroborates free entry instead).
+
+**Not claimed:** no Google reviews, Yelp, Instagram, TikTok, Facebook, Reddit or X access was achieved in this session; the Thunderpick root domain returned 401 to the fetch tool.
+
 ## Current session addendum — `arena/67d511d1-maltasupplemental` (11 October 2026)
 
 **Stage:** Passes 1–3 and the full local suite are complete on the tree rebased onto `origin/main` `6da8aba` (including PRs #51–#56). PR #55 is open; the updated head still needs to be pushed and its required checks/mergeability re-observed. Pages verification is pending.

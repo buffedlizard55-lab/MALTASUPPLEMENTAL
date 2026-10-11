@@ -116,3 +116,13 @@ Fresh reads two days before the trip advanced four items and left the rest uncha
 ### Clock outlier to recheck (11 October 2026)
 
 The 14 October opening clocks are corroborated twice — the bracket report read in two renderings six hours apart, and the bracket wiki’s own EDT labels converted to CEST — and both give **10:30, 13:00, 15:30 and 18:00** Malta time. One row in `docs/SOURCES.md` cites **18:30 CEST** for the fourth opener. The two conversions say 18:00 (12:00 EDT + 6 h), so 18:00 is what the site uses; the 18:30 entry is recorded here as an unresolved outlier rather than being averaged away. Recheck the organiser’s live bracket before relying on the last match’s start time.
+
+## 11 October 2026 — twelfth verification session (`arena/08099cd9-maltasupplemental`)
+
+- **OQ-T1 — Ticket price shown on the Eventbrite ticket block.** The 11 Oct read showed “Free” only on a “You might also like” card; HLTV's 2 Oct article states free entry through an Eventbrite link with a promotional parameter. Confirm the price, inventory and whether one reservation covers all five days at checkout.
+- **OQ-T2 — Thunderpick root domain.** `https://www.thunderpick.com/` returned 401 to the fetch tool on 11 Oct. The organiser sub-page (`world-championship.thunderpick.io/2026-finals/`) was read instead.
+- **OQ-T3 — Route 186 timetable grids.** Only the stop index was re-read this session; the 20:53/20:54 evidence and the Friday/Saturday diversion are still the 11 Oct read logged in `SOURCES.md`.
+- **OQ-T4 — Fare changeover.** The MPT wording gives the €2.00 winter single for 19 Oct 2025–13 Jun 2026, and third-party sites place the switch on 19 Oct 2026. No operator text on the page prints a 2026/27 changeover.
+- **OQ-D1 — ETIAS start.** The official EU page confirms “not in operation” today and promises a date several months ahead; recheck before departure.
+- **OQ-E1 — talkSPORT / “Sports Channel” block.** The Radio In Malta directory adds a second source for the label but still gives no block number (6C in one listing, 12A in another). Scan both blocks with a DAB+ receiver before relying on either.
+- **OQ-E2 — Radio Sportiva Malta carriage.** The directory lists it on DAB+ with no block, and the Italian third-party listing describes an Italian station. No Malta schedule is verified.

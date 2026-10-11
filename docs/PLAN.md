@@ -1,5 +1,19 @@
 # Malta trip guide — work plan
 
+## Current session plan — `arena/08099cd9-maltasupplemental` (11 October 2026)
+
+Repository review on this branch (start `ae69ab1`, equal to `origin/main` after PR #55): the static Pages shell, 13-field record schema, seven datasets, source log, open-questions/status records, expense planner, CI and 23 browser tests were all present. The baseline gates were green before any edit (validator, JavaScript check, Playwright 23/23). This session has one fixed branch and no isolated workstream runner, so the A–G streams run serially with the same file ownership as above. Work is limited to a fresh verification pass on the highest-risk claims, with the results logged in `docs/SOURCES.md` and the corrections made where a read contradicted a record.
+
+| Stream | Session action | Result |
+|---|---|---|
+| A · Transport | Re-read the MPT fares page (first chunk) and the Route 186 page index | Fare terms reconfirmed; the timetable grids were not re-read this session. |
+| B · Food | No new source reads | Review-volume and platform-access limits stay as recorded. |
+| C · Event / activities | Re-read the organiser finals page, the Eventbrite listing, HLTV's NIP article and talent article, and the Liquipedia extract | Dates, team change and CEST conversion confirmed. The “Free” wording is corrected to its real evidence. |
+| D · Everyday | Re-read the official EU ETIAS page | “Not in operation” confirmed today; no start date published. |
+| E · Radio | Re-read the Radio In Malta station directory and the Radio Sportiva third-party listing | talkSPORT “Sports Channel” label corroborated; no block or schedule added; the Italian third-party listing is excluded from Malta carriage. |
+| F · Expenses | No change | Amounts remain blank. |
+| G · Integration | Status, open questions, handoff and README note; validator, JavaScript check and Playwright gates; PR and merge | See `docs/STATUS.md`. |
+
 ## Current session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
 
 Repository review found the existing static Pages shell, canonical 13-field record schema, per-topic JSON data/pages, source log, open-questions/status records, expense planner, CI workflow and browser tests. Preserve them; do not create duplicate structure. Shared setup is already present and will be kept serial: verify `data/record.schema.json`, existing navigation/renderer and CSS tokens, and the master-source row format before topic work. This Arena session has one fixed branch and no isolated workstream runner, so A–F research/edits run one at a time with the listed ownership; G updates shared presentation/docs after topic work. Cross-stream discoveries go to `docs/HANDOFF.md`/`docs/OPEN_QUESTIONS.md`, not another stream's page/data file. During the session, `origin/main` advanced beyond the starting `250e6bd` through PRs #51–#56. The fixed branch was rebased onto the latest `origin/main` at `6da8aba`, preserving the merged source-led popularity, gaming, entry, per-date event-transport, timezone-pinned matchup and reporting updates before the final integration pass.
