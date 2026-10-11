@@ -258,3 +258,34 @@ Earlier entries above remain historical checks; this section supersedes only the
 Google Maps returned a loading-only view, not substantive review text. A parallel social/review request batch returned five HTTP 403 responses without URL labels in the result; attribution to a specific endpoint is therefore not reliable. Yelp/Instagram/TikTok/Facebook/Reddit did not yield substantive newly usable review evidence. X yielded the exact official post above. No ratings, rankings or user comments were invented. Historical platform snapshots retain their earlier dates.
 
 | Euro currency reference for optional daily input templates; NO itinerary/price claim | https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx | 2026-10-11 | F | Seven dated rows are traveler-input templates, not bookings or estimated costs. |
+
+## Upstream source provenance (ab068ed)
+
+Imported URLs below are provenance only, not freshly verified. Claims/dates/conflicts are in `UPSTREAM_2026-10-11_SOURCES.md`.
+
+- https://eventworks.mt/premier-bounty-presented-by-polymarket
+- https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026
+- https://mta.com.mt/docs/Eco-Contribution-Accommodation-Guidelines-2026.pdf
+- https://www.bbc.co.uk/programmes/m002h76y/broadcasts/upcoming
+- https://www.premierleague.com/en/matches/premier-league/2026-27
+- https://www.premierleague.com/en/matchweek/2026_7/blog/saturday
+- https://www.theguardian.com/football/fixtures/2026/Oct/17
+- https://www.visitmalta.co.uk/business-directory/business/blast-arena-studios-malta
+
+## Pass 3 integration checks — independently read 11 October 2026 (UTC)
+
+| Workstream | Source | Supported claim / boundary |
+|---|---|---|
+| A/C | https://eventworks.mt/premier-bounty-presented-by-polymarket | Separate July BLAST Bounty listing: BLAST Arena Studios Malta, MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000. Venue-area corroboration only; not TWC gate, admission or public times. |
+| A/C | https://www.visitmalta.co.uk/business-directory/business/blast-arena-studios-malta | Directory repeats MFCC South Gate National Stadium, Attard ATD 4000. Not event-specific organizer instructions. |
+| A | https://www.publictransport.com.mt/route/186/ | Return sequence includes Ta’ Qali Stadium 2194 and St Paul’s Bay/Buġibba; outbound Stadium 6227 retained from earlier fresh check. Multiple clocks/variants without date context: no first/last-departure guarantee. |
+| A | https://www.publictransport.com.mt/route/TD1/ | Airport 1 outbound sequence includes Il-Qawra Arznell 950; removes unsupported upstream doubt about Qawra service. Hotel walk/flight-specific departure still open. |
+| D | https://health.gov.mt/services/health-services/ | HelpLines and Support table explicitly lists 112 for emergency ambulance, fire and police, 24/7. Upstream failure to find it is superseded. |
+| E | https://ba.org.mt/stations-licenced | Nationwide FM frequency rows promoted; they are not station sports schedules or reception measurements. |
+| E | https://www.bbc.co.uk/programmes/m00332zg | Brentford v Liverpool Radio 5 Live commentary; release date 17 Oct 2026; clock zone/Malta availability not established. |
+| E | https://www.bbc.co.uk/programmes/m003334l | Leeds United v Manchester United Radio 5 Live commentary; release date 18 Oct 2026; clock zone/Malta availability not established. |
+| E | https://www.bbc.co.uk/programmes/m002h76y/broadcasts/upcoming | Relative-label grid; episode release dates above are stronger evidence than inferring Next Saturday/Sunday. UK listing not Malta rights/reception. |
+| E | https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes | Own industry-directory lists BBC WS 6A 181.936 MHz and Sports Channel on Digi B 2, 12A 223.936 MHz. Sports Channel identity/schedule/reception unverified; no TalkSPORT equivalence. Canonical four-source schema classifies publisher’s own listing as official with directory limitation in notes. |
+| F | https://mta.com.mt/services/environmental-contribution/ | Rate/cap remain €1.50/night/person18+ and €22.50/visit from 1 July. Separate 15-Night Threshold prose ambiguous; OQ-25, do not infer booking liability. |
+
+Main ab068ed evidence was reconciled, not blindly adopted. Raw upstream documentation and radio leads are archived under `docs/UPSTREAM*`; archives may contain withdrawn/inconsistent claims and are not the current guide.

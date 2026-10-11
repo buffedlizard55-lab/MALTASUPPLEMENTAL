@@ -119,9 +119,9 @@
       "description": "The Maltese health ministry lists 112 for emergency ambulance, fire, and police services. If you need urgent help, call 112. The U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure; do not assume a U.S. health plan covers care abroad.",
       "source_url": "https://health.gov.mt/services/health-services/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance recommends travel insurance, including medical and evacuation assistance: https://travel.state.gov/en/international-travel/travel-advisories/malta.html.",
+      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance recommends travel insurance, including medical and evacuation assistance: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. Independently re-read 11 October: the ministry’s HelpLines and Support table explicitly lists Emergency — Ambulance, Fire, and Police: 112, 24/7. This resolves the contrary upstream claim that the number was not on the page.",
       "price range": "Costs/coverage depend on treatment and insurance; not stated here"
     },
     {

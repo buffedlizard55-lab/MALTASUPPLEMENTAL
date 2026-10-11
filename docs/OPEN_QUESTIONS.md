@@ -46,8 +46,23 @@ The Malta Tourism Authority states that from 1 July 2026 the contribution is €
 ## 11 October refresh — remaining blockers / supersession
 - **High priority:** organizer attendee eligibility, exact TWC entrance/pin, admission and daily match/door/finish times. X opening-day image was not readable. Do not travel on inferred access rules.
 - **Transport:** date-specific outward/return plans for14–18Oct; safe hotel/venue walks, stop sides, last useful return and17Oct diversion. Static timetable variants are not date-specific evidence. Clarify €25 Adult vs€27 Flex inclusions and October single-fare season.
-- **Radio:** BBC episode clock is labelled Local time, timezone unidentified; prior GMT/Malta conversions are withdrawn. No named EPL/other fixture commentary or Kalshi-market overlap verified; no reception test at AX ODYCY/venue. Physical DAB scan needed.
+- **Radio:** BBC episode clock is labelled Local time, timezone unidentified; prior GMT/Malta conversions are withdrawn. Dated BBC UK EPL commentary is now listed for two episodes (17/18 Oct); Malta reception/rights and Kalshi-market overlap remain unverified; no reception test at AX ODYCY/venue. Physical DAB scan needed.
 - **Platforms:** fresh Google/Yelp/Instagram/TikTok/Facebook/Reddit review compilation remains incomplete due blocked/limited extraction; five403 results lack reliable endpoint labels. Official X text was available, attached schedule was not.
 - **Weather:**18–19October beyond current forecast; earlier16–19gap superseded only for16–17.
 - **Expense inputs:** actual check-in/out, party ages/count, booked prices, included meals, card fees, flight times and reimbursement unknown. Daily optional rows must not duplicate spending entered in aggregate rows.
 - **Fresh verification boundary:** no complete new line-by-line external recheck of all historical records. See the per-record dated audit; earlier menu and third-party snapshots are not silently refreshed.
+
+## OQ-24 — Malta-receivable EPL / soccer commentary and Kalshi overlap
+
+BBC Radio 5 Live episode pages independently read 11 October support Brentford–Liverpool (release 17 Oct) and Leeds–Manchester United (release 18 Oct). This supersedes the upstream relative-date-only gap for these two episodes. Exact clock zones, a Maltese broadcast frequency, Malta streaming rights and physical reception remain open; no Kalshi markets were checked. Verify broadcaster territory/feed and explicitly zoned programme time before relying on it. Sources: https://www.bbc.co.uk/programmes/m00332zg and https://www.bbc.co.uk/programmes/m003334l. Other upstream fixture/audio leads are archival, not confirmed radio.
+
+## OQ-25 — MTA “15-Night Threshold” wording
+
+Independently re-read 11 October: MTA states the €1.50/night/person18+ rate and €22.50/visit cap but separately says “Eco-contribution shall be chargeable on the total number of nights per person of accommodation during the relative period that exceeded fifteen (15) nights.” The guide does not interpret this ambiguous wording as an exemption or extra charge. Six billable nights × €1.50 = €9 is arithmetic only, not confirmation that this booking owes it. Ask MTA/AX ODYCY for current liability/invoice treatment. https://mta.com.mt/services/environmental-contribution/
+
+## Upstream reconciliation decisions
+
+- Main ab068ed’s precise Route186 clock bounds were not promoted: extracted page contains multiple variants without established dated day-type context. Outbound Stadium6227/return2194 are separate stops; date-specific hotel connection remains open.
+- TD1’s Qawra stop and health-ministry112 row are directly supported by independently read operator/ministry tables. Upstream claims that these were unconfirmed are superseded.
+- EventWorks and VisitMalta.co.uk corroborate a BLAST venue-area address for separate events, not TWC spectator entry/access. Paola context for Tony Bezzina Stadium retains its independent Hibernians source.
+- Upstream historic documents are under `UPSTREAM_2026-10-11_*`; do not treat their stronger venue/airtime/fixture claims as current facts.

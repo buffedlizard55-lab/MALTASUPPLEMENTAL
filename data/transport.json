@@ -9,14 +9,14 @@
       "name": "Thunderpick World Championship 2026 — dates and venue",
       "category": "Event-day planning",
       "area": "Ta’ Qali / Ħ’Attard",
-      "address": "Possible venue-area reference: Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, ATD 4000 Ħ’Attard, identified by a BLAST guide for a different event. The official TWC page gives only Malta as its location; exact Thunderpick address/pin and spectator entrance are unconfirmed.",
+      "address": "BLAST Arena Studios venue-area reference: MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000, Malta, as listed for another BLAST event by EventWorks. The TWC attendee pin, gate and entrance are not confirmed.",
       "hours": "Official TWC page lists the overall event window 12–19 October 2026: arrival 12 October, media day 13 October, Group Stage 14–16 October, Playoffs 17–18 October, departure 19 October. It does not publish daily public match/door times or attendee instructions.",
-      "description": "The official Thunderpick page confirms the overall window and phase dates and lists Malta as the location. A Thunderpick-issued release names BLAST Studios Malta; BLAST’s attendee guide for a separate event places BLAST Arena Studios at MFCC, Ta’ Qali. Treat the address as venue-area context only, not event-specific attendee logistics.",
+      "description": "The official Thunderpick page confirms the phase dates and Malta as the location; a Thunderpick-issued release names BLAST Studios Malta. A BLAST guide and an EventWorks ticketing listing for separate events corroborate MFCC/Ta’ Qali venue-area context. The exact TWC attendee pin, entrance, access and daily public times remain unconfirmed.",
       "source_url": "https://world-championship.thunderpick.io/2026-finals/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The official Thunderpick page was rechecked 11 October. Thunderpick’s announcement names BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . BLAST’s attendee guide is for a previous, separate event and gives the MFCC address: https://blast.tv/cs/news/malta-fan-guide . Neither confirms the TWC street address/pin, attendee entrance, tickets, exact daily match/door times, or event transport. Do not transfer earlier BLAST event access rules. Official 9 October X post points to an opening-day schedule, but its attached image was not available in extracted text; no match times inferred: https://x.com/thunderpickco/status/2108604711968317828.",
+      "notes": "The official Thunderpick page was rechecked 11 October. Thunderpick’s announcement names BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . BLAST’s attendee guide is for a previous, separate event and gives the MFCC address: https://blast.tv/cs/news/malta-fan-guide . Neither confirms the TWC attendee pin, attendee entrance, tickets, exact daily match/door times, or event transport. Do not transfer earlier BLAST event access rules. Official 9 October X post points to an opening-day schedule, but its attached image was not available in extracted text; no match times inferred: https://x.com/thunderpickco/status/2108604711968317828. Independently re-read 11 October: EventWorks lists BLAST Arena Studios Malta at MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000 for a July BLAST Bounty event: https://eventworks.mt/premier-bounty-presented-by-polymarket. The VisitMalta.co.uk business directory separately lists MFCC South Gate National Stadium, Attard: https://www.visitmalta.co.uk/business-directory/business/blast-arena-studios-malta. These corroborate venue-area context, not TWC access, spectator instructions or a safe final walk. Upstream Liquipedia evidence remains archived; no fresh check or organizer endorsement of that source is asserted.",
       "price range": "Spectator ticket price/access not verified"
     },
     {
@@ -24,14 +24,14 @@
       "name": "Qawra ↔ Ta’ Qali / BLAST Arena Studios — Route 186",
       "category": "Event-day bus route",
       "area": "Qawra ↔ Ta’ Qali, Ħ’Attard",
-      "address": "MPT timetable stop Qawra 952 ↔ Stadium 2194 (Ta’ Qali); confirm the nearest stop to the hotel entrance and MFCC in the planner",
+      "address": "Operator stop sequence: Qawra 952 → Ta’ Qali Stadium 6227 (Rabat-bound); Stadium 2194 → Buġibba (return). Verify stop sides, safe walks and the onward hotel connection in the dated planner.",
       "hours": "Select the travel date and direction in the MPT planner. The extracted static page contains multiple timetable variants without reliable day-type context; exact departures and last returns are not published here.",
       "description": "Conditional event commute: if the organizer confirms the MFCC/Ta’ Qali location, ask AX ODYCY reception to identify the safe walk and correct side of Qawra stop 952. Compare Route 186 toward Rabat, whose operator timetable includes Qawra and Ta’ Qali Stadium (stop 6227). Confirm the entrance and safe final walk before boarding. For the return, compare Route 186 toward Buġibba; the published return runs via St Paul’s Bay/Buġibba rather than the Qawra seafront, so plan a separate hotel connection. This is a route candidate, not verified door-to-door directions.",
       "source_url": "https://www.publictransport.com.mt/route/186/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The 11 October extracted timetable shows Qawra 952 and Stadium 6227 in the outbound sequence, with several time variants; day-type context was not established, so earlier 06:10–21:38 / 21:26 bounds have been removed rather than treated as trip-day guarantees. Date-specific planner: https://www.publictransport.com.mt/journey-planner/. Saturday 17 October evening diversion: https://www.publictransport.com.mt/latest-service-updates/. October single-fare period is unclear on the dated fare chart: https://www.publictransport.com.mt/fares-and-tickets/.",
+      "notes": "The 11 October extracted timetable shows Qawra 952 and Stadium 6227 in the outbound sequence, with several time variants; day-type context was not established, so earlier 06:10–21:38 / 21:26 bounds have been removed rather than treated as trip-day guarantees. Date-specific planner: https://www.publictransport.com.mt/journey-planner/. Saturday 17 October evening diversion: https://www.publictransport.com.mt/latest-service-updates/. October single-fare period is unclear on the dated fare chart: https://www.publictransport.com.mt/fares-and-tickets/. Return Stadium 2194 was independently re-read on 11 October. Outbound 6227 and return 2194 are different direction stops; no single clock range from the multi-variant static timetable is asserted.",
       "price range": "Regular day-route fare; MPT lists €2 winter / €2.50 summer cash-contactless rates, but the applicable 2026 October fare window was not established"
     },
     {
@@ -89,9 +89,9 @@
       "description": "This is the most straightforward published public-bus option from Malta International Airport toward Qawra: Airport Direct TD1 runs from the airport toward Cirkewwa via Buġibba and the Qawra area, and its operator timetable lists the Arznell stop in Qawra. The airport terminal is signposted from arrivals. Buses have luggage space; no advance booking is required. The precise walk from the stop to AX ODYCY was not independently measured.",
       "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/.",
+      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/. Independently re-read 11 October: the Airport 1 outbound sequence includes Arznell 950 in Il-Qawra. This supports route-level Qawra service but not the hotel walk or a flight-specific departure.",
       "price range": "€3.50 per passenger on TD1 without an eligible unlimited travel card; cash or contactless onboard"
     },
     {

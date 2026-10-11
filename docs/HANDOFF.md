@@ -29,3 +29,11 @@ Use this log for findings that belong to another topic; do not edit that workstr
 - D → C/G: forecast now covers13–17 only;18–19 remain unavailable. ETIAS not operational; EES operational.
 - E → G: BBC extracted local-clock timezone is unknown; remove converted Malta airtimes. WorldDAB supplies BBC6A technical directory evidence only.
 - F → G: real-browser tests required; price-status renderer incorrectly used legacy `price_range` and must use exact `price range`.
+
+## Pass 3 merge reconciliation — 11 October
+
+- A/C/G: EventWorks/VisitMalta.co.uk independently confirm venue-area address context; no TWC gate/access inferred. Route186 outbound6227 and return2194 clarified, exact static clock bounds withheld. TD1 Arznell950 directly present in airport outbound timetable.
+- D/G: health ministry HelpLines table directly verifies emergency11224/7; supersedes contrary upstream missing-row observation.
+- E/G: two dated BBC5Live commentary episodes promoted as UK-only listings; no Malta feed, reception, clock conversion or Kalshi link. BA FM tuning list and WorldDAB12A SportsChannel lead promoted with source boundaries. Other raw upstream leads retained as archive, not rendered.
+- F/G: MTA15-night prose ambiguity preserved as OQ-25; keep invoice amount blank and six-night math conditional.
+- G: all work stays on session branch; protocol’s separate workstream branches/subagents unavailable here. Ownership-guided edits and parallel independent research used; serial integration/test gate, no claim of autonomous parallel implementation.

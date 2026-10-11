@@ -78,6 +78,51 @@
       "confidence": "partially verified",
       "notes": "The current Broadcasting Authority licensed-stations list was checked for current AM/MW sports carriage; it lists licensed FM and DAB services but no current AM sports schedule. Historical frequency context: https://tvmnews.mt/en/news/radju-malta-is-53-years-old/. The absence of a listing is not a guarantee that no distant AM signal can ever be received; do not rely on an AM sports programme without current station confirmation.",
       "price range": "Not applicable"
+    },
+    {
+      "id": "ba-licensed-fm-frequencies",
+      "name": "Broadcasting Authority list — nationwide FM frequencies",
+      "category": "FM",
+      "area": "Malta (nationwide licensed FM services)",
+      "address": "Not applicable — station contacts are on the Broadcasting Authority page",
+      "hours": "Not a programme schedule; check each station’s own schedule (for example NET FM and Radio Sportiva in this dataset)",
+      "description": "The Broadcasting Authority’s licensed-stations page lists these nationwide FM frequencies: Radju Malta 93.7 MHz; Radju Malta 2 105.9 MHz; Magic Malta 91.7 MHz; ONE Radio 92.7 MHz; NET FM 101 MHz; RTK 103 MHz; Smash Radio 104.6 MHz; Calypso 101.8 MHz; 89.7 Bay 89.7 MHz; Campus 103.7 MHz; Bay Easy 100.2 MHz; Radju Marija 102.3 MHz; Vibe FM 88.7 MHz. Use it as the FM tuning reference; the list does not show which stations carry sport.",
+      "source_url": "https://ba.org.mt/stations-licenced",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Independently read 11 October: these are the Broadcasting Authority nationwide FM frequency rows, not a sports programme schedule. Reception at AX ODYCY/venue and date-specific match commentary remain untested.",
+      "price range": "Broadcast reception is free; FM receiver required; hardware price not checked"
+    },
+    {
+      "id": "bbc-radio-5-live-premier-league-listings",
+      "name": "BBC Radio 5 Live — dated EPL commentary (UK service, not Malta reception)",
+      "category": "UK radio listing — Malta availability unverified",
+      "area": "UK BBC service; Maltese reception/streaming not established",
+      "address": "Not applicable — broadcaster programme listing",
+      "hours": "BBC episode pages give release dates 17 October 2026 (Brentford v Liverpool) and 18 October 2026 (Leeds United v Manchester United). On-radio clocks are displayed as Next Saturday 15:00 and Next Sunday 14:00 with no explicit clock zone in the retrieved text; no Malta airtime is asserted.",
+      "price range": "Not checked; no Malta receiver or stream availability confirmed",
+      "description": "The BBC directly describes live Premier League commentary for these two matches on Radio 5 Live, with trip-weekend episode dates. This is a verified UK commentary listing, not a station frequency in Malta. Neither BBC World Service carriage nor reception or streaming rights in Malta are established.",
+      "source_url": "https://www.bbc.co.uk/programmes/m00332zg",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Independently read 11 October: Brentford v Liverpool episode (release 17 Oct): https://www.bbc.co.uk/programmes/m00332zg. Leeds United v Manchester United (release 18 Oct): https://www.bbc.co.uk/programmes/m003334l. Upcoming grid: https://www.bbc.co.uk/programmes/m002h76y/broadcasts/upcoming. The release dates resolve the earlier upstream relative-label-only gap for these two episodes; do not convert clock labels without an explicit timezone. No BBC Sounds/stream test from Malta, Maltese AM/FM/DAB+ listing for 5 Live, or Kalshi market check was made. Do not count this as confirmed Malta radio coverage."
+    },
+    {
+      "id": "worlddab-sports-channel-lead",
+      "name": "‘Sports Channel’ — WorldDAB Malta multiplex lead (identity unverified)",
+      "category": "DAB+ directory lead",
+      "area": "Malta Digi B 2 multiplex listing (Band III block 12A, 223.936 MHz)",
+      "address": "Not published; technical directory entry",
+      "hours": "No schedule was found for this service.",
+      "price range": "Free-to-air if broadcast; DAB+ receiver required; hardware price not checked",
+      "description": "WorldDAB’s own Malta multiplex directory lists a service named Sports Channel under Digi B 2, Band III block 12A at 223.936 MHz. This is an industry-directory scan lead only: identity, current transmissions, language, schedule, match commentary and reception remain unverified.",
+      "source_url": "https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "WorldDAB is the publishing industry association, not the Maltese network operator; “official” here identifies its own published directory, not confirmed station carriage. Independently read 11 October: its Digi B 2 table lists Sports Channel as a regular DAB+ service under block 12A (223.936 MHz). No operator identity, programme schedule, TalkSPORT equivalence or local reception was verified. Use only as a receiver-scan lead: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes."
     }
   ]
 }
