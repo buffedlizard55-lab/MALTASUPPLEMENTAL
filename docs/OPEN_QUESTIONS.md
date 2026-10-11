@@ -73,3 +73,14 @@ Independently re-read 11 October: MTA states the €1.50/night/person18+ rate an
 - RaiRadio1recurringweekendshow/operatorDABlisting does not settle17/18Octlineup or currentChampionsLeaguerights. OfficialEPLfixtures haveexplicitBSTbut do not establishradio/Kalshi. League’ssign-inListenlivesection does not proveMaltaaccess or airtime.
 - LatestmainreintroducesBBCclockzoneconversions,communitymatchtiming/staticlastbus combinations andoldertaxifareplaceholders; these are not promoted as officialtripfacts. Sources/rawleads preserved underUPSTREAM_2f90396_*.
 - Additional 11 Oct primary-source checks (`arena/c4522181-maltasupplemental`): reading chunks 7–9 of `https://www.publictransport.com.mt/route/TD1/` confirms TD1 serves `Il-Qawra` stop `Arznell (950)` in both directions (`05:42–00:35` from Airport 1; `05:28–23:26` weekday / `05:27–23:27` weekend toward Airport 3), and reading chunks 1–3 of `https://travel.state.gov/en/international-travel/travel-advisories/malta.html` confirms emergency number **112** (plus 179 and 116-006), upfront payment expectations at private hospitals, and American Express/ATM guidance. Exact walking distance from stop `Arznell (950)` to AX ODYCY still requires a journey-planner check.
+
+
+## Merge-session additions — 11 October 2026
+
+| Question | Why it matters | What would resolve it | Status |
+|---|---|---|---|
+| Does any night bus serve Ta’ Qali or Attard after a late event finish? | Night routes are confirmed only for Buġibba (N212, 23:50–01:30) and Valletta (N13, weekdays 23:10–02:10); evening playoff exits run later than the last verified Route 186 return. | Operator night-route map/timetable or a journey-planner query for the event dates. | Open — plan a taxi/ride-hailing backup. |
+| Does Calypso Radio 101.8 currently broadcast a sport programme? | A third-party directory lists “Mużika u Sport” with Twanny Scerri, but the station’s own schedule page checked 11 October does not show it. | The station’s own dated schedule for the trip week. | Open — not counted anywhere on the site. |
+| Does Radju Malta (93.7 FM) carry live sport, and on what schedule? | Third-party directories describe the format as including sport; no official programme schedule was verified. | PBS/Radju Malta’s own programme schedule. | Open — not counted as verified sports radio. |
+| Which Premier League match will BBC *Sportsworld* carry on 17 and 18 October? | The episode pages exist (about 3 h 53 min each) but carry only generic descriptions; the extracted clock has no identified timezone. | Recheck the BBC programme pages from about 15 October. | Open. |
+| Dash Berlin at UNO Malta (17 Oct, 22:00): ticket price, age limit and venue address. | Only the EventWorks homepage listing was seen; the record was not rendered in the merged dataset. | Open the EventWorks event page. | Open — archived lead. |

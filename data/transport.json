@@ -80,6 +80,21 @@
       "price range": "Regular day-route fare; exact October 2026 seasonal fare not established"
     },
     {
+      "id": "mpt-night-routes-late-return",
+      "name": "Night routes — late-return options from Buġibba and Valletta",
+      "category": "Night travel",
+      "area": "Buġibba / Qawra (N212); Valletta (N13)",
+      "address": "Buġibba terminus (N212); Valletta terminus (N13)",
+      "hours": "Malta Public Transport's own announcement (changes effective 5 April 2026) states N212 departures from Buġibba run Monday to Sunday between 23:50 and 01:30 every 20 minutes, and N13 Valletta departures run on weekdays from 23:10 to 02:10 every 10 minutes.",
+      "price range": "The operator's announcement states night routes are part of the free public transport service and that holders of a valid Tallinja card travel free; card eligibility and conditions were not independently verified",
+      "description": "Late-night bus coverage exists at Buġibba (N212) and Valletta (N13) according to the operator's April 2026 announcement. Whether any night route serves Ta' Qali or Attard — the venue area — was not established, so a late playoff exit may still need a taxi or ride-hailing backup.",
+      "source_url": "https://www.publictransport.com.mt/new-night-routes/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "The announcement is about route changes effective 5 April 2026; the operator's separate generic page for night routes returned 'page not found' when checked on 11 Oct 2026, so exact 13–19 October 2026 night timetables were not confirmed. Buġibba-area stops on the operator's route pages list N48 and N212 among 'other routes operating from this bus stop'. Recheck the tallinja app or planner for the night of travel."
+    },
+    {
       "id": "airport-direct-td1-qawra",
       "name": "Malta Airport ↔ Qawra by Airport Direct TD1 (Il-Qawra stop Arznell 950)",
       "category": "Airport transfer",

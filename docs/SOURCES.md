@@ -308,3 +308,10 @@ Latest upstream’s inferredBBCclockzone,communitymatchtiming/staticlastbus comb
 | bbc-world-service-dab-sportsworld: Sunday 11 October 2026 BBC World Service Sportsworld episode page, billed on the upcoming-broadcasts list (`https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming`) as “Live sport from around the world - including the English Premier League”. | https://www.bbc.co.uk/programmes/w1730c9208pxyf8 | 2026-10-11 | E — Radio | Official BBC episode page; precedent for EPL coverage on Sportsworld, not a fixture list for 17–18 October. |
 | airport-direct-td1-qawra: MPT Route TD1 timetable chunks 7–9 read 11 Oct confirm TD1 serves Il-Qawra stop Arznell (ID 950) in both directions (05:42–00:35 from Airport 1 stop 2550; 05:28–23:26 weekday / 05:27–23:27 weekend toward Airport 3 stop 2552). | https://www.publictransport.com.mt/route/TD1/ | 2026-10-11 | A — Transport | Official operator timetable; walking route from Arznell 950 to AX ODYCY remains a journey-planner check. |
 | emergency-medical-112 & malta-currency-cards: U.S. State Department Malta advisory chunks 1–3 read 11 Oct confirm dialing 112 for ambulance, fire brigade, police, and emergency medical services (plus 179 national helpline and 116-006 victim support), upfront payment expectations at private hospitals, and American Express/ATM guidance. | https://travel.state.gov/en/international-travel/travel-advisories/malta.html | 2026-10-11 | D — Everyday | Official U.S. government travel advisory. |
+
+
+## Merge-session additions — 11 October 2026
+
+| Workstream | URL | Note |
+|---|---|---|
+| A | https://www.publictransport.com.mt/new-night-routes/ | Operator notice of night routes effective 5 April 2026: N212 Buġibba 23:50–01:30 every 20 minutes; N13 Valletta weekdays 23:10–02:10; free service with a valid Tallinja card. Exact trip-week night timetables were not re-published; recheck the tallinja app or planner for the night of travel. No night service to Ta’ Qali found. |
