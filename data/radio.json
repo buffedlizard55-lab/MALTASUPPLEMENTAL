@@ -126,11 +126,11 @@
     },
     {
       "id": "talksport-dab-6c-malta",
-      "name": "“Sports Channel” on Malta DAB+ block 6C — the block is now evidenced; the talkSPORT identity remains third-party",
+      "name": "“Sports Channel” · DAB+ block 6C (185.360 MHz) — block resolved, content still third-party",
       "category": "DAB+",
       "area": "Malta DAB+ block 6C / 185.360 MHz (service label “Sports Channel”, SId C02F, 32 kbit/s). Reception at AX ODYCY and the Ta' Qali venue not tested.",
-      "address": "Not applicable — broadcast-service directory lead; scan 6A, 6C and 12A by service name, then verify the actual block and content.",
-      "hours": "No official trip-week running order found for this relay. Do not infer a match from a UK rights slot.",
+      "address": "Not applicable — broadcast service. Block resolved to 6C (185.360 MHz); 12A was part of the same dated observation and carried no sports service, so 6C is the tuning target.",
+      "hours": "No published running order. A 13 January 2026 multiplex observation confirms carriage and bit rate only; what the service airs on 17–18 October is not published anywhere checked.",
       "price range": "Free-to-air if broadcast; DAB+ receiver required (hardware price not checked)",
       "description": "Two independent lines of evidence now converge on block 6C for a service labelled “Sports Channel”: an independent Malta directory entry and a dated observation of the 6C multiplex on 13 January 2026 that lists the service by service ID and bitrate. A 2023 enthusiast field report of the same DIGI B 3 / 6C ensemble labelled it as carrying talkSPORT programming. What is established: the service label, the service ID (C02F), the bitrate (32 kbit/s), the block and the fact that the service persisted into the January 2026 observation. What is not established: what it broadcasts on 13–19 October 2026, whether it is still a talkSPORT relay, and whether it can be received indoors at the hotel or at the venue.",
       "source_url": "https://radioinmalta.com/en/dab/6c.php",
@@ -204,7 +204,7 @@
       "name": "Malta DAB+ tuning guide — 6A (Maltese, BBC WS, Rai), 6C (Sports Channel, Radio Sportiva), 12A (no sport observed)",
       "category": "DAB+",
       "area": "Malta and Gozo (national Digi B multiplexes); indoor reception varies by building",
-      "address": "Not applicable — technical tuning data; scan by service name on a DAB+ receiver",
+      "address": "Not applicable — technical tuning data. Scan 6C first for the sports services, then 6A for BBC World Service and Rai RadioUno; tune by service name, not by frequency.",
       "hours": "Not a schedule. Observed block data: 6A 181.936 MHz (allotment MLT00017, on air since July 2008, transmitters Għargħur 10 kW and Żebbuġ, Gozo); 6C 185.360 MHz (allotment MLT00018, on air since 2012, site Għargħur); 12A 223.936 MHz (Smooth Platform); 9C 206.352 MHz (BLACKBOX).",
       "price range": "Broadcast reception is free; a DAB+ receiver is required (hardware not priced here). A pocket DAB+ receiver or a phone with a DAB+ accessory is the lightest option for a trip",
       "description": "Malta has broadcast DAB+ rather than older DAB since 2008, so a DAB+ tuner is required and services are found by name rather than by dial frequency. Practical split for this trip, from a dated 13 January 2026 observation of the multiplexes: block 6A carries BBC World Service, Rai RadioUno/Due/Tre, Net FM, Vibe and most Maltese services; block 6C carries the sports pair — a service labelled “Sports Channel” (SId C02F) and Radio Sportiva (SId C02A) — plus the UK relays LBC 97.3, Capital, Gold, Smooth, Jazz FM and others; block 12A carried the Smooth Platform services with no sports service on that date. Scan 6C for sport, use 6A for BBC World Service and Rai Radio Uno, and record the receiver's own service label rather than trusting any directory.",
@@ -246,10 +246,10 @@
     },
     {
       "id": "worlddab-sports-channel-lead",
-      "name": "“Sports Channel” on 12A — industry-directory lead, not supported by the January 2026 observation",
+      "name": "WorldDAB 12A “Sports Channel” listing — unsupported by the dated observation (kept as a correction)",
       "category": "DAB+ directory lead",
-      "area": "Malta Digi B 2 multiplex listing (Band III block 12A, 223.936 MHz)",
-      "address": "Not published; technical directory entry",
+      "area": "Superseded listing — WorldDAB placed a generic “Sports Channel” on block 12A / 223.936 MHz; the dated 13 January 2026 observation shows the sports service on 6C and none on 12A.",
+      "address": "Not applicable — superseded directory entry; do not tune 12A for sport.",
       "hours": "No schedule was found for this service.",
       "price range": "Free-to-air if broadcast; DAB+ receiver required; hardware price not checked",
       "description": "Retained as a correction. The WorldDAB Malta multiplex directory lists a generic “Sports Channel” on Band III block 12A (223.936 MHz). A dated observation of Malta's multiplexes on 13 January 2026 lists no sports service on 12A, while block 6C carries a service whose label is exactly “Sports Channel”. The operator's own consumer channel directory shows no sports tile among the entries it renders. The 12A entry is therefore treated as unsupported for the trip window: do not tune 12A expecting sport, and do not treat the 12A reference as an alternative carriage path.",
@@ -365,7 +365,7 @@
       "notes": "Three independent third-party calendars read 11 October 2026: https://youtarget.com/blog/sports-calendar-october-2026/ (October 16–31 table: 'NFL London Game: Texans vs. Jaguars, London | Oct 18'; NBA opener 20 Oct; UCL matchdays 13–14 and 20–21 Oct; MLB World Series from 23 Oct; F1 United States GP 23–25 Oct; El Clásico 25 Oct), https://sports.yahoo.com/articles/sporting-calendar-2026-guide-biggest-115510087.html (NFL London Games 4–18 Oct; MLB World Series 23–31 Oct; F1 United States GP 23–25 Oct; Barcelona v Real Madrid 25 Oct) and https://www.lineups.com/sports-events-calendar/ (F1 United States GP 23–25 Oct, Mexico City GP 30 Oct–1 Nov). Kick-off clock for the London game from The Athletic's October watch guide, read 11 October 2026: https://www.nytimes.com/athletic/7642236/2026/10/01/what-to-watch-sports-october-nfl-nba/ ('All three kick off at 9:30 a.m.'). These are listings, not radio carriage; no station was confirmed to carry the NFL, NBA, MLB or F1 inside the trip window. The Champions League midweek placement is corroborated by BFBS Radio 2's own schedule page, fetched 11 October 2026, which listed Champions League pre-match and live commentary entries on its Tuesday and Wednesday columns (https://www.bfbs.com/radio/stations/bfbs-radio-2/schedule) — a broadcaster schedule confirms the competition is being played that midweek, not that it is receivable in Malta."
     },
     {
-            "id": "malta-dab-block-6a-digib-network",
+      "id": "malta-dab-block-6a-digib-network",
       "name": "Block 6A (181.936 MHz) · DigiB Network — observed service table, 13 January 2026",
       "category": "DAB+",
       "area": "Malta national DAB+ multiplex, block 6A / 181.936 MHz; operator DigiB Network; transmitters Għargħur (10 kW) and Żebbuġ, Gozo",
@@ -422,6 +422,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Official programme page read in full 11 October 2026: https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto — 'Il sabato e la domenica. Appuntamento storico del Giornale radio, con i campionati di Serie A e B, anticipi e posticipi. Un classico che va sempre di moda. Conducono i radiocronisti della Redazione sportiva.' The episode list showed 10 Oct 2026 (Serie B 6th matchday plus the Serie A early match Genoa–Fiorentina, 127 min) and 11 Oct 2026 (Serie A 6th matchday, 122 min); visible durations run roughly 122–144 minutes. Maltese carriage is evidenced by the observed 6A service table at https://www.wohnort.org/dab/malta.html (Rai RadioUno SId C002) and by the operator channel directory https://dab.com.mt/channels/ . The Serie A matchday-7 fixture list already held in this dataset is a publisher list, not the league operator, and Rai has not published which of those matches it will commentate. Radio Sportiva (block 6C) is a separate Italian sports service: two different stations on two different blocks. No receiver scan was performed."    }
+      "notes": "Official programme page read in full 11 October 2026: https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto — 'Il sabato e la domenica. Appuntamento storico del Giornale radio, con i campionati di Serie A e B, anticipi e posticipi. Un classico che va sempre di moda. Conducono i radiocronisti della Redazione sportiva.' The episode list showed 10 Oct 2026 (Serie B 6th matchday plus the Serie A early match Genoa–Fiorentina, 127 min) and 11 Oct 2026 (Serie A 6th matchday, 122 min); visible durations run roughly 122–144 minutes. Maltese carriage is evidenced by the observed 6A service table at https://www.wohnort.org/dab/malta.html (Rai RadioUno SId C002) and by the operator channel directory https://dab.com.mt/channels/ . The Serie A matchday-7 fixture list already held in this dataset is a publisher list, not the league operator, and Rai has not published which of those matches it will commentate. Radio Sportiva (block 6C) is a separate Italian sports service: two different stations on two different blocks. No receiver scan was performed."
+    }
   ]
 }
