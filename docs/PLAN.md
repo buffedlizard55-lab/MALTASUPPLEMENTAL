@@ -88,7 +88,6 @@ Priorities, in order: (1) confirm the attendee venue, dates, daily times and acc
 
 Two evidence rules adopted here. First, when a source states a window for one season only, any extension to the trip dates is recorded as an inference and kept at “partially verified”, not promoted to “verified” — this is why the October fare conclusion is labelled as an inference from the published winter boundary. Second, when two directories disagree on a technical fact such as a DAB+ block, both readings are published side by side and the action becomes “scan both”, rather than picking the more convenient one.
 
-
 ## Historical reconciliation and verification notes
 
 ### Post-merge verification session (after PR #31)
@@ -104,3 +103,54 @@ Corrections and upgrades made, each traceable to a source read during this sessi
 5. **Social/review gap partially closed (B).** Reddit threads and TripAdvisor/Google listing snapshots were reachable through search, adding a popularity snapshot and a community shortlist. Yelp, Instagram, TikTok, Facebook and X remained inaccessible; this limitation is disclosed on the page rather than filled with guesses.
 
 No previously verified claim was weakened without cause, and no unsupported claim was introduced. Every URL cited in a record is logged in `docs/SOURCES.md`, which the offline validator enforces.
+
+## Session plan — 11 October 2026 (branch `arena/b7b7ea21-maltasupplemental`)
+
+### Repository review conclusion
+
+The repository already contains a complete, mature implementation of the requested guide: a static
+GitHub Pages site (`index.html` plus six data-backed topic pages and `sources.html`), a shared
+accessible renderer (`js/site.js`), design tokens (`css/style.css`), six canonical JSON datasets on
+the exact 13-field schema, an offline validator (`scripts/validate_site.py`), a JavaScript syntax
+gate (`scripts/check_javascript.py`), and a Playwright/axe browser suite. GitHub Pages is publishing
+the `main` root and reported `built` for `4ed9c5a`. Both baseline gates pass on arrival
+(128 records, 205 unique logged record URLs, 25 expense rows).
+
+Therefore this session does **not** re-scaffold. It runs the same A–G ownership protocol as a
+fresh verification-and-extension pass against the live sources, because the trip now starts in two
+days and several previously "beyond the forecast window" or "unpublished" items have become
+checkable.
+
+### Workstream scope for this session
+
+| Workstream | Owned files | This session's work |
+|---|---|---|
+| A · Transport | `data/transport.json`, `getting-around.html` | Re-read Route 186 end-to-end in both directions; establish the return-leg terminus and the Qawra transfer problem; re-read the fare table and its stated validity window; add trip-specific fare scenarios; confirm the 17–18 October Ta' Qali/Mosta evening detour cluster. |
+| B · Food & cafés | `data/food.json`, `restaurants.html` | No new claims. Existing records retain their dated snapshots; re-verification of all 29 records against live operator pages is out of scope for one session and is logged as a next-session task. |
+| C · Activities | `data/activities.json`, `activities.html` | Resolve the archived "Dash Berlin at UNO Malta" lead on the official ticketing platform; add the Ħamrun Chocolate Festival; record PLAYCON 2026 as explicitly outside the trip window and use it to corroborate the MFCC address. |
+| D · Everyday | `data/everyday.json`, `everyday.html` | Extend the weather record to 18–19 October; document the EES implementation conflict between the official EU position and secondary September 2026 reporting. |
+| E · Radio sports | `data/radio.json`, `radio.html` | Resolve the BBC service-label discrepancy (programme owner vs broadcast service), add Malta-time conversions for the six named EPL commentaries, and cross-check them against the official fixture record already in the dataset. |
+| F · Expenses | `data/expenses.json`, `costs.html` | No structural change; the planner is already blank-by-default and quick-fill. Add the newly verified fare inputs as optional dated reference notes only, never as prefilled amounts. |
+| G · Integration | `index.html`, `README.md`, `docs/*`, `sources.html` | Update the executive summary, day framework, source log, open questions, status, handoff, audit and final report; run all gates; open and merge the PR; confirm Pages rebuild. |
+
+### Evidence rules applied this session
+
+1. Every new claim was read directly from a fetched page in this session and is dated 2026-10-11.
+2. Timetable variants on a single operator page are reported as ranges with the variant caveat,
+   never collapsed into one "official" clock time.
+3. A fixture list, a market listing or an internet stream is never treated as radio carriage; a UK
+   broadcast listing is never treated as Malta reception.
+4. Search-result snippets that could not be confirmed by a direct page fetch are recorded as leads in
+   `docs/OPEN_QUESTIONS.md` and are **not** promoted into data records.
+5. Arithmetic (fares × journeys, nights × contribution rate) is labelled as arithmetic, with its
+   inputs stated, and is never presented as a quoted price or a confirmed charge.
+
+### Outcome of this session's plan
+
+All workstreams completed except two deliberate scope decisions, recorded here rather than left implicit:
+
+- **B · Food** — unchanged, as planned. No new claims; the fresh all-platform re-verification of all 29 records is carried forward as next-session task 6 in `docs/FINAL_REPORT.md`.
+- **F · Expenses** — **deviation from plan.** The plan said to add the newly verified fare inputs as optional dated reference notes in `data/expenses.json`. That was not done: the same inputs are already published in `mpt-fares-cards` and `trip-fare-scenarios-13-19-oct` on the transport page and summarised in the `index.html` executive summary, so duplicating them into the planner's data file would have added a second place for one fact to go stale while giving the traveller nothing new. `data/expenses.json` and `costs.html` are therefore untouched and the planner remains blank-by-default with all 25 rows intact.
+- **Diff discipline** — a key-order normalisation across all six datasets (the repository stores the 13 fields in two different orders) was started and then **reverted**. It touched 59 records with zero content change, which would have buried the real edits in an unreviewable diff. New records follow the dominant field order of the file they join. Canonicalising the order repo-wide should be its own commit if it is ever wanted.
+
+Gates after the pass on this branch alone: `python3 scripts/validate_site.py` PASS (134 records / 228 URLs / 119 link attributes), `python3 scripts/check_javascript.py` PASS, `npm test` 9/9 Playwright PASS in 36.2s, `git diff --check` clean. **After reconciling with `main`, which had advanced through two further passes to 140 records, the merged tree passes at 165 records / 288 logged URLs / 145 link attributes with 10/10 Playwright tests** (the tenth arrived with `main`). An order-insensitive comparison of every record against `HEAD` confirmed exactly five content changes and six additions, no removals, and no unintended `intro` edits.

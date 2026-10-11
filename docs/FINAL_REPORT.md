@@ -55,9 +55,9 @@ This pass ran a fresh external re-verification of each workstream's most decisio
 
 ## Executive summary
 
-The static, mobile-friendly site includes an overview, six data-backed topic pages, shared navigation, source/open-question/status reporting, and a blank-by-default expense planner. Six canonical JSON datasets contain **140 exact-schema records**: transport 20, food 30, activities/events 33, everyday guidance 17, radio 15, and expenses 25. The canonical schema has exactly 13 record fields, including the exact key `price range`; the current source-type enum is `official`, `map`, `review`, and `social`. Records expose source, check date, confidence, and limitations; page renderers use the data rather than recreating facts.
+The static, mobile-friendly site includes an overview, six data-backed topic pages, shared navigation, source/open-question/status reporting, and a blank-by-default expense planner. Six canonical JSON datasets contain **165 exact-schema records** after the PR #39 reconciliation: transport 25, food 38, activities 39, everyday 18, radio 20, expenses 25. The canonical schema has exactly 13 record fields, including the exact key `price range`; the current source-type enum is `official`, `map`, `review`, and `social`. Records expose source, check date, confidence, and limitations; page renderers use the data rather than recreating facts.
 
-The refreshed offline validator reports **242 unique record URLs** in `docs/SOURCES.md`, 15 HTML pages, 130 link attributes, 8 shared-navigation destinations, and all 25 expense rows wired. The latest local CI-style run passed all ten Playwright tests, including viewport/accessibility checks at 360, 768, and 1440 pixels. The guide is a dated planning snapshot, not a booking, admission, service, radio-reception, or external-link guarantee.
+The refreshed offline validator reports **288 unique record URLs** in `docs/SOURCES.md`, 15 HTML pages, 145 link attributes, 8 shared-navigation destinations, and all 25 expense rows wired. The latest local CI-style run passed all ten Playwright tests, including viewport/accessibility checks at 360, 768, and 1440 pixels. The guide is a dated planning snapshot, not a booking, admission, service, radio-reception, or external-link guarantee.
 
 **Complete fresh line-by-line external verification of every retained historical claim and comprehensive all-platform review coverage remain incomplete.** Unresolved facts are not presented as confirmed; the detailed question list is in [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md).
 
@@ -93,7 +93,7 @@ The planner provides 18 core trip categories plus seven optional daily templates
 
 ## Three cumulative verification passes
 
-1. **Implementation and source pass — passed.** `python3 scripts/validate_site.py` reports 6 JSON files / 140 exact-schema records / 242 unique record URLs / 15 HTML pages / 130 link attributes / 8 navigation destinations / 25 planner rows. `python3 scripts/check_javascript.py` and `node --check js/site.js` pass. All six data files parse as JSON.
+1. **Implementation and source pass — passed.** `python3 scripts/validate_site.py` reports 6 JSON files / 165 exact-schema records / 288 unique record URLs / 15 HTML pages / 145 link attributes / 8 navigation destinations / 25 planner rows. `python3 scripts/check_javascript.py` and `node --check js/site.js` pass. All six data files parse as JSON.
 2. **Requirements and evidence pass — passed with limitations recorded.** The page/data claims were checked for sources, dates, confidence, contradictions, and open questions. Transport compares mode convenience/price/value/feasibility without promising an event-day hotel connection. Radio sources are not conflated with fixture lists, internet streams, or event schedules. Review/social access limitations and unresolved facts remain visible. This is not a complete new line-by-line re-verification of all older claims.
 3. **Integration, responsive and functional pass — passed with limits.** `npm ci` and `npx playwright test` ran in-sandbox and passed **10/10 tests**: active-page rendering and axe checks at 360/768/1440 px, responsive overflow, data/render parity, filters, mobile navigation/deep links, expense defaults/totals/persistence/CSV/reset, itinerary quick-fill preview/apply/overwrite behaviour, invalid input, storage denial/corruption, and failed-fetch behavior. Desktop and mobile screenshots were captured and reviewed for the header, hero, transport, radio and planner views. A physical-device test and a physical radio scan were not available; the validator checks local wiring, not external URL liveness.
 
@@ -137,7 +137,7 @@ At the final pre-merge review, PR #31 was open and GitHub reported `CLEAN`/`MERG
 - **Venue confirmed (this pass):** the Finals run 14–18 October inside the 12–19 October window at BLAST Arena Studios Malta, the studio at the Malta Fairs & Conventions Centre, Ta’ Qali, ATD 4000 Ħ’Attard — corroborated by BLAST’s own guest guide, the VisitMalta business directory and the organizer’s Ta’ Qali-datelined release. Ticket price, public gate, door times and daily match schedule remain unpublished, so attendee access stays the largest open risk (OQ-26).
 - **Customs added:** EU entry allowances from the European Union’s official travellers’ page and the U.S. returning-resident exemption from U.S. Customs and Border Protection are now recorded in the everyday guide, closing a stated requirement that had been missing.
 - **Expense planner ready for the itinerary:** two complementary hand-offs — a documented intake list and a paste-your-itinerary quick-fill panel that previews every proposed row and writes only to still-blank budget fields, never overwriting typed amounts, and reports unresolvable lines back for a human decision. Amounts still start blank.
-- **Evidence counts:** 140 canonical records across six data files; 242 unique record URLs in `docs/SOURCES.md`; 15 HTML pages; 130 link attributes; 8 navigation destinations; 25 expense rows. Gates: validator PASS, JavaScript syntax PASS, Playwright 10/10 PASS.
+- **Evidence counts:** 165 canonical records across six data files (transport 25, food 38, activities 39, everyday 18, radio 20, expenses 25); 288 unique record URLs in `docs/SOURCES.md`; 15 HTML pages; 145 link attributes; 8 navigation destinations; 25 expense rows. Gates: validator PASS, JavaScript syntax PASS, Playwright 10/10 PASS.
 - **Stated limitations:** organizer attendee access and daily times; the October single-fare season; measured stop-to-hotel and stop-to-gate walks; the 17 October diversion's practical effect; no physical FM/DAB+ scan and no named-match carriage; social-platform review coverage still blocked/limited as logged; 18–19 October beyond the published forecast; external-link liveness outside the offline validator.
 
 
@@ -148,8 +148,6 @@ Rebased onto the current `main` after the parallel passes merged; this Pass-1/2/
 - **Radio (E):** every BBC EPL commentary episode for 17–18 October is now named from official episode JSON with Malta start times, and the page-vs-JSON service-label discrepancy is resolved via the episodes’ own cross-reference texts. A seventh commentary — Bournemouth v Sunderland on 5 Sports Extra 2 — was newly identified inside the Leeds/Brighton episode texts. The Kalshi comparison maps these named windows to named EPL markets (market≠rights, UK-schedule≠Malta-reception caveats retained; the “Sports Channel” block dispute and eligibility evidence from the parallel passes are retained). BBC *Sportsworld* (the Malta-DAB+ service) was rechecked and still has no named match. The radio intro’s earlier certainty about block 6C was aligned with the corrected “block disputed” record.
 - **Venue area (A/C):** the 16 September 2026 Thunderpick team-announcement dateline “TA’ QALI, Malta” (PR Newswire) is added to the transport/activities venue records alongside the parallel passes’ guest-guide, ticketing-partner, VisitMalta and press evidence. The TWC attendee pin, entrance, spectator policy and daily public times remain unpublished (OQ-26).
 - **Gates:** validator (record counts per the current datasets / all record URLs logged / 15 HTML pages / 8 nav destinations / 25 expense rows), JS checks, `git diff --check`, and `npm test` (9/9 Playwright) re-run on the reconciled tree after each rebase.
-
-
 
 ---
 
@@ -209,3 +207,43 @@ Every item below was read from a primary or named source during this session and
 - `python3 scripts/check_javascript.py` and `node --check js/site.js` → **PASS**.
 - `npm ci && npm test` → **PASS**, 9/9 Playwright tests, including 360/768/1440 px viewport and axe WCAG 2A/AA/2.1AA checks.
 - Manual source spot-checks performed during this session are itemised in the “verified” list above; no claim on the site was accepted on memory alone.
+
+## Third-pass addendum — what the `arena/b7b7ea21-maltasupplemental` reconciliation changed
+
+**Changed by that pass, and how each item was reconciled against the third pass above** (five records rewritten, six added, none removed; `data/food.json` and `data/expenses.json` untouched by it):
+
+| Area | Change | Evidence class |
+|---|---|---|
+| A · Transport | `qawra-taqali-route-186` rewritten with both directions traced stop by stop; the return confirmed to list no Il-Qawra stop and to terminate at Buġibba Bay 1 (2527) | Official operator timetable, read directly |
+| A · Transport | `route-186-return-transfer-bugibba` added — the mandatory second boarding and the 20:53 last return | Official operator timetable |
+| A · Transport | `route-186-oct17-detour` expanded to the whole 19:00–00:00 Ta’ Qali / Mosta detour cluster from 17 October | Official operator notice |
+| A · Transport | `mpt-fares-cards` rewritten; `trip-fare-scenarios-13-19-oct` added with break-even arithmetic | Official fare table + arithmetic labelled as arithmetic |
+| C · Activities | `uno-malta-dash-berlin-2026-10-17` added (verified) | Official ticketing platform |
+| C · Activities | `hamrun-chocolate-festival-2026-10-17` added (partially verified, `social`) | Organiser Facebook via dated snapshot + secondary guide |
+| C · Activities | `playcon-2026-mfcc-outside-window` added, recorded as out-of-window | Official ticketing platform |
+| D · Everyday | `october-weather-forecast` extended to all seven days | Malta Met Office + UK Met Office (BETA for 18–19 Oct) |
+| D · Everyday | `ees-malta-implementation-conflict` added | Official EU FAQ vs secondary reporting — conflict recorded |
+| E · Radio | `bbc-radio-5-live-premier-league-listings` rewritten; service-label question closed; fixture cross-check passed | Official BBC pages, read directly |
+| G · Shared | `index.html` executive summary and day framework; `getting-around.html` event-day checklist | Derived from the records above |
+
+**Highest-value work for the next session, in priority order:**
+
+1. **Get the dated Buġibba → Qawra connection.** This is the single largest remaining gap: the return leg is now known to need a second boarding, but no dated connection has been verified. Query MPT’s journey planner for the evenings of 14–18 October, or read the individual timetables for Routes 45, 212, 221, 223 and 280. Until then the bus return after about 21:00 is unsupported.
+2. **Resolve the October 2026 single fare.** Every bus-cost figure on the site depends on €2.00 versus €2.50, and the operator’s own page no longer states a window covering the trip. Look for a dated MPT fare notice, or ask at a sales point.
+3. **Settle the EES question for Malta specifically.** Find a Malta government, Identity Malta or eu-LISA statement, or published airport wait times. The conflict is currently recorded, not resolved.
+4. **Fetch `https://www.bbc.co.uk/programmes/b0070hx6/broadcasts/upcoming` successfully.** The studio-programme grid would add trip-week coverage beyond the six match commentaries. It failed repeatedly this session; the entries stay a lead until it opens.
+5. **Confirm the Ħamrun Chocolate Festival with the Ħamrun Local Council or VisitMalta.** The date rests on a Facebook page that could not be fetched directly, and a past edition ran in late October, so the date has moved before.
+6. **Complete the blocked review/social compilation.** Yelp, Instagram, TikTok, Facebook, X and Reddit remain partly inaccessible; the food shortlist in particular still lacks a fresh all-platform pass. No inaccessible content has been inferred, and none should be.
+7. **Re-run the physical checks that no offline gate can perform:** an FM/DAB+ receiver scan at AX ODYCY and in the Ta’ Qali area, BBC Sounds accessibility from Malta, a manual desktop/mobile graphical audit, and external URL liveness.
+
+**Limitations that remain true of the whole guide:** the TWC attendee entrance, pin, ticket, spectator access and daily door/finish times are still unpublished, so no door-to-door event journey is asserted anywhere; MFCC / Ta’ Qali remains venue-area context drawn from a BLAST guide for a *different* event; static timetable entries are not dated evidence; UK radio schedules are not proof of Malta reception; the expense planner stays blank because no booking, party size or itinerary was supplied; and the guide is a dated snapshot (9–11 October 2026) rather than a booking, admission, service or reception guarantee.
+### How the two passes were reconciled
+
+The reconciliation kept **both** sessions' evidence rather than letting the later pass overwrite the earlier one. Four decisions matter:
+
+- **`qawra-taqali-route-186` and `route-186-oct17-detour` were merged, not replaced.** The third pass's nuances are retained — that a diversion notice names *affected stops* rather than a cancellation, that the operator publishes an overlapping April-ending notice, and that Routes 56, 202 and the Ta' Qali P&R shuttles 403/404/405 also serve the stadium stop area. The later pass contributed the stop-by-stop return chain, the confirmed absence of any Il-Qawra stop on the return, and the wider 15-route 19:00–00:00 detour cluster from 17 October.
+- **`mpt-fares-cards` kept the third pass's version.** The later pass had rewritten it, but the third pass's text is richer and consistent with its companion records `mpt-seasonal-fare-window-2026` and `mpt-card-sales-points`, so only a cross-reference to the new break-even record was added. Rewriting it would have created a second, competing statement of the same fare table.
+- **`october-weather-forecast` now leads with the official providers.** The third pass's record used three secondary providers (BBC Weather, AccuWeather, timeanddate) and pointed at the Malta Met Office as the thing to recheck; the later pass had actually read it. The merged record leads with Malta Met Office (13–17 Oct) and the UK Met Office Valletta BETA view (18–19 Oct) and **retains all three secondary providers as corroboration**, keeping the third pass's disclosed 13 October disagreement.
+- **`trip-fare-scenarios-13-19-oct` complements rather than duplicates.** It adds only the break-even arithmetic and the €25-versus-€27 Airport Direct comparison; the seasonal-window question stays with `mpt-seasonal-fare-window-2026`, whose reasoning that the cheaper winter single begins after 19 October is carried into the new record rather than contradicted.
+
+The Buġibba Bay 1 arrival time is now reported as **21:26–21:36 across unlabelled timetable variants** everywhere on the site, replacing the single 21:27 figure, because the variants are not labelled by day type and a single clock time would overstate the evidence.
