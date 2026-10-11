@@ -26,12 +26,12 @@
       "area": "Malta",
       "address": "Not applicable — island-wide currency",
       "hours": "Not applicable",
-      "description": "The Government of Malta identifies the euro as the national currency. Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars.",
+      "description": "The State Department page states its currency limits in euros. Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. No bank, exchange rate, or card-acceptance guarantee is made here. The State Department page (checked 11 October) notes currency restrictions at €10,000 or equivalent on entry and on exit.",
+      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch on 11 Oct 2026. No bank, exchange-rate or card-acceptance guarantee is made here. The State Department Malta page (checked 11 Oct 2026) gives the currency limit as €10,000 or equivalent on entry and on exit.",
       "price range": "Use euro (€) as the reference currency; exchange and card fees depend on your provider"
     },
     {
@@ -101,12 +101,12 @@
       "area": "European countries requiring ETIAS, including Malta",
       "address": "Not applicable",
       "hours": "EU’s official site checked 9 October 2026 says ETIAS is not yet in operation; the exact start date is unannounced",
-      "description": "As checked on 9 October, the EU’s official ETIAS site says the system is not in operation and no applications are being collected; the EU says it will announce the specific start date several months before launch. Recheck before departure because the planned launch is in late 2026. Do not pay an unofficial site claiming to issue ETIAS authorisations.",
+      "description": "The EU’s official ETIAS page, read 11 Oct 2026, says ETIAS is currently not in operation and no travel-authorisation applications are collected. The EU will announce the specific start date several months before launch. Recheck before departure, and do not pay any site that claims to sell an application.",
       "source_url": "https://travel-europe.europa.eu/en/etias",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias. A U.S. State Department Europe guide likewise says the planned ETIAS launch is late 2026: https://travel.state.gov/en/international-travel/planning/guidance/europe.html. Status is date-sensitive; recheck the EU page immediately before travel. Re-checked 11 October: the EU ETIAS page still states that ETIAS is currently not in operation and no travel-authorisation applications are collected; the EU will announce the start date several months before launch.",
+      "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias (read 11 Oct 2026). The page quotes a EUR 20 application fee for when the system opens. Status is date-sensitive; recheck the EU page immediately before travel.",
       "price range": "No payment is due while the official EU site says applications are not being collected"
     },
     {
@@ -116,12 +116,12 @@
       "area": "Malta",
       "address": "Not applicable — emergency services are island-wide",
       "hours": "112 emergency service: 24 hours a day",
-      "description": "The Maltese health ministry lists 112 for emergency ambulance, fire, and police services. If you need urgent help, call 112. The U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure; do not assume a U.S. health plan covers care abroad.",
+      "description": "For emergencies, the number to call is 112; that number is NOT confirmed by a source read in this pass and must be checked on an official Maltese emergency page before travel. The U.S. State Department recommends travel insurance with medical and evacuation cover and states that no vaccinations are required for Malta.",
       "source_url": "https://health.gov.mt/services/health-services/",
       "source_type": "official",
       "date_checked": "2026-10-11",
-      "confidence": "verified",
-      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance recommends travel insurance, including medical and evacuation assistance: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. The State Department page (checked 11 October) lists no required vaccinations for Malta.",
+      "confidence": "partially verified",
+      "notes": "Health ministry services page (https://health.gov.mt/services/health-services/, read 11 Oct 2026) lists service phone numbers but does not state the emergency number. State Department Malta page (checked 11 Oct 2026): no vaccinations required; recommends travel insurance including medical and evacuation assistance. The 112 emergency number is unverified in this pass; see docs/OPEN_QUESTIONS.md.",
       "price range": "Costs/coverage depend on treatment and insurance; not stated here"
     },
     {
