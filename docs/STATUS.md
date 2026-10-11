@@ -1,4 +1,17 @@
-# Delivery status — 11 October 2026 (session `arena/10de8b19`, PR #36)
+# Delivery status — 11 October 2026 (session `arena/2f503eaf-maltasupplemental`, final rebase-merge)
+
+**Merge state:** this session's fresh re-verification pass has now been rebased twice onto moving `main` and reconciled with the parallel sessions whose PRs #32/#34/#35/#36/#37/#38 merged the same day — including the venue/ticketing confirmation session. Final merged tree totals: **159 canonical records** (transport 23, food 38, activities 36, everyday 17, radio 20, expenses 25). All facts from every session are retained; conflicts were resolved in the cautious direction and invalidated claims were updated rather than left contradictory.
+
+**This session's unique contributions in the final merge:**
+- **Detour correction:** the 17 Oct Route 186 diversion now records that the operator's two pages disagree (Route 186 page 19:00–00:00 vs service-updates page 20:00–24:00) and advises planning for the union 19:00–24:00, plus the companion Mosta-Rotunda detours (Routes 103/45/405/47/238 from 19:00) relevant to any Mosta-changing return.
+- **Timetable-bounds caveat:** the 20:53/21:27 figures are labelled one static variant (not a guarantee) in the mode comparison and executive summary — if anything the usable departure could be earlier, which widens the late-finish gap the ticketing session identified.
+- **TWC detail:** format/prize/operator (2× GSL → 4-team playoff, Bo3/Bo5, $1M, GAM3RS_X/GRID, official rulebook) and the eight qualified teams + Twitch/Kick/YouTube streams from trade press.
+- **New records:** La Traviata (Teatru tal-Opra Aurora, Gozo, 17 Oct — official homepage; third-party 19:30 curtain), Chatterbox and Fluid Bistro review leads, and a Feb 2025 r/malta community thread snapshot.
+- **Corroboration:** Esports Plaza's own X profile reads “PERMANENTLY CLOSED”; In Guardia 18 Oct re-confirmed; Malta Met Office 13–17 Oct official forecast re-read; dated secondary tipping and SIM snapshots logged as non-official; BBC schedule re-read (superseded by the parallel session's fuller label resolution — their record stands).
+
+**Still open after all sessions:** the 17–18 Oct TWC agenda and the attendee gate inside MFCC; a date-specific door-to-door journey with the late-finish gap planned around; the October single-fare window; actual radio reception in Malta (6C/12A “Sports Channel” identity, BBC feed access, Rai lineup); Kalshi eligibility from Malta; 18–19 Oct official forecast; an official tipping rule; traveler booking inputs.
+
+---
 
 **Merge state:** this session's third pass merged into `main` on 11 October 2026 at 05:19 UTC as merge commit `9c3db1f` (PR #35, branch `arena/5782956c-maltasupplemental`, head commit `2a290ea`). The GitHub Actions workflow “Validate Malta Trip Guide” ran on the branch before the merge and reported **SUCCESS** (job 114396097349, ~53 s), and GitHub reported the pull request `CLEAN`/`MERGEABLE`. GitHub Pages reported `built` for the merge commit at 05:19:37 UTC with no error, so the public site at https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/ serves the merged revision; delivery is confirmed through the Pages build record and the `main` file listing, because the sandbox network policy permits only `github.com`/`api.github.com`. The merged tree carries 140 canonical records (transport 20, food 30, activities 33, everyday 17, radio 15, expenses 25), 242 logged record URLs, 130 link attributes and 25 expense rows; the local gates (validator, JavaScript syntax, 10/10 Playwright) passed on the merged tree before pushing. A physical radio scan and a physical-device audit remain impossible here, and no external-link crawler was run.
 
