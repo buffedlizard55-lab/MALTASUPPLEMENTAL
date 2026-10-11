@@ -10,14 +10,14 @@
       "category": "Power, connectivity & weather",
       "area": "Malta",
       "address": "Not applicable — island-wide electrical standard",
-      "hours": "Not applicable",
-      "description": "Malta uses UK-style Type G three-pin sockets and a 230 V, 50 Hz supply. Bring a Type G travel adapter for US plugs. An adapter changes the plug shape only; check each device label and use a suitable converter only if the device is not rated for 230 V.",
+      "hours": "Not a schedule — plug/voltage reference for packing",
+      "description": "Malta uses Type G sockets (British three rectangular pins) at 230 V / 50 Hz, so a US Type A/B plug needs a travel adapter. Voltage matters as well as shape: laptops, phones, tablets and camera chargers are normally dual-voltage (100–240 V, 50/60 Hz) and need only the adapter, while single-voltage high-wattage appliances such as some hair dryers, straighteners and kettles can be damaged at 230 V and need a converter rather than an adapter. Hotels on the island commonly provide a limited number of adapters at reception, but that is not guaranteed — pack at least one Type G adapter and, for the event days, a power bank.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Government of Malta lists 230 Volts, 50 Hz and UK-style three-pin square plugs. Electrical Safety First specifies Type G and warns that an adapter does not convert voltage or frequency: https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/malta/. Check labels on hair tools, chargers and other devices before use.",
-      "price range": "Adapter/converter cost not checked"
+      "notes": "Government of Malta lists 230 Volts, 50 Hz and UK-style three-pin square plugs. Electrical Safety First specifies Type G and warns that an adapter does not convert voltage or frequency: https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/malta/. Check labels on hair tools, chargers and other devices before use. Re-verified 11 October 2026 with two independent travel-reference pages that both give Type G / 230 V / 50 Hz for Malta and both warn that an adapter does not change voltage: https://www.power-plugs-sockets.com/us/malta/ and https://www.checkplug.com/usa-to-malta . These are consumer reference pages rather than a Maltese regulator, but they agree with each other and with the Government of Malta overview already logged. One page checked in the same batch (travelpowerplugs.com) incorrectly told US travellers that no adapter is needed; that claim contradicts the others and was not used.",
+      "price range": "Complimentary adapter availability not guaranteed; a Type G adapter is an inexpensive item to bring from home (not priced here)"
     },
     {
       "id": "malta-currency-cards",
@@ -33,6 +33,21 @@
       "confidence": "verified",
       "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. The U.S. State Department Malta page (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 0–1 read 11 Oct 2026) explicitly states that the euro is the official currency, American Express is not widely accepted, ATMs accept U.S.-issued bankcards (often with an ATM fee), and the currency limit is €10,000 or equivalent on entry and on exit.",
       "price range": "Use euro (€) as the reference currency; exchange and card fees depend on your provider"
+    },
+    {
+      "id": "eco-contribution-2026",
+      "name": "Hotel eco-contribution (Malta Tourism Authority) — what this stay implies",
+      "category": "Money, cards & tipping",
+      "area": "Malta-wide, collected by licensed accommodation such as AX ODYCY",
+      "address": "Not applicable — statutory contribution collected by the accommodation provider",
+      "hours": "Applies from 1 July 2026: €1.50 per night for each guest aged 18 or over at the start of the visit, capped at €22.50 per eligible person per visit; it must appear as a separate line on the invoice or fiscal receipt.",
+      "description": "Malta Tourism Authority guidelines written for the 1 July 2026 increase confirm the rate (€1.50 per night), the age threshold (18 or over at the start of the visit) and the cap (€22.50 per person per visit) that hotels such as AX ODYCY collect on separately billed invoices. For this trip the arithmetic is six nights × €1.50 = €9.00 per eligible adult — but that is a conditional calculation from the supplied 13–19 October dates, not a quoted charge: the actual figure depends on the nights the hotel bills and on each guest’s age at check-in. The guidelines also clarify that a “visit” is an uninterrupted stay and that the cap corresponds to fifteen chargeable nights, which explains the separate “15-night” wording; it is a cap mechanism, not an exemption for short stays.",
+      "source_url": "https://mta.com.mt/docs/Eco-Contribution-Accommodation-Guidelines-2026.pdf",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Guidelines PDF read 11 October 2026: https://mta.com.mt/docs/Eco-Contribution-Accommodation-Guidelines-2026.pdf — it states the €1.50 rate per night per guest aged 18+, the €22.50 maximum per person per visit, that the amount is chargeable per night the accommodation is made available, that a “visit” is an uninterrupted stay in one or more licensable properties, that receipts must disclose it separately, and that the cap is applied against earlier contributions when evidence is retained. The MTA service page already logged carries the same rate and cap: https://mta.com.mt/services/environmental-contribution/ . Open item OQ-23/OQ-25 is now narrowed to the hotel invoice itself: how many nights are billed and which guests are 18+, so the €9 example is not presented as a charge.",
+      "price range": "€1.50 per person per night (guests 18+), maximum €22.50 per person per visit; six nights would be €9.00 per eligible adult if all six nights are billable"
     },
     {
       "id": "malta-language",
@@ -205,14 +220,14 @@
       "category": "Power, connectivity & weather",
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
-      "hours": "11 October Met Office snapshot: 13 Oct isolated showers 26/19°C; 14 Oct mainly sunny 24/18°C; 15–16 Oct mainly sunny 25/17°C; 17 Oct mainly cloudy 23/18°C. Forecast does not yet include 18–19 Oct.",
-      "description": "This is a dated forecast snapshot, not a trip guarantee. The Malta Met Office page is refreshed; recheck all seven dates shortly before departure and before sea activities. Pack for possible wind or showers as well as warm daytime weather, and follow marine/lifeguard notices.",
+      "hours": "Snapshot read 11 October 2026. AccuWeather’s Qawra October page: 13 Oct morning rain then thunderstorms 24/19 °C, 14 Oct sunshine 24/17 °C, 15 Oct mostly sunny 25/17 °C, 16 Oct thunderstorms mainly early 24/17 °C, 17 Oct a couple of afternoon showers 23/16 °C. timeanddate’s Qawra two-week table: 13–15 Oct sunny to mostly sunny, 16 Oct sprinkles late/overcast, 17 Oct mostly sunny, 18 Oct overcast, 19 Oct decreasing cloudiness.",
+      "description": "Two providers were read on 11 October 2026 so the trip week has a dated outlook rather than a monthly average. They agree on a warm, humid week in the mid-20s °C with the chance of showers, but they disagree on the arrival day itself — AccuWeather’s monthly page shows rain and thunderstorms for 13 October while timeanddate’s two-week table shows sun — which is exactly why the daily Malta Met Office forecast should be rechecked immediately before departure and each morning. Late-October sea temperatures stay warm enough for swimming for many visitors, but wind and rain can change boat and outdoor plans, including any Middle Sea Race viewing on 17 October.",
       "source_url": "https://maltametoffice.com/en/forecast/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Official seven-day view fetched 11 October: https://maltametoffice.com/en/forecast/. This snapshot replaces the older 9 October forecast; 18–19 October lie beyond this view. Recheck before outdoor or sea activities; these are forecasts, not observed conditions.",
-      "price range": "Not applicable"
+      "notes": "Official seven-day view fetched 11 October: https://maltametoffice.com/en/forecast/. This snapshot replaces the older 9 October forecast; 18–19 October lie beyond this view. Recheck before outdoor or sea activities; these are forecasts, not observed conditions. Dated snapshots read 11 October 2026: https://www.accuweather.com/en/mt/qawra/233869/october-weather/233869 (monthly outlook with day-by-day 13–17 October entries) and https://www.timeanddate.com/weather/@2562641 (two-week table for Qawra). Both are commercial forecast products; monthly and long-range outlooks are the least reliable layer of a forecast and change frequently. Neither is the official Maltese meteorological service; the Malta Met Office forecast remains the reference to verify: https://maltametoffice.com/en/forecast/ . Temperatures in the sources were published in Fahrenheit and are converted here (75 °F ≈ 24 °C, 62 °F ≈ 17 °C).",
+      "price range": "Not applicable — weather outlook; check the live daily forecast before outdoor plans"
     },
     {
       "id": "tipping-no-fixed-rate-verified",

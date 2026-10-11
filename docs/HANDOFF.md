@@ -61,3 +61,14 @@ A/B/C/E→G: preserve independentlycheckedUber,Fontanella,TaMarija,AviationMuseu
 - Current data counts after reconciliation are expected to be transport 16, food 29, activities 32, everyday 15, radio 11, and expenses 25 (128 total); confirm against the validator after the final conflict commit. The expense planner remains 18 core categories plus seven optional daily rows, all blank by default.
 - Radio follow-up carries the six BBC UK commentary episode records and direct Sportsworld JSON offsets. Explicitly keep UK schedule, Malta receiver signal, online-stream availability, and named-match carriage separate. Current sources and unresolved status are in `docs/SOURCES.md` and `docs/OPEN_QUESTIONS.md`.
 - Rebase is in progress on `arena/3a5297d2-maltasupplemental`; resolve and test before updating PR #31. No external-link crawler, physical receiver scan, or new graphical screenshot has been run in this integration pass.
+
+## Second 11 October 2026 verification session — cross-topic notes
+
+| From → To | Finding | Follow-up owner |
+|---|---|---|
+| A → E | talkSPORT on Malta DAB+ block 6C (185.360 MHz) is the best English football-radio lead; the venue trip and the 17–18 October fixture window now line up with it. | E: record the receiver test result on arrival (block, service label, what it actually carried). |
+| A → F | Published bus fares are now exact (€2.50 single / €25 Explore 7-day / €3.50 TD1), so the transport rows can be benchmarked without guessing. | F: keep rows blank until real receipts, but the intake checklist now cites these prices. |
+| A → C | No public ticket sale or spectator policy for the Thunderpick Finals was found; BLAST-run events at the same studio did sell tickets from €10. | C: add a watch-party/broadcast alternative row if the organizer confirms attendance is closed. |
+| D → F | MTA guidelines confirm €1.50 per night for guests 18+ with a €22.50 per-person cap; the cap equals fifteen nights, resolving the “15-night” wording. Six nights implies €9.00 per eligible adult. | F: hotel-separate-charges row updated; still enter the invoice figure, not the example. |
+| D → B/C | Dated 13–17 October forecast snapshots disagree on 13 October (rain vs sun), so outdoor plans need a same-day check. | B/C: recheck the Malta Met Office forecast on the day for terrace dining and outdoor events. |
+| E → A | Kalshi’s own help centre permits travel-abroad use subject to its Member Agreement while third-party guides say US-resident-only; users should confirm eligibility rather than assume. | A: no transport impact; keep the Kalshi caveat visible in transport/taxi planning for late finishes. |
