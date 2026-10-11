@@ -123,6 +123,36 @@
       "date_checked": "2026-10-11",
       "confidence": "unverified",
       "notes": "WorldDAB is the publishing industry association, not the Maltese network operator; “official” here identifies its own published directory, not confirmed station carriage. Independently read 11 October: its Digi B 2 table lists Sports Channel as a regular DAB+ service under block 12A (223.936 MHz). No operator identity, programme schedule, TalkSPORT equivalence or local reception was verified. Use only as a receiver-scan lead: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes."
+    },
+    {
+      "id": "rai-radio-1-dab-tutto-il-calcio",
+      "name": "Rai Radio 1 — Serie A on “Tutto il calcio minuto per minuto” (DAB+)",
+      "category": "DAB+",
+      "area": "Rai Radio Uno appears in Malta’s DAB+ channel directory; reception not tested locally",
+      "address": "Not applicable — broadcast service",
+      "hours": "Rai’s programme page says Saturdays and Sundays, but no17/18October running order or explicitly dated airtime was available in the retrieved view.",
+      "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked",
+      "description": "RaiRadio1’s official Tutto il calcio minuto per minuto page describes weekend SerieA/SerieB coverage and includes recent commentary episodes. DigiB’s Malta service directory lists RaiRadioUno; WorldDAB lists RaiRadiouno under6A181.936MHz. These are programme/directory leads, not tested Maltese reception or named-match trip-week carriage.",
+      "source_url": "https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Independently read11October: https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto (recurring Saturday/Sunday show, Italian programme descriptions, latest listed episode10Oct2026). https://dab.com.mt/channels/ listsRaiRadioUno; https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes listsRaiRadiouno on6A. Do not infer2026/27ChampionsLeague radio rights from previous seasons or add secondary fixture lists as broadcast evidence. No hotel/venue scan or Malta stream test performed."
+    },
+    {
+      "id": "epl-fixtures-trip-weekend-17-19-oct",
+      "name": "Premier League fixtures during the trip (Malta time) — fixture list, not radio",
+      "category": "Football fixtures — not radio carriage",
+      "area": "England; kickoffs converted to Malta local time",
+      "address": "Not applicable — fixture list",
+      "hours": "Malta time(BST+1hour during this trip):17Oct13:30Everton–Chelsea;16:00Brentford–Liverpool,Fulham–HullCity,ManchesterCity–Ipswich;18:30Newcastle–AstonVilla.18Oct15:00Bournemouth–Sunderland,Brighton–CrystalPalace,Leeds–ManchesterUnited;17:30NottinghamForest–Arsenal.19Oct21:00Tottenham–CoventryCity.",
+      "price range": "Not applicable",
+      "description": "The PremierLeague’s official amendments article explicitly states BST for fixtures through24October. The listed17–19October kickoffs are converted by adding one hour for Malta(UTC+2). This helps choose matches to investigate but is not a commentary schedule, Malta rights/reception test or Kalshi market list.",
+      "source_url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Independently read11October: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november. Default kickoffs15:00BSTunless otherwise stated; MaltaCESTUTC+2as sourced in the everyday guide. Recheck changes/postponements. The article also contains a Listen live section requiring PremierLeague sign-in; territory, fixture selection, price and Malta access not tested. Its08:30clock lacks date/zone context, so no stream airtime inferred. No relationship between these fixtures, BBCWorldService commentary and Kalshi markets established."
     }
   ]
 }

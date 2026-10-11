@@ -37,3 +37,7 @@ Use this log for findings that belong to another topic; do not edit that workstr
 - E/G: two dated BBC5Live commentary episodes promoted as UK-only listings; no Malta feed, reception, clock conversion or Kalshi link. BA FM tuning list and WorldDAB12A SportsChannel lead promoted with source boundaries. Other raw upstream leads retained as archive, not rendered.
 - F/G: MTA15-night prose ambiguity preserved as OQ-25; keep invoice amount blank and six-night math conditional.
 - G: all work stays on session branch; protocol’s separate workstream branches/subagents unavailable here. Ownership-guided edits and parallel independent research used; serial integration/test gate, no claim of autonomous parallel implementation.
+
+## Latest upstream2f90396 integration
+
+A/B/C/E→G: preserve independentlycheckedUber,Fontanella,TaMarija,AviationMuseum,Mosta,Raiandexplicit-zoneEPLfixturefacts; qualifySundaycutoff/XLcapacity,withholdOctoberhours andRadio/Kalshimappings. G: testedappbehaviorretained overredundantupstreamUI/price-keypatches; appendrawupstreamhistoryoutsidecanonicaldata. RepeatcumulativePass3suiteafterthissecondintegration.

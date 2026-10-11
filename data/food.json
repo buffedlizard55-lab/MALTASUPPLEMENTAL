@@ -408,6 +408,36 @@
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
       "notes": "A useful group option when people want different cuisines, but individual vendors and opening times can vary. Google Maps snapshot: 4.3/5 from 8,582 reviews on 2026-10-09; its schedule is third-party listing data, so verify it with the operator before a late meal.\nSupporting claim sources:\nThe operator's Food Court page describes its vendor mix and currently lists 14 entries, including one marked 'Coming Soon'. https://issuqtalbelt.com/food-court/\nThe direct Google Maps listing displays the market name, Triq il-Merkanti address, hours and a 4.3/5 rating from 8,582 reviews. https://www.google.com/maps/search/Is-Suq+Tal-Belt+Valletta/\nThe operator's Contact page describes Is-Suq Tal-Belt as being in central Valletta and gives public-transport and ferry access context. https://issuqtalbelt.com/contact-us/"
+    },
+    {
+      "id": "fontanella-tea-garden-mdina",
+      "name": "Fontanella Tea Garden",
+      "category": "Mdina / event-corridor idea",
+      "area": "Mdina",
+      "address": "Mdina fortified walls; exact street address not independently verified",
+      "hours": "Operator homepage takes no reservations; precise opening hours not published in the retrieved view. Confirm before travelling.",
+      "price range": "Not published on the pages checked; see the operator’s menu page",
+      "description": "The operator describes a Mdina tea garden on the fortified walls with homemade cakes, Maltese ftira and oven-baked lasagna. It says no reservations are taken and staff help find a table. This is a separate excursion/food option, not a measured short walk from the event.",
+      "source_url": "https://www.fontanellateagarden.com.mt/home",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Independently read11October: https://www.fontanellateagarden.com.mt/home. Menu link: https://www.fontanellateagarden.com.mt/food-menu. No fresh street-address, menu-price or exact-hours check; upstream conflicting directory/map hours are archived, not treated as operator facts."
+    },
+    {
+      "id": "ta-marija-mosta",
+      "name": "Ta’ Marija",
+      "category": "Mosta / event-corridor idea",
+      "area": "Mosta",
+      "address": "Mosta; confirm the booking’s exact street address with the operator",
+      "hours": "October opening hours and folklore-show dates not confirmed; book or contact the operator.",
+      "price range": "Not published on the pages checked; menus are linked from the operator site",
+      "description": "The operator describes a Mosta Maltese restaurant established in1964, serving traditional and gastro-style dishes, handmade ravioli and a Maltese tasting menu. Folklore dinner shows occur on select evenings; no trip-date show is confirmed.",
+      "source_url": "https://tamarija.com/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Independently read11October: https://tamarija.com/ (main restaurant/menus/folklore sections). Booking: https://tamarija.com/book-a-table. Linked older menu PDFs are not current price quotes; seasonal hours in upstream search snippets were not promoted as October hours."
     }
   ]
 }

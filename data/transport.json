@@ -198,6 +198,21 @@
       "confidence": "partially verified",
       "notes": "Operator fares and service alerts: https://gozohighspeed.com/pages/fares. Check the timetable/terminal access notice for the precise departure date and time.",
       "price range": "Published standard adult one-way fares: Valletta €7.50, Sliema €8.50, Buġibba €6.50"
+    },
+    {
+      "id": "uber-malta",
+      "name": "Uber in Malta",
+      "category": "On-demand transport",
+      "area": "Malta (Uber city page for Valletta)",
+      "address": "Pickup/drop-off set in the Uber app",
+      "hours": "Uber’s Valletta city page advertises requests 24/7 and reservations up to30days ahead. Supply in Qawra/Ta’Qali was not checked.",
+      "price range": "Live in-app quote; no Qawra–Ta’ Qali or airport fare checked",
+      "description": "Uber’s own Valletta page advertises ride requests and advance reservations. It can be another app to compare alongside Bolt/eCabs, but no Qawra–Ta’Qali or airport price, wait time or car availability was tested.",
+      "source_url": "https://www.uber.com/global/en/r/cities/valletta-valletta-mt/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Independently read11October: operator page offers several vehicle classes but contains conflicting UberXL capacity copy (six and eight). Do not rely on a seat count from that page; check the actual app vehicle/capacity, quote and pickup instructions. https://www.uber.com/global/en/r/cities/valletta-valletta-mt/"
     }
   ]
 }

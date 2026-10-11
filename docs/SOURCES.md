@@ -289,3 +289,18 @@ Imported URLs below are provenance only, not freshly verified. Claims/dates/conf
 | F | https://mta.com.mt/services/environmental-contribution/ | Rate/cap remain €1.50/night/person18+ and €22.50/visit from 1 July. Separate 15-Night Threshold prose ambiguous; OQ-25, do not infer booking liability. |
 
 Main ab068ed evidence was reconciled, not blindly adopted. Raw upstream documentation and radio leads are archived under `docs/UPSTREAM*`; archives may contain withdrawn/inconsistent claims and are not the current guide.
+
+## Additional advancing-main reconciliation — main2f90396, independently read11October
+
+| Owner | URL | Supported scope / limits |
+|---|---|---|
+| A | https://www.uber.com/global/en/r/cities/valletta-valletta-mt/ | Operator Valletta requests24/7/reserve30days; no Qawra/Ta’Qali quote/supply. Page conflicting XLseat counts not promoted. |
+| B | https://www.fontanellateagarden.com.mt/home | Mdina walls,cakes,ftira,lasagna,noreservations. Precise hours/address/menuprice unverified. Menu link https://www.fontanellateagarden.com.mt/food-menu is reference only. |
+| B | https://tamarija.com/ | Mosta,established1964,Maltese/gastro menu,select-evening folklore. October hours/showdates/prices not verified. Booking reference https://tamarija.com/book-a-table. |
+| C | https://www.maltaaviationmuseum.com/ | Visitor table lists weekday/Sunday hours,fees,Stadium-stop routes.16:00last-entry line cannot apply to noon Sundayclose; confirm cutoff. Not event entrance/walk. |
+| C | https://mostachurch.com/?lang=en | Parish visitor hours/lastentry,€5/€8tiers andQawraroutes. Exact street address/access during services unestablished. |
+| E | https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto | RaiRadio1recurring Saturday/Sunday SerieA/B coverage; no17/18Oct running order. |
+| E | https://dab.com.mt/channels/ | Operator directory listsRaiRadioUno; WorldDAB https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes givesRaiRadiouno6A. Not measured reception. |
+| E | https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november | Official17–19Octfixtures,explicitBST through24Oct permitsMalta+1h conversion. TVtags not radio. Listenlive/signin section observed,territory/access/clockzone untested. |
+
+Latest upstream’s inferredBBCclockzone,communitymatchtiming/staticlastbus combinations,older€25taxiplaceholder,andpast-seasonRairights were not adopted as trip facts. Raw documents/leads preserved in `UPSTREAM_2f90396_*`.

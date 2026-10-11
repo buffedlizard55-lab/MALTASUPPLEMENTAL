@@ -66,3 +66,9 @@ Independently re-read 11 October: MTA states the €1.50/night/person18+ rate an
 - TD1’s Qawra stop and health-ministry112 row are directly supported by independently read operator/ministry tables. Upstream claims that these were unconfirmed are superseded.
 - EventWorks and VisitMalta.co.uk corroborate a BLAST venue-area address for separate events, not TWC spectator entry/access. Paola context for Tony Bezzina Stadium retains its independent Hibernians source.
 - Upstream historic documents are under `UPSTREAM_2026-10-11_*`; do not treat their stronger venue/airtime/fixture claims as current facts.
+
+## Latest upstream2f90396 limits
+
+- AviationMuseum’s16:00lastentry conflicts withSunday12:00close; ask operator forSundaycutoff. Ubercitypage saysXLsix/eight in different sections; check actual appcapacity. Fontanellaexacthours/address andTaMarijaOctoberhours/folkloredates remain open.
+- RaiRadio1recurringweekendshow/operatorDABlisting does not settle17/18Octlineup or currentChampionsLeaguerights. OfficialEPLfixtures haveexplicitBSTbut do not establishradio/Kalshi. League’ssign-inListenlivesection does not proveMaltaaccess or airtime.
+- LatestmainreintroducesBBCclockzoneconversions,communitymatchtiming/staticlastbus combinations andoldertaxifareplaceholders; these are not promoted as officialtripfacts. Sources/rawleads preserved underUPSTREAM_2f90396_*.
