@@ -58,3 +58,18 @@ The repository merge, required PR check and Pages build record are complete. Rem
 3. Refresh venue, restaurant, gaming and attraction hours/availability, weather and service notices close to travel; locally scan FM/DAB+ and ask stations about any named match.
 4. Confirm MTA invoice handling/eligible nights if the webpage wording remains unclear; recheck entry/EES status against authoritative guidance and the traveler’s own documents.
 5. Populate the expense planner only after itinerary/party/booking details arrive; review the quick-fill preview and keep a private backup.
+
+## Session `arena/d840a59d-maltasupplemental` — second 11 October pass: per-date transport plan and timezone-pinned clocks
+
+Branch `arena/d840a59d-maltasupplemental` started at `main` commit `250e6bd0ea5722cbad5a5ec21fc3117f2eee8fe0` (PR #48 merge) with a clean tree. Work was serial on the fixed branch under the same A–G ownership boundaries; no other branch was touched.
+
+**What changed**
+
+- **A · Transport:** added the canonical `event-day-transport-by-date` record and the `getting-around.html#event-day-by-date` section, giving one transport decision for each of the seven trip days. Re-read the Route 186 outbound grids (Qawra 952 last 21:39; Stadium 6227 last 22:04/22:08; Rabat 4 22:13/22:18), the complete latest-service-updates page (both Route 186 notices, the 17–18 October cluster on fourteen further routes, the Saqqajja 4627 closure, and no TQ/Thunderpick service) and the TQ1 page (still “Timetable not available!”). Re-read the fare page: the winter sentence still ends 13 June 2026 and the Explore Adult contradiction persists.
+- **C/H · Event:** added the `twc-opening-matchups-14-oct` record and the `event.html#opening-matchups` section. The Malta local clocks for the four 14 October openers (10:30, 13:00, 15:30, 18:00) were established by comparing two renderings of the same bracket table six hours apart — the first clock evidence in this project that is timezone-reconciled instead of assumed. Re-read the Eventbrite listing in full; the weekend agenda and FAQ answers are still not exposed.
+- **E · Radio:** read the DAB+ operator directory in full (38 rendered entries, no “Sports Channel”, Radio Sportiva the only sports-branded entry) and re-read Vibe FM’s football page (still 2025/26 season, newest post May 2026). Both narrow the radio claims rather than adding stations.
+- **G · Integration:** page sections, navigation shortcuts, one new Playwright test, and updates to `SOURCES.md`, `OPEN_QUESTIONS.md`, `HANDOFF.md`, `PLAN.md`, `FINAL_REPORT.md`, the audit log and the README.
+
+**Gates observed on this branch:** `python3 scripts/validate_site.py` → 7 JSON files / 186 exact-schema records / 303 unique record URLs in the source log / 15 HTML pages / 233 link attributes / 9 navigation destinations / 25 expense rows; `python3 scripts/check_javascript.py` → shared and inline JavaScript syntax pass; `npx playwright test` → **22/22** passing, including the five viewport/axe sweeps and the new per-date plan and matchups test.
+
+**Blockers:** none for delivery. Every remaining gap needs traveler-specific input or a date-local check: the reservation and weekend agenda, the attendee gate and walks, the dated Buġibba → Qawra connection, a live ride quote, the operator-dated October fare, a physical radio scan, and the planner inputs.

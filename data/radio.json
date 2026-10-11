@@ -137,7 +137,7 @@
       "source_type": "review",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Fresh 11 October reads: https://radioinmalta.com/en/dab/6c.php (C02F, DAB+ HE-AAC v2; page marked under construction); https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes ; https://dab.com.mt/channels/ (both chunks). Third-party 2025 scanner observations in the historical source log are not present-day measurements. Scan by service name, record actual block and identify audio locally; directory agreement is not a substitute. https://talksport.com/schedule/ again returned “Sorry, page unavailable”. Source type review denotes an independent technical directory, not the broadcaster or regulator."
+      "notes": "Fresh 11 October reads: https://radioinmalta.com/en/dab/6c.php (C02F, DAB+ HE-AAC v2; page marked under construction); https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes ; https://dab.com.mt/channels/ (both chunks). Third-party 2025 scanner observations in the historical source log are not present-day measurements. Scan by service name, record actual block and identify audio locally; directory agreement is not a substitute. https://talksport.com/schedule/ again returned “Sorry, page unavailable”. Source type review denotes an independent technical directory, not the broadcaster or regulator. Second full read of the Malta DAB+ operator's channel directory on 11 October 2026 (both result pages, 38 rendered entries): the list contains no service named 'Sports Channel', and the only sports-branded entry in it is Radio Sportiva. The page still ends with a 'Load more' control, so this is not an exhaustive-absence proof, but it does mean the operator's own published list gives no support to the 'Sports Channel' name — scan 6C and 12A and read the service label off the receiver rather than expecting the directory name."
     },
     {
       "id": "vibe-fm-malta-premier-radio-partner",
@@ -152,7 +152,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Fresh reads: https://vibe.mt/maltapremier/ (first chunk: 2025/2026 season and roundup articles); https://ba.org.mt/stations-licenced ; https://dab.com.mt/channels/ . The prior research described an “official radio partner” label; that is season-sensitive and does not establish commentary. Removed the unsupported assertion that domestic football is “played in Maltese”; programme language and sport rules are different questions."
+      "notes": "Fresh reads: https://vibe.mt/maltapremier/ (first chunk: 2025/2026 season and roundup articles); https://ba.org.mt/stations-licenced ; https://dab.com.mt/channels/ . The prior research described an “official radio partner” label; that is season-sensitive and does not establish commentary. Removed the unsupported assertion that domestic football is “played in Maltese”; programme language and sport rules are different questions. Re-read 11 October 2026: the station's Malta Premier page still carries the heading '2025/2026 Season' and its newest post is 'YoHealthMalta Premier MatchDay Thirty' (image dated May 2026), so no 2026/27 season content — and therefore no trip-week match broadcast — had been published there at the check. Vibe FM remains listed as a Malta DAB+ service in the operator's own directory, which is carriage evidence for the station but not for a named football broadcast on 13–19 October 2026."
     },
     {
       "id": "am-mw-no-current-sports-service-confirmed",
