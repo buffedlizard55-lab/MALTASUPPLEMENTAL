@@ -12,7 +12,7 @@ The follow-up corrections: the costs-page event-access wording and quick-fill ex
 
 Integration state on this branch: 7 datasets / **176 exact-schema records** (transport 28, food 38, activities 39, everyday 18, radio 20, expenses 25, event 8) / **307 unique logged record URLs** / 15 HTML pages / **181 link attributes** / 9 navigation destinations / 25 expense rows. Gates: `validate_site.py` PASS, `check_javascript.py` PASS, `node --check js/site.js` PASS, `npm test` PASS (11/11 Playwright at 320/360/768/1440 px with axe), `git diff --check` clean. The event guide itself — `data/event.json` (8 records) and `event.html` — is the merged `main` version.
 
-Delivery: the branch is pushed and PR #44 carries these corrections; the merge of PR #44 into `main` and the resulting Pages build are reported only once observed.
+Delivery (observed): PR #44 was merged by explicit number on 11 October 2026 at 16:01:59 UTC as merge commit `c7d1d00d6dec02c4c9a7b4d73492e086c8f7a72b`; the push-to-main validation run 38153759615 reported **SUCCESS**, and GitHub Pages reported the build for `c7d1d00` as **built**. The published pages were then re-fetched from the live site (homepage, CS2 event guide, getting-around, food & cafés, activities, everyday, sports radio, expense planner and sources) and confirmed to carry the merged corrections.
 
 ## Scope and integration
 
