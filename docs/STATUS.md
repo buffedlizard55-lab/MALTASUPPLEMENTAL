@@ -125,3 +125,21 @@ Branch `arena/d840a59d-maltasupplemental` started at `main` commit `250e6bd0ea57
 **Gates observed on this branch:** `python3 scripts/validate_site.py` → 7 JSON files / 199 exact-schema records after integrating latest `main` (186 on this branch before that merge) / 319 unique record URLs in the source log / 15 HTML pages / 325 link attributes / 9 navigation destinations / 25 expense rows; `python3 scripts/check_javascript.py` → shared and inline JavaScript syntax pass; `npx playwright test` → **22/22** passing, including the five viewport/axe sweeps and the new per-date plan and matchups test.
 
 **Blockers:** none for delivery. Every remaining gap needs traveler-specific input or a date-local check: the reservation and weekend agenda, the attendee gate and walks, the dated Buġibba → Qawra connection, a live ride quote, the operator-dated October fare, a physical radio scan, and the planner inputs.
+
+### Delivery receipt — PR #56 (observed)
+
+- PR [#56](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/56) was opened from `arena/d840a59d-maltasupplemental` after the branch merged latest `main` (`21d13d1`, PRs #51–#54) and its four conflicts were resolved by content.
+- Required check “Schema, browser and accessibility checks” run [38159932939](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38159932939) completed with conclusion `SUCCESS` before merge.
+- `gh pr merge 56 --merge` succeeded: GitHub reports state `MERGED` at **2026-10-11T17:32:11Z**, merge commit **`6da8aba73608964678411a939b27c1c6b5501fe9`**.
+- GitHub Pages latest-build record reports status **`built`** for that same merge commit, updated **17:32:33Z**; the public URL is <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/>.
+- Independent content check (not just build state): the published `getting-around.html` was fetched after the build and contains the new “Transport by date · 13–19 October 2026” section with all seven dated rows and their evidence links.
+
+## Suggested work for the next session, in priority order
+
+1. **Reservation and weekend agenda (blocks everything else).** Reserve on the Eventbrite listing, then get the Saturday 17 / Sunday 18 door, game and finish times from Hotspawn/Thunderpick and the answers to the nine FAQ items (day validity, per-day scanning, gate, parking, catering, transferability). The per-date transport table changes the moment those times exist.
+2. **Dated journeys in both directions.** Run MPT’s planner for each event date from AX ODYCY to the venue pin and back, save the results, and resolve the Buġibba → Qawra onward leg. Confirm the correct Qawra stop side and walk both ends.
+3. **Return cover.** Check MPT service updates daily 14–18 October for a TQ special service; otherwise pre-book a taxi/ride-hailing return per event evening and record the quoted price in the planner (never a guessed amount).
+4. **Fare confirmation.** Ask MPT or the tallinja app which single fare applies 13–19 October 2026 and whether Explore Adult 7-day includes Airport Direct — the fare page still contradicts itself on that point.
+5. **Radio, locally.** Buy or borrow a Band III DAB+ receiver in Malta, scan 6C then 12A, and log the actual service label, block, time and any named match heard. Ask NET FM, Vibe FM and Radio Sportiva about trip-week football coverage; nothing published so far establishes a named match.
+6. **Planner population.** Enter only confirmed bookings and actuals once the itinerary arrives; use the quick-fill preview, keep refundable holds in notes, and export a JSON backup.
+7. **Optional polish.** Resolve the 18:00-vs-18:30 clock outlier against the organiser’s live bracket; refresh menus/hours and the 18–19 October forecast close to travel; extend review-platform coverage where access allows.
