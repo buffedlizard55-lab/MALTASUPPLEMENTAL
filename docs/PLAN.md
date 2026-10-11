@@ -1,5 +1,30 @@
 # Malta trip guide — work plan
 
+## Current delivery session — `arena/09cdfbf0-maltasupplemental` (11 October 2026)
+
+Started from `origin/main` at `250e6bd` (merge of PR #48) at parity. The parallel-work protocol remains in force: A–F own
+one topic data file plus its matching page; G owns shared integration and documentation. Arena provides no isolated
+workstream runner here, so research and edits ran serially on this fixed branch, with shared files touched only by the
+integration step. Cross-topic findings went to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in
+`docs/OPEN_QUESTIONS.md`.
+
+Session objectives, in the order they were executed:
+
+1. **Pass 1 — implement against the request, not against the existing docs.** Review the tree and run the baseline gates
+   before changing anything, so later claims are attributable. Then re-verify the external claims that carry the most
+   planning weight and close the two genuinely weak evidence areas rather than restating strong ones.
+2. **Close the food/popularity gap.** The request asked for the *most popular* restaurants, and the tree previously held
+   only "Featured is not a ranking" caveats with no readable ranked list. A dated, platform-sourced capture ranked by
+   review volume was obtained and recorded with its volatility caveats.
+3. **Close the gaming gap honestly.** The tree said "no walk-in PC venue confirmed by this research". A dated directory
+   read now evidences that arcades exist and that no public PC café is listed — a finding, not an absence of effort.
+4. **Harden the entry-requirements advice** where the trip dates sit directly on an announced boundary (ETIAS Q4-2026)
+   and where a reported conflict names Malta specifically (EES).
+5. **Pass 2 — adversarial review of my own diff:** duplicated prose, misspelled public anchors, cross-record
+   contradictions, rendering and overflow, and whether every new claim is stronger than what it replaced.
+6. **Pass 3 — full re-check against the original request**, then documentation, gates, commit, PR and merge, reporting
+   only what was actually observed.
+
 ## Current delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
 
 This fixed Arena branch began at `origin/main` commit `b307c51e8026ca3589ece815b0fb761eef36094e` (the PR #33 merge), at parity at session start. The parallel-work protocol remains in force: A–F own one topic data file plus its matching page; G owns shared integration and documentation; Arena provides no isolated workstream runner, so research and edits run serially on the fixed branch, shared files only by G. Cross-topic findings go to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in `docs/OPEN_QUESTIONS.md`.
