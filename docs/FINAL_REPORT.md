@@ -48,7 +48,11 @@ Organizer Sat/Sun **door** times and any finish times; the traveler's reservatio
 | Executive summary; sources as official links | `index.html#exec-title`, `docs/SOURCES.md`, `sources.html` | Done |
 | No hallucinations; open questions recorded | `docs/OPEN_QUESTIONS.md`, confidence fields | Enforced by validator + review passes |
 | GitHub Pages with clean UI | `.nojekyll`, Pages on `main` | Live at https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/ |
-| PR then merge to main | this branch → PR | Delivering this session; observed state recorded after |
+| PR then merge to main | this branch → PR #64 | Done — merged 19:10:02 UTC as `60fea6d`; Pages build `built` (observed) |
+
+### Delivery observed (11 October 2026)
+
+PR **#64** (“Pre-departure delivery pass: weekend match clocks, named radio commentaries, ETIAS trip answer (rebased on main)”) was rebased onto `main` through PR #66 (`614a67b`), passed its required GitHub check (“Schema, browser and accessibility checks”, run 38166741439, conclusion success), and was **merged to `main` at 2026-10-11 19:10:02 UTC** as merge commit `60fea6df71f1a15e2468e10ad32575b06f89bc83`. GitHub Pages' latest-build endpoint reports the build for that commit as **`built`** (created 19:10:03, updated 19:10:23 UTC) with the public URL https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/ sourced from `main` at `/`. These are GitHub build-state observations, not an independent content audit of the deployed bytes.
 
 ### Limitations of this session
 
