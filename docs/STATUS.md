@@ -23,7 +23,7 @@
 
 ## Current session addendum — `arena/3031b29b-maltasupplemental` (11 October 2026)
 
-**Stage:** Passes 1–3 executed on a tree started from `main` `ae69ab1`; local gates run and delivery by PR to `main` requested in the same session.
+**Stage:** Passes 1–3 executed on a tree started from `main` `ae69ab1`; local gates run; **delivered as PR #60** (merged to `main` at 2026-10-11 18:43:26 UTC, merge commit `b8af702b664893ce00c6d4951c178fd7a1b92190`), with the required “Schema, browser and accessibility checks” job **passing** at 1 m 13 s on the pushed head and the GitHub Pages latest-build endpoint reporting `built` for that same merge commit. Two parallel sessions merged during the pass (PRs #58, #59); both were integrated with their blocks preserved and their three corrections folded in. The public radio page was then fetched and confirmed to render the new trip-window live-sport table — a browser-level content check of the deployment, not an external-link or reception test.
 
 | Workstream | Status | Blockers / next check |
 |---|---|---|
