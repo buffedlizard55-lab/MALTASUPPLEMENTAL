@@ -22,55 +22,51 @@ This pass targets the one requirement that is still weakest — a receiver-usabl
 
 # Malta trip guide — work plan
 
-## Current session plan — `arena/9bd7eeb7-maltasupplemental` (11 October 2026)
+## Current session — `arena/1005fdbf-maltasupplemental` (11 October 2026)
 
-**Starting point:** `origin/main` `ae69ab1` (PR #55 merge; PRs #56 and #57 already merged). The local clone was unshallowed before this pass. The branch is fixed and all work stayed on it. Workstreams ran one at a time, with no sub-agents, because this session has one branch.
+**Repository review first (done).** Found an integrated static GitHub Pages site (15 HTML pages, 7 JSON datasets, 199 exact-schema records, shared nav/renderer, CSS tokens, source log, open questions, expense planner, CI + Playwright/axe suite) built by earlier sessions. Preserve the structure and schema; do not add parallel scaffolding.
 
-| Stream | This session's re-check | Files changed |
+**Capability change this session:** this session's `fetch_page` tool reaches many external hosts that earlier sessions recorded as blocked (e.g. `publictransport.com.mt`, `dab.com.mt`, `wohnort.org`, `raiplaysound.it`, `tripadvisor.com`, `eventbrite`, Wikipedia). It still cannot reach Reddit, Yelp, Google Maps place data or X (HTTP 403 / JS shell). That changes the *evidence* available and requires re-verification of inherited claims — several are now provably stale (the DAB+ 12A "Sports Channel" claim is one).
+
+### Workstreams, owners and deliverables
+
+| Stream | Owned files (only these are edited) | Deliverable |
 |---|---|---|
-| **A · Transport** | Route 186 stop index (chunks 1–3), timetable grids (chunks 12, 13, 15), service-update notices, fares, taxi tariff | Docs only |
-| **B · Food & cafés** | Social platforms re-attempted (HTTP 403) | Docs only |
-| **C · Event** | Eventbrite, Thunderpick, HLTV, Liquipedia | Docs only |
-| **D · Everyday** | ETIAS, EES FAQ, eco-contribution | Docs only |
-| **E · Radio** | BBC Sportsworld, DAB+ directory (correction), regulator FM list, 6C, Premier League times | Docs only |
-| **F · Expenses** | Planner unchanged; amounts stay blank | None |
-| **G · Integration** | Session blocks in PLAN, STATUS, HANDOFF, OPEN_QUESTIONS, SOURCES; OQ-28 corrected | Docs only |
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Fresh operator-page verification of fares, cards, sales points, Route 186/214 and service notices; event-day public-transport path; mode comparison (bus / taxi / ride-hail / hire / ferry) on convenience, price, value, feasibility |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | Fresh dated reads of the venue lists; new sourced venues; explicit per-platform coverage statement for Google/Yelp/Instagram/TikTok/Facebook/Reddit/X |
+| **C · Activities, gaming, landmarks, events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Trip-window events, gaming/arcade status, landmarks, and the CS2 event facts |
+| **D · Everyday life (US traveller)** | `data/everyday.json`, `everyday.html` | Plugs/voltage, SIM/eSIM, money/tipping, safety, health, customs, language, weather — each with an official source |
+| **E · Sports radio (trip window)** | `data/radio.json`, `radio.html` | Terrestrial sports listening plan: verified Malta DAB+ multiplex contents, verified station schedules, receiver compatibility, what is *not* receivable |
+| **F · Expense planner** | `data/expenses.json`, `costs.html` | Blank-by-default planner that accepts the itinerary quickly; quick-fill preview; CSV/JSON backup |
+| **G · Shell, executive summary, integration (last)** | `index.html`, `js/site.js`, `css/style.css`, `sources.html`, `README.md`, `docs/*`, tests | Navigation, executive summary, source log, status, integration and verification gates |
 
-**Pass 1 — implement and verify.** Re-read the live sources listed above. Logged every read in SOURCES with its date and limit. Gates run after the docs edits: `python3 scripts/validate_site.py` PASS (7 JSON files / 199 records; 319 record URLs found in SOURCES; 15 HTML pages / 340 link attributes; 9 navigation destinations; 25 expense rows wired); `python3 scripts/check_javascript.py` PASS; `npx playwright test` 23 passed (log `/tmp/pw2.log`, not in the repo).
+### Dependencies
+Shared schema (`data/record.schema.json`), the renderer (`js/site.js`), the navigation array and the CSS tokens already exist and are treated as frozen shared setup. Topic streams depend on nothing but their sources. G runs last, after A–F data edits land.
 
-**Pass 2 — adversarial review.** Checks that changed the outcome:
-- The DAB+ directory was described as “read in full”. It ends in a “Load more” control, so the claim was overstated. Corrected in OPEN_QUESTIONS (OQ-28 and OQ-S3) and SOURCES.
-- The Route 186 Qawra 952 “conflict” is a range across unlabelled variants, not a fresh error. Kept as a range (OQ-S2).
-- The Stadium 2194 return row was not reproduced in the chunks read. Recorded as OQ-S1 instead of asserted.
-- The `index.html` room card anchor `activities.html#ax-odycy-base-hotel` is built at runtime from the `ax-odycy-base-hotel` record in `data/activities.json`, so it resolves. No change.
-- The hotel address and room list match the hotel's own page. The booked room type is still unverified.
+### Conflict avoidance
+Arena fixes this session to one branch and provides no isolated per-workstream runner, so A–F execute **serially on this branch**, each editing only its owned files. Cross-topic discoveries are written to `docs/HANDOFF.md`; anything unverifiable goes to `docs/OPEN_QUESTIONS.md`. No workstream rewrites another's page. `main` is re-checked before the PR and merged in before the final gate run.
 
-**Pass 3 — full re-check against the request.** Requirement map:
-- Zero hallucinations and line-by-line verification: unverifiable items sit in OPEN_QUESTIONS; new claims are cited to rows in SOURCES.
-- Real social sources: all attempts logged as HTTP 403; no social content claimed.
-- Shared files last (G): done after topic work.
-- Expense planner blank: unchanged.
-- Radio over-the-air with official schedules and Kalshi EPL: unchanged; carriage still unconfirmed.
-- PR and merge to `main`, plus remaining work and limitations: see the final chat report.
+### Session log — what was actually done (11 October 2026)
 
-**Remaining work for the next session:** (1) confirm the Stadium 2194 return row in the MPT date-specific planner or a dated grid; (2) confirm the Saturday 17 October Route 186 diversion with MPT before departure; (3) re-read the Eventbrite Saturday/Sunday agenda and FAQ; (4) open the Kalshi Member Agreement before relying on any Kalshi eligibility claim; (5) check the DAB+ directory's “Load more” results for a Sports Channel tile; (6) the traveller supplies the itinerary and amounts for the expense planner.
-
-## Previous session plan — `arena/08099cd9-maltasupplemental` (11 October 2026)
-
-Repository review on this branch (start `ae69ab1`, equal to `origin/main` after PR #55): the static Pages shell, 13-field record schema, seven datasets, source log, open-questions/status records, expense planner, CI and 23 browser tests were all present. The baseline gates were green before any edit (validator, JavaScript check, Playwright 23/23). This session has one fixed branch and no isolated workstream runner, so the A–G streams run serially with the same file ownership as above. Work is limited to a fresh verification pass on the highest-risk claims, with the results logged in `docs/SOURCES.md` and the corrections made where a read contradicted a record.
-
-| Stream | Session action | Result |
+| Stream | Delivered this session | Records |
 |---|---|---|
-| A · Transport | Re-read the MPT fares page (first chunk) and the Route 186 page index | Fare terms reconfirmed; the timetable grids were not re-read this session. |
-| B · Food | No new source reads | Review-volume and platform-access limits stay as recorded. |
-| C · Event / activities | Re-read the organiser finals page, the Eventbrite listing, HLTV's NIP article and talent article, and the Liquipedia extract | Dates, team change and CEST conversion confirmed. The “Free” wording is corrected to its real evidence. |
-| D · Everyday | Re-read the official EU ETIAS page | “Not in operation” confirmed today; no start date published. |
-| E · Radio | Re-read the Radio In Malta station directory and the Radio Sportiva third-party listing | talkSPORT “Sports Channel” label corroborated; no block or schedule added; the Italian third-party listing is excluded from Malta carriage. |
-| F · Expenses | No change | Amounts remain blank. |
-| G · Integration | Status, open questions, handoff and README note; validator, JavaScript check and Playwright gates; PR and merge | See `docs/STATUS.md`. |
+| **E · Radio** | 6A/6C/12A block map added to `radio.html`; the “Sports Channel” row rewritten as 6C (`C02F`, 32 kbit/s) and the two pages that told the reader to scan both blocks corrected; the WorldDAB 12A attribution marked unverified and superseded; observation dates pinned per block (6C/12A tables 13 Jan 2026, 6A table 19 Jan 2025 with a 13 Jan 2026 ensemble row); a decade of 6C carriage documented from the monitor's own 2015–2026 timeline; a broken table row and a typo repaired; Rai, BBC, Sportiva and Kalshi evidence cells sharpened | radio 21 → 25 |
+| **A · Transport** | Route 186 diversion dated precisely (starts 17 Oct, so Friday 16 Oct is unaffected); the three unlabelled 186 timetable variants recorded instead of one “last bus”, and every page that quoted a single figure hedged; Route 405 added at Stadium 6227; the MFCC's own address and switchboard added for gate and access questions; the Uber Malta URL recorded as a 404 dead end and the ride-hailing record rebuilt on Bolt and eCabs | transport 30 → 34 |
+| **D · Everyday** | State Department Malta advisory (Level 1, 9 Jul 2026) recorded with its rip-current caution, plus a page section on safety, STEP, insurance and the embassy's position in the same Ta' Qali/Attard area as the venue; embassy, passport and time-zone records grounded in that page | everyday 19 → 20 |
+| **B · Food** | Community picks from six r/malta threads captured through search extracts, with the HTTP 403 blocks, the unranked nature of the list and the absence of any verification stated in the record | food 48 → 49 |
+| **C · Activities** | Three dated events added: Gozo kite festival (17–18 Oct), Studio Theatre listing (17–18 Oct) and Malta Comic Con at the same MFCC venue on 11–12 Oct as venue-load context | activities 47 → 50 |
+| **G · Shell & docs** | Overview, README, final report, handoff and open questions corrected wherever the superseded 12A or a single last-bus figure survived; new sources logged; OQ-28 closed | 7 files |
 
+**Pass 2 (adversarial) outcomes.** The two conflicting Route 186 detour notices were separated by date and the trip-week notice identified; the three unlabelled 186 timetable variants were treated as a shape rather than a promise; every surviving 12A claim outside the historical session records was corrected; the 6A record's observation date was found to be a year older than the 6C/12A tables and corrected; the ride-hailing record was found to cite an Uber URL that 404s and was rewritten; and an in-page anchor sweep across all 15 pages returned zero unresolved targets.
 
-## Previous session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
+**Pass 3 (line-by-line audit).** Each original requirement was walked against the integrated site — see the audit table in `docs/FINAL_REPORT.md`. Full local suite (`npm test`) run on the final tree.
+
+### Verification gates / passes
+1. **Pass 1** — implement: fresh primary-source reads, new records with all 13 fields, pages/data in step, source-log rows for every new URL.
+2. **Pass 2** — adversarial review: re-read the riskiest claims, look for stale/inherited contradictions, check mobile/desktop layout, link integrity, planner edge cases, and that nothing unverified reads as fact.
+3. **Pass 3** — audit against the original request line by line: transport, food, activities, everyday, radio, expense planner, executive summary, subpages, mobile, verified links; run the full local suite; then open and merge the PR and record the observed result.
+
+## Current session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
 
 Repository review found the existing static Pages shell, canonical 13-field record schema, per-topic JSON data/pages, source log, open-questions/status records, expense planner, CI workflow and browser tests. Preserve them; do not create duplicate structure. Shared setup is already present and will be kept serial: verify `data/record.schema.json`, existing navigation/renderer and CSS tokens, and the master-source row format before topic work. This Arena session has one fixed branch and no isolated workstream runner, so A–F research/edits run one at a time with the listed ownership; G updates shared presentation/docs after topic work. Cross-stream discoveries go to `docs/HANDOFF.md`/`docs/OPEN_QUESTIONS.md`, not another stream's page/data file. During the session, `origin/main` advanced beyond the starting `250e6bd` through PRs #51–#56. The fixed branch was rebased onto the latest `origin/main` at `6da8aba`, preserving the merged source-led popularity, gaming, entry, per-date event-transport, timezone-pinned matchup and reporting updates before the final integration pass.
 
