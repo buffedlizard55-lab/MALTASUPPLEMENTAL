@@ -1,5 +1,27 @@
 # Malta trip guide — work plan
 
+## Current delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
+
+This fixed Arena branch began at `origin/main` commit `b307c51e8026ca3589ece815b0fb761eef36094e` (the PR #33 merge), at parity at session start. The parallel-work protocol remains in force: A–F own one topic data file plus its matching page; G owns shared integration and documentation; Arena provides no isolated workstream runner, so research and edits run serially on the fixed branch, shared files only by G. Cross-topic findings go to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in `docs/OPEN_QUESTIONS.md`.
+
+Current session objectives:
+
+1. **Multi-pass verification (requested):** Pass 1 implement/verify every requirement line by line against live sources; Pass 2 bug/assumption/edge-case review; Pass 3 full re-check against the original request with accuracy, reliability, completeness and code-quality improvements. No claims without sources; unverifiable items go to `docs/OPEN_QUESTIONS.md`.
+2. **Highest-risk re-verification:** live re-reads of the Eventbrite listing, MPT Route 186/202 pages, MPT fares page and BBC programme pages; update the return-gap, fare-season, detour-scope, card-terms and late-return-lead records and the pages that render them.
+3. **Data hygiene:** normalize canonical 13-field key order across all six data files; keep validator/JS/browser gates green; keep static and runtime deep links intact.
+4. **Delivery:** commit and push only `arena/502e2dae-maltasupplemental`, open a PR from it, merge by explicit number onto `main` as requested, check the Pages build, and report observed states only — including what remains unverified, limitations and next-session suggestions.
+
+## Previous delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026, superseded above)
+
+## Post-merge follow-up session — `arena/9f6f35c7-maltasupplemental` (11 October 2026)
+
+**Session:** 11 October 2026 (UTC) · branch `arena/dfefc16f-maltasupplemental` · reviewed baseline `b307c51`.
+
+
+## Repository review and approach
+
+**Current session:** 11 October 2026 (UTC) · fixed branch `arena/cc913a9b-maltasupplemental` · starting revision `b307c51` · current upstream integrated locally through PR #49 at `12578cd`.
+
 **Current session:** 11 October 2026 (UTC) · fixed branch `arena/cc913a9b-maltasupplemental` · starting revision `b307c51` · latest-main integration through PR #49 at `12578cd` · delivered by PR #46 as merge commit `25e0176`.
 
 ## Repository review and scope
