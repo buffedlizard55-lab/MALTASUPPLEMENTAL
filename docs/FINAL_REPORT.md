@@ -1,118 +1,119 @@
 # Final audit report — Malta travel guide
 
 **Audit date:** 11 October 2026 (UTC)
-**Session branch:** `arena/ef6c76d6-maltasupplemental`
-**PR under delivery:** #33, “Audit Malta guide sources and expand mobile verification”
+**Session branch:** `arena/27302b08-maltasupplemental` (based on `main` at `b307c51`)
+**Integrated in this session:** pull request **#42** — workstream H, the CS2 event guide (`data/event.json`, `event.html`, two transport records, fare/taxi/venue evidence)
 
 ## Scope and integration
 
-The guide was reconciled on the fixed Arena branch with `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, which includes PR #39 and its accumulated PR #40/#41 work. The non-fast-forward integration preserves PR #33's source-specific corrections while retaining useful upstream material. No topic record was dropped to simplify the merge.
+This session opened with the repository already mature: a static, JSON-backed Malta trip guide and a blank-by-default expense planner, published from `main` root via GitHub Pages. One pull request (#42) was still **open and conflicting** with `main` on five files. The session therefore (a) integrated that work by content rather than by side, (b) re-read the load-bearing sources itself instead of inheriting earlier notes, and (c) ran the three cumulative passes on the integrated result.
 
-The delivered site remains the repository's static, JSON-backed Malta trip guide and blank-by-default expense planner. The six datasets use the shared exact 13-field schema. Current integration counts: **165 records** (transport 25, food 38, activities 39, everyday 18, radio 20, expenses 25), **288 unique record URLs**, 15 HTML pages, 138 checked link attributes, eight shared navigation destinations, and 25 expense rows.
+Integration totals after the merge and this session's edits: **7 data files / 176 exact-schema records** (transport 28, food 38, activities 39, everyday 18, radio 20, event 8, expenses 25), **307 unique record URLs** in the source log, **15 HTML pages / 178 link attributes**, **9 shared navigation destinations**, and **25 expense rows**.
 
-This is a sourced planning aid, not a booking, admission, price, service, schedule, or reception guarantee. Dates, hotel, and intended venue are traveler-supplied inputs except where separately corroborated.
+Nothing in this repository is a booking, admission, fare, service, schedule or reception guarantee. The stay, the trip window and "BLAST Arena Studios, Attard" are traveller-supplied inputs; the venue address is separately corroborated from the organiser's own ticketing listing.
 
-## Material findings and corrections
+## What this session changed
 
-### Thunderpick World Championship / admission
+| Change | Detail |
+|---|---|
+| Merged #42 by content | Kept #42's verified additions (venue/dates/agenda, the fare/card table, the Transport Malta taxi tariff, TQ special event services, richer radio leads, the event page and its eight records) **and** this branch's evidence caveats. A line-level check confirmed no #42 addition was silently dropped in the files that auto-merged; the two documents taken from this branch's side were rewritten here. |
+| Re-verified instead of inheriting | The event listing, MPT fares, MPT Route 186 (both diversions, a stop closure, stop-level times), MPT TQ1, the Transport Malta taxi tariff, NET FM's schedule, and AX ODYCY's property + FAQ pages were each fetched directly. Rows are in `docs/SOURCES.md`. |
+| Hotel practicalities added to data | The hotel's own FAQ supplied verified, useful detail that now lives in the datasets it belongs to: guest-room sockets and the razor-only 110 V bathroom socket (`malta-electricity`), card acceptance and check-in pre-authorisation (`malta-currency-cards`), the on-call doctor / pharmacy / hospital distance (`emergency-medical-112`), car hire via Guest Relations (`malta-car-hire-airport`), a **new** transport record for taxis arranged at the hotel at fixed charges (`ax-odycy-guest-relations-taxi`), and operator-published tipping guidance (`tipping-no-fixed-rate-verified`). |
+| Overview gained a "Your base: AX ODYCY" section | Six data-backed cards (address/contact, room-name check, power, the hotel-arranged taxi, money/tipping, health) that link to the records rather than restating unverifiable claims. |
+| Event listing detail sharpened | The listing's own ticket block shows **"Free"** with **"Reserve a spot"** under a **"Sales end soon"** banner; agenda rows render end times (Wed/Thu 09:30–22:30, Fri 14:00–21:00). The free claim is now attributed to the listing itself as well as HLTV, and the nine unrendered FAQ answers are listed explicitly as open. |
 
-A Hotspawn Eventbrite listing read on 11 October advertised an in-person, 18+ event at BLAST Arena Studios Malta, MFCC South Gate National Stadium, Attard ATD 4000, for 14–18 October, with a free “Reserve a spot” action. It showed agenda/check-in entries for 14–16 October. The listing headline says 22:00, while Wednesday/Thursday agenda entries extend to 22:30; confirm exact finish times. The Saturday/Sunday entries were not visible in the extracted page.
+## Material findings
 
-That dated listing supersedes the earlier search that found no ticket link and a €10 studio-audience precedent from a separate BLAST-run event. It does **not** establish current ticket inventory, this traveler's reservation, per-day ticket validity/scanning, transferability, exact attendee gate, parking/catering, or weekend agenda. Do not assume admission or transfer another event's entry instructions.
+### Event and admission
 
-### Public transport and fares
+The event's own ticketing listing names *Hotspawn present the Thunderpick World Championships 2026* at **BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard**, **Wednesday 14 – Sunday 18 October 2026**, in person, **ages 18+**, with a free "Reserve a spot" block under "Sales end soon", and map coordinates 35.8957343, 14.4168839. Published agenda: Wed 14 and Thu 15 check-in 09:30 / games 10:30 (day to 22:30); Fri 16 check-in 14:00 / games 15:00 (14:00–21:00); Sat 17 and Sun 18 unpublished. The page header says 9:30 AM–10 PM while the Wednesday/Thursday rows extend to 10:30 PM — that discrepancy is recorded, not resolved. **No reservation is held by this project**, and the FAQ answers (parking, per-day scanning, transferability, catering, toilets) never rendered.
 
-MPT's published fare table lists €2.50 summer and €2.00 winter day-route singles plus cards, but its stated winter validity ends 13 June 2026. No 2026/27 transition date or applicable single fare for 13–19 October was found. The former inference of €2.50 for 13–18 October and €2.00 on 19 October is rejected; both published prices remain comparisons, not trip-date quotes or planner defaults.
+### Getting there — and getting back
 
-One static Route 186 variant lists a 20:53 Stadium 2194 departure toward Buġibba. Its return stop chain does not itself list an Il-Qawra stop, so an onward boarding may be needed, but the date-specific connection and walking sections were not checked. Comparing 20:53 with the visible 14–16 October agenda flags a return risk; it is not a complete route search and does not prove that no later alternative bus exists. MPT's two 17 October Route 186 notices show different windows (19:00–00:00 and 20:00–24:00); plan for their union as an alert, then use the live planner. The notice does not publish a diverted path or establish the effect on a particular Stadium departure or onward Qawra service.
+Route 186 links the Qawra-side stops to Ta' Qali Stadium. The outbound direction clears even a 09:30 check-in. The return direction is the problem: the last listed Stadium-area departure toward Buġibba is **20:53** in one static variant, that direction serves **no Il-Qawra stop** (terminus Buġibba Bay 1, 2527) so a second boarding is mandatory, and MPT's listed night routes cover Buġibba and Valletta — not Ta' Qali or Attard. Two Friday/Saturday diversions were re-read verbatim this session (8 PM–midnight ending 21 April; 7 PM–midnight starting 17 October), both omitting Gholja 2 → Targa toward Buġibba, alongside a separate Saqqajja stop closure. **The published plan is therefore a booked return for every event night**, with three named options: a hotel-arranged fixed-charge taxi (new record), a ride-hailing app, or the TQ special event services that MPT may announce days beforehand (TQ1's corridor runs through St Paul's Bay and Qawra to Buġibba at the €3.00 special-services fare). The TQ1 page still showed "Timetable not available!" when checked.
 
-### Sports radio
+### Fares, honestly labelled
 
-The BBC upcoming page and six linked episode JSON records name seven UK Premier League commentaries for 17–18 October, including Bournemouth–Sunderland on 5 Sports Extra 2. The parent *Premier League Football* 5 Live programme series is distinguished from the individual match broadcast service. This is UK schedule evidence only—not proof of Malta FM/DAB+ carriage, physical reception, BBC Sounds access, BBC World Service carriage, or named-match output on a local service.
+The operator's fare page gives one table — day single €2.00 winter / €2.50 summer, night €3.00, special services €3.00, tallinja Direct €3.00, TD1 €3.50, €19 12-journey shareable card, €25 Explore Adult 7-day (excludes tallinja Direct), €27 Explore Flex 7-day (includes Airport Direct), €7 Explore Child, €50 fine — but its only dated statement is that the **€2.00 winter single applied 19 October 2025 – 13 June 2026**. No 2026/27 changeover is published, so **€2.50 is this project's planning inference**, labelled as such on the page, in the data and in the planner. Cards sell at the Buġibba Terminal, the closest office to the hotel.
 
-Malta's DAB+ “Sports Channel” identity and block remain unresolved: one specialist directory points to 6C (185.360 MHz), WorldDAB lists a generic service on 12A (223.936 MHz), and the local operator directory lists no sports service. These are scan leads, not proof that the service is talkSPORT or carries commentary. No receiver scan was possible. Rai's recurring weekend programme does not establish a 17–18 October lineup. The 5 Live Sport studio-show page could not be directly fetched; search-result times remain a lead and were not added as verified schedule data.
+### Taxis
 
-### MTA environmental contribution and expenses
+Transport Malta's regulated **maximum** metered tariff was re-read in full (initial €3.50, then €2.50/km stepping down to €0.85/km beyond 20 km, €25/hour waiting, €4.20/hour in traffic, +€4.50 on 25 December and 1 January only). The page footer says **"Page last updated: 06/04/2022"**, so the maxima may have moved. The site's €12.40 / €19.40 / €25.90 / €30.90 caps are **arithmetic at assumed distances, not quotes**, and the road distance was never measured. The hotel states it arranges taxis at fixed charges; no rate is published.
 
-The 2026 MTA guideline PDF states €1.50 per night for eligible guests aged 18+ at the start of the visit, capped at €22.50 per person per visit and shown separately on a receipt. The current MTA service webpage separately refers to nights that “exceeded fifteen (15) nights”; the two official texts do not expressly reconcile short-stay treatment. Any six-night €9 calculation is conditional arithmetic only, not a confirmed liability, quote, or planner default. Use the booking and final invoice.
+### Sports radio and markets
 
-The expense planner remains blank by default and can be populated quickly once itinerary/booking details are provided. It does not assume a flight, hotel rate, party size, ticket purchase, ride count, reimbursement, or personal cost. The user can preview quick-fill before applying it, edit budget/actual values, use local autosave, export CSV, and reset.
+The strongest English-language lead remains a DAB+ service named "Sports Channel" that one Maltese directory labels "Talk Sport" on block **6C (185.360 MHz)**, while the industry multiplex table lists a "Sports Channel" on **12A** and the Maltese operator's own channel list shows no sports service. NET FM's recurring weekend sports slots were re-verified exactly (Friday 18:30 "Mhux Premier biss", Saturday 16:00 "Hits & Score", Sunday 15:00 "Sports Box"), BBC World Service *Sportsworld* has dated 17–18 October episode starts on DAB+ 6A, and Rai Radio 1's weekend *Tutto il calcio minuto per minuto* is the most likely live Serie A on a Maltese multiplex — but **no station publishes a dated trip-week named-match lineup**, no physical scan was possible, and a UK BBC schedule is not Malta carriage. Kalshi's own help centre says travel-abroad use is possible subject to its Member Agreement while third-party guidance says US-resident-only: the conflict is recorded and no market-to-broadcast link is inferred.
 
-### Review and social-platform evidence
+### Everyday life for a US traveller
 
-The repository records the attempts and limits for Google Maps/Reviews, Yelp, Instagram, TikTok, Facebook, Reddit, and X. Some Google Maps/TripAdvisor and Reddit/search snapshots were accessible; Yelp, Instagram, TikTok, Facebook and X access remained blocked or limited. A Facebook-sourced event date was read from a dated search-index snapshot because the page could not be fetched directly. No inaccessible content was inferred, and the review sample is not comprehensive or a universal ranking. Recheck business status, hours, menus, closures, and ticket listings before visiting.
+Type G sockets at 230 V / 50 Hz; the hotel's own FAQ adds three Type G and three two-pin sockets per room and a **razor-only** bathroom socket (220 V and 110 V American-style) that must not be used for chargers. Cards (Amex, Diners, Visa, Mastercard) are accepted at the hotel with a check-in pre-authorisation. Tipping now has two honest readings: the hotel publishes a 10–15% expectation while stating it adds no service charge, and secondary guides say 5–10% where no charge is on the bill — both are shown, neither is prescribed. The MTA eco-contribution rate (€1.50 per eligible guest per night from 1 July 2026, €22.50 cap, charged per night the room is made available and disclosed separately on the receipt) is verified from the guidelines themselves, which were re-read in this session. That re-read also **narrows** the long-standing "15-night" question: the document's only fifteen-day reference defines an "interruption" (up to fifteen days in premises that do not require to be licensed within one visit), so it is not a minimum-stay threshold. The webpage's differently worded heading is recorded rather than reconciled away, and the six-night ≈ €9 figure remains conditional on the invoice. Two dated sources still conflict on whether EES is enforced in full at Malta's borders.
+
+### Expense planner readiness
+
+The planner holds 18 core categories plus seven optional daily rows, all blank, with browser-local autosave, CSV export, a blank template download and a **paste-your-itinerary quick-fill** that previews which row each line would fill and writes only into still-blank budget fields. Nothing is prefilled — not flights, not the hotel rate, not a tip percentage, not a fare. When the itinerary arrives, the remaining work is data entry, not research.
+
+## Provenance carried forward from pull request #42
+
+Because #42 was authored in parallel and merged here, three of its conventions are kept deliberately rather than rewritten:
+
+1. **Clocks are never copied from a third-party renderer.** HLTV and Liquipedia display times in the *fetching client's* timezone — the same match page showed 15:30 in one view and 09:30 in another. Every clock on the site is therefore labelled "Malta time (CEST, UTC+2)" with its UTC/EDT anchor shown, and a third-party time is only admissible when an official source independently reproduces it (as Eventbrite does for the 10:30 games time).
+2. **`source_type` is not stretched.** The schema's enum has no value for a community wiki or esports news site, so every event record carries an **official** `source_url` and cites HLTV, Liquipedia and Moovit in `notes`. Third-party evidence never becomes a record's primary source, and sites that contradict official sources (a "Valletta" venue listing, a different prize figure, a €8 taxi base fare) were excluded rather than averaged in.
+3. **Superseded duplicates were removed, not layered.** #42's `event-day-late-return` and `venue-nearest-bus-stops` were dropped in favour of the fuller `event-day-late-finish-return-gap` and `mfcc-official-bus-186`, and three expense rows (`event-commute`, `taxi-rideshare`, `local-bus-and-cards`) were re-dated to match the transport findings instead of keeping a 9 October contradiction on the same site.
+
+One open item from that workstream stays open and is tracked: the **Virtus.pro → Ninjas in Pyjamas** substitution (OQ-H5) is reported by HLTV and by Hotspawn, the tournament's own presenting partner, but Thunderpick's page and September release still list Virtus.pro — so it is third-party-reported rather than officially republished, and the event page says so.
+
+## Requirement-by-requirement check
+
+| Original request | Where it is answered | Status |
+|---|---|---|
+| Transport: airport, hotel ↔ BLAST Arena Studios on event days, buses/taxis/rentals with cost and feasibility | `getting-around.html`, `data/transport.json` (28 records) | Answered with a documented return gap; no date-specific journey or live quote yet |
+| Food and cafés from reviews/maps/socials | `restaurants.html`, `data/food.json` (38 records incl. the hotel's own venues) | Answered within disclosed platform limits (Yelp/Instagram/TikTok/Facebook/X blocked) |
+| Gaming centres, activities, landmarks, events near the hotel | `activities.html`, `data/activities.json` (39 records) | Answered, including PC-gaming status conflicts recorded rather than resolved |
+| Everyday life for a US traveller (plugs, SIM/eSIM, money/tipping, safety, health, customs, language, weather) | `everyday.html`, `data/everyday.json` (18 records) | Answered; tipping now has operator guidance plus a documented conflict |
+| Live sports radio during the trip, official schedules, Kalshi-relevant markets | `radio.html`, `data/radio.json` (20 records) | Partly answered: recurring grids and UK fixtures verified, Malta carriage and reception unverified |
+| Expense planner ready for a quick fill when the itinerary arrives | `costs.html`, `data/expenses.json` (25 rows) | Answered — blank by default with a preview-then-apply quick-fill |
+| Clean, mobile-and-desktop site with sections/subpages and an executive summary | 9 active pages, shared renderer, axe/Playwright gates | Answered; 320/360/768/1440 px checked |
+| Verified, sourced, no hallucinations | `docs/SOURCES.md` (307 URLs), `docs/OPEN_QUESTIONS.md`, per-record confidence labels | Enforced by the validator: a record cannot cite a URL that is absent from the source log |
+| PR created and merged to `main`; suggestions and limitations | This document + the session PR | See the delivery snapshot below |
 
 ## Cumulative verification passes
 
-1. **Implementation:** validated all six topic JSON files and the common record schema; verified data/source-log/page wiring, local paths, shared navigation, JavaScript syntax, and expense-planner behavior.
-2. **Requirements and evidence:** re-read the current request against the rendered data and cross-workstream handoffs; corrected stale ticket, fare, bus-return, MTA, and BBC wording; preserved source dates and explicit uncertainty; kept inaccessible-platform and physical-check limits visible.
-3. **Final audit:** searched for superseded claims; recorded remaining risks, blockers and handoffs; inspected the integration diff; ran structural, JavaScript, browser, responsive-layout, and accessibility tests.
+1. **Pass 1 — implement and integrate.** Merge conflicts resolved by content; datasets enriched from freshly fetched sources; every new URL logged in `docs/SOURCES.md` before the gate was re-run (the validator fails closed on an unlogged URL).
+2. **Pass 2 — review for bugs, missing requirements, wrong assumptions.** Merge integrity checked line by line per file; hotel-sourced facts pushed into data rather than hand-written into pages; the trip-week fare relabelled a planning inference wherever it appears; the room-name mismatch surfaced; stale-claim scans for superseded wording return only deliberate provenance notes.
+3. **Pass 3 — re-check against the original request and re-run everything.** Requirement table above walked item by item; all seven datasets parse; validator, JavaScript syntax gate, `node --check` and the 11-test Playwright suite (including axe at four widths) pass on the integrated tree; README and the executive summary were rewritten to match the merged evidence rather than either branch's half.
 
-## Validation results
+## Validation results (observed)
 
-- JSON parsing (`python3 -m json.tool` for six datasets plus schema): **PASS**.
-- `python3 scripts/validate_site.py`: **PASS** — 6 JSON files / 165 exact-schema records / 288 unique source URLs / 15 HTML pages / 138 link attributes / 8 navigation destinations / 25 expense rows.
-- `python3 scripts/check_javascript.py`: **PASS**.
-- `node --check js/site.js`: **PASS**.
-- `npm ci`: **PASS** (23 packages installed; 0 vulnerabilities reported).
-- `npm test`: **PASS**, 11/11 Playwright tests, including 320/360/768/1440 px layouts, axe checks, data/render parity, navigation, and planner cases.
-- `git diff --check`: **PASS**.
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files, 176 exact-schema records, 307 unique record URLs present in `docs/SOURCES.md`, 15 HTML pages / 178 link attributes, 9 navigation destinations, 25 expense rows wired.
+- `python3 scripts/check_javascript.py` — **PASS**; `node --check js/site.js` — **PASS**.
+- `npm ci` — **PASS** (23 packages, 0 vulnerabilities).
+- `npx playwright test` — **PASS, 11/11** in 1.2 minutes on the merged tree.
+- `git diff --check` — **PASS**.
 
-These gates check local structure and behavior. They do not certify external-link liveness, current ticket availability, factual truth beyond the checked sources, physical access, radio reception, or a dated transit journey.
+These gates check structure and behaviour. They do not certify external-link liveness, current ticket availability, physical access, radio reception, or a dated transit journey.
 
-## Remaining limitations and next-session work
+## Remaining limitations
 
-1. Ask Hotspawn/Thunderpick to confirm reservation status, current ticket inventory, attendee gate, per-day ticket scanning/validity, the 17–18 October agenda, and the exact 14–16 October end-time discrepancy.
-2. Run the MPT planner for each event date and both directions using the attendee gate once known; compare Route 186, Route 214 and other live options, check the Buġibba-to-Qawra leg and walks, and save the actual journey results. Recheck both diversion pages. Obtain a live taxi/ride-hailing quote if the planner shows no suitable return.
-3. Check the applicable October single fare with MPT or at a sales point; do not budget an inferred seasonal rate.
-4. With a DAB+ receiver in Malta, scan 6A/6C/12A and FM at the hotel/event area; record actual service names, blocks, audio and reception. Confirm any named-match carriage with the station. Recheck BBC and Rai schedules close to air time.
-5. Ask MTA/AX ODYCY to clarify short-stay treatment of the “15-night” text; use the invoice for the planner.
-6. Recheck accessible review/social platforms and volatile business details without implying comprehensive coverage. Refresh the forecast and the traveler's actual flight, hotel, age/party, itinerary, device, insurance and expense inputs when supplied.
+1. **No reservation, no admission.** The listing says "Sales end soon"; nothing here substitutes for reserving it.
+2. **No measured journey.** No attendee gate, no walk distances, no date-specific planner result, no live taxi quote, no verified Buġibba → Qawra connection.
+3. **No published trip-week fare** and a taxi tariff last updated in 2022.
+4. **No radio reception test** and no Malta carriage confirmation for any named match.
+5. **Volatile data by nature:** hours, menus, closures, ticket inventory, diversion notices and the forecast can change between this snapshot (11 October 2026) and travel.
+6. **Platform coverage is incomplete:** Yelp, Instagram, TikTok, Facebook and X were blocked or limited; social evidence is dated snapshots, not a ranking.
+7. **Traveller-specific inputs are absent:** booking confirmation, room allocation, party size/ages, flights, meal plan, device, insurance, personal spend.
+8. **The offline validator is not a web crawler:** a cited URL can rot without the suite noticing.
 
-Full claim-specific source rows are in `docs/SOURCES.md`; current unresolved items are in `docs/OPEN_QUESTIONS.md`; current ownership/dependencies are in `docs/PLAN.md`; cross-workstream notes are in `docs/HANDOFF.md`; the dated claim audit and reconciliation supplement are in `docs/AUDIT_2026-10-11.md`.
+## Suggested next-session work (priority order)
 
-## GitHub delivery snapshot
+1. **Reserve the event place now** and read the nine FAQ answers in a browser; record per-day validity, transferability, parking and catering in `data/event.json`.
+2. **Run the MPT planner for each event date** in both directions once the gate is known; capture the actual journeys in `data/transport.json`, and check Route 186, Route 214 and TQ services.
+3. **Get one real number for the return:** a live Bolt/eCabs quote *and* the hotel's fixed-charge price for Qawra → MFCC after 22:00, so the planner's taxi row can be filled with a quote rather than arithmetic.
+4. **Ask MPT which single fare applies on 13–19 October**, or confirm at the Buġibba Terminal on arrival day.
+5. **Scan FM/DAB+ at the hotel** (6A, 6C, 12A) during the Saturday 16:00 and Sunday 15:00 windows and record what each service actually carried.
+6. **Confirm the hotel voucher/invoice details** (room type against the hotel's room names, meal plan, nights, eco-contribution treatment) and then complete the expense planner from the pasted itinerary.
+7. **Refresh the volatile layer** on arrival: service diversions, ticket inventory, menus/hours for the shortlisted venues, and the daily forecast.
+8. **Broaden review-platform coverage** where access permits, labelling every rating/count as a dated snapshot.
 
-This report captures the local candidate at the PR #33 delivery gate. The final explicit PR merge and any resulting Pages build status are time-dependent GitHub facts and are reported only after they have been checked; this file should not be treated as a live CI/Pages dashboard.
+## Delivery snapshot
 
----
-
-## Workstream H addendum — PR #42, 11 October 2026
-
-Everything above describes the PR #33 delivery. **This addendum is authoritative for the current merged tree.**
-
-**This delivery PR:** https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/42 · **Branch:** `arena/154ca483-maltasupplemental`
-
-### H · CS2 event guide — 8 records, ninth active page
-
-`event.html` gives the trip's reason for existing a page of its own: venue address and map pin, ticketing terms (free but reserved, in person, **18+**), the published daily agenda, match clocks in Malta time, the eight-team field including the 9 October Virtus.pro → Ninjas in Pyjamas substitution, format and prize split, broadcast talent, official streams, and on-site practicalities. It was **promoted out of the retired noindex stub set** rather than added beside it, so HTML pages stayed at 15 while active pages went 8 → 9.
-
-Two rules govern the page. **Clocks:** HLTV and Liquipedia both render times in the *fetching client's* timezone, so no third-party clock is copied as a local time; every clock is labelled "Malta time (CEST, UTC+2)" with its anchor shown, and the EDT+6h conversion is admissible only because Eventbrite independently publishes "Games 10:30" for Wed 14 October. **Sources:** the `source_type` enum has no value for a community wiki or esports news site, so every record's `source_url` is official and third-party evidence lives in `notes`.
-
-### Unique contributions beyond the event page
-
-- **`tq-event-special-services`** — MPT runs TQ-numbered special event services out of Ta' Qali, and TQ1's corridor runs through St Paul's Bay and **Qawra** at the €3.00 Special Services fare. Its page showed "Timetable not available!" and no TWC notice was found, so it is recorded as **a possibility to watch for, not a plan**, at `partially verified`, with a daily re-check instruction (OQ-H3).
-- **`white-taxi-official-tariff`** — Transport Malta's published **maximum** meter rates, read directly, with the caveat that the page footer says "last updated 06/04/2022". The worked caps are labelled as this project's arithmetic at assumed distances and **not quotes**; the road distance was never measured (OQ-H7).
-- **Three stale expense rows corrected** — `event-commute`, `taxi-rideshare` and `local-bus-and-cards` still dated from 2026-10-09 and contradicted the transport findings on the same site. The planner remains 25 rows, blank by default, with no invented amounts.
-
-### Aligned to the audit, not against it
-
-PR #33 deliberately downgraded the return-gap finding from `verified` to `partially verified`, reframing it as a **risk from one static Route 186 variant** rather than proof that no later bus exists. This branch's wording was rewritten to match across `index.html`, `README.md`, `event.html`, `getting-around.html` and the three expense rows, so the reconciliation does not silently re-strengthen a claim the audit softened. The TQ1 finding reinforces that caution: it is a second reason not to treat one timetable variant as the whole network.
-
-This branch also **dropped its own duplicate records** rather than layering them on the parallel session's — `event-day-late-return` and `venue-nearest-bus-stops` were superseded by `main`'s `event-day-late-finish-return-gap` and `mfcc-official-bus-186`. One limitation is **withdrawn**: "18–19 October is not forecast" is obsolete, because `main` located the Met Office Valletta view reaching 12–19 October.
-
-### Gates on the merged tree
-
-`python3 scripts/validate_site.py` — **PASS**: 7 JSON files / **175 exact-schema records** (transport 27, event 8, food 38, activities 39, everyday 18, radio 20, expenses 25) / **305 unique record URLs all present in `docs/SOURCES.md`** / 15 HTML pages / 170 link attributes / **9 navigation destinations** / 25 expense rows. `check_javascript.py` and `node --check` — **PASS**. `git diff --check` clean. `npm ci && npm test` — **PASS, 11/11 Playwright**.
-
-### Remaining work suggested for the next session
-
-1. **Expand the ticketing page in a real browser.** The Sat 17 / Sun 18 agenda rows and all nine FAQ answers are client-side and never rendered. Two answers decide real logistics: whether one registration covers all five days, and whether there is on-site parking. A headless-browser fetch step would close a whole class of these gaps at once.
-2. **Watch for TQ1 daily during 14–18 October** (OQ-H3) — the only finding that could replace taxi returns with a €3.00 bus.
-3. **Re-read the taxi tariff for a post-2022 revision and measure one real road distance** (OQ-H7).
-4. **Confirm current inventory and whether a reservation guarantees admission**, and the €0 total at checkout.
-5. **Check whether the organiser republishes the NIP substitution** (OQ-H5), then update `event.json` and `activities.json` in the same pass.
-
-### Limitations that remain
-
-The offline validator cannot test external URL liveness, so a source may rot silently. There is no physical FM/DAB+ receiver scan and no manual graphical screenshot, so radio reception and visual layout are reasoned about rather than observed — though Playwright does cover 360/768/1440 px viewports, responsive overflow and axe WCAG 2A/AA/2.1AA. Client-side content is systematically invisible to server-side fetching. Review-platform coverage remains incomplete: Yelp, Instagram, TikTok, Facebook, X and Reddit returned 403 or login-gated responses. **No ticket has been secured, no journey has been ridden, and no radio has been scanned**; this remains a dated planning aid, not a booking, admission, fare, service or reception guarantee.
+The pull request for this session (`arena/27302b08-maltasupplemental` → `main`) is opened and merged by explicit number; the merge and the resulting Pages build are verified and reported in the session conversation rather than asserted here. **This document describes states actually observed: the local gates above, the merged tree, and the source reads dated 11 October 2026.** Corresponding detail lives in `docs/SOURCES.md` (claim, URL, access date, workstream, limitation), `docs/OPEN_QUESTIONS.md` (unresolved items), `docs/PLAN.md` (ownership and protocol), `docs/HANDOFF.md` (cross-workstream findings) and `docs/STATUS.md` (workstream status).
