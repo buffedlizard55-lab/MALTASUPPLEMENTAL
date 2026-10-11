@@ -14,6 +14,17 @@
 
 **Session:** `arena/dd9dd00c-maltasupplemental` · **updated:** 11 October 2026 UTC.
 
+**Session:** `arena/9bd7eeb7-maltasupplemental` · **updated:** 11 October 2026 UTC.
+
+- **A → G:** Route 186 stop index (chunks 1–3) and timetable grids (chunks 12, 13, 15) re-read. Qawra 952 first departure reads 06:10 and 06:09 on the same page, so keep the range. The Stadium 2194 return (20:53/20:54) is not reproduced this session (OQ-S1). Do not tell the traveller a bus home after the playoffs is guaranteed.
+- **E → G (correction):** The DAB+ operator directory ends in a “Load more” control and was never read in full. Its “no Sports Channel” result covers the visible page only. OQ-28 is corrected. The README and radio pages already say “visible list”, which is accurate.
+- **C → A/E:** Eventbrite still hides the Saturday/Sunday agenda. HLTV, Liquipedia and the Eventbrite lineup agree on NIP for Virtus.pro and the Attard venue. The Esports Kingdom “Valletta” excerpt is a conflicting search snippet and is not used.
+- **B → G:** Yelp, Instagram, TikTok, Reddit search, Facebook and X returned HTTP 403 again. No new social evidence. Do not retry without new evidence.
+- **D → G:** ETIAS not in operation; EES fully operational since 10 April 2026. No change to the everyday record was needed.
+- **F → traveller:** Planner stays blank until the itinerary and amounts are supplied.
+
+## Previous handoff — `arena/08099cd9-maltasupplemental` · 11 October 2026 UTC
+
 **Session:** `arena/08099cd9-maltasupplemental` · **updated:** 11 October 2026 UTC.
 
 - **C → G:** The Eventbrite ticket block did not show “Free” in the 11 Oct read; the record now says so. HLTV's 2 Oct article corroborates free entry through an Eventbrite link. Keep the price flagged until checkout is checked.
@@ -22,6 +33,7 @@
 - **A → traveler:** No change to the transport record. The first fares chunk and the Route 186 index were re-read. Timetable grids remain the 11 Oct evidence.
 
 ## Previous handoff — `arena/dd9dd00c-maltasupplemental` · 11 October 2026 UTC
+
 
 - **A → G:** Service updates re-read in full. Route 186 October diversion remains Friday/Saturday 19:00–00:00 starting 17 October and ending 18 October at midnight, Gholja 2 through Targa toward Buġibba. A separate notice closes Saqqajja stop 4627 on Route 186 until “January 1” with no year. An earlier same-day operator trace places that stop before Stadium 2194 on the return. This pass did not re-walk the chain, so do not tell the traveler the Stadium stop is closed or guaranteed to be served.
 - **C → A/E:** Eventbrite still hides Saturday/Sunday agenda and FAQ answers. Its visible lineup names Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all. HLTV, Hotspawn and Liquipedia say NIP replaced Virtus.pro and name PARIVISION in Group B. That is not radio carriage, and the 16 September organizer release still named Virtus.pro.

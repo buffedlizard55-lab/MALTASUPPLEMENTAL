@@ -21,6 +21,14 @@ The repository was reviewed first and left intact: static Pages site, canonical 
 2. **Pass 2:** adversarial review of the new claims — crowd-edited sources labelled as such, third-party calendars kept as leads, “precedent” kept distinct from “announcement”, and the negative BFBS finding stated as a sourced negative rather than a measured scan.
 3. **Pass 3:** the original request re-walked line by line against the integrated site, then the full local suite (schema/source-log/local links, JavaScript syntax, Playwright + axe at 320–1440 px) run on the delivered tree.
 
+### Integration of two parallel sessions merged to `main` during this pass
+
+`main` advanced twice while this branch was open (PRs #58 and #59). Both merges were resolved by hand, keeping each session's record and 202th-session blocks rather than overwriting them, and three corrections from the other sessions were folded into this branch's own text:
+
+- **Ticket price wording.** The twelfth pass found that the word “Free” appeared only on a “You might also like” card, not in the Eventbrite ticket block. The executive summary now says *reserve the 18+ spot and confirm the price at checkout*, and the status/handoff/report/source-log lines drop an unqualified “free”.
+- **Last-return reproducibility (OQ-S1).** A later session could not reproduce the Stadium 2194 “20:53/20:54” rows, and this session's own chunk read reproduced only the opposite direction. A reproducibility caveat was added to the three affected transport records and to the transport page and overview checklist: the direction problem (the return terminates at Buġibba Bay 1, not Qawra) and the need for a date-specific planner check are the solid facts; the exact last minute is published-grid evidence requiring confirmation.
+- **DAB+ directory wording (OQ-S3).** The claim that the operator directory was “read in full” is withdrawn — it ends in a “Load more” control — so the radio record now says the *visible* listing showed no “Sports Channel” entry and that the absence is not exhaustive.
+
 ### Still to do next session
 
 1. Confirm the reservation, gate, ID rules, per-day validity, weekend agenda and the 18:00 vs 18:30 opener outlier with the organiser.
