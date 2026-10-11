@@ -27,14 +27,14 @@ Use this log for findings that belong to another topic; do not edit that workstr
 - B → D/G: Luzzu remains closed; Espresso24h is a late-service option, not a booking/price guarantee.
 - C → A/E/G: dated football/jazz/re-enactment/CDM options may conflict with CS2; never infer commentary from fixtures. In Guardia map coordinates need venue confirmation.
 - D → C/G: forecast now covers13–17 only;18–19 remain unavailable. ETIAS not operational; EES operational.
-- E → G: BBC extracted local-clock timezone is unknown; remove converted Malta airtimes. WorldDAB supplies BBC6A technical directory evidence only.
+- E → G: the BBC page’s viewer-dependent “Local time” display is not a Malta clock source. The episode JSON’s explicit +01:00 first-broadcast offsets support 15:06 / 16:06 Malta start-time conversions for Sportsworld; the show is still general live sport, not named-match commentary. WorldDAB supplies technical directory evidence only, not an indoor reception test.
 - F → G: real-browser tests required; price-status renderer incorrectly used legacy `price_range` and must use exact `price range`.
 
 ## Pass 3 merge reconciliation — 11 October
 
-- A/C/G: EventWorks/VisitMalta.co.uk independently confirm venue-area address context; no TWC gate/access inferred. Route186 outbound6227 and return2194 clarified, exact static clock bounds withheld. TD1 Arznell950 directly present in airport outbound timetable.
-- D/G: health ministry HelpLines table directly verifies emergency11224/7; supersedes contrary upstream missing-row observation.
-- E/G: two dated BBC5Live commentary episodes promoted as UK-only listings; no Malta feed, reception, clock conversion or Kalshi link. BA FM tuning list and WorldDAB12A SportsChannel lead promoted with source boundaries. Other raw upstream leads retained as archive, not rendered.
+- A/C/G: EventWorks/VisitMalta.co.uk independently confirm venue-area address context; no TWC gate/access inferred. Route 186’s outbound Stadium 6227 and return-side Stadium 2194 are distinct; the static return is Buġibba-bound, not a guaranteed Qawra hotel connection. The TD1 operator table lists Arznell 950 in both directions with route-level times, not a trip-specific departure or measured hotel walk.
+- D/G: Government of Malta and U.S. State Department pages support emergency number 112; retain the 24/7/help-line and medical-payment caveats with their exact source attribution.
+- E/G: six dated BBC 5 Live / 5 Sports Extra EPL episode records are UK-only schedule evidence; two current page labels differ from JSON parent-service fields. BBC JSON +01:00 offsets support the Sportsworld start-time conversion, but not local reception or named-match carriage. Kalshi category pages were checked for time overlap; a specific radio/market relationship and Malta eligibility remain unverified. BA FM and WorldDAB “Sports Channel” leads retain source boundaries.
 - F/G: MTA15-night prose ambiguity preserved as OQ-25; keep invoice amount blank and six-night math conditional.
 - G: all work stays on session branch; protocol’s separate workstream branches/subagents unavailable here. Ownership-guided edits and parallel independent research used; serial integration/test gate, no claim of autonomous parallel implementation.
 
@@ -48,7 +48,16 @@ A/B/C/E→G: preserve independentlycheckedUber,Fontanella,TaMarija,AviationMuseu
 
 ## Merge session (PR #23) — 11 October 2026
 
-- A/F/G: operator night-route notice kept as a rendered record (N212 Buġibba 23:50–01:30 every 20 min; N13 Valletta weekdays 23:10–02:10; free with a valid Tallinja card). No night route serving Ta’ Qali was verified, so late event exits still need a taxi/ride-hailing backup; static Route 186 clock bounds stay withheld from rendered records per the pass-3 boundary.
+- A/F/G: operator night-route notice kept as a rendered record (N212 Buġibba 23:50–01:30 every 20 min; N13 Valletta weekdays 23:10–02:10; free with a valid Tallinja card). No night route serving Ta’ Qali was verified, so late event exits still need a taxi/ride-hailing backup; the rendered comparison uses selected static route-table details with explicit date/stop limitations; it is not a saved trip-day journey.
 - C: base-hotel record re-added (AX ODYCY operator page re-fetched 11 October; address, facilities, contact details). Booking terms, meal plan and check-in/out remain traveler-supplied; nothing is assumed.
 - E/G: upstream radio leads (Europa League 15 Oct, NFL 18 Oct fixture context, Kalshi access, the NET FM Friday 18:30 slot and Premier League live audio) stay archived, not rendered; fixture or event dates are never evidence of radio carriage.
 - G: #29’s `npm test` gate (validator + JavaScript check + Playwright) adopted and executed on the merge: validator 128 records / 206 URLs, JavaScript check, nine Playwright browser/accessibility tests (via npm-distributed Chromium) and the independent DOM harness (planner 19/19, site 49/49) all pass. Publishing remains `main` root.
+
+
+## PR #31 rebase integration handoff — 11 October 2026
+
+- Upstream `origin/main` advanced to `81930be` after the earlier rebase. The new base’s additions are retained: the AX ODYCY base-hotel record, N212/N13 night-route notice, seven optional blank daily expense templates, and the updated activity/transport/emergency/market source notes.
+- Keep upstream removals of duplicate or unsupported records (including the old fixed airport-taxi fare, event-evening Liquipedia schedule, and superseded radio fixture/audio leads). The existing upstream `mode-comparison-summary` incorporates the useful branch mode-comparison findings without duplicating the summary card.
+- Current data counts after reconciliation are expected to be transport 16, food 29, activities 32, everyday 15, radio 11, and expenses 25 (128 total); confirm against the validator after the final conflict commit. The expense planner remains 18 core categories plus seven optional daily rows, all blank by default.
+- Radio follow-up carries the six BBC UK commentary episode records and direct Sportsworld JSON offsets. Explicitly keep UK schedule, Malta receiver signal, online-stream availability, and named-match carriage separate. Current sources and unresolved status are in `docs/SOURCES.md` and `docs/OPEN_QUESTIONS.md`.
+- Rebase is in progress on `arena/3a5297d2-maltasupplemental`; resolve and test before updating PR #31. No external-link crawler, physical receiver scan, or new graphical screenshot has been run in this integration pass.

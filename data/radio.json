@@ -2,7 +2,7 @@
   "topic": "radio",
   "title": "Sports radio to try in Malta",
   "last_updated": "2026-10-11",
-  "intro": "The strongest radio leads found for 13–19 October are NET FM on FM 101 MHz, plus DAB+ directory listings for Radio Sportiva and BBC World Service. WorldDAB lists BBC World Service on Digi B Network block 6A at 181.936 MHz; reception at the hotel and event venue remains untested. The dated BBC Sportsworld listings and local stations’ recurring grids do not prove that a specific trip event or fixture will be carried.",
+  "intro": "Radio snapshot for 13–19 October 2026. NET FM is listed at FM 101 MHz with a recurring sports grid; the grid is not a dated trip-week match lineup. Malta DAB+ directories list BBC World Service, Rai Radio Uno and Radio Sportiva; WorldDAB lists BBC World Service on block 6A (181.936 MHz). BBC Sportsworld has dated general live-sport episodes on 17–18 October, and the BBC Radio 5 Live / 5 Sports Extra pages list UK Premier League commentary; neither establishes Malta reception or stream access. Rai’s weekend football programme has no 17–18 October running order in the checked listing. Kalshi EPL/Serie A category pages were checked for trip-window overlap, but market listings do not prove radio carriage, Malta eligibility, or any market-to-broadcast link. No named TWC, Gżira–Mosta, or Rolex Middle Sea Race radio carriage or on-location reception was confirmed.",
   "records": [
     {
       "id": "net-fm-fm-101",
@@ -40,13 +40,13 @@
       "category": "DAB+",
       "area": "BBC World Service appears in Malta’s DAB+ channel directory; reception not tested locally",
       "address": "Not published; this is a broadcast listing, not a visitor venue",
-      "hours": "Official BBC episode pages list Sportsworld on 17 and 18 October 2026 (3h 53m each). Their clock is labelled “Local time” without an identified timezone in extraction. No Malta airtime is asserted.",
-      "description": "The Malta DAB+ channel directory includes BBC World Service. The BBC’s dated programme listing schedules Sportsworld, described as live sport with news, interviews and analysis, on both playoff-weekend dates. The programme listing identifies the BBC World Service radio feed; a separate record gives WorldDAB’s DAB+ block/frequency listing. Neither directory evidence nor the programme schedule proves reception at the traveler’s locations or commentary on the trip’s esports, football, or sailing events.",
+      "hours": "BBC episode JSON lists first broadcast 17 Oct 2026 14:06 +01:00 (BST) and 18 Oct 15:06 +01:00 (BST). Malta is CEST (UTC+2) on both dates, so the corresponding starts are 15:06 and 16:06 Malta time; each episode is 3 h 53 min. General live sport, not named-match commentary; recheck close to broadcast.",
+      "description": "The Malta DAB+ provider directory lists BBC World Service, and WorldDAB separately lists its block/frequency. Official BBC episode JSON gives Sportsworld first-broadcast times with explicit +01:00 offsets on 17–18 Oct; converted to Malta CEST (UTC+2), the starts are 15:06 and 16:06. The programme is general live sport/news, interviews and analysis; it does not name a trip EPL or esports match. The 11 Oct episode was billed as including the English Premier League, a precedent only—not a promise for 17–18 Oct. A schedule and directory entry do not prove reception at the hotel or event venue.",
       "source_url": "https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Official programme page: https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming. Episode pages: https://www.bbc.co.uk/programmes/w1730c92ck0m2cw and https://www.bbc.co.uk/programmes/w1730c92ck0q313 (and Sunday 11 October precedent episode https://www.bbc.co.uk/programmes/w1730c9208pxyf8, which the upcoming-broadcasts list explicitly bills as “Live sport from around the world - including the English Premier League”). The 11 October Saturday extraction shows 09:06 Local time; neither that label nor “GMT” in the episode title establishes the displayed clock’s timezone. Earlier GMT/Malta conversions removed. Malta directory: https://dab.com.mt/channels/. Check the BBC page with an explicit timezone/feed before tuning; named-match commentary and on-location DAB reception remain unconfirmed.",
+      "notes": "Digi B current channel directory listing: https://dab.com.mt/channels/ . Official BBC episode JSON checked 11 Oct: 17 Oct https://www.bbc.co.uk/programmes/w1730c92ck0m2cw.json (first broadcast 14:06 +01:00); 18 Oct https://www.bbc.co.uk/programmes/w1730c92ck0q313.json (15:06 +01:00). The BBC programme page’s viewer-dependent “Local time” rendering varied; the ISO offset supplies the conversion to Malta CEST (UTC+2): 15:06 / 16:06. Time-zone reference: https://travel.state.gov/en/international-travel/travel-advisories/malta.html . The Sunday 11 Oct precedent is https://www.bbc.co.uk/programmes/w1730c9208pxyf8 and the upcoming list is https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming ; its EPL billing is not a fixture list or guarantee for the following weekend. No local receiver scan was made; Malta reception and named-match carriage remain unconfirmed.",
       "price range": "Free-to-air broadcast; DAB+ receiver required for radio reception; hardware price not checked"
     },
     {
@@ -61,7 +61,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "WorldDAB is the publishing industry association, not the Maltese network operator. Its technical directory is not a reception test. WorldDAB’s Malta multiplex directory lists BBC WS on Digi B Network 6A (181.936 MHz). Digi B’s channel list separately includes BBC World Service: https://dab.com.mt/channels/. Wohnort lists transmission sites at Għargħur and Żebbuġ (Gozo), but is a directory rather than an on-location reception test: https://www.wohnort.org/dab/malta.html. No receiver scan at AX ODYCY or the MFCC was available; actual reception remains unknown.",
+      "notes": "WorldDAB is a specialist industry association, not the Maltese network operator. Its Malta technical directory lists BBC World Service on Digi B Network 6A (181.936 MHz): https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes . Digi B’s own channel list separately includes BBC World Service: https://dab.com.mt/channels/ . Wohnort lists transmission sites at Għargħur and Żebbuġ (Gozo), but is a directory rather than an on-location reception test: https://www.wohnort.org/dab/malta.html . No receiver scan at AX ODYCY or the MFCC was available; actual reception remains unknown.",
       "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked"
     },
     {
@@ -96,18 +96,18 @@
     },
     {
       "id": "bbc-radio-5-live-premier-league-listings",
-      "name": "BBC Radio 5 Live — dated EPL commentary (UK service, not Malta reception)",
-      "category": "UK radio listing — Malta availability unverified",
-      "area": "UK BBC service; Maltese reception/streaming not established",
-      "address": "Not applicable — broadcaster programme listing",
-      "hours": "BBC episode pages give release dates 17 October 2026 (Brentford v Liverpool) and 18 October 2026 (Leeds United v Manchester United). On-radio clocks are displayed as Next Saturday 15:00 and Next Sunday 14:00 with no explicit clock zone in the retrieved text; no Malta airtime is asserted.",
-      "price range": "Not checked; no Malta receiver or stream availability confirmed",
-      "description": "The BBC directly describes live Premier League commentary for these two matches on Radio 5 Live, with trip-weekend episode dates. This is a verified UK commentary listing, not a station frequency in Malta. Neither BBC World Service carriage nor reception or streaming rights in Malta are established.",
-      "source_url": "https://www.bbc.co.uk/programmes/m00332zg",
+      "name": "BBC Radio 5 Live / 5 Sports Extra — UK Premier League commentary schedule",
+      "category": "UK radio schedule — Malta reception/stream not verified",
+      "area": "United Kingdom BBC services; no Malta terrestrial frequency or signal confirmed",
+      "address": "Not published",
+      "hours": "The official BBC upcoming page and six linked episode JSON records, checked 11 Oct, identify: Sat 17 Oct — 14:45 BST Manchester City–Ipswich (page labels BBC Radio 5 Sports Extra), 15:00 Brentford–Liverpool, 17:30 Newcastle–Aston Villa; Sun 18 Oct — 13:55 BST Brighton–Crystal Palace (page labels BBC Radio 5 Sports Extra), 14:00 Leeds–Manchester United, 16:30 Nottingham Forest–Arsenal. Malta is one hour ahead: 15:45, 16:00, 18:30 Sat; 14:55, 15:00, 17:30 Sun. The separately dated 24–25 Oct listings are after the trip. Recheck on match day.",
+      "description": "The BBC’s official UK programme page plus six episode JSON records date live Premier League commentary to 17–18 October. The upcoming page labels Manchester City–Ipswich and Brighton–Crystal Palace on BBC Radio 5 Sports Extra, while their episode JSON parent service says BBC Radio 5 Live; use the current page for schedule labels and recheck. These are UK schedule listings, not proof of a Malta FM/DAB frequency, local reception or stream availability. Keep this schedule separate from fixture-only lists and any Kalshi market: no fixture-market/radio linkage is inferred.",
+      "source_url": "https://www.bbc.co.uk/programmes/m002h76y/broadcasts/upcoming",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Independently read 11 October: Brentford v Liverpool episode (release 17 Oct): https://www.bbc.co.uk/programmes/m00332zg. Leeds United v Manchester United (release 18 Oct): https://www.bbc.co.uk/programmes/m003334l. Upcoming grid: https://www.bbc.co.uk/programmes/m002h76y/broadcasts/upcoming. The release dates resolve the earlier upstream relative-label-only gap for these two episodes; do not convert clock labels without an explicit timezone. No BBC Sounds/stream test from Malta, Maltese AM/FM/DAB+ listing for 5 Live, or Kalshi market check was made. Do not count this as confirmed Malta radio coverage."
+      "notes": "Official BBC upcoming page: https://www.bbc.co.uk/programmes/m002h76y/broadcasts/upcoming . The “Next Saturday”/“Next Sunday” entries map to 17–18 Oct through six linked episode JSON records; direct page and JSON URLs for every fixture are listed in docs/SOURCES.md under the 11 Oct BBC recheck. The 24–25 Oct entries are after the trip. Current page labels City–Ipswich and Brighton–Palace BBC Radio 5 Sports Extra; their JSON parent-service fields say BBC Radio 5 Live. Malta CEST is one hour ahead of UK BST; reference: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. No Malta frequency, local signal test, BBC stream access, Kalshi fixture market or radio-market link was verified.",
+      "price range": "Not applicable (listing); receiver and streaming costs not checked"
     },
     {
       "id": "worlddab-sports-channel-lead",
@@ -126,33 +126,33 @@
     },
     {
       "id": "rai-radio-1-dab-tutto-il-calcio",
-      "name": "Rai Radio 1 — Serie A on “Tutto il calcio minuto per minuto” (DAB+)",
+      "name": "Rai Radio 1 — weekend football programme (DAB+ listing; lineup unconfirmed)",
       "category": "DAB+",
-      "area": "Rai Radio Uno appears in Malta’s DAB+ channel directory; reception not tested locally",
+      "area": "Rai Radio Uno appears in Malta’s DAB+ channel directory; WorldDAB lists a technical multiplex entry, but local reception was not tested",
       "address": "Not applicable — broadcast service",
-      "hours": "Rai’s programme page says Saturdays and Sundays, but no 17/18 October running order or explicitly dated airtime was available in the retrieved view.",
+      "hours": "Rai’s official programme page says “Il sabato e la domenica” (Saturday and Sunday) and lists a 10 Oct 2026 episode; an Oct 17/18 running order was not posted when checked. Serie A fixtures in the separate fixture summary are not evidence that Rai will carry a named match.",
       "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked",
-      "description": "Rai Radio 1’s official Tutto il calcio minuto per minuto page describes weekend Serie A/Serie B coverage and includes recent commentary episodes. DigiB’s Malta service directory lists Rai Radio Uno; WorldDAB lists Rai Radiouno under 6 A 181.936 MHz. These are programme/directory leads, not tested Maltese reception or named-match trip-week carriage.",
+      "description": "Rai’s official “Tutto il calcio minuto per minuto” page describes a weekend programme covering Serie A and Serie B; the latest episode visible on 11 Oct was 10 Oct, not the trip weekend. Digi B’s Malta directory lists Rai Radio Uno; WorldDAB separately lists Rai Radiouno on block 6A (181.936 MHz). These entries do not establish a trip-week running order, named-match carriage, Malta stream access, or reception at Qawra/MFCC. Rai announced Italian-club Champions League commentary for a prior season, but no 2026–27 announcement was found; do not assume midweek carriage. Commentary is in Italian.",
       "source_url": "https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Independently read 11 October: https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto (recurring Saturday/Sunday show, Italian programme descriptions, latest listed episode 10 Oct 2026). https://dab.com.mt/channels/ listsRai Radio Uno; https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes listsRai Radiouno on 6 A. Do not infer 2026/27 Champions League radio rights from previous seasons or add secondary fixture lists as broadcast evidence. No hotel/venue scan or Malta stream test performed."
+      "notes": "Checked 11 Oct 2026. Official Rai programme and current episode list: https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto (page says Saturdays/Sundays; latest listed episode 10 Oct, not the trip weekend). Malta DAB+ provider directory lists Rai Radio Uno: https://dab.com.mt/channels/ ; WorldDAB’s Malta technical directory lists Rai Radiouno on 6A: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes . The provider listing does not give local signal results; no hotel/venue scan or Malta stream test was performed. Serie A fixture-source links and the 2025–26 Rai UCL precedent are logged in docs/SOURCES.md. Those schedules do not prove Rai carriage on 13–19 Oct 2026."
     },
     {
       "id": "epl-fixtures-trip-weekend-17-19-oct",
       "name": "Premier League fixtures during the trip (Malta time) — fixture list, not radio",
-      "category": "Football fixtures — not radio carriage",
-      "area": "England; kickoffs converted to Malta local time",
+      "category": "Football fixtures (not radio carriage)",
+      "area": "England — official Premier League fixture listing; not radio carriage",
       "address": "Not applicable — fixture list",
-      "hours": "Malta time(BST+1 hour during this trip):17 Oct 13:30 Everton–Chelsea;16:00 Brentford–Liverpool, Fulham–HullCity, ManchesterCity–Ipswich;18:30 Newcastle–AstonVilla.18 Oct 15:00 Bournemouth–Sunderland, Brighton–CrystalPalace, Leeds–ManchesterUnited;17:30 NottinghamForest–Arsenal.19 Oct 21:00 Tottenham–CoventryCity.",
+      "hours": "Malta time (BST + 1 hour): Sat 17 Oct 13:30 Everton v Chelsea; 16:00 Brentford v Liverpool, Fulham v Hull City, Man City v Ipswich; 18:30 Newcastle v Aston Villa. Sun 18 Oct 15:00 Bournemouth v Sunderland, Brighton v Crystal Palace, Leeds v Man Utd; 17:30 Nott’m Forest v Arsenal. Mon 19 Oct 21:00 Spurs v Coventry City.",
       "price range": "Not applicable",
-      "description": "The Premier League’s official amendments article explicitly states BST for fixtures through 24 October. The listed 17–19 October kickoffs are converted by adding one hour for Malta(UTC+2). This helps choose matches to investigate but is not a commentary schedule, Malta rights/reception test or Kalshi market list.",
+      "description": "These are Premier League kickoffs from the official October fixture-amendments article, which labels times through 24 October as BST; Malta is one hour ahead on these dates. The BBC UK commentary schedule is recorded separately. BBC World Service Sportsworld overlaps some kickoff windows, but its trip-week description is general live sport, not confirmation of a named match. Fixture times are not radio carriage, Malta rights/reception, or Kalshi contract evidence. Community-wiki TWC times are separate and unconfirmed organizer information.",
       "source_url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Independently read 11 October: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november. Default kickoffs 15:00 BSTunless otherwise stated; MaltaCESTUTC+2 as sourced in the everyday guide. Recheck changes/postponements. The article also contains a Listen live section requiring Premier League sign-in; territory, fixture selection, price and Malta access not tested. Its 08:30 clock lacks date/zone context, so no stream airtime inferred. No relationship between these fixtures, BBC World Service commentary and Kalshi markets established."
+      "notes": "Checked 11 Oct 2026. Official Premier League October fixture amendments: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november (times through 24 Oct shown in BST; Malta is BST + 1 hour). Cross-check: Guardian fixture page in EDT https://www.theguardian.com/football/fixtures/2026/Oct/17 ; BBC UK radio listings are separate and do not show Malta carriage (see BBC record). The league article’s sign-in “Listen live” section does not establish territory, fixture selection, price or Malta access; no airtime is inferred. The BBC Sportsworld time window overlaps some fixtures, but no named-match commentary was confirmed. TWC time leads come from Liquipedia, not the event organizer. Kickoffs and fixture amendments can change."
     },
     {
       "id": "kalshi-epl-serie-a-radio-overlap-oct-2026",
