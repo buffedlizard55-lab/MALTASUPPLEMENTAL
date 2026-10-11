@@ -136,6 +136,50 @@ test('planner handles invalid input, corrupt storage and storage denial', async 
   }
 });
 
+test('itinerary quick-fill previews, fills only blank rows and never overwrites', async ({page}) => {
+  await page.goto('costs.html');
+  await expect(page.locator('#apply-itinerary')).toBeDisabled();
+  await page.locator('#itinerary-input').fill([
+    "2026-10-13 | Flight MLA return, 2 travellers | 480.00",
+    "2026-10-14 | Bus to Ta' Qali and back | 5.00",
+    "2026-10-15 | Dinner in Qawra | 38.50",
+    "no amount on this line",
+    "2026-10-16 | airport shuttle | 18.00",
+    "2026-10-25 | Hotel final invoice settled after the trip | 620.00"
+  ].join('\n'));
+  await page.getByRole('button',{name:'Preview matches'}).click();
+  await expect(page.locator('#itinerary-preview')).toContainText('Flights');
+  await expect(page.locator('#itinerary-preview')).toContainText('€5.00');
+  await expect(page.locator('#itinerary-preview')).toContainText('no amount found');
+  await expect(page.locator('#itinerary-preview')).toContainText('ambiguous');
+  await expect(page.locator('#itinerary-preview')).toContainText('dated outside the 13–19 October trip window');
+  // Nothing is written until the preview is applied.
+  expect(await page.locator('[data-expense-field]').evaluateAll(inputs => inputs.every(i=>i.value===''))).toBeTruthy();
+  await page.locator('#expense-food-and-drink-budget').fill('10');
+  await page.getByRole('button',{name:'Apply preview to blank budget fields'}).click();
+  await expect(page.locator('#expense-flights-budget')).toHaveValue('480.00');
+  await expect(page.locator('#expense-event-commute-budget')).toHaveValue('5.00');
+  await expect(page.locator('#expense-hotel-stay-budget')).toHaveValue('620.00');
+  await expect(page.locator('#expense-local-bus-and-cards-budget')).toHaveValue('');
+  await expect(page.locator('#expense-food-and-drink-budget')).toHaveValue('10');
+  await expect(page.locator('#expense-flights-note')).toHaveValue(/Flight MLA return/);
+  await expect(page.locator('#budget-total')).toHaveText('€1,115.00');
+  await expect(page.locator('#itinerary-status')).toContainText('skipped');
+  await page.reload();
+  await expect(page.locator('#expense-flights-budget')).toHaveValue('480.00');
+  // Example lines and the blank template must not inject amounts on their own.
+  await page.getByRole('button',{name:'Clear saved entries'}).click();
+  page.once('dialog', d=>d.accept());
+  await page.getByRole('button',{name:'Clear saved entries'}).click();
+  const dl = page.waitForEvent('download');
+  await page.getByRole('button',{name:'Download blank CSV template'}).click();
+  const download = await dl;
+  expect(download.suggestedFilename()).toBe('malta-expense-template-2026-10-13-to-19.csv');
+  const csv = fs.readFileSync(await download.path(),'utf8');
+  expect(csv.split('\r\n')).toHaveLength(26);
+  expect(csv).toContain('"Flights');
+});
+
 test('failed data fetch is visible and cannot export an empty planner', async ({page}) => {
   await page.route('**/data/*.json', route=>route.fulfill({status:503,body:'unavailable'}));
   await page.goto('costs.html');
