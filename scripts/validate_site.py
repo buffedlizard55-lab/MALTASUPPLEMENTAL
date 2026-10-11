@@ -28,7 +28,7 @@ REQUIRED_FIELDS = {
     "confidence",
     "notes",
 }
-SOURCE_TYPES = {"official", "map", "review", "social", "directory"}
+SOURCE_TYPES = {"official", "map", "review", "social"}
 CONFIDENCE = {"verified", "partially verified", "unverified"}
 URL_RE = re.compile(r"https://[^\s<>\"']+")
 TRAILING_URL_PUNCTUATION = ".,;:!?)]}»”"
@@ -190,31 +190,11 @@ def validate_data() -> tuple[dict[str, dict], set[str], int]:
     expense_data = datasets.get("data/expenses.json")
     if expense_data is None:
         fail("data/expenses.json is missing")
-    if len(expense_data["records"]) != 18:
-        fail(f"expected 18 expense categories, found {len(expense_data['records'])}")
-    day_rows = expense_data.get("day_rows")
-    if not isinstance(day_rows, list) or len(day_rows) != 7:
-        fail("data/expenses.json must define exactly seven day_rows for 13-19 October 2026")
-    expected_days = [f"2026-10-{day:02d}" for day in range(13, 20)]
-    for index, row in enumerate(day_rows):
-        label = f"data/expenses.json day_rows[{index}]"
-        if not isinstance(row, dict) or set(row) != {"date", "label"}:
-            fail(f"{label}: expected exactly date and label keys")
-        if row["date"] != expected_days[index]:
-            fail(f"{label}: expected date {expected_days[index]}, found {row['date']!r}")
-        try:
-            if date.fromisoformat(row["date"]).isoformat() != row["date"]:
-                fail(f"{label}: date must use YYYY-MM-DD")
-        except (TypeError, ValueError):
-            fail(f"{label}: date must be a real YYYY-MM-DD date")
-        if not isinstance(row["label"], str) or not row["label"].strip():
-            fail(f"{label}: label must be a non-empty string")
+    if len(expense_data["records"]) != 25:
+        fail(f"expected 18 core + 7 daily expense rows, found {len(expense_data['records'])}")
     costs_html = (ROOT / "costs.html").read_text(encoding="utf-8")
     if not re.search(r"fetch\([\"']data/expenses\.json[\"']\)", costs_html):
         fail("costs.html is not wired to data/expenses.json")
-    for marker in ('id="day-list"', 'id="itinerary-notes"', "data-day-row", "data-day-field", "data.day_rows"):
-        if marker not in costs_html:
-            fail(f"costs.html is missing the day-by-day planner wiring: {marker}")
 
     return datasets, logged_urls, total_records
 
@@ -269,7 +249,12 @@ def validate_html_links() -> tuple[int, int]:
                 if target_parser is None:
                     target_parser = LinkParser()
                     target_parser.feed(target.read_text(encoding="utf-8"))
-                if fragment not in target_parser.ids:
+                dynamic_ids = set()
+                for data_path, page_path in EXPECTED_PAGES.items():
+                    if target.name == page_path:
+                        dataset = json.loads((ROOT / data_path).read_text(encoding="utf-8"))
+                        dynamic_ids.update(record["id"] for record in dataset["records"])
+                if fragment not in target_parser.ids | dynamic_ids:
                     fail(f"missing local fragment in {page.relative_to(ROOT)}: {value!r}")
 
     # Check any local assets referenced through CSS url(...).
@@ -310,7 +295,7 @@ def main() -> None:
         f"{len(datasets)} JSON files / {records} exact-schema records; "
         f"{len(logged_urls)} unique record URLs found in docs/SOURCES.md; "
         f"{page_count} HTML pages / {link_count} link attributes checked; "
-        f"{nav_count} shared navigation destinations; 18 expense categories + 7 day rows wired."
+        f"{nav_count} shared navigation destinations; 25 expense rows wired."
     )
 
 

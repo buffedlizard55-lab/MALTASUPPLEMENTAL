@@ -24,8 +24,7 @@
 
     <section class="callout callout-warning" aria-label="Expense planner assumptions">
       <span class="callout-title">No itinerary or booking amounts were supplied</span>
-      <p>All amount fields start blank. Do not infer flight route, hotel nights/check-in dates, number of travelers, meal plan, event admission, or expenses covered by someone else. Enter whole-trip totals in euros on a consistent basis; if a charge is in USD, note the conversion rate and fee in the row notes. Confirm every quote and booking before relying on it.</p>
-      <p>Use the category rows for whole-trip line items and the day-by-day rows for a daily plan once the itinerary is known. Keep each spend in one place only.</p>
+      <p>All amount fields start blank. The supplied stay window is 13–19 October; exact billable nights and check-in/out terms still need the booking confirmation. Do not infer flight route, hotel charges, number of travelers, meal plan, event admission, or expenses covered by someone else. Enter whole-trip totals in euros on a consistent basis; if a charge is in USD, note the conversion rate and fee in the row notes. Confirm every quote and booking before relying on it.</p>
       <p>This planner saves on this browser/device only; it does not send amounts to a server. Download a CSV backup before clearing browser data or switching devices. Avoid saving private financial details on a shared device.</p>
     </section>
 
@@ -51,39 +50,6 @@
       </div>
     </section>
 
-    <section aria-labelledby="day-entry-title">
-      <h2 id="day-entry-title">Day-by-day quick entry</h2>
-      <p class="lede">When the itinerary arrives, drop a rough plan and the amounts for each day into these seven rows. Day rows are counted separately from the category rows above so the two views can be filled at different times—<strong>do not enter the same spend in both</strong>, or it will be counted twice in the grand total.</p>
-      <div class="grid">
-        <article class="card">
-          <span class="card-tag">Day entries</span>
-          <h3>Day budget total</h3>
-          <p><output id="day-budget-total" aria-live="polite">€0.00</output></p>
-        </article>
-        <article class="card">
-          <span class="card-tag">Day entries</span>
-          <h3>Day actual total</h3>
-          <p><output id="day-actual-total" aria-live="polite">€0.00</output></p>
-        </article>
-        <article class="card">
-          <span class="card-tag">Everything entered</span>
-          <h3>Grand total</h3>
-          <p><output id="grand-total" aria-live="polite">€0.00</output></p>
-        </article>
-      </div>
-      <div id="day-list" aria-live="polite">
-        <p class="muted">Loading trip-day rows…</p>
-      </div>
-    </section>
-
-    <section aria-labelledby="itinerary-notes-title">
-      <h2 id="itinerary-notes-title">Itinerary &amp; confirmations</h2>
-      <p class="lede">Paste the details you receive—flight numbers and times, hotel check-in and rate terms, event session times, ticket references, reservations—so amounts can be entered against them quickly. This note is saved only in this browser, alongside the amounts.</p>
-      <label for="itinerary-notes">Itinerary notes (plain text)</label>
-      <textarea id="itinerary-notes" class="itinerary-notes" rows="10" maxlength="8000" placeholder="Tue 13 Oct — flight / arrival time, transfer plan&#10;Wed 14 Oct — event session window, meals&#10;…" aria-describedby="itinerary-notes-help"></textarea>
-      <p id="itinerary-notes-help" class="small">Nothing is uploaded. Download the CSV backup before clearing browser data or switching devices.</p>
-    </section>
-
     <section aria-label="Expense planner actions">
       <div class="quick-links">
         <button type="button" id="export-csv">Download CSV backup ↓</button>
@@ -92,6 +58,9 @@
       <p id="save-status" class="small" role="status" aria-live="polite">Your amounts will autosave locally as you type.</p>
     </section>
 
+    <aside class="callout" aria-label="Daily spending guidance">
+      <strong>Quick fill from your itinerary:</strong> enter one-off flights/hotel/pass bookings in the 18 core rows. Expand the seven optional daily rows for remaining meals or incidentals. Enter each expense once: daily rows and aggregate food/transport rows must not duplicate the same cost. Amounts remain blank until you enter them.
+    </aside>
     <section aria-label="Editable expense categories">
       <div id="expense-list" aria-live="polite">
         <p class="muted">Loading editable expense rows…</p>
@@ -105,7 +74,6 @@
         <li>The reference links are for reconfirming details or choosing a provider; they are not price quotes. No amount is prefilled, even where another guide page reports a dated menu or ticket price.</li>
         <li>The event-access row is only a placeholder. A tournament schedule does not establish public access or a ticket price; leave it blank until the organizer confirms.</li>
         <li>Use the <a href="getting-around.html">transport guide</a>, <a href="restaurants.html">food shortlist</a>, <a href="activities.html">activities and events</a>, and <a href="everyday.html">everyday guide</a> to compare sourced options before entering your own amounts.</li>
-        <li>Day rows carry a budget, an actual amount and a plain-text plan note for each trip day. Paste the itinerary into the notes box, then fill the day rows; the CSV backup exports the category rows, the day rows and those notes together.</li>
       </ul>
     </section>
   </main>
@@ -117,13 +85,15 @@
       "use strict";
       var storageKey = "malta-trip-2026-10-13-19-expenses-v1";
       var host = document.getElementById("expense-list");
-      var dayHost = document.getElementById("day-list");
-      var itineraryInput = document.getElementById("itinerary-notes");
       var saveStatus = document.getElementById("save-status");
       var records = [];
-      var dayRows = [];
+      var exportButton = document.getElementById("export-csv");
+      var clearButton = document.getElementById("clear-expenses");
+      exportButton.disabled = true;
+      clearButton.disabled = true;
       var state = {};
       var storageAvailable = true;
+      var recoveryNotice = "";
       var formatter = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR" });
 
       function make(tag, className, text) {
@@ -178,13 +148,17 @@
         if (type === "number") {
           input.min = "0";
           input.step = "0.01";
+          input.max = "1000000000";
           input.inputMode = "decimal";
           input.placeholder = "0.00";
         } else {
           input.maxLength = 240;
           input.placeholder = "Optional booking or receipt detail";
         }
-        input.value = savedValue || "";
+        var restored = typeof savedValue === "string" ? savedValue : "";
+        if (type === "number" && restored && (!Number.isFinite(Number(restored)) || Number(restored) < 0)) restored = "";
+        input.value = restored.slice(0, type === "text" ? 240 : 24);
+        if (type === "number" && !input.checkValidity()) input.value = "";
         label.appendChild(input);
         return label;
       }
@@ -192,7 +166,11 @@
       function readStoredState() {
         try {
           var raw = window.localStorage.getItem(storageKey);
-          state = raw ? JSON.parse(raw) : {};
+          try { state = raw ? JSON.parse(raw) : {}; }
+          catch (_parseError) {
+            state = {};
+            recoveryNotice = "Saved entries were unreadable; the form starts blank. New entries can still be saved.";
+          }
           if (!state || typeof state !== "object" || Array.isArray(state)) state = {};
         } catch (error) {
           storageAvailable = false;
@@ -211,7 +189,7 @@
 
         var dl = make("dl", "record-details");
         var priceDetail = make("div", "record-detail");
-        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record["price range"] || "Not set"));
+        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record["price range"]));
         dl.appendChild(priceDetail);
         article.appendChild(dl);
 
@@ -245,68 +223,26 @@
         return (amount > 0 ? "+" : "") + formatter.format(amount);
       }
 
-      function sumRows(container, rowSelector, fieldSelector) {
-        var total = 0;
-        container.querySelectorAll(rowSelector).forEach(function (row) {
-          var input = row.querySelector(fieldSelector);
-          var value = input && input.value !== "" ? Number(input.value) : 0;
-          if (Number.isFinite(value)) total += value;
-        });
-        return total;
-      }
-
-      function buildDayRow(day) {
-        var saved = (state.__days__ && state.__days__[day.date]) || {};
-        var article = make("article", "record-card");
-        article.dataset.dayRow = day.date;
-        article.append(make("h3", "", day.label), make("p", "small", "Planned activity, transport, meals and spend for this day."));
-        var fields = make("div", "topic-tools");
-        fields.style.margin = "10px 0 0";
-        fields.style.padding = "12px";
-        fields.append(
-          makeDayLabel("Budgeted (€)", day.date, "budget", "number", saved.budget),
-          makeDayLabel("Actual (€)", day.date, "actual", "number", saved.actual),
-          makeDayLabel("Plan / note", day.date, "note", "text", saved.note)
-        );
-        article.appendChild(fields);
-        return article;
-      }
-
-      function makeDayLabel(caption, dateKey, fieldName, type, savedValue) {
-        var label = make("label", "", caption);
-        var input = document.createElement("input");
-        input.type = type;
-        input.id = "day-" + dateKey + "-" + fieldName;
-        input.name = input.id;
-        input.dataset.dayDate = dateKey;
-        input.dataset.dayField = fieldName;
-        input.autocomplete = "off";
-        if (type === "number") {
-          input.min = "0";
-          input.step = "0.01";
-          input.inputMode = "decimal";
-          input.placeholder = "0.00";
-        } else {
-          input.maxLength = 240;
-          input.placeholder = "e.g. event session + dinner in Qawra";
-        }
-        input.value = savedValue || "";
-        label.appendChild(input);
-        return label;
+      function amount(input) {
+        if (!input || input.value === "") return 0;
+        var value = Number(input.value);
+        return Number.isFinite(value) && value >= 0 && input.checkValidity() ? value : 0;
       }
 
       function updateTotals() {
-        var budget = sumRows(host, "[data-expense-row]", '[data-expense-field="budget"]');
-        var actual = sumRows(host, "[data-expense-row]", '[data-expense-field="actual"]');
+        var budget = 0;
+        var actual = 0;
+        host.querySelectorAll("[data-expense-row]").forEach(function (row) {
+          var budgetInput = row.querySelector('[data-expense-field="budget"]');
+          var actualInput = row.querySelector('[data-expense-field="actual"]');
+          var budgetValue = amount(budgetInput);
+          var actualValue = amount(actualInput);
+          if (Number.isFinite(budgetValue)) budget += budgetValue;
+          if (Number.isFinite(actualValue)) actual += actualValue;
+        });
         document.getElementById("budget-total").textContent = formatter.format(budget);
         document.getElementById("actual-total").textContent = formatter.format(actual);
         document.getElementById("difference-total").textContent = formatDifference(actual - budget);
-
-        var dayBudget = sumRows(dayHost, "[data-day-row]", '[data-day-field="budget"]');
-        var dayActual = sumRows(dayHost, "[data-day-row]", '[data-day-field="actual"]');
-        document.getElementById("day-budget-total").textContent = formatter.format(dayBudget);
-        document.getElementById("day-actual-total").textContent = formatter.format(dayActual);
-        document.getElementById("grand-total").textContent = formatter.format(budget + dayBudget) + " budgeted / " + formatter.format(actual + dayActual) + " actual";
       }
 
       function captureState() {
@@ -318,22 +254,20 @@
             next[id][input.dataset.expenseField] = input.value;
           });
         });
-        var days = {};
-        dayHost.querySelectorAll("[data-day-row]").forEach(function (row) {
-          var dateKey = row.dataset.dayRow;
-          days[dateKey] = {};
-          row.querySelectorAll("[data-day-field]").forEach(function (input) {
-            days[dateKey][input.dataset.dayField] = input.value;
-          });
-        });
-        next.__days__ = days;
-        next.__itinerary__ = { note: itineraryInput ? itineraryInput.value : "" };
         state = next;
       }
 
       function save() {
         captureState();
-        if (!storageAvailable) return;
+        var invalid = Array.from(host.querySelectorAll('input[type="number"]')).some(function (input) { return !input.checkValidity(); });
+        if (invalid) {
+          saveStatus.textContent = "Enter non-negative euro amounts with at most two decimal places (maximum €1,000,000,000 per field). Invalid amounts are excluded from totals; correct them before saving or exporting.";
+          return;
+        }
+        if (!storageAvailable) {
+          saveStatus.textContent = "Browser storage is unavailable. Your totals still work; download a CSV backup before leaving.";
+          return;
+        }
         try {
           window.localStorage.setItem(storageKey, JSON.stringify(state));
           saveStatus.textContent = "Saved locally in this browser on this device. Download a CSV backup to move it elsewhere.";
@@ -345,13 +279,14 @@
 
       function render(data) {
         records = Array.isArray(data.records) ? data.records : [];
-        dayRows = Array.isArray(data.day_rows) ? data.day_rows : [];
         document.querySelector("[data-expense-title]").textContent = data.title || "Expense planner";
         document.querySelector("[data-expense-intro]").textContent = data.intro || "Enter confirmed trip costs below.";
         host.replaceChildren();
         var categories = Array.from(new Set(records.map(function (record) { return record.category; })));
         categories.forEach(function (category) {
-          var section = make("section", "category-section");
+          var daily = category.indexOf("Optional daily") === 0;
+          var section = make(daily ? "details" : "section", daily ? "category-section daily-planner" : "category-section");
+          if (daily) section.appendChild(make("summary", "", "Optional daily rows · 13–19 October (enter each expense once)"));
           var heading = make("div", "category-heading");
           heading.append(make("h2", "", category), make("span", "category-count", records.filter(function (record) { return record.category === category; }).length + " line items"));
           var grid = make("div", "grid");
@@ -359,26 +294,15 @@
           section.append(heading, grid);
           host.appendChild(section);
         });
-
-        dayHost.replaceChildren();
-        if (!dayRows.length) {
-          dayHost.appendChild(make("p", "empty-state", "No day rows are defined in data/expenses.json."));
-        } else {
-          var dayGrid = make("div", "grid");
-          dayRows.forEach(function (day) { dayGrid.appendChild(buildDayRow(day)); });
-          dayHost.appendChild(dayGrid);
-        }
-        if (itineraryInput && state.__itinerary__ && typeof state.__itinerary__.note === "string") {
-          itineraryInput.value = state.__itinerary__.note;
-        }
-
+        exportButton.disabled = false;
+        clearButton.disabled = false;
         updateTotals();
-        if (storageAvailable) saveStatus.textContent = "Your amounts autosave locally in this browser as you type.";
+        if (storageAvailable) saveStatus.textContent = recoveryNotice || "Your amounts autosave locally in this browser as you type.";
       }
 
       function csvCell(value) {
         var text = String(value === undefined || value === null ? "" : value);
-        if (/^[=+@-]/.test(text)) text = "'" + text;
+        if (/^[\s\u0000-\u001f]*[=+@-]/.test(text)) text = "'" + text;
         return '"' + text.replace(/"/g, '""') + '"';
       }
 
@@ -387,29 +311,15 @@
         save();
       });
 
-      dayHost.addEventListener("input", function () {
-        updateTotals();
-        save();
-      });
-
-      if (itineraryInput) {
-        itineraryInput.addEventListener("input", function () { save(); });
-      }
-
       document.getElementById("export-csv").addEventListener("click", function () {
+        var invalid = host.querySelector('input[type="number"]:invalid');
+        if (invalid) { invalid.reportValidity(); saveStatus.textContent = "Correct invalid amounts before exporting."; return; }
         captureState();
         var rows = [["Item", "Category", "Budgeted EUR", "Actual EUR", "Notes", "Reference URL"]];
         records.forEach(function (record) {
           var itemState = state[record.id] || {};
           rows.push([record.name, record.category, itemState.budget || "", itemState.actual || "", itemState.note || "", record.source_url]);
         });
-        dayRows.forEach(function (day) {
-          var dayState = (state.__days__ && state.__days__[day.date]) || {};
-          rows.push([day.label + " (" + day.date + ")", "Day-level entry", dayState.budget || "", dayState.actual || "", dayState.note || "", ""]);
-        });
-        if (state.__itinerary__ && state.__itinerary__.note) {
-          rows.push(["Itinerary & confirmation notes", "Planner notes", "", "", state.__itinerary__.note, ""]);
-        }
         var csv = rows.map(function (row) { return row.map(csvCell).join(","); }).join("\r\n");
         var blob = new Blob(["\ufeff" + csv], { type: "text/csv;charset=utf-8" });
         var url = URL.createObjectURL(blob);
@@ -419,16 +329,14 @@
         document.body.appendChild(link);
         link.click();
         link.remove();
-        URL.revokeObjectURL(url);
+        window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
         saveStatus.textContent = "CSV backup downloaded. Keep it somewhere private and secure.";
       });
 
       document.getElementById("clear-expenses").addEventListener("click", function () {
-        if (!window.confirm("Clear all category, day-by-day, itinerary-note and amount entries saved in this browser? This cannot be undone unless you downloaded a CSV backup.")) return;
+        if (!window.confirm("Clear all budget, actual, and note entries saved in this browser? This cannot be undone unless you downloaded a CSV backup.")) return;
         state = {};
         host.querySelectorAll("[data-expense-field]").forEach(function (input) { input.value = ""; });
-        dayHost.querySelectorAll("[data-day-field]").forEach(function (input) { input.value = ""; });
-        if (itineraryInput) itineraryInput.value = "";
         if (storageAvailable) {
           try { window.localStorage.removeItem(storageKey); } catch (error) { storageAvailable = false; }
         }
