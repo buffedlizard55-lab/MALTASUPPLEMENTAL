@@ -1,5 +1,19 @@
 # Open questions and unverified items
 
+## 11 October 2026 — third verification session (`arena/3031b29b-maltasupplemental`)
+
+Fresh reads two days before departure. Nothing below is a booking, a physical test or an RF measurement.
+
+| Item | What the fresh read established | What is still open |
+|---|---|---|
+| OQ-28 “Sports Channel” identity | A crowd-edited talkSPORT article lists “DAB+: 6C (Malta)” in its frequency infobox and states that outside the UK and Ireland talkSPORT carries live commentary of every Premier League match in several languages including English. | Wikipedia is not the operator: the block conflict (6C vs 12A), the current service identity, whether the relay is talkSPORT today, and any named trip-week match all remain unverified without a receiver scan. |
+| English EPL audio options | **New negative:** BFBS Radio 2 does carry live Premier League commentary on its own schedule page, but BFBS Malta closed on 31 March 1979 and BFBS frequency tables list no Maltese outlet — so it is not a Malta option. **New lead:** a third-party rights directory states PBS’s FIFA/EBU 2026 World Cup coverage included radio on Radju Malta (93.7 FM) and Radju Malta 2 (105.9 FM). | No PBS 13–19 October sports running order was found; the World Cup precedent is outside the trip window and comes from a third party. Ask PBS/Digi B directly. |
+| Trip-window sport calendar | Premier League 17–19 October, Serie A matchday 7, Champions League matchday 2 on 13–14 October, an NFL London game on 18 October (9:30 a.m. ET = 15:30 Malta) and the CS2 event fall inside the stay; UCL matchday 3, the NBA opener, the MLB World Series, the F1 United States GP and El Clásico all fall after 19 October. | A calendar date is not radio carriage: no Malta station was verified to carry the NFL, NBA, MLB or F1, and no market-to-broadcast link exists for any item. |
+| Friday 16 October diversion | The fourth read of the updates page still shows the dated cluster beginning 17 October, with the older Route 186 20:00–00:00 notice running to 21 April. | Whether a 19:00–00:00 diversion also applies on Friday 16 October remains unresolved from published notices. |
+| Hotel outlet data | Pass 2 found and fixed a cross-record contamination: the `espresso-odycy` record carried Minoa's hours, address, menu URL and review figures. It was rebuilt from the operator's Espresso page (Level 0, 24/7, snacks/coffee, menu PDF linked but not transcribed). | Espresso's menu prices are still untranscribed from the linked PDF, and no 24/7 kitchen availability is guaranteed beyond the operator's own “open round the clock” wording — confirm on arrival. |
+| 18–19 October weather | A second Maltese outlet (Times of Malta) reprints the national panel for 13–17 October; three third-party forecasts cover 18–19 October and agree only on a rain risk. | The national seven-day panel still does not reach 18–19 October; treat third-party values as leads, not forecasts. |
+**Current research snapshot: 11 October 2026 UTC, session `arena/dd9dd00c-maltasupplemental`.**
+
 **Current research snapshot: 11 October 2026 UTC, session `arena/9bd7eeb7-maltasupplemental`.** This pass re-read the sources listed in `SOURCES.md` and corrected one overstatement. Nothing below is a booking, a physical test or an RF measurement.
 
 - **OQ-S1 · Stadium 2194 return.** `data/transport.json` cites the last Stadium 2194 return departures at 20:53 and 20:54 on two return grids, “re-read 11 October”. This session's reads of Route 186 chunks 12, 13 and 15 did not reproduce that row, and the earlier pass did not find it in chunks 13–19. Treat 20:53/20:54 as an unverified prior reading until a dated row or the date-specific journey planner shows it. Do not promise a bus home after the playoffs; plan for a taxi or ride-hail return.

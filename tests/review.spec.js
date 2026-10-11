@@ -288,3 +288,65 @@ test('radio trip-week listening plan is labelled on mobile and a semantic table 
   const sourceLinks = await page.locator('#listening-plan > p a[href^="https://"]').count();
   expect(sourceLinks).toBeGreaterThanOrEqual(8);
 });
+
+test('trip-window live-sport table separates fixtures from radio carriage', async ({page}) => {
+  const radioRecords = data('radio').records;
+  const bfbs = radioRecords.find(r=>r.id==='bfbs-radio-2-epl-not-a-malta-service');
+  const pbs = radioRecords.find(r=>r.id==='pbs-radju-malta-radio-sports-carriage-lead');
+  const window = radioRecords.find(r=>r.id==='other-sports-13-19-oct-outside-window');
+  expect(bfbs.confidence).toBe('partially verified');
+  expect(bfbs.notes).toContain('31 March 1979');
+  expect(pbs.description).toContain('93.7 MHz');
+  expect(pbs.description).toContain('105.9 MHz');
+  expect(window.hours).toContain('20–21 October');
+  expect(window.hours).toContain('13 and Wednesday 14 October');
+  expect(window.hours).toContain('23–25 October');
+
+  await page.setViewportSize({width:360,height:850});
+  await page.goto('radio.html#trip-window-live-sport');
+  await expect(page.locator('#trip-window-live-sport h2')).toContainText('Trip-window live sport');
+  await expect(page.locator('#trip-window-live-sport tbody tr')).toHaveCount(6);
+  await expect(page.locator('#trip-window-live-sport')).toContainText('13:30');
+  await expect(page.locator('#trip-window-live-sport')).toContainText('15:30');
+  await expect(page.locator('#trip-window-live-sport')).toContainText('BFBS Malta closed on 31 March 1979');
+  await expect(page.locator('#trip-window-live-sport')).toContainText('outside your dates');
+  const labels = await page.locator('#trip-window-live-sport tbody tr').first().locator('td')
+    .evaluateAll(cells => ({display: getComputedStyle(cells[0]).display, labels: cells.map(c=>c.getAttribute('data-label'))}));
+  expect(labels.display).toBe('grid');
+  expect(labels.labels).toEqual(['When (Malta)','Fixture / event','Terrestrial radio carriage']);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBeTruthy();
+
+  await page.setViewportSize({width:1440,height:900});
+  const desktopDisplay = await page.locator('#trip-window-live-sport tbody td').first().evaluate(cell=>getComputedStyle(cell).display);
+  expect(desktopDisplay).toBe('table-cell');
+  const sources = await page.locator('#trip-window-live-sport a[href^="https://"]').count();
+  expect(sources).toBeGreaterThanOrEqual(5);
+  await expect(page.locator('#bfbs-radio-2-epl-not-a-malta-service h3')).toHaveText(bfbs.name);
+  await expect(page.locator('#bfbs-radio-2-epl-not-a-malta-service .record-notes p')).toHaveText(bfbs.notes);
+  await expect(page.locator('#pbs-radju-malta-radio-sports-carriage-lead .record-notes p')).toHaveText(pbs.notes);
+  await expect(page.locator('#other-sports-13-19-oct-outside-window .record-notes p')).toHaveText(window.notes);
+});
+
+test('hotel outlet records keep their own facts (no cross-record contamination)', async ({page}) => {
+  const food = data('food').records;
+  const espresso = food.find(r=>r.id==='espresso-odycy');
+  const minoa = food.find(r=>r.id==='minoa-ax-odycy');
+  // Regression: the Espresso record once carried Minoa's hours, address, source and review figures.
+  expect(espresso.hours).toContain('24/7');
+  expect(espresso.hours).not.toEqual(minoa.hours);
+  expect(espresso.source_url).toBe('https://axhotelsmalta.com/odycy/qawra-restaurants/espresso-grab-and-go/');
+  expect(espresso.source_url).not.toBe(minoa.source_url);
+  expect(espresso.address).toContain('Level 0');
+  expect(minoa.address).toContain('Level 11');
+  expect(espresso.description).not.toContain('Best of the Best');
+  expect(minoa.notes).toContain('Best of the Best');
+  await page.goto('restaurants.html#espresso-odycy');
+  await expect(page.locator('#espresso-odycy h3')).toHaveText(espresso.name);
+  await expect(page.locator('#espresso-odycy .record-notes p')).toHaveText(espresso.notes);
+  await expect(page.locator('#espresso-odycy')).toContainText('24/7');
+  // The Espresso record must make no price claim (Minoa's tasting-menu figures stay with Minoa).
+  expect(espresso['price range']).not.toContain('€');
+  expect(espresso.description).not.toContain('€');
+  await expect(page.locator('#espresso-odycy dd').nth(2)).not.toContainText('€');
+  await expect(page.locator('#minoa-ax-odycy dd').nth(2)).toContainText('€70');
+});

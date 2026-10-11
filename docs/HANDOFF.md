@@ -1,5 +1,19 @@
 # Current cross-workstream handoff
 
+**Session:** `arena/3031b29b-maltasupplemental` · **updated:** 11 October 2026 UTC.
+
+- **E → G/D (radio answer for the traveler):** three new radio records carry the decision. (1) **BFBS Radio 2 is a sourced negative** — its schedule page carries live EPL commentary, but BFBS Malta closed 31 March 1979 and BFBS frequency tables list no Malta outlet; do not offer it as a listening option. (2) **PBS Radju Malta 93.7 FM / Radju Malta 2 105.9 FM** are a real FM pair with a third-party-documented World Cup radio-carriage precedent and no published trip-week lineup — a scan lead, not a schedule. (3) A crowd-edited talkSPORT article lists “DAB+: 6C (Malta)” and says talkSPORT carries every Premier League match for audiences outside the UK/Ireland — strengthens the 6C lead, still not current-carriage proof. Keep the block/identity conflict unresolved.
+- **E → G (fixtures):** the 17–19 October EPL clocks are now corroborated by three independent listings (Premier League amendment article, BBC Sport scores & fixtures, Sky Sports/live-footballontv). Malta is UK+1 until 25 October. A calendar or a market listing is still not radio carriage.
+- **A → G (transport re-reads):** fourth read of the service-updates page — the 17–18 October cluster is now enumerated in full (186, 202, 260, 47, 103, 45, 405, 238, 203, 280, 31, 41, 42, 48, N48), the older Route 186 April notice still runs 20:00–00:00, and still **no TWC/TQ service** is published. TQ1/TQ2 corridor definitions and a March 2026 Ta’ Qali post-event Buġibba/St Paul’s Bay precedent are recorded as precedent only. Friday 16 October diversion applicability stays open.
+- **D → G (weather):** Times of Malta reprints the national 13–17 October panel with identical values (corroboration, not a new model); three third-party forecasts cover 18–19 October and agree only on rain risk. Do not present third-party 18–19 October values as the national forecast.
+- **C → G (event):** the ticketing listing was re-read and has not changed except for the price wording: “Sales end soon”, ages 18+, the same three visible agenda days, six team names plus “View all”. On this read “Free” appeared only on a “You might also like” card rather than in the ticket block, so free entry stays corroborated-by-HLTV but unconfirmed at checkout. Venue map coordinates 35.8957343 / 14.4168839 can be handed to a taxi or ride-hailing driver.
+- **B → G (food, data fix):** the canonical `espresso-odycy` record was found carrying Minoa's facts (rooftop hours 18:30–22:30 / 16+ / €70–€80 tasting, Level 11 address, minoa.mt menu URL, Minoa TripAdvisor figures). It has been rebuilt from the operator's Espresso page (Level 0, 24/7 coffee bar, menu PDF linked but not priced), the correction is noted in the record, and `tests/review.spec.js` now fails if the two records' hours, addresses, sources or price claims drift back together. Use Espresso for early/late snack-and-coffee needs only; do not quote it a price.
+- **B → G (food):** no new platform access this pass. Do not re-assert the dated review-volume snapshot as a fresh capture; it remains one platform, one date, one radius.
+- **F → traveler:** planner unchanged and blank; enter only confirmed amounts.
+
+
+**Session:** `arena/dd9dd00c-maltasupplemental` · **updated:** 11 October 2026 UTC.
+
 **Session:** `arena/9bd7eeb7-maltasupplemental` · **updated:** 11 October 2026 UTC.
 
 - **A → G:** Route 186 stop index (chunks 1–3) and timetable grids (chunks 12, 13, 15) re-read. Qawra 952 first departure reads 06:10 and 06:09 on the same page, so keep the range. The Stadium 2194 return (20:53/20:54) is not reproduced this session (OQ-S1). Do not tell the traveller a bus home after the playoffs is guaranteed.

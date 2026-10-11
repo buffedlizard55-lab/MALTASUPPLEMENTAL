@@ -18,7 +18,30 @@
 
 
 **Last updated:** 11 October 2026 (UTC)
-**Current session branch:** `arena/9bd7eeb7-maltasupplemental`
+**Current session branch:** `arena/3031b29b-maltasupplemental`
+**Snapshot boundary:** the addendum directly below is this session; later sections are historical mainline snapshots, not a live dashboard.
+
+## Current session addendum — `arena/3031b29b-maltasupplemental` (11 October 2026)
+
+**Stage:** Passes 1–3 executed on a tree started from `main` `ae69ab1`; local gates run and delivery by PR to `main` requested in the same session.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Service-updates page re-read a fourth time (17–18 October cluster enumerated: Routes 186, 202, 260, 47, 103, 45, 405, 238, 203, 280, 31, 41, 42, 48, N48); TQ1/TQ2 definitions and the March 2026 Ta' Qali special-service precedent added; fares page re-read unchanged | No TWC/TQ notice published; date-specific planner run, attendee gate, measured walks, onward Buġibba→Qawra leg and a live taxi quote still open; Friday 16 October diversion question unresolved |
+| **B · Food & cafés** | One data-integrity fix: the `espresso-odycy` record (hotel 24/7 coffee bar) was carrying Minoa's hours, address, menu URL and review figures; it was rebuilt from the operator's own Espresso page fetched 11 October 2026 and a regression test now guards the separation. Otherwise unchanged — dated TripAdvisor review-volume snapshot and access limits retained | Platform refreshes (Yelp/Instagram/TikTok/Facebook/Reddit/X) remain unavailable; menus, hours and closures need direct reconfirmation |
+| **C · Gaming, activities, landmarks & events** | Ticketing listing re-read 11 October: still “Sales end soon”, ages 18+, venue coordinates 35.8957343/14.4168839, six visible lineup names plus “View all”, Sat/Sun agenda still hidden; the word “Free” appeared only on a “You might also like” card in this read, so the price stays flagged for checkout | Reservation/inventory, gate, ID rules, per-day scanning, weekend agenda and the 18:00 vs 18:30 opener outlier stay open |
+| **D · U.S.-traveler essentials** | Weather record extended: national panel corroborated by a second Maltese outlet for 13–17 October and three third-party forecasts read for 18–19 October, labelled as leads | Personal entry/insurance/device facts unknown; 18–19 October still outside the national panel |
+| **E · Sports radio** | Three new records (BFBS Radio 2 non-Malta negative; PBS Radju Malta/Radju Malta 2 carriage lead; trip-window sport calendar) and a new dated trip-window live-sport table; EPL fixtures independently corroborated; talkSPORT “DAB+: 6C (Malta)” infobox lead recorded | No receiver scan, no confirmed Malta carriage of any named match, “Sports Channel” identity still unresolved, no radio carriage proven for the NFL London game |
+| **F · Expense planner** | Unchanged: blank by default, quick-fill preview, local-only autosave, CSV export, validated JSON backup | Await the itinerary; enter only confirmed amounts |
+| **G · Shell / integration** | Executive summary and radio hub updated; source log, open questions, handoff, plan, status and README refreshed; full local suite run before delivery | Push branch, open PR, merge by explicit number, then record the Pages build |
+
+**Parallel-session integration:** `main` advanced twice during this pass (PRs #58, #59). Conflicts in `README.md`, `docs/HANDOFF.md`, `docs/OPEN_QUESTIONS.md`, `docs/SOURCES.md` and `docs/STATUS.md` were resolved by keeping both sessions' blocks, and three upstream corrections were folded in: the Eventbrite “Free” wording is now qualified everywhere, the 2194 last-return rows carry a reproducibility caveat (OQ-S1), and the DAB+ directory claim is now “visible list, not exhaustive” (OQ-S3).
+
+**Fresh evidence (11 October 2026 UTC, this session):** Wikipedia talkSPORT frequency infobox (“DAB+: 6C (Malta)”) and its “every Premier League match” international-audio statement; BFBS Radio 2 schedule with live EPL commentary entries; BFBS frequency tables with no Malta row; the Radio Malta article’s 31 March 1979 BFBS-Malta closure; PBS/FIFA-EBU radio carriage described by a rights directory; three sports calendars for the trip window; The Athletic’s NFL London kick-off clock; BBC Sport, Sky Sports and a UK TV listing for the 17–19 October EPL clocks; the Wikipedia special-services table for TQ1/TQ2; a March 2026 Ta’ Qali special-service news report; Times of Malta weather page; holiday-weather and weather25 18–19 October leads; the Eventbrite listing; and the operator’s service-updates, fares and Route 186 pages. Every URL and its limit is in `docs/SOURCES.md`; unresolved claims are in `docs/OPEN_QUESTIONS.md`.
+
+
+**Last updated:** 11 October 2026 (UTC)
+**Current session branch:** `arena/67d511d1-maltasupplemental`
 **Snapshot boundary:** Current-session addendum below; later sections are historical mainline snapshots, not a live dashboard.
 
 ## Previous session addendum — `arena/08099cd9-maltasupplemental` (11 October 2026)

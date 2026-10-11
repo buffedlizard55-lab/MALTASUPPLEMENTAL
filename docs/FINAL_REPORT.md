@@ -1,5 +1,43 @@
 # Malta trip guide — final report
 
+## Current session — `arena/3031b29b-maltasupplemental` (11 October 2026 UTC)
+
+### What this pass did
+
+The repository was reviewed first and left intact: static Pages site, canonical 13-field schema, seven datasets with matching pages, source/open-question/status/handoff/plan logs, blank-by-default expense planner, CI workflow and the Playwright/axe suite. The session then attacked the remaining weak spot in the original request — a receiver-usable answer about live sports radio — and re-corroborated the trip’s decision-changing facts two days before departure.
+
+### New verified findings, with their limits
+
+- **English EPL commentary on radio: one plausible route, one ruled out, one unproven.** A crowd-edited talkSPORT article lists “DAB+: 6C (Malta)” in its frequency infobox and states that outside the UK and Ireland talkSPORT carries live commentary of every Premier League match in several languages including English. That strengthens — but does not prove — the Maltese 6C “Sports Channel” lead, because the same service is listed on 12A by WorldDAB and the operator’s visible directory shows no sports tile. In parallel, **BFBS Radio 2 was ruled out**: its own schedule page does carry live Premier League commentary, but BFBS Malta closed on 31 March 1979 and BFBS frequency tables list UK/Gurkha/overseas-base outlets only. **PBS Radju Malta (93.7 FM) and Radju Malta 2 (105.9 FM)** have a radio-carriage precedent — a third-party rights directory describes PBS’s FIFA/EBU 2026 World Cup coverage as including radio on both stations — but that tournament is outside the trip window and no 13–19 October lineup is published.
+- **The trip-window sport calendar, checked against departure day.** Inside 13–19 October: the Premier League weekend (17–19 October), Serie A matchday 7, Champions League matchday 2 (13–14 October), an NFL London game on 18 October (listed as Houston Texans v Jacksonville Jaguars; 9:30 a.m. ET = 15:30 Malta) and the CS2 event. Outside the stay: UEFA Champions League matchday 3 (20–21 October), the NBA opener (20 October), the MLB World Series (from 23 October), the F1 United States Grand Prix (23–25 October) and El Clásico (25 October). Fixture clocks were independently corroborated on the BBC Sport and Sky Sports fixture pages against the league’s own amendment article; no radio carriage was found for the NFL game.
+- **Transport re-reads.** The complete service-updates page was read again and the 17–18 October Friday/Saturday 19:00–00:00 detour cluster enumerated in full (Routes 186, 202, 260, 47, 103, 45, 405, 238, 203, 280, 31, 41, 42, 48, N48), alongside the older Route 186 20:00–00:00 notice ending 21 April and the Saqqajja stop-4627 closure; still no Thunderpick, BLAST or TQ service was published. TQ1’s published northern corridor (Ta’ Qali → Rabat, Mosta, Naxxar, St Paul’s Bay, Qawra → Buġibba) and TQ2’s central corridor were newly recorded, together with a March 2026 precedent in which MPT ran extra and post-event Ta’ Qali services toward Buġibba and St Paul’s Bay. That precedent is evidence the pattern exists — not a commitment for this event.
+- **Weather.** The national forecast panel for 13–17 October was corroborated by a second Maltese outlet (Times of Malta) with identical values; three third-party forecasts were read for 18–19 October and agree only on a rain risk, which is enough to pack a rain layer and nothing more.
+- **Data-integrity bug found and fixed (Pass 2):** the canonical `espresso-odycy` record — the hotel's 24/7 coffee bar — was carrying the rooftop restaurant's hours (Wednesday–Saturday 18:30–22:30, ages 16+, €70/€80 tasting menu), its Level 11 address, its menu URL and its TripAdvisor figures. Those facts belong to `minoa-ax-odycy`. The Espresso record was rebuilt from the operator's own outlet page fetched on 11 October 2026 (Level 0, open 24/7, barista coffee/juices/snacks, menu PDF linked but not transcribed), the correction is recorded in its notes for traceability, and a regression test now asserts the two records keep distinct hours, addresses, prices and sources. A cross-record duplicate scan of all 202 records found no other contamination.
+- **Event listing re-read:** unchanged apart from the price wording — “Sales end soon”, ages 18+, the same visible agenda, six team names plus “View all”, and map coordinates for the venue. On this read the word “Free” appeared only on a “You might also like” card rather than inside the ticket block, so free entry remains corroborated by HLTV but unconfirmed at checkout, consistent with the parallel session's correction now carried in `data/event.json#twc-spectator-tickets`.
+
+### Passes and observed local gates
+
+1. **Pass 1:** fresh reads of the ticketing listing, operator fares/service-updates/Route 186 pages and the radio/fixture/weather sources; new records and notes added with per-claim source rows.
+2. **Pass 2:** adversarial review of the new claims — crowd-edited sources labelled as such, third-party calendars kept as leads, “precedent” kept distinct from “announcement”, and the negative BFBS finding stated as a sourced negative rather than a measured scan.
+3. **Pass 3:** the original request re-walked line by line against the integrated site, then the full local suite (schema/source-log/local links, JavaScript syntax, Playwright + axe at 320–1440 px) run on the delivered tree.
+
+### Integration of two parallel sessions merged to `main` during this pass
+
+`main` advanced twice while this branch was open (PRs #58 and #59). Both merges were resolved by hand, keeping each session's record and 202th-session blocks rather than overwriting them, and three corrections from the other sessions were folded into this branch's own text:
+
+- **Ticket price wording.** The twelfth pass found that the word “Free” appeared only on a “You might also like” card, not in the Eventbrite ticket block. The executive summary now says *reserve the 18+ spot and confirm the price at checkout*, and the status/handoff/report/source-log lines drop an unqualified “free”.
+- **Last-return reproducibility (OQ-S1).** A later session could not reproduce the Stadium 2194 “20:53/20:54” rows, and this session's own chunk read reproduced only the opposite direction. A reproducibility caveat was added to the three affected transport records and to the transport page and overview checklist: the direction problem (the return terminates at Buġibba Bay 1, not Qawra) and the need for a date-specific planner check are the solid facts; the exact last minute is published-grid evidence requiring confirmation.
+- **DAB+ directory wording (OQ-S3).** The claim that the operator directory was “read in full” is withdrawn — it ends in a “Load more” control — so the radio record now says the *visible* listing showed no “Sports Channel” entry and that the absence is not exhaustive.
+
+### Still to do next session
+
+1. Confirm the reservation, gate, ID rules, per-day validity, weekend agenda and the 18:00 vs 18:30 opener outlier with the organiser.
+2. Run the operator’s date-specific journey planner for each event date and obtain one live taxi/ride-hailing quote for a late return; keep watching for a TQ service during 14–18 October.
+3. Scan DAB+ blocks 6A/6C/12A and the listed FM frequencies in Malta, and log service label, block, language and any named match actually heard.
+4. Refresh restaurant/gaming hours and menus directly, and re-check entry rules (ETIAS/EES), weather and transit notices on arrival.
+5. When the itinerary arrives, enter confirmed amounts only into the planner and save a private JSON backup.
+
+
 ## Current session — `arena/67d511d1-maltasupplemental` (11 October 2026 UTC)
 
 ### Delivery summary
