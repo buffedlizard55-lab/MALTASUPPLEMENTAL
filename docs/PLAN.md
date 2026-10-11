@@ -22,7 +22,29 @@ This pass targets the one requirement that is still weakest — a receiver-usabl
 
 # Malta trip guide — work plan
 
-## Current session — `arena/1005fdbf-maltasupplemental` (11 October 2026)
+## Current session plan — `arena/b29d95ae-maltasupplemental` (11 October 2026)
+
+Repository review at session start (`main` = `ae69ab1`, merge of PR #55): the static Pages shell, canonical 13-field schema (`data/record.schema.json`), seven topic datasets (199 records), per-topic pages rendered from JSON via `js/site.js`, `docs/SOURCES.md` source log, `docs/OPEN_QUESTIONS.md`, `docs/STATUS.md`, blank-by-default expense planner, CI workflow (`npm test` = validator + JS check + Playwright/axe) and the README executive summary are all present and were merged through PR #57. **Shared setup is complete**; this session verifies it serially (schema, navigation/renderer, CSS tokens, source-log row format) and does not recreate it.
+
+Trip starts **13 October 2026 — two days from this session's date (11 October)**, so this session's theme is **time-critical re-verification and Passes 1–3 on the integrated result**, not new structure. The parallel-work protocol is in force with the same ownership map as previous sessions. Arena fixes one branch per session (`arena/b29d95ae-maltasupplemental`) and provides no isolated workstream runners, so A–F run one at a time on this branch with strict file ownership; cross-stream findings go to `docs/HANDOFF.md`, never into another stream's files. G runs last and owns shared files. A PR from this branch is opened and merged to `main` only after all gates pass.
+
+| Stream | Owned files | This session's focus (dependencies in parentheses) |
+|---|---|---|
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Re-check MPT service updates (17–18 Oct diversion), Route 186 grids, TQ special-service notice, fare season boundary and the per-date 13–19 Oct plan two days out. (Depends on event agenda.) |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | Re-check near-hotel shortlist hours/closures and the TripAdvisor review-volume snapshot status; keep platform-access limits honest. |
+| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Re-check the Eventbrite listing for the **Sat 17/Sun 18 agenda**, reservation status and lineup; re-check dated trip-window events. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | **ETIAS/EES recheck** (entry risk sits inside the trip window); Malta Met Office forecast now that 13–19 Oct is inside/near the seven-day panel; keep customs/health/power as-is unless changed. |
+| **E · Sports radio** | `data/radio.json`, `radio.html` | Re-check BBC Sportsworld episode JSON for 17–18 Oct, Radio Sportiva dated callouts for 13–19 Oct, DAB+ directory rows; keep schedule vs carriage vs reception distinct. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html` | Verify blank-by-default rows, quick-fill preview/CSV/JSON paths and keyword mapping; no amounts enter without a traveler itinerary. |
+| **G · Site shell, exec summary & integration (last)** | `index.html`, `sources.html`, `README.md`, `js/site.js`, `css/style.css`, `docs/*`, tests | Integrate A–F findings into the executive summary; run the full local gate suite; run Passes 1–3; open the PR from this branch and merge by explicit number; record observed GitHub/Pages state. |
+
+### Verification gates / passes (run on the integrated result)
+
+1. **Pass 1 — implement and verify:** each stream re-reads its highest-risk live sources, updates only its owned data/page pair, logs every claim in `docs/SOURCES.md` with URL + date, and records anything unverifiable in `docs/OPEN_QUESTIONS.md`.
+2. **Pass 2 — adversarial review:** check for bugs, missing prompt requirements, wrong assumptions and edge cases (route/date/fare inference, timezone handling, planner overwrite rules, mobile layout, dead links, data/page drift); fix or mark open.
+3. **Pass 3 — full request re-check:** map every line of the original request against the integrated site, re-verify data/page consistency and source coverage, run `npm test` (validator + JS + 23 Playwright/axe tests), then deliver: PR → merge to `main` → observed Pages state → final report of verified/unverified/limitations/next-session tasks.
+
+## Previous session — `arena/1005fdbf-maltasupplemental` (11 October 2026)
 
 **Repository review first (done).** Found an integrated static GitHub Pages site (15 HTML pages, 7 JSON datasets, 199 exact-schema records, shared nav/renderer, CSS tokens, source log, open questions, expense planner, CI + Playwright/axe suite) built by earlier sessions. Preserve the structure and schema; do not add parallel scaffolding.
 
@@ -66,7 +88,8 @@ Arena fixes this session to one branch and provides no isolated per-workstream r
 2. **Pass 2** — adversarial review: re-read the riskiest claims, look for stale/inherited contradictions, check mobile/desktop layout, link integrity, planner edge cases, and that nothing unverified reads as fact.
 3. **Pass 3** — audit against the original request line by line: transport, food, activities, everyday, radio, expense planner, executive summary, subpages, mobile, verified links; run the full local suite; then open and merge the PR and record the observed result.
 
-## Current session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
+
+## Previous session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
 
 Repository review found the existing static Pages shell, canonical 13-field record schema, per-topic JSON data/pages, source log, open-questions/status records, expense planner, CI workflow and browser tests. Preserve them; do not create duplicate structure. Shared setup is already present and will be kept serial: verify `data/record.schema.json`, existing navigation/renderer and CSS tokens, and the master-source row format before topic work. This Arena session has one fixed branch and no isolated workstream runner, so A–F research/edits run one at a time with the listed ownership; G updates shared presentation/docs after topic work. Cross-stream discoveries go to `docs/HANDOFF.md`/`docs/OPEN_QUESTIONS.md`, not another stream's page/data file. During the session, `origin/main` advanced beyond the starting `250e6bd` through PRs #51–#56. The fixed branch was rebased onto the latest `origin/main` at `6da8aba`, preserving the merged source-led popularity, gaming, entry, per-date event-transport, timezone-pinned matchup and reporting updates before the final integration pass.
 
