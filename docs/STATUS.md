@@ -1,6 +1,6 @@
 # Workstream status
 
-Last updated: 2026-10-11 (UTC)
+Last updated: 2026-10-11 (UTC, second pass)
 
 | Workstream | Status | Blockers / caveats | Last updated |
 |---|---|---|---|
@@ -26,3 +26,18 @@ Last updated: 2026-10-11 (UTC)
 - **Pass 2 (review):** Not re-verified on 11 Oct: the Route 186 21:26 Buġibba Bay 1 return time, Route 214 stop IDs, and the BBC start times. These are logged as open rather than presented as verified.
 - **Pass 3 (requirements and audit):** Still open: TWC entrance/gate and attendee instructions, date-specific transit, radio carriage of named events, and the Radio Sportiva licence status. No browser screenshot or physical-device test was run in this session.
 
+
+## Session pass — 11 Oct 2026, second pass (sync with PR #21, then additions)
+
+- **Pass 1 (implementation):** Synced to `main` at PR #21. Fixed the `costs.html` price-status bug. Added 12 records (transport 13→16, radio 6→10, activities 29→32, food 27→29; total 120) and updated the Route 186, fares and BBC Sportsworld records. Added event-day and listening-plan tables, rewrote the executive summary and moved the footer snapshot to 11 Oct. `scripts/validate_site.py` passes (6 JSON files / 120 records / 210 cited URLs / 88 link attributes); `node --check js/site.js` and `git diff --check` pass. A jsdom DOM run loaded the transport, radio, food, activities, planner and home pages: all record counts rendered, search found the new records, and 18/18 planner rows show a price status.
+- **Pass 2 (bugs and edge cases):** Corrected two overstatements (airport-taxi "recent posts", the transport table's 20:45 threshold). Restored Route 186 stop 2194 as the Buġibba-bound stop; PR #21 had removed it after reading only the Rabat-bound section. Mosta Rotunda prices follow the parish page (€5 short / €8 full) rather than third-party guides. OPEN_QUESTIONS rows updated.
+- **Pass 3 (request recheck):** The radio page now ties official over-the-air schedules (BBC, Rai, NET FM) to Kalshi-relevant fixtures in Malta time, with Kalshi eligibility flagged rather than assumed. Event-day transport covers both directions and late returns. Still open: named commentary matches, Rai 2026–27 Champions League carriage, Kalshi Malta eligibility, 15–16 Oct TWC times, the 16–19 Oct forecast, a tipping norm, and TWC entrance/tickets. No real-browser screenshot: the Chromium download is blocked in this sandbox.
+
+| Workstream | Status | Blockers / caveats | Last updated |
+|---|---|---|---|
+| A. Transport | Updated | Return stop 2194 / last 20:53; Uber + unverified airport taxi fare; Explore Flex. Planner check per date still needed. | 2026-10-11 |
+| B. Food | Updated | +Fontanella (hours conflict), +Ta' Marija (October hours not published). | 2026-10-11 |
+| C. Activities | Updated | +Aviation Museum, +Mosta Rotunda, +Dash Berlin 17 Oct (details unchecked). | 2026-10-11 |
+| E. Radio | Updated | Fixture map + Rai Radio 1 + Kalshi note; commentary matches unannounced. | 2026-10-11 |
+| F. Expenses | Bug fixed | Price status now renders. | 2026-10-11 |
+| G. Integration | Updated | Summary, CSS tables, docs; PR to follow. | 2026-10-11 |

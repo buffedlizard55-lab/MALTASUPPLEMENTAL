@@ -51,3 +51,37 @@ See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) for the full list, evidence gaps, a
 - A headless DOM simulation is not a substitute for visual review on real desktop/mobile browsers or assistive technologies.
 - GitHub Pages is configured to publish the repository root from `main`. After PR #14 merged, the Pages API reported `built` for its `main` merge commit `2aeb536` (10 October 2026). This confirms the static-site build, not external-link liveness or actual browser/device rendering.
 - This guide is a planning aid, not a booking, dispatch, immigration, tax, legal, medical, or event-access guarantee.
+
+## Update — 11 Oct 2026 (second pass)
+
+**Verified this pass (official sources):**
+- Route 186 return stop (Stadium 2194, last 20:53).
+- MPT fares, including Explore Flex.
+- Uber's Malta service options.
+- Premier League kickoffs for 17–19 Oct and UCL matchday 2 kickoffs, in Malta time.
+- BBC Sportsworld 17/18 Oct start times and 3 h 53 min durations.
+- Rai Radio 1's weekend Serie A programme.
+- Kalshi's travel-eligibility wording.
+- Malta Aviation Museum and Mosta Rotunda hours and fees.
+
+**Bug fixed:** the expense planner's "Price status" was blank on every row because the code used `price_range` instead of the data key `price range`.
+
+**Partially verified / unverified:**
+- TWC match times (community wiki).
+- Serie A times (broadcaster report).
+- Rai Champions League carriage for 2026–27 (prior-season pattern only).
+- Fontanella and Ta' Marija hours.
+- Dash Berlin details.
+- Airport taxi fare, about €25 (third-party only).
+
+**Limitations:**
+- No real-browser screenshot (Chromium download blocked); the DOM test and CSS review stand in.
+- No on-site DAB+ reception test.
+- Kalshi's country list was not read.
+
+**Next session:**
+- Recheck the BBC episode pages from about 15 Oct for the named commentary match.
+- Add Europa League 15 Oct fixtures and TWC 15–16 Oct times.
+- Add the 16–19 Oct forecast.
+- Confirm the TWC entrance and tickets.
+- Run the MPT journey planner for each event date.

@@ -2,7 +2,7 @@
   "topic": "radio",
   "title": "Sports radio to try in Malta",
   "last_updated": "2026-10-11",
-  "intro": "The strongest radio leads found for 13–19 October are NET FM on FM 101 MHz, plus DAB+ directory listings for Radio Sportiva and BBC World Service. WorldDAB lists BBC World Service on Digi B Network block 6A at 181.936 MHz; reception at the hotel and event venue remains untested. The dated BBC Sportsworld listings and local stations’ recurring grids do not prove that a specific trip event or fixture will be carried.",
+  "intro": "Best over-the-air leads for 13–19 October: BBC World Service on DAB+ (block 6A) carries Sportsworld on Sat 17 Oct about 15:06–18:59 and Sun 18 Oct about 16:06–19:59 Malta time, during the Premier League afternoon games. Rai Radio 1 on DAB+ carries Serie A in Italian. NET FM 101 MHz has weekend sports shows. Fixture lists below give Malta kickoff times; whether a specific match gets commentary, and whether Kalshi is usable from Malta, still need a same-week check. Reception at the hotel and venue is untested.",
   "records": [
     {
       "id": "net-fm-fm-101",
@@ -50,18 +50,33 @@
       "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked"
     },
     {
+      "id": "rai-radio-1-dab-tutto-il-calcio",
+      "name": "Rai Radio 1 — Serie A on “Tutto il calcio minuto per minuto” (DAB+)",
+      "category": "DAB+",
+      "area": "Rai Radio Uno appears in Malta’s DAB+ channel directory; reception not tested locally",
+      "address": "Not applicable — broadcast service",
+      "hours": "Rai lists the programme “il sabato e la domenica” (Saturdays and Sundays). Serie A matchday 7 kickoffs in Italy/Malta time: Fri 16 Oct 20:45 Frosinone–Sassuolo; Sat 17 Oct 15:00 Venezia–Napoli, 18:00 Bologna–Inter, 20:45 Roma–Genoa; Sun 18 Oct 12:30 Udinese–Lecce, 15:00 Fiorentina–Como, 18:00 Milan–Atalanta, 20:45 Juventus–Lazio; Mon 19 Oct Monza–Cagliari and Parma–Torino (times not confirmed).",
+      "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked",
+      "description": "Rai’s official programme page describes “Tutto il calcio minuto per minuto” on Rai Radio 1 as its weekend show covering Serie A and Serie B, including early and late kickoffs. Recent episodes include Saturday-evening Serie A commentary. The 17–18 Oct running order has not been published. Commentary is in Italian. Rai’s press office has announced live Radio 1 commentary of Italian clubs’ Champions League matches in recent seasons (2024–25 and 2025–26). No 2026–27 announcement was found, so midweek carriage on 13–14 Oct is likely but unconfirmed.",
+      "source_url": "https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Checked 11 Oct 2026. Malta DAB+ directory listing for Rai Radio Uno: https://dab.com.mt/channels/. Serie A fixtures and times are from Sky Sport Italia’s report of the Lega Serie A schedule (https://sport.sky.it/calcio/serie-a/calendario-serie-a-anticipi-posticipi-2026-2027-big-match-su-sky); Monday 19 Oct fixtures are from https://www.romatoday.it/sport/calcio/calendario-serie-a-2026-2027-diretta-partite-date.html . Rai press-office Champions League radio announcement (2025–26 season): https://www.rai.it/ufficiostampa/assets/template/us-articolo.html?ssiPath=%2Farticoli%2F2025%2F08%2FUna-Champions-minuto-per-minuto-76eaca14-b4fb-4f38-a33b-efebedaf38b9-ssi.html . Italian clubs on UCL matchday 2 (UEFA): Inter v Club Brugge and Villarreal v Napoli (Tue 13 Oct 21:00), Feyenoord v Como (Wed 14 Oct 18:45), Roma v Real Madrid (Wed 14 Oct 21:00). Italy and Malta use the same time zone."
+    },
+    {
       "id": "bbc-world-service-dab-sportsworld",
       "name": "BBC World Service — DAB+ listing and Sportsworld dates",
       "category": "DAB+",
       "area": "BBC World Service appears in Malta’s DAB+ channel directory; reception not tested locally",
       "address": "Not published; this is a broadcast listing, not a visitor venue",
-      "hours": "BBC’s official Sportsworld upcoming-broadcasts page lists Saturday 17 October at 13:06 GMT and Sunday 18 October at 14:06 GMT on BBC World Service (except News Internet). That is 15:06 and 16:06 Malta time respectively (UTC+2).",
-      "description": "The Malta DAB+ channel directory includes BBC World Service. The BBC’s dated programme listing schedules Sportsworld, described as live sport with news, interviews and analysis, on both playoff-weekend dates. The programme listing identifies the BBC World Service radio feed; a separate record gives WorldDAB’s DAB+ block/frequency listing. Neither directory evidence nor the programme schedule proves reception at the traveler’s locations or commentary on the trip’s esports, football, or sailing events.",
+      "hours": "BBC’s official episode pages (re-read 11 Oct 2026) list Sportsworld on Saturday 17 October at 13:06 GMT and Sunday 18 October at 14:06 GMT, each 3 hours 53 minutes. In Malta time (UTC+2) that is about 15:06–18:59 on Saturday and 16:06–19:59 on Sunday.",
+      "description": "The Malta DAB+ channel directory includes BBC World Service. The BBC’s dated listing schedules Sportsworld (“live sport from around the world”) on both playoff-weekend days. Those windows overlap the 16:00 Malta-time Premier League kickoffs on Saturday 17 Oct and Nottingham Forest v Arsenal (17:30) on Sunday 18 Oct. Which match, if any, gets live commentary is not yet published. The 11 Oct episode carried live commentary of Liverpool v Man City, but that is a precedent, not a promise. Neither the directory nor the schedule proves reception at the hotel or venue.",
       "source_url": "https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Malta DAB+ directory listing for BBC World Service: https://dab.com.mt/channels/. Dated BBC programme pages: Saturday 17 October, https://www.bbc.co.uk/programmes/w1730c92ck0m2cw ; Sunday 18 October, https://www.bbc.co.uk/programmes/w1730c92ck0q313. The schedule labels the feed “BBC World Service except News Internet”; the episode page’s displayed local clock depends on the viewer’s time zone. Times above are converted from 13:06 and 14:06 GMT to 15:06 and 16:06 Malta time (UTC+2). WorldDAB’s technical listing and the reception caveat are recorded separately; no reception test at AX ODYCY or MFCC was available. Re-checked 11 Oct 2026: the BBC upcoming-broadcasts page (https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming) lists Sportsworld episodes dated 17/10/2026 and 18/10/2026 GMT on BBC World Service except News Internet. That page confirms the dates; the 13:06 and 14:06 GMT start times were carried from the 10 Oct check of the episode pages and were not re-read on 11 Oct.",
+      "notes": "Malta DAB+ directory listing for BBC World Service: https://dab.com.mt/channels/. Dated BBC programme pages, both re-read 11 Oct 2026: Saturday 17 October, https://www.bbc.co.uk/programmes/w1730c92ck0m2cw ; Sunday 18 October, https://www.bbc.co.uk/programmes/w1730c92ck0q313 (3 hours 53 minutes each; feed “BBC World Service except News Internet”). The episode pages render times in the viewer’s local zone; the fetch showed 09:06 and 10:06 US Eastern (UTC−4), i.e. 13:06 and 14:06 GMT. Precedent episode with Premier League commentary: https://www.bbc.co.uk/programmes/w1730c9208pxyf8 (11 Oct 2026). Upcoming list: https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming . WorldDAB’s technical listing and the reception caveat are recorded separately.",
       "price range": "Free-to-air broadcast; DAB+ receiver required for radio reception; hardware price not checked"
     },
     {
@@ -80,6 +95,36 @@
       "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked"
     },
     {
+      "id": "fixtures-premier-league-trip-window",
+      "name": "Premier League fixtures during the trip (Malta time)",
+      "category": "Fixture guide",
+      "area": "England — listen via BBC World Service Sportsworld on DAB+ where carried",
+      "address": "Not applicable — fixture list",
+      "hours": "Malta time (BST + 1 hour): Sat 17 Oct 13:30 Everton v Chelsea; 16:00 Brentford v Liverpool, Fulham v Hull City, Man City v Ipswich; 18:30 Newcastle v Aston Villa. Sun 18 Oct 15:00 Bournemouth v Sunderland, Brighton v Crystal Palace, Leeds v Man Utd; 17:30 Nott’m Forest v Arsenal. Mon 19 Oct 21:00 Spurs v Coventry City.",
+      "price range": "Not applicable",
+      "description": "These are the official Premier League kickoffs in the trip window, converted to Malta time. BBC World Service’s Sportsworld runs about 15:06–18:59 on Saturday and 16:06–19:59 on Sunday (Malta time), covering the Saturday 16:00 games and Forest v Arsenal on Sunday. The match chosen for commentary is not yet announced. Clashes with the TWC playoffs (community-wiki times): the 16:00 and 19:00 semifinals on 17 Oct and the 17:00 final on 18 Oct.",
+      "source_url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Checked 11 Oct 2026. The Premier League article gives all times in BST up to 24 October; Malta is BST + 1 hour. Bournemouth, Sunderland and Crystal Palace play Europa League matches on Thursday 15 October (Europa League fixtures not checked). Broadcast carriage is a separate question; see the BBC World Service record. Kickoff times can still change."
+    },
+    {
+      "id": "fixtures-champions-league-md2",
+      "name": "Champions League matchday 2 — 13–14 October (Malta time)",
+      "category": "Fixture guide",
+      "area": "Europe — Italian clubs’ matches are the ones Rai Radio 1 has carried in past seasons",
+      "address": "Not applicable — fixture list",
+      "hours": "Tue 13 Oct: 18:45 Lens v Sporting CP, Sabah v Slavia Praha; 21:00 Arsenal v Lille, Atlético de Madrid v Man Utd, Inter v Club Brugge, Galatasaray v Barcelona, Leipzig v PSV, Viking v Bayern München, Villarreal v Napoli. Wed 14 Oct: 18:45 Feyenoord v Como, LASK v Liverpool; 21:00 Roma v Real Madrid, Aston Villa v Fenerbahçe, Shakhtar Donetsk v AEK Athens, Bodø/Glimt v Dortmund, Man City v PSG, Real Betis v Porto, Slovan Bratislava v Stuttgart.",
+      "price range": "Not applicable",
+      "description": "UEFA’s official fixture list for matchday 2 falls on the first two nights of the trip. Kickoffs are listed in Central European time, which Malta uses. No English-language over-the-air commentary in Malta was verified for these matches. Rai Radio 1 (DAB+) is the likeliest Italian-language option for the Inter, Napoli, Como and Roma games, based on past seasons.",
+      "source_url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Checked 11 Oct 2026 (UEFA article; kickoffs 21:00 unless stated, Central European time). Radio carriage is not confirmed; see the Rai Radio 1 record. Matchday 3 is on 20–21 Oct, after the trip."
+    },
+    {
       "id": "am-mw-no-current-sports-service-confirmed",
       "name": "AM / medium wave — no current sports broadcast verified",
       "category": "Coverage checks",
@@ -93,6 +138,21 @@
       "confidence": "partially verified",
       "notes": "The current Broadcasting Authority licensed-stations list was checked on 11 Oct 2026 (https://ba.org.mt/stations-licenced). Absence from the list is not a guarantee that no distant AM signal can ever be received; do not rely on an AM sports programme without current station confirmation. Historical context: https://tvmnews.mt/en/news/radju-malta-is-53-years-old/.",
       "price range": "Not applicable"
+    },
+    {
+      "id": "kalshi-access-while-travelling",
+      "name": "Kalshi — trading while in Malta (check eligibility first)",
+      "category": "Coverage checks",
+      "area": "Applies to use from Malta, 13–19 Oct",
+      "address": "Not applicable",
+      "hours": "Not applicable",
+      "price range": "Not applicable",
+      "description": "Kalshi’s help centre says trading from outside the US, and using Kalshi while travelling, is allowed only where consistent with the eligibility and geographic requirements of the Kalshi Member Agreement. It does not say whether Malta is supported, and this guide did not check the Member Agreement’s country list. Confirm in the app or agreement before the trip. Which of the fixtures on this page have Kalshi markets was not checked either.",
+      "source_url": "https://help.kalshi.com/en/articles/14026044-can-i-trade-on-kalshi-from-outside-the-united-states",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Checked 11 Oct 2026. The help article also lists debit card (Visa/Mastercard), wire transfer (minimum $1,000) and cryptocurrency as international deposit methods, depending on region. This guide does not recommend using a VPN or any other way around location checks."
     }
   ]
 }

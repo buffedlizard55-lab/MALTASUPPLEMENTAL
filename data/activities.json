@@ -438,6 +438,51 @@
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
       "notes": "The 2026 calendar lists “Sailing Spectacle: Middle Sea Race Viewing” at Fort St Elmo on 17 October but gives no event-specific time or price. Contact Heritage Malta before relying on this special viewing; it is not a confirmed free event."
+    },
+    {
+      "id": "malta-aviation-museum-taqali",
+      "name": "Malta Aviation Museum",
+      "category": "Near the event venue",
+      "area": "Ta’ Qali (next to the event-day bus stop)",
+      "address": "Ta’ Qali; the museum says it is served by the “Stadium” stop on Routes 56, 186 and 202",
+      "hours": "Monday–Saturday 09:00–17:00; Sunday 09:00–12:00 (noon); last entry 16:00. Closed on some public holidays (none during 13–19 Oct listed).",
+      "price range": "Adults €9.00; seniors €7.00; students €7.00; children (3–12) €3.00; free parking",
+      "description": "A volunteer-run museum in hangars at Ta’ Qali with restored aircraft from Malta’s aviation history. It is on the same Route 186 bus line used for the event and a few minutes’ walk from the Crafts Village, so it fits around group-stage sessions. Check last entry (16:00) against match times.",
+      "source_url": "https://www.maltaaviationmuseum.com/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Checked 11 Oct 2026 on the museum’s official homepage (hours, fees, bus routes and listed closure days: 10 Feb, Good Friday, Easter Sunday, 29 Jun, 15 Aug, Christmas Eve/Day and New Year’s Day). Walking time from the stop to the BLAST Arena Studios entrance was not checked."
+    },
+    {
+      "id": "mosta-rotunda",
+      "name": "Mosta Rotunda (Basilica of the Assumption)",
+      "category": "Near the event venue",
+      "area": "Mosta (between Qawra and Ta’ Qali)",
+      "address": "Rotunda Square, Mosta (address per directory listings; the parish page does not give a street address)",
+      "hours": "Visitor hours: Monday–Friday 09:30–18:00 (last entry 17:30); Saturday 09:30–16:30 (last entry 16:00); Sunday 12:00–17:00 (last entry 16:30)",
+      "price range": "€5 short visit (basilica, WWII shelter, phone audio guide); €8 full experience (adds crypt, church museum, dome exterior walk and inner dome balcony)",
+      "description": "One of the world’s largest unsupported domes. The church displays a replica of the 1942 bomb that pierced the dome without exploding, and you can visit a wartime shelter. The parish lists Routes 45, 186, 31, 48 and 280 from the Qawra bus terminus, so it is an easy stop on event days.",
+      "source_url": "https://mostachurch.com/?lang=en",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Checked 11 Oct 2026 on the Mosta Parish portal (hours, fees and bus routes). Some third-party guides say the €5 ticket includes the inner balcony; the parish page puts the inner balcony in the €8 ticket. Visits may pause during services. Address: https://wanderlog.com/place/details/225086/rotunda-de-mosta (directory). Tour bookings: https://mostarotundafoundation.org/book-a-tour/ ."
+    },
+    {
+      "id": "dash-berlin-uno-malta-oct17",
+      "name": "Dash Berlin at UNO Malta — Saturday 17 October",
+      "category": "DJ event / nightlife",
+      "area": "UNO Malta (venue location not verified here)",
+      "address": "Not published on the listing checked",
+      "hours": "Saturday 17 October 2026, 22:00 (as listed)",
+      "price range": "Not checked — see the ticketing site",
+      "description": "EventWorks, a Malta ticketing site, lists a Dash Berlin DJ event at UNO Malta on Saturday 17 October at 22:00, the evening of the TWC semifinals. Ticket price, age limits and the venue address were not checked.",
+      "source_url": "https://eventworks.mt/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Seen on the EventWorks homepage listing on 11 Oct 2026; the individual event page was not opened. Late-night return transport to Qawra is not covered here; see the transport page."
     }
   ]
 }
