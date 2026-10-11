@@ -46,6 +46,21 @@ Shared schema (`data/record.schema.json`), the renderer (`js/site.js`), the navi
 ### Conflict avoidance
 Arena fixes this session to one branch and provides no isolated per-workstream runner, so A–F execute **serially on this branch**, each editing only its owned files. Cross-topic discoveries are written to `docs/HANDOFF.md`; anything unverifiable goes to `docs/OPEN_QUESTIONS.md`. No workstream rewrites another's page. `main` is re-checked before the PR and merged in before the final gate run.
 
+### Session log — what was actually done (11 October 2026)
+
+| Stream | Delivered this session | Records |
+|---|---|---|
+| **E · Radio** | 6A/6C/12A block map added to `radio.html`; the “Sports Channel” row rewritten as 6C (`C02F`, 32 kbit/s) and the two pages that told the reader to scan both blocks corrected; the WorldDAB 12A attribution marked unverified and superseded; observation dates pinned per block (6C/12A tables 13 Jan 2026, 6A table 19 Jan 2025 with a 13 Jan 2026 ensemble row); a decade of 6C carriage documented from the monitor's own 2015–2026 timeline; a broken table row and a typo repaired; Rai, BBC, Sportiva and Kalshi evidence cells sharpened | radio 21 → 25 |
+| **A · Transport** | Route 186 diversion dated precisely (starts 17 Oct, so Friday 16 Oct is unaffected); the three unlabelled 186 timetable variants recorded instead of one “last bus”, and every page that quoted a single figure hedged; Route 405 added at Stadium 6227; the MFCC's own address and switchboard added for gate and access questions; the Uber Malta URL recorded as a 404 dead end and the ride-hailing record rebuilt on Bolt and eCabs | transport 30 → 34 |
+| **D · Everyday** | State Department Malta advisory (Level 1, 9 Jul 2026) recorded with its rip-current caution, plus a page section on safety, STEP, insurance and the embassy's position in the same Ta' Qali/Attard area as the venue; embassy, passport and time-zone records grounded in that page | everyday 19 → 20 |
+| **B · Food** | Community picks from six r/malta threads captured through search extracts, with the HTTP 403 blocks, the unranked nature of the list and the absence of any verification stated in the record | food 48 → 49 |
+| **C · Activities** | Three dated events added: Gozo kite festival (17–18 Oct), Studio Theatre listing (17–18 Oct) and Malta Comic Con at the same MFCC venue on 11–12 Oct as venue-load context | activities 47 → 50 |
+| **G · Shell & docs** | Overview, README, final report, handoff and open questions corrected wherever the superseded 12A or a single last-bus figure survived; new sources logged; OQ-28 closed | 7 files |
+
+**Pass 2 (adversarial) outcomes.** The two conflicting Route 186 detour notices were separated by date and the trip-week notice identified; the three unlabelled 186 timetable variants were treated as a shape rather than a promise; every surviving 12A claim outside the historical session records was corrected; the 6A record's observation date was found to be a year older than the 6C/12A tables and corrected; the ride-hailing record was found to cite an Uber URL that 404s and was rewritten; and an in-page anchor sweep across all 15 pages returned zero unresolved targets.
+
+**Pass 3 (line-by-line audit).** Each original requirement was walked against the integrated site — see the audit table in `docs/FINAL_REPORT.md`. Full local suite (`npm test`) run on the final tree.
+
 ### Verification gates / passes
 1. **Pass 1** — implement: fresh primary-source reads, new records with all 13 fields, pages/data in step, source-log rows for every new URL.
 2. **Pass 2** — adversarial review: re-read the riskiest claims, look for stale/inherited contradictions, check mobile/desktop layout, link integrity, planner edge cases, and that nothing unverified reads as fact.

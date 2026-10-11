@@ -1,5 +1,51 @@
 # Malta trip guide — final report
 
+## Current session — `arena/1005fdbf-maltasupplemental` (11 October 2026 UTC)
+
+### Delivery summary
+
+The repository was reviewed first and the existing structure preserved: static Pages shell, shared navigation and renderer, the exact 13-field record schema, seven topic datasets, master source log, open questions, status file, blank-by-default expense planner, CI workflow and Playwright suite. Workstreams A–F then ran serially on this one fixed branch, each editing only its owned files, with G correcting the shared surfaces afterwards.
+
+**Evidence delta:** 199 → **212** exact-schema records (radio 25, transport 34, everyday 20, food 49, activities 50, event 9, expenses 25); 314 → **322** logged record URLs.
+
+**The headline correction.** Two earlier sessions had left the sports-radio requirement in a holding pattern: one directory placed a “Sports Channel” on DAB+ block 12A, another on 6C, and the pages told the traveller to scan both without ranking them. A dated field observation of Malta's multiplexes (page updated 30 January 2026) settles it. Its **6C** service table, captioned **13 January 2026**, lists `Sports Channel` — service ID **C02F**, 32 kbit/s, DAB+ stereo HE-AAC v2 — and its **12A** table, same date, lists only Smooth Platform music services with **no sports service at all**. The monitor's own ensemble timeline additionally lists a sports service on 6C in every snapshot from 20.01.2015 to 13.01.2026: roughly a decade of carriage under a stable label. The WorldDAB 12A attribution is now recorded as unsupported and superseded, the record that carried it is marked unverified, and the corrected position has been propagated to the overview, README, final report, handoff and open questions. What remains unverified is narrower and honest: **what the service airs on 17–18 October 2026** (a 2023 enthusiast field report called it a talkSPORT relay) and indoor reception at the hotel or venue.
+
+**Other corrections made this session.** The monitor's **6A** table has a different date from the 6C/12A tables — service names re-listed on 13 January 2026, but the service IDs and bitrates from a table captioned 19 January 2025 — so BBC World Service and Rai carriage is now dated precisely rather than lumped under one date. The Route 186 diversion notice's own wording was read in full: it **starts on 17 October**, so Friday 16 October runs on the ordinary timetable while Saturday 17 October, 19:00–00:00, sits inside the window, and the notice's unrelated April predecessor is recorded separately. The Route 186 page publishes **three unlabelled timetable variants** with the Ta' Qali Stadium stop ending at 20:53/20:54 in one and 22:04/22:08 in others; every page that had quoted a single figure as “the last bus” now states the variant problem instead. Route **405** (Ta' Qali Park & Ride–Mosta) was found calling at Stadium stop 6227, and the **MFCC's own address and switchboard** — Millennium Stand, Level 1, The National Stadium, Ta' Qali, ATD 4000; 2141 0371 / 23380110 — was added as the contact for gate and access questions. Finally, a draft ride-hailing note citing Uber's Malta city page was falsified: that URL returns Uber's own “we couldn't find that page”, so the record was rebuilt on Bolt and eCabs with the dead end written down.
+
+### Pass 3 audit — the original request, line by line
+
+| Original requirement | Where it is answered | Status |
+|---|---|---|
+| Hotel, dates, event venue and dates | `hotel.html`, `event.html`, `data/event.json` | Met; gate and Saturday/Sunday agenda still unpublished |
+| Restaurants, food and cafés from Google/Yelp/Instagram/TikTok/Facebook/Reddit/X | `restaurants.html`; dated TripAdvisor review-volume snapshot plus a new Reddit community-picks record and per-platform coverage statement | Partially met **by access**: TripAdvisor and (via search extracts) Reddit are represented; Google Maps place data, Yelp, Instagram, TikTok, Facebook and X were unreachable from this environment and that is stated on the page rather than papered over |
+| Gaming centres | `activities.html`; arcade and VR records; explicit “no public PC-gaming café verified” | Met with an explicit negative finding |
+| Landmarks | `landmarks.html`, `activities.html` | Met |
+| Categories, sections, subpages, desktop and mobile, fast to find | Navigation across 15 pages, quick-link rows, client-side search/filter, responsive tables with mobile data labels | Met; browser tests assert the mobile/desktop table behaviour |
+| Public transport, ride share and other modes compared on convenience, price, value, feasibility | `getting-around.html` mode cards, fare callout, day-by-day plan | Met; judgments are labelled as judgments and no journey time or walk is claimed as measured |
+| How to reach BLAST Arena Studios (Attard) by public transport on event days | `#event-day-by-date`, `#event-checklist`, route records | Met as far as the sources allow: the 186 corridor, the asymmetric return, Route 214/202/405 alternates and the late-finish gap are all documented; no confirmed gate, no date-specific planner run |
+| Airport and hotel logistics | TD1 and Route 214 records; fare and sales-point records | Met; season boundary remains third-party inference |
+| US-traveller everyday life: plugs, SIM/eSIM, money/tipping, safety, health, customs, language, weather | `everyday.html`; 20 records covering all eight topics, now including the State Department advisory and consular contacts | Met |
+| Radio: live terrestrial sport with verified official schedules | `radio.html`; block map, listening plan, station records | Met as an evidence set, not a guarantee: carriage is now verified for the sports blocks, Rai's weekend format is official, BBC episode starts are dated, and every interval that is **not** verified is labelled |
+| Expense planner ready for quick entry | `costs.html`; blank by default, quick-fill preview, CSV/JSON backup, covered by tests | Met |
+| Executive summary, sections and subpages, verified source links | `index.html` executive summary; `sources.html`; `docs/SOURCES.md` | Met; validator confirms every record URL appears in the source log |
+| Line-by-line verification, no hallucinated facts | This table, the per-record `date_checked`/`confidence` fields and the open-questions file | Met by process: every correction above came from a re-read, and two claims were removed rather than kept |
+
+### Passes and observed local gates
+
+1. **Pass 1** — fresh primary-source reads; 13 new records with all 13 fields; pages and data kept in step; every new URL logged.
+2. **Pass 2** — adversarial review found and fixed: the 6A observation-date mismatch, the surviving 12A claims outside historical records, the single last-bus figure, the unhedged Friday diversion, and a ride-hailing record resting on a dead URL; an in-page anchor sweep across all 15 pages returned zero unresolved targets.
+3. **Pass 3** — the table above, plus the full local suite on the final tree.
+
+**Local gate results (observed):** `python3 scripts/validate_site.py` → `PASS: 7 JSON files / 212 exact-schema records; 322 unique record URLs found in docs/SOURCES.md; 15 HTML pages / 356 link attributes checked; 9 shared navigation destinations; 25 expense rows wired.` `npm test` → **23 passed**, including the radio trip-week table test at mobile and desktop widths.
+
+### Still needed / next-session priorities
+
+1. **Radio content, not carriage.** With a DAB+ receiver bought in Malta, scan 6C (Sports Channel, Radio Sportiva) and 6A (Rai RadioUno, BBC World Service) at the hotel and the venue and log what actually airs during 17–18 October. Written schedules do not exist for the trip dates on any station's site.
+2. **The event-day return.** Confirm the Saturday/Sunday finish times and the attendee gate with the organiser or the MFCC switchboard, run MPT's date-specific planner for 14–18 October, and ask MPT whether a TQ event service will run. The published last return and the published agenda do not currently meet.
+3. **Fares.** Ask MPT which single fare applies on 13–19 October; the operator page still prints only the 2025/26 winter window and the trip-week split rests on third-party guides.
+4. **Food and activities.** Check the community-picks shortlist for current trading, and confirm aggregator-only events (Gozo kite festival, Studio Theatre) with their organisers.
+5. **Platform gaps.** Google Maps place data, Yelp, Instagram, TikTok, Facebook and X remain unreadable from this environment; a session with a browser and a residential IP should close that gap rather than infer from it.
+
 ## Current session — `arena/3031b29b-maltasupplemental` (11 October 2026 UTC)
 
 ### What this pass did

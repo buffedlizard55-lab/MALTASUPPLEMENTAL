@@ -1,3 +1,4 @@
+<!-- Session addendum appended by the arena/1005fdbf session; historical sections below are preserved. -->
 # Delivery status — Malta trip guide
 
 ## Current session addendum — `arena/9bd7eeb7-maltasupplemental` (11 October 2026)
@@ -16,6 +17,21 @@
 
 **Gate results (11 October 2026, this session):** validator PASS; JavaScript check PASS; Playwright 23/23 passed. Details in `docs/PLAN.md` "Current session plan".
 
+## Current session addendum — `arena/1005fdbf-maltasupplemental` (11 October 2026)
+
+**Stage:** Passes 1–3 complete on the branch; radio workstream verified and committed; full local suite run. PR opened from this branch and merged to `main`; the Pages build for the merge commit is reported as observed, not assumed.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Route 186 diversion dated to a 17-October start; three unlabelled timetable variants recorded instead of a single last-bus figure; Route 405 and the MFCC switchboard added; Uber URL recorded as a dead end | No date-specific planner run, no confirmed gate, no measured walks; trip-week fare season still rests on third-party evidence; TQ event service still unpublished |
+| **B · Food & cafés** | Community picks from six r/malta threads added as a dated, unranked shortlist drawn from search extracts | Direct reddit.com access is 403 here; Yelp, Instagram, TikTok, Facebook and X remain unreachable; no venue checked for current trading |
+| **C · Activities, gaming, landmarks & events** | Three dated events added (Gozo kite festival, Studio Theatre, Malta Comic Con at MFCC) | Aggregator-only listings; Gozo logistics and Studio Theatre venue unverified; no PC-gaming café exists in the verified record |
+| **D · Everyday (U.S. traveller)** | State Department advisory, consular contacts, safety and STEP section added; all eight requested topics have records | EES/ETIAS status remains date-sensitive and conflicting; mobile/eSIM and weather records stay partially verified |
+| **E · Sports radio** | DAB+ block question resolved to 6C with dated observations; 12A claim superseded and purged from every surface; block map and corrected row live | What “Sports Channel” airs on 17–18 October is unverified; no receiver scan; no station publishes a trip-week named-match list |
+| **F · Expense planner** | Unchanged this session — blank by design, quick-fill preview, CSV/JSON backup, covered by tests | Nothing to plan until the traveller's actual itinerary and amounts are entered |
+| **G · Shell, executive summary, integration** | Overview, README, final report, handoff, open questions and source log corrected; anchor sweep clean | Live Pages rendering still to be confirmed after merge |
+
+**Evidence delta this session:** 199 → 212 exact-schema records; 314 → 322 logged record URLs.
 
 **Last updated:** 11 October 2026 (UTC)
 **Current session branch:** `arena/3031b29b-maltasupplemental`
