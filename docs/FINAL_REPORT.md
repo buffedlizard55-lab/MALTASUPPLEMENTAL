@@ -78,3 +78,8 @@ Raw upstream docs/leads are retained under `UPSTREAM_2026-10-11_*`, `UPSTREAM_2f
 6. Test on the traveler’s phone/receiver/browser and with assistive technologies; re-open volatile official sources before departure and each event.
 
 This is a planning aid, not an admission, dispatch, immigration, tax, legal, medical, radio or booking guarantee.
+
+## Session addendum — 11 October 2026 (`arena/c4522181-maltasupplemental`, PR #28)
+
+- **Validator guard & mode comparison:** Added a regression check in `scripts/validate_site.py` enforcing `record["price range"]` in `costs.html` and forbidding legacy `record.price_range` in `costs.html` or `js/site.js`, and added `mode-comparison-island-and-event` in `data/transport.json` (15 transport records; 125 total site records).
+- **TD1 Qawra stop & 112 primary-source confirmation:** Read chunks 7–9 of `https://www.publictransport.com.mt/route/TD1/` confirming TD1 serves `Il-Qawra` stop `Arznell (950)` hourly in both directions (`05:42–00:35` from Airport 1; `05:28–23:26` weekday / `05:27–23:27` weekend toward Airport 3), and read chunks 1–3 of `https://travel.state.gov/en/international-travel/travel-advisories/malta.html` confirming emergency number **112** (plus 179 and 116-006), upfront payment expectations at private hospitals, and American Express/ATM guidance. Logged BBC *Sportsworld*’s 11 Oct EPL billing (`w1730c9208pxyf8`) alongside the 17–18 Oct listings.

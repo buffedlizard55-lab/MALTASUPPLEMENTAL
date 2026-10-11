@@ -41,3 +41,7 @@ Use this log for findings that belong to another topic; do not edit that workstr
 ## Latest upstream2f90396 integration
 
 A/B/C/E→G: preserve independentlycheckedUber,Fontanella,TaMarija,AviationMuseum,Mosta,Raiandexplicit-zoneEPLfixturefacts; qualifySundaycutoff/XLcapacity,withholdOctoberhours andRadio/Kalshimappings. G: testedappbehaviorretained overredundantupstreamUI/price-keypatches; appendrawupstreamhistoryoutsidecanonicaldata. RepeatcumulativePass3suiteafterthissecondintegration.
+
+## Additional 11 October verification pass (`arena/c4522181-maltasupplemental`)
+
+- A/D/E/F → G: (1) Added a validator regression guard in `scripts/validate_site.py` enforcing `record["price range"]` in `costs.html` and forbidding legacy `record.price_range` in `costs.html` or `js/site.js`. (2) Added `mode-comparison-island-and-event` to `data/transport.json` (15 transport records; 125 total site records). (3) Read `https://www.publictransport.com.mt/route/TD1/` (chunks 7–9), confirming TD1 serves `Il-Qawra` stop `Arznell (950)` hourly in both directions (`05:42–00:35` from Airport 1; `05:28–23:26` weekday / `05:27–23:27` weekend toward Airport 3). (4) Read chunks 1–3 of `https://travel.state.gov/en/international-travel/travel-advisories/malta.html`, confirming emergency number **112** (plus 179 and 116-006), upfront private-hospital payment notes, and American Express/ATM guidance. (5) Logged BBC *Sportsworld*’s 11 Oct EPL billing (`w1730c9208pxyf8`) alongside the 17–18 Oct listings.

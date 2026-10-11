@@ -46,7 +46,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Official programme page: https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming. Episode pages: https://www.bbc.co.uk/programmes/w1730c92ck0m2cw and https://www.bbc.co.uk/programmes/w1730c92ck0q313. The 11 October Saturday extraction shows 09:06 Local time; neither that label nor “GMT” in the episode title establishes the displayed clock’s timezone. Earlier GMT/Malta conversions removed. Malta directory: https://dab.com.mt/channels/. Check the BBC page with an explicit timezone/feed before tuning; named-match commentary and on-location DAB reception remain unconfirmed.",
+      "notes": "Official programme page: https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming. Episode pages: https://www.bbc.co.uk/programmes/w1730c92ck0m2cw and https://www.bbc.co.uk/programmes/w1730c92ck0q313 (and Sunday 11 October precedent episode https://www.bbc.co.uk/programmes/w1730c9208pxyf8, which the upcoming-broadcasts list explicitly bills as “Live sport from around the world - including the English Premier League”). The 11 October Saturday extraction shows 09:06 Local time; neither that label nor “GMT” in the episode title establishes the displayed clock’s timezone. Earlier GMT/Malta conversions removed. Malta directory: https://dab.com.mt/channels/. Check the BBC page with an explicit timezone/feed before tuning; named-match commentary and on-location DAB reception remain unconfirmed.",
       "price range": "Free-to-air broadcast; DAB+ receiver required for radio reception; hardware price not checked"
     },
     {

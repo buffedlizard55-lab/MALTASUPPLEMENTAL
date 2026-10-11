@@ -26,12 +26,12 @@
       "area": "Malta",
       "address": "Not applicable — island-wide currency",
       "hours": "Not applicable",
-      "description": "The Government of Malta identifies the euro as the national currency. Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars.",
+      "description": "The Government of Malta and the U.S. State Department confirm the euro (€) is the national currency; the State Department also notes that American Express credit cards are not widely accepted and that ATMs accept U.S.-issued bankcards (though cash withdrawals frequently incur an ATM fee). Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars or American Express.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. No bank, exchange rate, or card-acceptance guarantee is made here.",
+      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. The U.S. State Department Malta page (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 0–1 read 11 Oct 2026) explicitly states that the euro is the official currency, American Express is not widely accepted, ATMs accept U.S.-issued bankcards (often with an ATM fee), and the currency limit is €10,000 or equivalent on entry and on exit.",
       "price range": "Use euro (€) as the reference currency; exchange and card fees depend on your provider"
     },
     {
@@ -115,14 +115,14 @@
       "category": "Safety, health & emergency contacts",
       "area": "Malta",
       "address": "Not applicable — emergency services are island-wide",
-      "hours": "112 emergency service: 24 hours a day",
-      "description": "The Maltese health ministry lists 112 for emergency ambulance, fire, and police services. If you need urgent help, call 112. The U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure; do not assume a U.S. health plan covers care abroad.",
+      "hours": "112 emergency service and 179 national helpline: 24 hours a day",
+      "description": "Both the Maltese health ministry and the U.S. State Department Malta advisory list 112 for emergency ambulance, fire, and police services (plus 179 for Malta’s 24/7 national helpline and 116-006 for victim support). Medical care in Malta is not free to visitors and private hospitals often require upfront payment; the U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure.",
       "source_url": "https://health.gov.mt/services/health-services/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance recommends travel insurance, including medical and evacuation assistance: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. Independently re-read 11 October: the ministry’s HelpLines and Support table explicitly lists Emergency — Ambulance, Fire, and Police: 112, 24/7. This resolves the contrary upstream claim that the number was not on the page.",
-      "price range": "Costs/coverage depend on treatment and insurance; not stated here"
+      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 1–2 read 11 October): explicitly confirms dialing 112 for ambulance, fire brigade, police, and emergency medical services (plus 179 for the 24/7 national helpline, 1579 for mental health, and 116-006 for victim support), notes that medical care is not free to visitors and private hospitals often require upfront payment, and states that no vaccinations are required and tap water is generally safe to drink. Independently re-read 11 October: the ministry’s HelpLines and Support table also explicitly lists Emergency — Ambulance, Fire, and Police: 112, 24/7.",
+      "price range": "Costs/coverage depend on treatment and insurance; private hospitals often require upfront payment"
     },
     {
       "id": "us-embassy-malta",
