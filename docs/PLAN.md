@@ -1,6 +1,40 @@
 # Malta trip guide — work plan
 
-## Current session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
+## Current session plan — `arena/9bd7eeb7-maltasupplemental` (11 October 2026)
+
+**Starting point:** `origin/main` `ae69ab1` (PR #55 merge; PRs #56 and #57 already merged). The local clone was unshallowed before this pass. The branch is fixed and all work stayed on it. Workstreams ran one at a time, with no sub-agents, because this session has one branch.
+
+| Stream | This session's re-check | Files changed |
+|---|---|---|
+| **A · Transport** | Route 186 stop index (chunks 1–3), timetable grids (chunks 12, 13, 15), service-update notices, fares, taxi tariff | Docs only |
+| **B · Food & cafés** | Social platforms re-attempted (HTTP 403) | Docs only |
+| **C · Event** | Eventbrite, Thunderpick, HLTV, Liquipedia | Docs only |
+| **D · Everyday** | ETIAS, EES FAQ, eco-contribution | Docs only |
+| **E · Radio** | BBC Sportsworld, DAB+ directory (correction), regulator FM list, 6C, Premier League times | Docs only |
+| **F · Expenses** | Planner unchanged; amounts stay blank | None |
+| **G · Integration** | Session blocks in PLAN, STATUS, HANDOFF, OPEN_QUESTIONS, SOURCES; OQ-28 corrected | Docs only |
+
+**Pass 1 — implement and verify.** Re-read the live sources listed above. Logged every read in SOURCES with its date and limit. Gates run after the docs edits: `python3 scripts/validate_site.py` PASS (7 JSON files / 199 records; 319 record URLs found in SOURCES; 15 HTML pages / 340 link attributes; 9 navigation destinations; 25 expense rows wired); `python3 scripts/check_javascript.py` PASS; `npx playwright test` 23 passed (log `/tmp/pw2.log`, not in the repo).
+
+**Pass 2 — adversarial review.** Checks that changed the outcome:
+- The DAB+ directory was described as “read in full”. It ends in a “Load more” control, so the claim was overstated. Corrected in OPEN_QUESTIONS (OQ-28 and OQ-S3) and SOURCES.
+- The Route 186 Qawra 952 “conflict” is a range across unlabelled variants, not a fresh error. Kept as a range (OQ-S2).
+- The Stadium 2194 return row was not reproduced in the chunks read. Recorded as OQ-S1 instead of asserted.
+- The `index.html` room card anchor `activities.html#ax-odycy-base-hotel` is built at runtime from the `ax-odycy-base-hotel` record in `data/activities.json`, so it resolves. No change.
+- The hotel address and room list match the hotel's own page. The booked room type is still unverified.
+
+**Pass 3 — full re-check against the request.** Requirement map:
+- Zero hallucinations and line-by-line verification: unverifiable items sit in OPEN_QUESTIONS; new claims are cited to rows in SOURCES.
+- Real social sources: all attempts logged as HTTP 403; no social content claimed.
+- Shared files last (G): done after topic work.
+- Expense planner blank: unchanged.
+- Radio over-the-air with official schedules and Kalshi EPL: unchanged; carriage still unconfirmed.
+- PR and merge to `main`, plus remaining work and limitations: see the final chat report.
+
+**Remaining work for the next session:** (1) confirm the Stadium 2194 return row in the MPT date-specific planner or a dated grid; (2) confirm the Saturday 17 October Route 186 diversion with MPT before departure; (3) re-read the Eventbrite Saturday/Sunday agenda and FAQ; (4) open the Kalshi Member Agreement before relying on any Kalshi eligibility claim; (5) check the DAB+ directory's “Load more” results for a Sports Channel tile; (6) the traveller supplies the itinerary and amounts for the expense planner.
+
+## Previous session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
+
 
 Repository review found the existing static Pages shell, canonical 13-field record schema, per-topic JSON data/pages, source log, open-questions/status records, expense planner, CI workflow and browser tests. Preserve them; do not create duplicate structure. Shared setup is already present and will be kept serial: verify `data/record.schema.json`, existing navigation/renderer and CSS tokens, and the master-source row format before topic work. This Arena session has one fixed branch and no isolated workstream runner, so A–F research/edits run one at a time with the listed ownership; G updates shared presentation/docs after topic work. Cross-stream discoveries go to `docs/HANDOFF.md`/`docs/OPEN_QUESTIONS.md`, not another stream's page/data file. During the session, `origin/main` advanced beyond the starting `250e6bd` through PRs #51–#56. The fixed branch was rebased onto the latest `origin/main` at `6da8aba`, preserving the merged source-led popularity, gaming, entry, per-date event-transport, timezone-pinned matchup and reporting updates before the final integration pass.
 
