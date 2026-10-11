@@ -195,6 +195,8 @@ def validate_data() -> tuple[dict[str, dict], set[str], int]:
     costs_html = (ROOT / "costs.html").read_text(encoding="utf-8")
     if not re.search(r"fetch\([\"']data/expenses\.json[\"']\)", costs_html):
         fail("costs.html is not wired to data/expenses.json")
+    if 'record["price range"]' not in costs_html or "record.price_range" in costs_html:
+        fail('costs.html must read record["price range"] rather than record.price_range')
 
     return datasets, logged_urls, total_records
 

@@ -213,6 +213,21 @@
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Independently read 11 October: operator page offers several vehicle classes but contains conflicting UberXL capacity copy (six and eight). Do not rely on a seat count from that page; check the actual app vehicle/capacity, quote and pickup instructions. https://www.uber.com/global/en/r/cities/valletta-valletta-mt/"
+    },
+    {
+      "id": "mode-comparison-summary",
+      "name": "Transport mode comparison — convenience, price, value & feasibility",
+      "category": "Bus fares",
+      "area": "Malta-wide (Airport, Qawra, Ta’ Qali & island connections)",
+      "address": "Not applicable — mode-by-mode comparison across published operator services",
+      "hours": "Depends on selected mode: Route 186 Qawra stop 952 listed 06:09–21:39 (30-min frequency) with last listed return from Ta’ Qali Stadium at 20:53 (arriving Buġibba Bay at 21:27); TD1 hourly; app ride-hailing/taxis on demand; ferries by seasonal timetable",
+      "price range": "Bus: €2.50 summer / €2.00 winter day ticket, €3.50 TD1, €19 12-journey, €25 7-day Explore Adult, €27 7-day Explore Flex; Ferries: €3–€8.50 published adult fares; Ride-hailing/taxis & car hire: live quote required",
+      "description": "Public buses offer the lowest published fares (Airport Direct TD1 €3.50 without an eligible unlimited card; day tickets €2.50 summer / €2.00 winter; €19 12-journey card; €25 Explore Adult or €27 Explore Flex 7-day card) and direct scheduled corridors (TD1 and Route 214 for the airport; Route 186 and Route 214 between Qawra and Ta’ Qali), but require checking stop-to-door walks, the Route 186 return cutoff from Ta’ Qali Stadium (20:53, arriving Buġibba Bay at 21:27 rather than the Qawra seafront), and the Saturday 17 October 19:00–00:00 Route 186 detour. Ride-hailing and taxis (Bolt, eCabs, Malta Taxi) give the highest door-to-door convenience and best late-return feasibility at dynamic app/dispatch prices. Rental cars (airport Park East Level 1) add flexibility for rural trips but are not required for Qawra or Ta’ Qali and involve left-hand traffic, narrow/congested roads, parking, fuel, and insurance costs. Ferries serve fixed water corridors (Valletta ↔ Sliema/Three Cities; Malta ↔ Gozo) subject to weather and the 14/17 October Gozo Highspeed race restrictions.",
+      "source_url": "https://www.publictransport.com.mt/journey-planner/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Synthesizes the verified operator sources in this dataset: MPT planner https://www.publictransport.com.mt/journey-planner/ , Route 186 https://www.publictransport.com.mt/route/186/ , Route 214 https://www.publictransport.com.mt/route/214/ , Airport Direct https://www.publictransport.com.mt/other-services/airport-direct/ , MPT fares https://www.publictransport.com.mt/fares-and-tickets/ , MPT service updates https://www.publictransport.com.mt/latest-service-updates/ , Bolt https://bolt.eu/en/cities/malta/ , eCabs https://ecabs.com.mt/ , Malta Taxi https://www.maltataxi.mt/ , Airport car rental https://maltairport.com/renting-a-car/ , Valletta Ferry Services https://www.vallettaferryservices.com/ , Gozo Channel https://www.gozochannel.com/ferry/fares/passenger/ , and Gozo Highspeed https://gozohighspeed.com/pages/fares ."
     }
   ]
 }
