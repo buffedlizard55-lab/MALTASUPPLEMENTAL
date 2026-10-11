@@ -1,6 +1,13 @@
 # Current cross-workstream handoff
 
-**Session:** `arena/dd9dd00c-maltasupplemental` · **updated:** 11 October 2026 UTC.
+**Session:** `arena/08099cd9-maltasupplemental` · **updated:** 11 October 2026 UTC.
+
+- **C → G:** The Eventbrite ticket block did not show “Free” in the 11 Oct read; the record now says so. HLTV's 2 Oct article corroborates free entry through an Eventbrite link. Keep the price flagged until checkout is checked.
+- **D → G:** The official EU ETIAS page still says “not in operation” today. The record is unchanged and needs a pre-departure recheck.
+- **E → G:** The Radio In Malta directory corroborates the talkSPORT “Sports Channel” label on DAB+ (block not given). Keep the 6C/12A conflict open; do not treat the directory as a schedule.
+- **A → traveler:** No change to the transport record. The first fares chunk and the Route 186 index were re-read. Timetable grids remain the 11 Oct evidence.
+
+## Previous handoff — `arena/dd9dd00c-maltasupplemental` · 11 October 2026 UTC
 
 - **A → G:** Service updates re-read in full. Route 186 October diversion remains Friday/Saturday 19:00–00:00 starting 17 October and ending 18 October at midnight, Gholja 2 through Targa toward Buġibba. A separate notice closes Saqqajja stop 4627 on Route 186 until “January 1” with no year. An earlier same-day operator trace places that stop before Stadium 2194 on the return. This pass did not re-walk the chain, so do not tell the traveler the Stadium stop is closed or guaranteed to be served.
 - **C → A/E:** Eventbrite still hides Saturday/Sunday agenda and FAQ answers. Its visible lineup names Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all. HLTV, Hotspawn and Liquipedia say NIP replaced Virtus.pro and name PARIVISION in Group B. That is not radio carriage, and the 16 September organizer release still named Virtus.pro.
