@@ -1,6 +1,6 @@
 # Workstream status
 
-Last updated: 2026-10-11 (UTC)
+Last updated: 2026-10-11 (UTC, third pass)
 
 | Workstream | Status | Blockers / caveats | Last updated |
 |---|---|---|---|
@@ -39,3 +39,19 @@ Last updated: 2026-10-11 (UTC)
 - **Corrections/additions:** Route 186 return direction re-read — Stadium stop 2194 (05:52–20:53), Qawra seafront stops (950–955) not served on the return, last Buġibba Bay 1 (2527) arrival 21:27 (correcting the carried-over 21:26); Saqqajja (4627) stop closure on the Rabat side logged; weather snapshot extended to 13–17 Oct; fare table fully recorded while the October 2026 single-fare window stays open; NET FM Friday 18:30 ‘Mhux Premier biss’ grid entry logged (content unverified); BBC Sportsworld start-time zone discrepancy documented and the earlier definitive GMT times removed; MTA contribution re-checked with the 15-night threshold noted; AX ODYCY property facts re-checked.
 - **Pass 2 (review):** The remaining unverified items are carried explicitly in `docs/OPEN_QUESTIONS.md`: TWC entrance/gate and daily public times, date-specific transit/return stop, October 2026 single-fare applicability, BBC start times, NET FM Friday show content, 18–19 Oct weather, Radio Sportiva licence/block, and platform-blocked review coverage.
 - **Pass 3 (requirements and audit):** All requested topics remain covered by data-backed pages; this session touched only records whose sources were actually re-fetched on 11 Oct, so no unverified claim was promoted. No browser screenshot or physical-device test was run.
+
+
+## Session pass — 11 Oct 2026, third pass (arena/d347388b; merged with PRs #21, #22, #24, #26)
+
+- **Pass 1 (implementation):** Synced to `main` at PR #21. Fixed the `costs.html` price-status bug. Added 12 records before the merge (transport 13→16, radio 6→10, activities 29→32, food 27→29) and updated the Route 186, fares and BBC Sportsworld records. Added event-day and listening-plan tables, rewrote the executive summary and moved the footer snapshot to 11 Oct. Then merged `origin/main` (PRs #22 and #24). Main's Guardian-sourced EPL record was upgraded in place to the official premierleague.com article rather than duplicated. Post-merge: radio 14, transport 16, activities 32, food 29, everyday 15, expenses 18. `scripts/validate_site.py` passes (6 JSON files / 124 records incl. expenses / 212 cited URLs / 89 link attributes); `node --check js/site.js` and `git diff --check` pass. A jsdom DOM run loaded the transport, radio, food, activities, planner and home pages: all record counts rendered, search found the new records, and 18/18 planner rows show a price status.
+- **Pass 2 (bugs and edge cases):** Corrected two overstatements (airport-taxi "recent posts", the transport table's 20:45 threshold). Restored Route 186 stop 2194 as the Buġibba-bound stop; PR #21 had removed it after reading only the Rabat-bound section. Mosta Rotunda prices follow the parish page (€5 short / €8 full) rather than third-party guides. OPEN_QUESTIONS rows updated.
+- **Pass 3 (request recheck):** The radio page now ties official over-the-air schedules (BBC, Rai, NET FM) to Kalshi-relevant fixtures in Malta time, with Kalshi eligibility flagged rather than assumed. Event-day transport covers both directions and late returns. Still open: named commentary matches, Rai 2026–27 Champions League carriage, Kalshi Malta eligibility, 15–16 Oct TWC times, the 18–19 Oct forecast (Met Office snapshot now covers 13–17 Oct), a tipping norm, and TWC entrance/tickets. No real-browser screenshot: the Chromium download is blocked in this sandbox.
+
+| Workstream | Status | Blockers / caveats | Last updated |
+|---|---|---|---|
+| A. Transport | Updated | Return stop 2194 / last 20:53; Uber + unverified airport taxi fare; Explore Flex. Planner check per date still needed. | 2026-10-11 |
+| B. Food | Updated | +Fontanella (hours conflict), +Ta' Marija (October hours not published). | 2026-10-11 |
+| C. Activities | Updated | +Aviation Museum, +Mosta Rotunda, +Dash Berlin 17 Oct (details unchecked). | 2026-10-11 |
+| E. Radio | Updated | Fixture map + Rai Radio 1 + Kalshi note; commentary matches unannounced. | 2026-10-11 |
+| F. Expenses | Bug fixed | Price status now renders. | 2026-10-11 |
+| G. Integration | Updated | Summary, CSS tables, docs; PR to follow. | 2026-10-11 |

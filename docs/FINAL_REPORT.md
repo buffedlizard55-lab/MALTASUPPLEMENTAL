@@ -85,3 +85,37 @@ This session performed an independent second verification pass on top of the fir
 - **Re-fetched and updated:** Malta Met Office 7-day forecast (now covering 13–17 Oct: isolated showers 13 Oct, mainly sunny 14–16 Oct, mainly cloudy 17 Oct; 18–19 Oct still outside the window); MPT Route 186 return direction (Stadium 2194 at 05:52–20:53, Qawra seafront stops not served on return, last Buġibba Bay 1 arrival 21:27, correcting the carried-over 21:26); MPT full fare table (€2.00 winter/€2.50 summer day singles, night/special/TD €3.00, TD1 €3.50, €50 no-ticket fine, card prices; October 2026 single-fare window still unsettled); NET FM grid (added the Friday 18:30 ‘Mhux Premier biss’ entry, content unverified); BBC Sportsworld listing (dates confirmed; start-time zone discrepancy documented and definitive times removed); MTA environmental contribution (rate/cap confirmed, ‘visit’ definition and 15-night threshold noted); AX ODYCY property page (4-star, former AX Seashells, contact details).
 - **New open questions:** BBC Sportsworld exact start times; NET FM Friday show content. Updated: weather (13–17 Oct resolved, 18–19 Oct open), fare applicability, door-to-door itinerary facts.
 - **Verification:** `scripts/validate_site.py` passes (6 JSON files, 108 records, cited-URL coverage, page/link/nav/expense wiring). No unverified claim was promoted to fact; only records whose sources were re-fetched on 11 Oct were changed. GitHub Pages remains configured to publish the `main` branch root.
+
+## Update — 11 Oct 2026 (third pass, arena/d347388b)
+
+**Verified this pass (official sources):**
+- Route 186 return stop (Stadium 2194, last 20:53).
+- MPT fares, including Explore Flex.
+- Uber's Malta service options.
+- Premier League kickoffs for 17–19 Oct and UCL matchday 2 kickoffs, in Malta time.
+- BBC Sportsworld 17/18 Oct start times and 3 h 53 min durations.
+- Rai Radio 1's weekend Serie A programme.
+- Kalshi's travel-eligibility wording.
+- Malta Aviation Museum and Mosta Rotunda hours and fees.
+
+**Bug fixed:** the expense planner's "Price status" was blank on every row because the code used `price_range` instead of the data key `price range`.
+
+**Partially verified / unverified:**
+- TWC match times (community wiki).
+- Serie A times (broadcaster report).
+- Rai Champions League carriage for 2026–27 (prior-season pattern only).
+- Fontanella and Ta' Marija hours.
+- Dash Berlin details.
+- Airport taxi fare, about €25 (third-party only).
+
+**Limitations:**
+- No real-browser screenshot (Chromium download blocked); the DOM test and CSS review stand in.
+- No on-site DAB+ reception test.
+- Kalshi's country list was not read.
+
+**Next session:**
+- Recheck the BBC episode pages from about 15 Oct for the named commentary match.
+- Add Europa League 15 Oct fixtures and TWC 15–16 Oct times.
+- Add the 18–19 Oct forecast (the Met Office snapshot now covers 13–17 Oct).
+- Confirm the TWC entrance and tickets.
+- Run the MPT journey planner for each event date.
