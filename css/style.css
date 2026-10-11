@@ -27,6 +27,12 @@ a { color: var(--teal-dark); text-underline-offset: .16em; }
 a:hover { color: var(--navy); }
 button, input, select { font: inherit; }
 button, select, input { min-height: 44px; }
+button:disabled { opacity: .6; cursor: not-allowed; }
+#quick-fill label { display: block; margin-top: 10px; font-weight: 700; color: var(--navy); }
+#itinerary-input { box-sizing: border-box; width: 100%; min-height: 132px; margin-top: 6px; padding: 10px 12px; border: 1px solid #bac8d1; border-radius: 9px; background: #fff; color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .86rem; line-height: 1.45; resize: vertical; }
+#quick-fill code { padding: 1px 4px; border-radius: 4px; background: rgba(18, 48, 74, .08); font-size: .84em; }
+#itinerary-preview ul { margin: 8px 0 0; padding-left: 20px; }
+#itinerary-preview li { margin: 4px 0; }
 :focus-visible { outline: 3px solid #f0b84d; outline-offset: 3px; }
 .site-header { position: sticky; top: 0; z-index: 20; color: #fff; background: var(--navy); box-shadow: 0 2px 12px rgba(10, 31, 49, .2); }
 .header-inner { max-width: 1260px; margin: 0 auto; padding: 10px 22px; display: flex; align-items: center; gap: 14px; }
