@@ -50,6 +50,21 @@
       "notes": "Primary source read 11 October 2026: the official Eventbrite listing https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 , titled “Hotspawn present the Thunderpick World Championships 2026”, organizer Hotspawn, venue BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard, dates Wednesday 14 – Sunday 18 October, 9:30 AM – 10 PM, highlights “4 days 12 hours”, “ages 18+”, “In person”. The same page carries a Google Maps transit link to coordinates 35.8957343, 14.4168839. HLTV reports the free tickets and links to the same listing: https://www.hltv.org/news/45615/thunderpick-world-championship-talent-revealed . Thunderpick’s own release names BLAST Studios Malta and gives 14–18 October: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . A second Thunderpick-issued release names the eight-team field and is datelined “TA’ QALI, Malta”: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html . The organizer’s tournament page still lists the 12–19 October operational window: https://world-championship.thunderpick.io/2026-finals/ . This record previously said the attendee pin, entrance, daily public times and ticket price were unconfirmed, and quoted a €10.00 ticket precedent from a separate BLAST-run event; the ticketing listing resolves the pin, the dates, three of the five daily schedules, and shows admission is free. Still open: the Saturday 17 and Sunday 18 agenda entries, the attendee gate inside the MFCC site, ticket availability and per-day scanning, parking, and on-site catering. See docs/OPEN_QUESTIONS.md."
     },
     {
+      "id": "twc-2026-teams-format",
+      "name": "Thunderpick World Championship 2026 — teams, format and broadcast",
+      "category": "Tournament & trip-window events (13–19 Oct)",
+      "area": "Ta’ Qali / Ħ’Attard (BLAST Arena Studios Malta)",
+      "address": "Not applicable to the field list; see the venue record in the transport guide for address context",
+      "hours": "Competitive Finals 14–18 October 2026 (Group Stage 14–16 October, Playoffs 17–18 October)",
+      "price range": "Spectator ticket price, availability and public admission not verified",
+      "description": "Eight teams compete for a US$1,000,000 prize pool across five days, broadcast live on Thunderpick’s Twitch, Kick and YouTube channels. HLTV’s 2 October 2026 talent report lists the field as FURIA, Falcons, Legacy, Aurora, BETBOOM, 9z, PARIVISION and Virtus.pro, split into two GSL best-of-three groups with the top two from each group advancing to a single-elimination playoff bracket. FURIA are the 2025 defending champions; Virtus.pro qualified through the TWC closed qualifier. Broadcast talent includes casters SPUNJ, Machine, Hugo and JustHarry, desk hosts Tech Girl and stunna, analysts YNk, Bleh, tedd and moses, and stage host BanKs with sideline reporter Heccu.",
+      "source_url": "https://www.hltv.org/news/45615/thunderpick-world-championship-talent-revealed",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "HLTV is the esports news outlet of record for CS2 and is used here as an industry-trade source; the team field is corroborated by the Thunderpick-issued press release https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html (16 Sep 2026) and its Portuguese syndication, which name FURIA as defending champion and the Global VRS basis for the seven invited slots. The 2026-era HLTV page age is 2 Oct 2026. Daily match times, stage schedule, venue door times and spectator ticket availability were NOT published by any source checked — do not plan event-day transport around assumed start or finish times. Broadcast listing (Twitch/Kick/YouTube) is from the Thunderpick release; streaming availability is not a substitute for attending, and no ticket was verified."
+    },
+    {
       "id": "gzira-mosta-2026-10-14",
       "name": "Gżira United v Mosta FC — Malta Premier League",
       "category": "Tournament & trip-window events (13–19 Oct)",

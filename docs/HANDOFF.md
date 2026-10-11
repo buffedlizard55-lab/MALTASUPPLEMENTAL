@@ -96,3 +96,13 @@ Findings that crossed workstream boundaries during this session:
 - **A:** the fare change lands mid-trip. 13–18 October is the €2.50 summer rate and 19 October (departure day) is €2.00. Any transport budget built on a single flat fare will be slightly wrong on the last day.
 - **D:** the Met Office Valletta view now reaches 19 October, closing the earlier “forecast ends at 17 October” gap — but it disagrees with the AccuWeather Qawra snapshot on 13 and 16 October. Both are retained rather than reconciled.
 - **Unresolved access limitations:** talkSPORT's own schedule page returned “Sorry, page unavailable”, and the Eventbrite agenda toggle and FAQ answers were unreadable to the extractor. Both are logged rather than guessed.
+
+
+## Cross-workstream handoffs — 11 October 2026 session
+
+- **A → C (Transport → Activities):** the venue-name conflict is resolved for routing. BLAST Arena Studios Malta = MFCC South Gate, National Stadium, Millennium Stand, **Attard ATD 4000**, physically in the Ta’ Qali area. Any activity or transport record referring to “Ta’ Qali” and any referring to “Attard” mean the same complex. Keep the separate caution that TWC *access* is unconfirmed.
+- **A → E (Transport → Radio):** Route 186’s Friday/Saturday evening detours begin at 19:00 on 17 October, i.e. during the EPL Saturday slot and before the Serie A 20:45 game. If the traveler stays out for an evening match or a late event finish, the return bus plan is affected — keep a taxi fallback.
+- **E → A (Radio → Transport):** no night bus serves Ta’ Qali, and the Serie A 20:45 and EPL 18:30/21:00 kick-offs all end after the last useful Route 186 departure. Anyone planning to stay for a full match away from the venue needs a ride-hailing plan, not a bus plan.
+- **E → C (Radio → Activities):** Serie A matchday 7 and EPL matchweek 8 both fall inside the trip window (16–19 Oct). If the traveler wants to watch football socially rather than listen on radio, check the activities/sports-bar angle — not verified in this session.
+- **B → all (Food):** Reddit and TripAdvisor listing data were reachable through search this session; Yelp, Instagram, TikTok, Facebook and X were not. Any “most popular” claim remains partial.
+- **A → F (Transport → Expenses):** the October 2026 single bus fare is still unresolved, so the expense planner deliberately carries no prefilled transport amounts.
