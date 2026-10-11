@@ -82,7 +82,7 @@
     <section id="quick-fill" class="callout" aria-labelledby="quick-fill-title">
       <h2 id="quick-fill-title">Paste your itinerary, fill your budget</h2>
       <p>When the itinerary and confirmations arrive, paste one item per line below. The planner suggests a row from simple keywords and shows you the amount it would fill <em>before</em> anything changes. It only fills a budget field that is still blank, and it never overwrites an amount you have already typed. Nothing is sent anywhere; the text stays in this browser tab.</p>
-      <p class="small">Use <code>date | description | amount in EUR</code>, or a description followed by <code>€amount</code>. Bare numbers without separators are not interpreted as prices. Explicit foreign currencies, negative amounts and ambiguous thousands separators need manual entry after conversion. Deposits and payment holds are never quick-filled: review them manually and keep refundable holds in notes. Multiple accepted lines for the same blank category are summed; existing amounts are never overwritten. Recognised date shapes: <code>2026-10-14</code>, <code>14/10</code>, <code>14 Oct</code>, <code>Oct 14</code>. Recognised amount shapes: <code>€5.00</code>, <code>5.00</code>, <code>5</code>. Recognised keywords include flight, hotel, insurance, airport, taxi, bus, pass, food, meal, dinner, breakfast, coffee, museum, tour, ticket, sim, esim, roaming, atm, laundry and souvenir.</p>
+      <p class="small">Use <code>date | description | amount in EUR</code>, or a description followed by <code>€amount</code>. Bare numbers without separators are not interpreted as prices. Explicit foreign currencies, negative amounts and ambiguous thousands separators need manual entry after conversion. Deposits and payment holds are never quick-filled: review them manually and keep refundable holds in notes. Multiple accepted lines for the same blank category are summed; existing amounts are never overwritten. Recognised date shapes: <code>2026-10-14</code>, <code>14/10</code>, <code>14 Oct</code>, <code>Oct 14</code>. Recognised amount shapes: <code>€5.00</code>, <code>5.00</code>, <code>5</code>. Recognised keywords include flight, hotel, insurance, airport, taxi, bus, pass, food, meal, dinner, breakfast, coffee, museum, tour, ticket, sim, esim, roaming, atm, laundry, souvenir, radio receiver, DAB radio, FM radio and plug adapter.</p>
       <label for="itinerary-input">Itinerary lines (one item per line)</label>
       <textarea id="itinerary-input" name="itinerary-input" rows="6" maxlength="30000" spellcheck="false" placeholder="2026-10-13 | Flight booking, all travelers | 480.00&#10;2026-10-14 | Bus to Ta' Qali and back | 5.00&#10;2026-10-15 | Dinner in Qawra | 38.50&#10;2026-10-16 | eSIM data | 20"></textarea>
       <div class="quick-links">
@@ -486,6 +486,7 @@
         ["gaming", /gaming|arcade|\bvr\b|esports|e-sports|lan\b|pc caf|pc lounge|console|laser ?tag/i],
         ["mobile", /\bsim\b|e-?sim|\bdata\b|roaming|mobile plan|airtime|top ?-?up|prepaid/i],
         ["bank fees", /\batm\b|card fee|foreign transaction|withdrawal fee|currency|exchange rate|conversion fee|bank charge/i],
+        ["gear", /dab\+?\s*radio|radio receiver|fm radio|plug adapter|type g adapter|power adapter|voltage converter|travel adapter/i],
         ["other", /souvenir|gift|laundry|incidental|\bmisc\b|other spend|tips?\b|taxis? tip/i]
       ];
 
@@ -508,6 +509,7 @@
         "event access": "event-access",
         "mobile": "mobile-connectivity",
         "bank fees": "bank-cash-fees",
+        "gear": "other-incidentals",
         "other": "other-incidentals"
       };
 

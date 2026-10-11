@@ -1,6 +1,38 @@
 # Malta trip guide — final report
 
-**Audit date:** 11 October 2026 (UTC)
+## This session — `arena/dd9dd00c-maltasupplemental` (11 October 2026)
+
+Passes 1–3 were run on the tree that started at `250e6bd` (PR #48 on `main`). Arena does not allow a second branch, so workstreams A–F were sequential file owners on this branch and G integrated last.
+
+### Verified in this pass
+
+- Eventbrite still advertises the free 18+ in-person listing at BLAST Arena Studios, MFCC South Gate, ATD 4000 Attard, 14–18 October, headline 9:30 AM–10 PM. Friday’s row header reads 2:00 PM–9:00 PM. Saturday and Sunday stay behind “Show all agenda”. The visible lineup names Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all. A merge with `main` kept the HLTV, Hotspawn and Liquipedia account that NIP replaced Virtus.pro. Liquipedia’s opening-match block, re-read during the merge, shows Falcons–NIP, 9z–Aurora, Legacy–PARIVISION and FURIA–BetBoom. The 16 September organizer release still named Virtus.pro.
+- Thunderpick’s finals page still gives 12–19 October, media day 13 October, groups 14–16, playoffs 17–18, and a $1,000,000 table. It says Malta, not a street address.
+- MPT’s fare table still shows €2.50 summer / €2.00 winter day singles, €3.00 night/special/Tallinja Direct, €3.50 TD1, and a €50 fine. The printed winter window is still 19 October 2025 – 13 June 2026.
+- Route 186 search excerpts of the operator page still end two Stadium 2194 return grids at 20:53 and 20:54. The service-updates page still shows the 17–18 October 19:00–00:00 diversion, separate from the April notice.
+- A separate notice closes Saqqajja stop 4627 on Route 186 until “January 1” with no year. An earlier same-day stop trace places it before Stadium 2194 on the return. This pass did not re-walk that chain. The notice does not say the Stadium or Qawra stops are closed.
+- Qawra TripAdvisor Featured order, first three numbered entries: Trattoria Riccardo (4.8 / 2,675), Minoa (5.0 / 765, closed today in that snapshot), Cheeky Monkey Qawra (4.5 / 3,374). Sponsored cards sat above them. Not a review-count ranking.
+- BBC Sportsworld JSON still starts 17 October at 14:06 +01:00 and 18 October at 15:06 +01:00, each 3 hours 53 minutes. No named match.
+- Government of Malta still lists 230 V, 50 Hz, UK-style three-pin plugs.
+- Malta Met Office’s seven-day panel still ends 17 October and matches the retained 13–17 October figures.
+
+Local gates after the merge with `main`: schema/source/link validator passed (7 files, 197 records, 319 record URLs, 15 pages, 311 link attributes, 9 nav destinations, 25 expense rows). Playwright/axe passed 21/21, including 320–1440 px layouts. Tests do not prove external pages stay live or that a bus/radio signal exists.
+
+### Still unverified
+
+Reservation, inventory, gate, weekend agenda, an organizer-page confirmation of the NIP replacement, a saved hotel-to-gate journey, the Saqqajja closure year, the October single fare as an operator quote, physical FM/DAB+ reception, 18–19 October on Malta’s own seven-day panel, and any personal booking or price. Yelp, Instagram, TikTok, Facebook and X were not re-attempted. `main` moved during this session; PRs #51 and #52 were merged in and their food, gaming and entry-requirement records were kept.
+
+### Next session
+
+1. Open the Eventbrite flow and ask Hotspawn for the hidden agenda, FAQ answers and the full lineup.
+2. Save both directions in the MPT journey planner for each event day, including the Saqqajja closure and the 17 October diversion.
+3. Ask MPT whether the day-route single on 13–19 October is the summer or winter price.
+4. If a late return is required, get a live hotel/taxi/ride quote rather than using the 2022 tariff page.
+5. Scan DAB+ blocks 6A, 6C and 12A at the hotel and venue on a DAB+ receiver.
+6. Refresh weather for 18–19 October and any restaurant hours the night before.
+7. Paste only confirmed receipts into the blank planner.
+
+## Previous audit — 11 October 2026 (UTC)
 **Session branch:** `arena/502e2dae-maltasupplemental`
 **Baseline:** `origin/main` at `b307c51` (merge of PR #33), reconciled with `origin/main` at `852343f` (parallel-session PRs #42–47) via a conflict-resolved merge that keeps both sessions' net-new corrections.
 
@@ -19,7 +51,7 @@
 
 | Check | Result |
 |---|---|
-| `python3 scripts/validate_site.py` | PASS — 7 JSON files / **186** exact-schema records (transport 29, food 39, activities 44, everyday 19, radio 21, expenses 25, event 9); 303 unique record URLs present in `docs/SOURCES.md`; 15 HTML pages / 233 link attributes; 9 navigation destinations; 25 expense rows |
+| `python3 scripts/validate_site.py` | PASS — 7 JSON files / **199** exact-schema records after the latest-`main` merge (transport 30, food 48, activities 47, everyday 19, radio 21, expenses 25, event 9); 319 unique record URLs present in `docs/SOURCES.md`; 15 HTML pages / 325 link attributes; 9 navigation destinations; 25 expense rows |
 | `python3 scripts/check_javascript.py` | PASS — shared and inline JavaScript syntax |
 | `npx playwright test` | PASS — **22/22**, including the 320/360/768/1024/1440 px layout and axe sweeps and the new test asserting the seven per-date plan rows, their `datetime` attributes, the canonical record rendering and the event matchups deep link |
 | Fresh source reads (all 11 October 2026) | Eventbrite listing (full), MPT fares, MPT service updates (all three chunks), Route 186 grids and notices, TQ1, DAB+ operator directory (both chunks), Vibe FM football page, HLTV bracket report |
@@ -123,3 +155,109 @@ Full claim-specific source rows are in `docs/SOURCES.md`; unresolved items in `d
 ## Delivery snapshot
 
 Prior observed deliveries on the baseline: pull request **#43** merged at 15:54:56 UTC on 11 October 2026 (`94733df`), with CI and Pages **built** and the live site spot-checked; PRs **#42**, **#44**, **#45**, **#46** and **#47** were merged by explicit number by the parallel sessions and reconciled into this branch (PR #46's fresh full-page reads corrected the Route 186 detour window claim — adopted here; its merge and Pages build were recorded on main via PR **#50**); PR **#49** (source-led refresh, planner hardening, expanded test suite) landed on `main` mid-delivery and was reconciled here by content as well — its new records (`food-platform-coverage`, `water-medication-daily-health`, and others) are preserved. This session’s delivery (PR opened, merged by explicit number onto `main`, Pages build) is reported only after those facts have been checked; this file is not a live CI/Pages dashboard.
+
+
+---
+
+# Session report — `arena/09cdfbf0-maltasupplemental` (11 October 2026)
+
+**Baseline:** `origin/main` at `250e6bd`. **Scope of this session:** re-verification and gap-closing, not a rebuild. The
+site structure, planner and evidence discipline were already in place and were reviewed rather than replaced.
+
+## What this session verified
+
+- **Event (corroborated, not merely repeated).** Thunderpick World Championship Finals run **14–18 October 2026** at
+  **BLAST Arena Studios, Attard**, eight teams, $1,000,000 pool — independently consistent across HLTV, Liquipedia,
+  Hotspawn and the organiser's own release. The **Ninjas in Pyjamas for Virtus.pro** substitution is confirmed as current
+  (9 October reporting, corroborated by Liquipedia's event page, which also lists Virtus.pro as a former participant), and
+  the groups are Falcons/NIP/9z/Aurora and FURIA/BETBOOM/Legacy/PARIVISION. Published Wednesday 14 October match starts of
+  **10:30, 13:00, 15:30 and 18:30 CEST** independently corroborate the ticket listing's "games 10:30" start — and imply a
+  plausible late finish, which is exactly why the return journey is the problem.
+- **Food.** TripAdvisor's *Restaurants near AX ODYCY Hotel* list was readable on 11 October 2026 and is now recorded ranked
+  **by review volume**, not by the platform's display order. Two captures taken minutes apart on different domains already
+  disagreed on several counts, which is recorded as evidence that the figures are volatile rather than smoothed over.
+- **Gaming.** A dated read of a Malta "Game & Entertainment Centers" directory lists MULTIMAXX, The Eden, Falcon
+  Archery, Gravity/Jurassic and Laser Tag Malta (marked *temporarily closed*), and **no public PC-gaming café**. The
+  esports association directory likewise lists training and competition venues only.
+- **Recreation near the hotel.** Eco Sports Limited (Buġibba) added with **operator-published daily rates** — the first
+  near-hotel activity in this project with a real, sourced price list.
+- **Radio.** NET FM's own schedule page was re-read live and returned the same three sports-branded slots (Friday 18:30
+  *Mhux Premier biss*, Saturday 16:00 *Hits & Score*, Sunday 15:00 *Sports Box*). The DAB+ "Sports Channel" block conflict
+  is now wider, not narrower: an encyclopaedia list labels 185.36 MHz DAB+ as **"RAVE Radio"**.
+- **Everyday / entry.** The EES conflict now names Malta in specific reporting, and Malta's own airport page still
+  describes arrivals being *randomly selected* for a biometric lane. The ETIAS position is unchanged (not in operation) but
+  the **risk is now explicit**: official and industry sources targeted Q4 2026, which contains these travel dates, while a
+  September 2026 report says that target has been withdrawn.
+
+## What remains unverified
+
+Nothing below was presented as fact on the site, and each item is recorded in `docs/OPEN_QUESTIONS.md`:
+
+1. **Admission.** No reservation was made, no inventory or checkout tested, and the Saturday/Sunday agenda was still not
+   visible on the listing. The attendee gate, ID rules, per-day scanning and transferability are unknown.
+2. **The return journey.** The 20:53/20:54 last Stadium departures, the Buġibba-only terminus and the Saturday diversion
+   stand as recorded; no date-specific journey, no measured walk, and no live taxi quote were obtained.
+3. **Trip-week fares.** The €2.50 (13–18 Oct) / €2.00 (19 Oct) split remains a third-party inference, not an operator
+   confirmation.
+4. **Named-match radio.** No named trip-week match is verified through the full chain of official schedule → Malta carriage
+   → compatible receiver → local signal. UK BBC listings prove nothing about Malta.
+5. **Popularity.** One platform, one date, one hotel radius, volatile counts. Yelp, Instagram, TikTok, Facebook, Reddit and
+   X were unreadable, so there is no sentiment or trend claim for them.
+6. **Empire Cinema arcade** is a search-extract lead: no hours, prices or age rules confirmed.
+
+## Corrections made to existing content
+
+- Removed a duplicated paragraph in `ees-malta-implementation-conflict` (the same cross-reference sentence appeared twice).
+- Fixed a misspelled record ID (`tripadvisor-near-ax-odyy-…` → `…-odycy-…`) so the public anchor is correct.
+- Added cross-references so the three TripAdvisor snapshot records read as three different pages rather than three
+  competing claims, and stated that a repeated read by the same method is a stability check, not corroboration.
+
+## Limitations of this session
+
+- **Direct page fetches were mostly blocked** (Eventbrite returned "Something went wrong"; the bus operator's site
+  errored). Several new rows are therefore **search-index extracts**, and every one is labelled as such in
+  `docs/SOURCES.md`. An extract is weaker evidence than a full page read and has not been dressed up as one.
+- **No new primary-source re-read was possible for transport**, so workstream A is unchanged and its open questions stand.
+- **Automated gates check structure and behaviour**, not external truth. A passing suite is not a certificate that any
+  listing, price, route or broadcast is still current.
+
+## Suggested next-session work, in priority order
+
+1. **Event access** — confirm reservation, gate, per-day validity, the 17–18 October agenda and the 22:00-vs-22:30 finish
+   with the organiser; re-read the listing daily as the event approaches.
+2. **Entry requirements** — recheck the official EU ETIAS page in the week before departure, and look for a Malta
+   government or eu-LISA statement on the EES pause rather than relying on press reporting.
+3. **Transit** — run the operator planner for each event date in both directions with the confirmed gate; check for TQ1
+   special-event announcements daily during 14–18 October; obtain one live evening taxi quote to compare against the
+   published tariff.
+4. **Radio** — buy a DAB+ radio in Malta and actually scan 6A/6C/12A and FM at the hotel and the venue, logging service
+   names, blocks and audio. This is the only item on the list that can convert a scan lead into a verified fact.
+5. **Popularity and closures** — refresh TripAdvisor counts and the Qawra venue hours/menus close to travel; confirm the
+   Empire Cinema arcade directly.
+6. **Planner hand-off** — paste the confirmed itinerary into the quick-fill panel (it previews first and fills only blank
+   fields), then export a CSV before switching devices.
+
+## Gate results observed for this session's tree
+
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files / **196** exact-schema records / **317** unique record URLs /
+  15 HTML pages / **234** link attributes / 9 navigation destinations / 25 expense rows.
+- `python3 scripts/check_javascript.py` — **PASS**.
+- `npx playwright test` — **21/21 passed** (320/360/768/1024/1440 px, axe, data/render parity, navigation and deep links,
+  planner persistence, CSV/JSON backup, reset, quick-fill, storage-denial and data-fetch-failure cases).
+- Manual Chromium check at 390 px and 1280 px on the three pages changed this session — **zero horizontal overflow, zero
+  console errors**, and the new records render.
+
+
+## Delivery snapshot — session `arena/09cdfbf0-maltasupplemental` (observed)
+
+- Pull request **#51** was opened from `arena/09cdfbf0-maltasupplemental` against `main` and reported `MERGEABLE`/`CLEAN`.
+- Its required check **“Schema, browser and accessibility checks”** ([run 38158610565](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38158610565)) **passed**.
+- PR #51 was **merged into `main` on 11 October 2026 at 17:13:35 UTC**, merge commit
+  `6859c46efa5053578b41962bed21246ae76fd3aa`, from session head `a20368c`.
+- The GitHub Pages latest-build record for that merge commit reports **status `built`**, created 17:13:36 and updated
+  17:13:53 UTC.
+
+**What this does not confirm:** this session's network policy allows only GitHub API and package-registry hosts, so
+`https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/` could not be fetched for a browser-level content check. The Pages
+build record above is a GitHub build-state observation only; nobody here loaded the live page and compared it with the
+merged tree.

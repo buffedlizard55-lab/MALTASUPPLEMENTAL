@@ -1,6 +1,21 @@
 # Delivery status — Malta trip guide
 
 **Last updated:** 11 October 2026 (UTC)
+**This session:** `arena/dd9dd00c-maltasupplemental`, started at `250e6bd` (PR #48 merge). Workstream branches were not created because Arena locks the session branch.
+
+| Workstream | Status | Blocker |
+|---|---|---|
+| A · Transport | Route 186 20:53/20:54 grids, October 17–18 19:00–00:00 diversion, and fare table re-read. Saqqajja stop 4627 closure added as partially verified. | No saved hotel-to-gate journey. Closure year and effect on Stadium stops not printed. |
+| B · Food | Qawra TripAdvisor Featured snapshot updated with sponsored cards and numbered entries 1–3. | Yelp, Instagram, TikTok, Facebook and X were not re-attempted. Not a popularity ranking. |
+| C · Activities / event | Eventbrite and Thunderpick pages re-read. Visible lineup is six names plus View all. HLTV, Hotspawn and Liquipedia say NIP replaced Virtus.pro. | Sat/Sun agenda, inventory and reservation remain open. The 16 September organizer release still named Virtus.pro. |
+| D · Everyday | Gov.mt electricity wording and Malta Met Office panel through 17 October re-read. | 18–19 October national panel still absent. Valletta longer view not re-opened. |
+| E · Radio | BBC JSON offsets reconfirmed (14:06 and 15:06 +01:00). Premier League kickoffs re-read. | No named match heard on a Malta receiver. |
+| F · Expenses | Adapter/radio keywords added. Amounts stay blank. | Traveler itinerary not supplied. |
+| G · Integration | Overview rewritten for scanning; hubs replace retired redirects. Delivery follows the local test run. | Physical transit, radio scan and external-link crawl remain out of scope. |
+
+The sections below are earlier session snapshots, not this session’s live status.
+
+**Previous snapshot updated:** 11 October 2026 (UTC)
 **Session branch:** `arena/cc913a9b-maltasupplemental`
 **Snapshot boundary:** Updated after observing PR #46 merge and its GitHub Pages build on 11 October 2026 (UTC); this is still a dated snapshot, not a live dashboard.
 
@@ -49,6 +64,43 @@ After resolving the latest-main conflicts, `npm test` passed: **7 datasets / 184
 
 After resolving latest-main conflicts and before delivery, `npm test` passed: **7 datasets / 184 exact-schema records / 281 unique record URLs in the source log / 15 HTML pages / 176 link attributes / 9 shared navigation destinations / 25 expense rows**; shared/inline JavaScript checks passed; Playwright passed **21/21** tests, including 320/360/768/1024/1440 px layouts, axe, source/data projections, backup validation, error/storage cases and planner quick-fill. No application code/data changed after this run. `git diff --check` passed after the post-merge reporting edits.
 
+## Session `arena/09cdfbf0-maltasupplemental` — second re-verification pass (11 October 2026)
+
+This session reviewed the repository at `250e6bd`, re-verified the highest-risk external claims against live sources, and
+closed the two weakest evidence gaps rather than restating the existing ones.
+
+**Access reality this session:** direct page fetches were blocked for most sites (Eventbrite returned "Something went wrong",
+maltapublictransport.com errored), but the search index was readable. Every new row in `docs/SOURCES.md` therefore states
+explicitly whether it is a full page read or a search-index extract; no extract is presented as a page read.
+
+**What was verified or newly evidenced**
+
+| Area | Result |
+|---|---|
+| Event | 14–18 Oct, BLAST Arena Studios, Attard, 8 teams, $1m — corroborated across HLTV, Liquipedia, Hotspawn and the organiser's release. NIP-for-Virtus.pro substitution confirmed as current (9 Oct). Wednesday match starts 10:30 / 13:00 / 15:30 / 18:30 CEST corroborate the listing's "games 10:30". |
+| Food | TripAdvisor's *Restaurants near AX ODYCY Hotel* list was readable; recorded ranked **by review volume** with explicit volatility evidence (two captures minutes apart disagreed). 9 new food records, 1 platform-ranked capture. |
+| Gaming | Dated Malta "Game & Entertainment Centers" directory read confirms arcades exist and **no public PC café is listed** — the gap is now evidenced, not just unresearched. Empire Cinema arcade added as an unconfirmed lead. |
+| Recreation | Eco Sports Limited (Buġibba) added with **official published prices** (e-bike €35/day, SUP from €30, tours from €55) — the strongest operator-priced near-hotel option found to date. |
+| Radio | NET FM grid re-read live a second time (Fri 18:30 *Mhux Premier biss*, Sat 16:00 *Hits & Score*, Sun 15:00 *Sports Box*) — a stability check, not independent corroboration. DAB+ "Sports Channel" block conflict widened: an encyclopaedia list puts 185.36 MHz to "RAVE Radio". |
+| Everyday | EES Malta conflict strengthened with named reporting (Guardian/Sunday Times, 14 Sep 2026) and Malta's own airport page; ETIAS boundary risk for these exact dates made explicit. |
+
+**Corrections made during review:** removed a duplicated paragraph in `ees-malta-implementation-conflict`; fixed a misspelled
+record ID (`…-odyy-` → `…-odycy-`) so the public anchor is correct; added cross-references so the three TripAdvisor snapshot
+records no longer read as competing claims about the same page.
+
+**Gate results for this session's tree:** `python3 scripts/validate_site.py` — PASS, 7 JSON files / 196 exact-schema
+records / 317 unique record URLs / 15 HTML pages / 234 link attributes / 9 navigation destinations / 25 expense rows.
+`python3 scripts/check_javascript.py` — PASS. `npx playwright test` — 21/21 passed. Manual Chromium pass at 390 px and
+1280 px: zero horizontal overflow and zero console errors on the three pages changed this session.
+
+## Delivery observed — session `arena/09cdfbf0-maltasupplemental`
+
+PR **#51** (head `a20368c`) merged into `main` on **11 October 2026 at 17:13:35 UTC** as merge commit `6859c46`. Its required
+check, run [38158610565](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38158610565) (“Schema, browser
+and accessibility checks”), passed. The GitHub Pages latest-build record for that commit reports **built**, 17:13:36 → 17:13:53
+UTC. No browser-level fetch of the live site was possible in this session (network policy allows only GitHub API and
+package-registry hosts), so this is a build-state observation and not a content verification.
+
 ## Traveler-time follow-up
 
 The repository merge, required PR check and Pages build record are complete. Remaining work needs traveler-specific information or a check close to the trip:
@@ -70,6 +122,6 @@ Branch `arena/d840a59d-maltasupplemental` started at `main` commit `250e6bd0ea57
 - **E · Radio:** read the DAB+ operator directory in full (38 rendered entries, no “Sports Channel”, Radio Sportiva the only sports-branded entry) and re-read Vibe FM’s football page (still 2025/26 season, newest post May 2026). Both narrow the radio claims rather than adding stations.
 - **G · Integration:** page sections, navigation shortcuts, one new Playwright test, and updates to `SOURCES.md`, `OPEN_QUESTIONS.md`, `HANDOFF.md`, `PLAN.md`, `FINAL_REPORT.md`, the audit log and the README.
 
-**Gates observed on this branch:** `python3 scripts/validate_site.py` → 7 JSON files / 186 exact-schema records / 303 unique record URLs in the source log / 15 HTML pages / 233 link attributes / 9 navigation destinations / 25 expense rows; `python3 scripts/check_javascript.py` → shared and inline JavaScript syntax pass; `npx playwright test` → **22/22** passing, including the five viewport/axe sweeps and the new per-date plan and matchups test.
+**Gates observed on this branch:** `python3 scripts/validate_site.py` → 7 JSON files / 199 exact-schema records after integrating latest `main` (186 on this branch before that merge) / 319 unique record URLs in the source log / 15 HTML pages / 325 link attributes / 9 navigation destinations / 25 expense rows; `python3 scripts/check_javascript.py` → shared and inline JavaScript syntax pass; `npx playwright test` → **22/22** passing, including the five viewport/axe sweeps and the new per-date plan and matchups test.
 
 **Blockers:** none for delivery. Every remaining gap needs traveler-specific input or a date-local check: the reservation and weekend agenda, the attendee gate and walks, the dated Buġibba → Qawra connection, a live ride quote, the operator-dated October fare, a physical radio scan, and the planner inputs.
