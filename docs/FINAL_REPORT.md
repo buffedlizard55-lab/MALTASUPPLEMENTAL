@@ -3,30 +3,32 @@
 **Audit date:** 11 October 2026 (UTC)
 **Session branch:** `arena/cc913a9b-maltasupplemental`
 **Starting revision:** `b307c51`
-**Integrated main revisions:** PR #42 at `5cdea68`, PR #43 at `94733df`, and PR #45 at `dc2fe82`.
+**Integrated upstream:** PR #42 (`5cdea68`), PR #43 (`94733df`), PR #45 (`dc2fe82`) and PR #44 (`c7d1d00`).
 
 ## Summary
 
-The repository now contains a mobile-friendly, source-linked Malta guide for the traveler-supplied **13–19 October 2026** stay at AX ODYCY in Qawra and the supplied Thunderpick CS2 destination at BLAST Arena Studios, Attard. Dedicated sections cover transport, food/cafés, activities/landmarks/events, practical U.S.-traveler guidance, Malta sports radio, expenses and the CS2 event. Topic pages render from the canonical JSON data; cited URLs and access dates are recorded in `docs/SOURCES.md`.
+The repository contains a mobile-friendly, source-linked Malta guide for the traveler-supplied **13–19 October 2026** stay at AX ODYCY in Qawra and the supplied Thunderpick CS2 destination at BLAST Arena Studios, Attard. Dedicated sections cover transport, food/cafés, activities/landmarks/events, practical U.S.-traveler guidance, Malta sports radio, expenses and the CS2 event. Topic pages render from canonical JSON data; citations and access dates are recorded in `docs/SOURCES.md`.
 
 The planner has 18 core categories and seven optional daily rows. It starts blank, previews itinerary quick-fill matches before applying them to blank budget fields, saves only in the current browser, and supports CSV export and reset. It assumes no flight, hotel amount, party size, ticket, transport choice, ride count or personal spend.
 
-The final re-audit focused on evidence integrity after main advanced. It corrected current-facing claims about the Route 186 diversion, the extent of the late-return evidence, the Eventbrite price extraction and the MTA contribution wording. The result remains a planning aid—not a booking, admission, fare, service, live-availability, trip-itinerary, radio-reception or event-carriage guarantee.
+The final re-audit preserved PR #44’s dated report that Ninjas in Pyjamas replaced Virtus.pro after Virtus.pro withdrew on 9 October, while qualifying Eventbrite ticket-price wording against the current page-text extraction. It also corrected the Route 186 diversion interpretation, the scope of late-return evidence and the MTA contribution wording. This is a planning aid—not a booking, admission, fare, service, live-availability, trip-itinerary, radio-reception or event-carriage guarantee.
 
 ## Material findings and limits
 
-### Thunderpick event and access
+### Thunderpick event, field and access
 
 The Hotspawn/Eventbrite listing read on 11 October identifies **BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard**, for **14–18 October**, with in-person attendance and an **18+** condition. It shows check-in/games for 14–16 October: Wednesday and Thursday 09:30/10:30 with agenda rows ending 22:30; Friday 14:00/15:00 ending 21:00. Its headline says 22:00, so the Wednesday/Thursday discrepancy should be reconfirmed. The 17–18 October agenda entries and interactive FAQ answers were not visible in the extracted page.
 
 A separate 11 October listing-card capture and HLTV report record a **“Free / Reserve a spot”** offer, but the current page-text extraction did not expose a fee table or ticket-tier total. This is dated evidence of an advertised offer, not current inventory, a checkout quote, a personal reservation or guaranteed entry. No ticket was purchased or held by this project. The attendee gate, ticket validity/scanning across days, transferability, parking, catering and weekend schedule remain open.
+
+The 2 October HLTV field report listed Virtus.pro; on 9 October HLTV reported that Virtus.pro withdrew for visa and health reasons and Ninjas in Pyjamas took its slot. Hotspawn separately reported the substitution. The organizer’s own published pages still showed the original field when last checked. The current team record therefore keeps the substitution evidence attributed and notes that the organizer’s pages lagged. Team and group details are not a spectator ticket, full schedule or confirmed personal admission.
 
 ### Public transport and return planning
 
 - Both Malta Public Transport’s Route 186 page and its latest-service-updates page show the 17 October notice at **19:00–00:00**, ending around midnight on 18 October. A separate older **20:00–00:00** notice ends around 21 April; it is not a competing October window. The prior 19:00–24:00 “union” interpretation was a misread and is not used.
 - The October notice says stops Gholja 2 through Targa toward Buġibba will not be served. MPT publishes no replacement path and does not state how a specific Stadium trip or onward Qawra connection is affected. The “weekly on Friday, Saturday” phrase does not establish a 16 October diversion and leaves later recurrence unclear.
 - One static Route 186 variant lists a **20:53** departure from Stadium stop 2194 toward Buġibba. That return direction does not list an Il-Qawra stop, so a journey using that particular leg needs a separately checked onward option. This does **not** establish that every public-bus return requires a second boarding, that 20:53 is the network’s last bus, or that no later/alternative service works.
-- Route 214 lists Qawra stop 952 and Ta’ Qali Qali 2 stop 2542 on its static route page. TQ1 is another possibility to monitor, but its page showed “Timetable not available!” and no TWC-specific service was found. All are route-level candidates, not a saved trip. The interactive MPT planner extraction yielded instructions, not a date/time-specific journey; the attendee gate, stop-to-gate walk, onward connections and safe walking sections remain unverified.
+- Route 214 lists Qawra stop 952 and Ta’ Qali Qali 2 stop 2542 on its static route page. TQ1 is another possibility to monitor, but its page showed “Timetable not available!” and no TWC-specific service was found. These are route-level candidates, not a saved trip. The interactive MPT planner extraction yielded instructions, not a date/time-specific journey; the attendee gate, stop-to-gate walk, onward connections and safe walking sections remain unverified.
 - A taxi or ride-hailing quote was not obtained. AX ODYCY says Guest Relations can arrange taxis through a firm offering fixed charges, but publishes no price. Taxi/ride-hailing and the hotel’s arrangement are fallbacks if no suitable bus is found or if the traveler chooses one; no taxi is established as necessary.
 
 ### Fares and taxi tariffs
@@ -51,19 +53,19 @@ Restaurant/café, gaming, landmark and trip-window event records remain availabl
 
 ## Cumulative verification passes
 
-1. **Pass 1 — repository, plan and integration.** Reviewed the existing schema/site and `docs/PLAN.md` before topic corrections. Integrated PR #42’s event page/data, then incorporated the newer PR #43/#45 main work without discarding hotel/event additions. Reconciled shared pages, JSON, sources and open questions on the fixed Arena branch.
-2. **Pass 2 — evidence and requirements review.** Re-read the MPT Route 186 and latest-updates pages, the MPT fares page, Eventbrite listing text, MTA service page and guideline PDF. Corrected the Route 186 19:00/20:00 conflation, removed the unsupported union, kept Route 214/TQ1 as candidates, withdrew the claim that a taxi or second bus is mandatory network-wide, qualified ticket-price evidence, and reopened the MTA short-stay question. Reviewed the requested radio, travel-practicality, activity and platform-coverage caveats.
-3. **Pass 3 — consistency and regression.** Searched the current pages/data/docs for categorical “no bus”/taxi claims, stale diversion windows and resolved MTA language; aligned overview, transport, event, expense and evidence records; checked source-log coverage and the exact data schema; and reran JavaScript, responsive, accessibility, navigation, data-render and planner tests.
+1. **Pass 1 — repository, plan and integration.** Reviewed the existing schema/site and `docs/PLAN.md` before topic corrections. Integrated the upstream event guide, hotel additions and later team-field correction while preserving sourced trip-guide content. Reconciled shared pages, JSON, sources and open questions on the fixed Arena branch.
+2. **Pass 2 — evidence and requirements review.** Re-read the MPT Route 186 and latest-updates pages, the MPT fares page, Eventbrite listing text, MTA service page and guideline PDF. Corrected the Route 186 19:00/20:00 conflation, removed the unsupported union, kept Route 214/TQ1 as candidates, withdrew the claim that a taxi or second bus is mandatory network-wide, qualified ticket-price evidence, recorded the Virtus.pro/NIP update with its source limits, and reopened the MTA short-stay question. Reviewed radio, travel-practicality, activity and platform-coverage caveats.
+3. **Pass 3 — consistency and regression.** Searched current pages/data/docs for categorical “no bus”/taxi claims, stale diversion windows and resolved MTA language; aligned overview, transport, event, expense and evidence records; checked source-log coverage and exact data schema; and reran JavaScript, responsive, accessibility, navigation, data-render and planner tests.
 
 ## Local validation results
 
-- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files / 176 exact-schema records / 307 unique record URLs in `docs/SOURCES.md` / 15 HTML pages / 172 link attributes / 9 shared navigation destinations / 25 expense rows.
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files / 176 exact-schema records / 307 unique record URLs in `docs/SOURCES.md` / 15 HTML pages / 175 link attributes / 9 shared navigation destinations / 25 expense rows.
 - `python3 scripts/check_javascript.py` — **PASS**.
 - `node --check js/site.js` — **PASS**.
 - `npm test` — **PASS, 11/11 Playwright tests**, including 320/360/768/1440 px layouts, axe accessibility checks, topic data/render parity, navigation, planner persistence/CSV/error states and itinerary quick-fill.
 - `git diff --check` — **PASS** after conflict resolution and final report edits.
 
-These checks cover repository structure and local behavior. They do not verify external-link liveness, ticket inventory, a live dated transit route, taxi availability, physical radio reception, named-match carriage, every browser/device, or exhaustive assistive-technology compatibility.
+These checks cover repository structure and local behavior. They do not verify external-link liveness, ticket inventory, a live dated transit route, taxi availability, physical radio reception, named-match carriage, every browser/device or exhaustive assistive-technology compatibility.
 
 ## Remaining limitations and next-session work
 
@@ -76,4 +78,4 @@ These checks cover repository structure and local behavior. They do not verify e
 
 ## Delivery boundary
 
-PR #42, PR #43 and PR #45 are upstream merged changes incorporated in the current base. This report records the local validation and audit snapshot for the fixed session branch. The final delivery response reports the observed state of this branch’s PR, checks, merge and any Pages deployment only after direct GitHub inspection; no later GitHub outcome is inferred here.
+PR #42, PR #43, PR #45 and PR #44 are upstream merged changes incorporated in the current base. This report records the local validation and audit snapshot for the fixed session branch. The final delivery response reports the observed state of this branch’s PR, checks, merge and any Pages deployment only after direct GitHub inspection; no later GitHub outcome is inferred here.

@@ -2,9 +2,21 @@
 
 ## Current delivery session — `arena/cc913a9b-maltasupplemental` (11 October 2026)
 
-Repository review began against baseline `b307c51` on the Arena-fixed branch `arena/cc913a9b-maltasupplemental`; this plan was already updated in the current session and should be preserved. During the session, `origin/main` advanced via PR #42 to `5cdea689`; that upstream event-guide work was fetched, integrated here, and re-audited. The site contains the requested workstreams, an exact 13-field data schema, a data-driven static site, dated source/open-question logs, a blank-by-default expense planner, and prior verification records. Do not recreate or overwrite that work; verify it, repair concrete gaps, and preserve provenance.
+This plan was reviewed before topic corrections. Work began at `b307c51` on the fixed Arena branch and integrates upstream main through PR #42 (`5cdea68`), #43 (`94733df`), #45 (`dc2fe82`) and #44 (`c7d1d00`). The tree already contains the shared schema, mobile shell, data-backed pages, source/open-question logs, blank-by-default expense planner and prior verification; preserve them and reconcile incoming main changes rather than replacing them.
 
-The user's parallel-work protocol is retained, but this environment provides no isolated sub-agent/workstream runner and the session branch is fixed. Therefore A–F will be audited serially on this branch, each within its listed topic data/page ownership; the CS2 event workstream H was added upstream by PR #42 and is integrated/re-audited on this branch; G owns shared integration and documentation edits. The schema, shell, navigation, CSS and source-log format are the shared setup and already exist. Cross-topic findings belong in `docs/HANDOFF.md`; unresolved or conflicting evidence belongs in `docs/OPEN_QUESTIONS.md`.
+PR #44's event-field update is retained: HLTV and Hotspawn reported that Ninjas in Pyjamas replaced Virtus.pro on 9 October, while the organizer's own pages still showed the original roster when checked. The final re-audit also supersedes any overconfident Eventbrite/free-ticket, network-wide bus/taxi, Route 186 diversion and short-stay contribution wording inherited from earlier snapshots. The current report distinguishes dated observations from current checkout evidence and route-specific facts from a verified door-to-door itinerary.
+
+The user's parallel-work protocol remains active. Shared setup precedes topic work; workstreams A–F each own one data file and matching page; G owns shared integration. This environment has no isolated sub-agent/workstream runner, so A–F were audited serially on the fixed branch without crossing ownership boundaries. Cross-topic notes belong in `docs/HANDOFF.md`; unverified/conflicting facts belong in `docs/OPEN_QUESTIONS.md`; every record follows `data/record.schema.json` and page content renders from data; each claim needs a traceable source/access date in `docs/SOURCES.md`; `docs/STATUS.md` stays current.
+
+### Cumulative passes
+
+1. **Pass 1 — repository and implementation review:** review the existing schema/site and source structure before topic work; integrate upstream changes; retain useful content and dependencies.
+2. **Pass 2 — evidence and requirements audit:** check high-impact claims against sources; qualify ticket, transit, fare, MTA and social-platform limitations; correct or log unresolved facts rather than inferring them.
+3. **Pass 3 — consistency and regression:** trace user requirements through pages/data/docs, search for stale/conflicting claims, check schema/source coverage/responsive accessibility and rerun all local tests.
+
+### Immediate handoff
+
+Confirm the attendee gate, ticket terms and weekend agenda; run the MPT dated planner after event times/gate are known; check October fares and any needed taxi quote; clarify the MTA short-stay wording/EES status; refresh volatile sources near the trip; fill/export the planner only after itinerary and actual costs arrive. Create/merge the PR and report only GitHub outcomes directly observed after the final push.
 
 ### Short plan and workstream ownership
 
