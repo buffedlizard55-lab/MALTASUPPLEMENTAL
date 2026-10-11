@@ -24,7 +24,7 @@
 
     <section class="callout callout-warning" aria-label="Expense planner assumptions">
       <span class="callout-title">No itinerary or booking amounts were supplied</span>
-      <p>All amount fields start blank. Do not infer flight route, hotel nights/check-in dates, number of travelers, meal plan, event admission, or expenses covered by someone else. Enter whole-trip totals in euros on a consistent basis; if a charge is in USD, note the conversion rate and fee in the row notes. Confirm every quote and booking before relying on it.</p>
+      <p>All amount fields start blank. The supplied stay window is 13–19 October; exact billable nights and check-in/out terms still need the booking confirmation. Do not infer flight route, hotel charges, number of travelers, meal plan, event admission, or expenses covered by someone else. Enter whole-trip totals in euros on a consistent basis; if a charge is in USD, note the conversion rate and fee in the row notes. Confirm every quote and booking before relying on it.</p>
       <p>This planner saves on this browser/device only; it does not send amounts to a server. Download a CSV backup before clearing browser data or switching devices. Avoid saving private financial details on a shared device.</p>
     </section>
 
@@ -58,6 +58,9 @@
       <p id="save-status" class="small" role="status" aria-live="polite">Your amounts will autosave locally as you type.</p>
     </section>
 
+    <aside class="callout" aria-label="Daily spending guidance">
+      <strong>Quick fill from your itinerary:</strong> enter one-off flights/hotel/pass bookings in the 18 core rows. Expand the seven optional daily rows for remaining meals or incidentals. Enter each expense once: daily rows and aggregate food/transport rows must not duplicate the same cost. Amounts remain blank until you enter them.
+    </aside>
     <section aria-label="Editable expense categories">
       <div id="expense-list" aria-live="polite">
         <p class="muted">Loading editable expense rows…</p>
@@ -84,8 +87,13 @@
       var host = document.getElementById("expense-list");
       var saveStatus = document.getElementById("save-status");
       var records = [];
+      var exportButton = document.getElementById("export-csv");
+      var clearButton = document.getElementById("clear-expenses");
+      exportButton.disabled = true;
+      clearButton.disabled = true;
       var state = {};
       var storageAvailable = true;
+      var recoveryNotice = "";
       var formatter = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR" });
 
       function make(tag, className, text) {
@@ -140,13 +148,17 @@
         if (type === "number") {
           input.min = "0";
           input.step = "0.01";
+          input.max = "1000000000";
           input.inputMode = "decimal";
           input.placeholder = "0.00";
         } else {
           input.maxLength = 240;
           input.placeholder = "Optional booking or receipt detail";
         }
-        input.value = savedValue || "";
+        var restored = typeof savedValue === "string" ? savedValue : "";
+        if (type === "number" && restored && (!Number.isFinite(Number(restored)) || Number(restored) < 0)) restored = "";
+        input.value = restored.slice(0, type === "text" ? 240 : 24);
+        if (type === "number" && !input.checkValidity()) input.value = "";
         label.appendChild(input);
         return label;
       }
@@ -154,7 +166,11 @@
       function readStoredState() {
         try {
           var raw = window.localStorage.getItem(storageKey);
-          state = raw ? JSON.parse(raw) : {};
+          try { state = raw ? JSON.parse(raw) : {}; }
+          catch (_parseError) {
+            state = {};
+            recoveryNotice = "Saved entries were unreadable; the form starts blank. New entries can still be saved.";
+          }
           if (!state || typeof state !== "object" || Array.isArray(state)) state = {};
         } catch (error) {
           storageAvailable = false;
@@ -173,7 +189,7 @@
 
         var dl = make("dl", "record-details");
         var priceDetail = make("div", "record-detail");
-        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record["price range"] || "Not set"));
+        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record["price range"]));
         dl.appendChild(priceDetail);
         article.appendChild(dl);
 
@@ -207,14 +223,20 @@
         return (amount > 0 ? "+" : "") + formatter.format(amount);
       }
 
+      function amount(input) {
+        if (!input || input.value === "") return 0;
+        var value = Number(input.value);
+        return Number.isFinite(value) && value >= 0 && input.checkValidity() ? value : 0;
+      }
+
       function updateTotals() {
         var budget = 0;
         var actual = 0;
         host.querySelectorAll("[data-expense-row]").forEach(function (row) {
           var budgetInput = row.querySelector('[data-expense-field="budget"]');
           var actualInput = row.querySelector('[data-expense-field="actual"]');
-          var budgetValue = budgetInput && budgetInput.value !== "" ? Number(budgetInput.value) : 0;
-          var actualValue = actualInput && actualInput.value !== "" ? Number(actualInput.value) : 0;
+          var budgetValue = amount(budgetInput);
+          var actualValue = amount(actualInput);
           if (Number.isFinite(budgetValue)) budget += budgetValue;
           if (Number.isFinite(actualValue)) actual += actualValue;
         });
@@ -237,7 +259,15 @@
 
       function save() {
         captureState();
-        if (!storageAvailable) return;
+        var invalid = Array.from(host.querySelectorAll('input[type="number"]')).some(function (input) { return !input.checkValidity(); });
+        if (invalid) {
+          saveStatus.textContent = "Enter non-negative euro amounts with at most two decimal places (maximum €1,000,000,000 per field). Invalid amounts are excluded from totals; correct them before saving or exporting.";
+          return;
+        }
+        if (!storageAvailable) {
+          saveStatus.textContent = "Browser storage is unavailable. Your totals still work; download a CSV backup before leaving.";
+          return;
+        }
         try {
           window.localStorage.setItem(storageKey, JSON.stringify(state));
           saveStatus.textContent = "Saved locally in this browser on this device. Download a CSV backup to move it elsewhere.";
@@ -254,7 +284,9 @@
         host.replaceChildren();
         var categories = Array.from(new Set(records.map(function (record) { return record.category; })));
         categories.forEach(function (category) {
-          var section = make("section", "category-section");
+          var daily = category.indexOf("Optional daily") === 0;
+          var section = make(daily ? "details" : "section", daily ? "category-section daily-planner" : "category-section");
+          if (daily) section.appendChild(make("summary", "", "Optional daily rows · 13–19 October (enter each expense once)"));
           var heading = make("div", "category-heading");
           heading.append(make("h2", "", category), make("span", "category-count", records.filter(function (record) { return record.category === category; }).length + " line items"));
           var grid = make("div", "grid");
@@ -262,13 +294,15 @@
           section.append(heading, grid);
           host.appendChild(section);
         });
+        exportButton.disabled = false;
+        clearButton.disabled = false;
         updateTotals();
-        if (storageAvailable) saveStatus.textContent = "Your amounts autosave locally in this browser as you type.";
+        if (storageAvailable) saveStatus.textContent = recoveryNotice || "Your amounts autosave locally in this browser as you type.";
       }
 
       function csvCell(value) {
         var text = String(value === undefined || value === null ? "" : value);
-        if (/^[=+@-]/.test(text)) text = "'" + text;
+        if (/^[\s\u0000-\u001f]*[=+@-]/.test(text)) text = "'" + text;
         return '"' + text.replace(/"/g, '""') + '"';
       }
 
@@ -278,6 +312,8 @@
       });
 
       document.getElementById("export-csv").addEventListener("click", function () {
+        var invalid = host.querySelector('input[type="number"]:invalid');
+        if (invalid) { invalid.reportValidity(); saveStatus.textContent = "Correct invalid amounts before exporting."; return; }
         captureState();
         var rows = [["Item", "Category", "Budgeted EUR", "Actual EUR", "Notes", "Reference URL"]];
         records.forEach(function (record) {
@@ -293,7 +329,7 @@
         document.body.appendChild(link);
         link.click();
         link.remove();
-        URL.revokeObjectURL(url);
+        window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
         saveStatus.textContent = "CSV backup downloaded. Keep it somewhere private and secure.";
       });
 

@@ -1,0 +1,29 @@
+{
+  "name": "maltasupplemental",
+  "version": "1.0.0",
+  "description": "A mobile-friendly, source-linked travel guide for the trip window **13\u201319 October 2026**, based at the user-supplied **AX ODYCY, Qawra Coast Road, Qawra SPB 1902** (Deluxe Sea-View room). The event location supplied by the traveler is **BLAST Arena Studios, Attard**.",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "python3 scripts/validate_site.py && python3 scripts/check_javascript.py && playwright test",
+    "test:browser": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/issues"
+  },
+  "homepage": "https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL#readme",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.64.0",
+    "@sparticuz/chromium": "^153.0.0"
+  },
+  "private": true
+}
