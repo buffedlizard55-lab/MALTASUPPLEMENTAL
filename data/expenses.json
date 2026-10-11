@@ -27,11 +27,11 @@
       "address": "AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Malta",
       "hours": "Not applicable — enter the full booking total and note the confirmed check-in/out dates",
       "description": "Hotel and Deluxe Sea-View room are user-supplied trip details. No booking confirmation, price, deposit, meal plan, traveler count, or exact check-in/out time was supplied. Enter the confirmed booking total rather than multiplying an assumed nightly rate; do not infer the number of hotel nights from the travel window alone.",
-      "source_url": "https://axhotelsmalta.com/odycy/",
-      "source_type": "official",
-      "date_checked": "2026-10-09",
-      "confidence": "unverified",
-      "notes": "Official AX ODYCY property page; it is not a quote or confirmation of this reservation. Record any included meals, deposit, cancellation terms, and separately billed hotel charges in the notes field.",
+    "source_url": "https://axhotelsmalta.com/odycy/",
+    "source_type": "official",
+    "date_checked": "2026-10-11",
+    "confidence": "unverified",
+    "notes": "Official AX ODYCY property page; it is not a quote or confirmation of this reservation. Property page re-checked 11 Oct 2026: AX ODYCY is described as a 4-star hotel formerly known as AX Seashells Resort at Suncrest, located at Qawra Coast Road, Qawra, with contact +356 2354 3000 and info.odycy@axhotelsmalta.com. Record any included meals, deposit, cancellation terms, and separately billed hotel charges in the notes field.",
       "price range": "Not published; booking amount starts blank"
     },
     {
@@ -44,9 +44,9 @@
       "description": "Optional line for charges shown separately on the confirmed hotel invoice. The Malta Tourism Authority states an environmental contribution of €1.50 per night per person aged 18 or over from 1 July 2026, capped at €22.50 per person per visit. A six-night stay would be €9 per eligible adult only if all six nights are billable; this is a conditional calculation, not the traveler’s confirmed amount. Do not duplicate amounts already included in the accommodation total.",
       "source_url": "https://mta.com.mt/services/environmental-contribution/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "MTA’s published rate, age threshold, per-person cap and effective date were checked 10 Oct 2026. The MTA says the contribution must appear as a separate item on the invoice/fiscal receipt. Whether anything is due on this booking depends on actual billable nights, guest ages and the hotel’s invoice; see OQ-23 in docs/OPEN_QUESTIONS.md. No personalized amount has been prefilled.",
+      "notes": "MTA’s published rate, age threshold, per-person cap and effective date were checked 10 Oct 2026 and re-checked 11 Oct 2026. The MTA says the contribution must appear as a separate item on the invoice/fiscal receipt. The page also defines a ‘visit’ (an uninterrupted stay in licensed premises), carries a ‘15-Night Threshold’ sentence that is ambiguous as written (see OQ-25), and notes delegated operational functions to the Malta Hotels and Restaurants Association. Whether anything is due on this booking depends on actual billable nights, guest ages, the 15-night rule’s meaning and the hotel’s invoice; see OQ-23 and OQ-25 in docs/OPEN_QUESTIONS.md. No personalized amount has been prefilled.",
       "price range": "Environmental contribution: €1.50 per person per night for guests aged 18+, from 1 July 2026; maximum €22.50 per person per visit. If six nights are chargeable, the amount would be €9 per eligible adult; the MTA page's '15-night' wording is unresolved (OQ-25)."
     },
     {
@@ -117,11 +117,11 @@
       "address": "Not applicable — editable expense category",
       "hours": "Not applicable",
       "description": "Enter the total for the travel card, individual bus fares, or other public-transit purchases actually planned. No number of journeys or card selection is assumed.",
-      "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
-      "source_type": "official",
-      "date_checked": "2026-10-09",
-      "confidence": "unverified",
-      "notes": "Use Malta Public Transport’s current fare and ticket terms. The published fare page checked for this guide did not settle every seasonal October 2026 fare condition.",
+    "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
+    "source_type": "official",
+    "date_checked": "2026-10-11",
+    "confidence": "unverified",
+    "notes": "Use Malta Public Transport’s current fare and ticket terms. Fare page re-fetched 11 Oct 2026; the full rate table (day €2.00 winter/€2.50 summer, night/special/TD €3.00, TD1 €3.50, €50 no-ticket fine, card prices) is recorded in data/transport.json under mpt-fares-cards. The page’s seasonal effective dates still do not establish which single fare applies 13–19 October 2026.",
       "price range": "Not set; check current fares and card conditions"
     },
     {
