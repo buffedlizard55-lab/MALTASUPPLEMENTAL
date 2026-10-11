@@ -62,7 +62,7 @@
 
 ## Current session addendum — `arena/b29d95ae-maltasupplemental` (11 October 2026)
 
-**Stage:** Delivery pass two days before departure. Repository reviewed at `main` `ae69ab1` (PR #55 merge tip); shared setup (schema, shell, CSS, source-log format, planner, CI, tests) verified present and left intact. Workstreams ran serially on this fixed Arena branch with the established file-ownership map; cross-stream findings went to `docs/HANDOFF.md`. Time-critical sources re-read (Eventbrite, MPT updates + fares, Liquipedia bracket, BBC Sportsworld/Sportsound, EU ETIAS FAQ, met panels, one platform access check); Passes 1–3 and the local suite are the gates before the PR.
+**Stage:** Delivered. PR #64 merged to `main` at 2026-10-11 19:10:02 UTC as `60fea6d` after rebasing through `614a67b` (PRs #56–#66 integrated, including the parallel 6C radio-block resolution); the Pages latest-build endpoint reports `built` for that commit. Repository reviewed at `main` `ae69ab1` (PR #55 merge tip); shared setup (schema, shell, CSS, source-log format, planner, CI, tests) verified present and left intact. Workstreams ran serially on this fixed Arena branch with the established file-ownership map; cross-stream findings went to `docs/HANDOFF.md`. Time-critical sources re-read (Eventbrite, MPT updates + fares, Liquipedia bracket, BBC Sportsworld/Sportsound, EU ETIAS FAQ, met panels, one platform access check); Passes 1–3 and the local suite are the gates before the PR.
 
 | Workstream | Status | Blockers / next check |
 |---|---|---|
