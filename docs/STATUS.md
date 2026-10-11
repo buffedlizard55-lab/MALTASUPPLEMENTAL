@@ -2,15 +2,16 @@
 
 **Last updated:** 11 October 2026 (UTC)
 **Session branch:** `arena/cc913a9b-maltasupplemental`
-**Snapshot boundary:** Dated local audit state, not a live GitHub or Pages dashboard. Check the PR directly before reporting its current state.
+**Snapshot boundary:** Updated after observing PR #46 merge and its GitHub Pages build on 11 October 2026 (UTC); this is still a dated snapshot, not a live dashboard.
 
 ## Integration and delivery
 
 - The session began at `b307c51`. Upstream PRs #42 (`5cdea68`), #43 (`94733df`), #45 (`dc2fe82`), #44 (`c7d1d00`), #47 (`852343f`) and #49 (`12578cd`) are merged to `main`; the current upstream tree has been integrated on this branch.
 - PR #49 adds an expanded source-led guide, keeps all upstream event/hotel changes, adds safe JSON expense backup/restore, and broadens the automated review suite. Its evidence scope and historical pass details are preserved in the audit/history docs.
-- This session reconciled to `main` at `12578cd`, retained the exact schema and all upstream record IDs, and reran the complete suite. The latest MPT extraction separates the April 20:00 diversion from the October 19:00 notice and notes that the latter excerpt lacks a year. Static Route 186 evidence is not a full-network last-bus finding; no taxi is assumed as mandatory.
+- The delivery head `3ad5100` incorporated `main` through PR #49 at `12578cd`, retaining the exact schema and upstream record IDs. The latest MPT extraction separates the April 20:00 diversion from the October 19:00 notice and notes that the latter excerpt lacks a year. Static Route 186 evidence is not a full-network last-bus finding; no taxi is assumed as mandatory.
+- GitHub Pages latest-build endpoint reported build `1276765781` for merge commit `25e01762d310bdc71deaa9dc9602f96a7d4565f9`, status `built`, created 16:38:04 and updated 16:38:24 UTC. The Pages API reports the public URL `https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/` and source `main` `/`; this is a GitHub build-state observation, not an independent browser/content check.
 - A fresh MTA guest-facing notice plus the 2026 guidelines support €1.50/night for eligible 18+ guests, capped at €22.50/visit and separately itemized. The general MTA service page still has anomalous “exceeded fifteen nights” wording; OQ-25 treats that as a webpage anomaly, not a short-stay exemption. A six-qualifying-night €9 figure is conditional arithmetic, never a personal invoice.
-- PR #46 is open from the fixed branch to `main`. The last pushed head `7e45b12` was reported `CONFLICTING`; `gh pr checks 46` reported no checks. Main subsequently advanced through PR #49 to `12578cd`. That revision has now been merged locally and the updated tree passes tests; the merge commit/push are pending. Recheck PR head, checks and mergeability after push.
+- PR #46 was merged to `main` on 11 October 2026 at 16:38:02 UTC. GitHub reports merge commit `25e01762d310bdc71deaa9dc9602f96a7d4565f9`, from session head `3ad510058c77c41cf2920949b4047d921d870578`. Its “Schema, browser and accessibility checks” run passed at 16:37:43 UTC; the PR was `CLEAN` and `MERGEABLE` before merge.
 
 ## Workstream status
 
@@ -23,7 +24,7 @@
 | **E · Malta sports radio** | Dedicated receiver-based section | No physical DAB+/FM scan or reception test; no complete named-match chain (official schedule + Malta carriage + compatible receiver + local signal) confirmed. |
 | **F · Expenses** | Blank-by-default planner with CSV/JSON backup | Enter only confirmed itinerary/actuals. JSON restore is consent-gated and validated; CSV is for spreadsheet/manual use. |
 | **H · CS2 event extension** | Integrated and re-audited | Confirm checkout/inventory, own reservation, timezone, attendee gate, validity, exact finish discrepancy and weekend agenda. |
-| **G · Integration** | Three cumulative passes complete; latest-main tests passed | Run final whitespace check after status edits, commit/push only this branch, inspect PR #46 and merge by explicit number if allowed. |
+| **G · Integration** | Three cumulative passes complete; PR #46 merged, required CI passed, and Pages latest-build endpoint reports `built` | No repository delivery gate remains. Keep open factual limits visible; remaining work is traveler- and date-specific. |
 
 ## Current evidence and access limits
 
@@ -46,9 +47,14 @@ This branch then reconciled advancing `main` (PRs #42–47, then PR #49) by cont
 
 After resolving the latest-main conflicts, `npm test` passed: **7 datasets / 184 exact-schema records / 281 unique record URLs in the source log / 15 HTML pages / 176 link attributes / 9 shared navigation destinations / 25 expense rows**; shared/inline JavaScript checks passed; Playwright passed **21/21** tests, including 320/360/768/1024/1440 px layouts, axe, source/data projections, backup validation, error/storage cases and planner quick-fill. `git diff --check` passed after conflict resolution and these documentation edits.
 
-## Next steps
+After resolving latest-main conflicts and before delivery, `npm test` passed: **7 datasets / 184 exact-schema records / 281 unique record URLs in the source log / 15 HTML pages / 176 link attributes / 9 shared navigation destinations / 25 expense rows**; shared/inline JavaScript checks passed; Playwright passed **21/21** tests, including 320/360/768/1024/1440 px layouts, axe, source/data projections, backup validation, error/storage cases and planner quick-fill. No application code/data changed after this run. `git diff --check` passed after the post-merge reporting edits.
 
-1. Run final conflict-marker, staged/unstaged diff and whitespace checks; commit the merge of `origin/main` at `12578cd`.
-2. Push only `arena/cc913a9b-maltasupplemental`; inspect PR #46's exact head, CI, review state and mergeability.
-3. If GitHub reports a clean mergeable state and required checks pass (or none are configured), run `gh pr merge 46 --merge`; inspect the actual merge commit, main CI and Pages build/live result before reporting.
-4. For the traveler: confirm reservation/gate/weekend schedule, save dated bus journeys, verify fares/optional quotes, clarify the MTA page anomaly/invoice, refresh volatile venue/food/weather data, scan radio locally and enter actual costs.
+## Traveler-time follow-up
+
+The repository merge, required PR check and Pages build record are complete. Remaining work needs traveler-specific information or a check close to the trip:
+
+1. Confirm reservation, attendee gate/day validity, timezone, exact finish and Saturday/Sunday event agenda with Hotspawn/Thunderpick.
+2. Save dated public-transport journeys both ways; verify stop sides, safe walks, the October notice year/effect, current fares and any TQ announcement. Request a live hotel/taxi quote only if desired or needed.
+3. Refresh venue, restaurant, gaming and attraction hours/availability, weather and service notices close to travel; locally scan FM/DAB+ and ask stations about any named match.
+4. Confirm MTA invoice handling/eligible nights if the webpage wording remains unclear; recheck entry/EES status against authoritative guidance and the traveler’s own documents.
+5. Populate the expense planner only after itinerary/party/booking details arrive; review the quick-fill preview and keep a private backup.

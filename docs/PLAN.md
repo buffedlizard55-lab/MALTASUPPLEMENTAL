@@ -22,6 +22,8 @@ Current session objectives:
 
 **Current session:** 11 October 2026 (UTC) · fixed branch `arena/cc913a9b-maltasupplemental` · starting revision `b307c51` · current upstream integrated locally through PR #49 at `12578cd`.
 
+**Current session:** 11 October 2026 (UTC) · fixed branch `arena/cc913a9b-maltasupplemental` · starting revision `b307c51` · latest-main integration through PR #49 at `12578cd` · delivered by PR #46 as merge commit `25e0176`.
+
 ## Repository review and scope
 
 The repository review and plan preceded topic corrections. It already contained a GitHub Pages site, shared renderer/navigation, canonical JSON records, source/open-question logs, browser tests and an expense planner; preserve that work and reconcile incoming `main` rather than replacing it with a second app.
@@ -57,8 +59,10 @@ Arena fixes this session to `arena/cc913a9b-maltasupplemental` and provides no i
 2. **Pass 2 — adversarial evidence and software review:** search for stale/overconfident claims, hidden or missing data, route/price/ticket/radio inference, blocked sources, malformed backup/import data and planner edge cases; fix or record each gap.
 3. **Pass 3 — original-request audit:** map every requested topic and research limitation to the guide/docs/tests, compare current claims with the evidence log, inspect incoming `main` IDs and rerun every local gate. Do not describe passing tests as a factual certificate.
 
-PR #49's inherited completion record documents 18/18 after implementation, then an expanded 21/21 adversarial/final run. This session then integrated newer `main` through `12578cd` (PR #49) and reran the full 21-test suite: 184 exact-schema records, 281 source-log URLs, 15 HTML pages, 176 local links, 9 navigation destinations, 25 expense rows; all checks passed. A physical trip/receiver test and exhaustive external source re-verification remain out of scope.
+PR #49's inherited completion record documents 18/18 after implementation, then an expanded 21/21 adversarial/final run. This session integrated `main` through `12578cd` (PR #49) and reran the full 21-test suite: 184 exact-schema records, 281 source-log URLs, 15 HTML pages, 176 local links, 9 navigation destinations, 25 expense rows; all checks passed. PR #46 head `3ad5100` passed GitHub's “Schema, browser and accessibility checks” and merged at `25e0176`. The latest Pages build record, `1276765781`, reports `built` for that merge commit. A physical trip/receiver test and exhaustive external source re-verification remain out of scope.
 
-## Delivery
+## Delivery — observed
 
-Finish the local `main` integration on this fixed branch, run `git diff --check` and the complete test suite, commit and push only `arena/cc913a9b-maltasupplemental`, inspect PR #46's latest head/checks/reviews/mergeability, and merge with explicit PR number only when GitHub allows. Then inspect the actual merge and Pages result. Report only observed GitHub/deployment outcomes. Do not switch branches, merge/close unrelated PRs, or assert personal bookings, service, reception or completeness without evidence.
+PR #46 was merged into `main` on 11 October 2026 at 16:38:02 UTC (merge commit `25e01762d310bdc71deaa9dc9602f96a7d4565f9`). The pushed head was `3ad510058c77c41cf2920949b4047d921d870578`; its required schema/browser/accessibility check passed at 16:37:43 UTC. GitHub Pages latest-build record `1276765781` reports status `built` for the merge commit, updated at 16:38:24 UTC. The Pages source is `main` at `/`; no independent browser-level content fetch was performed.
+
+The local `npm test` suite and `git diff --check` passed after application integration. Report only observed GitHub/deployment outcomes; do not assert personal bookings, service, reception or complete external re-verification. Remaining next steps require traveler/event details or date-local checks: confirm ticket/gate/weekend details, save dated transit journeys, refresh volatile listings and fares, locally scan radio, and enter only actual costs into the planner.
