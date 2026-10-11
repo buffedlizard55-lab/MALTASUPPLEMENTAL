@@ -1,17 +1,32 @@
 # Malta trip guide — work plan
 
-## Current delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026)
+## Current delivery session — `arena/cc913a9b-maltasupplemental` (11 October 2026)
 
-The repository and PR #33 were reviewed before integration. This fixed Arena branch began at PR #33 head `854c1e16d94caa6cd7ae35ee44a0040bc5d036fd` (merge base `eeeb648d143299462ac52b00a7bc3749d36ca152`). The required upstream snapshot is `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, including PR #39 and its accumulated PR #40/#41 work. A non-fast-forward merge of that exact `origin/main` commit is in progress on this branch; PR #33’s own corrections and evidence limits must be retained. No commit, push, PR merge or Pages verification has yet been completed.
+Repository review is complete against baseline `b307c51` on the Arena-fixed branch `arena/cc913a9b-maltasupplemental`; this plan was already updated in the current session and should be preserved. The site already contains all requested workstreams, an exact 13-field data schema, a data-driven static site, dated source/open-question logs, a blank-by-default expense planner, and previous verification records. Do not recreate or overwrite that work; verify it, repair concrete gaps, and preserve provenance.
 
-The parallel-work protocol remains in force: A–F own one topic data file plus its matching page; G owns shared integration and documentation. Because Arena provides no isolated workstream runner, research and edits run serially on the fixed branch. Shared setup happens first; cross-topic findings go to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in `docs/OPEN_QUESTIONS.md`. The schema, source log, expense defaults, and prior useful main work are preserved unless a concrete inconsistency requires correction.
+The user's parallel-work protocol is retained, but this environment provides no isolated sub-agent/workstream runner and the session branch is fixed. Therefore A–F will be audited serially on this branch, each within its listed topic data/page ownership; G will perform shared integration and documentation edits after topic checks. The schema, shell, navigation, CSS and source-log format are the shared setup and already exist. Cross-topic findings belong in `docs/HANDOFF.md`; unresolved or conflicting evidence belongs in `docs/OPEN_QUESTIONS.md`.
 
-Current session objectives:
+### Short plan and workstream ownership
 
-1. **Integrate upstream safely:** complete the `de3303f` merge without dropping PR #33 changes or evidence; review staged and unstaged diffs and retain provenance.
-2. **Reconcile current claims:** align the Eventbrite listing scope (dated free 18+ reservation advertisement, visible 14–16 October agenda, no traveler-specific ticket confirmation), MPT’s unresolved October single fare and static Route 186 return risk, the unresolved MTA short-stay wording, and BBC parent-programme versus match-specific broadcast-service labels. Keep inaccessible-platform and physical-check limits explicit.
-3. **Complete Passes 1–3 cumulatively:** check schema/data/page/docs consistency; search for stale or overconfident statements; run structural, JavaScript and browser tests; record all remaining blockers and limitations.
-4. **Delivery:** commit and push only `arena/ef6c76d6-maltasupplemental`, verify PR #33’s head/base/checks/mergeability, merge PR #33 by explicit number as requested, then check the GitHub Pages build. Report only states actually observed.
+| Workstream | Owned files | Focus / dependency |
+|---|---|---|
+| A. Transport | `data/transport.json`, `getting-around.html` | Verify airport/hotel/event travel, date-specific public transit, fares and alternatives; depends on shared schema/renderer; unknown venue gate/times remain open. |
+| B. Food & cafés | `data/food.json`, `restaurants.html` | Verify Qawra and Malta restaurants/cafés and clearly bound Maps/review/social evidence; depends on shared schema/renderer. |
+| C. Gaming, activities, landmarks, events | `data/activities.json`, `activities.html` | Verify gaming venues, sights and dated trip-window events; distinguish official dates/access from seasonal suggestions; depends on shared schema/renderer. |
+| D. U.S. traveler everyday life | `data/everyday.json`, `everyday.html` | Verify power, phone, money, safety/health, entry, customs, language and weather; qualify traveler-specific details. |
+| E. Sports radio | `data/radio.json`, `radio.html` | Verify Malta FM/DAB+ devices/frequencies and official trip-week schedules; separate general programmes, named match carriage, radio reception and online streams. |
+| F. Expense planner | `data/expenses.json`, `costs.html` | Verify blank defaults, itinerary quick-fill, totals, local persistence, CSV and reset; no guessed trip costs. |
+| G. Integration | Shared shell/docs: `index.html`, `sources.html`, `README.md`, `css/style.css`, `js/site.js`, `docs/*`, validators/tests/config | Integrate only after A–F; audit navigation/responsiveness, evidence and data/page consistency; run all tests and prepare the PR. |
+
+### Execution passes
+
+1. **Pass 1 — implementation review:** inspect the existing site and evidence structure, fix verified omissions/defects, maintain ownership boundaries, and run schema, link, script, and browser checks.
+2. **Pass 2 — adversarial review:** search for unsupported/overconfident claims, broken paths/anchors, data/page mismatches, missing request coverage, edge cases in the expense planner, and stale date-sensitive statements; fix or log each finding.
+3. **Pass 3 — final requirement audit:** trace every requested section to the implementation; report verified facts, access/research limitations, open items, and next-session actions. Re-run every automated gate on the integrated result.
+
+### Delivery objective
+
+Commit and push only `arena/cc913a9b-maltasupplemental`; open a PR from that branch to `main`, merge it by explicit PR number if GitHub checks and mergeability allow, then inspect the resulting Pages status. Report only actions and checks actually observed. The provided source audit is not a substitute for proving real-time availability, personal bookings, local radio reception, or facts hidden behind restricted platforms.
 
 ## Scope and repository review
 
@@ -29,7 +44,7 @@ Review the repository and existing evidence before edits. Preserve useful main-b
 
 ## Parallel-work and ownership protocol
 
-The repository must be reviewed and this ownership plan maintained before topic work. Complete shared schema/source-log setup serially. The Arena checkout is fixed to `arena/ef6c76d6-maltasupplemental`; there is no isolated sub-agent or workstream-branch runner in this environment, so execute A–F one at a time on this branch. Each workstream edits only its owned topic data/page files. Do not make cross-workstream edits during another workstream; record relevant discoveries in `docs/HANDOFF.md`. Workstream G performs serial integration and owns shared files, source/audit documentation, validation, and reporting. Avoid concurrent edits to shared files.
+The repository was reviewed and this ownership plan updated before topic work. Shared schema/source-log setup already exists. The Arena checkout is fixed to `arena/cc913a9b-maltasupplemental`; there is no isolated sub-agent or workstream-branch runner in this environment, so execute A–F one at a time on this branch. Each topic audit stays within its owned data/page files unless a concrete fix is necessary. Do not make cross-workstream edits during another workstream; record relevant discoveries in `docs/HANDOFF.md`. Workstream G performs serial integration and owns shared files, source/audit documentation, validation, and reporting. Avoid concurrent edits to shared files.
 
 ## Workstreams, owned files, scope, and dependencies
 
@@ -96,7 +111,7 @@ PR #31 was already merged into `main` when this session began, so the session br
 Corrections and upgrades made, each traceable to a source read during this session:
 
 1. **Venue disambiguation (workstream A).** “BLAST Arena Studios, Attard” and “Ta’ Qali” are the same complex. Verified from BLAST’s own attendee guide (“Malta Fairs & Conventions Centre – BLAST Arena Studios … Ta Qali, ATD 4000 Ħ’Attard”), EventWorks, GamingMalta and the visitmalta.co.uk directory. The prior dataset hedged this as unresolved; routing is now settled while *access* remains open.
-2. **Two Route 186 detours, not one (A).** The operator’s own route page lists both a recurring Friday/Saturday 20:00–00:00 notice ending ~21 April and a 19:00–00:00 notice starting 17 October. Both omit stops “from Gholja 2 through Targa” toward Buġibba. Only the 17 October one was previously recorded.
+2. **Two separate Route 186 notices (A).** The operator’s route page lists an older Friday/Saturday 20:00–00:00 notice ending around 21 April and the new 19:00–00:00 notice starting 17 October; both name stops Gholja 2 through Targa toward Buġibba. A later full-page reread of the route and latest-service-updates pages confirms that 19:00 is the October window on both pages. An intermediate extraction that attributed 20:00 to the October notice was a misread of the separate older notice; no union window should be used.
 3. **“Sports Channel” upgraded from an unverified lead (E).** Previously recorded as `unverified` with no operator identity. A specialist ensemble listing labels it “Sports Channel (Talk Sport)” at 185.360 MHz, two independent scanner directories place Sports Channel on 185.360 MHz, and the Premier League’s own partner page confirms talkSPORT’s live-commentary rights. It is now `partially verified` and is the page’s primary recommendation, with the identity caveat retained. The WorldDAB 12A placement is recorded as a likely mis-assigned table (its 12A table contains “6c_Test7”/“6c Test12” entries).
 4. **Fixture times converted to Malta time (E).** EPL matchweek 8 and Serie A matchday 7 are now listed in Malta time with the conversion rule stated (Malta CEST = UK BST + 1 hour until both change on 25 October; Italy and Malta share CEST, so Serie A times apply directly).
 5. **Social/review gap partially closed (B).** Reddit threads and TripAdvisor/Google listing snapshots were reachable through search, adding a popularity snapshot and a community shortlist. Yelp, Instagram, TikTok, Facebook and X remained inaccessible; this limitation is disclosed on the page rather than filled with guesses.
