@@ -2,7 +2,7 @@
   "topic": "expenses",
   "title": "Quick-fill Malta expense planner",
   "last_updated": "2026-10-11",
-  "intro": "A blank-by-default planner for 13–19 October 2026. Enter full trip/party amounts in euros (€) consistently; no flight, hotel, meal, fare, ticket, or reimbursement amount has been assumed. Bus and travel-card prices are now published and verified on the transport page if you want a benchmark for the transport rows; the only hotel-side figure with an official basis is the €1.50-per-night eco-contribution for guests aged 18+.",
+  "intro": "A blank-by-default planner for 13–19 October 2026. Enter euros on a consistent whole-trip or party basis, preview itinerary matches and record each cost once. Published references are not personal quotes; no amount, purchase, ride count, party size or reimbursement is assumed.",
   "records": [
     {
       "id": "flights",
@@ -141,7 +141,7 @@
     },
     {
       "id": "taxi-rideshare",
-      "name": "Taxi / ride-hailing — five event-night returns",
+      "name": "Taxi / ride-hailing",
       "category": "Local transport",
       "area": "Malta-wide",
       "address": "Not applicable — enter only trips you plan to take",

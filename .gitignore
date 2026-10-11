@@ -6,3 +6,6 @@ __pycache__/
 node_modules/
 test-results/
 playwright-report/
+
+# Local audit screenshots and integration scratch files
+.cache/

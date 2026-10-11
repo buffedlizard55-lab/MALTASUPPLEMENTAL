@@ -21,7 +21,7 @@
     },
     {
       "id": "qawra-taqali-route-186",
-      "name": "Qawra ↔ Ta’ Qali Stadium — Route 186 (direct bus to the event area)",
+      "name": "Route 186 · Qawra → Ta’ Qali; return via Buġibba",
       "category": "Event-day bus route",
       "area": "Qawra ↔ Ta’ Qali, Ħ’Attard",
       "address": "Operator stop sequence read end-to-end on 11 October 2026. TOWARD TA' QALI / RABAT: Buġibba Bay 6 (3531) → Ben (949) → Il-Qawra Arznell (950) → Luzzu (951) → Qawra (952) → Boxxla (953) → Fugass (954) → Wileg (955) → Burmarrad → Mosta (Targa 1138, Rotunda 4 2565, Bezzina 1102, Gholja 1/2) → Ta' Qali Stadium (6227) → Villagg (6228) → Snajja (2191) → Rabat (Rabat 4 2567). RETURN TOWARD BUĠIBBA: Rabat 2 (2569) → Mdina (135) → Saqqajja (4627) → Ta' Qali Stadium (2194) → Ħ'Attard → Mosta → Burmarrad → St Paul's Bay → Buġibba Moll (6193) → Buġibba Bay 1 (2527) TERMINUS. The return direction lists no Il-Qawra stop. Verify stop sides, safe walks and the onward hotel connection in the dated planner.",
@@ -36,7 +36,7 @@
     },
     {
       "id": "route-186-oct17-detour",
-      "name": "Route 186 diversion and the wider Ta’ Qali / Mosta evening detour cluster — 17–18 October, with two conflicting published windows",
+      "name": "Route 186 · October diversion notice needs a dated check",
       "category": "Service updates",
       "area": "Ta' Qali / Mosta / Buġibba corridor",
       "address": "Route 186 toward Buġibba; affected stops listed by MPT are Gholja 2 through Targa",
@@ -60,7 +60,7 @@
       "description": "For this trip, 13–16 October and Monday 19 October fall under the operator’s weekday winter timetable; Saturday 17 and Sunday 18 October remain on the summer weekend timetable. This is a network-level schedule transition only; route-specific departures, journey duration and disruptions must still be checked for each event date.",
       "source_url": "https://www.publictransport.com.mt/return-of-malta-public-transport-winter-schedule/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "MPT Route 186’s current published notice separately lists the 17 October evening diversion: https://www.publictransport.com.mt/latest-service-updates/."
     },
@@ -99,15 +99,15 @@
       "name": "TQ1–TQ4 — Malta Public Transport special event services from Ta' Qali",
       "category": "Event-day bus route",
       "area": "Ta' Qali → north / central / south-east / south-west Malta",
-      "address": "Departing from the Ta' Qali area. TQ1 (Northern Route) is listed as Ta' Qali → Rabat, Mosta, Naxxar, St Paul's Bay, Qawra → Buġibba, which is the corridor that passes the hotel.",
-      "hours": "Not currently published. The operator's own TQ1 route page returned 'Timetable not available!' when checked on 11 October 2026. These are one-off services announced around specific events; for a 2023 Ta' Qali festival the same four routes ran at 23:15, 00:15, 01:15 and 02:15.",
+      "address": "Ta’ Qali area. Earlier route descriptions place TQ1 via Rabat, Mosta, Naxxar, St Paul’s Bay and Qawra to Buġibba; no current event pickup stop or hotel drop-off was verified.",
+      "hours": "The MPT TQ1 route page displayed “Timetable not available!” on 11 October 2026. No TWC-specific departure is established by that result.",
       "price range": "MPT's fare table lists Special Services (S) at €3.00. Whether a travel card covers an event special service depends on the product: the €27 Explore Flex seven-day card states it includes Special Services, while the €25 Explore Adult seven-day card says it includes only select Special Services.",
-      "description": "This is the option most likely to be missed and the one worth watching. Malta Public Transport runs special TQ-numbered services out of Ta' Qali specifically for large events held there, and the northern variant TQ1 runs through St Paul's Bay and Qawra to Buġibba — the exact corridor back to AX ODYCY. If MPT announces a TWC special service, it could solve the late-return problem for €3. At the time of checking no timetable was published for TQ1 and no TWC-specific notice was found, so this must be treated as a possibility to monitor, not a plan to rely on. Check the operator's service-updates page in the days before and during the event.",
+      "description": "Keep TQ special services on the recheck list, not in a confirmed return itinerary. Earlier route descriptions and a 2023 festival report link TQ1 to the north/Qawra corridor, but the current operator page supplies no timetable. A future event-specific announcement could offer another return option; neither a TWC service nor its stops, fare, card acceptance and departure times are confirmed here.",
       "source_url": "https://www.publictransport.com.mt/route/TQ1/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The operator's TQ1 route page exists in MPT's route directory but displayed 'Timetable not available!' on 11 Oct 2026: https://www.publictransport.com.mt/route/TQ1/ . TQ2, TQ3 and TQ4 are also listed in the operator's route directory. The corridor and the event-only nature of these routes are documented by a public route list, which describes special one-off services organised after major events such as festivals and concerts, announced a few days beforehand, and gives TQ1 as Ta' Qali → Rabat, Mosta, Naxxar, St. Paul's Bay, Qawra → Buġibba: https://en.wikipedia.org/wiki/List_of_bus_routes_in_Malta . A 2023 operator announcement for a Ta' Qali festival gives the same four TQ corridors with 23:15, 00:15, 01:15 and 02:15 departures: https://newsbook.com.mt/en/malta-public-transport-provides-special-service-for-earth-garden-2023/ . Special Services fare €3.00 and card inclusions are from the operator's fare page: https://www.publictransport.com.mt/fares-and-tickets/ . NO TWC-specific special service was found on 11 Oct 2026 and none is assumed. Monitor https://www.publictransport.com.mt/latest-service-updates/ and the tallinja app; if nothing is announced, use the taxi plan in the late-return entry."
+      "notes": "The operator's TQ1 route page exists in MPT's route directory but displayed 'Timetable not available!' on 11 Oct 2026: https://www.publictransport.com.mt/route/TQ1/ . TQ2, TQ3 and TQ4 are also listed in the operator's route directory. The corridor and the event-only nature of these routes are documented by a public route list, which describes special one-off services organised after major events such as festivals and concerts, announced a few days beforehand, and gives TQ1 as Ta' Qali → Rabat, Mosta, Naxxar, St. Paul's Bay, Qawra → Buġibba: https://en.wikipedia.org/wiki/List_of_bus_routes_in_Malta . A 2023 operator announcement for a Ta' Qali festival gives the same four TQ corridors with 23:15, 00:15, 01:15 and 02:15 departures: https://newsbook.com.mt/en/malta-public-transport-provides-special-service-for-earth-garden-2023/ . Special Services fare €3.00 and card inclusions are from the operator's fare page: https://www.publictransport.com.mt/fares-and-tickets/ . NO TWC-specific special service was found on 11 Oct 2026 and none is assumed. Monitor https://www.publictransport.com.mt/latest-service-updates/ and the tallinja app; if nothing is announced, use the taxi plan in the late-return entry. Current integration recheck read route-page chunks 0 and 6, including the final “Timetable not available!” message. The intervening all-network stop selector was not read; it is not a TQ1 stop list. Historical route/report evidence was not freshly re-opened."
     },
     {
       "id": "airport-direct-td1-qawra",
@@ -210,7 +210,7 @@
       "description": "Bolt and eCabs provide app-based ride-hailing; Malta Taxi advertises app/phone booking, vehicle tracking and 24/7 service. These are the practical door-to-door alternatives when a bus connection is late, the event ends after useful departures or luggage is inconvenient. Compare the app quote and pickup pin at the time; no exact event transfer price or car availability is guaranteed here.",
       "source_url": "https://bolt.eu/en/cities/malta/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Operator pages: eCabs https://ecabs.com.mt/ and Malta Taxi https://www.maltataxi.mt/ (phone advertised: +356 2182 3017). Malta Taxi’s self-description as the only official licensed taxi company was not independently verified and is not relied upon. Bolt airport pickup instructions: https://bolt.eu/en/airports/mla/."
     },
@@ -221,28 +221,28 @@
       "area": "AX ODYCY, Qawra Coast Road, Qawra SPB 1902",
       "address": "Arranged through AX ODYCY Guest Relations / front desk, Qawra Coast Road, Qawra",
       "hours": "Arranged on request; no published hours. The hotel's FAQ presents this as a service for guests rather than a scheduled service.",
-      "price range": "The hotel states it organises taxis through a firm that offers fixed charges. No rate card or example fare is published, so ask for the fixed price before booking. For comparison, Transport Malta's regulated metered maximum from the same area works out around €19–€26 for 10–15 km at the published bands (this project's arithmetic, not a quote).",
-      "description": "This is the simplest stated route to a pre-arranged return from the event: AX ODYCY's own FAQ says taxis can be organised from Guest Relations through a reputable firm offering fixed charges. That matters directly to this trip because every published event day outlasts the last usable Route 186 return, so the realistic plan is a booked car — and a hotel-arranged fixed charge is an alternative to a dynamic app quote. The hotel does not publish which firm it uses, the fixed prices, or how far in advance to ask, and no fare was obtained for this guide.",
+      "price range": "The hotel advertises fixed charges but no rate card or example fare was visible. Ask for an all-in quote, pickup point, waiting/cancellation terms and availability before booking.",
+      "description": "AX ODYCY’s FAQ says Guest Relations can arrange taxis through a firm offering fixed charges. This is a useful late-return option to compare with a live app quote, not a confirmed booking, pickup location or price. The visible event agenda for 14–16 October ends later than one static Route 186 return variant; that is a reason to check alternatives, not proof that all five event nights require taxis.",
       "source_url": "https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Read directly from AX ODYCY's FAQ on 11 October 2026: https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out — \"From Guest Relations we can organise taxis through a reputable firm which offers fixed charges.\" The same FAQ page states that taxi services 'can be arranged by our Guest Relations' and links guests to Malta Public Transport for public transport: https://www.publictransport.com.mt/ . That is a hotel self-description: no operator name, rate card, availability guarantee or booking channel was published, and no quote was requested by this project. Compare any fixed charge against Transport Malta's published MAXIMUM metered tariff (https://www.transport.gov.mt/land/public-transport/other-public-transport/taxis-829 , footer 'Page last updated: 06/04/2022') and against a live Bolt/eCabs quote before committing. Ask the hotel to confirm in writing for the event nights, since 14–18 October includes evening street detours around Ta' Qali and Mosta."
+      "notes": "Fresh full FAQ extraction read 11 October 2026: https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out . The hotel states “From Guest Relations we can organise taxis through a reputable firm which offers fixed charges.” No company, actual quote or guaranteed vehicle was obtained. Compare with a live licensed-provider quote and the dated published meter reference: https://www.transport.gov.mt/land/public-transport/other-public-transport/taxis-829 . Confirm the date-specific MPT notices rather than treating April and October diversions as one event-week notice."
     },
     {
       "id": "white-taxi-official-tariff",
-      "name": "Official white-taxi meter tariff — the legal maximum you can be charged",
+      "name": "Published white-taxi meter reference — page last updated April 2022",
       "category": "On-demand transport",
-      "area": "Malta (250 licensed taxis; Gozo taxis may only drive in Malta for airport or hospital trips)",
+      "area": "Malta and Gozo — regulator’s published taxi guidance",
       "address": "Not applicable — regulated fare structure published by Transport Malta",
       "hours": "Taxis may be hailed where it is safe to stop, taken from designated taxi stands, booked from taxi booths, booked through the Taxi App, or pre-booked by phone, email or internet.",
       "price range": "Published maximum metered tariff: initial €3.50; first 1 km €2.50/km; 1–5 km €1.60/km; 5–10 km €1.40/km; 10–15 km €1.30/km; 15–20 km €1.00/km; 20 km onwards €0.85/km. Waiting charge €25/hour (€0.42/min) when stationary for at least three consecutive minutes; traffic charge €4.20/hour (€0.07/min) when covering less than 1 km in three consecutive minutes. Drivers may charge less.",
-      "description": "Because the event return will almost certainly be a taxi, it is worth knowing the regulated ceiling. Transport Malta publishes these as maximum fares for a metered trip hired where there is no authorised taxi booth, and explicitly allows drivers to discount them. Worked arithmetic at the published maxima, excluding any waiting or traffic charge: 5 km caps at €12.40, 10 km at €19.40, 15 km at €25.90 and 20 km at €30.90. Those figures are this guide's arithmetic from the published bands, not quotes, and the road distance from Qawra to the Ta' Qali venue was not measured. Two extras to note: a flat €4.50 is added on 25 December and 1 January only, which does not affect this trip; and fares rise by 50% only for a taxi legally carrying more than six people with more than five passengers aboard.",
+      "description": "Transport Malta publishes maximum metered fares for trips hired where there is no authorised taxi booth; the page footer says 06/04/2022. Arithmetic from those bands, excluding waiting/traffic: 5 km €12.40; 10 km €19.40; 15 km €25.90; 20 km €30.90. These are worked examples at hypothetical distances, not hotel-to-event quotes or confirmation of the current legal tariff. Obtain an actual total before committing. The page also describes a €4.50 Christmas/New Year supplement and a 50% supplement when a suitably licensed larger vehicle carries more than five passengers.",
       "source_url": "https://www.transport.gov.mt/land/public-transport/other-public-transport/taxis-829",
       "source_type": "official",
       "date_checked": "2026-10-11",
-      "confidence": "verified",
-      "notes": "Read directly from Transport Malta's taxi page on 11 Oct 2026. Taxi services are regulated under the Taxi Services Regulations S.L.499.59: https://legislation.mt/eli/sl/499.59/eng/pdf . IMPORTANT CURRENCY CAVEAT: the page footer states 'Page last updated: 06/04/2022', so these maxima have not been re-published since April 2022 and may have been revised — confirm the current tariff or the prepaid booth price before travelling. The worked caps (€12.40 at 5 km, €19.40 at 10 km, €25.90 at 15 km, €30.90 at 20 km) are arithmetic from the published bands assuming each band is charged for its full distance, and exclude waiting and traffic charges. Separately, authorised taxi booths sell prepaid fixed-fare journeys instead of using the meter; the booth fare list was not read on the page checked. Ride-hailing apps price dynamically and are not bound by this meter tariff — compare a live app quote against the metered cap. Malta taxis are white with a black roof sign and black registration marks on the front doors; Gozo taxis carry red markings and may only be driven in Malta for airport or hospital trips."
+      "confidence": "partially verified",
+      "notes": "Full regulator page re-read 11 October 2026: https://www.transport.gov.mt/land/public-transport/other-public-transport/taxis-829 . Its footer states “Page last updated: 06/04/2022”; that is the webpage’s date, not proof that legislation has or has not changed since. The linked regulations were not separately audited: https://legislation.mt/eli/sl/499.59/eng/pdf . The arithmetic assumes the initial charge plus each distance band and excludes waiting/traffic. The road distance from AX ODYCY to the event was not measured. Do not apply this table to an app or hotel quote without confirming which fare system applies. The page’s taxi counts/markings are historical guidance, not a current fleet census."
     },
     {
       "id": "malta-car-hire-airport",
@@ -255,7 +255,7 @@
       "description": "Malta International Airport says pre-booked rental-car offices and keys are in the separate Park East building, a short walk from the terminal. Hiring a car can help with flexible sightseeing, but it is not necessary to reach Qawra or the Ta’ Qali event area by the published bus routes. Do not assume walk-up availability or a particular rental price.",
       "source_url": "https://maltairport.com/renting-a-car/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "The airport page lists participating rental firms. Driving-side and road-safety advice is covered in the Everyday Guide; rental terms, parking and event-day congestion were not priced or checked. The hotel's FAQ (read 11 Oct 2026) states that car-rental facilities are available through Guest Relations, that a valid driving licence from the traveller's country of origin is required and that driving in Malta is on the left: https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out . See the Everyday guide's left-hand-driving record; no rental price, insurance term or event-day parking was verified."
     },
@@ -270,7 +270,7 @@
       "description": "Valletta Ferry Services is useful for crossing the Grand Harbour between Valletta and Sliema or the Three Cities, not as an island-wide substitute for buses. The operator page provides fares and seasonal timetables; these are current published prices, not a promise of a sailing during disruption or bad weather.",
       "source_url": "https://www.vallettaferryservices.com/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Confirm the departure, last return, weather and any public-holiday change on the operator site before making a connection."
     },
@@ -285,7 +285,7 @@
       "description": "Gozo Channel is the conventional vehicle/passenger ferry between Malta and Gozo and is a useful option for a Gozo day trip. This is a separate excursion from the Qawra–Ta’ Qali event commute; plan both island-side buses and the return crossing rather than relying on a posted fare alone.",
       "source_url": "https://www.gozochannel.com/ferry/fares/passenger/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Fare and passenger eligibility are subject to the operator’s conditions and can change. Check current schedules and terminal notices before travel."
     },
@@ -300,13 +300,13 @@
       "description": "Gozo Highspeed publishes faster passenger-ferry connections and route-dependent fares. On the operator page checked 9 October, schedule restrictions were shown for 14 and 17 October in connection with the Rolex Middle Sea Race, alongside temporary pedestrian-route works at Mġarr through 31 October. The exact effect on a particular sailing was not established; verify before booking or setting an island day trip.",
       "source_url": "https://gozohighspeed.com/pages/fares",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Operator fares and service alerts: https://gozohighspeed.com/pages/fares. Check the timetable/terminal access notice for the precise departure date and time."
     },
     {
       "id": "uber-malta",
-      "name": "Ride-hailing in Malta — Bolt, eCabs and the conflicting Uber status",
+      "name": "Uber in Malta · primary-provider evidence",
       "category": "On-demand transport",
       "area": "Malta (provider pages and two conflicting 2026 guides); coverage in Qawra and at the Ta’ Qali venue not verified",
       "address": "Pickup/drop-off set in the Uber app",
@@ -321,7 +321,7 @@
     },
     {
       "id": "mode-comparison-summary",
-      "name": "Transport mode comparison — convenience, price, value & feasibility",
+      "name": "Best fit for this trip · buses plus a checked late-return backup",
       "category": "Mode comparison",
       "area": "Malta-wide (airport, Qawra, Ta’ Qali and island connections)",
       "address": "Not applicable — mode-by-mode comparison across published operator services",
@@ -366,7 +366,7 @@
     },
     {
       "id": "route-186-return-transfer-bugibba",
-      "name": "Getting back to Qawra after the event — the Route 186 return-leg transfer",
+      "name": "Route 186 return · plan the onward leg from Buġibba",
       "category": "Event-day bus route",
       "area": "Ta' Qali → Buġibba → Il-Qawra",
       "address": "Alight at the Route 186 terminus Buġibba Bay 1 (2527), or earlier in the Buġibba area, then board a Qawra-bound service. Stop sides and the walking distance between them are not verified.",
@@ -411,7 +411,7 @@
     },
     {
       "id": "mfcc-official-bus-186",
-      "name": "MFCC’s own “getting here” guidance — Route 186 from Buġibba",
+      "name": "MFCC historical venue booklet — Route 186 from Buġibba",
       "category": "Event-day bus route",
       "area": "MFCC, Ta’ Qali (Ħ’Attard)",
       "address": "MFCC venue booklet, “TA’ QALI / Ta’Qali National” getting-here section",

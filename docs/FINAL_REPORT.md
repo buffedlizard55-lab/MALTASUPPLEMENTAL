@@ -1,18 +1,18 @@
-# Final audit report — Malta travel guide
+# Malta guide — final implementation and evidence report
 
 **Audit date:** 11 October 2026 (UTC)
 **Session branch:** `arena/502e2dae-maltasupplemental`
 **Baseline:** `origin/main` at `b307c51` (merge of PR #33), reconciled with `origin/main` at `852343f` (parallel-session PRs #42–47) via a conflict-resolved merge that keeps both sessions' net-new corrections.
 
-## Scope and integration
+### Implemented website
 
 This session ran the requested multi-pass protocol over the integrated tree: **Pass 1** implemented and verified the full request; **Pass 2** reviewed for bugs, missing requirements, incorrect assumptions and edge cases; **Pass 3** re-checked the implementation against the original request and improved accuracy, reliability and completeness. The highest-risk factual claims (event listing, Route 186 return, fare seasons, card terms, radio schedules) were re-verified line by line against live sources on 11 October 2026 before any wording changed. Mid-session, the parallel work merged upstream (PRs #42–47: the `event.html` CS2 event guide + `data/event.json`, the TQ1 special-event-service lead, the Transport Malta taxi-tariff record, AX ODYCY FAQ evidence and an MTA guideline re-read) was reconciled into this branch by content, with both sides' corrections preserved.
 
-The delivered site remains the repository's static, JSON-backed Malta trip guide and blank-by-default expense planner. The seven datasets use the shared exact 13-field schema (key order normalized). Merged-tree counts: **176 records** (transport 28, food 38, activities 39, everyday 18, radio 20, expenses 25, event 8), **311 unique record URLs** in the source log, 15 HTML pages, 181 checked link attributes, nine shared navigation destinations, and 25 expense rows.
+The delivered site remains the repository's static, JSON-backed Malta trip guide and blank-by-default expense planner. The seven datasets use the shared exact 13-field schema (key order normalized). Merged-tree counts: **184 records** (transport 28, food 39, activities 44, everyday 19, radio 21, expenses 25, event 8), **303 unique record URLs** in the source log, 15 HTML pages, 219 checked link attributes, nine shared navigation destinations, and 25 expense rows.
 
 This is a sourced planning aid, not a booking, admission, price, service, schedule, or reception guarantee. Dates, hotel, and intended venue are traveler-supplied inputs except where separately corroborated.
 
-## Material findings
+## Next session — priority order
 
 ### Thunderpick World Championship / admission
 
@@ -65,10 +65,10 @@ Everyday content matches checked sources with the parallel session’s refinemen
 
 ## Validation results (observed after edits and merge reconciliation)
 
-- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files / 176 exact-schema records / 311 unique source URLs / 15 HTML pages / 181 link attributes / 9 navigation destinations / 25 expense rows.
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files / 184 exact-schema records / 303 unique source URLs / 15 HTML pages / 219 link attributes / 9 navigation destinations / 25 expense rows.
 - `python3 scripts/check_javascript.py` — **PASS**; `node --check js/site.js` — **PASS**.
 - Internal deep-link check (static ids + runtime record ids): **PASS** — 0 broken.
-- `npm ci` / `npm test`: **PASS**, 11/11 Playwright (320/360/768/1440 px, axe WCAG 2A/AA/2.1AA, data/render parity, navigation/deep links, planner persistence/CSV/reset, quick-fill, storage-denial and data-fetch-failure cases).
+- `npm ci` / `npm test`: **PASS**, 21/21 Playwright on the merged tree (320/360/768/1024/1440 px, axe WCAG 2A/AA/2.1AA, data/render parity, navigation/deep links, planner persistence/CSV/JSON-restore/reset, quick-fill, storage-denial and data-fetch-failure cases).
 - `git diff --check`: **PASS**.
 
 These gates check local structure and behavior. They do not certify external-link liveness, current ticket availability, physical access, radio reception, or a dated transit journey.
@@ -98,4 +98,4 @@ Full claim-specific source rows are in `docs/SOURCES.md`; unresolved items in `d
 
 ## Delivery snapshot
 
-Prior observed deliveries on the baseline: pull request **#43** merged at 15:54:56 UTC on 11 October 2026 (`94733df`), with CI and Pages **built** and the live site spot-checked; PRs **#42**, **#44**, **#45** and **#47** were merged by explicit number by the parallel sessions and reconciled into this branch. This session’s delivery (PR opened, merged by explicit number onto `main`, Pages build) is reported only after those facts have been checked; this file is not a live CI/Pages dashboard.
+Prior observed deliveries on the baseline: pull request **#43** merged at 15:54:56 UTC on 11 October 2026 (`94733df`), with CI and Pages **built** and the live site spot-checked; PRs **#42**, **#44**, **#45** and **#47** were merged by explicit number by the parallel sessions and reconciled into this branch; PR **#49** (source-led refresh, planner hardening, expanded test suite) landed on `main` mid-delivery and was reconciled here by content as well — its new records (`food-platform-coverage`, `water-medication-daily-health`, and others) are preserved. This session’s delivery (PR opened, merged by explicit number onto `main`, Pages build) is reported only after those facts have been checked; this file is not a live CI/Pages dashboard.

@@ -2,23 +2,8 @@
   "topic": "activities",
   "title": "Activities, landmarks & events in Malta",
   "last_updated": "2026-10-11",
-  "intro": "A source-checked shortlist for the 13–19 October 2026 stay: dated events, sights, gaming-venue status and sourced food/activity leads. An Eventbrite listing read 11 October advertised free 18+ in-person reservation for the Thunderpick Finals at MFCC, with agenda details for 14–16 October; this does not establish current ticket inventory, the traveler’s own reservation, the attendee gate or the 17–18 October agenda. Google Maps marks several legacy public PC/esports-centre listings as permanently closed; The Eden XP Arcade is a separate general arcade/VR option, not a PC LAN café. Recheck operators and live schedules before travelling.",
+  "intro": "Choose one outing around your confirmed event sessions, not an overfilled checklist. Start near Qawra, then compare Ta’ Qali-area sights and farther trips. Dated events are distinguished from year-round attractions, and PC-gaming status conflicts are kept separate from arcade/VR options. Confirm access and return transport before booking.",
   "records": [
-    {
-      "id": "malta-esports-venue-directory",
-      "name": "Malta esports venue directory — what actually exists (bootcamps and studios, not walk-in cafés)",
-      "category": "Dedicated PC gaming — status conflict",
-      "area": "Ħamrun, Ta’ Qali, St Julian’s, Sliema and Siġġiewi",
-      "address": "Directory entries as published: Level Academy (Ħamrun, educational facility), GMR Concepts Ltd (Ta’ Qali, bootcamp facility), Eden Esports (St Julian’s, bootcamp facility), Esports Plaza (Sliema, esports facility/studio), World Pro Racing (Siġġiewi, sim-racing facility/studio).",
-      "hours": "Not published in the directory. Bootcamp and studio facilities are normally used by appointment, teams or ticketed events rather than drop-in play; no walk-in hours were verified for any entry.",
-      "price range": "Not published; no walk-in session rates were found for any listed facility",
-      "description": "The national esports venue directory is the clearest published answer to “where can I play” in Malta, and the answer for a tourist is: nowhere confirmed. Its entries are a school facility, two team bootcamps, an esports studio and a sim-racing studio — not public PC cafés. Combined with the closed/unconfirmed status of the legacy PC cafés recorded here, the honest planning conclusion is that the reliable gaming options during the trip are the event broadcast, the arcade/VR venues (The Eden XP Arcade; MULTIMAXX St Julian’s and Kordin) and the hotel’s own amenities — with any PC-café visit confirmed by phone first.",
-      "source_url": "https://esports.org.mt/esports-venues/",
-      "source_type": "official",
-      "date_checked": "2026-10-11",
-      "confidence": "partially verified",
-      "notes": "Directory read 11 October 2026: https://esports.org.mt/esports-venues/ . It is the Maltese esports body’s own venue list (source_type recorded as official for that reason) but it is a directory, not a live operator status page: it may include facilities that have closed, and it does not publish opening hours, drop-in availability or prices. It carries no 2026-dated confirmation for any single venue. Cross-reference: the same directory still lists Esports Plaza, which Google Maps marks permanently closed (see that record). No entry offers verified walk-in PC play for a visitor; if a PC session matters, ask the facility directly. The 2021 Reddit thread on Malta gaming places is older context only and is not treated as current: https://www.reddit.com/r/malta/comments/q5vylk/gaming_places_in_malta/ ."
-    },
     {
       "id": "ax-odycy-base-hotel",
       "name": "AX ODYCY — trip base hotel, Qawra",
@@ -27,27 +12,57 @@
       "address": "Qawra Coast Road, Qawra SPB 1902, Malta",
       "hours": "No check-in or check-out clock times are published on the pages read: the hotel's FAQ says early check-in and late check-out are handled by the front desk and are subject to room availability, and the property page lists a 24-hour front desk.",
       "price range": "Not published on the checked page; the traveler's booking and rate were not supplied to this project",
-      "description": "The user-supplied trip base, verified against the hotel's own website on 11 October 2026: a 4-star seafront resort at Qawra Coast Road, Qawra, formerly the AX Seashells Resort at Suncrest. The operator's page lists a beachfront position, 24-hour front desk, free Wi-Fi throughout, underground parking, indoor pool, an adults-only rooftop pool on level 11 (Minoa Deck), a water park, fitness centre, centralised air conditioning, conference facilities and all-inclusive dining, plus on-site restaurants including the Deck & Keel buffet, Minoa and bars. Its FAQ page adds: a free in-room safe; daily housekeeping with linen changed every three days; iron and ironing board on request; a paid laundry service; pool towels issued by pool attendants (bathroom towels are not allowed at the pool); wheelchair-accessible public areas with lifts to all floors and accessible bathrooms; half-board or all-inclusive upgrades purchasable at the front desk at a charge; a water park across the road for ages 13+; shops in Qawra and Buġibba; an ATM a short walk further down the road; and cards accepted including American Express, Diners Club, Visa and Mastercard with a pre-authorisation at check-in. Guest Relations can arrange taxis at fixed charges (recorded in the transport guide), car hire (a valid licence from the country of origin is required and driving is on the left), pharmacy directions, a doctor on call around the clock against a charge, and third-party excursions from the Guest Experience Desk. It is the origin point for every route in this guide.",
+      "description": "Your supplied base is AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Deluxe sea-view room, 13–19 October 2026. The hotel website independently confirms the Qawra Coast Road property, 24-hour front desk and free Wi-Fi. The room, dates, rate and booking status are traveler inputs, not independently verified reservations.",
       "source_url": "https://axhotelsmalta.com/odycy/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Operator page re-fetched 11 Oct 2026 (facilities, address and contact details: +356 2354 3000, info.odycy@axhotelsmalta.com). On-property dining is recorded separately in data/food.json. Booking terms, room allocation, meal plan and check-in/check-out times come from the traveler's own reservation, which was not available to this project; the site does not assume them. Walking times from the hotel to nearby bus stops were not measured. Hotel FAQ read 11 Oct 2026: https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out (facilities, services, tipping guidance, doctor on call, ATM, car hire and taxi arrangement). The property's own banners advertise time-limited booking promotions (for example a percentage discount and a 'June Deal'); these are marketing offers with stale date fields and are deliberately NOT quoted as trip facts or costs here."
+      "notes": "Operator page re-fetched 11 Oct 2026 (facilities, address and contact details: +356 2354 3000, info.odycy@axhotelsmalta.com). On-property dining is recorded separately in data/food.json. Booking terms, room allocation, meal plan and check-in/check-out times come from the traveler's own reservation, which was not available to this project; the site does not assume them. Walking times from the hotel to nearby bus stops were not measured. Fresh homepage read confirms general hotel facilities, not this booking, meal plan, early check-in, late checkout or use of every facility. Ask reception about a safe route to the chosen bus stop and late food options. Hotel FAQ independently re-read in full during integration: https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out . It describes a free in-room safe and Wi-Fi, daily housekeeping with linen every three days, iron/board on request, paid laundry, pool towels from attendants, Minoa Deck on level 11 for adults and Cheeky Monkey Waters across the road for ages 13+. Public areas are described as ramp-accessible with lifts; this is not a personal accessibility assessment. Front-desk meal-plan upgrades depend on length of stay and have a charge. Guest Relations advertises fixed-charge taxis, car rental, pharmacy directions and a paid on-call doctor; actual availability and prices were not tested. The property markets “Deluxe Room with Side Sea View”; keep the traveler’s supplied “Deluxe sea-view” wording and confirm the booked category, allocation and meal plan on the reservation rather than equating the two labels. Contact shown: +356 2354 3000, info.odycy@axhotelsmalta.com. Promotional banners with stale dates are not trip-specific offers."
     },
     {
       "id": "twc-finals-2026",
-      "name": "Thunderpick World Championship 2026 Finals — dates, venue, field and broadcast",
+      "name": "Thunderpick CS2 Finals · advertised 14–18 October 2026",
       "category": "Tournament & trip-window events (13–19 Oct)",
       "area": "Ta’ Qali / Ħ’Attard",
       "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard, Malta — the venue/address shown on the Eventbrite listing read 11 October. Its map link resolves to coordinates 35.8957343, 14.4168839; neither address nor map point identifies an attendee gate inside the site.",
       "hours": "Ticketing page (read 11 October 2026) lists Wednesday 14 – Sunday 18 October 2026, 9:30 AM – 10:00 PM, with day-by-day agenda for three of the five days: Wed 14 Oct check-in 09:30 / games 10:30 (09:30–22:30); Thu 15 Oct check-in 09:30 / games 10:30 (09:30–22:30); Fri 16 Oct check-in 14:00 / games 15:00 (14:00–21:00). The Sat 17 Oct and Sun 18 Oct entries sit behind a “Show all agenda” control that did not expand in the extracted page, so playoff-day door/game times are not yet confirmed. The listing headline gives 9:30 AM–10:00 PM, while the Wednesday/Thursday agenda rows extend to 22:30; the displayed end times conflict and should be confirmed with the organizer.",
       "price range": "A free reservation option was advertised on the Eventbrite page read 11 October (“Free / Reserve a spot”); current inventory, reservation status and any later price change were not checked.",
-      "description": "Counter-Strike 2 finals, eight teams and a $1,000,000 prize pool, organized by GAM3RS_X for Thunderpick. An Eventbrite listing by Hotspawn, read 11 October 2026, advertised an in-person 18+ event at BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard, for 14–18 October and a free “Reserve a spot” action. It shows agenda/check-in details for 14–16 October only; the Saturday and Sunday playoff agenda entries were not visible in the extracted page. The headline gives a 22:00 end while the Wednesday/Thursday agenda rows extend to 22:30, so the exact finish needs organizer confirmation. This listing is evidence of what was advertised on that date, not proof of current ticket inventory, the traveler’s own reservation, per-day validity, or the exact attendee gate. The organizer’s own page gives the wider 12–19 October operational window (arrival 12 Oct, media 13 Oct, groups 14–16 Oct, playoffs 17–18 Oct, departure 19 Oct). The format/prize/operator/GRID details are recorded from the organizer and cited sources below. Broadcast streams are internet delivery, not radio carriage.",
+      "description": "Hotspawn’s Eventbrite listing advertises an in-person, 18+ event at BLAST Arena Studios Malta (MFCC, Attard), 14–18 October, with free reservation. The organizer lists groups on 14–16 October and playoffs on 17–18 October. A listing is not your ticket: reservation, attendee gate and weekend agenda still need confirmation.",
       "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Primary source read 11 October 2026: the official Eventbrite listing https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 , titled “Hotspawn present the Thunderpick World Championships 2026”, organizer Hotspawn, venue BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard, dates Wednesday 14 – Sunday 18 October, 9:30 AM – 10 PM, highlights “4 days 12 hours”, “ages 18+”, “In person”. The same page carries a Google Maps transit link to coordinates 35.8957343, 14.4168839. HLTV reports the free tickets and links to the same listing: https://www.hltv.org/news/45615/thunderpick-world-championship-talent-revealed . Thunderpick’s own release names BLAST Studios Malta and gives 14–18 October: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . A second Thunderpick-issued release names the eight-team field and is datelined “TA’ QALI, Malta”: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html . The organizer’s tournament page still lists the 12–19 October operational window: https://world-championship.thunderpick.io/2026-finals/ . This listing supersedes the earlier dated “no public ticket sale found” result and the €10.00 precedent from a separate BLAST-run event for what the page displayed on 11 October. Its map link gives a venue coordinate, not an attendee gate; only three of five daily agenda entries were visible, and current inventory, the traveler’s reservation, per-day scanning and access remain open. Still open: the Saturday 17 and Sunday 18 agenda entries, the attendee gate inside the MFCC site, ticket availability and per-day scanning, parking, and on-site catering. See docs/OPEN_QUESTIONS.md. Official rulebook: https://drive.google.com/file/d/1foK6YiQ9nvCwvfTRn9uRZbV1VEKI2Hia/view . Trade press names the eight qualified teams (Legacy, Falcons, FURIA, BetBoom, 9z, Aurora, PARIVISION, Virtus.pro) and states all finals matches stream on Thunderpick’s Twitch, Kick and YouTube — stream carriage is not radio or ticketed-attendance information: https://g3newswire.com/thunderpick-confirms-eight-team-field-for-1m-malta-finals/ and https://www.hltv.org/news/45525/falcons-and-furia-headline-thunderpick-world-championship-team-list (search views 11 October 2026). Update 11 October 2026: Virtus.pro later withdrew (9 October; visa and health reasons reported) and Ninjas in Pyjamas replaced them — https://www.hltv.org/news/45688/thunderpick-world-championship-matchups-announced-with-virtuspro-replaced-by-nip ; the consolidated current field is on the CS2 event guide (event.html)."
+      "notes": "Primary source read 11 October 2026: the official Eventbrite listing https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 , titled “Hotspawn present the Thunderpick World Championships 2026”, organizer Hotspawn, venue BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard, dates Wednesday 14 – Sunday 18 October, 9:30 AM – 10 PM, highlights “4 days 12 hours”, “ages 18+”, “In person”. The same page carries a Google Maps transit link to coordinates 35.8957343, 14.4168839. HLTV reports the free tickets and links to the same listing: https://www.hltv.org/news/45615/thunderpick-world-championship-talent-revealed . Thunderpick’s own release names BLAST Studios Malta and gives 14–18 October: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . A second Thunderpick-issued release names the eight-team field and is datelined “TA’ QALI, Malta”: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html . The organizer’s tournament page still lists the 12–19 October operational window: https://world-championship.thunderpick.io/2026-finals/ . This listing supersedes the earlier dated “no public ticket sale found” result and the €10.00 precedent from a separate BLAST-run event for what the page displayed on 11 October. Its map link gives a venue coordinate, not an attendee gate; only three of five daily agenda entries were visible, and current inventory, the traveler’s reservation, per-day scanning and access remain open. Still open: the Saturday 17 and Sunday 18 agenda entries, the attendee gate inside the MFCC site, ticket availability and per-day scanning, parking, and on-site catering. See docs/OPEN_QUESTIONS.md. Official rulebook: https://drive.google.com/file/d/1foK6YiQ9nvCwvfTRn9uRZbV1VEKI2Hia/view . Earlier, pre-substitution trade press named the eight qualified teams (Legacy, Falcons, FURIA, BetBoom, 9z, Aurora, PARIVISION, Virtus.pro) and states all finals matches stream on Thunderpick’s Twitch, Kick and YouTube — stream carriage is not radio or ticketed-attendance information: https://g3newswire.com/thunderpick-confirms-eight-team-field-for-1m-malta-finals/ and https://www.hltv.org/news/45525/falcons-and-furia-headline-thunderpick-world-championship-team-list (search views 11 October 2026). Fresh reads in this session confirm the organizer’s stage dates and the Eventbrite visible agenda. The organizer page contains the internally inconsistent line “4 Teams advance to Group Stage” alongside eight teams in groups; do not repeat that apparent typo as format guidance. The free reservation advertisement does not guarantee availability. Integration update: HLTV and Hotspawn reports dated 9 October, freshly read, say NIP replaces Virtus.pro. See the teams/format entry; the older list above is historical, not the final roster."
+    },
+    {
+      "id": "twc-2026-free-tickets-18plus",
+      "name": "TWC 2026 spectator listing — free 18+ reservation advertised (checked 11 Oct)",
+      "category": "Tournament & trip-window events (13–19 Oct)",
+      "area": "Ta’ Qali / Ħ’Attard",
+      "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard, Malta — the venue/address shown on the Eventbrite listing read 11 October. Its map link resolves to coordinates 35.8957343, 14.4168839; neither address nor map point identifies an attendee gate inside the site.",
+      "hours": "Ticketing page (read 11 October 2026) lists Wednesday 14 – Sunday 18 October 2026, 9:30 AM – 10:00 PM, with day-by-day agenda for three of the five days: Wed 14 Oct check-in 09:30 / games 10:30 (09:30–22:30); Thu 15 Oct check-in 09:30 / games 10:30 (09:30–22:30); Fri 16 Oct check-in 14:00 / games 15:00 (14:00–21:00). The Sat 17 Oct and Sun 18 Oct entries sit behind a “Show all agenda” control that did not expand in the extracted page, so playoff-day door/game times are not yet confirmed. The listing headline gives 9:30 AM–10:00 PM, while the Wednesday/Thursday agenda rows extend to 22:30; the displayed end times conflict and should be confirmed with the organizer.",
+      "price range": "The Eventbrite listing read 11 October advertised a free reservation; current availability and the traveler’s own reservation are not established.",
+      "description": "An Eventbrite page by organizer Hotspawn, read 11 October 2026, advertised free in-person reservation for the 18+ TWC 2026 audience and showed a “Reserve a spot” action. It is dated listing evidence, not proof of current ticket inventory, a completed reservation by this traveler, walk-in entry, or per-day ticket validity. Do not assume the traveler can attend until the organizer confirms the reservation and gate instructions.",
+      "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Read 11 October 2026: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . Confirmed on that page: organizer Hotspawn; venue BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard; dates Wednesday 14 – Sunday 18 October 2026; listed time 9:30 AM – 10 PM; highlights “ages 18+” and “In person”; a “Free / Reserve a spot” action; and a frequently-asked-questions list that includes “Is my ticket valid for every day of the event?”, “Will my ticket be scanned on each day?”, “Is parking available at the venue?” and “Will food and drink be available at the venue?”. The answers to those questions are behind an interactive control and were not readable in the extracted page. HLTV, 2 October 2026: https://www.hltv.org/news/45615/thunderpick-world-championship-talent-revealed . The eight-team field is also confirmed by Thunderpick’s own release https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html . The listing’s map link gives a venue coordinate, not an attendee entrance. Ticket inventory, reservation status for this traveler, transferability and per-day scanning remain unverified; the listed 18+ rule means an attendee should carry photographic ID."
+    },
+    {
+      "id": "malta-esports-venue-directory",
+      "name": "PC gaming · no walk-in venue confirmed by this research",
+      "category": "Dedicated PC gaming — status conflict",
+      "area": "Ħamrun, Ta’ Qali, St Julian’s, Sliema and Siġġiewi",
+      "address": "Directory entries as published: Level Academy (Ħamrun, educational facility), GMR Concepts Ltd (Ta’ Qali, bootcamp facility), Eden Esports (St Julian’s, bootcamp facility), Esports Plaza (Sliema, esports facility/studio), World Pro Racing (Siġġiewi, sim-racing facility/studio).",
+      "hours": "Not published in the directory. Bootcamp and studio facilities are normally used by appointment, teams or ticketed events rather than drop-in play; no walk-in hours were verified for any entry.",
+      "price range": "Not published; no walk-in session rates were found for any listed facility",
+      "description": "The Malta Esports Association directory currently lists Level Academy (education), GMR Concepts and Eden Esports (bootcamps), and World Pro Racing (sim-racing facility/studio). It does not establish public walk-in PC hours. Legacy gaming-lounge closure leads remain unresolved; contact any PC venue directly. The Eden XP Arcade and MULTIMAXX are separate arcade/VR options, not confirmed CS2 LAN cafés.",
+      "source_url": "https://esports.org.mt/esports-venues/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Directory re-read on 11 October 2026: https://esports.org.mt/esports-venues/ . Four entries were visible; Esports Plaza was not present in this extraction, correcting the earlier assertion that this directory currently lists it. Absence from a directory is not proof of closure, and a bootcamp listing is not permission for tourist drop-in play."
     },
     {
       "id": "twc-2026-teams-format",
@@ -57,12 +72,12 @@
       "address": "Not applicable to the field list; see the venue record in the transport guide for address context",
       "hours": "Competitive Finals 14–18 October 2026 (Group Stage 14–16 October, Playoffs 17–18 October)",
       "price range": "A Hotspawn/Eventbrite listing read 11 October advertised a free reservation; current inventory and the traveler’s reservation remain unconfirmed.",
-      "description": "Eight teams compete for a US$1,000,000 prize pool across five days, broadcast live on Thunderpick’s Twitch, Kick and YouTube channels. HLTV’s 2 October 2026 talent report lists the field as FURIA, Falcons, Legacy, Aurora, BETBOOM, 9z, PARIVISION and Virtus.pro, split into two GSL best-of-three groups with the top two from each group advancing to a single-elimination playoff bracket. FURIA are the 2025 defending champions; Virtus.pro qualified through the TWC closed qualifier, but on 9 October 2026 Virtus.pro withdrew (visa and health reasons reported) and Ninjas in Pyjamas took the slot, per HLTV and the tournament's Presenting Partner Hotspawn; the organiser's own published pages still showed the original field when last checked. Broadcast talent includes casters SPUNJ, Machine, Hugo and JustHarry, desk hosts Tech Girl and stunna, analysts YNk, Bleh, tedd and moses, and stage host BanKs with sideline reporter Heccu.",
-      "source_url": "https://www.hltv.org/news/45615/thunderpick-world-championship-talent-revealed",
+      "description": "The organizer describes eight-team CS2 Finals, a US$1 million prize pool and live Twitch/Kick/YouTube broadcasts. Its 16 September announcement named Virtus.pro, but 9 October reports from HLTV and presenting partner Hotspawn say Ninjas in Pyjamas replaces that team after visa/health problems. The event desk keeps the field update, format, talent and third-party bracket clocks together; older field lists are not the current lineup.",
+      "source_url": "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "HLTV is the esports news outlet of record for CS2 and is used here as an industry-trade source; the team field is corroborated by the Thunderpick-issued press release https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html (16 Sep 2026) and its Portuguese syndication, which name FURIA as defending champion and the Global VRS basis for the seven invited slots. The 2026-era HLTV page age is 2 Oct 2026. The trade report itself did not supply a full day-by-day match schedule. A separate Hotspawn/Eventbrite listing read 11 October advertised check-in/game agenda entries for 14–16 October, but its 17–18 October entries were not visible in the extracted page. The listing advertised a free reservation; current inventory, this traveler’s reservation, per-day validity and attendee gate remain unverified. Do not infer playoff start/finish times. Broadcast listing (Twitch/Kick/YouTube) is from the Thunderpick release; streaming availability is not radio carriage. Substitution read 11 October 2026: https://www.hltv.org/news/45688/thunderpick-world-championship-matchups-announced-with-virtuspro-replaced-by-nip (9 October 2026) and https://www.hotspawn.com/counter-strike/news/nip-replace-virtus-pro-at-thunderpick-world-championship-2026 . The consolidated, current event facts live on the CS2 event guide (event.html) and in `twc-teams-format` in data/event.json. See `twc-2026-free-tickets-18plus` and `docs/OPEN_QUESTIONS.md`."
+      "notes": "Current integration re-read the full 16 September organizer release, the main HLTV article body at https://www.hltv.org/news/45688/thunderpick-world-championship-matchups-announced-with-virtuspro-replaced-by-nip and the complete Hotspawn report at https://www.hotspawn.com/counter-strike/news/nip-replace-virtus-pro-at-thunderpick-world-championship-2026 . The later reporting supersedes the Virtus.pro slot in the older release. Organizer phase/format reference: https://world-championship.thunderpick.io/2026-finals/ . See event.html#twc-teams-format and event.html#twc-match-times-malta for the qualified details. Stream access is not terrestrial radio; future rosters and clocks can change."
     },
     {
       "id": "gzira-mosta-2026-10-14",
@@ -107,7 +122,7 @@
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "The dedicated event page gives the schedule, arrival instruction, description and listed prices: https://heritagemalta.mt/whats-on/picnic-in-the-1800s/. The separate current Heritage Malta opening-hours page says: ‘due to road works, Borġ in-Nadur Prehistoric Complex will be closed to visitors until further notice’: https://heritagemalta.mt/opening-hours/. Contact Heritage Malta and confirm the event is proceeding and the site is accessible before travelling or budgeting it as committed. It also coincides with TWC Playoffs and the Rolex Middle Sea Race start; their exact times are not published."
+      "notes": "The dedicated event page gives the schedule, arrival instruction, description and listed prices: https://heritagemalta.mt/whats-on/picnic-in-the-1800s/. The separate current Heritage Malta opening-hours page says: ‘due to road works, Borġ in-Nadur Prehistoric Complex will be closed to visitors until further notice’: https://heritagemalta.mt/opening-hours/. Contact Heritage Malta and confirm the event is proceeding and the site is accessible before travelling or budgeting it as committed. It also overlaps the dates of the TWC playoffs and Rolex Middle Sea Race. Confirm the selected events’ clocks, entry and travel requirements rather than assuming these outings can be combined."
     },
     {
       "id": "in-guardia-2026-10-18",
@@ -156,18 +171,18 @@
     },
     {
       "id": "esports-plaza-sliema-status",
-      "name": "Esports Plaza Gaming Lounge — status conflict (Maps closed vs directories listing it)",
+      "name": "Esports Plaza · reported closed; not a trip recommendation",
       "category": "Dedicated PC gaming — status conflict",
       "area": "Sliema",
       "address": "Level 0, The Plaza Shopping Centre, Bisazza Street, Sliema SLM 1640, Malta",
-      "hours": "No current hours verified from the operator. Google Maps marked the place permanently closed as checked 9 October 2026; the national esports venue directory still lists Esports Plaza as an “Esports Facility/Studio” in Sliema, and a third-party attraction directory still publishes hours (weekdays from 16:00, weekends from 12:00, to midnight) that may be stale.",
+      "hours": "No current operator hours or public access verified. Earlier Google Maps reading reported permanently closed.",
       "price range": "No current price verified",
-      "description": "This was a PC/console gaming lounge at The Plaza, Sliema. Google Maps reports it permanently closed, and both the venue’s own domain and the shopping centre’s old page failed when checked; but the Malta esports venue directory still lists it as an active facility and a third-party attraction directory still carries opening hours. The conflict is unresolved: do not plan a visit, and call or message before travelling.",
+      "description": "Earlier Google Maps research reported Esports Plaza permanently closed. A fresh read of the Malta Esports Association directory did not include it, so the inherited claim that that directory currently confirms an active studio is withdrawn. Other directory hours may be stale; do not travel there without direct confirmation.",
       "source_url": "https://www.google.com/maps/search/?api=1&query=Esports+Plaza+Gaming+Lounge+Sliema+Malta",
       "source_type": "map",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The directly fetched Google Maps listing showed 4.5/125 and ‘permanently closed’ (rating is a dated listing snapshot, not a recommendation). Hopsa’s directory still lists address, phone and hours but is not the operator: https://hopsa.io/en/attractions/malta,jedzenie-picie,esports-plaza-gaming-lounge-69cf83a22b. The Plaza’s old Esports page returned 404 and the venue domain returned 503. Added 11 October 2026 (second session): the national esports venue directory still lists Esports Plaza under “Esports Venues” as an Esports Facility/Studio in Sliema: https://esports.org.mt/esports-venues/ — a directory entry that can lag reality. A third-party attraction directory publishes hours (Mon–Thu 16:00–00:00, Fri–Sun 12:00–00:00) and describes a modern gaming lounge: https://hopsa.io/en/attractions/malta,jedzenie-picie,esports-plaza-gaming-lounge-69cf83a22b . Neither is the operator, and neither overrides the Maps closure report; treat the venue as unconfirmed and verify by phone before any trip. The venue’s own X profile name/status also reads “Esports Plaza PERMANENTLY CLOSED” as surfaced 11 October 2026: https://x.com/esportsplazamt."
+      "notes": "The directly fetched Google Maps listing showed 4.5/125 and ‘permanently closed’ (rating is a dated listing snapshot, not a recommendation). Hopsa’s directory still lists address, phone and hours but is not the operator: https://hopsa.io/en/attractions/malta,jedzenie-picie,esports-plaza-gaming-lounge-69cf83a22b. The Plaza’s old Esports page returned 404 and the venue domain returned 503. Added 11 October 2026 (second session): the national esports venue directory still lists Esports Plaza under “Esports Venues” as an Esports Facility/Studio in Sliema: https://esports.org.mt/esports-venues/ — a directory entry that can lag reality. A third-party attraction directory publishes hours (Mon–Thu 16:00–00:00, Fri–Sun 12:00–00:00) and describes a modern gaming lounge: https://hopsa.io/en/attractions/malta,jedzenie-picie,esports-plaza-gaming-lounge-69cf83a22b . Neither is the operator, and neither overrides the Maps closure report; treat the venue as unconfirmed and verify by phone before any trip. The venue’s own X profile name/status also reads “Esports Plaza PERMANENTLY CLOSED” as surfaced 11 October 2026: https://x.com/esportsplazamt. Directory re-read in this session: https://esports.org.mt/esports-venues/ . It has no visible Esports Plaza entry; absence alone does not establish the reason or closure date."
     },
     {
       "id": "eden-esports-centre-status",
@@ -197,7 +212,7 @@
       "source_type": "official",
       "date_checked": "2026-10-10",
       "confidence": "partially verified",
-      "notes": "Credit packs and activity type are listed by the operator. Address, phone +356 2371 0450 and seasonal hours: https://theeden.mt/contact-us. Google Maps currently lists The Eden as open, but its hours are a live listing snapshot; see https://www.google.com/maps/search/?api=1&query=The+Eden+Triq+Santu+Wistin+St+Julian%27s+Malta."
+      "notes": "Credit packs and activity type are listed by the operator. Address, phone +356 2371 0450 and seasonal hours: https://theeden.mt/contact-us. Google Maps currently lists The Eden as open, but its hours are a live listing snapshot; see https://www.google.com/maps/search/?api=1&query=The+Eden+Triq+Santu+Wistin+St+Julian%27s+Malta. Primary activity/ticket page re-read 11 October 2026 in this session; any separate historical review or seasonal-hours source retains its own scope."
     },
     {
       "id": "malta-national-aquarium-qawra",
@@ -212,7 +227,7 @@
       "source_type": "official",
       "date_checked": "2026-10-10",
       "confidence": "verified",
-      "notes": "Current operator pages: address and daily hours https://aquarium.com.mt/contact/; ticket categories, prices, last entry at 19:30, and free entry for ages 0–3 with a desk-issued ticket https://aquarium.com.mt/tickets/; aquarium description and daily programme https://aquarium.com.mt/. TripAdvisor snapshot 9 Oct: 4.0/5 from 4,937 reviews, #4 of 7 things to do in Qawra; recent reviews include both praise for marine exhibits and mixed views on visit length/value. https://www.tripadvisor.com/Attraction_Review-g608947-d4753782-Reviews-Malta_National_Aquarium-Qawra_Island_of_Malta.html. Ratings and reviews are volatile and subjective."
+      "notes": "Current operator pages: address and daily hours https://aquarium.com.mt/contact/; ticket categories, prices, last entry at 19:30, and free entry for ages 0–3 with a desk-issued ticket https://aquarium.com.mt/tickets/; aquarium description and daily programme https://aquarium.com.mt/. TripAdvisor snapshot 9 Oct: 4.0/5 from 4,937 reviews, #4 of 7 things to do in Qawra; recent reviews include both praise for marine exhibits and mixed views on visit length/value. https://www.tripadvisor.com/Attraction_Review-g608947-d4753782-Reviews-Malta_National_Aquarium-Qawra_Island_of_Malta.html. Ratings and reviews are volatile and subjective. Primary activity/ticket page re-read 11 October 2026 in this session; any separate historical review or seasonal-hours source retains its own scope."
     },
     {
       "id": "comino-blue-lagoon",
@@ -287,7 +302,7 @@
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "The official 2026 summer-hours chart gives 10:00–18:00 daily through 31 October, with last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The listed State Rooms closures are on 26 and 28 October, 18 November and 2 December, outside the requested 13–19 October window; the Throne Room remains closed until further notice. Rare state functions may cause additional closure."
+      "notes": "The official 2026 summer-hours chart gives 10:00–18:00 daily through 31 October, with last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The listed State Rooms closures are on 26 and 28 October, 18 November and 2 December, outside the requested 13–19 October window; the Throne Room remains closed until further notice. Rare state functions may cause additional closure. The 11 October fresh opening-hours page exposed the seasonal charts as images, not readable rows. Exact seasonal clock hours above retain the earlier recorded chart-reading scope, not a new transcription; fresh text confirms general last admission 30 minutes before close and the listed closure notices."
     },
     {
       "id": "national-museum-archaeology",
@@ -302,7 +317,7 @@
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "The official Heritage Malta hours chart gives 09:00–19:00 daily through 31 October 2026; last admission is 30 minutes before close: https://heritagemalta.mt/opening-hours/. Recheck the operator notice for changes before travel."
+      "notes": "The official Heritage Malta hours chart gives 09:00–19:00 daily through 31 October 2026; last admission is 30 minutes before close: https://heritagemalta.mt/opening-hours/. Recheck the operator notice for changes before travel. The 11 October fresh opening-hours page exposed the seasonal charts as images, not readable rows. Exact seasonal clock hours above retain the earlier recorded chart-reading scope, not a new transcription; fresh text confirms general last admission 30 minutes before close and the listed closure notices."
     },
     {
       "id": "fort-st-elmo-national-war-museum",
@@ -317,7 +332,7 @@
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "Heritage Malta’s summer-hours chart gives 09:00–19:00 daily through 31 October, last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. On Sunday 18 October, In Guardia is separately scheduled for 11:00–12:00; the show and ordinary museum entry have different ticket rules. See https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/."
+      "notes": "Heritage Malta’s summer-hours chart gives 09:00–19:00 daily through 31 October, last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. On Sunday 18 October, In Guardia is separately scheduled for 11:00–12:00; the show and ordinary museum entry have different ticket rules. See https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/. The 11 October fresh opening-hours page exposed the seasonal charts as images, not readable rows. Exact seasonal clock hours above retain the earlier recorded chart-reading scope, not a new transcription; fresh text confirms general last admission 30 minutes before close and the listed closure notices."
     },
     {
       "id": "st-pauls-catacombs",
@@ -332,12 +347,12 @@
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
-      "notes": "The official summer-hours chart and general notice give 09:00–19:00 daily through 31 October and last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The direct Google Maps listing snapshot instead displays Friday 09:00–17:00 and rating 4.3: https://www.google.com/maps/search/?api=1&query=St+Paul%27s+Catacombs+Rabat+Malta. Prefer the official seasonal schedule provisionally, but confirm this discrepancy with Heritage Malta before travel. TripAdvisor snapshot checked 9 Oct: 4.1/5 from 1,686 reviews, #3 of 48 things to do in Rabat; recent feedback mentions crowding and narrow/stepped spaces: https://www.tripadvisor.com/Attraction_Review-g190326-d2624344-Reviews-St_Paul_s_Catacombs-Rabat_Island_of_Malta.html. Ratings/reviews are subjective and accessibility details should be checked against the official access statement."
+      "notes": "The official summer-hours chart and general notice give 09:00–19:00 daily through 31 October and last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The direct Google Maps listing snapshot instead displays Friday 09:00–17:00 and rating 4.3: https://www.google.com/maps/search/?api=1&query=St+Paul%27s+Catacombs+Rabat+Malta. Prefer the official seasonal schedule provisionally, but confirm this discrepancy with Heritage Malta before travel. TripAdvisor snapshot checked 9 Oct: 4.1/5 from 1,686 reviews, #3 of 48 things to do in Rabat; recent feedback mentions crowding and narrow/stepped spaces: https://www.tripadvisor.com/Attraction_Review-g190326-d2624344-Reviews-St_Paul_s_Catacombs-Rabat_Island_of_Malta.html. Ratings/reviews are subjective and accessibility details should be checked against the official access statement. The 11 October fresh opening-hours page exposed the seasonal charts as images, not readable rows. Exact seasonal clock hours above retain the earlier recorded chart-reading scope, not a new transcription; fresh text confirms general last admission 30 minutes before close and the listed closure notices."
     },
     {
       "id": "hagar-qim-mnajdra",
       "name": "Ħaġar Qim and Mnajdra Archaeological Park",
-      "category": "Near the event venue — Ta’ Qali, Mosta, Mdina, Rabat & UNESCO heritage",
+      "category": "Farther island & Gozo outings",
       "area": "Qrendi",
       "address": "Triq Ħaġar Qim, Qrendi, Malta",
       "hours": "09:00–19:00 daily under Heritage Malta’s 1 March–31 October 2026 summer schedule; last admission 30 minutes before closing.",
@@ -347,7 +362,7 @@
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "Heritage Malta’s summer-hours chart gives 09:00–19:00 daily through 31 October, last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The operator says the Visitor Centre and Ħaġar Qim are accessible (assistance may still be needed), while Mnajdra is not. Check the access statement and transport before planning."
+      "notes": "Heritage Malta’s summer-hours chart gives 09:00–19:00 daily through 31 October, last admission 30 minutes before close: https://heritagemalta.mt/opening-hours/. The operator says the Visitor Centre and Ħaġar Qim are accessible (assistance may still be needed), while Mnajdra is not. Check the access statement and transport before planning. The 11 October fresh opening-hours page exposed the seasonal charts as images, not readable rows. Exact seasonal clock hours above retain the earlier recorded chart-reading scope, not a new transcription; fresh text confirms general last admission 30 minutes before close and the listed closure notices."
     },
     {
       "id": "multimaxx-st-julians",
@@ -362,7 +377,7 @@
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "Check the operator’s booking page for current availability, age or group conditions, and any price changes.\nSupporting claim sources:\nThe operator lists Level 4, Bay Street, daily 10:00–22:00, laser-tag rates of €8/€14/€18 for one/two/three games, VR rates of €6/€10, and coin or PlayCard arcade payment. https://www.starwarsmalta.com/multimaxx-stjulians"
+      "notes": "Check the operator’s booking page for current availability, age or group conditions, and any price changes.\nSupporting claim sources:\nThe operator lists Level 4, Bay Street, daily 10:00–22:00, laser-tag rates of €8/€14/€18 for one/two/three games, VR rates of €6/€10, and coin or PlayCard arcade payment. https://www.starwarsmalta.com/multimaxx-stjulians Primary activity/ticket page re-read 11 October 2026 in this session; any separate historical review or seasonal-hours source retains its own scope."
     },
     {
       "id": "multimaxx-kordin",
@@ -386,13 +401,13 @@
       "area": "Qawra",
       "address": "Tourists Street, Qawra, St Paul’s Bay SPB 1020, Malta",
       "hours": "Monday–Friday 09:00–17:00; Saturday, Sunday and public holidays 09:00–14:00, per the museum’s current official site.",
-      "price range": "Adults €10; children €4.50.",
+      "price range": "Official homepage read 11 October: adult €10.00, child €4.50. Confirm age bands and any booking fees before buying.",
       "description": "Motoring museum: A family-run collection of classic cars, motorcycles and period memorabilia. The museum describes its displays across 3,000 square metres; it is an indoor option close to the Qawra base.",
       "source_url": "https://www.classiccarsmalta.com/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Opening times and admission are taken from the museum’s own page. Recheck the operator site for holiday or temporary changes.\nSupporting claim sources:\nThe museum’s official home page lists its Qawra address, weekday/weekend hours, adult and child admission, and the car-and-motorcycle collection. https://www.classiccarsmalta.com/\nThe official ticket page lists an adult ticket at €10 and a child ticket at €4.50. https://www.classiccarsmalta.com/museum-entrance-tickets"
+      "notes": "Opening times and admission are taken from the museum’s own page. Recheck the operator site for holiday or temporary changes.\nSupporting claim sources:\nThe museum’s official home page lists its Qawra address, weekday/weekend hours, adult and child admission, and the car-and-motorcycle collection. https://www.classiccarsmalta.com/\nThe official ticket page lists an adult ticket at €10 and a child ticket at €4.50. https://www.classiccarsmalta.com/museum-entrance-tickets Primary activity/ticket page re-read 11 October 2026 in this session; any separate historical review or seasonal-hours source retains its own scope."
     },
     {
       "id": "popeye-village",
@@ -460,7 +475,7 @@
       "category": "Tournament & trip-window events (13–19 Oct)",
       "area": "Valletta Waterfront, Floriana",
       "address": "Valletta Waterfront promenade, Floriana, Malta",
-      "hours": "The organizer’s 2026 calendar shows Autumn Vibes on the weekend dates 17–18 October. Its calendar PDF describes Saturday/Sunday activities from lunchtime into teatime; exact daily times are not published.",
+      "hours": "The organizer’s 2026 calendar shows Autumn Vibes on the weekend dates 17–18 October. Its calendar PDF describes Saturday/Sunday activities from lunchtime into teatime; exact daily clock times were not visible in the checked calendar evidence.",
       "price range": "Free activities per the organizer’s 2026 calendar; the calendar does not publish prices for food or drinks.",
       "description": "Free outdoor / family activities: An October programme of free activities along the Valletta Waterfront promenade, with examples in the organizer’s calendar including bouncy castles and seasonal games.",
       "source_url": "https://vallettawaterfront.com/",
@@ -515,34 +530,19 @@
       "notes": "Independently read 11 October: parish visitor page directly lists weekday/weekend hours and last entries, €5 short visit and€8 whole experience (inner dome balcony in the €8 tier), and routes 45/186/31/48/280 from Qawra Bus Terminus. Address and service interruptions not established; confirm when booking. https://mostachurch.com/?lang=en"
     },
     {
-      "id": "twc-2026-free-tickets-18plus",
-      "name": "TWC 2026 spectator listing — free 18+ reservation advertised (checked 11 Oct)",
-      "category": "Tournament & trip-window events (13–19 Oct)",
-      "area": "Ta’ Qali / Ħ’Attard",
-      "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard, Malta — the venue/address shown on the Eventbrite listing read 11 October. Its map link resolves to coordinates 35.8957343, 14.4168839; neither address nor map point identifies an attendee gate inside the site.",
-      "hours": "Ticketing page (read 11 October 2026) lists Wednesday 14 – Sunday 18 October 2026, 9:30 AM – 10:00 PM, with day-by-day agenda for three of the five days: Wed 14 Oct check-in 09:30 / games 10:30 (09:30–22:30); Thu 15 Oct check-in 09:30 / games 10:30 (09:30–22:30); Fri 16 Oct check-in 14:00 / games 15:00 (14:00–21:00). The Sat 17 Oct and Sun 18 Oct entries sit behind a “Show all agenda” control that did not expand in the extracted page, so playoff-day door/game times are not yet confirmed. The listing headline gives 9:30 AM–10:00 PM, while the Wednesday/Thursday agenda rows extend to 22:30; the displayed end times conflict and should be confirmed with the organizer.",
-      "price range": "The Eventbrite listing read 11 October advertised a free reservation; current availability and the traveler’s own reservation are not established.",
-      "description": "An Eventbrite page by organizer Hotspawn, read 11 October 2026, advertised free in-person reservation for the 18+ TWC 2026 audience and showed a “Reserve a spot” action. It is dated listing evidence, not proof of current ticket inventory, a completed reservation by this traveler, walk-in entry, or per-day ticket validity. Do not assume the traveler can attend until the organizer confirms the reservation and gate instructions.",
-      "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
-      "source_type": "official",
-      "date_checked": "2026-10-11",
-      "confidence": "verified",
-      "notes": "Read 11 October 2026: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . Confirmed on that page: organizer Hotspawn; venue BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard; dates Wednesday 14 – Sunday 18 October 2026; listed time 9:30 AM – 10 PM; highlights “ages 18+” and “In person”; a “Free / Reserve a spot” action; and a frequently-asked-questions list that includes “Is my ticket valid for every day of the event?”, “Will my ticket be scanned on each day?”, “Is parking available at the venue?” and “Will food and drink be available at the venue?”. The answers to those questions are behind an interactive control and were not readable in the extracted page. HLTV, 2 October 2026: https://www.hltv.org/news/45615/thunderpick-world-championship-talent-revealed . The eight-team field is also confirmed by Thunderpick’s own release https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html . The listing’s map link gives a venue coordinate, not an attendee entrance. Ticket inventory, reservation status for this traveler, transferability and per-day scanning remain unverified; the listed 18+ rule means an attendee should carry photographic ID."
-    },
-    {
       "id": "uno-malta-dash-berlin-2026-10-17",
-      "name": "Jeffrey Sutorius (known as Dash Berlin) at UNO Malta — Saturday 17 October 2026",
+      "name": "Jeffrey Sutorius at UNO Malta — 17 October listing, year unconfirmed",
       "category": "Tournament & trip-window events (13–19 Oct)",
       "area": "Ta' Qali, Ħ'Attard — the same area as the event venue",
       "address": "UNO Malta, Crafts, ATD, Attard ATD 4000, Malta. The ticketing platform's map link gives coordinates 35.8913746, 14.4192547.",
-      "hours": "Saturday 17 October 2026 from 22:00. The ticketing page lists the start time only; no end time is published there.",
+      "hours": "Listing displays “Sat 17 Oct · 22:00”; no year or end time in the fresh text extraction. Confirm 2026 date and ticket availability before purchase.",
       "price range": "Tickets from €10.00 on EventWorks, plus any booking fee. EventWorks terms state tickets are non-refundable unless the organiser instructs otherwise and that the booking fee is not refunded.",
-      "description": "A ticketed open-air dance event at UNO Malta in Ta' Qali, Attard on the Saturday night of the CS2 playoffs. It matters to this trip for two reasons beyond the music. First, UNO Malta is in the same Ta' Qali / Attard ATD 4000 area as the venue context recorded for the event, so a large crowd will be moving through that area late on 17 October. Second, Malta Public Transport lists a cluster of evening detours across the Mosta, Rotunda and Ta' Qali P&R corridor from 19:00 on Friday and Saturday starting 17 October, including Route 186 toward Buġibba omitting Gholja 2 through Targa. MPT does not name a cause, so the link is plausible but not stated by the operator. If you are at the tournament that evening, expect road pressure and reduced bus options in the Ta' Qali area after 19:00 and plan a taxi or ride-hailing return.",
+      "description": "Eventworks advertises Jeffrey Sutorius (billed as “known as Dash Berlin”) at UNO Malta, with a Saturday 17 October 22:00 start and tickets from €10. This is an optional nightlife alternative, not a confirmed add-on after the tournament. No attendance size, congestion level, bus-diversion cause or return journey is established by the listing.",
       "source_url": "https://eventworks.mt/dash-berlin-17th-oct",
       "source_type": "official",
       "date_checked": "2026-10-11",
-      "confidence": "verified",
-      "notes": "Event, date, start time, venue address, coordinates and the €10.00 starting price were read directly from the official ticketing platform on 11 October 2026: https://eventworks.mt/dash-berlin-17th-oct . Presented by One Off Events and Global Dance Events. EventWorks terms on that page allow the promoter to add, withdraw or substitute artists and to vary programme, times, seating and capacity without notice, and to postpone or cancel for adverse weather or other causes, so recheck before travelling. The artist name is Jeffrey Sutorius, billed as Dash Berlin. Third-party listings (https://spotlightmalta.com/event/one-off-events-pres-dash-berlin and https://allevents.in/attard/dash-berlin-main-room-uno-malta/200026283251114) add a 04:00 finish, a support line-up and an early-bird phone number; those details come from aggregators, not the ticketing platform, and are not treated as confirmed. Age limit, door policy and remaining ticket inventory were not published on the page checked. MPT detour cluster: https://www.publictransport.com.mt/latest-service-updates/ . This is not evidence of any connection to the Thunderpick World Championship, and attending is not assumed in the expense planner."
+      "confidence": "partially verified",
+      "notes": "Event, date, start time, venue address, coordinates and the €10.00 starting price were read directly from the official ticketing platform on 11 October 2026: https://eventworks.mt/dash-berlin-17th-oct . Presented by One Off Events and Global Dance Events. EventWorks terms on that page allow the promoter to add, withdraw or substitute artists and to vary programme, times, seating and capacity without notice, and to postpone or cancel for adverse weather or other causes, so recheck before travelling. The artist name is Jeffrey Sutorius, billed as Dash Berlin. Third-party listings (https://spotlightmalta.com/event/one-off-events-pres-dash-berlin and https://allevents.in/attard/dash-berlin-main-room-uno-malta/200026283251114) add a 04:00 finish, a support line-up and an early-bird phone number; those details come from aggregators, not the ticketing platform, and are not treated as confirmed. Age limit, door policy and remaining ticket inventory were not published on the page checked. MPT detour cluster: https://www.publictransport.com.mt/latest-service-updates/ . This is not evidence of any connection to the Thunderpick World Championship, and attending is not assumed in the expense planner. Current-session read has no explicit year in the extracted text; the earlier 2026 attribution remains a lead, not independently resolved by the weekday alone. The earlier claim of inevitable large crowds and reduced bus options is withdrawn. A music listing cannot prove MPT’s diversion cause or timetable."
     },
     {
       "id": "hamrun-chocolate-festival-2026-10-17",
@@ -552,12 +552,12 @@
       "address": "St Joseph High Street (Strada Rjali), Ħamrun town centre, per the organiser's own announcement and a Maltese events guide.",
       "hours": "Saturday 17 October 2026. The 10:30–18:00 window comes from a Maltese events guide, not from the organiser's page, so treat the hours as provisional.",
       "price range": "The events guide lists entry as free. Food, drink and stall purchases cost extra and are not priced here.",
-      "description": "A free street festival of chocolate, artisan stalls, live demonstrations, sculptures and family entertainment along Ħamrun's main street, organised by the Ħamrun Local Council. It is a daytime option on the Saturday of the playoffs and sits on the Valletta–Mosta corridor, so it can be combined with a Valletta or Ta' Qali day. It finishes in the evening, well before the Ta' Qali detour window, which makes it a lower-risk Saturday choice than an evening event in that area.",
+      "description": "A historical search-index snapshot of the organizer’s Facebook page advertises a 17 October 2026 chocolate festival in Ħamrun. Direct Facebook access returned 403 again in this session. It remains a candidate to confirm with the organizer, not a verified timed stop or a proven easy combination with Ta’ Qali or Valletta.",
       "source_url": "https://www.facebook.com/hamrunchocolatefestival/",
       "source_type": "social",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The organiser's own Facebook page states that the Ħamrun Chocolate Festival returns on 17 October 2026 on Strada Rjali, and its call-for-artisans artwork carries the date 17th Oct. 2026: https://www.facebook.com/hamrunchocolatefestival/ . Facebook could not be fetched directly in this environment, so the wording is taken from a dated search-index snapshot of that page and is labelled social rather than official. The street name, 10:30–18:00 hours, free entry and Local Council organiser come from a secondary Maltese guide: https://www.maltainfoguide.com/hamrun-chocolate-festival-malta.html and https://www.maltainfoguide.com/activities-in-malta-october.html . An older listing for a 2022 edition shows the festival has previously run in late October, so the date should be reconfirmed with the Local Council close to the day: https://www.whatson.com.mt/en/home/events/19329/the-hamrun-chocolate-festival.htm . No admission, crowd-control, parking or public-transport detail was verified."
+      "notes": "The organiser's own Facebook page states that the Ħamrun Chocolate Festival returns on 17 October 2026 on Strada Rjali, and its call-for-artisans artwork carries the date 17th Oct. 2026: https://www.facebook.com/hamrunchocolatefestival/ . Facebook could not be fetched directly in this environment, so the wording is taken from a dated search-index snapshot of that page and is labelled social rather than official. The street name, 10:30–18:00 hours, free entry and Local Council organiser come from a secondary Maltese guide: https://www.maltainfoguide.com/hamrun-chocolate-festival-malta.html and https://www.maltainfoguide.com/activities-in-malta-october.html . An older listing for a 2022 edition shows the festival has previously run in late October, so the date should be reconfirmed with the Local Council close to the day: https://www.whatson.com.mt/en/home/events/19329/the-hamrun-chocolate-festival.htm . No admission, crowd-control, parking or public-transport detail was verified. Fresh direct refresh on 11 October returned 403. Removed the unsupported “lower-risk” transport recommendation and claim that the festival finishes safely before a bus diversion. The event, hours, trip routing and public transport must be checked independently."
     },
     {
       "id": "playcon-2026-mfcc-outside-window",
@@ -588,6 +588,81 @@
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Official homepage (read 11 October 2026) lists “La Traviata 17 October 2026”: https://teatruaurora.com/ ; box office: https://teatruaurora.com/box-office. The 19:30/18:45 times come from a third-party listing (Malta Info Guide, checked via search view 11 October 2026: https://www.maltainfoguide.com/activities-in-malta-october.html) and are not operator-confirmed in the retrieved official view; the booking form’s ferry-to-theatre shuttle at 18:15 is official but its availability for this date was not confirmed. Cross-check Gozo ferry timings (see the transport page) before committing; the evening overlaps CS2 Playoffs day."
+    },
+    {
+      "id": "twc-day-2026-10-14",
+      "name": "Wednesday 14 October · Group stage",
+      "category": "CS2 daily agenda",
+      "area": "BLAST / MFCC, Ta’ Qali · Attard",
+      "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, Attard ATD 4000. Attendee gate unconfirmed.",
+      "hours": "Check-in 09:30 · games 10:30 · agenda ends 22:30. Times as displayed by the listing; confirm venue-local clock times with the organizer.",
+      "price range": "Free 18+ reservation advertised for the event; your reservation and per-day ticket validity are unconfirmed. Transport/food extra.",
+      "description": "The visible listing provides Wednesday check-in and games times. Its overall headline ends at 22:00 but this agenda row ends at 22:30; confirm the finish before arranging the return.",
+      "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Organizer stage dates: https://world-championship.thunderpick.io/2026-finals/ . Visible agenda/ticket conditions: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . No matches, attendance or personal timetable are booked by this guide. Consult the Transport records for route candidates; no dated hotel-to-gate journey has been saved."
+    },
+    {
+      "id": "twc-day-2026-10-15",
+      "name": "Thursday 15 October · Group stage",
+      "category": "CS2 daily agenda",
+      "area": "BLAST / MFCC, Ta’ Qali · Attard",
+      "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, Attard ATD 4000. Attendee gate unconfirmed.",
+      "hours": "Check-in 09:30 · games 10:30 · agenda ends 22:30. Times as displayed by the listing; confirm venue-local clock times with the organizer.",
+      "price range": "Free 18+ reservation advertised for the event; your reservation and per-day ticket validity are unconfirmed. Transport/food extra.",
+      "description": "The visible listing provides Thursday check-in and games times. Its overall headline ends at 22:00 but this agenda row ends at 22:30; confirm the finish before arranging the return.",
+      "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Organizer stage dates: https://world-championship.thunderpick.io/2026-finals/ . Visible agenda/ticket conditions: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . No matches, attendance or personal timetable are booked by this guide. Consult the Transport records for route candidates; no dated hotel-to-gate journey has been saved."
+    },
+    {
+      "id": "twc-day-2026-10-16",
+      "name": "Friday 16 October · Group stage",
+      "category": "CS2 daily agenda",
+      "area": "BLAST / MFCC, Ta’ Qali · Attard",
+      "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, Attard ATD 4000. Attendee gate unconfirmed.",
+      "hours": "Check-in 14:00 · games 15:00 · agenda ends 21:00. Times as displayed by the listing; confirm venue-local clock times with the organizer.",
+      "price range": "Free 18+ reservation advertised for the event; your reservation and per-day ticket validity are unconfirmed. Transport/food extra.",
+      "description": "The visible listing provides Friday check-in and games times. Keep other plans flexible until your reservation, attendee gate and full return journey are confirmed.",
+      "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Organizer stage dates: https://world-championship.thunderpick.io/2026-finals/ . Visible agenda/ticket conditions: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . No matches, attendance or personal timetable are booked by this guide. Consult the Transport records for route candidates; no dated hotel-to-gate journey has been saved."
+    },
+    {
+      "id": "twc-day-2026-10-17",
+      "name": "Saturday 17 October · Playoffs",
+      "category": "CS2 daily agenda",
+      "area": "BLAST / MFCC, Ta’ Qali · Attard",
+      "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, Attard ATD 4000. Attendee gate unconfirmed.",
+      "hours": "Check-in, first game and finish: not verified. Times as displayed by the listing; confirm venue-local clock times with the organizer.",
+      "price range": "Free 18+ reservation advertised for the event; your reservation and per-day ticket validity are unconfirmed. Transport/food extra.",
+      "description": "The organizer lists 17 October in the playoff stage. The Eventbrite weekend agenda did not expand in the fetched page; do not substitute Wednesday times or another BLAST event’s doors.",
+      "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Organizer stage dates: https://world-championship.thunderpick.io/2026-finals/ . Visible agenda/ticket conditions: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . No matches, attendance or personal timetable are booked by this guide. Consult the Transport records for route candidates; no dated hotel-to-gate journey has been saved."
+    },
+    {
+      "id": "twc-day-2026-10-18",
+      "name": "Sunday 18 October · Playoffs",
+      "category": "CS2 daily agenda",
+      "area": "BLAST / MFCC, Ta’ Qali · Attard",
+      "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, Attard ATD 4000. Attendee gate unconfirmed.",
+      "hours": "Check-in, first game and finish: not verified. Times as displayed by the listing; confirm venue-local clock times with the organizer.",
+      "price range": "Free 18+ reservation advertised for the event; your reservation and per-day ticket validity are unconfirmed. Transport/food extra.",
+      "description": "The organizer lists 18 October in the playoff stage. The Eventbrite weekend agenda did not expand in the fetched page; keep the day flexible until organizer instructions arrive.",
+      "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Organizer stage dates: https://world-championship.thunderpick.io/2026-finals/ . Visible agenda/ticket conditions: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . No matches, attendance or personal timetable are booked by this guide. Consult the Transport records for route candidates; no dated hotel-to-gate journey has been saved."
     }
   ]
 }

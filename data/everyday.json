@@ -2,7 +2,7 @@
   "topic": "everyday",
   "title": "Everyday guide for a U.S. traveler in Malta",
   "last_updated": "2026-10-11",
-  "intro": "Practical, source-checked essentials for the 13–19 October 2026 trip: entry pointers, customs allowances, money, power, phone service, local time, safety, health, and a dated forecast that covers all seven days and now leads with the official national meteorological services. Entry rules depend on the passport used, and the EES picture carries a recorded conflict between the official EU position and secondary reporting of Malta-specific delays — either way, allow generous time at the border on arrival and departure. Forecast snapshots and provider offers can change. Links point to government, EU, safety, weather, and operator sources.",
+  "intro": "A practical US-to-Malta checklist: power and phone setup, euro payments, entry documents, local time, health and weather. General official guidance is not a determination of your personal eligibility, insurance cover or device compatibility. Recheck date-sensitive rules before departure.",
   "records": [
     {
       "id": "malta-electricity",
@@ -36,7 +36,7 @@
     },
     {
       "id": "eco-contribution-2026",
-      "name": "Hotel eco-contribution (Malta Tourism Authority) — rate and unresolved threshold wording",
+      "name": "Hotel environmental contribution · published guest notice",
       "category": "Money, cards & tipping",
       "area": "Malta-wide, for licensable accommodation",
       "address": "Not applicable — statutory contribution collected by the accommodation provider",
@@ -150,7 +150,7 @@
       "description": "The U.S. State Department lists +356 2561 4000 for the U.S. Embassy in Malta, including its emergency after-hours contact. This is consular contact information, not a substitute for local emergency services at 112.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "Embassy website and current alerts: https://mt.usembassy.gov/. Emergency services in Malta: 112. Confirm contact details on the State Department page before relying on them."
     },
@@ -165,7 +165,7 @@
       "description": "On the 9 October 2026 check, the U.S. State Department listed Malta at Level 1 — Exercise normal precautions, and specifically warns that rip currents have caused tourist drownings. Follow lifeguards and local swimming conditions; a sunny forecast does not guarantee safe sea conditions.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "The advisory is dated 9 July 2026; check the live page for any later updates. It is a government advisory, not a guarantee of personal safety."
     },
@@ -180,7 +180,7 @@
       "description": "Vehicles drive on the left in Malta. The U.S. State Department also notes that roads can be narrow and congested. If walking near traffic or considering a rental car, account for left-side traffic and check local road conditions; public-transport comparisons are on Getting around.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "Official travel advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. For route options from AX ODYCY to the named event venue, see getting-around.html."
     },
@@ -195,7 +195,7 @@
       "description": "The U.S. State Department warns that bringing marijuana, cannabis, CBD products, or derivatives into Malta is illegal and may lead to arrest and lengthy detention. Do not pack these products; check the official advisory for the full legal guidance.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "This is a specific warning from the U.S. State Department Malta advisory, not personalized legal advice. Check the current advisory and Maltese authorities for the latest rules."
     },
@@ -216,7 +216,7 @@
     },
     {
       "id": "october-weather-forecast",
-      "name": "October weather: check the local forecast, not a fixed assumption",
+      "name": "Weather · dated Malta forecast, not a trip guarantee",
       "category": "Power, connectivity & weather",
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
@@ -261,7 +261,7 @@
     },
     {
       "id": "ees-malta-implementation-conflict",
-      "name": "EES at Malta's border — official position versus reported delays",
+      "name": "EES · Malta-specific delay claim not corroborated",
       "category": "Entry, passport, EES & ETIAS",
       "area": "Malta external Schengen border, including Malta International Airport",
       "address": "Not applicable — border procedure",
@@ -273,6 +273,21 @@
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "The official EU FAQ was read directly on 11 October 2026 and states: \"This progressive implementation lasted until 9 April 2026. From 10 April 2026, the EES is fully operational at all external border crossing points of the European countries using the system.\" It also confirms that for a visa-exempt traveller the system stores four fingerprints and a facial image, that fingerprints of children under 12 are not scanned, that a biometric passport is only needed for self-service equipment, and that the 90-days-in-any-180-days limit is calculated as a single period across all EES countries: https://travel-europe.europa.eu/en/ees/faq . Legal basis cited there: Regulation (EU) 2017/2226 and Regulation (EU) 2025/1534. The Malta-specific delay claim is secondary and NOT official: https://www.visasupdate.com/post/ees-implementation-delay-schengen-nine-countries-2026 (16 September 2026), which lists Malta as \"not operating EES at all borders and all times\". Two further secondary sources were seen and are consistent with the official date but not with the Malta detail: https://www.abta.com/tips-and-advice/planning-and-booking-a-holiday/upcoming-changes-travel-europe (updated 17 August 2026) and https://schengentraveler.com/entry-exit-system-ees/ (August 2026, which also reports long 2026 border waits and an ETIAS slip to 2027). No Malta government or eu-LISA statement confirming or denying the Malta delay was found in this session, so the conflict is recorded rather than resolved. Queue times are not published by any source checked. Relationship to other records in this dataset: ees-border-system describes what EES is and what it collects, and etias-status-2026-10 (read from the official EU site) remains the authoritative ETIAS claim; this record adds only the Malta-specific enforcement conflict and is not a replacement for either. Relationship to other records in this dataset: `ees-border-system` describes what EES is and what it collects, and `etias-status-2026-10` (read from the official EU site) remains the authoritative ETIAS claim; this record adds only the Malta-specific enforcement conflict and replaces neither."
+    },
+    {
+      "id": "water-medication-daily-health",
+      "name": "Daily health · drinking water and prescription medicines",
+      "category": "Safety, health & emergency contacts",
+      "area": "Malta",
+      "address": "Use the hotel or official health-service directory to locate an appropriate pharmacy or medical provider.",
+      "hours": "Pharmacy/clinic opening hours and personal prescription arrangements not checked.",
+      "price range": "Water, medicines and healthcare are not priced; confirm insurance and payment arrangements.",
+      "description": "The US State Department says Malta’s tap water is generally safe to drink and cook with. Carry prescription medicines in their original packaging with the prescription; confirm legality and any controlled-substance clearance with Maltese authorities before travel. A US prescription does not by itself establish local dispensing or import permission.",
+      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Fresh Health / Prescription medications / Water quality sections read 11 October. Official Maltese medicine authority linked there: https://medicinesauthority.gov.mt/ . Current personal medication eligibility was not assessed. In an emergency use 112; the separate emergency record covers health insurance and payment cautions."
     }
   ]
 }
