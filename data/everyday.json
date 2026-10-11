@@ -1,7 +1,7 @@
 {
   "topic": "everyday",
   "title": "Everyday guide for a U.S. traveler in Malta",
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-11",
   "intro": "Practical, source-checked essentials for the 13–19 October 2026 trip: entry pointers, money, power, phone service, local time, safety, and health. Entry rules depend on the passport used; forecast snapshots and provider offers can change. Links point to government, EU, safety, weather, and operator sources.",
   "records": [
     {
@@ -205,13 +205,13 @@
       "category": "Weather & packing",
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
-      "hours": "Malta Met Office 7-day forecast, accessed 9 Oct 2026: 13 Oct mainly sunny, high 25°C/low 19°C; 14 Oct sunny, 23°C/18°C; 15 Oct partly cloudy, 24°C/18°C. The page did not yet cover 16–19 Oct.",
-      "description": "This is a dated forecast snapshot, not a trip guarantee. The Malta Met Office page is refreshed; recheck all seven dates shortly before departure and before sea activities. Pack for possible wind or showers as well as warm daytime weather, and follow marine/lifeguard notices.",
-      "source_url": "https://maltametoffice.com/en/forecast/",
-      "source_type": "official",
-      "date_checked": "2026-10-09",
-      "confidence": "partially verified",
-      "notes": "Official Malta International Airport Met Office 7-day forecast as fetched 9 Oct 2026: https://maltametoffice.com/en/forecast/. The detailed forecast was last updated 9 Oct 2026 16:45 and warned of thundery showers overnight for 10 Oct: https://maltametoffice.com/en/detailed-forecast/. The Oct 16–19 forecast was not available in the seven-day view at check time.",
+    "hours": "Malta Met Office 7-day forecast, accessed 11 Oct 2026, covers 13–17 Oct: 13 Oct isolated showers, high 26°C/low 19°C (NW F3-4); 14 Oct mainly sunny, 24°C/18°C (N F4); 15 Oct mainly sunny, 25°C/17°C (NE F3); 16 Oct mainly sunny, 25°C/17°C (W F2-3); 17 Oct mainly cloudy, 23°C/18°C (WNW F3-4). The 7-day view did not yet cover 18–19 Oct at check time.",
+    "description": "This is a dated forecast snapshot, not a trip guarantee. The Malta Met Office page is refreshed; recheck all seven dates shortly before departure and before sea activities. Pack for possible wind or showers as well as warm daytime weather, and follow marine/lifeguard notices.",
+    "source_url": "https://maltametoffice.com/en/forecast/",
+    "source_type": "official",
+    "date_checked": "2026-10-11",
+    "confidence": "partially verified",
+    "notes": "Official Malta International Airport Met Office 7-day forecast as fetched 11 Oct 2026: https://maltametoffice.com/en/forecast/. This supersedes the 9 Oct snapshot, which covered 13–15 Oct only. Wind strengths are Beaufort forces as published; UV index was 5 on each displayed day. The 18–19 Oct forecast was still outside the seven-day window at check time; an earlier detailed-forecast check (9 Oct, thundery-shower wording) is logged in docs/SOURCES.md.",
       "price range": "Not applicable"
     },
     {
