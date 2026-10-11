@@ -16,7 +16,7 @@ The repository is a hand-authored static HTML/CSS/JavaScript site with no applic
 
 | Workstream | Owned data file | Owned page | Scope | Dependencies |
 |---|---|---|---|---|
-| A. Transport | `data/transport.json` | `getting-around.html` | MLA airport ↔ AX ODYCY; Qawra ↔ user-supplied BLAST Arena Studios destination, with the BLAST Arena Studios venue address (MFCC South Gate National Stadium, Attard ATD 4000) corroborated and the TWC entrance unconfirmed; event-day public transit; ferries, ride-hailing/taxi, car hire; practical mode comparison. Treat trip dates and booking inputs as user-supplied; independently verify route/event facts where possible. | Shared schema and page renderer. |
+| A. Transport | `data/transport.json` | `getting-around.html` | MLA airport ↔ AX ODYCY; Qawra ↔ user-supplied BLAST Arena Studios destination, with MFCC/Ta’ Qali corroborated only as venue-area context for separate BLAST events, not confirmed TWC attendee logistics; event-day public transit; ferries, ride-hailing/taxi, car hire; practical mode comparison. Treat trip dates and booking inputs as user-supplied; independently verify route/event facts where possible. | Shared schema and page renderer. |
 | B. Food & cafés | `data/food.json` | `restaurants.html` | Sourced restaurant, café, and casual-eating shortlist convenient to Qawra/AX ODYCY, with locality and official/map/review/social evidence. Publish live hours/prices only where checked and disclose inaccessible platforms. | Shared schema and page renderer. |
 | C. Activities, landmarks & events | `data/activities.json` | `activities.html` | Gaming centres, recreation, landmarks, and dated public events during 13–19 October. Distinguish confirmed listings from seasonal/undated suggestions; do not infer spectator access. | Shared schema and page renderer; event/transport cross-notes go to `docs/HANDOFF.md`. |
 | D. Everyday life for a U.S. traveler | `data/everyday.json` | `everyday.html` | Power, mobile service, currency/cards, tipping, safety/emergency/health, entry pointers, language, weather, and practical adaptation. Qualify advice that depends on passport, device, or itinerary. | Shared schema and page renderer. |
@@ -38,12 +38,41 @@ After integration, perform three cumulative passes:
 
 PR #13 was based on an older implementation that added duplicate `/pages/` templates and a separate site builder. `origin/main` already contains the canonical root-page renderer, shared schema/validator, six current JSON datasets, expense planner, and research pages. The reconciliation retained that main architecture, imported only non-duplicate food/activity records, updated the Aquarium and Rolex race facts, and integrated their source/open-question/status/handoff notes. The duplicate `/pages/` copies, `tools/build_site.py`, legacy `data/schema.json`, and duplicate schema document were removed; main’s `.nojekyll`, `docs/DATA_SCHEMA.md`, and validator remain. Legacy `hotel.html`, `itinerary.html`, and `qawra.html` URLs remain noindex notices. No claim was imported without a source and limitation recorded.
 
-## Session addendum — 11 Oct 2026 (third pass, arena/d347388b)
+## Current session — 11 October 2026
 
-Scope, executed serially under the ownership table after syncing with `main` (PR #21):
+Repository review: main already contains six common-schema topic datasets (107 records),
+root-level topic pages, a shared renderer/design system, a blank expense planner,
+a source log, and a static validation workflow. The baseline validator passes, but
+that establishes structural consistency, not claim truth or live link availability.
+Prior research dates and claimed platform checks must not be silently refreshed.
 
-- **F (bug):** `costs.html` "Price status" read `record.price_range`; the data key is `price range`. Fix and DOM-test.
-- **A:** restore the Buġibba-bound Route 186 return stop (Stadium 2194, last 20:53), add an evening-return check tied to TWC match times, add Uber and an unverified airport-taxi fare record, and expand fares (Explore Flex). Add an event-day quick-plan table to `getting-around.html`.
-- **E:** add Rai Radio 1 (DAB+) Serie A, Premier League and UCL MD2 fixture guides in Malta time, BBC Sportsworld durations, a Kalshi travel-eligibility note, and a listening-plan table in `radio.html`.
-- **B/C:** add corridor options near Ta' Qali / Mosta / Mdina and one dated nightlife event.
-- **G:** executive summary rewrite, footer snapshot date, table CSS, docs, three passes, PR and merge.
+The session remains on `arena/7bf2063c-maltasupplemental`; Arena does not permit
+workstream branches or switching to main. No other open PR will be merged or closed.
+Use parallel independent research requests for A–E with the ownership table above;
+there is no independent sub-agent runner available. Apply data/page edits serially
+within ownership, record cross-topic findings in HANDOFF, and integrate G last.
+
+Shared setup first: preserve the existing folders, schema, shell, navigation, design
+tokens, and claim/URL/date/workstream source-log format. Tighten source types to the
+user's four allowed values (`official`, `map`, `review`, `social`); specialist industry
+sources are attributed as such in notes, not a new enum. Add dated evidence/audit
+records outside topic data to distinguish attempted access from successful support.
+
+Planned improvements:
+- A: refresh critical official event/transit evidence; publish a conditional event-day
+  checklist and honest mode/value comparison, without inventing a pin or departure.
+- B/C: refresh official shortlists and dated events; separate closure/status leads
+  from actionable suggestions; expose category/area/confidence filters and maps.
+- D: refresh power/entry/connectivity/forecast sources; keep personal eligibility open.
+- E: verify exact dated radio programme listings, multiplex evidence, and match-carriage
+  limits; never equate a programme, fixture, stream, or Kalshi listing with RF commentary.
+- F: test persistence, CSV handling and edge cases; add itinerary-linked daily line items
+  so bookings can be entered rapidly without guessed prices or double-counting.
+- G: add data-driven executive-summary evidence, source-log reading in the site,
+  automated browser/mobile/desktop/accessibility tests and stronger validation.
+
+After integration: Pass 1 implementation + functional tests; Pass 2 requirements,
+evidence and edge-case fixes; Pass 3 full regression and original-request audit.
+Commit/push this session branch, create an explicit PR, wait for checks, merge that
+PR by explicit number, then check Pages deployment. Report unresolved requirements
+as unresolved, not as fully verified completion.

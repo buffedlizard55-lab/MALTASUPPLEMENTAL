@@ -21,6 +21,11 @@
   }
 
   function renderShell() {
+    var skip = make("a", "skip-link", "Skip to main content");
+    skip.href = "#main-content";
+    document.body.prepend(skip);
+    var main = document.querySelector("main");
+    if (main) main.id = "main-content";
     var current = window.location.pathname.split("/").pop() || "index.html";
     var header = document.querySelector("[data-site-header]");
     if (header) {
@@ -65,15 +70,15 @@
     if (footer) {
       var inner = make("div", "footer-inner");
       var left = document.createElement("div");
-      left.appendChild(make("p", "", "Malta trip guide · Research snapshot: 11 October 2026"));
+      left.appendChild(make("p", "", "Malta trip guide · Critical refresh: 11 October 2026 · Individual source dates vary"));
       left.appendChild(make("p", "", "Check source pages and live operator information again before travel; schedules, opening hours and prices can change."));
       var right = document.createElement("div");
       var sourceLink = make("a", "", "Master source log");
-      sourceLink.href = "docs/SOURCES.md";
+      sourceLink.href = "sources.html#source-reader";
       right.appendChild(sourceLink);
       right.appendChild(document.createTextNode(" · "));
       var questionLink = make("a", "", "Open questions");
-      questionLink.href = "docs/OPEN_QUESTIONS.md";
+      questionLink.href = "sources.html#question-reader";
       right.appendChild(questionLink);
       inner.append(left, right);
       footer.replaceChildren(inner);
@@ -122,6 +127,7 @@
   function createRecord(record) {
     var article = make("article", "record-card");
     article.dataset.category = record.category;
+    article.id = record.id;
     var meta = make("div", "record-meta");
     meta.appendChild(make("span", "pill", record.category));
     var confidenceClass = record.confidence === "verified" ? "verified" : (record.confidence === "partially verified" ? "partial" : "unverified");
@@ -136,9 +142,11 @@
     article.appendChild(dl);
 
     if (record.notes) {
-      var notes = make("div", "record-notes");
-      notes.appendChild(document.createTextNode("Notes: "));
-      appendLinkedText(notes, record.notes);
+      var notes = make("details", "record-notes");
+      notes.appendChild(make("summary", "", "Evidence & caveats"));
+      var noteText = make("p");
+      notes.appendChild(noteText);
+      appendLinkedText(noteText, record.notes);
       article.appendChild(notes);
     }
     if (record.source_url) {
@@ -148,6 +156,9 @@
       source.rel = "noopener noreferrer";
       source.setAttribute("aria-label", "Open source for " + record.name + " in a new tab");
       article.appendChild(source);
+      var permalink = make("a", "record-source", "Link to this entry");
+      permalink.href = "#" + record.id;
+      article.appendChild(permalink);
     } else {
       article.appendChild(make("p", "record-source data-warning", "No direct source URL is available; this record must not be treated as verified."));
     }
@@ -184,15 +195,48 @@
         });
       }
 
+      function filterControl(labelText, values, attribute) {
+        var label = make("label", "", labelText);
+        var control = make("select");
+        control.setAttribute(attribute, "");
+        var all = make("option", "", "All " + labelText.toLowerCase());
+        all.value = "";
+        control.appendChild(all);
+        values.forEach(function (value) {
+          var option = make("option", "", value);
+          option.value = value;
+          control.appendChild(option);
+        });
+        label.appendChild(control);
+        if (tools) tools.insertBefore(label, count);
+        return control;
+      }
+      var area = filterControl("Areas", Array.from(new Set(records.map(function (r) { return r.area; }))).sort(), "data-area-filter");
+      var confidence = filterControl("Confidence", ["verified", "partially verified", "unverified"], "data-confidence-filter");
+      var reset = make("button", "filter-reset", "Reset filters");
+      reset.type = "button";
+      if (tools) tools.appendChild(reset);
+      reset.addEventListener("click", function () {
+        if (search) search.value = "";
+        if (select) select.value = "";
+        area.value = "";
+        confidence.value = "";
+        paint();
+      });
+      var jumps = make("div", "quick-links category-jumps");
+      jumps.setAttribute("aria-label", "Jump to a category");
+      if (tools) tools.after(jumps);
+
       function paint() {
         var query = search ? search.value.trim().toLowerCase() : "";
         var category = select ? select.value : "";
         var filtered = records.filter(function (r) {
           var matchesCategory = !category || r.category === category;
           var haystack = [r.name, r.category, r.area, r.address, r.description, r.hours, r["price range"], r.notes].join(" ").toLowerCase();
-          return matchesCategory && (!query || haystack.indexOf(query) !== -1);
+          return matchesCategory && (!area.value || r.area === area.value) && (!confidence.value || r.confidence === confidence.value) && (!query || haystack.indexOf(query) !== -1);
         });
         host.replaceChildren();
+        jumps.replaceChildren();
         if (!filtered.length) {
           host.appendChild(make("p", "empty-state", "No entries match those filters. Clear the search or choose another category."));
         } else {
@@ -201,6 +245,9 @@
             var group = make("section", "category-section");
             var sectionId = "category-" + name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
             group.id = sectionId;
+            var jump = make("a", "", name);
+            jump.href = "#" + sectionId;
+            jumps.appendChild(jump);
             var heading = make("div", "category-heading");
             heading.append(make("h2", "", name), make("span", "category-count", filtered.filter(function (r) { return r.category === name; }).length + " entries"));
             var grid = make("div", "grid");
@@ -213,14 +260,69 @@
       }
       if (search) search.addEventListener("input", paint);
       if (select) select.addEventListener("change", paint);
+      area.addEventListener("change", paint);
+      confidence.addEventListener("change", paint);
       paint();
+      if (window.location.hash) {
+        var target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+        if (target) target.scrollIntoView();
+      }
     }).catch(function (error) {
       host.replaceChildren(make("p", "callout callout-danger", "Topic data could not be loaded. Please use the source links in the project repository or reload the page. " + error.message));
     });
   }
 
+  function renderDocuments() {
+    document.querySelectorAll("[data-document]").forEach(function (host) {
+      fetch(host.dataset.document).then(function (response) {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.text();
+      }).then(function (text) {
+        host.replaceChildren();
+        var body = make("div", "document-text");
+        appendLinkedText(body, text);
+        host.appendChild(body);
+      }).catch(function () {
+        host.textContent = "Document could not load. Use the GitHub or raw-document links above.";
+      });
+    });
+  }
+
+  function renderOverview() {
+    var host = document.querySelector("[data-overview]");
+    if (!host) return;
+    var specs = [
+      ["everyday", "malta-electricity", "everyday.html", "Pack first"],
+      ["transport", "mpt-fares-cards", "getting-around.html", "Choose the right pass"],
+      ["expenses", "hotel-separate-charges", "costs.html", "Check the hotel invoice"],
+      ["everyday", "october-weather-forecast", "everyday.html", "Outdoor plans"]
+    ];
+    Promise.all(specs.map(function (spec) {
+      return fetch("data/" + spec[0] + ".json").then(function (r) {
+        if (!r.ok) throw new Error("Summary data unavailable");
+        return r.json();
+      }).then(function (data) {
+        return {spec: spec, record: data.records.find(function (r) { return r.id === spec[1]; })};
+      });
+    })).then(function (items) {
+      host.replaceChildren();
+      items.forEach(function (item) {
+        var r = item.record;
+        if (!r) return;
+        var card = make("article", "card");
+        card.append(make("span", "card-tag", item.spec[3]), make("h3", "", r.name), make("p", "", r.id === "october-weather-forecast" ? r.hours : (r.id === "mpt-fares-cards" ? r["price range"] : r.description)));
+        var source = make("a", "", "Source & details →");
+        source.href = item.spec[2] + (item.spec[2] === "costs.html" ? "" : "#" + r.id);
+        card.append(source, make("p", "small", "Checked " + r.date_checked + " · " + r.confidence));
+        host.appendChild(card);
+      });
+    }).catch(function () { host.textContent = "Summary unavailable. Open the topic guides for sources."; });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     renderShell();
     renderTopic();
+    renderDocuments();
+    renderOverview();
   });
 })();
