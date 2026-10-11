@@ -49,6 +49,35 @@ After resolving the latest-main conflicts, `npm test` passed: **7 datasets / 184
 
 After resolving latest-main conflicts and before delivery, `npm test` passed: **7 datasets / 184 exact-schema records / 281 unique record URLs in the source log / 15 HTML pages / 176 link attributes / 9 shared navigation destinations / 25 expense rows**; shared/inline JavaScript checks passed; Playwright passed **21/21** tests, including 320/360/768/1024/1440 px layouts, axe, source/data projections, backup validation, error/storage cases and planner quick-fill. No application code/data changed after this run. `git diff --check` passed after the post-merge reporting edits.
 
+## Session `arena/09cdfbf0-maltasupplemental` — second re-verification pass (11 October 2026)
+
+This session reviewed the repository at `250e6bd`, re-verified the highest-risk external claims against live sources, and
+closed the two weakest evidence gaps rather than restating the existing ones.
+
+**Access reality this session:** direct page fetches were blocked for most sites (Eventbrite returned "Something went wrong",
+maltapublictransport.com errored), but the search index was readable. Every new row in `docs/SOURCES.md` therefore states
+explicitly whether it is a full page read or a search-index extract; no extract is presented as a page read.
+
+**What was verified or newly evidenced**
+
+| Area | Result |
+|---|---|
+| Event | 14–18 Oct, BLAST Arena Studios, Attard, 8 teams, $1m — corroborated across HLTV, Liquipedia, Hotspawn and the organiser's release. NIP-for-Virtus.pro substitution confirmed as current (9 Oct). Wednesday match starts 10:30 / 13:00 / 15:30 / 18:30 CEST corroborate the listing's "games 10:30". |
+| Food | TripAdvisor's *Restaurants near AX ODYCY Hotel* list was readable; recorded ranked **by review volume** with explicit volatility evidence (two captures minutes apart disagreed). 9 new food records, 1 platform-ranked capture. |
+| Gaming | Dated Malta "Game & Entertainment Centers" directory read confirms arcades exist and **no public PC café is listed** — the gap is now evidenced, not just unresearched. Empire Cinema arcade added as an unconfirmed lead. |
+| Recreation | Eco Sports Limited (Buġibba) added with **official published prices** (e-bike €35/day, SUP from €30, tours from €55) — the strongest operator-priced near-hotel option found to date. |
+| Radio | NET FM grid re-read live a second time (Fri 18:30 *Mhux Premier biss*, Sat 16:00 *Hits & Score*, Sun 15:00 *Sports Box*) — a stability check, not independent corroboration. DAB+ "Sports Channel" block conflict widened: an encyclopaedia list puts 185.36 MHz to "RAVE Radio". |
+| Everyday | EES Malta conflict strengthened with named reporting (Guardian/Sunday Times, 14 Sep 2026) and Malta's own airport page; ETIAS boundary risk for these exact dates made explicit. |
+
+**Corrections made during review:** removed a duplicated paragraph in `ees-malta-implementation-conflict`; fixed a misspelled
+record ID (`…-odyy-` → `…-odycy-`) so the public anchor is correct; added cross-references so the three TripAdvisor snapshot
+records no longer read as competing claims about the same page.
+
+**Gate results for this session's tree:** `python3 scripts/validate_site.py` — PASS, 7 JSON files / 196 exact-schema
+records / 317 unique record URLs / 15 HTML pages / 234 link attributes / 9 navigation destinations / 25 expense rows.
+`python3 scripts/check_javascript.py` — PASS. `npx playwright test` — 21/21 passed. Manual Chromium pass at 390 px and
+1280 px: zero horizontal overflow and zero console errors on the three pages changed this session.
+
 ## Traveler-time follow-up
 
 The repository merge, required PR check and Pages build record are complete. Remaining work needs traveler-specific information or a check close to the trip:
