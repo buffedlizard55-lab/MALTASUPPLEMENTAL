@@ -7,24 +7,24 @@
 
 ## Executive summary
 
-The site is a mobile-friendly, static Malta tourism and recreation guide with an overview, six topic pages, shared navigation, an evidence dashboard, and an editable expense planner. Six topic JSON files hold **117 common-schema records** with source type, check date, confidence, and caveats (count after the 11 October merge of both research passes); `data/record.schema.json` defines the exact shared record shape. Unknowns are stated rather than guessed.
+The site is a mobile-friendly, static Malta tourism and recreation guide with an overview, six topic pages, shared navigation, an evidence dashboard, and an editable expense planner. Six topic JSON files hold **107 common-schema records** with source type, check date, confidence, and caveats; `data/record.schema.json` defines the exact shared record shape. Unknowns are stated rather than guessed.
 
 The traveler supplied the hotel name/address, Deluxe Sea-View room type, trip dates, and event destination name (“BLAST Arena Studios, Attard”). Those are planning inputs. The official TWC page lists Malta only; the MFCC/Ta’ Qali address is venue-area context from a BLAST guide for a different event, not a confirmed TWC pin or entrance. The hotel reservation, rate, deposit, check-in/out times, flights, party size, arrival/departure times, and tournament attendance were not provided. Six hotel nights applies only if check-in is 13 October and check-out is 19 October; the guide does not assume that booking condition, event access, or an itinerary.
 
 ## Verified deliverables and research findings
 
-- **Getting around (15 records):** compares airport, bus, taxi/ride-hailing, car-hire, ferry, and local transport options. MPT’s static Route 186 page lists Qawra stop 952 at 06:09–21:39 in one stop-table variant (06:10–21:38 appears in a parallel variant; the page’s stop tables differ, so stop IDs are treated as provisional). Its normal Rabat-to-Buġibba return runs via St Paul’s Bay/Buġibba rather than Qawra seafront; the last listed arrival is Buġibba Bay 1 at 21:26. Route 214 is an alternate to compare. A date-specific itinerary, venue walk, the 17 October diversion’s exact impact, fare validity, and hotel return still require checking in the operator planner; the page is not a door-to-door guarantee.
+- **Getting around (13 records):** compares airport, bus, taxi/ride-hailing, car-hire, ferry, and local transport options. MPT’s static Route 186 timetable (re-read 11 Oct) lists Qawra stop 952 at 06:09–21:39 toward Ta’ Qali Stadium stop 6227 (06:39–22:08). The Rabat-to-Buġibba return (re-read 11 Oct) serves Stadium stop 2194 (05:52–20:53) via St Paul’s Bay/Buġibba rather than the Qawra seafront stops (950–955); the last listed arrival is Buġibba Bay 1 (stop 2527) at 21:27. Route 214 is an alternate to compare. The full fare table is recorded, but the October 2026 single-fare window is not established by the operator page. A date-specific itinerary, venue walk, the 17 October diversion’s exact impact, the Saqqajja (4627) stop closure on the Rabat side, fare validity, and hotel return still require checking in the operator planner; the page is not a door-to-door guarantee.
 - **Food and cafés (27 records):** includes AX ODYCY/on-property options, 12 additional Qawra-area/Valletta venues, selected wider-area ideas, local-food context, and separately labelled map/review/community observations. Platform ratings are not blended. Reported closures, inaccessible-platform limits, and conflicting hours remain caveated; current menus, hours, and representative meal costs are not assumed.
-- **Activities, landmarks, and events (30 records):** covers recreation and gaming leads, Malta attractions, and dated events relevant to the trip. New source-backed entries include MULTIMAXX St Julian’s/Kordin, Popeye Village, Classic Car Collection, the 13 Oct Heritage Malta lecture, 15 Oct Jazz Series, the 17 Oct Middle Sea Race listing at 11:00 and Waterfront Autumn Vibes, and 18 Oct CDM Sundays; unknown prices, times, inventory, and access remain marked. Event dates are kept distinct from spectator access, ticket inventory, prices and opening times; the Fort St Elmo Sailing Spectacle and Heritage Malta picnic details remain incomplete/conflicted.
+- **Activities, landmarks, and events (29 records):** covers recreation and gaming leads, Malta attractions, and dated events relevant to the trip. New source-backed entries include MULTIMAXX St Julian’s/Kordin, Popeye Village, Classic Car Collection, the 13 Oct Heritage Malta lecture, 15 Oct Jazz Series, the 17 Oct Middle Sea Race listing at 11:00 and Waterfront Autumn Vibes, and 18 Oct CDM Sundays; unknown prices, times, inventory, and access remain marked. Event dates are kept distinct from spectator access, ticket inventory, prices and opening times; the Fort St Elmo Sailing Spectacle and Heritage Malta picnic details remain incomplete/conflicted.
 - **Everyday travel (15 records):** covers entry pointers, EES/ETIAS, currency/cards, language, electricity, mobile connectivity, emergency/health, safety, weather, and practical U.S.-traveler considerations. Passport, device, carrier, itinerary, and medicine-dependent advice is conditional.
-- **Sports radio (12 records):** the Broadcasting Authority lists NET FM at FM 101 MHz; its official grid shows recurring weekend sports programming, not a trip-week guarantee, and does not explicitly state its time zone. Digi B’s directory lists Radio Sportiva and BBC World Service on DAB+. WorldDAB lists BBC World Service on block 6A at 181.936 MHz; Radio Sportiva’s technical channel and reception at Qawra/MFCC remain unverified. BBC programme pages show Sportsworld on 17 and 18 October but do not name a particular match. No current AM/MW sports service or named-event radio carriage was confirmed. A third-party TalkSPORT/6C claim is explicitly unverified.
-- **Expense planner (18 blank-by-default categories plus 7 day rows):** editable EUR budget/actual fields, day-by-day quick-entry rows for 13–19 October, an itinerary/confirmations notes box, notes, totals and difference, browser-local autosave, CSV export of categories, days and notes, source links, and reset are available. The starter has no assumed itinerary, personal amounts, booking costs, event costs, reimbursement, tax total, tip, or exchange rate; blank does not mean free. The MTA’s published environmental-contribution rate is €1.50/night/person aged 18+ (capped at €22.50/person); six chargeable nights would be €9 per eligible adult only conditionally, and the actual invoice remains unknown.
+- **Sports radio (6 records):** the Broadcasting Authority lists NET FM at FM 101 MHz; its official grid shows recurring weekend sports programming, not a trip-week guarantee, and does not explicitly state its time zone. Digi B’s directory lists Radio Sportiva and BBC World Service on DAB+. WorldDAB lists BBC World Service on block 6A at 181.936 MHz; Radio Sportiva’s technical channel and reception at Qawra/MFCC remain unverified. BBC programme pages confirm Sportsworld episodes dated 17 and 18 October but do not name a particular match; displayed start times proved viewer-time-zone-dependent across checks, so no definitive start time is asserted. NET FM’s grid also lists a Friday 18:30 show, ‘Mhux Premier biss’ (16 October in the trip window), whose content is unverified. No current AM/MW sports service or named-event radio carriage was confirmed. A third-party TalkSPORT/6C claim is explicitly unverified.
+- **Expense planner (18 blank-by-default categories):** editable EUR budget/actual fields, notes, totals and difference, browser-local autosave, CSV export, source links, and reset are available. The starter has no assumed itinerary, personal amounts, booking costs, event costs, reimbursement, tax total, tip, or exchange rate; blank does not mean free. The MTA’s published environmental-contribution rate is €1.50/night/person aged 18+ (capped at €22.50/person); six chargeable nights would be €9 per eligible adult only conditionally, and the actual invoice remains unknown.
 
 The source register, unresolved questions, workstream status, and cross-topic handoffs are in [`SOURCES.md`](SOURCES.md), [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md), [`STATUS.md`](STATUS.md), and [`HANDOFF.md`](HANDOFF.md).
 
 ## Three cumulative review passes
 
-1. **Implementation and source pass — passed after both main-branch reconciliations.** `python3 scripts/validate_site.py` reported (at that pass) 6 topic JSON files / 107 exact-schema records, 184 unique primary/cited record URLs present in `docs/SOURCES.md`, 15 root HTML pages / 86 link attributes, 8 navigation destinations, and all 18 planner rows wired. The schema enforces the exact requested `price range` key and five source types, including `directory`. JavaScript syntax, JSON parsing, and staged/unstaged `git diff --check` passed. External URL liveness and full graphical browser rendering remain limited.
+1. **Implementation and source pass — passed after both main-branch reconciliations.** `python3 scripts/validate_site.py` reports 6 topic JSON files / 107 exact-schema records, 184 unique primary/cited record URLs present in `docs/SOURCES.md`, 15 root HTML pages / 86 link attributes, 8 navigation destinations, and all 18 planner rows wired. The schema enforces the exact requested `price range` key and five source types, including `directory`. JavaScript syntax, JSON parsing, and staged/unstaged `git diff --check` passed. External URL liveness and full graphical browser rendering remain limited.
 2. **Independent requirements and evidence pass — passed with limitations recorded.** Rechecked the supplemental venue/event records against linked operator, organizer, and ticketing sources, including the Aquarium’s current 19:30 last entry and RMYC’s 11:00 race listing. Confirmed the Jazz ticket price/date without claiming seat availability; CDM time/price and Heritage Malta Sailing Spectacle details remain unknown. The TWC page gives Malta only; MFCC is explicitly treated as venue-area context, not a confirmed TWC destination. TWC access, picnic closure, gaming-café status, and platform-access limits remain documented rather than guessed.
 3. **Integration pass — passed; visual comparison remains limited.** PR #13’s duplicate `/pages` tree and alternate builder were removed so the existing root-page/JSON renderer remains canonical. The repository validator confirms all 15 root HTML pages, 8 navigation destinations and data/page wiring after the added records. The earlier headless DOM interaction run and responsive-CSS review are from the prior integration; no new full browser screenshot or real-device accessibility audit was available for this additive data update.
 
@@ -71,73 +71,84 @@ See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) for the full list, evidence gaps, a
 
 **Next-session tasks:** resolve OQ-24/OQ-25 with the BBC/league and MTA/AX ODYCY sources; run the date-specific MPT planner for each event day; confirm event access and entrance once the organizer publishes it; recheck all dated notices within 24 hours of departure.
 
-## Session report — 11 October 2026 (two days before the trip window)
+## Session update — 11 Oct 2026 (second pass after merging origin/main)
 
-This pass re-verified the volatile facts, expanded the radio workstream, and rebuilt the expense planner for a fast itinerary fill. The offline gate is green:
-`python3 scripts/validate_site.py` reports **6 topic JSON files / 117 exact-schema records; 197 unique record URLs present in `docs/SOURCES.md`; 15 HTML pages / 91 link
-attributes; 8 navigation destinations; 18 expense categories + 7 day rows wired**, and `node --check` passes on `js/site.js` and every inline script.
+- Merged `origin/main` (4775239) from another session’s 11 Oct verification and corrected this session’s unsupported claims; see `docs/STATUS.md` “Session pass log” for the three-pass record.
+- Verified from primary pages this session: State Department Malta advisory (Level 1; embassy address; no vaccinations; €10,000 limit; riptides); EU ETIAS (not in operation) and EES (fully operational since 10 Apr 2026); Airport Direct TD1–TD5 frequencies and fares; MPT fares (winter €2.00 valid to 13 Jun 2026; summer €2.50, no dates); BBC Radio 5 Live Premier League dated listings (24–25 Oct); Gżira United v Mosta ticket prices and under-16 entry; Heritage Malta picnic time (13:00–16:00, on site 12:45) — the closure notice is still open.
+- Not verified and left open: the 112 emergency number; Premier League Matchweek 7 official fixtures and live-audio terms; NET FM Friday 18:30 slot content; WorldDAB Digi B 2 ‘Sports Channel’ identity; TD1 Qawra stop; the TWC entrance and door times; Route 186 Qawra departure minute.
 
-### What was verified this session (all re-read on 11 October 2026)
 
-* **Venue address.** BLAST Arena Studios Malta is published at MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000 by three independent listings — the
-  Malta Tourism Authority directory, GamingMalta, the ticketing agent Eventworks and BLAST's attendee guide for another event at the same venue. This upgrades the venue from "venue-area context" to a corroborated address. What is
-  *not* verified: that the Thunderpick finals are staged there (the mapping rests on the organizer's own "BLAST Studios Malta" naming) and the event gate, doors or ticket terms.
-* **Event-day bus.** Route 186's stop-level timetable shows roughly half-hourly passes through the Mosta corridor with final listed evening times of about
-  21:53–21:55 in one table variant (the route page carries several parallel stop-table variants whose stop IDs and times differ). Malta Public Transport's service-update page lists a Route 186 diversion **weekly on Friday and Saturday 19:00–00:00 starting 17 October** (toward Buġibba, stops
-  from Gholja 2 through Targa skipped) alongside parallel diversions for 13 other routes in the same corridor, plus a stop closure at Saqqajja (ID 4627) on routes including 186.
-* **Late travel.** Night services are confirmed from Buġibba (N212, 23:50–01:30 every 20 minutes, Monday–Sunday) and Valletta (N13, weekdays 23:10–02:10 every 10 minutes) by the
-  operator's April 2026 announcement. No night route serving Ta' Qali or Attard was verified — the site tells the traveler to plan a taxi/ride-hailing backup rather than assume one.
-* **Fares.** MPT's page shows €2.00 winter / €2.50 summer day-route singles (2-hour validity, cash or contactless), Night Routes €3.00, Special Services €3.00, Tallinja Direct €3.00 / TD1 €3.50, 12 Single Day Journeys €19, Explore Flex from €21/€27, Explore Adult 7-Day €25, Explore Child
-  €7, Airport Direct two trips €6, and lists sales points including the airport Welcomer's Hall, Valletta, Buġibba and Sliema Ferries. Its fare text is tied to the period
-  "19 October 2025 to 13 June 2026", so the applicable fare for these dates is flagged as unestablished rather than quoted as settled.
-* **Radio (5 → 12 records after merging both 11 October passes).** WorldDAB's Malta page confirms three DAB+ multiplexes — Digi B Network 6A (181.936 MHz), Digi B 3 6C (185.360 MHz) and
-  Digi B 2 12A (223.936 MHz). BBC World Service and Rai Radiouno appear on 6A; **12A carries a regular service literally named "Sports Channel"**, whose broadcaster the directory
-  does not identify. Rai's own programme page confirms "Tutto il calcio minuto per minuto" airs Saturdays and Sundays with Serie A and B coverage in Italian — the most concrete
-  live-commentary lead on the Maltese DAB+ line-up. NET FM's published grid (FM 101 MHz) lists Saturday "Hits & Score" at 16:00, Sunday "Sports Box" at 15:00 and Friday
-  "Mhux Premier biss" at 18:30, but describes no programme content, so commentary is not claimed. Radio Sportiva is listed in Digi B's directory but no block or frequency was found and the Broadcasting Authority's list does not name it, so it is recorded as a service to scan for rather than confirmed carriage; a third-party "Talk Sport on 6C" claim stays unconfirmed; Calypso's third-party sport listing contradicts the station's own current schedule page.
-* **Trip-window sport context.** Recorded as fixture context only (never as carriage): the Premier League matchweek of 17–18 October with official BST kick-offs, UEFA Europa
-  League matchday 2 on Thursday 15 October, and the NFL slate of Sunday 18 October (London game 15:30 Malta time; late games after midnight Maltese time). Every one of these
-  records states that a fixture is not evidence that a station carries it.
-* **Base hotel.** The AX ODYCY's own site is now a record (address, 24-hour front desk, free Wi-Fi, pools, water park, all-inclusive dining, contacts) so the base is documented
-  alongside the destination.
+## Session addendum — 11 October 2026 (second session)
 
-### What changed in the product
+This session performed an independent second verification pass on top of the first 11 Oct pass:
 
-* `data/transport.json` 13 → **15 records** (a duplicate venue-address record was folded into the updated venue record); `data/radio.json` 5 → **12**; `data/activities.json` 29 → **30**; all datasets re-dated 2026-10-11 with per-record `date_checked`.
-* `data/expenses.json` gained a `day_rows` array (7 days, 13–19 October) and `costs.html` gained **day-by-day budget/actual/note rows, an itinerary/confirmations notes box,
-  day totals, a grand total and CSV export of all three sections** — so a supplied itinerary can be costed in minutes. Nothing is prefilled.
-* `scripts/validate_site.py` now enforces the seven day rows and the planner wiring; `docs/DATA_SCHEMA.md` documents the dataset-level extension.
-* `index.html`, `getting-around.html` and `radio.html` were rewritten where the old text understated what is now verified (venue address, evening bus limits, DAB+ multiplexes).
+- **Re-fetched and updated:** Malta Met Office 7-day forecast (now covering 13–17 Oct: isolated showers 13 Oct, mainly sunny 14–16 Oct, mainly cloudy 17 Oct; 18–19 Oct still outside the window); MPT Route 186 return direction (Stadium 2194 at 05:52–20:53, Qawra seafront stops not served on return, last Buġibba Bay 1 arrival 21:27, correcting the carried-over 21:26); MPT full fare table (€2.00 winter/€2.50 summer day singles, night/special/TD €3.00, TD1 €3.50, €50 no-ticket fine, card prices; October 2026 single-fare window still unsettled); NET FM grid (added the Friday 18:30 ‘Mhux Premier biss’ entry, content unverified); BBC Sportsworld listing (dates confirmed; start-time zone discrepancy documented and definitive times removed); MTA environmental contribution (rate/cap confirmed, ‘visit’ definition and 15-night threshold noted); AX ODYCY property page (4-star, former AX Seashells, contact details).
+- **New open questions:** BBC Sportsworld exact start times; NET FM Friday show content. Updated: weather (13–17 Oct resolved, 18–19 Oct open), fare applicability, door-to-door itinerary facts.
+- **Verification:** `scripts/validate_site.py` passes (6 JSON files, 108 records, cited-URL coverage, page/link/nav/expense wiring). No unverified claim was promoted to fact; only records whose sources were re-fetched on 11 Oct were changed. GitHub Pages remains configured to publish the `main` branch root.
 
-### Verification performed (not just written)
+## Update — 11 Oct 2026 (third pass, arena/d347388b)
 
-* **Planner simulation:** jsdom loaded `costs.html`, stubbed the data fetch, typed amounts, and checked rendering, totals, storage, CSV and reset — **18/18 checks passed, 0 runtime errors**.
-* **Site simulation:** jsdom ran `js/site.js` against all five topic pages — navigation, `aria-current`, card counts vs record counts, source links, confidence pills, search filtering,
-  and a check that no `undefined`/`NaN` leaks into rendered text — **49/49 checks passed**; the index menu toggle and footer snapshot date were also exercised.
-* **Schema/source gate:** every URL cited anywhere in a record is present in `docs/SOURCES.md` (197 unique URLs), and every record carries a date, confidence and notes.
-* **Bug found and fixed by review:** a stylesheet cleanup had corrupted the `.topic-tools label` and `.topic-tools input` selectors; both were restored before commit, which is exactly
-  what Pass 2 is for.
+**Verified this pass (official sources):**
+- Route 186 return stop (Stadium 2194, last 20:53).
+- MPT fares, including Explore Flex.
+- Uber's Malta service options.
+- Premier League kickoffs for 17–19 Oct and UCL matchday 2 kickoffs, in Malta time.
+- BBC Sportsworld 17/18 Oct start times and 3 h 53 min durations.
+- Rai Radio 1's weekend Serie A programme.
+- Kalshi's travel-eligibility wording.
+- Malta Aviation Museum and Mosta Rotunda hours and fees.
 
-### Still unverified / limitations (carry into the next session)
+**Bug fixed:** the expense planner's "Price status" was blank on every row because the code used `price_range` instead of the data key `price range`.
 
-1. **Event access.** Ticket terms, doors, daily match times and the TWC-specific entry gate are still unpublished by the organizer; the venue mapping rests on organizer naming.
-2. **Late-night return from Ta' Qali.** No night route serving Ta' Qali/Attard was verified; the 17 October diversion materially affects the Mosta/Naxxar stops on the return leg.
-3. **Fares.** The applicable fare for 13–19 October 2026 is not established by the operator's page text; recheck before buying.
-4. **Radio reception and carriage.** No DAB+/FM receiver test was possible at the hotel or venue; the broadcaster behind "Sports Channel" (12A) is unknown; no fixture-specific
-   commentary carriage was confirmed anywhere. BBC Sportsworld's Malta clock times were deliberately not restated because the BBC page renders times in the viewer's zone.
-5. **Platform coverage.** Yelp, Instagram, TikTok, Facebook and X requests were blocked (HTTP 403) and Reddit refreshes were blocked in earlier checks; Google Maps views were limited.
-   The food/activities shortlists are therefore sourced from operator pages plus dated TripAdvisor/Maps snapshots, not a comprehensive social-media ranking.
-6. **Physical checks.** Walking times from the hotel to its nearest bus stops, the Ta' Qali walk from the stop to the venue gate, and real-device mobile rendering were not measured;
-   the responsive CSS and layout were reviewed in code and via DOM simulation only.
-7. **External link liveness.** The gate proves a URL is logged, not that the remote site answers today; volatile pages should be re-opened before travel.
+**Partially verified / unverified:**
+- TWC match times (community wiki).
+- Serie A times (broadcaster report).
+- Rai Champions League carriage for 2026–27 (prior-season pattern only).
+- Fontanella and Ta' Marija hours.
+- Dash Berlin details.
+- Airport taxi fare, about €25 (third-party only).
+
+**Limitations:**
+- No real-browser screenshot (Chromium download blocked); the DOM test and CSS review stand in.
+- No on-site DAB+ reception test.
+- Kalshi's country list was not read.
+
+**Next session:**
+- Recheck the BBC episode pages from about 15 Oct for the named commentary match.
+- Add Europa League 15 Oct fixtures and TWC 15–16 Oct times.
+- Add the 18–19 Oct forecast (the Met Office snapshot now covers 13–17 Oct).
+- Confirm the TWC entrance and tickets.
+- Run the MPT journey planner for each event date.
+
+## Session report — 11 October 2026 (merged branch: night routes, fixture records, planner day rows)
+
+This branch was merged with `origin/main` twice (PRs #21–#22, then PRs #24–#27) so that the parallel 11 October research passes ship as one dataset. Where passes disagreed, the newer re-read was kept; this branch's remaining unique additions are below. The offline gate is green: `python3 scripts/validate_site.py` reports **6 topic JSON files / 128 exact-schema records; 216 unique record URLs present in `docs/SOURCES.md`; 15 HTML pages / 89 link attributes; 8 navigation destinations; 18 expense categories + 7 day rows wired**. jsdom simulations re-run after the merge: planner **18/18**, site **49/49**; `node --check` is clean on `js/site.js` and the inline `costs.html` script.
+
+### This branch's standing additions (kept through both merges)
+
+* **Night routes (transport).** N212 from Buġibba runs 23:50–01:30 every 20 minutes and N13 from Valletta 23:10–02:10 (weekdays) per the operator's April 2026 announcement; **no night route serving Ta' Qali/Attard was verified**, so late exits still need a taxi/ride-hailing backup. The operator's generic night-routes page returned 404 on 11 October.
+* **Fixture-context records (radio).** The UEFA Europa League league-phase matchday on Thursday 15 October 2026 and the NFL Sunday slate of 18 October 2026 (official NFL pages, Malta-time conversions) are recorded as fixture context only — a fixture is not evidence of radio carriage.
+* **Expense planner day rows.** `data/expenses.json` carries a `day_rows` array (7 trip days, 13–19 October) and `costs.html` renders day-by-day budget/actual/note rows, an itinerary/confirmations notes box, day totals, a grand total and CSV export of categories, days and notes — so a supplied itinerary can be costed day by day. Nothing is prefilled, and category rows and day rows are separate views to avoid double counting.
+* **Venue corroboration trail.** The BLAST Arena Studios Malta address (MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000) was corroborated on 11 October by the MTA directory, GamingMalta, Eventworks, Liquipedia and BLAST's attendee guide for another event at the same venue; the event-to-venue link still rests on the organizer's naming, and the event gate, doors and tickets remain unpublished.
+
+### Reconciliation notes from this merge
+
+* **Route 186.** The final dataset uses the direction-split reading re-checked on 11 October: outbound (Rabat-bound) from Qawra stop 952 (06:09–21:39) to Stadium 6227 (06:39–22:08); return (Buġibba-bound) from Stadium 2194 (05:52–20:53), last listed arrival Buġibba Bay 1 at 21:27, not serving the Qawra seafront stops. Earlier parallel-table variants (06:10–21:38; hour-type ambiguity) are documented in the record notes; the journey planner remains the authority.
+* **BBC Sportsworld.** The third pass reconciled the viewer-local vs GMT displays (13:06/14:06 GMT = about 15:06–18:59 and 16:06–19:59 Malta time on 17–18 October); the named commentary match is still unannounced.
+* **Radio Sportiva.** Listed in Digi B's directory, but no block or frequency was found and the Broadcasting Authority list does not name it; it remains a service to scan for rather than confirmed carriage.
+
+### Still unverified / limitations
+
+1. **Event access.** Spectator tickets, doors, daily match times and the TWC-specific entrance are unpublished; community-wiki match times are not organizer times.
+2. **Late-night return.** No night route to Ta' Qali; the 17 October 19:00–00:00 diversion skips Gholja 2 through Targa toward Buġibba.
+3. **Fares.** The October 2026 single-fare season is not established by MPT's page (winter €2.00 / summer €2.50 table; the stated winter window ended 13 June 2026).
+4. **Radio reception and carriage.** No DAB+/FM receiver test at the hotel or venue; no fixture-specific commentary carriage confirmed anywhere.
+5. **Platform and physical checks.** Social/review platforms partly blocked, walking times and real-device rendering not measured, and external URL liveness was not crawled.
 
 ### Suggested next-session tasks (priority order)
 
-1. When the itinerary and ticket email arrive: paste them into the planner's notes box, fill the seven day rows, and export the CSV; then convert the confirmed event session times into
-   a dated Malta Public Transport planner query for outbound and return on each event day.
-2. Ask the organizer (or the ticket-holder channel) for the venue gate, door times and any event shuttle, then update `data/transport.json` and remove the corresponding open question.
-3. Re-check fares and travel-card terms on the operator's live pages in the last 48 hours before departure, and read the Route 186/214 service-update page for new notices.
-4. Re-scan DAB+ on arrival: identify the "Sports Channel" broadcaster on 12A, confirm BBC World Service and Rai Radiouno reception indoors, and note which of the two sports programmes on
-   NET FM (FM 101) is actually commentary. Record findings in `docs/SOURCES.md` and `data/radio.json` (with a new `date_checked`).
-5. Confirm the meal plan and whether the environmental contribution is charged on the invoice, then update the hotel rows in the planner.
-6. Capture one real phone screenshot per page (desktop and mobile) to close the responsive-rendering gap the automated gate cannot cover.
+1. When the itinerary and ticket email arrive: paste them into the planner's notes box, fill the seven day rows, export the CSV, then convert confirmed session times into dated MPT planner queries for outbound and return on each event day.
+2. Re-check the Route 186 return stop/times and the 17 October detour in the live planner within 24 hours of departure; keep the taxi backup for evening sessions.
+3. Re-scan DAB+ on arrival: identify the 'Sports Channel' (12A) broadcaster, confirm BBC World Service and Rai Radio Uno reception indoors, and check which NET FM slot is commentary.
+4. Confirm the environmental contribution on the invoice and the meal plan, then update the hotel rows in the planner.
+5. Recheck the BBC episode pages from about 15 October for the named Sportsworld commentary match.

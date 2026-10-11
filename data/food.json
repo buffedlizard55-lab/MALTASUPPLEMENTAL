@@ -1,7 +1,7 @@
 {
   "topic": "Food & cafés",
   "title": "Food & cafés in Malta",
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-11",
   "intro": "A source-backed shortlist centered on AX ODYCY and Qawra, with a few clearly labeled farther outings. Operator pages and menus are primary; review ratings, counts and guide positions are dated snapshots, not stable quality measures. Direct TripAdvisor profiles were checked on 9 October 2026. Limited Google Maps profile views loaded for Minoa and Trattoria Riccardo only. Yelp, Instagram, TikTok, Facebook and X page requests returned HTTP 403; five Reddit threads last read on 24 September could not be refreshed on 9 October (HTTP 403). TripAdvisor currently labels The Meeting Point Cafe & Snacks Bar CLOSED, without independent operator confirmation. Luzzu's operator says it is closed for refurbishment; no reopening date is published. Recheck hours, menu prices, status and reservations before travelling.",
   "records": [
     {
@@ -408,6 +408,36 @@
       "date_checked": "2026-10-09",
       "confidence": "partially verified",
       "notes": "A useful group option when people want different cuisines, but individual vendors and opening times can vary. Google Maps snapshot: 4.3/5 from 8,582 reviews on 2026-10-09; its schedule is third-party listing data, so verify it with the operator before a late meal.\nSupporting claim sources:\nThe operator's Food Court page describes its vendor mix and currently lists 14 entries, including one marked 'Coming Soon'. https://issuqtalbelt.com/food-court/\nThe direct Google Maps listing displays the market name, Triq il-Merkanti address, hours and a 4.3/5 rating from 8,582 reviews. https://www.google.com/maps/search/Is-Suq+Tal-Belt+Valletta/\nThe operator's Contact page describes Is-Suq Tal-Belt as being in central Valletta and gives public-transport and ferry access context. https://issuqtalbelt.com/contact-us/"
+    },
+    {
+      "id": "fontanella-tea-garden-mdina",
+      "name": "Fontanella Tea Garden",
+      "category": "Near the event venue",
+      "area": "Mdina (Route 186 lists a Mdina stop)",
+      "address": "1 Triq is-Sur (Bastion Street), Mdina MDN 1141 (per directory listing)",
+      "hours": "Conflicting listings: Yellow Malta shows 10:00–23:00 daily; Apple Maps shows 10:00–23:30 daily. The operator homepage does not state hours",
+      "price range": "Not published on the pages checked; see the operator’s menu page",
+      "description": "A long-running café on Mdina’s bastion walls, known for homemade cakes and island views. The operator also lists Maltese ftira, oven-baked lasagna and other snacks. It does not take reservations; staff seat walk-ins. Route 186 lists a Mdina stop, so it is a short ride past Ta’ Qali.",
+      "source_url": "https://www.fontanellateagarden.com.mt/home",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Checked 11 Oct 2026. Hours/address: https://www.yellow.com.mt/fontanella-tea-garden_restaurants+mdina/ (directory) and https://maps.apple.com/place?place-id=I3C5D5175D089C2E4 (map). Menu: https://www.fontanellateagarden.com.mt/food-menu . Route 186 Mdina stop (135): https://www.publictransport.com.mt/route/186/ ."
+    },
+    {
+      "id": "ta-marija-mosta",
+      "name": "Ta’ Marija",
+      "category": "Near the event venue",
+      "area": "Mosta",
+      "address": "Constitution Street, Mosta (operator); directories give 67 Constitution Street",
+      "hours": "October 2026 hours were not found on the operator site. Earlier 2026 season hours show dinner daily 18:00–22:00 (last orders) and lunch on selected days 12:00–14:00. Book or call ahead",
+      "price range": "Not published on the pages checked; menus are linked from the operator site",
+      "description": "A Maltese restaurant established in 1964, serving traditional and modern Maltese dishes such as rabbit, local fish and handmade ravioli, plus a Maltese tasting menu. It hosts folklore dinner shows on select evenings. It is in Mosta, between Qawra and Ta’ Qali, so it suits a dinner after an earlier session.",
+      "source_url": "https://tamarija.com/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Checked 11 Oct 2026. Phone listed by the operator: +356 2143 4444. Seasonal hours (January–June and July–September 2026) were seen in a search excerpt of the operator page; the October timetable was not shown. Directory address and hours: https://hubpymalta.com/what-to-have/restaurant/ta-marija-your-gastro-maltese-kitchen-since-1964.html . Booking: https://tamarija.com/book-a-table ."
     }
   ]
 }

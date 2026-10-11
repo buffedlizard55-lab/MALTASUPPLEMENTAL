@@ -125,3 +125,12 @@ p { margin: 10px 0; }
 
 .itinerary-notes { width: 100%; min-height: 170px; margin-top: 6px; padding: 12px 14px; border: 1px solid #bac8d1; border-radius: 10px; background: #fff; color: var(--ink); line-height: 1.5; resize: vertical; }
 .record-card .topic-tools label input { width: min(100%, 320px); }
+/* Compact reference tables (event-day plan, radio weekend plan) */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 12px 0; border: 1px solid var(--line, #d8e0e6); border-radius: 10px; background: #fff; }
+.plan-table { width: 100%; border-collapse: collapse; font-size: .95rem; min-width: 520px; }
+.plan-table caption { caption-side: top; text-align: left; padding: 10px 12px 4px; color: var(--muted, #50606e); font-size: .85rem; }
+.plan-table th, .plan-table td { padding: 9px 12px; border-top: 1px solid var(--line, #d8e0e6); text-align: left; vertical-align: top; }
+.plan-table thead th { background: var(--soft, #eef4f7); color: var(--navy, #12304a); font-size: .82rem; text-transform: uppercase; letter-spacing: .03em; }
+.plan-table tbody th { color: var(--navy, #12304a); white-space: nowrap; }
+.quick-plan { margin: 22px 0; }
+@media (max-width: 560px) { .plan-table { font-size: .9rem; } .plan-table th, .plan-table td { padding: 8px 9px; } }

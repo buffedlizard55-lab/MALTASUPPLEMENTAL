@@ -38,13 +38,13 @@ After integration, perform three cumulative passes:
 
 PR #13 was based on an older implementation that added duplicate `/pages/` templates and a separate site builder. `origin/main` already contains the canonical root-page renderer, shared schema/validator, six current JSON datasets, expense planner, and research pages. The reconciliation retained that main architecture, imported only non-duplicate food/activity records, updated the Aquarium and Rolex race facts, and integrated their source/open-question/status/handoff notes. The duplicate `/pages/` copies, `tools/build_site.py`, legacy `data/schema.json`, and duplicate schema document were removed; main’s `.nojekyll`, `docs/DATA_SCHEMA.md`, and validator remain. Legacy `hotel.html`, `itinerary.html`, and `qawra.html` URLs remain noindex notices. No claim was imported without a source and limitation recorded.
 
-## Session plan — 2026-10-11 (pre-trip re-verification and integration)
+## Session addendum — 11 Oct 2026 (third pass, arena/d347388b)
 
-Serial plan used for this session, because Arena fixes the checkout to one session branch:
+Scope, executed serially under the ownership table after syncing with `main` (PR #21):
 
-1. **Re-verify volatile facts first (A, E).** Re-read the operator, organizer, league and broadcaster pages that matter two days before travel: Malta Public Transport fares, service updates and Route 186 stop times; the BLAST Arena Studios venue address; NET FM's grid; the Digi B / WorldDAB DAB+ multiplex data; BBC Sportsworld; and the fixture pages for the trip weekend.
-2. **Write verified data before touching page prose (A, E).** New/updated records were written into `data/transport.json` and `data/radio.json` with `date_checked` 2026-10-11, named sources, confidence and explicit limitations; anything that could not be corroborated became an open question rather than a claim.
-3. **Extend the planner for the incoming itinerary (F).** `data/expenses.json` gained a `day_rows` array (one per trip day) and `costs.html` gained day-by-day budget/actual/note rows plus an itinerary-notes box, local autosave and CSV export that include the new rows. The 18 blank category rows are unchanged and no amount is prefilled.
-4. **Update the shared pages last (G).** `index.html`, `getting-around.html`, `radio.html`, `js/site.js` and `css/style.css` were edited only after the data files, then the validator was extended to cover the day rows.
-5. **Log everything.** `docs/SOURCES.md` gained a dated re-check section; open conflicts were written into `docs/OPEN_QUESTIONS.md`; cross-workstream notes into `docs/HANDOFF.md`; state into `docs/STATUS.md`; and this session's findings into `docs/FINAL_REPORT.md`.
-6. **Gates.** `python3 scripts/validate_site.py` (schema, source-log coverage, local links, navigation, planner wiring) plus `node --check` on every inline script and `js/site.js`, followed by three review passes on the integrated result.
+- **F (bug):** `costs.html` "Price status" read `record.price_range`; the data key is `price range`. Fix and DOM-test.
+- **F (planner for the incoming itinerary):** `data/expenses.json` gained a `day_rows` array (one quick-entry row per trip day, 13–19 Oct) and `costs.html` gained day-by-day budget/actual/note rows, an itinerary/confirmations notes box, day totals, a grand total and CSV export that include the new rows. The 18 blank category rows are unchanged, nothing is prefilled, and the validator asserts the seven day rows and the page wiring.
+- **A:** restore the Buġibba-bound Route 186 return stop (Stadium 2194, last 20:53), add an evening-return check tied to TWC match times, add Uber and an unverified airport-taxi fare record, and expand fares (Explore Flex). Add an event-day quick-plan table to `getting-around.html`.
+- **E:** add Rai Radio 1 (DAB+) Serie A, Premier League and UCL MD2 fixture guides in Malta time, BBC Sportsworld durations, a Kalshi travel-eligibility note, and a listening-plan table in `radio.html`.
+- **B/C:** add corridor options near Ta' Qali / Mosta / Mdina and one dated nightlife event.
+- **G:** executive summary rewrite, footer snapshot date, table CSS, docs, three passes, PR and merge.
