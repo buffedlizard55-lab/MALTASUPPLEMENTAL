@@ -42,3 +42,17 @@ Do not fill these gaps with guesses. Update or resolve only when a direct source
 ## OQ-23 — Exact Malta environmental-contribution amount for this booking
 
 The Malta Tourism Authority states that from 1 July 2026 the contribution is €1.50 per night for each guest aged 18 or over, capped at €22.50 per eligible person per visit, and must appear as a separate invoice/fiscal-receipt item. The conditional six-night arithmetic is €9 per eligible adult only if six nights are billable; the actual amount depends on the booking, guest ages, nights charged, and hotel invoice. Confirm those details with AX ODYCY before entering a budget/actual amount. Source checked 2026-10-10: https://mta.com.mt/services/environmental-contribution/.
+
+## 2026-10-11 verification update
+
+These items were re-checked on 11 Oct 2026 and supersede the older wording above where they conflict.
+
+| Question | What the 11 Oct check found | Next step | Status |
+|---|---|---|---|
+| Is BLAST Arena Studios (Attard) the TWC venue, and what is its address? | Thunderpick’s release names BLAST Studios Malta; Liquipedia lists BLAST Arena Studios in Attard; venue listings and BLAST’s attendee guide place it at MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000 (Ta’ Qali). | Confirm the TWC entrance/gate with the organizer before travel. | Venue address partially verified; TWC entrance open. |
+| Which Qawra-to-venue Route 186 times apply? | MPT’s static Route 186 timetable shows Qawra stop 952 from 06:09 to 21:39 at 30-minute intervals. The stop ID for the Ta’ Qali stop is 6227 (the earlier 2194 was not found). | Check the live planner for date-specific times and confirm the nearest stop to the venue entrance. | Static timetable verified; date-specific route, walk, and return open. |
+| Is the 21:26 Buġibba Bay 1 last arrival still correct? | Not re-read on 11 Oct; carried over from the 10 Oct check. | Re-check the MPT timetable for the return direction. | Open — not re-verified. |
+| Is Radio Sportiva a licensed Malta station? | Listed on the Digi B DAB+ channel directory (checked 11 Oct) but not on the Broadcasting Authority licensed-stations list checked the same day. | Ask the Broadcasting Authority or Digi B; check the DAB+ receiver scan. | Open — DAB+ listing only. |
+| Does any radio station carry the TWC, Gżira United–Mosta (14 Oct), or the Rolex Middle Sea Race (17 Oct)? | No radio carriage was found in NET FM, Radio Sportiva, or BBC listings. NET FM and Radio Sportiva have recurring weekend sports slots; BBC Sportsworld is listed for 17 and 18 Oct. | Recheck station schedules and social notices shortly before each event. | Open — no carriage confirmed. |
+| Any AM sports radio in Malta during the trip? | The Broadcasting Authority list checked 11 Oct shows no AM/MW station. | None unless a station announces an AM service. | Open — no AM service listed. |
+| Are English Premier League or other football matches carried on Maltese radio during 13–19 Oct? | Not found. The BBC Sportsworld listing is a general live-sport programme, not a named fixture carriage. | Check the BBC and station schedules during the trip. | Open — not verified. |
