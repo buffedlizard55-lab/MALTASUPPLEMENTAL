@@ -247,3 +247,43 @@ The reconciliation kept **both** sessions' evidence rather than letting the late
 - **`trip-fare-scenarios-13-19-oct` complements rather than duplicates.** It adds only the break-even arithmetic and the €25-versus-€27 Airport Direct comparison; the seasonal-window question stays with `mpt-seasonal-fare-window-2026`, whose reasoning that the cheaper winter single begins after 19 October is carried into the new record rather than contradicted.
 
 The Buġibba Bay 1 arrival time is now reported as **21:26–21:36 across unlabelled timetable variants** everywhere on the site, replacing the single 21:27 figure, because the variants are not labelled by day type and a single clock time would overstate the evidence.
+
+---
+
+## Workstream H addendum — PR #42, 11 October 2026
+
+Everything above describes the PR #39 delivery. **This addendum is authoritative for the current merged tree.**
+
+**This delivery PR:** https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/42 · **Branch:** `arena/154ca483-maltasupplemental`
+
+### H · CS2 event guide — 8 records, ninth active page
+
+`event.html` gives the trip's reason for existing a page of its own: the confirmed venue address and map pin, spectator ticketing terms (free but reserved, in person, **18+**), the published daily agenda, match clocks converted to Malta time, the eight-team field including the 9 October Virtus.pro → Ninjas in Pyjamas substitution, the GSL-into-single-elimination format and $1,000,000 split, broadcast talent, official streams, and on-site practicalities. It was **promoted out of the retired noindex stub set** rather than added beside it, so the HTML page count stayed at 15 while active pages went 8 → 9.
+
+Two rules govern the page. **Clocks:** HLTV and Liquipedia both render times in the *fetching client's* timezone, so no third-party clock is ever copied as a local time; every clock is labelled "Malta time (CEST, UTC+2)" with its anchor shown, and the EDT+6h conversion is admissible only because Eventbrite independently publishes "Games 10:30" for Wed 14 October. **Sources:** the `source_type` enum has no value for a community wiki or esports news site, so every record's `source_url` is official and third-party evidence lives in `notes`.
+
+### Unique contributions beyond the event page
+
+- **`tq-event-special-services`** — MPT runs TQ-numbered special event services out of Ta' Qali, and **TQ1's corridor runs through St Paul's Bay and Qawra** at the €3.00 Special Services fare. This is the one finding that could overturn the taxi-return recommendation, so it is kept live at `partially verified` with a daily re-check instruction rather than closed either way (OQ-H3).
+- **`white-taxi-official-tariff`** — Transport Malta's published **maximum** meter rates, read directly, with the honest caveat that the page footer says "last updated 06/04/2022". The worked caps are labelled as this project's arithmetic at assumed distances and **not quotes**, since the road distance was never measured (OQ-H7).
+- **Three stale expense rows corrected** — `event-commute`, `taxi-rideshare` and `local-bus-and-cards` still said the event end time was "not settled" and treated a taxi as a "contingency", contradicting the transport findings on the same site. The planner remains 25 rows, blank by default.
+
+### Duplicates deliberately dropped
+
+`main` had independently located the same Eventbrite listing and reached the same headline conclusion, so this branch **dropped its own overlapping records** rather than duplicating them: `event-day-late-return` and `venue-nearest-bus-stops` were superseded by `main`'s verified `event-day-late-finish-return-gap` and `mfcc-official-bus-186`, both of which are stronger. One limitation is **withdrawn**: "18–19 October is not forecast" is obsolete, because `main` found the Met Office Valletta view reaching 12–19 October.
+
+### Gates on the merged tree
+
+`python3 scripts/validate_site.py` — **PASS**: 7 JSON files / **175 exact-schema records** (transport 27, event 8, food 38, activities 39, everyday 18, radio 20, expenses 25) / **305 unique record URLs all present in `docs/SOURCES.md`** / 15 HTML pages / 178 link attributes / **9 navigation destinations** / 25 expense rows. `check_javascript.py` and `node --check` — **PASS**. `npm ci && npm test` — **PASS, 10/10 Playwright** in 49.0s.
+
+### Remaining work suggested for the next session
+
+1. **Expand the ticketing page in a real browser.** The Sat 17 / Sun 18 agenda rows and all nine FAQ answers are client-side and never rendered. Two FAQ answers decide real logistics: whether one registration covers all five days, and whether there is on-site parking (which would settle whether car hire is viable on event days at all). A headless-browser fetch step would close a whole class of these gaps at once.
+2. **Watch for TQ1 daily during 14–18 October** (OQ-H3) — it is the only finding that could replace five taxi returns with a €3.00 bus.
+3. **Re-read the taxi tariff for a post-2022 revision and measure one real road distance** (OQ-H7), so the worked caps stop resting on assumed distances.
+4. **Confirm the €0 total at checkout** and whether a free reservation guarantees admission or only a queue place.
+5. **Check whether the organiser republishes the NIP substitution** (OQ-H5), then update `event.json` and `activities.json` in the same pass.
+
+### Limitations that remain
+
+The offline validator cannot test external URL liveness, so a source may rot silently. There is no physical FM/DAB+ receiver scan and no manual graphical screenshot, so radio reception and visual layout are reasoned about rather than observed — though the Playwright suite does cover 360/768/1440 px viewports, responsive overflow and axe WCAG 2A/AA/2.1AA. Client-side content is systematically invisible to server-side fetching. Review-platform coverage remains incomplete: Yelp, Instagram, TikTok, Facebook, X and Reddit returned 403 or login-gated responses, and one X schedule image was unreadable. **No ticket has been secured, no journey has been ridden, and no radio has been scanned**; this remains a dated planning aid, not a booking, admission, fare, service or reception guarantee.

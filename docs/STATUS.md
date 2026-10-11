@@ -93,3 +93,33 @@ Branch: `arena/58d6d232-maltasupplemental` (this session is fixed to it). PR #31
 | G · Integration | Updated | Executive summary on `index.html` rewritten for the corrected venue, transport and radio findings; `getting-around.html` and `restaurants.html` caveats updated; `radio.html` rewritten. Validator, JS syntax check, JSON parse and all 9 Playwright tests pass. | No manual device/screenshot audit; external link liveness not tested by the offline validator. |
 
 **Local gates:** `python3 scripts/validate_site.py` → PASS (6 JSON files / **156** exact-schema records / **249** unique logged record URLs / 15 HTML pages / 117 link attributes / 8 nav destinations / 25 expense rows). `python3 scripts/check_javascript.py` and `node --check js/site.js` → PASS. `npm ci && npm test` → PASS, 9/9 Playwright tests at 360/768/1440 px including axe WCAG 2A/AA/2.1AA.
+
+---
+
+## Workstream H status — PR #42, 11 October 2026 (`arena/154ca483-maltasupplemental`)
+
+Everything above describes the state as of the PR #39 reconciliation. **This section is authoritative for the current merged tree**, which adds workstream H on top of it.
+
+PR #39 merged, so `main` carried 165 records across six data files and eight active pages. This session added the event topic and reconciled against `main` on rebase. **Delivery vehicle: PR #42** — https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/42.
+
+### What this session contributed
+
+| Owner | Canonical data / page | Integrated scope | Remaining |
+|---|---|---|---|
+| **H · CS2 event (new)** | `data/event.json` / `event.html` | **8 records** and the site's **ninth active page**, promoted out of the retired noindex stub set (so HTML pages stayed at 15). Covers the confirmed venue address and map pin, spectator ticketing terms, tournament dates and phases, the published daily agenda, match clocks in Malta time, the team field including the 9 Oct Virtus.pro → NIP substitution, format and $1,000,000 split, broadcast talent, official Twitch/Kick/YouTube streams, and on-site practicalities. | Sat 17 / Sun 18 agenda rows and all nine FAQ answers are client-side and did not render; whether a free reservation guarantees admission; the attendee gate; Thu 15 / Fri 16 match clocks were published by no source at any timezone; the NIP substitution is not officially republished (OQ-H5). **No ticket has been secured by this project.** |
+| A · Transport (additions) | `data/transport.json` / `getting-around.html` | 25 → **27 records**. Two unique additions: **`tq-event-special-services`** (the TQ1 corridor through Qawra — the one finding that could overturn the taxi-return advice) and **`white-taxi-official-tariff`** (Transport Malta's published meter maxima, read directly, with the April-2022 currency caveat). The page gained two checklist items for both. | OQ-H3 (will TQ1 run?) and OQ-H7 (tariff currency, unmeasured road distance). |
+| F · Expenses (corrections) | `data/expenses.json` | Still **25 rows, still blank by default**. Three rows that `main` had left stale at 2026-10-09 were brought in line with `main`'s own transport findings: `event-commute` (no longer says the event end time is "not settled"), `taxi-rideshare` (reframed from "contingency" to five planned event-night returns), `local-bus-and-cards` (now carries the €27 Explore Flex recommendation). `main`'s verified `event-access` row was kept as written, with only the two budget-relevant FAQ gaps appended. | Actual amounts, party size, flights and reimbursement — unchanged, still traveller-supplied. |
+| G · Integration | Shared files | Edited serially per the ownership protocol: `js/site.js` nav 8 → 9; `scripts/validate_site.py` (`EXPECTED_PAGES` + topic-file count 6 → 7); `tests/site.spec.js` (page list, topic map, nav count 8 → 9); `index.html` (guide card, TQ1 and taxi-tariff additions to the exec summary); `getting-around.html`; `sources.html`; `README.md` (event page row, two stale intro paragraphs corrected, two new key-finding bullets); and this docs set. | No physical radio scan, no manual graphical screenshot, no external-link liveness test. |
+
+### Duplicates deliberately dropped, not merged
+
+`main` had independently found the same Eventbrite ticketing listing and reached the same headline transport conclusion. Rather than layer near-identical records on top, this branch **dropped its own duplicates**: `event-day-late-return` (superseded by `main`'s verified `event-day-late-finish-return-gap`, which goes further and establishes that the return direction serves *no* Il-Qawra stop, making a second boarding mandatory) and `venue-nearest-bus-stops` (superseded by `main`'s verified `mfcc-official-bus-186`, sourced from the venue's own booklet). Its `twc-2026-venue-dates` and `mpt-fares-cards` rewrites were likewise dropped in favour of `main`'s. **One limitation is withdrawn:** this branch's "18–19 October is not forecast" is obsolete, because `main` located the Met Office **Valletta** view reaching 12–19 October. Full reasoning is in `docs/PLAN.md` and `docs/HANDOFF.md`.
+
+### Gates on the merged tree
+
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files / **175 exact-schema records** / **305 unique record URLs all present in `docs/SOURCES.md`** / 15 HTML pages / 178 link attributes / **9 shared-navigation destinations** / 25 expense rows wired.
+- `python3 scripts/check_javascript.py` and `node --check js/site.js` — **PASS**.
+- `npm ci && npm test` — **PASS, 10/10 Playwright** in 49.0s at 360/768/1440 px, including axe checks, data/render parity across all seven topic files, filters, deep links, planner persistence/CSV/reset, invalid input, storage denial, failed fetch, and `main`'s itinerary quick-fill regression.
+- Record counts: transport 27, event 8, food 38, activities 39, everyday 18, radio 20, expenses 25.
+
+One earlier local commit was rolled back by the workspace before pushing; the work was recommitted and every gate re-run from a fresh `npm ci`. The repository had been fetched shallowly, which made `main` and this branch look like unrelated roots — `git fetch --unshallow` restored real ancestry (merge-base `4ed9c5a`) before the rebase.
