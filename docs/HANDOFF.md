@@ -62,6 +62,25 @@ A/B/C/E→G: preserve independentlycheckedUber,Fontanella,TaMarija,AviationMuseu
 - Radio follow-up carries the six BBC UK commentary episode records and direct Sportsworld JSON offsets. Explicitly keep UK schedule, Malta receiver signal, online-stream availability, and named-match carriage separate. Current sources and unresolved status are in `docs/SOURCES.md` and `docs/OPEN_QUESTIONS.md`.
 - Rebase is in progress on `arena/3a5297d2-maltasupplemental`; resolve and test before updating PR #31. No external-link crawler, physical receiver scan, or new graphical screenshot has been run in this integration pass.
 
+## Second 11 October 2026 verification session — cross-topic notes
+
+| From → To | Finding | Follow-up owner |
+|---|---|---|
+| A → E | talkSPORT on Malta DAB+ block 6C (185.360 MHz) is the best English football-radio lead; the venue trip and the 17–18 October fixture window now line up with it. | E: record the receiver test result on arrival (block, service label, what it actually carried). |
+| A → F | Published bus fares are now exact (€2.50 single / €25 Explore 7-day / €3.50 TD1), so the transport rows can be benchmarked without guessing. | F: keep rows blank until real receipts, but the intake checklist now cites these prices. |
+| A → C | No public ticket sale or spectator policy for the Thunderpick Finals was found; BLAST-run events at the same studio did sell tickets from €10. | C: add a watch-party/broadcast alternative row if the organizer confirms attendance is closed. |
+| D → F | MTA guidelines confirm €1.50 per night for guests 18+ with a €22.50 per-person cap; the cap equals fifteen nights, resolving the “15-night” wording. Six nights implies €9.00 per eligible adult. | F: hotel-separate-charges row updated; still enter the invoice figure, not the example. |
+| D → B/C | Dated 13–17 October forecast snapshots disagree on 13 October (rain vs sun), so outdoor plans need a same-day check. | B/C: recheck the Malta Met Office forecast on the day for terrace dining and outdoor events. |
+| E → A | Kalshi’s own help centre permits travel-abroad use subject to its Member Agreement while third-party guides say US-resident-only; users should confirm eligibility rather than assume. | A: no transport impact; keep the Kalshi caveat visible in transport/taxi planning for late finishes. |
+
+## Merged third-pass handoff — 11 October 2026 (two sessions reconciled)
+
+- **A ↔ G:** the venue record now carries both sessions' provenance — BLAST’s guest guide and the VisitMalta directory (address), the organizer’s Ta’ Qali dateline, EventWorks/HLTV/Times of Malta (studio and staging precedent) — while `twc-2026-attendee-status` keeps the unpublished ticket/gate/door/time facts `unverified`. Both sessions' fare records are kept side by side (`mpt-fares-cards` and `mpt-seasonal-fare-window-2026`), and their Route 186 and detour records were merged so that the static-grid spans are labelled static and the operator’s date-specific planner stays authoritative.
+- **D ↔ F:** customs (EU allowances, U.S. return exemption) is a new everyday record and a line in the executive summary; the eco-contribution question is now stated in the form the guidelines PDF supports (€1.50 per night for guests 18+, cap €22.50 per person, the cap being fifteen chargeable nights), so the planner’s notes point at the invoice rather than an unresolved rule. Itinerary paste-and-preview is the hand-off mechanism for both.
+- **E ↔ E (cross-session correction):** the two 11 October sessions disagreed about the “Sports Channel” block. Merged position: the specialist directory says 6C, WorldDAB’s Multiplexes table says 12A, the operator lists nothing — so both blocks are scan targets and no carriage claim is made. The receiver guidance also now states plainly that a US HD Radio set cannot decode DAB+ and that the BBC advises buying the DAB+ radio in Malta.
+- **Verification state after merge:** validator PASS at 140 records / 242 logged URLs; JavaScript syntax PASS; Playwright 10/10 PASS including the quick-fill regression.
+- **Verification state after the PR #39 reconciliation (`arena/b7b7ea21-maltasupplemental`):** validator PASS at **146 records / 265 logged URLs / 131 link attributes** (transport 22, food 30, activities 36, everyday 18, radio 15, expenses 25); JavaScript syntax PASS; **Playwright 10/10 PASS** in 41.0s; `git diff --check` clean. No physical radio scan, no physical-device audit, no external-link crawl. No physical radio scan, no physical-device audit, no external-link crawl.
+
 
 ## Verification-and-extension pass — 11 October 2026 (`arena/b7b7ea21-maltasupplemental`)
 
