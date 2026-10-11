@@ -54,7 +54,7 @@
       "name": "Route 186 diversion — Saturday 17 October evening",
       "category": "Service updates",
       "area": "Ta’ Qali / Mosta / Buġibba corridor",
-      "address": "Route 186 toward Buġibba; affected stops listed by MPT are Gholja 2 through Targa (plus separate Rabat stop Saqqajja ID 4627 construction closure)",
+      "address": "Route 186 toward Buġibba; affected stops listed by MPT are Gholja 2 through Targa",
       "hours": "MPT notice: 19:00 to approximately 00:00, starting 17 October and ending 18 October 2026",
       "description": "A currently published Malta Public Transport notice says Route 186 is diverted on Friday/Saturday evenings from 19:00, starting 17 October, and that stops from Gholja 2 through Targa toward Buġibba will not be served. This overlaps the TWC Playoffs weekend and may matter for the return journey. The notice does not publish TWC-specific service details; check the live planner and service updates before relying on a particular stop or departure.",
       "source_url": "https://www.publictransport.com.mt/latest-service-updates/",
@@ -142,7 +142,7 @@
     {
       "id": "mpt-fares-cards",
       "name": "Bus fares and visitor travel cards",
-      "category": "Bus fares & mode comparison",
+      "category": "Bus fares",
       "area": "Malta and Gozo",
       "address": "Tickets may be purchased onboard by cash or contactless; sales points and machines are listed by MPT",
       "hours": "Tickets on bus; card validity depends on the selected product",
@@ -153,21 +153,6 @@
       "confidence": "partially verified",
       "notes": "MPT fares page checked 11 Oct 2026 (both sessions): https://www.publictransport.com.mt/fares-and-tickets/ . Fare table: Day Routes (Winter) €2.00; Day Routes (Summer) €2.50; Night Routes (N) €3.00; Special Services (S) €3.00; Tallinja Direct Routes (TD) €3.00; TD1 €3.50; a €50 fine applies for travelling without a valid ticket. Cards: 12 Single Day Journeys €19 (shareable, six months from first use); Explore Adult 7-day €25 (individual, excludes tallinja Direct Routes); Explore Flex €21 (4 days) / €27 (7 days), with paid sightseeing add-ons; Explore Child 7-day €7. Airport Direct is included with an Unlimited Travel Card, while TD1 is listed separately at €3.50 without one. Personalized Tallinja-card free-travel rules and TD-route exclusions differ from visitor cards; check the product terms rather than assuming all buses are free. The intro winter-fare validity (19 Oct 2025–13 Jun 2026) does not cover 13–19 Oct 2026, and the chart lists no October 2026 effective window, so the applicable single fare remains unconfirmed. Sales offices and machines: https://www.publictransport.com.mt/office-and-ticket-machine/ . Third-pass read (11 Oct): Explore Flex covers Day, Night, Airport Direct and Special Services routes; on the 12-journey card, Night/Airport trips use 2 journeys. Whether a 7-day Explore Flex bought on 13 Oct still covers a 19 Oct departure depends on its validity rules, which were not checked. Third-party fare-season dates: https://hubpymalta.com/ .",
       "price range": "Fare table checked 11 Oct 2026: Day Routes €2.00 (winter, stated period ends 13 Jun 2026) / €2.50 (summer, dates not stated), valid two hours; Night €3.00; Special Services €3.00; TD €3.00; TD1 €3.50; €50 no-ticket fine. Cards: €19 shareable 12-single-day-journeys; €25 Explore Adult 7-day; Explore Flex €21 (4-day) / €27 (7-day); Explore Child 7-day €7. The October 2026 single-fare window is not established on the page"
-    },
-    {
-      "id": "mode-comparison-summary",
-      "name": "Transport mode comparison — convenience, price, value & feasibility",
-      "category": "Bus fares & mode comparison",
-      "area": "Malta-wide (Airport, Qawra, Ta’ Qali & island connections)",
-      "address": "Not applicable — mode-by-mode comparison across published operator services",
-      "hours": "Depends on selected mode: Route 186 Qawra stop 952 listed 06:10–21:38 (30-min frequency) with last listed return arrival at Buġibba Bay 1 at 21:26; TD1 hourly; app ride-hailing/taxis on demand; ferries by seasonal timetable",
-      "description": "Public buses offer the lowest published fares (Airport Direct TD1 €3.50 without an eligible unlimited card; day tickets €2 winter / €2.50 summer; €19 12-journey card; €25 Explore Adult 7-day card) and direct scheduled corridors (TD1 and Route 214 for the airport; Route 186 and Route 214 between Qawra and Ta’ Qali), but require checking stop-to-door walks, the Route 186 return via St Paul’s Bay/Buġibba (last listed arrival at Buġibba Bay 1 at 21:26), and the Saturday 17 October 19:00–00:00 Route 186 detour. Ride-hailing and taxis (Bolt, eCabs, Malta Taxi) give the highest door-to-door convenience and best late-return feasibility at dynamic app/dispatch prices. Rental cars (airport Park East Level 1) add flexibility for rural trips but are not required for Qawra or Ta’ Qali and involve left-hand traffic, narrow/congested roads, parking, fuel, and insurance costs. Ferries serve fixed water corridors (Valletta ↔ Sliema/Three Cities; Malta ↔ Gozo) subject to weather and the 14/17 October Gozo Highspeed race restrictions.",
-      "source_url": "https://www.publictransport.com.mt/journey-planner/",
-      "source_type": "official",
-      "date_checked": "2026-10-11",
-      "confidence": "partially verified",
-      "notes": "Synthesizes the verified operator sources in this dataset: MPT planner https://www.publictransport.com.mt/journey-planner/ , Route 186 https://www.publictransport.com.mt/route/186/ , Route 214 https://www.publictransport.com.mt/route/214/ , Airport Direct https://www.publictransport.com.mt/other-services/airport-direct/ , MPT fares https://www.publictransport.com.mt/fares-and-tickets/ , MPT service updates https://www.publictransport.com.mt/latest-service-updates/ , Bolt https://bolt.eu/en/cities/malta/ , eCabs https://ecabs.com.mt/ , Malta Taxi https://www.maltataxi.mt/ , Airport car rental https://maltairport.com/renting-a-car/ , Valletta Ferry Services https://www.vallettaferryservices.com/ , Gozo Channel https://www.gozochannel.com/ferry/fares/passenger/ , and Gozo Highspeed https://gozohighspeed.com/pages/fares .",
-      "price range": "Bus: €2–€2.50 day ticket, €3.50 TD1, €19 12-journey, €25 7-day; Ferries: €3–€8.50 published adult fares; Ride-hailing/taxis & car hire: live quote required"
     },
     {
       "id": "malta-ride-hailing-taxis",
@@ -258,6 +243,21 @@
       "confidence": "partially verified",
       "notes": "Operator fares and service alerts: https://gozohighspeed.com/pages/fares. Check the timetable/terminal access notice for the precise departure date and time.",
       "price range": "Published standard adult one-way fares: Valletta €7.50, Sliema €8.50, Buġibba €6.50"
+    },
+    {
+      "id": "mode-comparison-summary",
+      "name": "Transport mode comparison — convenience, price, value & feasibility",
+      "category": "Bus fares",
+      "area": "Malta-wide (Airport, Qawra, Ta’ Qali & island connections)",
+      "address": "Not applicable — mode-by-mode comparison across published operator services",
+      "hours": "Depends on selected mode: Route 186 Qawra stop 952 listed 06:09–21:39 (30-min frequency) with last listed return from Ta’ Qali Stadium at 20:53 (arriving Buġibba Bay at 21:27); TD1 hourly; app ride-hailing/taxis on demand; ferries by seasonal timetable",
+      "price range": "Bus: €2.50 summer / €2.00 winter day ticket, €3.50 TD1, €19 12-journey, €25 7-day Explore Adult, €27 7-day Explore Flex; Ferries: €3–€8.50 published adult fares; Ride-hailing/taxis & car hire: live quote required",
+      "description": "Public buses offer the lowest published fares (Airport Direct TD1 €3.50 without an eligible unlimited card; day tickets €2.50 summer / €2.00 winter; €19 12-journey card; €25 Explore Adult or €27 Explore Flex 7-day card) and direct scheduled corridors (TD1 and Route 214 for the airport; Route 186 and Route 214 between Qawra and Ta’ Qali), but require checking stop-to-door walks, the Route 186 return cutoff from Ta’ Qali Stadium (20:53, arriving Buġibba Bay at 21:27 rather than the Qawra seafront), and the Saturday 17 October 19:00–00:00 Route 186 detour. Ride-hailing and taxis (Bolt, eCabs, Uber, Malta Taxi) give the highest door-to-door convenience and best late-return feasibility at dynamic app/dispatch prices. Rental cars (airport Park East Level 1) add flexibility for rural trips but are not required for Qawra or Ta’ Qali and involve left-hand traffic, narrow/congested roads, parking, fuel, and insurance costs. Ferries serve fixed water corridors (Valletta ↔ Sliema/Three Cities; Malta ↔ Gozo) subject to weather and the 14/17 October Gozo Highspeed race restrictions.",
+      "source_url": "https://www.publictransport.com.mt/journey-planner/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Synthesizes the verified operator sources in this dataset: MPT planner https://www.publictransport.com.mt/journey-planner/ , Route 186 https://www.publictransport.com.mt/route/186/ , Route 214 https://www.publictransport.com.mt/route/214/ , Airport Direct https://www.publictransport.com.mt/other-services/airport-direct/ , MPT fares https://www.publictransport.com.mt/fares-and-tickets/ , MPT service updates https://www.publictransport.com.mt/latest-service-updates/ , Bolt https://bolt.eu/en/cities/malta/ , eCabs https://ecabs.com.mt/ , Malta Taxi https://www.maltataxi.mt/ , Airport car rental https://maltairport.com/renting-a-car/ , Valletta Ferry Services https://www.vallettaferryservices.com/ , Gozo Channel https://www.gozochannel.com/ferry/fares/passenger/ , and Gozo Highspeed https://gozohighspeed.com/pages/fares ."
     }
   ]
 }

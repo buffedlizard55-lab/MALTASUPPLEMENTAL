@@ -28,7 +28,7 @@ REQUIRED_FIELDS = {
     "confidence",
     "notes",
 }
-SOURCE_TYPES = {"official", "map", "review", "social"}
+SOURCE_TYPES = {"official", "map", "review", "social", "directory"}
 CONFIDENCE = {"verified", "partially verified", "unverified"}
 URL_RE = re.compile(r"https://[^\s<>\"']+")
 TRAILING_URL_PUNCTUATION = ".,;:!?)]}»”"

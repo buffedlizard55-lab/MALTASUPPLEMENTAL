@@ -6,10 +6,10 @@ The repository is a hand-authored static HTML/CSS/JavaScript site with no applic
 
 ## Shared setup (serial, before topic work)
 
-1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`. The canonical `data/record.schema.json` and offline validator enforce these exact 13 keys; the `source_type` values are strictly `official`, `map`, `review`, and `social` (with any specialist or third-party technical directories cited in `notes` and `docs/SOURCES.md` explicitly labeled as directories rather than official operators).
+1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`. The canonical `data/record.schema.json` and offline validator enforce these exact 13 keys; the `source_type` values are `official`, `map`, `review`, `social`, and `directory`.
 2. Preserve a dependency-free static site. Topic pages render from their workstream JSON data; the expense planner uses a blank-by-default editable form backed by its expense JSON categories.
 3. Maintain `docs/SOURCES.md` (claim, URL, UTC access date, workstream, limitation), `docs/OPEN_QUESTIONS.md` (missing/conflicting details), `docs/STATUS.md` (progress/blockers), and `docs/HANDOFF.md` (cross-topic findings).
-4. Prefer primary operator, organizer, venue, station, government, or official provider pages for current details. Label review/social snapshots and technical directories separately. Do not present a fixture list or prediction-market listing as radio carriage or a route-level bus timetable as a door-to-door trip.
+4. Prefer primary operator, organizer, venue, station, government, or official provider pages for current details. Label review/social snapshots separately. Do not present a fixture list as radio carriage or a route-level bus timetable as a door-to-door trip.
 5. Review the repository before any parallel topic work, create this ownership plan first, and do shared setup serially. Avoid concurrent edits to the same file; log cross-workstream findings rather than changing another owner's page/data.
 
 ## Workstreams and ownership

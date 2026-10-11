@@ -12,14 +12,14 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 
 | Page | What it covers |
 |---|---|
-| [Overview](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/) | Executive summary, 13–19 Oct day-by-day planning framework, trip assumptions, and guide navigation |
-| [Transport](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/getting-around.html) | Airport/hotel options and Qawra-to-event travel; compares bus, taxi/ride-hailing, ferries, and car hire (`data/transport.json`, 14 records) |
-| [Food & cafés](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/restaurants.html) | Sourced restaurants, cafés, and casual food across 6 categories, with review/social evidence limitations (`data/food.json`, 27 records) |
-| [Activities & sights](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/activities.html) | Gaming options, landmarks, recreation, and dated events during the trip window across 7 categories (`data/activities.json`, 29 records) |
-| [Everyday guide](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/everyday.html) | Practical information for a U.S. traveler, with passport, entry, safety, and date-sensitive caveats (`data/everyday.json`, 15 records) |
-| [Sports radio](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/radio.html) | Malta-receivable AM/FM/DAB+ leads, BBC/Radio Sportiva schedules, and Kalshi EPL/Serie A kickoff overlap (`data/radio.json`, 6 records) |
-| [Expense planner](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/costs.html) | 18 editable budget/actual categories, live price-status display, local browser autosave, CSV export, and reset (`data/expenses.json`, 18 records) |
-| [Sources & status](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/sources.html) | Links to the evidence log, open questions, workstream status, handoffs, plan, schema, and final report |
+| [Overview](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/) | Executive summary, trip assumptions, priorities, and guide navigation |
+| [Transport](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/getting-around.html) | Airport/hotel options and Qawra-to-event travel; compares bus, taxi/ride-hailing, ferries, and car hire |
+| [Food & cafés](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/restaurants.html) | Sourced restaurants, cafés, and casual food, with review/social evidence limitations |
+| [Activities & sights](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/activities.html) | Gaming options, landmarks, recreation, and dated events during the trip window |
+| [Everyday guide](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/everyday.html) | Practical information for a U.S. traveler, with passport, entry, safety, and date-sensitive caveats |
+| [Sports radio](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/radio.html) | Malta-receivable AM/FM/DAB+ leads and official station/programme listings; event-specific carriage is not assumed |
+| [Expense planner](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/costs.html) | 18 editable budget/actual categories, local browser autosave, CSV export, and reset |
+| [Sources & status](https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/sources.html) | Links to the evidence log, open questions, workstream status, handoffs, plan, and schema |
 
 ## Key findings and limits
 
