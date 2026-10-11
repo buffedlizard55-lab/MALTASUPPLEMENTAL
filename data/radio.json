@@ -62,7 +62,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Official BBC episode JSON checked 11 October 2026: 17 Oct https://www.bbc.co.uk/programmes/w1730c92ck0m2cw.json (first broadcast 14:06 +01:00, duration 13 980 s) and 18 Oct https://www.bbc.co.uk/programmes/w1730c92ck0q313.json (first broadcast 15:06 +01:00, duration 13 980 s); upcoming list https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming . Malta carriage: https://www.wohnort.org/dab/malta.html (6A table, BBC WS SId C001 32 kbit/s, 'Source: Observations, 13.01.2026') and operator directory https://dab.com.mt/channels/ . No local receiver scan; the synopses name no match."
+      "notes": "Official BBC episode JSON checked 11 October 2026: 17 Oct https://www.bbc.co.uk/programmes/w1730c92ck0m2cw.json (first broadcast 14:06 +01:00, duration 13 980 s) and 18 Oct https://www.bbc.co.uk/programmes/w1730c92ck0q313.json (first broadcast 15:06 +01:00, duration 13 980 s); upcoming list https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming . Malta carriage: https://www.wohnort.org/dab/malta.html (6A table: BBC WS SId C001 32 kbit/s from the detail table captioned 'Source: Observations, 19.01.2025'; the same page's 13.01.2026 ensemble row re-lists the service) and operator directory https://dab.com.mt/channels/ . No local receiver scan; the synopses name no match."
     },
     {
       "id": "bbc-world-service-dab-frequency",
@@ -77,7 +77,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Observed 6A service table: https://www.wohnort.org/dab/malta.html (BBC WS C001, 32 kbit/s, 'Source: Observations, 13.01.2026'). Operator channel directory: https://dab.com.mt/channels/ . Industry directory context: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes . Historical BBC listening guidance https://www.bbc.co.uk/worldservice/mobile/institutional/2009/03/000000_digitallisting.shtml is not used as a current hardware rule — verify the receiver's actual DAB+ capability rather than its purchase country. No local RF or relay-feed test."
+      "notes": "Observed 6A service table: https://www.wohnort.org/dab/malta.html (BBC WS C001, 32 kbit/s; the page's 6A detail table is captioned 19.01.2025 and its 13.01.2026 ensemble row re-lists the service). Operator channel directory: https://dab.com.mt/channels/ . Industry directory context: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes . Historical BBC listening guidance https://www.bbc.co.uk/worldservice/mobile/institutional/2009/03/000000_digitallisting.shtml is not used as a current hardware rule — verify the receiver's actual DAB+ capability rather than its purchase country. No local RF or relay-feed test."
     },
     {
       "id": "net-fm-fm-101",
