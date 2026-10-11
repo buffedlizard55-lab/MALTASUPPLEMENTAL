@@ -52,6 +52,16 @@ Type G sockets at 230 V / 50 Hz; the hotel's own FAQ adds three Type G and three
 
 The planner holds 18 core categories plus seven optional daily rows, all blank, with browser-local autosave, CSV export, a blank template download and a **paste-your-itinerary quick-fill** that previews which row each line would fill and writes only into still-blank budget fields. Nothing is prefilled — not flights, not the hotel rate, not a tip percentage, not a fare. When the itinerary arrives, the remaining work is data entry, not research.
 
+## Provenance carried forward from pull request #42
+
+Because #42 was authored in parallel and merged here, three of its conventions are kept deliberately rather than rewritten:
+
+1. **Clocks are never copied from a third-party renderer.** HLTV and Liquipedia display times in the *fetching client's* timezone — the same match page showed 15:30 in one view and 09:30 in another. Every clock on the site is therefore labelled "Malta time (CEST, UTC+2)" with its UTC/EDT anchor shown, and a third-party time is only admissible when an official source independently reproduces it (as Eventbrite does for the 10:30 games time).
+2. **`source_type` is not stretched.** The schema's enum has no value for a community wiki or esports news site, so every event record carries an **official** `source_url` and cites HLTV, Liquipedia and Moovit in `notes`. Third-party evidence never becomes a record's primary source, and sites that contradict official sources (a "Valletta" venue listing, a different prize figure, a €8 taxi base fare) were excluded rather than averaged in.
+3. **Superseded duplicates were removed, not layered.** #42's `event-day-late-return` and `venue-nearest-bus-stops` were dropped in favour of the fuller `event-day-late-finish-return-gap` and `mfcc-official-bus-186`, and three expense rows (`event-commute`, `taxi-rideshare`, `local-bus-and-cards`) were re-dated to match the transport findings instead of keeping a 9 October contradiction on the same site.
+
+One open item from that workstream stays open and is tracked: the **Virtus.pro → Ninjas in Pyjamas** substitution (OQ-H5) is reported by HLTV and by Hotspawn, the tournament's own presenting partner, but Thunderpick's page and September release still list Virtus.pro — so it is third-party-reported rather than officially republished, and the event page says so.
+
 ## Requirement-by-requirement check
 
 | Original request | Where it is answered | Status |
