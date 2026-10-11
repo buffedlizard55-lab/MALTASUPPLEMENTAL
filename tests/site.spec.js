@@ -5,7 +5,7 @@ const pages = ['index.html','event.html','getting-around.html','restaurants.html
 const topics = {'event.html':'event','getting-around.html':'transport','restaurants.html':'food','activities.html':'activities','everyday.html':'everyday','radio.html':'radio'};
 const data = topic => JSON.parse(fs.readFileSync(`data/${topic}.json`));
 
-for (const width of [320, 360, 768, 1440]) {
+for (const width of [320, 360, 768, 1024, 1440]) {
   test(`all pages render, fit and pass axe at ${width}px`, async ({page}) => {
     await page.setViewportSize({width, height:900});
     const errors = [];
@@ -14,9 +14,13 @@ for (const width of [320, 360, 768, 1440]) {
       await page.goto(url);
       await expect(page.locator('.brand')).toBeVisible();
       await expect(page.locator('h1')).toHaveCount(1);
-      if (topics[url]) await expect(page.locator('.record-card')).toHaveCount(data(topics[url]).records.length);
+      if (topics[url]) await expect(page.locator('[data-topic-data] .record-card')).toHaveCount(data(topics[url]).records.length);
+      if (url === 'event.html') {
+        await expect(page.locator('[data-record-list] .record-card')).toHaveCount(6);
+        await page.locator('#event-evidence > summary').click();
+      }
       if (url === 'costs.html') await expect(page.locator('[data-expense-row]')).toHaveCount(25);
-      if (url === 'index.html') await expect(page.locator('[data-overview] .card')).toHaveCount(4);
+      if (url === 'index.html') await expect(page.locator('[data-overview] .card')).toHaveCount(6);
       if (url === 'sources.html') await expect(page.locator('[data-document] .document-text')).toHaveCount(2);
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), url).toBeTruthy();
       const audit = await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
@@ -30,10 +34,17 @@ test('topic cards match every canonical field and filters combine/reset', async 
   for (const [url,topic] of Object.entries(topics)) {
     const records = data(topic).records;
     await page.goto(url);
-    await expect(page.locator('.record-card')).toHaveCount(records.length);
+    if (topic === 'event') await page.locator('#event-evidence > summary').click();
+    await expect(page.locator('[data-topic-data] .record-card')).toHaveCount(records.length);
     for (const r of records) {
       const card = page.locator(`[id="${r.id}"]`);
       await expect(card.locator('h3')).toHaveText(r.name);
+      await expect(card.locator('.record-meta .pill').nth(0)).toHaveText(r.category);
+      await expect(card.locator('.record-meta .pill').nth(1)).toHaveText(r.confidence);
+      await expect(card.locator('.record-meta .small')).toHaveText(r.area);
+      await expect(card.locator('dd').nth(0)).toHaveText(r.address && r.address !== 'Not published' ? r.address : r.area + ' — address not published');
+      await expect(card.locator('.record-notes p')).toHaveText(r.notes);
+      await expect(card.locator('.record-source-meta')).toContainText(r.source_type);
       await expect(card.locator('p').first()).toHaveText(r.description);
       await expect(card.locator('dd').nth(1)).toHaveText(r.hours);
       await expect(card.locator('dd').nth(2)).toHaveText(r['price range']);
@@ -44,11 +55,11 @@ test('topic cards match every canonical field and filters combine/reset', async 
     await page.locator('[data-confidence-filter]').selectOption(first.confidence);
     await page.locator('[data-area-filter]').selectOption(first.area);
     await page.locator('[data-topic-tools] select').first().selectOption(first.category);
-    await expect(page.locator('.record-card')).toHaveCount(records.filter(r => r.area === first.area && r.confidence===first.confidence && r.category===first.category).length);
+    await expect(page.locator('[data-topic-data] .record-card')).toHaveCount(records.filter(r => r.area === first.area && r.confidence===first.confidence && r.category===first.category).length);
     await page.locator('input[type=search]').fill('NO_SUCH_ITEM_987');
     await expect(page.locator('.empty-state')).toBeVisible();
     await page.getByRole('button',{name:'Reset filters'}).click();
-    await expect(page.locator('.record-card')).toHaveCount(records.length);
+    await expect(page.locator('[data-topic-data] .record-card')).toHaveCount(records.length);
     await page.locator(`#${first.id} summary`).click();
     await expect(page.locator(`#${first.id} .record-notes p`)).toHaveText(first.notes);
   }
@@ -60,8 +71,8 @@ test('mobile navigation, skip link and canonical deep link', async ({page}) => {
   const toggle = page.locator('.nav-toggle');
   await toggle.click();
   await expect(toggle).toHaveAttribute('aria-expanded','true');
-  await expect(page.getByRole('navigation').getByRole('link')).toHaveCount(9);
-  await page.getByRole('navigation').getByRole('link',{name:'Sports radio',exact:true}).click();
+  await expect(page.locator('#main-navigation').getByRole('link')).toHaveCount(9);
+  await page.locator('#main-navigation').getByRole('link',{name:'Sports radio',exact:true}).click();
   await expect(page).toHaveURL(/radio.html$/);
   await expect(page.locator('#main-navigation [aria-current=page]')).toHaveText('Sports radio');
   await page.goto('activities.html#in-guardia-2026-10-18');
@@ -75,14 +86,22 @@ test('planner defaults, exact price status, totals, autosave and daily rows', as
   await page.goto('costs.html');
   await expect(page.locator('[data-expense-row]')).toHaveCount(25);
   for (const r of data('expenses').records) {
-    await expect(page.locator(`[data-expense-row="${r.id}"] dd`)).toHaveText(r['price range']);
+    const row = page.locator(`[data-expense-row="${r.id}"]`);
+    await expect(row.locator('h3')).toHaveText(r.name);
+    await expect(row.locator('.record-meta .pill').first()).toHaveText(r.category);
+    await expect(row.locator('p').first()).toHaveText(r.description);
+    await expect(row.locator('dd')).toHaveText(r['price range']);
+    await expect(row.locator('.record-notes p')).toHaveText(r.notes);
+    await expect(row.locator('.record-source')).toHaveAttribute('href', r.source_url);
+    await expect(row.locator('.record-source-meta')).toContainText(r.date_checked);
+    await expect(row.locator('.record-source-meta')).toContainText(r.source_type);
   }
   expect(await page.locator('[data-expense-field]').evaluateAll(inputs => inputs.every(i=>i.value===''))).toBeTruthy();
   await page.locator('#expense-flights-budget').fill('100.25');
   await page.locator('#expense-flights-actual').fill('120.50');
   await expect(page.locator('#budget-total')).toHaveText('€100.25');
   await expect(page.locator('#difference-total')).toHaveText('+€20.25');
-  await page.locator('.daily-planner summary').click();
+  await page.locator('.daily-planner > summary').click();
   await page.locator('#expense-daily-2026-10-13-actual').fill('7.50');
   await expect(page.locator('#actual-total')).toHaveText('€128.00');
   await page.reload();

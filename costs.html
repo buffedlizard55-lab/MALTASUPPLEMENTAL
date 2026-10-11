@@ -10,6 +10,7 @@
 </head>
 <body>
   <header class="site-header" data-site-header></header>
+  <noscript><div class="callout"><strong>JavaScript is off.</strong> Interactive entries need JavaScript. Use the <a href="sources.html">source guide and JSON files</a>, or return to the <a href="index.html">overview</a>.</div></noscript>
 
   <main class="page">
     <section class="hero" aria-labelledby="expenses-title">
@@ -25,7 +26,7 @@
     <section class="callout callout-warning" aria-label="Expense planner assumptions">
       <span class="callout-title">No itinerary or booking amounts were supplied</span>
       <p>All amount fields start blank. The supplied stay window is 13–19 October; exact billable nights and check-in/out terms still need the booking confirmation. Do not infer flight route, hotel charges, number of travelers, meal plan, event admission, or expenses covered by someone else. Enter whole-trip totals in euros on a consistent basis; if a charge is in USD, note the conversion rate and fee in the row notes. Confirm every quote and booking before relying on it.</p>
-      <p>This planner saves on this browser/device only; it does not send amounts to a server. Download a CSV backup before clearing browser data or switching devices. Avoid saving private financial details on a shared device.</p>
+      <p>This planner saves on this browser/device only; it does not send amounts to a server. Download a JSON backup to restore on another device; CSV is for spreadsheets or manual re-entry. Back up before clearing browser data. Avoid saving private financial details on a shared device.</p>
     </section>
 
     <section aria-labelledby="summary-title">
@@ -53,6 +54,8 @@
     <section aria-label="Expense planner actions">
       <div class="quick-links">
         <button type="button" id="export-csv">Download CSV backup ↓</button>
+        <button type="button" id="export-json" disabled>Download JSON backup ↓</button>
+        <label class="restore-label" for="restore-json">Restore JSON backup <input type="file" id="restore-json" accept=".json,application/json" disabled></label>
         <button type="button" id="clear-expenses">Clear saved entries</button>
       </div>
       <p id="save-status" class="small" role="status" aria-live="polite">Your amounts will autosave locally as you type.</p>
@@ -62,28 +65,23 @@
       <strong>Quick fill from your itinerary:</strong> enter one-off flights/hotel/pass bookings in the 18 core rows. Expand the seven optional daily rows for remaining meals or incidentals. Enter each expense once: daily rows and aggregate food/transport rows must not duplicate the same cost. Amounts remain blank until you enter them.
     </aside>
 
-    <section aria-labelledby="intake-title">
-      <h2 id="intake-title">When your itinerary arrives — the 10-minute intake</h2>
-      <p class="lede">Everything on this page is blank on purpose. When the confirmed itinerary lands, work down this list once and the planner is done.</p>
+    <details class="callout" aria-labelledby="intake-title">
+      <summary id="intake-title">A short intake checklist</summary>
       <ol class="notice-list">
-        <li><strong>Flights &amp; dates (rows: <em>flights</em>, <em>hotel-stay</em>):</strong> enter the booking totals, the exact check-in/check-out dates and the number of billable nights. Update every daily row to match the real dates.</li>
-        <li><strong>Hotel extras (<em>hotel-separate-charges</em>):</strong> read the invoice. The 2026 MTA guideline PDF lists €1.50 per night for each guest aged 18+ (cap €22.50 per person per visit), while the current MTA webpage separately says charges apply to nights that “exceeded fifteen (15) nights.” Ask MTA/AX ODYCY how the wording applies to a short stay; a six-night €9 calculation is conditional, not a confirmed charge. Enter only the amount actually billed, and keep separately charged deposits, resort fees or taxes distinct.</li>
-        <li><strong>Event access (<em>event-access</em>):</strong> a separate 11 October listing-card capture and HLTV report record a “Free / Reserve a spot” offer, but the current extracted page text did not expose a fee table. This is not a current checkout total, ticket availability or your reservation. Do not assume €0; enter only the confirmed admission amount and any fee after checking your own checkout. Details: <a href="event.html">CS2 event guide</a>.</li>
-        <li><strong>Airport transfers (<em>airport-transfer-arrival</em> / <em>-departure</em>)</strong> and <strong>bus rows (<em>local-bus-and-cards</em>, <em>event-commute</em>):</strong> MPT lists day-route singles at €2.50 summer / €2.00 winter, night/Tallinja Direct at €3.00 and TD1 at €3.50; for cards it lists €19 for 12 shareable journeys, €21/€27 for Explore Flex 4/7-day (whose offer grid includes Airport Direct and Special Services) and €25 for the 7-day Explore Adult card, which excludes tallinja Direct routes. The applicable day-route single fare for 13–19 October 2026 is not established by the published winter dates. Confirm the current fare and compare card terms with your actual rides, then enter the real receipt; no card or itinerary is assumed.</li>
-        <li><strong>Optional return transport (<em>taxi-rideshare</em>):</strong> keep this blank unless you choose a taxi/ride-hailing service or the dated MPT planner shows no suitable public-bus return after the confirmed gate and finish. One static Route 186 variant lists a 20:53 departure, but that is not a full-network search or a trip-day journey. No quote exists until you request one; compare a live provider or hotel-arranged quote against Transport Malta’s published maximum meter rates (the tariff page may be stale; see the <a href="getting-around.html#white-taxi-official-tariff">transport guide</a>).</li>
-        <li><strong>Food, activities and gaming (<em>food-and-drink</em>, <em>activities-and-sightseeing</em>, <em>gaming-and-arcade</em>):</strong> set one daily allowance and put the whole-party amount in the aggregate row, or itemise in the seven daily rows — never both for the same spending.</li>
-        <li><strong>Connectivity and money (<em>mobile-connectivity</em>, <em>bank-cash-fees</em>):</strong> enter the eSIM/SIM price you actually buy and your bank’s foreign-transaction fee as a percentage-based estimate on planned card spend.</li>
-        <li><strong>Insurance, passports and contingency (<em>travel-insurance</em>, <em>passport-entry-costs</em>, <em>other-incidentals</em>):</strong> enter real premium/purchase amounts, then leave a deliberate contingency figure.</li>
-        <li><strong>Finish:</strong> check the Difference card (actual minus budget), then press <em>Download CSV backup</em>. The planner is then a trip record as well as a plan.</li>
+        <li>Use booking totals for flights and accommodation; note traveler count, actual nights and included meals.</li>
+        <li>Use receipts for separately billed hotel extras and event access. Published references appear in the relevant rows, not as assumed personal costs.</li>
+        <li>Choose whole-trip category totals <em>or</em> optional daily totals for a purchase—never both. A bus pass is not an additional single fare for every included ride.</li>
+        <li>Keep refundable holds in notes; count only money actually retained as an expense.</li>
+        <li>Convert non-euro charges yourself using your statement/quoted rate, and record fees once. The quick-fill tool never converts currency.</li>
+        <li>Review every preview, check the totals, then export. JSON can restore this planner; CSV is for a spreadsheet or manual re-entry.</li>
       </ol>
-      <p class="small">Price references come from the <a href="getting-around.html">transport guide</a>; they are the operator’s published prices, not quotes for your specific journeys.</p>
-    </section>
+    </details>
     <section id="quick-fill" class="callout" aria-labelledby="quick-fill-title">
       <h2 id="quick-fill-title">Paste your itinerary, fill your budget</h2>
-      <p>When the itinerary and confirmations arrive, paste one item per line below. The planner finds the date and the amount, works out which row the item belongs to, and shows you exactly what it would fill <em>before</em> anything changes. It only fills a budget field that is still blank, and it never overwrites an amount you have already typed. Nothing is sent anywhere; the text stays in this browser tab.</p>
-      <p class="small">Each line needs at least an amount. A date helps the planner choose the right row. Recognised date shapes: <code>2026-10-14</code>, <code>14/10</code>, <code>14 Oct</code>, <code>Oct 14</code>. Recognised amount shapes: <code>€5.00</code>, <code>5.00</code>, <code>5</code>. Recognised keywords include flight, hotel, insurance, airport, taxi, bus, pass, food, meal, dinner, breakfast, coffee, museum, tour, ticket, sim, esim, roaming, atm, laundry and souvenir.</p>
+      <p>When the itinerary and confirmations arrive, paste one item per line below. The planner suggests a row from simple keywords and shows you the amount it would fill <em>before</em> anything changes. It only fills a budget field that is still blank, and it never overwrites an amount you have already typed. Nothing is sent anywhere; the text stays in this browser tab.</p>
+      <p class="small">Use <code>date | description | amount in EUR</code>, or a description followed by <code>€amount</code>. Bare numbers without separators are not interpreted as prices. Explicit foreign currencies, negative amounts and ambiguous thousands separators need manual entry after conversion. Deposits and payment holds are never quick-filled: review them manually and keep refundable holds in notes. Multiple accepted lines for the same blank category are summed; existing amounts are never overwritten. Recognised date shapes: <code>2026-10-14</code>, <code>14/10</code>, <code>14 Oct</code>, <code>Oct 14</code>. Recognised amount shapes: <code>€5.00</code>, <code>5.00</code>, <code>5</code>. Recognised keywords include flight, hotel, insurance, airport, taxi, bus, pass, food, meal, dinner, breakfast, coffee, museum, tour, ticket, sim, esim, roaming, atm, laundry and souvenir.</p>
       <label for="itinerary-input">Itinerary lines (one item per line)</label>
-      <textarea id="itinerary-input" name="itinerary-input" rows="6" spellcheck="false" placeholder="2026-10-13 | Flight LHR–MLA return, 2 travellers | 480.00&#10;2026-10-14 | Bus to Ta' Qali and back | 5.00&#10;2026-10-15 | Dinner in Qawra | 38.50&#10;2026-10-16 | eSIM data | 20"></textarea>
+      <textarea id="itinerary-input" name="itinerary-input" rows="6" maxlength="30000" spellcheck="false" placeholder="2026-10-13 | Flight booking, all travelers | 480.00&#10;2026-10-14 | Bus to Ta' Qali and back | 5.00&#10;2026-10-15 | Dinner in Qawra | 38.50&#10;2026-10-16 | eSIM data | 20"></textarea>
       <div class="quick-links">
         <button type="button" id="preview-itinerary">Preview matches</button>
         <button type="button" id="apply-itinerary" disabled>Apply preview to blank budget fields</button>
@@ -103,8 +101,8 @@
       <h2 id="expense-help-title">Quick-use notes</h2>
       <ul class="notice-list">
         <li>Each line has a budget and actual amount, both in euros. Use whole-trip/whole-party totals consistently; if you prefer per-person amounts, note that basis and apply it to every row.</li>
-        <li>The reference links are for reconfirming details or choosing a provider; they are not price quotes. No amount is prefilled, even where another guide page reports a dated menu or admission label.</li>
-        <li>The event-access row is blank until your own ticket and checkout total are confirmed. A dated listing capture recorded a free reservation offer, but the current extracted page text did not expose the fee table; do not prefill €0. Use the taxi row only for a taxi/ride-hailing return you actually choose or need after checking the dated planner.</li>
+        <li>The reference links are for reconfirming details or choosing a provider; they are not price quotes. No amount is prefilled, even where another guide page reports a dated menu or ticket price.</li>
+        <li>Use the event-access row only for your confirmed admission or booking fee, including zero if confirmed. A published offer is not your reservation; food and travel belong in their own rows.</li>
         <li>Use the <a href="getting-around.html">transport guide</a>, <a href="restaurants.html">food shortlist</a>, <a href="activities.html">activities and events</a>, and <a href="everyday.html">everyday guide</a> to compare sourced options before entering your own amounts.</li>
       </ul>
     </section>
@@ -119,10 +117,13 @@
       var host = document.getElementById("expense-list");
       var saveStatus = document.getElementById("save-status");
       var records = [];
+      var expenseData;
       var exportButton = document.getElementById("export-csv");
       var clearButton = document.getElementById("clear-expenses");
       exportButton.disabled = true;
       clearButton.disabled = true;
+      document.getElementById("preview-itinerary").disabled = true;
+      document.getElementById("download-template").disabled = true;
       var state = {};
       var storageAvailable = true;
       var recoveryNotice = "";
@@ -189,7 +190,7 @@
         }
         var restored = typeof savedValue === "string" ? savedValue : "";
         if (type === "number" && restored && (!Number.isFinite(Number(restored)) || Number(restored) < 0)) restored = "";
-        input.value = restored.slice(0, type === "text" ? 240 : 24);
+        input.value = type === "text" ? restored.slice(0, 240) : (restored.length > 24 ? String(Number(restored)) : restored);
         if (type === "number" && !input.checkValidity()) input.value = "";
         label.appendChild(input);
         return label;
@@ -207,7 +208,7 @@
         } catch (error) {
           storageAvailable = false;
           state = {};
-          saveStatus.textContent = "Browser storage is unavailable. You can still use the form, but download a CSV backup before leaving.";
+          saveStatus.textContent = "Browser storage is unavailable. You can still use the form, but download a JSON backup before leaving.";
         }
       }
 
@@ -215,6 +216,7 @@
         var saved = state[record.id] || {};
         var article = make("article", "record-card");
         article.dataset.expenseRow = record.id;
+        article.id = record.id;
         var meta = make("div", "record-meta");
         meta.append(make("span", "pill", record.category), make("span", "pill unverified", "amount not verified"));
         article.append(meta, make("h3", "", record.name), make("p", "", record.description));
@@ -245,8 +247,11 @@
         article.appendChild(source);
         article.appendChild(make("div", "record-source-meta", record.source_type + " · checked " + record.date_checked + " · no cost prefilled"));
 
-        var notes = make("div", "record-notes");
-        appendLinkedText(notes, record.notes);
+        var notes = make("details", "record-notes");
+        notes.appendChild(make("summary", "", "Reference & caveats"));
+        var noteText = make("p");
+        appendLinkedText(noteText, record.notes);
+        notes.appendChild(noteText);
         article.appendChild(notes);
         return article;
       }
@@ -297,20 +302,22 @@
           return;
         }
         if (!storageAvailable) {
-          saveStatus.textContent = "Browser storage is unavailable. Your totals still work; download a CSV backup before leaving.";
+          saveStatus.textContent = "Browser storage is unavailable. Your totals still work; download a JSON backup before leaving.";
           return;
         }
         try {
           window.localStorage.setItem(storageKey, JSON.stringify(state));
-          saveStatus.textContent = "Saved locally in this browser on this device. Download a CSV backup to move it elsewhere.";
+          saveStatus.textContent = "Saved locally in this browser on this device. Use JSON backup to restore elsewhere; CSV is for a spreadsheet.";
         } catch (error) {
           storageAvailable = false;
-          saveStatus.textContent = "Could not save to this browser. Download a CSV backup before leaving or reloading.";
+          saveStatus.textContent = "Could not save to this browser. Download a JSON backup before leaving or reloading.";
         }
       }
 
       function render(data) {
-        records = Array.isArray(data.records) ? data.records : [];
+        if (!Array.isArray(data.records) || !data.records.length) throw new Error("Invalid expense dataset");
+        expenseData = data;
+        records = data.records;
         document.querySelector("[data-expense-title]").textContent = data.title || "Expense planner";
         document.querySelector("[data-expense-intro]").textContent = data.intro || "Enter confirmed trip costs below.";
         host.replaceChildren();
@@ -328,6 +335,10 @@
         });
         exportButton.disabled = false;
         clearButton.disabled = false;
+        document.getElementById("export-json").disabled = false;
+        document.getElementById("restore-json").disabled = false;
+        document.getElementById("preview-itinerary").disabled = false;
+        document.getElementById("download-template").disabled = false;
         updateTotals();
         if (storageAvailable) saveStatus.textContent = recoveryNotice || "Your amounts autosave locally in this browser as you type.";
       }
@@ -362,18 +373,88 @@
         link.click();
         link.remove();
         window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
-        saveStatus.textContent = "CSV backup downloaded. Keep it somewhere private and secure.";
+        saveStatus.textContent = "CSV downloaded for spreadsheet/manual use. Use JSON backup for automatic restore; keep exports private.";
       });
 
       document.getElementById("clear-expenses").addEventListener("click", function () {
-        if (!window.confirm("Clear all budget, actual, and note entries saved in this browser? This cannot be undone unless you downloaded a CSV backup.")) return;
+        if (!window.confirm("Clear all budget, actual, and note entries saved in this browser? Export JSON first if you may want to restore this planner.")) return;
         state = {};
         host.querySelectorAll("[data-expense-field]").forEach(function (input) { input.value = ""; });
+        var clearedStorage = storageAvailable;
         if (storageAvailable) {
-          try { window.localStorage.removeItem(storageKey); } catch (error) { storageAvailable = false; }
+          try { window.localStorage.removeItem(storageKey); } catch (error) { storageAvailable = false; clearedStorage = false; }
         }
+        pendingMatches = [];
+        itineraryInput.value = "";
+        itineraryPreview.replaceChildren();
+        applyButton.disabled = true;
         updateTotals();
-        saveStatus.textContent = "Saved expense entries cleared from this browser.";
+        saveStatus.textContent = clearedStorage ? "Saved expense entries cleared from this browser." : "Form cleared, but browser storage could not be accessed to confirm deletion. Clear this site’s storage in browser settings if needed.";
+      });
+
+      function downloadFile(contents, mime, name) {
+        var url = URL.createObjectURL(new Blob([contents], {type: mime}));
+        var link = document.createElement("a");
+        link.href = url;
+        link.download = name;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+      }
+
+      document.getElementById("export-json").addEventListener("click", function () {
+        var invalid = host.querySelector('input[type="number"]:invalid');
+        if (invalid) { invalid.reportValidity(); saveStatus.textContent = "Correct invalid amounts before exporting."; return; }
+        captureState();
+        var backupEntries = {};
+        records.forEach(function (record) {
+          var entry = state[record.id];
+          backupEntries[record.id] = {budget: entry.budget === "" ? "" : Number(entry.budget).toFixed(2), actual: entry.actual === "" ? "" : Number(entry.actual).toFixed(2), note: entry.note};
+        });
+        downloadFile(JSON.stringify({format: "malta-expenses", version: 1, currency: "EUR", trip: "2026-10-13/2026-10-19", entries: backupEntries}, null, 2), "application/json", "malta-expenses-backup.json");
+        saveStatus.textContent = "JSON backup downloaded. Restore it with Restore JSON backup; keep it private.";
+      });
+
+      function validateBackup(backup) {
+        if (!backup || backup.format !== "malta-expenses" || backup.version !== 1 || backup.currency !== "EUR" || backup.trip !== "2026-10-13/2026-10-19") throw new Error("This is not a supported EUR backup for this trip.");
+        var entries = backup.entries;
+        if (!entries || typeof entries !== "object" || Array.isArray(entries)) throw new Error("Missing expense entries.");
+        var ids = records.map(function (r) { return r.id; });
+        if (Object.keys(entries).some(function (id) { return ids.indexOf(id) === -1; })) throw new Error("Backup contains unknown expense rows.");
+        var clean = {};
+        ids.forEach(function (id) {
+          var entry = Object.prototype.hasOwnProperty.call(entries, id) ? entries[id] : {budget: "", actual: "", note: ""};
+          if (!entry || typeof entry !== "object" || Array.isArray(entry) || Object.keys(entry).some(function (key) { return ["budget", "actual", "note"].indexOf(key) === -1; })) throw new Error("Invalid row: " + id);
+          ["budget", "actual"].forEach(function (field) {
+            var value = entry[field];
+            if (typeof value !== "string" || (value !== "" && (!/^\d+(?:\.\d{1,2})?$/.test(value) || Number(value) > 1000000000))) throw new Error("Invalid amount in " + id);
+          });
+          if (typeof entry.note !== "string" || entry.note.length > 240) throw new Error("Invalid or overlong notes in " + id);
+          clean[id] = {budget: entry.budget, actual: entry.actual, note: entry.note};
+        });
+        return clean;
+      }
+
+      document.getElementById("restore-json").addEventListener("change", async function (event) {
+        var input = event.target;
+        var file = input.files[0];
+        if (!file) return;
+        try {
+          if (file.size > 1048576) throw new Error("Backup is too large (maximum 1 MB).");
+          var restored = validateBackup(JSON.parse(await file.text()));
+          if (!window.confirm("Replace all budget, actual and note entries with this backup? Export your current entries first if needed.")) { saveStatus.textContent = "Restore cancelled; current entries kept."; return; }
+          state = restored;
+          recoveryNotice = "";
+          render(expenseData);
+          save();
+          pendingMatches = [];
+          applyButton.disabled = true;
+          itineraryPreview.replaceChildren();
+          saveStatus.textContent = "Backup restored. " + saveStatus.textContent;
+        } catch (error) {
+          saveStatus.textContent = "Backup not restored; current entries kept. " + error.message;
+        } finally { input.value = ""; }
       });
 
       /* ---------- Itinerary quick-fill ---------------------------------- */
@@ -386,20 +467,20 @@
       var KEYWORDS = [
         ["airport departure", /(?:to|toward|towards|back to)\s+(?:the\s+)?airport|airport\s+(?:drop|drop-?off|departure|outbound)|departure transfer|transfer to (?:the )?airport/i],
         ["airport arrival", /(?:from|arriving at|arrival at)\s+(?:the\s+)?airport|airport\s+(?:pickup|pick-?up|arrival|collection)|arrival transfer|(?:transfer|taxi|shuttle|coach)\s+(?:from the airport\s+)?to\s+(?:the\s+)?(?:hotel|accommodation|qawra|bugibba|bugibba|sliema|valletta|st ?julian)/i],
-        ["event commute", /ta'?\s?qali|taqali|blast arena|arena studios|event ?day (?:travel|commute)/i],
+        ["event commute", /(?:bus|taxi|transfer|commute|travel|ride).*(?:ta[’']?\s?qali|taqali|blast arena|arena studios)|(?:ta[’']?\s?qali|taqali|blast arena|arena studios).*(?:bus|taxi|transfer|commute|travel|ride)|event ?day (?:travel|commute)/i],
         ["airport", /airport/i],
         ["flight", /flight|airfare|airline|air ?ticket|plane/i],
-        ["hotel", /hotel|resort|accommodation|room charge|room rate|check-?in total|lodging/i],
-        ["hotel tax", /tourist tax|city tax|eco ?tax|eco-?contribution|environmental contribution|resort fee|incidental deposit|security deposit/i],
+        ["hotel tax", /hotel tax|tourist tax|city tax|eco ?tax|eco-?contribution|environmental contribution|resort fee/i],
+        ["car hire", /car ?hire|car ?rental|rental car|hire car|\bfuel\b|petrol|diesel|parking|insurance excess/i],
         ["insurance", /insurance/i],
         ["entry docs", /passport|visa|entry document|travel authorisation|travel authorization/i],
         ["taxi", /\btaxi\b|bolt|e-?cabs|\buber\b|ride ?hailing|ride-hailing|private transfer/i],
-        ["car hire", /car ?hire|car ?rental|rental car|hire car|\bfuel\b|petrol|diesel|parking|insurance excess/i],
         ["bus", /\bbus\b|bus pass|travel card|tallinja|route 186|route 214|day journey|single journey|public transport|coach/i],
         ["food", /food|meal|dinner|lunch|breakfast|brunch|restaurant|caf[eé]|coffee|snack|\bdrink|pizza|pasta|gelato|ice ?cream|dessert|street food|pastizzi/i],
         ["activities", /museum|tour\b|excursion|sightseeing|landmark|cathedral|aquarium|entry fee|entrance fee|boat trip|\bcruise\b|ferry ticket|mdina|valletta|comino|blue lagoon|gozo|harbour|hike|dive|snorkel|beach day/i],
-        ["gaming", /gaming|arcade|\bvr\b|esports|e-sports|lan\b|pc caf|pc lounge|console|laser ?tag/i],
+        ["hotel", /hotel|resort|accommodation|room charge|room rate|check-?in total|lodging/i],
         ["event access", /event ticket|cs2|counter-?strike|thunderpick|\btwc\b|spectator|tournament|blast|venue ticket|match ticket/i],
+        ["gaming", /gaming|arcade|\bvr\b|esports|e-sports|lan\b|pc caf|pc lounge|console|laser ?tag/i],
         ["mobile", /\bsim\b|e-?sim|\bdata\b|roaming|mobile plan|airtime|top ?-?up|prepaid/i],
         ["bank fees", /\batm\b|card fee|foreign transaction|withdrawal fee|currency|exchange rate|conversion fee|bank charge/i],
         ["other", /souvenir|gift|laundry|incidental|\bmisc\b|other spend|tips?\b|taxis? tip/i]
@@ -428,25 +509,26 @@
       };
 
       function parseAmount(line) {
-        var currency = line.match(/(?:€|EUR|\$|USD)\s*(\d{1,3}(?:[.,]\d{3})*(?:[.,]\d{1,2})?|\d+(?:[.,]\d{1,2})?)/i);
-        var match = currency || line.match(/(\d{1,3}(?:[.,]\d{3})*[.,]\d{2})\b/) || line.match(/\b(\d{1,4})\s*$/);
-        if (!match) return null;
-        var raw = match[1].replace(/\s/g, "");
-        if (raw.indexOf(",") > -1 && raw.indexOf(".") === -1) raw = raw.replace(/,(\d{1,2})$/, ".$1").replace(/,/g, "");
-        else raw = raw.replace(/,/g, "");
+        if (/(?:[$£¥]|\b(?:USD|GBP|CAD|AUD|CHF|JPY)\b)/i.test(line)) return null;
+        var parts = line.split("|");
+        var match = parts.length > 1 ? parts[parts.length - 1].trim() : (line.match(/(?:€|EUR)\s*[0-9.,]+\s*$/i) || [""])[0];
+        var raw = match.replace(/^(?:€|EUR)\s*|\s*(?:€|EUR)$/gi, "").trim();
+        // Decimal point/comma or explicit grouped thousands; reject ambiguous 1,234 / 1.234.
+        if (/^\d{1,3}(?:,\d{3})+\.\d{2}$/.test(raw)) raw = raw.replace(/,/g, "");
+        else if (/^\d{1,3}(?:\.\d{3})+,\d{2}$/.test(raw)) raw = raw.replace(/\./g, "").replace(",", ".");
+        else if (/^\d+(?:[.,]\d{1,2})?$/.test(raw)) raw = raw.replace(",", ".");
+        else return null;
         var value = Number(raw);
-        if (!Number.isFinite(value) || value <= 0 || value > 1000000000) return null;
-        return Math.round(value * 100) / 100;
+        return Number.isFinite(value) && value >= 0 && value <= 1000000000 ? Math.round(value * 100) / 100 : null;
       }
 
       function parseDay(line) {
-        var m = line.match(/\b2026-(\d{2})-(\d{2})\b/);
-        if (m && m[1] === "10") return Number(m[2]);
-        m = line.match(/\b(\d{1,2})\s*\/\s*(\d{1,2})\b/);
-        if (m && Number(m[2]) === 10) return Number(m[1]);
-        m = line.match(/\b(\d{1,2})\s*(?:st|nd|rd|th)?\s+oct(?:ober)?\b/i) || line.match(/\boct(?:ober)?\s+(\d{1,2})\b/i);
-        if (m) return Number(m[1]);
-        return null;
+        var m = line.match(/\b(\d{4})-(\d{2})-(\d{2})\b/);
+        if (m) return m[1] === "2026" && m[2] === "10" ? Number(m[3]) : NaN;
+        m = line.match(/\b(\d{1,2})\s*\/\s*(\d{1,2})(?:\/(\d{4}))?\b/);
+        if (m) return Number(m[2]) === 10 && (!m[3] || m[3] === "2026") ? Number(m[1]) : NaN;
+        m = line.match(/\b(\d{1,2})\s*(?:st|nd|rd|th)?\s+oct(?:ober)?(?:\s+(\d{4}))?\b/i) || line.match(/\boct(?:ober)?\s+(\d{1,2})(?:st|nd|rd|th)?(?:,?\s+(\d{4}))?\b/i);
+        return m ? (m[2] && m[2] !== "2026" ? NaN : Number(m[1])) : null;
       }
 
       function targetFor(line) {
@@ -466,14 +548,15 @@
           var targetId = key ? TARGETS[key] : null;
           var reason = "";
           var warning = "";
-          if (amount === null) reason = "no amount found";
+          if (amount === null) reason = "no amount found in the accepted EUR format — convert foreign currency or clarify the amount manually";
+          else if (/\b(?:deposits?|holds?|pre[-\s]?(?:authori[sz]ation|auth))\b/i.test(line)) reason = "deposit or payment hold — review manually; keep refundable holds in notes and enter only retained charges";
           else if (key === "airport") reason = "airport line is ambiguous — choose the arrival or departure transfer row yourself";
           else if (!targetId) {
             if (day !== null && day >= 13 && day <= 19) targetId = "daily-2026-10-" + (day < 10 ? "0" + day : day);
             else if (day !== null) reason = "date is outside the 13–19 October trip window";
             else reason = "no keyword and no trip date — add a keyword such as food, bus or hotel";
           }
-          if (!reason && day !== null && (day < 13 || day > 19)) warning = "dated outside the 13–19 October trip window — check this line before relying on it";
+          if (!reason && day !== null && (!Number.isInteger(day) || day < 13 || day > 19)) warning = "dated outside the 13–19 October trip window — check this line before relying on it";
           return {line: line, amount: amount, day: day, targetId: targetId, reason: reason, warning: warning};
         });
       }
@@ -485,7 +568,16 @@
 
       function renderPreview(matches) {
         itineraryPreview.replaceChildren();
-        pendingMatches = matches.filter(function (item) { return item.amount !== null && item.targetId && !item.reason; });
+        var grouped = new Map();
+        matches.filter(function (item) { return item.amount !== null && item.targetId && !item.reason; }).forEach(function (item) {
+          var group = grouped.get(item.targetId) || {targetId: item.targetId, amount: 0, lines: []};
+          if (group.lines.indexOf(item.line) === -1) { group.amount += Math.round(item.amount * 100); group.lines.push(item.line); }
+          grouped.set(item.targetId, group);
+        });
+        pendingMatches = Array.from(grouped.values()).map(function (group) {
+          group.amount /= 100;
+          return group;
+        }).filter(function (group) { return group.amount <= 1000000000; });
         var applicable = pendingMatches.filter(function (item) {
           var input = document.getElementById("expense-" + item.targetId + "-budget");
           return input && input.value === "";
@@ -513,11 +605,22 @@
           list.appendChild(entry);
         });
         itineraryPreview.appendChild(list);
+        pendingMatches.forEach(function (item) {
+          if (item.lines.length > 1) itineraryPreview.appendChild(make("p", "", recordName(item.targetId) + ": combined " + item.lines.length + " distinct lines = " + formatter.format(item.amount) + "."));
+        });
+        if (Array.from(grouped.values()).some(function (g) { return g.amount > 1000000000; })) itineraryPreview.appendChild(make("p", "data-warning", "Combined category amount exceeds the field maximum; that category will not be applied."));
         applyButton.disabled = applicable.length === 0;
         itineraryStatus.textContent = applicable.length
-          ? "Preview ready: " + applicable.length + " row" + (applicable.length === 1 ? "" : "s") + " would be filled. Review the list, then apply."
+          ? "Preview ready: " + applicable.length + " category" + (applicable.length === 1 ? "" : "s") + " would be filled (identical source lines are counted once). Review the list, then apply."
           : "Preview ready, but no blank budget fields match. Lines listed as needing input are never filled automatically.";
       }
+
+      itineraryInput.addEventListener("input", function () {
+        pendingMatches = [];
+        applyButton.disabled = true;
+        itineraryPreview.replaceChildren();
+        itineraryStatus.textContent = "Text changed. Preview again before applying.";
+      });
 
       document.getElementById("preview-itinerary").addEventListener("click", function () {
         renderPreview(parseItinerary(itineraryInput.value));
@@ -527,7 +630,7 @@
         itineraryInput.value = "2026-10-13 | Flight MLA return, 2 travellers | 480.00\n2026-10-13 | Shuttle transfer to Qawra from the airport | 13.00\n" +
           "2026-10-14 | Bus to Ta' Qali and back | 5.00\n2026-10-15 | Dinner in Qawra | 38.50\n2026-10-16 | eSIM data top-up | 20\n" +
           "2026-10-17 | Middle Sea Race harbour cruise | 36.00\n2026-10-18 | Souvenirs and laundry | 15\n2026-10-19 | Transfer to the airport | 13.00\n" +
-          "2026-10-16 | Taxi back from the Thunderpick event | 25.00";
+          "2026-10-16 | Optional museum ticket example | 10.00";
         itineraryStatus.textContent = "Example lines inserted. Choose “Preview matches” to see where they would go — the example numbers are placeholders, not quotes.";
         renderPreview(parseItinerary(itineraryInput.value));
       });
@@ -542,13 +645,14 @@
           var noteInput = document.getElementById("expense-" + item.targetId + "-note");
           if (noteInput) {
             var existing = noteInput.value.trim();
-            if (existing.indexOf(item.line) === -1) noteInput.value = (existing ? existing + " | " : "") + item.line;
+            var lines = item.lines.join("; ");
+            noteInput.value = (existing ? existing + " | " + lines : lines).slice(0, 240);
           }
           applied += 1;
         });
         updateTotals();
         save();
-        var summary = applied + " budget field" + (applied === 1 ? "" : "s") + " filled from the itinerary" + (skipped ? "; " + skipped + " skipped because a value was already there" : "") + ". The source line was added to each row’s notes, and everything autosaved in this browser.";
+        var summary = applied + " budget field" + (applied === 1 ? "" : "s") + " filled from the itinerary" + (skipped ? "; " + skipped + " skipped because a value was already there" : "") + ". Source lines were added to row notes (240-character limit). Check the save-status message for persistence.";
         renderPreview(parseItinerary(itineraryInput.value));
         itineraryStatus.textContent = summary;
       });
