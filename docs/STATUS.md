@@ -57,8 +57,24 @@
 
 
 **Last updated:** 11 October 2026 (UTC)
-**Current session branch:** `arena/67d511d1-maltasupplemental`
+**Current session branch:** `arena/b29d95ae-maltasupplemental`
 **Snapshot boundary:** Current-session addendum below; later sections are historical mainline snapshots, not a live dashboard.
+
+## Current session addendum — `arena/b29d95ae-maltasupplemental` (11 October 2026)
+
+**Stage:** Delivery pass two days before departure. Repository reviewed at `main` `ae69ab1` (PR #55 merge tip); shared setup (schema, shell, CSS, source-log format, planner, CI, tests) verified present and left intact. Workstreams ran serially on this fixed Arena branch with the established file-ownership map; cross-stream findings went to `docs/HANDOFF.md`. Time-critical sources re-read (Eventbrite, MPT updates + fares, Liquipedia bracket, BBC Sportsworld/Sportsound, EU ETIAS FAQ, met panels, one platform access check); Passes 1–3 and the local suite are the gates before the PR.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Full service-updates re-read; two-notice Route 186 distinction reconfirmed; fallback-route stop detail for the Sat 17 cluster added to the night-routes record. Rebased onto main's three-variant timetable finding (OQ-S1) | No date-specific planner run, gate walk or live quote; “April 21” year, the exact last departure and TQ services still open. |
+| **B · Food & cafés** | Platform-coverage record updated: Yelp re-attempted today, still HTTP 403 | Counts drift; other platforms remain blocked/limited; reconfirm hours/menus in person. |
+| **C · Gaming, activities & event** | Weekend match clocks now pinned from a direct bracket read (SF 16:00/19:00 Sat; 3rd 13:30 + Final 17:00 Sun); garbled search-extract pairing discarded | Organizer Sat/Sun door rows, FAQ answers, reservation/inventory remain open. |
+| **D · U.S.-traveler essentials** | ETIAS record tightened to the trip-week answer (not in operation; no action required; several-months notice promise) | EES Malta conflict open; weather panels disagree for 13th/18th; national panel 18–19 coverage unverified (AccessDenied). |
+| **E · Sports radio** | New record: named BBC Radio Scotland weekend commentaries (Dundee v Rangers, Celtic v Hearts) with official programme IDs; 5 Live record corroborated. Merged with the parallel sessions' 6C resolution — no block conflict remains | UK output only — no Malta carriage, reception or named-match chain; undated Thursday Benfica v Celtic row stays a lead; what 6C's “Sports Channel” airs is still open. |
+| **F · Expense planner** | Unchanged, blank-by-default; verified untouched by this pass | Awaiting the traveler's itinerary and receipts. |
+| **G · Integration (last)** | Exec summary, README recheck note, source log, handoff, open questions and this status updated; full local suite is the pre-PR gate | Open the PR from this branch, merge by explicit number, observe Pages build, write the session report. |
+
+**Fresh evidence (11 October UTC, delivery session):** Eventbrite full read; Liquipedia bracket all seven chunks (EDT-labelled clocks converted +6 h to Malta); MPT latest-service-updates all three chunks and fares page; BBC Sportsworld `p002w5vq` and Sportsound `b0079g4q` upcoming pages plus episode `m00334k6`; EU ETIAS FAQ; UK Met Office Valletta panel (updated 10 Oct 12:27); Malta met office 7-day URL AccessDenied; Yelp 403. Exact rows are in `docs/SOURCES.md` under the `arena/b29d95ae-maltasupplemental` header.
 
 ## Previous session addendum — `arena/08099cd9-maltasupplemental` (11 October 2026)
 

@@ -1,5 +1,16 @@
 # Open questions and unverified items
 
+**Current research snapshot: 11 October 2026 UTC, session `arena/b29d95ae-maltasupplemental` (delivery pass).**
+
+Delivery-session updates (11 October 2026, two days before departure):
+
+- **Sat/Sun agenda — narrowed, not closed.** The organizer's Eventbrite rows for 17–18 October are still hidden behind “Show all agenda”, but the Liquipedia bracket read directly (all seven chunks) now supplies planning-grade **match starts**: semifinals 16:00 and 19:00 Saturday, third-place 13:30 and final 17:00 Sunday (Malta time; all pairings TBD). Door/check-in times for both days, exact finishes, and the organizer's confirmation of these clocks remain open. A search-index extract that appeared to name a “FURIA v BB semifinal” was contradicted by the direct read (TBD v TBD) and is discarded.
+- **Route 186 older notice end date.** The recurring Fri/Sat 20:00–00:00 detour prints “Detour ends April 21” with no year; the trip-week reading assumes the next 21 April (2027), which keeps it active on 16–17 October. Not operator-confirmed.
+- **Saturday fallback legs are degraded as well as unverified.** The 17–18 October 19:00–00:00 detour cluster hits the fallback routes too (202/260 detoured, stops not printed; 405 skips Rotunda 1/Bezzina; 45 skips Rotunda 2→Targa; 47 skips Gatt→Rotunda 1; 48/N48 batched). Only a date-specific planner run or live quote settles what actually runs after 20:54 on Saturday.
+- **BBC Radio Scotland undated row.** Sportsound's upcoming page first row “Thursday 19:00 — Europa League Benfica v Celtic” (Radio Scotland Extra, m0032sf3) prints no date; most plausibly Thursday 15 October. Treat as a lead only.
+- **ETIAS for this trip — effectively resolved.** The official EU FAQ read today states ETIAS is not in operation and “no action is required from travellers at this point”, with several months' notice promised before any launch; no ETIAS authorisation should be needed for 13–19 October 2026. Keep the record for future trips.
+- **Weather panels.** The UK Met Office Valletta view now covers 13–19 October (sunny/sunny intervals; 18–19 marked BETA) and conflicts with a timeanddate.com extract (thunderstorms 13th/18th). The Malta International Airport met office 7-day URL returned AccessDenied today, so the national panel's 18–19 October coverage is still unverified.
+
 ## 11 October 2026 — third verification session (`arena/3031b29b-maltasupplemental`)
 
 Fresh reads two days before departure. Nothing below is a booking, a physical test or an RF measurement.
