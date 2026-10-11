@@ -5,7 +5,7 @@ const pages = ['index.html','getting-around.html','restaurants.html','activities
 const topics = {'getting-around.html':'transport','restaurants.html':'food','activities.html':'activities','everyday.html':'everyday','radio.html':'radio'};
 const data = topic => JSON.parse(fs.readFileSync(`data/${topic}.json`));
 
-for (const width of [360, 768, 1440]) {
+for (const width of [320, 360, 768, 1440]) {
   test(`all pages render, fit and pass axe at ${width}px`, async ({page}) => {
     await page.setViewportSize({width, height:900});
     const errors = [];
