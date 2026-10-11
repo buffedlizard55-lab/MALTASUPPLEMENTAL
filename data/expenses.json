@@ -2,7 +2,7 @@
   "topic": "expenses",
   "title": "Quick-fill Malta expense planner",
   "last_updated": "2026-10-11",
-  "intro": "A blank-by-default planner for 13–19 October 2026. Enter full trip/party amounts in euros (€) consistently; no flight, hotel, meal, fare, ticket, or reimbursement amount has been assumed. Bus and travel-card prices are now published and verified on the transport page if you want a benchmark for the transport rows; the only hotel-side figure with an official basis is the €1.50-per-night eco-contribution for guests aged 18+.",
+  "intro": "A blank-by-default planner for 13–19 October 2026. Enter euros on a consistent whole-trip or party basis, preview itinerary matches and record each cost once. Published references are not personal quotes; no amount, purchase, ride count, party size or reimbursement is assumed.",
   "records": [
     {
       "id": "flights",
@@ -41,13 +41,13 @@
       "area": "Qawra",
       "address": "AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Malta",
       "hours": "Not applicable",
-      "description": "Optional line only for charges shown separately on the confirmed hotel invoice. The Malta Tourism Authority's 2026 guidelines require the eco-contribution to be disclosed separately from accommodation fees on a fiscal receipt, at €1.50 per night per guest aged 18+ at the start of the visit and capped at €22.50 per person per visit. Six billable nights would be €9.00 per eligible adult, but whether it is charged here, when, and to whom depends on the booking and the invoice.",
-      "source_url": "https://mta.com.mt/services/environmental-contribution/",
+      "description": "Use only for separately billed hotel expenses, without duplicating the accommodation total. MTA’s guest notice and guidelines state €1.50/night for guests aged 18+ at arrival, capped at €22.50/continuous visit, separate from the room rate. Six qualifying nights would be €9 per eligible adult as arithmetic only; enter your actual invoice and party details. A refundable deposit or card hold is not a consumed expense—track it in notes and count it as spending only if retained.",
+      "source_url": "https://cms.mta.com.mt/api/media/file/2026%20Regulations%20-%20Notice%20to%20Guests.pdf",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The 2026 MTA guidelines were read directly: https://mta.com.mt/docs/Eco-Contribution-Accommodation-Guidelines-2026.pdf . The rate, the age test, the per-person cap, the per-night chargeability (whether or not the room is used) and the separate-receipt rule are all explicit. The guidelines' only fifteen-day reference defines an \"interruption\" — up to fifteen days in premises that do not require to be licensed within one visit — rather than a minimum stay, which is why the six-night figure is treated as ordinary arithmetic rather than an open question. It is still not a confirmed charge for this traveller: enter an amount only if the invoice shows one. Do not double-count it in another row.",
-      "price range": "€1.50 per person per night for guests aged 18+, maximum €22.50 per person per visit; six chargeable nights would be €9.00 per eligible adult. Not a confirmed charge — verify on the hotel invoice."
+      "notes": "Fresh guest notice: https://cms.mta.com.mt/api/media/file/2026%20Regulations%20-%20Notice%20to%20Guests.pdf . Per-night rule also in https://mta.com.mt/docs/Eco-Contribution-Accommodation-Guidelines-2026.pdf . The general service page https://mta.com.mt/services/environmental-contribution/ retains anomalous “exceeded fifteen (15) nights” wording; this is not treated as a short-stay exemption. Confirm the hotel invoice, eligible ages and actual billable nights. No amount prefilled.",
+      "price range": "Published €1.50/night/eligible adult, cap €22.50/continuous visit. Conditional six-night example €9/adult; personal invoice unknown."
     },
     {
       "id": "travel-insurance",
@@ -116,12 +116,12 @@
       "area": "Malta-wide",
       "address": "Not applicable — editable expense category",
       "hours": "Not applicable",
-      "description": "Enter the total for the travel card or individual bus fares actually planned. Two published prices are usable for planning: the €27.00 Explore Flex 7-day card, or a €2.50 day-route single as a planning inference. Buying a card removes the single-fare uncertainty for a multi-day stay, which is the better buy here.",
+      "description": "Enter the actual card purchase or individual fares you choose, counted once. Compare route coverage, validity, activation and expected boardings before buying. Published fare/card references are in the transport guide; the applicable October single fare and the best-value product for your itinerary remain to be confirmed.",
       "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Fare page read in full 11 October 2026: https://www.publictransport.com.mt/fares-and-tickets/. It dates its €2.00 winter single to 19 October 2025 – 13 June 2026, which ends before this trip, and prints no 2026/27 changeover date, so €2.50 is a planning inference rather than a published trip-week fare. Card terms are clear: €27.00 Explore Flex 7-day includes Day, Night, Airport Direct and Special Services; the cheaper-looking €25 Explore Adult card EXCLUDES tallinja Direct routes, so it would not cover the TD1 airport line — the €2 dearer card is the better buy. €19 buys 12 shareable Single Day Journeys valid 6 months. €50 fine for travelling without a valid ticket. Buy at Buġibba Terminal, the airport, Valletta Terminal or Sliema Ferries. See getting-around.html#mpt-fares-cards and transport record mpt-seasonal-fare-window-2026.",
+      "notes": "Use https://www.publictransport.com.mt/fares-and-tickets/ and the transport guide’s dated fare/card records. The only explicit winter validity seen ends 13 June 2026; do not infer an October changeover. Airport Direct/TD inclusions need product-specific confirmation. No card is automatically better because the stay lasts six nights. Budget defaults stay blank.",
       "price range": "Not set; check current fares and card conditions"
     },
     {
@@ -131,27 +131,27 @@
       "area": "Qawra ↔ Ta’ Qali / Ħ’Attard",
       "address": "From AX ODYCY, Qawra Coast Road, to the confirmed MFCC/BLAST Arena Studios entrance",
       "hours": "Not applicable — enter the chosen event-day round-trip amount",
-      "description": "Track the event-day commute separately from general bus spending. The venue and the outbound leg are now settled: Route 186 from Qawra reaches the Ta' Qali Stadium stop in time for even the 09:30 check-in, and the venue's own booklet endorses 186 from the Buġibba side. The return is NOT a bus journey on the late days, so budget five taxi or ride-hailing returns in the taxi-rideshare row rather than here. Enter the bus amount once you have chosen a card or know the single fare you will pay.",
+      "description": "Optional category for the event commute. Route 186 is a candidate, not a saved door-to-door journey. Confirm the actual gate, required arrival, outward route and a separate return before allocating fares or rides. Count these costs here OR in the general bus/taxi rows, never both.",
       "source_url": "https://www.publictransport.com.mt/journey-planner/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Published venue days from the event's ticketing page: 09:30 check-in / 10:30 games / to 22:30 on Wed 14 and Thu 15 October, and 14:00 / 15:00 / to 21:00 on Fri 16 October; Sat 17 and Sun 18 were not published. Nearest stop to the venue is 'Stadium', about a 4-minute walk. MPT lists a Saturday 17 October evening Route 186 diversion. One thing could still change the return: MPT runs TQ-numbered special event services out of Ta' Qali, and TQ1's corridor runs through St Paul's Bay and Qawra to Buġibba at the €3.00 Special Services fare — it showed 'Timetable not available!' when checked and no TWC notice was found, so check https://www.publictransport.com.mt/latest-service-updates/ daily during 14–18 October. Route-level times are not a saved door-to-door planner result. See getting-around.html#event-checklist and OQ-H3.",
+      "notes": "Official journey planner reference only. The transport guide treats Route 186 as a candidate, not a saved date-specific journey or guaranteed last-bus return. The October 17–18 notice omits a year; April’s 20:00 notice is separate. Check both directions, attendee gate and actual timetable before choosing a mode. Count each receipt in either this row or the general transport rows, never twice.",
       "price range": "Not set; exact date/time route and event return are not confirmed"
     },
     {
       "id": "taxi-rideshare",
-      "name": "Taxi / ride-hailing — five event-night returns",
+      "name": "Taxi / ride-hailing",
       "category": "Local transport",
       "area": "Malta-wide",
       "address": "Not applicable — enter only trips you plan to take",
       "hours": "Not applicable",
-      "description": "Not a contingency: this is the planned return for all five event nights, because no verified night bus serves Ta' Qali or Attard and the venue day runs to 22:30 on two of them. Budget one return per event day. Quotes, availability and pickup location are trip-specific and prices are dynamic, so enter actual amounts from live quotes rather than planning from a cap.",
+      "description": "Enter the rides actually planned or taken, using live quotes or receipts. A hotel-arranged fixed-charge taxi is another option to request; no five-ride purchase or universal late-bus absence is assumed. Confirm availability, pickup point, waiting and cancellation terms.",
       "source_url": "https://bolt.eu/en/cities/malta/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Transport Malta publishes maximum meter rates, but the page footer states 'Page last updated: 06/04/2022', so treat them as possibly revised: https://www.transport.gov.mt/land/public-transport/other-public-transport/taxis-829. From those bands the capped fare works out at roughly €12.40 for 5 km, €19.40 for 10 km, €25.90 for 15 km and €30.90 for 20 km — this guide's arithmetic at assumed distances, excluding waiting (€25/hour) and traffic (€4.20/hour) charges, and NOT a quote. The road distance from AX ODYCY to the venue was never measured. Ride-hailing is dynamic and not bound by the meter tariff, so compare a live Bolt/eCabs/Uber quote against the cap. Pre-book before going in: no taxi rank at an inland studio was verified and demand spikes when everyone leaves at once.",
+      "notes": "AX ODYCY advertises Guest Relations taxi arrangements with fixed charges but no rate card: https://axhotelsmalta.com/odycy/faqs/?faq=check-in-out . The regulator’s published metered reference has a 06/04/2022 webpage date: https://www.transport.gov.mt/land/public-transport/other-public-transport/taxis-829 . Hypothetical distance-band arithmetic is not a quote or a confirmed current ceiling. Compare actual licensed-provider/app/hotel offers and do not double-count the event-commute row.",
       "price range": "Live quote varies; no amount prefilled"
     },
     {
@@ -221,13 +221,13 @@
       "area": "Ta’ Qali / Ħ’Attard",
       "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard, Malta — the address on the event’s own ticketing listing.",
       "hours": "Wednesday 14 – Sunday 18 October 2026, 9:30 AM – 10 PM. Check-in 09:30 and games 10:30 on 14 and 15 October; check-in 14:00 and games 15:00 on 16 October. Ages 18+.",
-      "description": "If attending, this row is for event-related spending — transport, food and drink at the venue, merchandise — not admission: the listing displays a free 'Reserve a spot' option for in-person 18+ attendance. Two things remain unconfirmed and would change the numbers: whether one reservation covers all five days, and whether the venue has parking or catering. Enter only confirmed amounts once the itinerary and any confirmations are in hand.",
+      "description": "The event listing advertises free 18+ reservation, but inventory, your reservation, per-day validity and actual expenses are not confirmed. Enter only your confirmed ticket amount; put transport, meals and other costs in their appropriate rows so they are counted once. Free advertised admission does not make the whole event day free.",
       "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Confirmed 11 October 2026 from the event’s official ticketing listing https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 : organizer Hotspawn; venue BLAST Arena Studios Malta, MFCC South Gate National Stadium, ATD 4000 Attard; Wednesday 14 – Sunday 18 October 2026, 9:30 AM – 10 PM; highlights “ages 18+” and “In person”; a free “Reserve a spot” action. Free ticketing is also reported by HLTV: https://www.hltv.org/news/45615/thunderpick-world-championship-talent-revealed . Organizer window and format: https://world-championship.thunderpick.io/2026-finals/ . Thunderpick release naming BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . Still open, so do not budget against them as settled: the Sat 17 and Sun 18 agenda entries, whether one ticket covers all five days, venue parking, and on-site food and drink. This row replaces an earlier version that said spectator access was unconfirmed and quoted a €10.00 precedent from a separate BLAST-run event. Two budget-relevant unknowns remain: whether one registration covers all five days or each day needs its own, and whether there is on-site parking (which would decide if car hire is viable on event days). All nine ticketing-page FAQ answers are client-side and did not render, so neither is answered here — see OQ-H2. No ticket has been secured by this project.",
-      "price range": "Free on the event's own listing — its ticket block shows 'Free' with a 'Reserve a spot' action under a 'Sales end soon' notice. Budget the hidden costs instead: reservation required, 18+ entry with photo ID, and a taxi/ride-hailing or hotel-arranged return because the listed event days outlast the last usable bus. No reservation is held by this project."
+      "notes": "Eventbrite read 11 October 2026 advertises free in-person ages-18+ reservations for 14–18 October: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . The headline ends at 22:00 but visible Wed/Thu agenda rows end at 22:30 and Friday at 21:00; confirm times and timezone. Saturday/Sunday rows and FAQ answers were not visible in the extraction, not proven unpublished. No reservation or inventory check was completed. Per-day validity, gate, parking and catering remain open. Keep food, transport and other spending in their own rows, not in admission again.",
+      "price range": "Free “Reserve a spot” advertised on the checked listing. Your reservation, current availability, fee total and day validity are unconfirmed; enter only the actual ticket/fee amount, including zero if confirmed."
     },
     {
       "id": "mobile-connectivity",
