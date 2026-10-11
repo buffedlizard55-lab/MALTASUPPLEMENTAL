@@ -47,7 +47,7 @@
       "date_checked": "2026-10-10",
       "confidence": "partially verified",
       "notes": "MTA’s published rate, age threshold, per-person cap and effective date were checked 10 Oct 2026. The MTA says the contribution must appear as a separate item on the invoice/fiscal receipt. Whether anything is due on this booking depends on actual billable nights, guest ages and the hotel’s invoice; see OQ-23 in docs/OPEN_QUESTIONS.md. No personalized amount has been prefilled.",
-      "price range": "Environmental contribution: €1.50 per person per night for guests aged 18+, from 1 July 2026; maximum €22.50 per person per visit. Six chargeable nights would be €9 per eligible adult."
+      "price range": "Environmental contribution: €1.50 per person per night for guests aged 18+, from 1 July 2026; maximum €22.50 per person per visit. If six nights are chargeable, the amount would be €9 per eligible adult; the MTA page's '15-night' wording is unresolved (OQ-25)."
     },
     {
       "id": "travel-insurance",
