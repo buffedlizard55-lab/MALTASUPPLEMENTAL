@@ -3,8 +3,8 @@
 **Audit date:** 11 October 2026 (UTC)
 **Fixed session branch:** `arena/cc913a9b-maltasupplemental`
 **Starting revision:** `b307c51`
-**Latest upstream integrated locally:** PR #49 at `12578cd`
-**Delivery PR:** [#46](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/46)
+**Latest-main integration:** PR #49 at `12578cd`
+**Delivery PR:** [#46](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/46) — merged to `main` at `25e0176`
 
 ## Result
 
@@ -44,12 +44,14 @@ Food/café, gaming, attraction and dated-event options retain source-specific li
 
 1. **Pass 1 — implementation and integration:** reviewed the existing repository and canonical schema before topic work; preserved main's event/hotel additions; integrated seven datasets, shared pages, accessible navigation, sources and expense planner. The inherited upstream pass recorded 18/18 browser checks; this session merged the latest upstream commit and revalidated current files.
 2. **Pass 2 — adversarial review:** challenged categorical ticket/price, bus/taxi, fare, diversion, radio and MTA claims; retained unknowns, updated the reported Virtus.pro/NIP field, and reviewed backup/restore and amount parsing. The upstream adversarial suite covers malformed/oversized imports, storage denial, CSV safety, refundable holds, wrong years and no-JavaScript/fetch-failure behavior.
-3. **Pass 3 — original-request consistency:** mapped the requested trip topics/review-platform coverage/radio distinctions/expense-planner behavior to pages and docs, kept unverified details in `OPEN_QUESTIONS.md`, confirmed upstream IDs, and reran the complete local suite after integrating PR #49.
+3. **Pass 3 — original-request consistency:** mapped the requested trip topics/review-platform coverage/radio distinctions/expense-planner behavior to pages and docs, kept unverified details in `OPEN_QUESTIONS.md`, confirmed upstream IDs, and reran the complete local suite after integrating PR #49. PR #46 then passed its GitHub check and was merged; the Pages build outcome is recorded below.
 
 ## Local validation after latest-main integration
 
 - `npm test` — **PASS**, validator + JavaScript syntax checks + **21/21 Playwright tests**.
 - `git diff --check` — **PASS** after resolving the latest-main integration and final report edits.
+- GitHub PR #46 check, “Schema, browser and accessibility checks” — **PASS** at 16:37:43 UTC on head `3ad5100`.
+- GitHub Pages latest-build record `1276765781` — **built** for merge commit `25e01762d310bdc71deaa9dc9602f96a7d4565f9`, updated at 16:38:24 UTC.
 - Validator: **7 JSON files / 184 exact-schema records / 281 unique record URLs present in `docs/SOURCES.md` / 15 HTML pages / 176 link attributes / 9 shared navigation destinations / 25 expense rows**.
 - Responsive/accessibility coverage: all active pages at **320/360/768/1024/1440 px**, axe checks, data/render parity, navigation/deep links, JSON backup/restore, CSV safety and planner error cases.
 - Automated checks do not establish external URL liveness, ticket inventory, a personal booking, a date-specific live bus journey, taxi availability, physical radio reception, local match carriage or exhaustive device/assistive-technology coverage.
@@ -65,4 +67,4 @@ Food/café, gaming, attraction and dated-event options retain source-specific li
 
 ## GitHub delivery boundary
 
-PR #49 is an upstream merged change at `12578cd` and is included locally. PR #46 remains the delivery PR from this fixed session branch. Its prior pushed head `7e45b12` was observed as conflicting after `main` advanced; the latest-main integration and local test suite are complete here, but the updated head/check/merge/Pages status must be inspected after the next push. No PR #46 merge or deployment is claimed in this snapshot.
+PR #49 at `12578cd` was integrated before delivery. PR #46 was merged into `main` on 11 October 2026 at 16:38:02 UTC; GitHub reports merge commit `25e01762d310bdc71deaa9dc9602f96a7d4565f9`, from head `3ad510058c77c41cf2920949b4047d921d870578`. The required “Schema, browser and accessibility checks” run passed. The GitHub Pages latest-build endpoint reports status `built` for the same merge commit; the Pages API lists the public site `https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/` with source `main` at `/`. This verifies GitHub's build record, not an independent browser fetch or exhaustive live-content inspection.
