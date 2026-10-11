@@ -168,12 +168,17 @@
         var article = make("article", "record-card");
         article.dataset.expenseRow = record.id;
         var meta = make("div", "record-meta");
-        meta.append(make("span", "pill", record.category), make("span", "pill unverified", "amount not verified"));
+        var confidenceClass = record.confidence === "verified" ? "verified" : (record.confidence === "partially verified" ? "partial" : "unverified");
+        meta.append(
+          make("span", "pill", record.category),
+          make("span", "pill " + confidenceClass, record.confidence + " · amount not prefilled"),
+          make("span", "small", record.area)
+        );
         article.append(meta, make("h3", "", record.name), make("p", "", record.description));
 
         var dl = make("dl", "record-details");
         var priceDetail = make("div", "record-detail");
-        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record.price_range));
+        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record["price range"]));
         dl.appendChild(priceDetail);
         article.appendChild(dl);
 

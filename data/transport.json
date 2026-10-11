@@ -1,7 +1,7 @@
 {
   "topic": "transport",
   "title": "Getting around Malta",
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-11",
   "intro": "The strongest public-transport candidate for event travel is Malta Public Transport route 186 between the Qawra and Ta’ Qali Stadium stops. The operator’s journey planner is the final check for the exact stop, direction, time and service alert on each date; the event’s public match and door times were not available in the sources checked.",
   "records": [
     {
@@ -14,9 +14,9 @@
       "description": "The official Thunderpick page confirms the overall window and phase dates and lists Malta as the location. A Thunderpick-issued release names BLAST Studios Malta; BLAST’s attendee guide for a separate event places BLAST Arena Studios at MFCC, Ta’ Qali. Treat the address as venue-area context only, not event-specific attendee logistics.",
       "source_url": "https://world-championship.thunderpick.io/2026-finals/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The official Thunderpick page was rechecked 10 October. Thunderpick’s announcement names BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . BLAST’s attendee guide is for a previous, separate event and gives the MFCC address: https://blast.tv/cs/news/malta-fan-guide . Neither confirms the TWC street address/pin, attendee entrance, tickets, exact daily match/door times, or event transport. Do not transfer earlier BLAST event access rules.",
+      "notes": "The official Thunderpick page was rechecked 11 October. Thunderpick’s announcement names BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . BLAST’s attendee guide is for a previous, separate event and gives the MFCC address: https://blast.tv/cs/news/malta-fan-guide . Neither confirms the TWC street address/pin, attendee entrance, tickets, exact daily match/door times, or event transport. Do not transfer earlier BLAST event access rules.",
       "price range": "Spectator ticket price/access not verified"
     },
     {
@@ -39,14 +39,14 @@
       "name": "Route 186 diversion — Saturday 17 October evening",
       "category": "Service updates",
       "area": "Ta’ Qali / Mosta / Buġibba corridor",
-      "address": "Route 186 toward Buġibba; affected stops listed by MPT are Gholja 2 through Targa",
+      "address": "Route 186 toward Buġibba; affected stops listed by MPT are Gholja 2 through Targa (plus separate Rabat stop Saqqajja ID 4627 construction closure)",
       "hours": "MPT notice: 19:00 to approximately 00:00, starting 17 October and ending 18 October 2026",
       "description": "A currently published Malta Public Transport notice says Route 186 is diverted on Friday/Saturday evenings from 19:00, starting 17 October, and that stops from Gholja 2 through Targa toward Buġibba will not be served. This overlaps the TWC Playoffs weekend and may matter for the return journey. The notice does not publish TWC-specific service details; check the live planner and service updates before relying on a particular stop or departure.",
       "source_url": "https://www.publictransport.com.mt/latest-service-updates/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The notice specifies affected stops, not a total cancellation of Route 186. It does not itself confirm whether a particular post-event bus will serve the required Qawra stop. Recheck the operator’s updates and planner on the day.",
+      "notes": "Rechecked 11 October: the notice specifies affected stops Gholja 2 through Targa toward Buġibba, not a total cancellation of Route 186. The same service-updates page also lists a construction closure of stop Saqqajja (ID 4627, in Rabat) on Route 186 through 1 January at approximately 04:00. It does not itself confirm whether a particular post-event bus will serve the required Qawra stop. Recheck the operator’s updates and planner on the day.",
       "price range": "Normal route fare; no separate event fare stated"
     },
     {
@@ -112,7 +112,7 @@
     {
       "id": "mpt-fares-cards",
       "name": "Bus fares and visitor travel cards",
-      "category": "Bus fares",
+      "category": "Bus fares & mode comparison",
       "area": "Malta and Gozo",
       "address": "Tickets may be purchased onboard by cash or contactless; sales points and machines are listed by MPT",
       "hours": "Tickets on bus; card validity depends on the selected product",
@@ -123,6 +123,21 @@
       "confidence": "partially verified",
       "notes": "MPT states Airport Direct is included with an Unlimited Travel Card and lists TD1 separately at €3.50 without one. Personalized Tallinja-card free-travel rules and TD-route exclusions differ from visitor cards; check the product terms rather than assuming all buses are free. Sales offices/machines: https://www.publictransport.com.mt/office-and-ticket-machine/.",
       "price range": "MPT currently lists €2 winter / €2.50 summer day tickets, valid for two hours; €19 shareable 12-journey card; €25 individual Explore Adult 7-day card"
+    },
+    {
+      "id": "mode-comparison-summary",
+      "name": "Transport mode comparison — convenience, price, value & feasibility",
+      "category": "Bus fares & mode comparison",
+      "area": "Malta-wide (Airport, Qawra, Ta’ Qali & island connections)",
+      "address": "Not applicable — mode-by-mode comparison across published operator services",
+      "hours": "Depends on selected mode: Route 186 Qawra stop 952 listed 06:10–21:38 (30-min frequency) with last listed return arrival at Buġibba Bay 1 at 21:26; TD1 hourly; app ride-hailing/taxis on demand; ferries by seasonal timetable",
+      "description": "Public buses offer the lowest published fares (Airport Direct TD1 €3.50 without an eligible unlimited card; day tickets €2 winter / €2.50 summer; €19 12-journey card; €25 Explore Adult 7-day card) and direct scheduled corridors (TD1 and Route 214 for the airport; Route 186 and Route 214 between Qawra and Ta’ Qali), but require checking stop-to-door walks, the Route 186 return via St Paul’s Bay/Buġibba (last listed arrival at Buġibba Bay 1 at 21:26), and the Saturday 17 October 19:00–00:00 Route 186 detour. Ride-hailing and taxis (Bolt, eCabs, Malta Taxi) give the highest door-to-door convenience and best late-return feasibility at dynamic app/dispatch prices. Rental cars (airport Park East Level 1) add flexibility for rural trips but are not required for Qawra or Ta’ Qali and involve left-hand traffic, narrow/congested roads, parking, fuel, and insurance costs. Ferries serve fixed water corridors (Valletta ↔ Sliema/Three Cities; Malta ↔ Gozo) subject to weather and the 14/17 October Gozo Highspeed race restrictions.",
+      "source_url": "https://www.publictransport.com.mt/journey-planner/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Synthesizes the verified operator sources in this dataset: MPT planner https://www.publictransport.com.mt/journey-planner/ , Route 186 https://www.publictransport.com.mt/route/186/ , Route 214 https://www.publictransport.com.mt/route/214/ , Airport Direct https://www.publictransport.com.mt/other-services/airport-direct/ , MPT fares https://www.publictransport.com.mt/fares-and-tickets/ , MPT service updates https://www.publictransport.com.mt/latest-service-updates/ , Bolt https://bolt.eu/en/cities/malta/ , eCabs https://ecabs.com.mt/ , Malta Taxi https://www.maltataxi.mt/ , Airport car rental https://maltairport.com/renting-a-car/ , Valletta Ferry Services https://www.vallettaferryservices.com/ , Gozo Channel https://www.gozochannel.com/ferry/fares/passenger/ , and Gozo Highspeed https://gozohighspeed.com/pages/fares .",
+      "price range": "Bus: €2–€2.50 day ticket, €3.50 TD1, €19 12-journey, €25 7-day; Ferries: €3–€8.50 published adult fares; Ride-hailing/taxis & car hire: live quote required"
     },
     {
       "id": "malta-ride-hailing-taxis",
