@@ -1,9 +1,24 @@
 {
   "topic": "activities",
   "title": "Activities, landmarks & events in Malta",
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-11",
   "intro": "A source-checked shortlist for the 13–19 October 2026 stay: confirmed event dates, ticketed activities, sights, and gaming-venue status. TWC spectator access and daily match times remain unconfirmed. Google Maps currently marks three legacy public PC/esports-centre listings as permanently closed; The Eden XP Arcade is a separate, current general arcade/VR option, not a PC LAN café. Recheck operators and live schedules before travelling.",
   "records": [
+    {
+      "id": "ax-odycy-base-hotel",
+      "name": "AX ODYCY — trip base hotel, Qawra",
+      "category": "Your base (AX ODYCY)",
+      "area": "Qawra seafront, St Paul's Bay",
+      "address": "Qawra Coast Road, Qawra SPB 1902, Malta",
+      "hours": "No published check-in/check-out times were captured; the hotel page lists a 24-hour front desk and late check-out as available.",
+      "price range": "Not published on the checked page; the traveler's booking and rate were not supplied to this project",
+      "description": "The user-supplied trip base, verified against the hotel's own website on 11 October 2026: a 4-star seafront resort at Qawra Coast Road, Qawra, formerly the AX Seashells Resort at Suncrest. The operator's page lists a beachfront position, 24-hour front desk, free Wi-Fi throughout, underground parking, indoor pool, adults-only outdoor/rooftop pool, water park, fitness centre and all-inclusive dining, plus on-site restaurants including the Deck & Keel buffet, Minoa and bars. It is the origin point for every route in this guide.",
+      "source_url": "https://axhotelsmalta.com/odycy/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Operator page re-fetched 11 Oct 2026 (facilities, address and contact details: +356 2354 3000, info.odycy@axhotelsmalta.com). On-property dining is recorded separately in data/food.json. Booking terms, room allocation, meal plan and check-in/check-out times come from the traveler's own reservation, which was not available to this project; the site does not assume them. Walking times from the hotel to nearby bus stops were not measured."
+    },
     {
       "id": "twc-finals-2026",
       "name": "Thunderpick World Championship 2026 Finals",

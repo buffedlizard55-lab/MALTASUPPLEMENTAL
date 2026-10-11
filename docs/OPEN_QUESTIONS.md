@@ -1,6 +1,6 @@
 # Open questions and unverified items
 
-Last updated: 2026-10-10 (UTC)
+Last updated: 2026-10-11 (UTC)
 
 Do not fill these gaps with guesses. Update or resolve only when a direct source or booking document is available.
 
@@ -42,3 +42,16 @@ Do not fill these gaps with guesses. Update or resolve only when a direct source
 ## OQ-23 — Exact Malta environmental-contribution amount for this booking
 
 The Malta Tourism Authority states that from 1 July 2026 the contribution is €1.50 per night for each guest aged 18 or over, capped at €22.50 per eligible person per visit, and must appear as a separate invoice/fiscal-receipt item. The conditional six-night arithmetic is €9 per eligible adult only if six nights are billable; the actual amount depends on the booking, guest ages, nights charged, and hotel invoice. Confirm those details with AX ODYCY before entering a budget/actual amount. Source checked 2026-10-10: https://mta.com.mt/services/environmental-contribution/.
+
+### Added or updated 2026-10-11
+
+| Question | Why it matters | What would resolve it | Status |
+|---|---|---|---|
+| Is the Thunderpick finals event actually staged at BLAST Arena Studios Malta (MFCC South Gate, Millennium Stand, Attard ATD 4000)? | Route planning needs a destination; the address is now corroborated for the venue, but only the organizer's own naming links the event to it. | Organizer/ticket-holder materials naming the venue and gate. | Partly resolved: the venue's published address was corroborated on 11 Oct 2026 by the Malta Tourism Authority directory, GamingMalta and the ticketing agent Eventworks. The event-to-venue mapping still rests on the organizer's and press release's "BLAST Studios Malta" naming; the event-specific gate/entrance remains unpublished. |
+| Does any night bus serve Ta' Qali or Attard after a late event finish? | Route 186's last listed evening passes on the Mosta corridor are about 21:53–21:55, and playoff matches may end later. | Operator night-route map/timetable or a journey-planner query for a late evening on the event dates. | Open. Night services are confirmed only for Buġibba (N212) and Valletta (N13) from the operator's April 2026 announcement; the operator's generic night-routes page returned 404 on 11 Oct 2026. Plan a taxi/ride-hailing backup. |
+| Which broadcaster provides the DAB+ service named "Sports Channel" on Digi B 2 (block 12A)? | It is the only sports-named service in WorldDAB's current Malta service lists, so it is the most promising DAB+ lead — but the brand and schedule are unknown. | Multiplex-operator channel list, station identification from a receiver scan, or rights-holder confirmation. | Open. WorldDAB lists the service name only; a third-party directory separately claims a "Talk Sport" channel on 6C, which was not corroborated. |
+| Is Radio Sportiva still carried on Malta DAB+? | Digi B's channel page lists it, but WorldDAB's 6A/6C/12A service lists do not name it, so the two sources conflict. | Up-to-date multiplex service list or an on-site DAB+ scan that shows the service name. | Open — recorded as `unverified` in `data/radio.json`. |
+| Does Calypso Radio 101.8 still broadcast a sport programme? | A third-party directory lists "Mużika u Sport" with Twanny Scerri, but the station's own current schedule page (checked 11 Oct 2026) does not show it. | The station's own dated schedule for the trip week. | Open — the sport programme is not counted anywhere on the site. |
+| Does Radju Malta (93.7 FM) carry live sport, and on what schedule? | Third-party directories describe the station's format as including sport, but no official programme schedule was verified. | PBS/Radju Malta's own programme schedule. | Open — not counted as verified sports radio. |
+| What exact Malta clock time do BBC World Service Sportsworld editions air on 17 and 18 October 2026? | The BBC's next-on list renders times in the viewer's local time zone, so a fixed time could not be quoted without re-reading the page in Malta time. | Read the BBC page (or a schedule app) with Malta as the local zone, or check the episode page in GMT and convert. | Open — dates (17 and 18 October) are confirmed; times are deliberately not restated. |
+| Is any radio station in Malta carrying the Thunderpick event, the Premier League fixtures, the Europa League matchday or the Rolex Middle Sea Race? | Fixture lists and event dates are not evidence of radio carriage, and the site must not present them as such. | Rights-holder or station confirmation, or a trip-week schedule naming the fixture. | Open — no radio carriage of any named trip-window event was verified on 11 Oct 2026. |

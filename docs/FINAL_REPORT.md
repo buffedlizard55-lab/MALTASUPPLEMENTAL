@@ -51,3 +51,75 @@ See [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md) for the full list, evidence gaps, a
 - A headless DOM simulation is not a substitute for visual review on real desktop/mobile browsers or assistive technologies.
 - GitHub Pages is configured to publish the repository root from `main`. After PR #14 merged, the Pages API reported `built` for its `main` merge commit `2aeb536` (10 October 2026). This confirms the static-site build, not external-link liveness or actual browser/device rendering.
 - This guide is a planning aid, not a booking, dispatch, immigration, tax, legal, medical, or event-access guarantee.
+
+## Session report — 11 October 2026 (two days before the trip window)
+
+This pass re-verified the volatile facts, expanded the radio workstream, and rebuilt the expense planner for a fast itinerary fill. The offline gate is green:
+`python3 scripts/validate_site.py` reports **6 topic JSON files / 116 exact-schema records; 195 unique record URLs present in `docs/SOURCES.md`; 15 HTML pages / 91 link
+attributes; 8 navigation destinations; 18 expense categories + 7 day rows wired**, and `node --check` passes on `js/site.js` and every inline script.
+
+### What was verified this session (all re-read on 11 October 2026)
+
+* **Venue address.** BLAST Arena Studios Malta is published at MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000 by three independent listings — the
+  Malta Tourism Authority directory, GamingMalta and the ticketing agent Eventworks. This upgrades the venue from "venue-area context" to a corroborated address. What is
+  *not* verified: that the Thunderpick finals are staged there (the mapping rests on the organizer's own "BLAST Studios Malta" naming) and the event gate, doors or ticket terms.
+* **Event-day bus.** Route 186's stop-level timetable shows roughly half-hourly passes toward Buġibba through the Mosta corridor with final listed evening times of about
+  21:53–21:55. Malta Public Transport's service-update page lists a Route 186 diversion **weekly on Friday and Saturday 19:00–00:00 starting 17 October** (toward Buġibba, stops
+  from Gholja 2 through Targa skipped) alongside parallel diversions for 13 other routes in the same corridor, plus a stop closure at Saqqajja (ID 4627) on routes including 186.
+* **Late travel.** Night services are confirmed from Buġibba (N212, 23:50–01:30 every 20 minutes, Monday–Sunday) and Valletta (N13, weekdays 23:10–02:10 every 10 minutes) by the
+  operator's April 2026 announcement. No night route serving Ta' Qali or Attard was verified — the site tells the traveler to plan a taxi/ride-hailing backup rather than assume one.
+* **Fares.** MPT's page shows €2.00 winter single (2-hour validity, cash or contactless), 12 Single Day Journeys €19, Explore Flex from €21/€27, Explore Adult 7-Day €25, Explore Child
+  €7, Airport Direct two trips €6, and lists sales points including the airport Welcomer's Hall, Valletta, Buġibba and Sliema Ferries. Its fare text is tied to the period
+  "19 October 2025 to 13 June 2026", so the applicable fare for these dates is flagged as unestablished rather than quoted as settled.
+* **Radio (the biggest expansion: 5 → 10 records).** WorldDAB's Malta page confirms three DAB+ multiplexes — Digi B Network 6A (181.936 MHz), Digi B 3 6C (185.360 MHz) and
+  Digi B 2 12A (223.936 MHz). BBC World Service and Rai Radiouno appear on 6A; **12A carries a regular service literally named "Sports Channel"**, whose broadcaster the directory
+  does not identify. Rai's own programme page confirms "Tutto il calcio minuto per minuto" airs Saturdays and Sundays with Serie A and B coverage in Italian — the most concrete
+  live-commentary lead on the Maltese DAB+ line-up. NET FM's published grid (FM 101 MHz) lists Saturday "Hits & Score" at 16:00, Sunday "Sports Box" at 15:00 and Friday
+  "Mhux Premier biss" at 18:30, but describes no programme content, so commentary is not claimed. Radio Sportiva's carriage conflicts between Digi B's directory and WorldDAB and
+  is downgraded to **unverified**; a third-party "Talk Sport on 6C" claim stays unconfirmed; Calypso's third-party sport listing contradicts the station's own current schedule page.
+* **Trip-window sport context.** Recorded as fixture context only (never as carriage): the Premier League matchweek of 17–18 October with official BST kick-offs, UEFA Europa
+  League matchday 2 on Thursday 15 October, and the NFL slate of Sunday 18 October (London game 15:30 Malta time; late games after midnight Maltese time). Every one of these
+  records states that a fixture is not evidence that a station carries it.
+* **Base hotel.** The AX ODYCY's own site is now a record (address, 24-hour front desk, free Wi-Fi, pools, water park, all-inclusive dining, contacts) so the base is documented
+  alongside the destination.
+
+### What changed in the product
+
+* `data/transport.json` 13 → **16 records**; `data/radio.json` 5 → **10**; `data/activities.json` 29 → **30**; all datasets re-dated 2026-10-11 with per-record `date_checked`.
+* `data/expenses.json` gained a `day_rows` array (7 days, 13–19 October) and `costs.html` gained **day-by-day budget/actual/note rows, an itinerary/confirmations notes box,
+  day totals, a grand total and CSV export of all three sections** — so a supplied itinerary can be costed in minutes. Nothing is prefilled.
+* `scripts/validate_site.py` now enforces the seven day rows and the planner wiring; `docs/DATA_SCHEMA.md` documents the dataset-level extension.
+* `index.html`, `getting-around.html` and `radio.html` were rewritten where the old text understated what is now verified (venue address, evening bus limits, DAB+ multiplexes).
+
+### Verification performed (not just written)
+
+* **Planner simulation:** jsdom loaded `costs.html`, stubbed the data fetch, typed amounts, and checked rendering, totals, storage, CSV and reset — **18/18 checks passed, 0 runtime errors**.
+* **Site simulation:** jsdom ran `js/site.js` against all five topic pages — navigation, `aria-current`, card counts vs record counts, source links, confidence pills, search filtering,
+  and a check that no `undefined`/`NaN` leaks into rendered text — **49/49 checks passed**; the index menu toggle and footer snapshot date were also exercised.
+* **Schema/source gate:** every URL cited anywhere in a record is present in `docs/SOURCES.md` (195 unique URLs), and every record carries a date, confidence and notes.
+* **Bug found and fixed by review:** a stylesheet cleanup had corrupted the `.topic-tools label` and `.topic-tools input` selectors; both were restored before commit, which is exactly
+  what Pass 2 is for.
+
+### Still unverified / limitations (carry into the next session)
+
+1. **Event access.** Ticket terms, doors, daily match times and the TWC-specific entry gate are still unpublished by the organizer; the venue mapping rests on organizer naming.
+2. **Late-night return from Ta' Qali.** No night route serving Ta' Qali/Attard was verified; the 17 October diversion materially affects the Mosta/Naxxar stops on the return leg.
+3. **Fares.** The applicable fare for 13–19 October 2026 is not established by the operator's page text; recheck before buying.
+4. **Radio reception and carriage.** No DAB+/FM receiver test was possible at the hotel or venue; the broadcaster behind "Sports Channel" (12A) is unknown; no fixture-specific
+   commentary carriage was confirmed anywhere. BBC Sportsworld's Malta clock times were deliberately not restated because the BBC page renders times in the viewer's zone.
+5. **Platform coverage.** Yelp, Instagram, TikTok, Facebook and X requests were blocked (HTTP 403) and Reddit refreshes were blocked in earlier checks; Google Maps views were limited.
+   The food/activities shortlists are therefore sourced from operator pages plus dated TripAdvisor/Maps snapshots, not a comprehensive social-media ranking.
+6. **Physical checks.** Walking times from the hotel to its nearest bus stops, the Ta' Qali walk from the stop to the venue gate, and real-device mobile rendering were not measured;
+   the responsive CSS and layout were reviewed in code and via DOM simulation only.
+7. **External link liveness.** The gate proves a URL is logged, not that the remote site answers today; volatile pages should be re-opened before travel.
+
+### Suggested next-session tasks (priority order)
+
+1. When the itinerary and ticket email arrive: paste them into the planner's notes box, fill the seven day rows, and export the CSV; then convert the confirmed event session times into
+   a dated Malta Public Transport planner query for outbound and return on each event day.
+2. Ask the organizer (or the ticket-holder channel) for the venue gate, door times and any event shuttle, then update `data/transport.json` and remove the corresponding open question.
+3. Re-check fares and travel-card terms on the operator's live pages in the last 48 hours before departure, and read the Route 186/214 service-update page for new notices.
+4. Re-scan DAB+ on arrival: identify the "Sports Channel" broadcaster on 12A, confirm BBC World Service and Rai Radiouno reception indoors, and note which of the two sports programmes on
+   NET FM (FM 101) is actually commentary. Record findings in `docs/SOURCES.md` and `data/radio.json` (with a new `date_checked`).
+5. Confirm the meal plan and whether the environmental contribution is charged on the invoice, then update the hotel rows in the planner.
+6. Capture one real phone screenshot per page (desktop and mobile) to close the responsive-rendering gap the automated gate cannot cover.

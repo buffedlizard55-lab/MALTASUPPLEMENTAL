@@ -1,8 +1,8 @@
 {
   "topic": "expenses",
   "title": "Quick-fill Malta expense planner",
-  "last_updated": "2026-10-10",
-  "intro": "A blank-by-default planner for 13–19 October 2026. Enter full trip/party amounts in euros (€) consistently; no flight, hotel, meal, fare, ticket, or reimbursement amount has been assumed.",
+  "last_updated": "2026-10-11",
+  "intro": "A blank-by-default planner for 13–19 October 2026 with 18 category rows plus one quick-entry row per trip day. Enter full trip/party amounts in euros (€) consistently; no flight, hotel, meal, fare, ticket, or reimbursement amount has been assumed. Category rows and day rows are separate views — do not enter the same spend in both.",
   "records": [
     {
       "id": "flights",
@@ -273,6 +273,36 @@
       "confidence": "unverified",
       "notes": "VisitMalta is a discovery link, not an incidentals price source. No amount has been estimated or prefilled.",
       "price range": "User-entered; starts blank"
+    }
+  ],
+  "day_rows": [
+    {
+      "date": "2026-10-13",
+      "label": "Day 1 — Tue 13 Oct"
+    },
+    {
+      "date": "2026-10-14",
+      "label": "Day 2 — Wed 14 Oct"
+    },
+    {
+      "date": "2026-10-15",
+      "label": "Day 3 — Thu 15 Oct"
+    },
+    {
+      "date": "2026-10-16",
+      "label": "Day 4 — Fri 16 Oct"
+    },
+    {
+      "date": "2026-10-17",
+      "label": "Day 5 — Sat 17 Oct"
+    },
+    {
+      "date": "2026-10-18",
+      "label": "Day 6 — Sun 18 Oct"
+    },
+    {
+      "date": "2026-10-19",
+      "label": "Day 7 — Mon 19 Oct"
     }
   ]
 }

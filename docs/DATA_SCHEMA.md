@@ -19,3 +19,14 @@ Every record in `data/*.json` uses exactly the 13 fields defined in the canonica
 | `notes` | Caveats, conflicts, unknowns, source context, or related corroborating URLs. Never silently promote an unverified claim. |
 
 Each topic file is a JSON object with `topic`, `title`, `last_updated`, `intro`, and a `records` array. Dataset-level metadata is separate; every object in `records` must match the schema exactly, use an absolute HTTPS `source_url`, an ISO date, and an allowed source/confidence value. The primary URL and any supporting links in `notes` belong in [`SOURCES.md`](SOURCES.md). The A–E topic pages render factual listing cards from their JSON files via `js/site.js`. The F expense planner uses `data/expenses.json` to create editable rows; those records are optional reference prompts, not prefilled estimates or quotes. The repository validator checks the schema and source-log coverage.
+
+## Dataset-level extension used by the expense planner
+
+`data/expenses.json` also carries a top-level `day_rows` array (added 2026-10-11) so the planner can be filled day by day once an itinerary is supplied. Each entry has exactly two string keys:
+
+| Key | Meaning |
+|---|---|
+| `date` | ISO date (`YYYY-MM-DD`) for one trip day, 13–19 October 2026 inclusive. |
+| `label` | Display label, e.g. `Day 7 — Mon 19 Oct`. |
+
+`day_rows` is dataset metadata, not a record: it deliberately does not use the 13-field record schema because a day is not a place or service and has no source URL, price or confidence of its own. The validator asserts exactly seven day rows with consecutive dates, and `costs.html` renders one editable budget/actual/note row per day, saves them in the same browser-local store as the category rows, and exports them to CSV. Category rows and day rows are separate views of the same spend; the page warns against entering an amount in both.
