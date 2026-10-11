@@ -21,18 +21,18 @@
     },
     {
       "id": "gzira-mosta-2026-10-14",
-      "name": "Gżira United v Mosta FC — Malta Premier League",
+      "name": "Gżira United v Mosta FC — VBet Malta Premier League 2026/27",
       "category": "Confirmed event dates — football",
-      "area": "Paola",
-      "address": "Tony Bezzina Stadium, Paola, Malta",
-      "hours": "Wednesday 14 October 2026 at 19:00, as listed on the Malta FA ticket page.",
-      "price range": "Adults €10; seniors €6; children under 16 enter free but must collect a ticket at the gate. Ticket terms may change.",
+      "area": "Malta (town not stated on the ticket page)",
+      "address": "Tony Bezzina Stadium (street address not stated on the ticket page)",
+      "hours": "Wednesday 14 October 2026 at 19:00 (ticket page, tickets.mfa.com.mt).",
+      "price range": "Adult €10 (Gżira and Mosta sides); senior €6; children under 16 free, collected from the ticket booths at the entry gates; booking fee shown as €0.00",
       "description": "The live Malta FA match-specific ticket page lists Gżira United v Mosta FC at Tony Bezzina Stadium on 14 October at 19:00. Check ticket availability and the live fixture page before travelling.",
       "source_url": "https://tickets.mfa.com.mt/matches/gzira-united-fc-vs-mosta-fc-2026-10-14",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The match-specific Malta FA page confirms date, time, stadium and ticket categories. Hibernians FC identifies Tony Bezzina Stadium as being in Paola: https://www.hiberniansfc.mt/stadium/. This direct listing resolves the earlier search-result fixture/time discrepancy; recheck before purchase."
+      "notes": "The EventWorks-hosted ticket page (tickets.mfa.com.mt) was read on 11 Oct 2026 and shows Gżira United FC v Mosta FC, Tony Bezzina Stadium, Wed 14 Oct 2026 at 19:00, with the prices above. Ticket availability and terms may change; check the page before purchase. Radio or broadcast carriage was not checked."
     },
     {
       "id": "rolex-middle-sea-race-2026",
@@ -55,14 +55,14 @@
       "category": "Official event listing — site access conflict",
       "area": "Birżebbuġa",
       "address": "Borġ in-Nadur Prehistoric Complex, Sqaq In-Nadur, Birżebbuġa, Malta",
-      "hours": "The event page lists Saturday 17 October 2026, 13:00–16:00, with arrival by 12:45. However, Heritage Malta’s general opening-hours notice checked 9 October says Borġ in-Nadur is closed to visitors due to road works until further notice; event access/status needs direct confirmation.",
-      "price range": "The event page lists €55 per adult, senior, student or child; €45 for Heritage Malta members. Do not assume tickets are available or that the event can proceed while the closure notice is active.",
+      "hours": "Saturday 17 October 2026, 1:00–4:00 pm (shown as 13.00–16.00 in the date box, so the two entries agree). Participants are to be on site by 12:45 pm. Heritage Malta’s opening-hours page (checked 11 Oct 2026) still says Borġ in-Nadur is closed to visitors due to road works until further notice; access for this event needs direct confirmation.",
+      "price range": "€55 adults, seniors, students and children; €45 members (event page, checked 11 Oct 2026)",
       "description": "Heritage Malta’s dedicated page advertises this ticketed afternoon-tea event, but its current site-wide notice separately says Borġ in-Nadur is closed to visitors due to road works. Treat the event as listed but not fully confirmed for access or delivery until the organizer clarifies the conflict.",
       "source_url": "https://heritagemalta.mt/whats-on/picnic-in-the-1800s/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The dedicated event page gives the schedule, arrival instruction, description and listed prices: https://heritagemalta.mt/whats-on/picnic-in-the-1800s/. The separate current Heritage Malta opening-hours page says: ‘due to road works, Borġ in-Nadur Prehistoric Complex will be closed to visitors until further notice’: https://heritagemalta.mt/opening-hours/. Contact Heritage Malta and confirm the event is proceeding and the site is accessible before travelling or budgeting it as committed. It also coincides with TWC Playoffs and the Rolex Middle Sea Race start; their exact times are not published."
+      "notes": "The event page (https://heritagemalta.mt/whats-on/picnic-in-the-1800s/, checked 11 Oct 2026) gives the date, time, price, on-site time, afternoon tea with Taste History, a Prosecco welcome drink, and the Borġ in-Nadur address. It does not mention the road-works closure. The Heritage Malta opening-hours page (https://heritagemalta.mt/opening-hours/, checked 11 Oct 2026) says the site is closed to visitors until further notice. Contact Heritage Malta to confirm the event is going ahead and the site is accessible before travelling or budgeting it as committed. The event page recommends signing up to Heritage Malta alerts for postponements."
     },
     {
       "id": "in-guardia-2026-10-18",

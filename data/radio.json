@@ -108,6 +108,66 @@
       "confidence": "partially verified",
       "notes": "The 'Next Saturday' and 'Next Sunday' entries are not mapped to 17–18 October in the snapshot checked; that mapping is an inference and must be confirmed on the BBC page on the day. BBC Sounds/stream access from Malta was not tested and must not be assumed. The user's 'Kalshi-market' framing was not verified: no Kalshi market, EPL fixture set for 13–19 October, or Malta broadcast-rights deal was checked. Third-party TV listings (not radio) show Premier League rights for Melita/GO TSN channels; they were not used as radio evidence.",
       "price range": "Not applicable (listing); receiver and streaming costs not checked"
+    },
+    {
+      "id": "net-fm-friday-mhux-premier-biss",
+      "name": "NET FM — Friday 18:30 ‘Mhux Premier biss’ slot",
+      "category": "FM programme lead",
+      "area": "Nationwide licensed FM service in Malta (FM 101 MHz)",
+      "address": "Not published",
+      "hours": "NET FM’s recurring Friday grid lists 18:30 ‘Mhux Premier biss’ (time zone not stated). Friday 16 October 2026 is inside the trip window; the programme’s content for that date is not confirmed.",
+      "price range": "Free-to-air; receiver cost not checked",
+      "description": "NET FM’s published Friday schedule includes an 18:30 programme titled ‘Mhux Premier biss’ (Maltese for roughly ‘not only the Premier’). The title suggests Premier League talk, but the format, presenters and whether it carries live match commentary were not verified. Treat it as a schedule lead only.",
+      "source_url": "https://netfm.com.mt/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Schedule from NET FM’s own grid, checked 11 October: https://netfm.com.mt/ . Frequency from the Broadcasting Authority: https://ba.org.mt/stations-licenced . The grid is recurring, does not state a time zone and is not a dated 16 October 2026 programme listing. It is not a confirmed football commentary broadcast."
+    },
+    {
+      "id": "premier-league-official-live-audio",
+      "name": "Premier League official live audio — availability in Malta not confirmed",
+      "category": "Internet / app audio offer — not AM/FM/DAB+",
+      "area": "Online or app; Malta availability not checked",
+      "address": "Not applicable",
+      "hours": "Not established: the official Matchweek 7 Saturday page returned “No blog was found for this match week” on 11 Oct 2026, so no live-audio times, sign-in terms or territory information were confirmed.",
+      "price range": "Not checked",
+      "description": "A Premier League live-audio offer was looked for on the official Matchweek 7 Saturday page but not found in the page content. Any such offer would be an internet or app stream, not over-the-air AM, FM or DAB+ radio, so it does not meet the broadcast-radio requirement and must not be counted as Maltese radio coverage.",
+      "source_url": "https://www.premierleague.com/en/matchweek/2026_7/blog/saturday",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "Checked 11 Oct 2026: the Matchweek 7 Saturday blog URL returned “No blog was found for this match week”. The official 2026/27 matches page (Matchweek 6 visible) shows US broadcaster tags only in the portion read: https://www.premierleague.com/en/matches/premier-league/2026-27 . No Malta broadcaster was seen there. The Premier League live-audio terms and availability in Malta remain open (see docs/OPEN_QUESTIONS.md)."
+    },
+    {
+      "id": "epl-fixtures-trip-weekend-17-19-oct",
+      "name": "Premier League fixtures on the trip weekend (17–19 Oct) — fixture list, not radio",
+      "category": "Football fixtures (not radio carriage)",
+      "area": "England (Premier League); times converted to Malta time",
+      "address": "Not applicable",
+      "hours": "Guardian listings are in US Eastern time (EDT); Malta is 6 hours ahead of EDT on these dates. Sat 17 Oct: Everton v Chelsea 13:30; Brentford v Liverpool 16:00; Fulham v Hull City 16:00; Manchester City v Ipswich Town 16:00; Newcastle United v Aston Villa 18:30. Sun 18 Oct: AFC Bournemouth v Sunderland 15:00; Brighton & Hove Albion v Crystal Palace 15:00; Leeds United v Manchester United 15:00; Nottingham Forest v Arsenal 17:30. Mon 19 Oct: Tottenham Hotspur v Coventry City 21:00 (from a Guardian search snippet).",
+      "price range": "Not applicable; no ticket or broadcast price checked",
+      "description": "A secondary fixture list for the trip weekend, useful for choosing which Premier League matches to listen for. It does not show whether any match is broadcast on Maltese radio, and it is not an official Premier League fixture list.",
+      "source_url": "https://www.theguardian.com/football/fixtures/2026/Oct/17",
+      "source_type": "directory",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "The Saturday 17 Oct section of the Guardian fixture page (https://www.theguardian.com/football/fixtures/2026/Oct/17) was read in full; its times are labelled EDT. Malta is 6 hours ahead of EDT on these dates, which is how the Malta times above were computed. Cross-check: BBC Radio 5 Live lists Brentford v Liverpool live commentary at 15:00 UK time on Saturday 17 Oct, which corresponds to 16:00 Malta time (see the BBC 5 Live record). Sunday and Monday entries came from search-result snippets of the same listings, so confirm them. The official Matchweek 7 fixture list did not load in this check (see docs/OPEN_QUESTIONS.md). Confirm kick-off and postponement notices on premierleague.com before listening."
+    },
+    {
+      "id": "worlddab-sports-channel-lead",
+      "name": "‘Sports Channel’ — WorldDAB Malta multiplex lead (identity unverified)",
+      "category": "DAB+ directory lead",
+      "area": "Malta Digi B 2 multiplex listing (Band III block 12A, 223.936 MHz)",
+      "address": "Not published; technical directory entry",
+      "hours": "No schedule was found for this service.",
+      "price range": "Free-to-air if broadcast; DAB+ receiver required; hardware price not checked",
+      "description": "WorldDAB’s Malta multiplex page lists a service named ‘Sports Channel’ (Regular Service) under the Digi B 2 multiplex on Band III block 12A at 223.936 MHz. The directory does not identify the operator, language, schedule or whether it carries live matches. The Digi B DAB+ channel pages checked on 11 October did not show a ‘Sports Channel’ entry.",
+      "source_url": "https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes",
+      "source_type": "directory",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "Use this only as a DAB+ scan lead and confirm the on-air service name before counting it. The third-party directory claim of a “Sports Channel (Talk Sport)” on 6C is not confirmed by WorldDAB’s Malta multiplex list: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes . Digi B channel list checked 11 Oct: https://dab.com.mt/channels/ ."
     }
   ]
 }

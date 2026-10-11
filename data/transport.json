@@ -81,18 +81,18 @@
     },
     {
       "id": "airport-direct-td1-qawra",
-      "name": "Malta Airport ↔ Qawra by Airport Direct TD1",
+      "name": "Malta Airport → north Malta by Airport Direct TD1 (Qawra stop not confirmed)",
       "category": "Airport transfer",
       "area": "Malta International Airport ↔ Qawra / Buġibba / north Malta",
-      "address": "Airport bus terminal; MPT’s Route TD1 timetable includes Qawra stop Arznell 950. Confirm the stop nearest the hotel entrance in the planner.",
-      "hours": "MPT lists TD1 departures hourly; use the live timetable for the flight arrival time",
-      "description": "This is the most straightforward published public-bus option from Malta International Airport toward Qawra: Airport Direct TD1 runs from the airport toward Cirkewwa via Buġibba and the Qawra area, and its operator timetable lists the Arznell stop in Qawra. The airport terminal is signposted from arrivals. Buses have luggage space; no advance booking is required. The precise walk from the stop to AX ODYCY was not independently measured.",
+      "address": "Malta International Airport bus terminal, which MPT says is signposted on exiting the arrivals area. Whether TD1 has a Qawra stop and which stop is nearest AX ODYCY is not confirmed; check the TD1 timetable and planner.",
+      "hours": "MPT’s Airport Direct page says TD1 runs every hour. Check the live timetable against the flight arrival time.",
+      "description": "MPT’s Airport Direct page lists TD1 from Malta International Airport to Rabat, Buġibba, Mellieħa and Ċirkewwa, hourly. The buses have luggage space and no pre-booking is needed. The page does not name Qawra, so the Qawra connection is unverified and should be checked in the timetable before relying on TD1.",
       "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/.",
-      "price range": "€3.50 per passenger on TD1 without an eligible unlimited travel card; cash or contactless onboard"
+      "notes": "Airport Direct page checked 11 Oct 2026: TD1 hourly to Rabat, Buġibba, Mellieħa and Ċirkewwa; TD2 (St Julian’s, Pembroke), TD3 (St Julian’s, Sliema, Gżira, Msida) and TD4 (Valletta, Gozo Fast Ferry) every 30 minutes; TD5 (Rabat, Buġibba) hourly. Without an Unlimited Travel Card, TD1 is €3.50 and the other Airport Direct routes €3; cash or contactless is accepted onboard; the Unlimited Travel Card includes Airport Direct. Route stop list and times (including any Qawra stop): https://www.publictransport.com.mt/route/TD1/ — not read on 11 Oct, so unverified.",
+      "price range": "€3.50 per passenger on TD1 without an Unlimited Travel Card; cash or contactless onboard"
     },
     {
       "id": "airport-route-214",
@@ -116,13 +116,13 @@
       "area": "Malta and Gozo",
       "address": "Tickets may be purchased onboard by cash or contactless; sales points and machines are listed by MPT",
       "hours": "Tickets on bus; card validity depends on the selected product",
-      "description": "MPT’s fare page says cash/contactless day tickets allow transfers within two hours and lists visitor-card options. A seven-day pass may be convenient for frequent bus use, while the shareable 12-journey card suits occasional/group trips. Prices and inclusions can change; the seasonal effective dates currently shown on the fare page do not establish which single-ticket rate applies 13–19 October 2026, so reconfirm before budgeting or buying.",
+      "description": "MPT’s fare page says single day tickets are bought on the bus with cash or a contactless card and are valid for two hours. The 12 Single Day Journeys card (€19, shareable, valid six months from first use) suits occasional travellers and groups. The fare page states that the €2.00 winter single fare applies from 19 Oct 2025 to 13 Jun 2026; it gives the summer Day Route fare as €2.50 without stating its dates. It does not establish which fare applies on 13–19 Oct 2026, so check before budgeting or buying.",
       "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "MPT states Airport Direct is included with an Unlimited Travel Card and lists TD1 separately at €3.50 without one. Personalized Tallinja-card free-travel rules and TD-route exclusions differ from visitor cards; check the product terms rather than assuming all buses are free. Sales offices/machines: https://www.publictransport.com.mt/office-and-ticket-machine/.",
-      "price range": "MPT currently lists €2 winter / €2.50 summer day tickets, valid for two hours; €19 shareable 12-journey card; €25 individual Explore Adult 7-day card"
+      "notes": "MPT fares page checked 11 Oct 2026 (both chunks): https://www.publictransport.com.mt/fares-and-tickets/ . Fare table: Day Routes (Winter) €2.00; Day Routes (Summer) €2.50; Night Routes €3.00; Special Services €3.00; Tallinja Direct Routes €3.00; TD1 €3.50. Explore Adult 7-day card €25 (individual, excludes tallinja Direct Routes). Airport Direct is included with an Unlimited Travel Card (FAQ on the Airport Direct page). Sales offices and machines: https://www.publictransport.com.mt/office-and-ticket-machine/ . A €50 fine applies for travelling without a valid ticket.",
+      "price range": "Day Routes €2.00 (winter, stated period ends 13 Jun 2026) or €2.50 (summer, dates not stated), valid two hours; 12 Single Day Journeys card €19; Explore Adult 7-day €25"
     },
     {
       "id": "malta-ride-hailing-taxis",
