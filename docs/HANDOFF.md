@@ -23,7 +23,7 @@ A–F were implemented as isolated sequential workstreams on the fixed session b
 
 - Integrated Pass 1 after rebase onto `94733df`: validators and **18/18** browser tests passed.
 - Adversarial fixes above include deposit/hold handling, explicit text-date years, padded numeric backups and the wide-header wrap. Expanded full-suite rerun passed **21/21** after fixing a reload numeric-format regression; all five viewport checks passed.
-- `STATUS.md` / `FINAL_REPORT.md` carry later cumulative results and delivery state. These checks are software/evidence-scope checks, not full external re-certification or a physical journey/receiver test.
+- Pass 3 after the final rebase also passed **21/21**, schema/links/JS and diff/ID-preservation checks. `STATUS.md` / `FINAL_REPORT.md` and [PR #49](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/49) carry the delivery record. These checks are software/evidence-scope checks, not full external re-certification or a physical journey/receiver test.
 
 ## Later-main reconciliation review
 

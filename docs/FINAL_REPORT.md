@@ -2,7 +2,7 @@
 
 **Research date:** 11 October 2026 UTC · **session branch:** `arena/dfefc16f-maltasupplemental`.
 
-**Website:** <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/> · **current delivery gates:** [STATUS.md](STATUS.md).
+**Website:** <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/> · **Delivery:** [PR #49](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/49) · **observed gates:** [STATUS.md](STATUS.md).
 
 ## Scope and result
 
@@ -70,7 +70,7 @@ Sports Channel is listed on 12A by WorldDAB versus 6C/TalkSport by an independen
 
 1. **Implementation and integration:** completed A–F/G, repaired a missing transport anchor, and corrected two test selectors affected by nested disclosures/no-JS extraction. Rebased onto `94733df`, retained upstream additions and passed the full **18-test** suite, schema/link validation and JavaScript syntax checks.
 2. **Adversarial review/fix:** corrected unsupported fare/return/absence/year claims and a duplicated stale team field; exercised failed fetches, malformed hashes, blocked storage, CSV safety, JSON restore, grouping and currency inputs. Added deposit/hold, numeric-normalization, padded-number, malformed/oversized/wrong-trip-backup and text-year cases; the final expanded full suite passed **21/21**. Its first run found a numeric reload-format regression (20/21); normal money formatting is now preserved while overlong leading-zero values are normalized.
-3. **Original-request audit/fix:** matrix below and reconciled README/source/open-question/status/audit/handoff records drafted. The requirement matrix, current-claim scan, and all-upstream-ID check are complete; final regression follows the latest-main rebase.
+3. **Original-request audit/fix:** matrix below and reconciled README/source/open-question/status/audit/handoff records drafted. The requirement matrix, current-claim scan, all-upstream-ID and diff checks are complete. After the final rebase onto `852343f`, validators and the full **21/21** browser suite passed again. All three cumulative local implementation/evidence-scope passes are complete, without claiming full external re-certification.
 
 Most recent full structural result: **7 JSON / 184 records / 281 cited URLs covered in the source log / 15 HTML pages / 176 local link attributes / 9 nav destinations / 25 expense rows**. URL coverage is a provenance-presence test, not a link-liveness or factual certificate. The current expanded suite has 21 tests, with passing render/overflow/axe checks at 320, 360, 768, 1024 and 1440 px.
 
@@ -89,7 +89,7 @@ Most recent full structural result: **7 JSON / 184 records / 281 cited URLs cove
 | Simple responsive overview/subpages and official sources | Shared navigation, canonical projections, mobile menu, filtering/disclosures, relative URLs and no-JS/failure fallback. |
 | Same record schema, ownership and logs | Exact 13 fields, A–F isolated then G; inherited H preserved. Fixed session branch prevents the requested separate-branch execution; documented rather than simulated. |
 | Reverification / three cumulative passes | Observed checks and limitations above. Full external line-by-line recertification of all inherited sources is not complete and is not claimed. |
-| PR, merge and Pages verification | Next delivery gate after final checks; no new PR/merge/deployment success claimed in this pre-delivery snapshot. |
+| PR, merge and Pages verification | [PR #49](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/49) opened; final local checks complete and initial PR CI succeeded. Actual merge/build outcome is recorded in the PR delivery receipt after it occurs, not predicted here. |
 
 ## Next session — priority order
 
@@ -99,3 +99,7 @@ Most recent full structural result: **7 JSON / 184 records / 281 cited URLs cove
 4. Refresh menus/last orders/inventory, gaming status, closure-conflicted outings and dated events; expand review coverage only where accessible. Recheck 18–19 October and marine forecasts.
 5. Check personal documents, medicines/insurance, phone/device compatibility, room/meal plan and invoice. Enter actual EUR costs once, review quick-fill and export a private JSON backup.
 6. Continue fresh field-by-field source verification on retained historical records and broader real-device/browser/accessibility testing; do not replace missing evidence with confidence labels.
+
+## GitHub delivery evidence
+
+The delivery branch is `arena/dfefc16f-maltasupplemental` and the PR is #49. The initial PR check run [38155423677](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38155423677) reported SUCCESS. Pages configuration was read as `main` / root, legacy build. This report is a pre-merge audit snapshot; use [the PR conversation and checks](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/49) for the observed numbered merge, resulting main validation/Pages commit and deployed-page spot-check receipt. A prior successful Pages build does not establish that this PR is live.

@@ -12,8 +12,8 @@
 | E · Terrestrial sports radio · 21 records | Implemented; no named-match reception certified | Malta exact-feed carriage, Sports Channel identity/block, actual compatible-receiver scan and personal Kalshi eligibility unverified | 2026-10-11 |
 | F · Expense planner · 25 records/rows | Implemented, blank defaults, quick-fill/CSV/JSON restore tested | Needs actual itinerary/receipts; local-only storage; keyword matching needs user review | 2026-10-11 |
 | H · Upstream event extension · 8 records | PRs #42/#43 additions preserved and reconciled | Reservation/gate/weekend agenda/timezone/FAQ gaps; bracket clocks are third-party leads, not doors | 2026-10-11 |
-| G · Shared integration | Implemented; documentation reconciled | Final cumulative gates below; full external re-verification of all inherited sources is not complete | 2026-10-11 |
-| GitHub delivery | Local implementation committed/rebased; PR/merge/deploy not yet performed in this snapshot | Recheck advancing main, push fixed branch, open PR, await checks, explicit numbered merge, verify Pages | 2026-10-11 |
+| G · Shared integration | Implemented; all three local cumulative passes complete | Gates below; full external re-verification of all inherited sources is not complete | 2026-10-11 |
+| GitHub delivery | [Delivery PR #49](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/49) | Local gates complete; live merge/CI state is on the PR. Post-merge/Pages receipt is recorded there only after observation | 2026-10-11 |
 
 ## Cumulative review gates
 
@@ -21,10 +21,14 @@
 |---|---|
 | 1 · Implement/integrate/verify | PASS after rebase: schema/source-log/local links, JS syntax and **18/18** browser tests. Earlier missing transport anchor and test-selector issues were fixed before this green run. |
 | 2 · Adversarial review/fix | Fixes implemented: unknown/hidden agenda, return/fare overclaims, repeated field-list update, refund holds, padded numeric restore, explicit date years, desktop nav wrap. Expanded full suite **21/21 PASS**, including 320/360/768/1024/1440px checks; a reload-format regression discovered in the first expanded run was fixed and retested. |
-| 3 · Original-request audit/fix | Requirement matrix, current-claim scan and upstream-ID preservation reviewed. Final regression follows the latest-main rebase; no external completeness claim. |
+| 3 · Original-request audit/fix | PASS after rebase onto `852343f`: original-request matrix, current-claim/diff review, all upstream IDs preserved; validators and **21/21** browser tests rerun. No external completeness claim. |
 
 Manual local screenshots inspected for desktop/mobile overview, event desk, desktop planner and no-JS source fallback. Browser tests exercise responsive layout and axe, but do not establish all assistive-technology behavior or every real device/browser.
 
 ## Evidence boundary
 
 184 exact-schema records across seven datasets are maintained, not 184 freshly reverified external listings. Critical primary pages and selected third-party records were refreshed; exact read scope is logged in `SOURCES.md`, canonical notes and `AUDIT_2026-10-11.md`. No booking, purchase, actual transit journey, measured walk, live quote or RF reception test was performed. Remaining traveler-facing questions are in `OPEN_QUESTIONS.md`.
+
+## Delivery record
+
+PR #49 was opened from this fixed branch after the final rebase. Its initial GitHub validation run [38155423677](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38155423677) succeeded. This document records the pre-merge local gates; the PR's live state/checks and its post-merge delivery comment are the authoritative merge/build receipt, not an unobserved prediction in this file. GitHub Pages is configured for `main` at `/`; publishing that setting is not itself proof that this PR is deployed.
