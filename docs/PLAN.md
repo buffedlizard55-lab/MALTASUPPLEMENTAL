@@ -1,82 +1,55 @@
-# Malta trip guide — implementation plan
+# Malta trip guide — work plan
 
-## Repository review and scope reset
+## Scope and repository review
 
-The repository is a hand-authored static HTML/CSS/JavaScript site with no application build or test setup. The existing content described a different 13–20 October itinerary and included prize/legal/privacy material outside the requested tourism guide. The work resets it to the traveler-supplied Malta trip window (13–19 October 2026), AX ODYCY in Qawra, and the named BLAST Arena Studios location. User-supplied booking details remain planning inputs unless independently corroborated; event access and route facts are not inferred.
+The deliverable is a sourced, mobile-friendly Malta trip guide and a blank-by-default expense planner for the traveler-supplied 13–19 October 2026 stay at AX ODYCY in Qawra, with “BLAST Arena Studios, Attard” as the user-supplied event destination. These are planning inputs, not independent confirmation of a booking, ticket, public entrance, event schedule, or exact venue pin. The site is a static HTML/CSS/JavaScript project with JSON-backed pages, shared navigation and renderer, offline validation, and browser regression tests; no production build step is needed.
+
+Review the repository and existing evidence before edits. Preserve useful main-branch work and its source history; reconcile upstream changes instead of replacing them. The baseline validator checks structure, not the truth of external claims or current link availability.
 
 ## Shared setup (serial, before topic work)
 
-1. Define one common JSON record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`. The canonical `data/record.schema.json` and offline validator enforce these exact 13 keys; the `source_type` values are `official`, `map`, `review`, `social`, and `directory`.
-2. Preserve a dependency-free static site. Topic pages render from their workstream JSON data; the expense planner uses a blank-by-default editable form backed by its expense JSON categories.
-3. Maintain `docs/SOURCES.md` (claim, URL, UTC access date, workstream, limitation), `docs/OPEN_QUESTIONS.md` (missing/conflicting details), `docs/STATUS.md` (progress/blockers), and `docs/HANDOFF.md` (cross-topic findings).
-4. Prefer primary operator, organizer, venue, station, government, or official provider pages for current details. Label review/social snapshots separately. Do not present a fixture list as radio carriage or a route-level bus timetable as a door-to-door trip.
-5. Review the repository before any parallel topic work, create this ownership plan first, and do shared setup serially. Avoid concurrent edits to the same file; log cross-workstream findings rather than changing another owner's page/data.
+1. Use the canonical exact 13-field record schema: `id`, `name`, `category`, `area`, `address`, `hours`, `price range`, `description`, `source_url`, `source_type`, `date_checked`, `confidence`, and `notes`. Keep every record within that schema; topic pages must render the data rather than duplicate or contradict it.
+2. Keep the site dependency-light. Preserve the shared renderer, styles, navigation, page structure, and the expense planner's blank defaults unless integration/testing identifies a concrete defect.
+3. Maintain `docs/SOURCES.md` (claim, URL, access date, workstream, and limitation), `docs/OPEN_QUESTIONS.md` (missing/conflicting or unresolved details), `docs/STATUS.md` (progress/blockers), and `docs/HANDOFF.md` (cross-workstream discoveries).
+4. Prefer primary operator, organizer, station, government, or official provider sources for current facts. Attribute community and social evidence by source and date. Every factual claim needs a traceable source and an appropriate confidence/uncertainty label; do not present unverified claims as fact.
+5. The user-requested source types are `official`, `map`, `review`, and `social`; the repository schema additionally permits `directory` for specialist/provider directories. Do not expand or silently change the schema enum. Where platform coverage is incomplete, document the attempt and limitation rather than implying comprehensive research.
 
-## Workstreams and ownership
+## Parallel-work and ownership protocol
 
-| Workstream | Owned data file | Owned page | Scope | Dependencies |
+The repository must be reviewed and this ownership plan maintained before topic work. Complete shared schema/source-log setup serially. The Arena checkout is fixed to `arena/3a5297d2-maltasupplemental`; there is no isolated sub-agent or workstream-branch runner in this environment, so execute A–F one at a time on this branch. Each workstream edits only its owned topic data/page files. Do not make cross-workstream edits during another workstream; record relevant discoveries in `docs/HANDOFF.md`. Workstream G performs serial integration and owns shared files, source/audit documentation, validation, and reporting. Avoid concurrent edits to shared files.
+
+## Workstreams, owned files, scope, and dependencies
+
+| Workstream | Owned data file(s) | Owned page(s) | Scope | Dependencies |
 |---|---|---|---|---|
-| A. Transport | `data/transport.json` | `getting-around.html` | MLA airport ↔ AX ODYCY; Qawra ↔ user-supplied BLAST Arena Studios destination, with MFCC/Ta’ Qali corroborated only as venue-area context for separate BLAST events, not confirmed TWC attendee logistics; event-day public transit; ferries, ride-hailing/taxi, car hire; practical mode comparison. Treat trip dates and booking inputs as user-supplied; independently verify route/event facts where possible. | Shared schema and page renderer. |
-| B. Food & cafés | `data/food.json` | `restaurants.html` | Sourced restaurant, café, and casual-eating shortlist convenient to Qawra/AX ODYCY, with locality and official/map/review/social evidence. Publish live hours/prices only where checked and disclose inaccessible platforms. | Shared schema and page renderer. |
-| C. Activities, landmarks & events | `data/activities.json` | `activities.html` | Gaming centres, recreation, landmarks, and dated public events during 13–19 October. Distinguish confirmed listings from seasonal/undated suggestions; do not infer spectator access. | Shared schema and page renderer; event/transport cross-notes go to `docs/HANDOFF.md`. |
-| D. Everyday life for a U.S. traveler | `data/everyday.json` | `everyday.html` | Power, mobile service, currency/cards, tipping, safety/emergency/health, entry pointers, language, weather, and practical adaptation. Qualify advice that depends on passport, device, or itinerary. | Shared schema and page renderer. |
-| E. Radio sports | `data/radio.json` | `radio.html` | AM/FM/DAB+ services receivable in Malta, official station schedules/listings during 13–19 October where available, and explicit unverified gaps. Do not treat fixture lists as broadcast evidence. | Shared schema and page renderer; published listings may be unavailable. |
-| F. Expense planner | `data/expenses.json` | `costs.html` | Editable, blank-by-default categories for the trip; budget/actual totals, local browser autosave, CSV export, and reset. Do not assume the flight, hotel booking, party size, ticket, or third-party coverage. | Shared schema; references A–D sources without turning examples into estimates. |
-| G. Integration | Shared site files: `index.html`, `css/style.css`, `js/site.js`, `README.md`, `sources.html`, `docs/*`, `.nojekyll`, `.github/workflows/validate.yml`, `scripts/validate_site.py`; retired legacy entry pages and duplicate/incompatible legacy data artifacts | `index.html` and `sources.html` | Executive summary, accessible responsive navigation, hosting/docs, retired-page notices, automated static validation, Pages deployment, and final integration. Integrates after A–F. | All topic workstreams complete. |
+| A. Transport | `data/transport.json` | `getting-around.html` | MLA airport ↔ AX ODYCY; Qawra ↔ the user-supplied BLAST Arena Studios destination; event-day public-transit routing; ferries, taxi/ride-hailing, and car hire. Compare convenience, price, value, and feasibility. MFCC/Ta’ Qali references are venue-area context only unless TWC-specific logistics are verified. | Shared schema and renderer; event pin/timing uncertainties go to `docs/OPEN_QUESTIONS.md` or `docs/HANDOFF.md`. |
+| B. Food & cafés | `data/food.json` | `restaurants.html` | Sourced restaurants, cafés, and casual eating near Qawra/AX ODYCY and relevant Malta areas; distinguish official facts from Maps/review/social snapshots and record platform access limits. | Shared schema and renderer. |
+| C. Activities, landmarks & events | `data/activities.json` | `activities.html` | Gaming venues, recreation, landmarks, and dated public events during 13–19 October. Distinguish confirmed dated listings from seasonal/undated suggestions; do not infer spectator access or public match times. | Shared schema and renderer; transport/event cross-notes go to `docs/HANDOFF.md`. |
+| D. Everyday life for a U.S. traveler | `data/everyday.json` | `everyday.html` | Power, mobile service, currency/cards, tipping, safety/emergency/health, entry pointers, language, weather, and practical adaptation. Qualify advice dependent on passport, device, carrier, or itinerary. | Shared schema and renderer. |
+| E. Malta radio sports | `data/radio.json` | `radio.html` | Live broadcast receivable on a radio device/frequency in Malta and official station/program schedule evidence for 13–19 October where available. Separate named-match carriage, station schedules, reception, and online streams; fixture listings or streams alone do not prove radio carriage. Log unverified gaps. | Shared schema and renderer; published schedules, reception, and match carriage may remain unconfirmed. |
+| F. Expense planner | `data/expenses.json` | `costs.html` | Editable, blank-by-default trip categories and day-by-day rows; budget/actual totals, browser-local autosave, CSV export, and reset. Do not assume flight/hotel cost, party size, ticket purchase, actual itinerary, or reimbursement. | Shared schema; use A–D evidence as context without turning examples into estimates. |
+| G. Integration | Shared files: `index.html`, `css/style.css`, `js/site.js`, `README.md`, `sources.html`, `docs/*`, `.github/workflows/validate.yml`, `scripts/validate_site.py`, test/config files, `.nojekyll`, and legacy-page notices | `index.html`, `sources.html`, shared navigation and styles | Executive summary, accessible responsive layout/navigation, shared data rendering, hosting/docs, source and audit integration, automated validation/browser tests, Pages readiness, and final reporting. Integrates after A–F without rewriting unsupported topic facts. | All topic workstreams complete; cross-topic findings arrive through `docs/HANDOFF.md`. |
 
-## Execution and verification
+## Research and evidence requirements
 
-Arena fixes this checkout to its session branch, so work is performed on that branch rather than splitting into other branches. Workstreams A–F are completed one at a time under the ownership table; G integrates last. Every data record must have a relevant source URL, access date, allowed source type, confidence, and notes. Missing prices, schedules, opening hours, and booking details remain unset or explicitly qualified.
+Investigate Google Maps/Google Reviews, Yelp, Instagram, TikTok, Facebook, Reddit, and X, and record source coverage, date, access restrictions, and any unavailable/private/login-gated results. Do not invent review scores, popularity rankings, schedules, prices, opening hours, route connections, broadcast rights, reception, or ticket availability. Record supporting URLs and claim-specific limits in `docs/SOURCES.md`; place missing, conflicting, or unverified facts in `docs/OPEN_QUESTIONS.md`. A route-level timetable is not a door-to-door journey, and a fixture list, online stream, or general sports programme is not evidence of named-match carriage on a Malta radio frequency.
 
-After integration, perform three cumulative passes:
+## Three cumulative verification passes
 
-1. **Implementation pass:** validate all JSON/schema/enums, JavaScript syntax, page/data wiring, local paths/anchors, expense planner behavior where the available test environment permits, and clean repository diff.
-2. **Requirements/source pass:** check every requested topic and cross-workstream handoff; review displayed claims against their named sources, preserve platform/access limitations, and fix missing or unsupported content.
-3. **Final audit pass:** line-by-line request and page/data consistency review; check mobile/desktop responsive rules, navigation, external-link targets, and local links; update source/open-question/status logs and report what could not be tested. Then verify the existing GitHub Pages branch configuration and PR/merge state.
+1. **Implementation pass:** validate JSON/schema/enums, source-log coverage, JavaScript syntax, page/data wiring, local paths/anchors, navigation, and expense-planner behavior where the available environment permits. Check local endpoints and data/page consistency.
+2. **Requirements and evidence pass:** review every requested topic and handoff; check factual claims against named sources, date/confidence/uncertainty labels, inaccessible-platform disclosures, and unresolved facts. Fix unsupported or contradictory claims without weakening scope.
+3. **Final audit pass:** line by line, compare the request with pages/data/reports; repeat structural and functional checks; assess desktop and mobile layout, navigation, internal/external links, and data/page consistency; update sources/open questions/status/handoffs/final report. State what live-link, physical-reception, and graphical visual checks could not be completed. Then inspect the explicit PR, CI, mergeability, and Pages delivery state.
 
-## PR #13 / main reconciliation (10 Oct 2026)
+## Historical reconciliation and verification notes
 
-PR #13 was based on an older implementation that added duplicate `/pages/` templates and a separate site builder. `origin/main` already contains the canonical root-page renderer, shared schema/validator, six current JSON datasets, expense planner, and research pages. The reconciliation retained that main architecture, imported only non-duplicate food/activity records, updated the Aquarium and Rolex race facts, and integrated their source/open-question/status/handoff notes. The duplicate `/pages/` copies, `tools/build_site.py`, legacy `data/schema.json`, and duplicate schema document were removed; main’s `.nojekyll`, `docs/DATA_SCHEMA.md`, and validator remain. Legacy `hotel.html`, `itinerary.html`, and `qawra.html` URLs remain noindex notices. No claim was imported without a source and limitation recorded.
+### PR #13 / main reconciliation (10 October 2026)
 
-## Current session — 11 October 2026
+PR #13 was based on an older implementation that added duplicate `/pages/` templates and a separate site builder. The canonical root-page renderer, shared schema/validator, current topic datasets, expense planner, and research pages were retained. Non-duplicate food/activity records and their source/open-question/status/handoff notes were integrated; the Aquarium and Rolex race facts were updated. Duplicate `/pages/` copies, `tools/build_site.py`, legacy `data/schema.json`, and a duplicate schema document were removed; `.nojekyll`, `docs/DATA_SCHEMA.md`, and the canonical validator were retained. Legacy `hotel.html`, `itinerary.html`, and `qawra.html` URLs remain noindex notices. No unsupported claim was imported.
 
-Repository review: main already contains six common-schema topic datasets (107 records),
-root-level topic pages, a shared renderer/design system, a blank expense planner,
-a source log, and a static validation workflow. The baseline validator passes, but
-that establishes structural consistency, not claim truth or live link availability.
-Prior research dates and claimed platform checks must not be silently refreshed.
+### Additional 11 October verification pass (PR #28)
 
-The session remains on `arena/7bf2063c-maltasupplemental`; Arena does not permit
-workstream branches or switching to main. No other open PR will be merged or closed.
-Use parallel independent research requests for A–E with the ownership table above;
-there is no independent sub-agent runner available. Apply data/page edits serially
-within ownership, record cross-topic findings in HANDOFF, and integrate G last.
+The upstream PR #28 work added the `record["price range"]` validator regression guard, a transport mode-comparison summary, bidirectional `Il-Qawra` stop `Arznell (950)` TD1 timetable evidence, U.S. State Department confirmation of 112 emergency services/private-hospital payment expectations/AmEx and ATM notes, and the BBC *Sportsworld* 11 October EPL billing precedent. These sources are historical and claim-specific; they do not establish all event-day journeys, Malta reception, or named-match carriage. The refreshed source/audit documents retain limitations and checked dates.
 
-Shared setup first: preserve the existing folders, schema, shell, navigation, design
-tokens, and claim/URL/date/workstream source-log format. Tighten source types to the
-user's four allowed values (`official`, `map`, `review`, `social`); specialist industry
-sources are attributed as such in notes, not a new enum. Add dated evidence/audit
-records outside topic data to distinguish attempted access from successful support.
+### Current delivery session — PR #31
 
-Planned improvements:
-- A: refresh critical official event/transit evidence; publish a conditional event-day
-  checklist and honest mode/value comparison, without inventing a pin or departure.
-- B/C: refresh official shortlists and dated events; separate closure/status leads
-  from actionable suggestions; expose category/area/confidence filters and maps.
-- D: refresh power/entry/connectivity/forecast sources; keep personal eligibility open.
-- E: verify exact dated radio programme listings, multiplex evidence, and match-carriage
-  limits; never equate a programme, fixture, stream, or Kalshi listing with RF commentary.
-- F: test persistence, CSV handling and edge cases; add itinerary-linked daily line items
-  so bookings can be entered rapidly without guessed prices or double-counting.
-- G: add data-driven executive-summary evidence, source-log reading in the site,
-  automated browser/mobile/desktop/accessibility tests and stronger validation.
-
-After integration: Pass 1 implementation + functional tests; Pass 2 requirements,
-evidence and edge-case fixes; Pass 3 full regression and original-request audit.
-Commit/push this session branch, create an explicit PR, wait for checks, merge that
-PR by explicit number, then check Pages deployment. Report unresolved requirements
-as unresolved, not as fully verified completion.
-
-## Additional 11 October verification pass (`arena/c4522181-maltasupplemental`, PR #28)
-
-Merged `origin/main` (`7ec0943`) and layered: (1) the `scripts/validate_site.py` regression guard for `record["price range"]`, (2) `mode-comparison-summary` in `data/transport.json` (125 total site records), (3) bidirectional `Il-Qawra` stop `Arznell (950)` times from `https://www.publictransport.com.mt/route/TD1/`, (4) U.S. State Department confirmation of `112` emergency services, private-hospital payment expectations, and AmEx/ATM notes from `https://travel.state.gov/en/international-travel/travel-advisories/malta.html`, and (5) BBC *Sportsworld*’s 11 Oct EPL billing (`https://www.bbc.co.uk/programmes/w1730c9208pxyf8`).
+All work remains on `arena/3a5297d2-maltasupplemental`. PR #31 is the delivery target. Preserve and inspect later `origin/main` changes before updating the PR branch; rebase safely, reconcile conflicts without dropping relevant content, rerun the cumulative checks, push only this branch, review CI/diff/mergeability, and merge PR #31 by its explicit number when safe. Current audit details and unresolved facts are recorded in `docs/STATUS.md`, `docs/HANDOFF.md`, `docs/OPEN_QUESTIONS.md`, `docs/SOURCES.md`, and `docs/FINAL_REPORT.md`.
