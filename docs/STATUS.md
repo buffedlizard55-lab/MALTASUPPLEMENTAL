@@ -1,37 +1,39 @@
-# Delivery status — Malta trip guide (11 October 2026)
+# Delivery status — Malta trip guide (11 October 2026, session arena/502e2dae)
 
-> **Snapshot boundary:** this status records the completed local reconciliation and validation, immediately before the required GitHub delivery actions. It is not a live PR or Pages status; the merge and post-merge deployment are reported after they are actually checked.
+> **Snapshot boundary:** this status records the completed local verification and Pass 1–3 integration for the `arena/502e2dae-maltasupplemental` session, before the GitHub delivery actions. The merge and post-merge deployment are reported after they are actually checked.
 
 ## Integration state
 
-- Work is on the fixed session branch `arena/ef6c76d6-maltasupplemental`.
-- PR #33 began at `854c1e16d94caa6cd7ae35ee44a0040bc5d036fd`; the required upstream snapshot is `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, containing PR #39 and accumulated PR #40/#41 work.
-- The local non-fast-forward merge includes that exact upstream snapshot and retains PR #33's specific source corrections and evidence boundaries. At this snapshot, the merge commit is still awaiting commit/push and PR #33 has not yet been merged.
-- The integration tree has **165 exact-schema records** (transport 25, food 38, activities 39, everyday 18, radio 20, expenses 25), **288 unique record URLs** in the source log, **15 HTML pages / 138 link attributes**, eight shared navigation destinations, and all 25 expense rows.
+- Work is on the fixed session branch `arena/502e2dae-maltasupplemental`, started at `origin/main` (`b307c51`, merge of PR #33) at parity.
+- This session ran the required multi-pass protocol (Pass 1 implement/verify, Pass 2 review for bugs/missing requirements/edge cases, Pass 3 re-check against the request) over the integrated tree, plus a line-by-line fact re-verification of the highest-risk transport, event, fare and radio claims against live sources on 11 October 2026.
+- The integration tree has **165 exact-schema records** (transport 25, food 38, activities 39, everyday 18, radio 20, expenses 25), **292 unique record URLs** in the source log, 15 HTML pages / 138 link attributes, eight shared navigation destinations, and all 25 expense rows.
 
-## Cumulative verification passes
+## What this session verified and changed
 
-1. **Implementation:** all six topic JSON files and `data/record.schema.json` parse; `scripts/validate_site.py` passes schema/source-log/page wiring; `scripts/check_javascript.py` and `node --check js/site.js` pass; browser tests cover planner behavior, navigation, data/render parity, and responsive accessibility.
-2. **Requirements/evidence:** current-facing claims were reconciled against the inherited source notes. The Eventbrite listing is described as dated evidence of a free 18+ reservation option and the visible 14–16 October agenda, not as this traveler's reservation or guaranteed admission. Route 186's 20:53 time is one static variant; fare-season, onward connection, detour effect, and safe walks remain open. BBC parent-series labels are distinguished from match-specific broadcast services without inferring Malta carriage. The MTA short-stay interpretation remains open.
-3. **Final audit:** current pages, data, source notes, handoff, open questions, and plan were reconciled; stale fare-by-date, ticket-access, transit-cutoff, MTA-threshold, and BBC service-label conclusions were corrected or explicitly marked historical. External link liveness, physical radio/transit checks, and comprehensive review-platform coverage were not claimed.
+1. **Event listing re-read (A/C):** the Hotspawn/Eventbrite page read 11 October still shows only the Wed 14 / Thu 15 (09:30–22:30) and Fri 16 (14:00–21:00) agenda rows; the Sat/Sun entries remain hidden behind “Show all agenda”. A “Sales end soon” banner now displays. Existing claims were confirmed unchanged; the re-read is logged in `docs/SOURCES.md`.
+2. **Route 186 return grids (A):** the operator’s live route page was parsed stop by stop. The last Stadium 2194 departures toward Buġibba are **20:53 and 20:54** on the published return grids (Buġibba Bay 1 arrivals 21:26/21:36); the toward-Rabat grids run Qawra 952 to about 21:39. The “one static variant” wording was replaced across data/pages/docs with the operator-page finding. Which grid applies on each trip date is not labelled.
+3. **Detour scope (A):** the 17 October omitted span (Gholja 2 → Targa) sits between the Stadium 2194 boarding stop and the Buġibba terminus on the operator’s own stop lists, so the traveler’s boarding/alighting stops are not among the omitted stops. The diverted path/timing remains unpublished.
+4. **Late-return leads (A):** Route 202 from Stadium 2194 toward Sliema is listed to about 22:08 (operator route page); N212 (Sliema–Buġibba) and N48 (Mosta-corridor stops toward Buġibba) are recorded as unverified night-bus second legs; Moovit’s 23:07 last-202 figure is logged as an unresolved third-party conflict.
+5. **Fare season (A/F):** two third-party 2026 fare guides place the summer/winter boundary at 18/19 October, matching the official page’s stated 19-October winter start. The likely split — €2.50 on 13–18 October, €2.00 on 19 October — is recorded at “partially verified” as an inference; the operator has not published a current window.
+6. **Card terms (A/F):** the 12-journey card counts Night Routes/Airport Direct at 2 journeys per trip; Explore Flex advertises 2 Airport Direct trips for €6; the fares page contradicts itself on whether Explore Adult 7-day includes Airport Direct — disclosed, not resolved.
+7. **Radio re-check (E):** BBC programme pages (5 Live Sport upcoming grid; episode m00334k6) reconfirm the UK 17–18 October commentary listings. UK schedule only — Malta carriage remains unproven.
+8. **Data hygiene (G):** canonical key order (`price range` after `hours`) normalized across all six data files; schema/validator results unchanged.
 
-## Local validation results
+## Local validation results (after edits)
 
-- `python3 -m json.tool` on all six topic datasets and the record schema — **PASS**.
-- `python3 scripts/validate_site.py` — **PASS**: 6 JSON files, 165 records, 288 source URLs, 15 HTML pages, 138 link attributes, 8 navigation destinations, 25 expense rows.
-- `python3 scripts/check_javascript.py` — **PASS**.
-- `node --check js/site.js` — **PASS**.
-- `npm ci` — **PASS** (23 packages installed; npm reported 0 vulnerabilities).
-- `npm test` — **PASS**, 11/11 Playwright tests (including 320/360/768/1440 px layouts, axe, rendering, navigation and expense-planner cases).
-- `git diff --check` — **PASS**.
+- `python3 scripts/validate_site.py` — **PASS**: 6 JSON files, 165 records, 292 source URLs, 15 HTML pages, 138 link attributes, 8 navigation destinations, 25 expense rows.
+- `python3 scripts/check_javascript.py` — **PASS**; `node --check js/site.js` — **PASS**.
+- Internal deep-link check (static ids + runtime record ids) — **PASS**, 0 broken.
+- `npm test` (validator + JS gate + Playwright) — **PASS**, 11/11 after the session edits (320/360/768/1440 px layouts, axe WCAG 2A/AA/2.1AA, planner persistence/CSV/reset, quick-fill, storage-denial and data-fetch failure cases).
 
 ## Current blockers and handoff
 
-- **Event:** current inventory, the traveler's own reservation, per-day scanning/validity, attendee gate, exact finish-time discrepancy (listing headline 22:00 vs Wed/Thu agenda rows to 22:30), and 17–18 October agenda remain unconfirmed.
-- **Transit/fare:** no date-specific end-to-end journey, onward Buġibba-to-Qawra connection, measured gate/hotel walk, complete alternative-route search, or live taxi quote. The 17 October Route 186 notices show different windows; use the 19:00–24:00 union as a planning alert and verify live. MPT has not established the single fare applicable 13–19 October.
-- **Radio:** no physical FM/DAB+ scan, local reception measurement, BBC Sounds/RaiPlay access check, Malta carriage confirmation, or named-match output on a locally receivable service. The DAB+ “Sports Channel” block/identity is a scan lead only; Rai's trip-week running order is not established. UK BBC schedules are not Malta carriage.
-- **MTA:** the guideline PDF and the current webpage's “exceeded fifteen nights” text do not expressly reconcile short-stay treatment. Six-night €9 arithmetic is conditional only; use the invoice.
-- **Research coverage:** Google Maps/review, TripAdvisor and some Reddit/search snapshots were accessible; Yelp, Instagram, TikTok, Facebook and X access was blocked or limited. The evidence is not comprehensive. Recheck volatile menus, hours, closures, fares, schedules and ticket availability before acting.
-- **Traveler-specific unknowns:** booking confirmation, party size/ages, flights, meal plan, actual ticket, itinerary, device, insurance, and personal expenses remain unknown. Keep planner fields blank until the traveler provides them.
+- **Event:** current inventory, the traveler’s reservation, per-day scanning/validity, attendee gate, the 22:00-vs-22:30 finish discrepancy, and the 17–18 October agenda remain unconfirmed (Sat/Sun rows were still hidden on the 11 Oct re-read).
+- **Transit:** which Route 186 return grid (20:53 or 20:54) runs on each trip date; any event extra service; the dated onward Buġibba→Qawra connection; the after-20:54 fallback legs (202→N212, 405→N48) as date-specific journeys; the 17 October diversion’s actual effect; measured gate/hotel walks; live taxi quotes.
+- **Fares:** operator confirmation of the likely €2.50/€2.00 season split remains outstanding.
+- **Radio:** no physical FM/DAB+ scan, no Malta carriage confirmation, no named-match output on a locally receivable service; the DAB+ “Sports Channel” block/identity remains a scan lead.
+- **MTA:** the guideline PDF and webpage short-stay wording remain unreconciled; use the invoice.
+- **Coverage:** Yelp/Instagram/TikTok/Facebook/X remain blocked or limited; review evidence is a dated partial snapshot. No full external-link crawl or physical transit/radio test was claimed.
+- **Traveler-specific inputs:** itinerary, party size/ages, booked prices, flights, meal plan, device, insurance. Keep planner fields blank until supplied; the paste-your-itinerary quick-fill remains the hand-off tool.
 
-The current workstream ownership, dependencies, and next-session tasks remain in `docs/PLAN.md`; cross-topic details are in `docs/HANDOFF.md`; all open items are maintained in `docs/OPEN_QUESTIONS.md`.
+Workstream ownership, dependencies and next-session tasks remain in `docs/PLAN.md`; cross-topic notes in `docs/HANDOFF.md`; open items in `docs/OPEN_QUESTIONS.md`.

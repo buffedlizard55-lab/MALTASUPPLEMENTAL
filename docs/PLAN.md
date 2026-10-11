@@ -1,6 +1,17 @@
 # Malta trip guide — work plan
 
-## Current delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026)
+## Current delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
+
+This fixed Arena branch began at `origin/main` commit `b307c51e8026ca3589ece815b0fb761eef36094e` (the PR #33 merge), at parity at session start. The parallel-work protocol remains in force: A–F own one topic data file plus its matching page; G owns shared integration and documentation; Arena provides no isolated workstream runner, so research and edits run serially on the fixed branch, shared files only by G. Cross-topic findings go to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in `docs/OPEN_QUESTIONS.md`.
+
+Current session objectives:
+
+1. **Multi-pass verification (requested):** Pass 1 implement/verify every requirement line by line against live sources; Pass 2 bug/assumption/edge-case review; Pass 3 full re-check against the original request with accuracy, reliability, completeness and code-quality improvements. No claims without sources; unverifiable items go to `docs/OPEN_QUESTIONS.md`.
+2. **Highest-risk re-verification:** live re-reads of the Eventbrite listing, MPT Route 186/202 pages, MPT fares page and BBC programme pages; update the return-gap, fare-season, detour-scope, card-terms and late-return-lead records and the pages that render them.
+3. **Data hygiene:** normalize canonical 13-field key order across all six data files; keep validator/JS/browser gates green; keep static and runtime deep links intact.
+4. **Delivery:** commit and push only `arena/502e2dae-maltasupplemental`, open a PR from it, merge by explicit number onto `main` as requested, check the Pages build, and report observed states only — including what remains unverified, limitations and next-session suggestions.
+
+## Previous delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026, superseded above)
 
 The repository and PR #33 were reviewed before integration. This fixed Arena branch began at PR #33 head `854c1e16d94caa6cd7ae35ee44a0040bc5d036fd` (merge base `eeeb648d143299462ac52b00a7bc3749d36ca152`). The required upstream snapshot is `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, including PR #39 and its accumulated PR #40/#41 work. A non-fast-forward merge of that exact `origin/main` commit is in progress on this branch; PR #33’s own corrections and evidence limits must be retained. No commit, push, PR merge or Pages verification has yet been completed.
 

@@ -11,13 +11,13 @@
       "area": "Malta",
       "address": "Not applicable — island-wide electrical standard",
       "hours": "Not a schedule — plug/voltage reference for packing",
+      "price range": "Complimentary adapter availability not guaranteed; a Type G adapter is an inexpensive item to bring from home (not priced here)",
       "description": "Malta uses Type G sockets (British three rectangular pins) at 230 V / 50 Hz, so a US Type A/B plug needs a travel adapter. Voltage matters as well as shape: laptops, phones, tablets and camera chargers are normally dual-voltage (100–240 V, 50/60 Hz) and need only the adapter, while single-voltage high-wattage appliances such as some hair dryers, straighteners and kettles can be damaged at 230 V and need a converter rather than an adapter. Hotels on the island commonly provide a limited number of adapters at reception, but that is not guaranteed — pack at least one Type G adapter and, for the event days, a power bank.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Government of Malta lists 230 Volts, 50 Hz and UK-style three-pin square plugs. Electrical Safety First specifies Type G and warns that an adapter does not convert voltage or frequency: https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/malta/. Check labels on hair tools, chargers and other devices before use. Re-verified 11 October 2026 with two independent travel-reference pages that both give Type G / 230 V / 50 Hz for Malta and both warn that an adapter does not change voltage: https://www.power-plugs-sockets.com/us/malta/ and https://www.checkplug.com/usa-to-malta . These are consumer reference pages rather than a Maltese regulator, but they agree with each other and with the Government of Malta overview already logged. One page checked in the same batch (travelpowerplugs.com) incorrectly told US travellers that no adapter is needed; that claim contradicts the others and was not used.",
-      "price range": "Complimentary adapter availability not guaranteed; a Type G adapter is an inexpensive item to bring from home (not priced here)"
+      "notes": "Government of Malta lists 230 Volts, 50 Hz and UK-style three-pin square plugs. Electrical Safety First specifies Type G and warns that an adapter does not convert voltage or frequency: https://www.electricalsafetyfirst.org.uk/safety-advice/travel-advice/malta/. Check labels on hair tools, chargers and other devices before use. Re-verified 11 October 2026 with two independent travel-reference pages that both give Type G / 230 V / 50 Hz for Malta and both warn that an adapter does not change voltage: https://www.power-plugs-sockets.com/us/malta/ and https://www.checkplug.com/usa-to-malta . These are consumer reference pages rather than a Maltese regulator, but they agree with each other and with the Government of Malta overview already logged. One page checked in the same batch (travelpowerplugs.com) incorrectly told US travellers that no adapter is needed; that claim contradicts the others and was not used."
     },
     {
       "id": "malta-currency-cards",
@@ -26,13 +26,13 @@
       "area": "Malta",
       "address": "Not applicable — island-wide currency",
       "hours": "Not applicable",
+      "price range": "Use euro (€) as the reference currency; exchange and card fees depend on your provider",
       "description": "The Government of Malta and the U.S. State Department confirm the euro (€) is the national currency; the State Department also notes that American Express credit cards are not widely accepted and that ATMs accept U.S.-issued bankcards (though cash withdrawals frequently incur an ATM fee). Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars or American Express.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. The U.S. State Department Malta page (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 0–1 read 11 Oct 2026) explicitly states that the euro is the official currency, American Express is not widely accepted, ATMs accept U.S.-issued bankcards (often with an ATM fee), and the currency limit is €10,000 or equivalent on entry and on exit.",
-      "price range": "Use euro (€) as the reference currency; exchange and card fees depend on your provider"
+      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. The U.S. State Department Malta page (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 0–1 read 11 Oct 2026) explicitly states that the euro is the official currency, American Express is not widely accepted, ATMs accept U.S.-issued bankcards (often with an ATM fee), and the currency limit is €10,000 or equivalent on entry and on exit."
     },
     {
       "id": "eco-contribution-2026",
@@ -41,13 +41,13 @@
       "area": "Malta-wide, for licensable accommodation",
       "address": "Not applicable — statutory contribution collected by the accommodation provider",
       "hours": "The MTA’s 2026 guideline lists €1.50 per night for each guest aged 18+ at the start of the visit, capped at €22.50 per person per visit. The current MTA webpage also has a separate “15-Night Threshold” sentence; see OQ-25 for the unresolved interpretation.",
+      "price range": "Guideline rate €1.50/night/eligible guest; cap €22.50/person/visit. MTA webpage’s 15-night sentence conflicts in application; a six-night €9 figure is conditional only, not a confirmed charge.",
       "description": "The Malta Tourism Authority’s 2026 guidelines PDF says the contribution is due per night in licensable accommodation at €1.50 for each guest aged 18 or over at the start of the visit, capped at €22.50 per person per visit, and shown separately on the receipt. The current MTA service webpage separately says the charge applies to the total nights that “exceeded fifteen (15) nights.” The two official texts do not clearly reconcile this wording for a short stay. Ask MTA or AX ODYCY rather than assuming a six-night charge. If the per-night guideline applies to six billable nights, €9.00 per eligible adult is arithmetic only—not a confirmed liability or invoice amount.",
       "source_url": "https://mta.com.mt/services/environmental-contribution/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The 2026 MTA guideline PDF was read in full 11 October: https://mta.com.mt/docs/Eco-Contribution-Accommodation-Guidelines-2026.pdf . It states €1.50 per night per guest aged 18+ at the start of the visit, a €22.50 per-person cap, per-night chargeability for licensable accommodation, a “visit” definition and separate fiscal-receipt disclosure. The MTA service page was directly re-read 11 October: https://mta.com.mt/services/environmental-contribution/ . Its separate “15-Night Threshold” section says charges apply to nights that “exceeded” fifteen; this is not expressly reconciled in the PDF. See OQ-23/OQ-25; ask MTA/AX ODYCY for the short-stay rule and invoice. Six nights × €1.50 = €9 is conditional arithmetic only; no personal amount is assumed.",
-      "price range": "Guideline rate €1.50/night/eligible guest; cap €22.50/person/visit. MTA webpage’s 15-night sentence conflicts in application; a six-night €9 figure is conditional only, not a confirmed charge."
+      "notes": "The 2026 MTA guideline PDF was read in full 11 October: https://mta.com.mt/docs/Eco-Contribution-Accommodation-Guidelines-2026.pdf . It states €1.50 per night per guest aged 18+ at the start of the visit, a €22.50 per-person cap, per-night chargeability for licensable accommodation, a “visit” definition and separate fiscal-receipt disclosure. The MTA service page was directly re-read 11 October: https://mta.com.mt/services/environmental-contribution/ . Its separate “15-Night Threshold” section says charges apply to nights that “exceeded” fifteen; this is not expressly reconciled in the PDF. See OQ-23/OQ-25; ask MTA/AX ODYCY for the short-stay rule and invoice. Six nights × €1.50 = €9 is conditional arithmetic only; no personal amount is assumed."
     },
     {
       "id": "malta-language",
@@ -56,13 +56,13 @@
       "area": "Malta",
       "address": "Not applicable — national languages",
       "hours": "Not applicable",
+      "price range": "Not applicable",
       "description": "Maltese and English are both official languages of Malta. English is an official language; this is not a promise that every person, venue, or service will use it in every interaction.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "Also confirmed by the National Council for the Maltese Language: https://kunsilltalmalti.gov.mt/national-council-for-the-maltese-language/.",
-      "price range": "Not applicable"
+      "notes": "Also confirmed by the National Council for the Maltese Language: https://kunsilltalmalti.gov.mt/national-council-for-the-maltese-language/."
     },
     {
       "id": "malta-local-time",
@@ -71,13 +71,13 @@
       "area": "Malta",
       "address": "Not applicable",
       "hours": "13–19 October 2026: Central European Summer Time (CEST), UTC+2. Daylight saving time ends on Sunday 25 October 2026.",
+      "price range": "Not applicable",
       "description": "Use Malta local time for tickets, published schedules, and transport. On the supplied trip dates Malta is on summer time; check time-zone conversion when coordinating with the United States.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "The U.S. State Department says Malta uses CET and switches to CEST from the last Sunday in March through the last Sunday in October. 25 October is the last Sunday in October 2026.",
-      "price range": "Not applicable"
+      "notes": "The U.S. State Department says Malta uses CET and switches to CEST from the last Sunday in March through the last Sunday in October. 25 October is the last Sunday in October 2026."
     },
     {
       "id": "us-passport-schengen",
@@ -86,13 +86,13 @@
       "area": "Malta / Schengen Area",
       "address": "Not applicable",
       "hours": "Not applicable — entry requirements apply at the external Schengen border",
+      "price range": "No tourist visa fee is listed for a U.S. passport holder staying 90 days or less; other eligibility and circumstances can differ",
       "description": "The U.S. State Department says a visa is not required for a U.S. tourist visit of 90 days or less and that the passport must remain valid for at least three months beyond planned departure. The EU short-stay limit is 90 days in any 180-day period across the Schengen area. These pointers apply only if using a U.S. passport; check official rules for your nationality and exact itinerary.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "U.S. State Department Malta advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. EU Entry/Exit System FAQ explains the single 90-days-in-any-180-days calculation across countries using EES: https://travel-europe.europa.eu/en/ees/faq. A residence/dual-nationality/long-stay case may have different requirements.",
-      "price range": "No tourist visa fee is listed for a U.S. passport holder staying 90 days or less; other eligibility and circumstances can differ"
+      "notes": "U.S. State Department Malta advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. EU Entry/Exit System FAQ explains the single 90-days-in-any-180-days calculation across countries using EES: https://travel-europe.europa.eu/en/ees/faq. A residence/dual-nationality/long-stay case may have different requirements."
     },
     {
       "id": "ees-border-system",
@@ -101,13 +101,13 @@
       "area": "External borders of participating European countries, including Malta",
       "address": "Not applicable",
       "hours": "Fully operational at participating external border crossings from 10 April 2026; processing time depends on the border crossing and queue",
+      "price range": "No EES fee stated by the EU",
       "description": "The EU says EES applies to non-EU nationals making short stays, including visa-exempt travelers, and became fully operational on 10 April 2026. For a visa-exempt traveler, the system records a facial image and four fingerprints, along with travel-document and entry/exit data. Allow time for border processing and follow officials’ instructions.",
       "source_url": "https://travel-europe.europa.eu/en/ees/faq",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The EU FAQ says children under 12 are not fingerprint-scanned and that a biometric passport is only needed for optional self-service equipment, not in principle to cross the border. EES FAQs: https://travel-europe.europa.eu/en/ees/faq. Actual queue times are not published here.",
-      "price range": "No EES fee stated by the EU"
+      "notes": "The EU FAQ says children under 12 are not fingerprint-scanned and that a biometric passport is only needed for optional self-service equipment, not in principle to cross the border. EES FAQs: https://travel-europe.europa.eu/en/ees/faq. Actual queue times are not published here."
     },
     {
       "id": "etias-status-2026-10",
@@ -116,13 +116,13 @@
       "area": "European countries requiring ETIAS, including Malta",
       "address": "Not applicable",
       "hours": "Official EU site checked 11 October 2026: not operational; no applications collected; exact launch date unannounced.",
+      "price range": "No payment is due while the official EU site says applications are not being collected",
       "description": "The official EU ETIAS site says the system is not in operation and no applications are being collected, as checked 11 October. The EU says it will announce the start date several months before launch. Recheck the official page before travel; do not pay an unofficial site claiming to issue an authorisation.",
       "source_url": "https://travel-europe.europa.eu/etias",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias. A U.S. State Department Europe guide likewise says the planned ETIAS launch is late 2026: https://travel.state.gov/en/international-travel/planning/guidance/europe.html. Status is date-sensitive; recheck the EU page immediately before travel.",
-      "price range": "No payment is due while the official EU site says applications are not being collected"
+      "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias. A U.S. State Department Europe guide likewise says the planned ETIAS launch is late 2026: https://travel.state.gov/en/international-travel/planning/guidance/europe.html. Status is date-sensitive; recheck the EU page immediately before travel."
     },
     {
       "id": "emergency-medical-112",
@@ -131,13 +131,13 @@
       "area": "Malta",
       "address": "Not applicable — emergency services are island-wide",
       "hours": "112 emergency service and 179 national helpline: 24 hours a day",
+      "price range": "Costs/coverage depend on treatment and insurance; private hospitals often require upfront payment",
       "description": "Both the Maltese health ministry and the U.S. State Department Malta advisory list 112 for emergency ambulance, fire, and police services (plus 179 for Malta’s 24/7 national helpline and 116-006 for victim support). Medical care in Malta is not free to visitors and private hospitals often require upfront payment; the U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure.",
       "source_url": "https://health.gov.mt/services/health-services/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 1–2 read 11 October): explicitly confirms dialing 112 for ambulance, fire brigade, police, and emergency medical services (plus 179 for the 24/7 national helpline, 1579 for mental health, and 116-006 for victim support), notes that medical care is not free to visitors and private hospitals often require upfront payment, and states that no vaccinations are required and tap water is generally safe to drink. Independently re-read 11 October: the ministry’s HelpLines and Support table also explicitly lists Emergency — Ambulance, Fire, and Police: 112, 24/7.",
-      "price range": "Costs/coverage depend on treatment and insurance; private hospitals often require upfront payment"
+      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 1–2 read 11 October): explicitly confirms dialing 112 for ambulance, fire brigade, police, and emergency medical services (plus 179 for the 24/7 national helpline, 1579 for mental health, and 116-006 for victim support), notes that medical care is not free to visitors and private hospitals often require upfront payment, and states that no vaccinations are required and tap water is generally safe to drink. Independently re-read 11 October: the ministry’s HelpLines and Support table also explicitly lists Emergency — Ambulance, Fire, and Police: 112, 24/7."
     },
     {
       "id": "us-embassy-malta",
@@ -146,13 +146,13 @@
       "area": "Ta’ Qali, Attard",
       "address": "U.S. Embassy Malta, Ta’ Qali National Park Street, Attard ATD 4000, Malta",
       "hours": "Emergency after-hours number is the same main number; routine services require the embassy’s current appointment guidance",
+      "price range": "Not applicable",
       "description": "The U.S. State Department lists +356 2561 4000 for the U.S. Embassy in Malta, including its emergency after-hours contact. This is consular contact information, not a substitute for local emergency services at 112.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "Embassy website and current alerts: https://mt.usembassy.gov/. Emergency services in Malta: 112. Confirm contact details on the State Department page before relying on them.",
-      "price range": "Not applicable"
+      "notes": "Embassy website and current alerts: https://mt.usembassy.gov/. Emergency services in Malta: 112. Confirm contact details on the State Department page before relying on them."
     },
     {
       "id": "coastal-safety",
@@ -161,13 +161,13 @@
       "area": "Malta’s beaches and coastline",
       "address": "Not applicable — follow local beach/lifeguard notices",
       "hours": "Not applicable",
+      "price range": "Not applicable",
       "description": "On the 9 October 2026 check, the U.S. State Department listed Malta at Level 1 — Exercise normal precautions, and specifically warns that rip currents have caused tourist drownings. Follow lifeguards and local swimming conditions; a sunny forecast does not guarantee safe sea conditions.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "The advisory is dated 9 July 2026; check the live page for any later updates. It is a government advisory, not a guarantee of personal safety.",
-      "price range": "Not applicable"
+      "notes": "The advisory is dated 9 July 2026; check the live page for any later updates. It is a government advisory, not a guarantee of personal safety."
     },
     {
       "id": "left-hand-driving",
@@ -176,13 +176,13 @@
       "area": "Malta",
       "address": "Not applicable",
       "hours": "Not applicable",
+      "price range": "Not applicable — no rental quote is included",
       "description": "Vehicles drive on the left in Malta. The U.S. State Department also notes that roads can be narrow and congested. If walking near traffic or considering a rental car, account for left-side traffic and check local road conditions; public-transport comparisons are on Getting around.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "Official travel advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. For route options from AX ODYCY to the named event venue, see getting-around.html.",
-      "price range": "Not applicable — no rental quote is included"
+      "notes": "Official travel advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. For route options from AX ODYCY to the named event venue, see getting-around.html."
     },
     {
       "id": "cannabis-cbd-warning",
@@ -191,13 +191,13 @@
       "area": "Malta border and local law",
       "address": "Not applicable",
       "hours": "Not applicable",
+      "price range": "Not applicable",
       "description": "The U.S. State Department warns that bringing marijuana, cannabis, CBD products, or derivatives into Malta is illegal and may lead to arrest and lengthy detention. Do not pack these products; check the official advisory for the full legal guidance.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "This is a specific warning from the U.S. State Department Malta advisory, not personalized legal advice. Check the current advisory and Maltese authorities for the latest rules.",
-      "price range": "Not applicable"
+      "notes": "This is a specific warning from the U.S. State Department Malta advisory, not personalized legal advice. Check the current advisory and Maltese authorities for the latest rules."
     },
     {
       "id": "malta-mobile-options",
@@ -206,13 +206,13 @@
       "area": "Malta",
       "address": "GO and Melita offer online/app and shop-based prepaid options; no specific shop selected",
       "hours": "Service and shop support hours vary by provider",
+      "price range": "11 October provider examples: GO Smart Unlimited €15.99 / 28 days (unlimited Malta data, 28GB Zone 1); Melita €10 SIM/eSIM starter pack with 25GB, 200 minutes/SMS and €5 credit. Verify terms and device compatibility.",
       "description": "Before leaving the U.S., check your home carrier’s Malta roaming/data rates and how to enable or disable roaming. Local alternatives include GO prepaid plans/eSIM and Melita prepaid SIM/eSIM. Confirm that your handset is carrier-unlocked and, for eSIM, compatible; compare the live terms rather than assuming EU roaming rules apply to a U.S. plan.",
       "source_url": "https://www.go.com.mt/top-up-mobile-number-malta/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "GO offers app eSIM setup for compatible devices: https://www.go.com.mt/top-up-mobile-number-malta/. Melita starter pack: https://www.melita.com/mobile/top-up-plans/. Its Pass renews every 28 days if sufficient credit; discounted Pass L / AutoTopUp offers have separate conditions. Online Melita purchase component returned a server-error message in extraction, so checkout availability was not tested. U.S. carrier fees, device unlocking and eSIM support remain traveler-specific. Dated third-party comparison snapshots (11 October 2026 search views) list budget prepaid bundles from roughly €5–6 (Melita Pass S 500MB, GO Smart S 1GB, Epic Top-Up Talk) through €11–13 (GO Smart M 15GB) and travel-eSIM options: https://myroami.com/sim/malta-sim-card/ and https://esimmalta.com/sim-card/ — comparison-site figures, not operator quotes.",
-      "price range": "11 October provider examples: GO Smart Unlimited €15.99 / 28 days (unlimited Malta data, 28GB Zone 1); Melita €10 SIM/eSIM starter pack with 25GB, 200 minutes/SMS and €5 credit. Verify terms and device compatibility."
+      "notes": "GO offers app eSIM setup for compatible devices: https://www.go.com.mt/top-up-mobile-number-malta/. Melita starter pack: https://www.melita.com/mobile/top-up-plans/. Its Pass renews every 28 days if sufficient credit; discounted Pass L / AutoTopUp offers have separate conditions. Online Melita purchase component returned a server-error message in extraction, so checkout availability was not tested. U.S. carrier fees, device unlocking and eSIM support remain traveler-specific. Dated third-party comparison snapshots (11 October 2026 search views) list budget prepaid bundles from roughly €5–6 (Melita Pass S 500MB, GO Smart S 1GB, Epic Top-Up Talk) through €11–13 (GO Smart M 15GB) and travel-eSIM options: https://myroami.com/sim/malta-sim-card/ and https://esimmalta.com/sim-card/ — comparison-site figures, not operator quotes."
     },
     {
       "id": "october-weather-forecast",
@@ -221,13 +221,13 @@
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
       "hours": "Three dated snapshots read 11 October 2026. Met Office Valletta, covering the whole trip: 13 Oct sunny 25/22°C; 14 Oct sunny 23/21; 15 Oct sunny 23/22; 16 Oct sunny 24/22; 17 Oct sunny 23/21; 18 Oct sunny intervals 23/21; 19 Oct sunny intervals 23/21. AccuWeather Qawra: 13 Oct morning rain then thunderstorms 24/19; 14 Oct sunshine 24/17; 15 Oct mostly sunny 25/17; 16 Oct thunderstorms mainly early 24/17; 17 Oct a couple of afternoon showers 23/16. Malta Met Office 7-day view: 13 Oct isolated showers 26/19; 14 Oct mainly sunny 24/18; 15–16 Oct mainly sunny 25/17; 17 Oct mainly cloudy 23/18. Malta Met Office detail added by the parallel branch, same read date: Tue 13 Oct isolated showers 26/19 °C, NW force 3–4, UV 5; Wed 14 Oct mainly sunny 24/18, N force 4 to NNW 3–4; Thu 15 Oct mainly sunny 25/17, NE force 3 to variable 2–3; Fri 16 Oct mainly sunny 25/17, W force 2–3 to WNW 3–4; Sat 17 Oct mainly cloudy 23/18, WNW force 3–4 to W 2–3. Two further secondary snapshots were read the same day and are retained as corroboration: BBC Weather Valletta (13th sunny 26/17, 14th 24/16, 15th 24/16, 18th 25/17, 19th light showers 25/17) and timeanddate Qawra (13–15 Oct sunny to mostly sunny, 16th sprinkles late/overcast, 17th mostly sunny, 18th overcast, 19th decreasing cloudiness).",
+      "price range": "Not applicable — weather outlook; check the live daily forecast before outdoor plans",
       "description": "The Met Office Valletta view now reaches 19 October, so the whole stay is covered by one official source: mild and mostly dry, daytime highs around 23–25°C and night-time lows around 21–22°C. AccuWeather’s Qawra view is noticeably wetter for 13 and 16 October, and the Malta Met Office seven-day view stops at 17 October. All three are shown rather than reconciled silently. Recheck before outdoor and sea activities, and follow marine and lifeguard notices.",
       "source_url": "https://maltametoffice.com/en/forecast/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Met Office Valletta page read 11 October 2026: https://weather.metoffice.gov.uk/forecast/sq6k4r011 . It lists 12–19 October 2026 day/night temperatures, labels the 18 and 19 October days as “BETA”, and its long-range section gives 17 October highest 22–23°C / lowest 21–22°C and 18 October highest 23°C / lowest 20–22°C. This closes the earlier “18–19 October beyond the forecast” gap for planning purposes. The AccuWeather and Malta Met Office snapshots already recorded in this dataset are retained: they disagree on 13 October (isolated showers or thunderstorms versus sunny) and neither reaches 19 October. All three are dated forecasts, not observed conditions, and should be rechecked closer to departure. Secondary snapshots read 11 October 2026: AccuWeather Valletta 10-day https://www.accuweather.com/en/mt/valletta/233779/weather-forecast/233779 (the source of the Qawra/AccuWeather values quoted in `hours`, including the wetter 13 and 16 October outlook), BBC Weather Valletta https://www.bbc.com/weather/2562305 , timeanddate Qawra https://www.timeanddate.com/weather/@2562641 , and Malta Met Office https://maltametoffice.com/ (homepage forecast panel; the seven-day view is at the /en/forecast/ URL given as this record's primary source). Convergence worth recording: the parallel branch read the same Met Office Valletta page independently and obtained identical 18–19 October values (sunny intervals, 23/21 on both days, BETA-flagged), which is mutual corroboration of the two least certain trip days. Winds are Beaufort force as published by Malta Met Office. No sea-state, lifeguard or warning notice was checked for any trip date.",
-      "price range": "Not applicable — weather outlook; check the live daily forecast before outdoor plans"
+      "notes": "Met Office Valletta page read 11 October 2026: https://weather.metoffice.gov.uk/forecast/sq6k4r011 . It lists 12–19 October 2026 day/night temperatures, labels the 18 and 19 October days as “BETA”, and its long-range section gives 17 October highest 22–23°C / lowest 21–22°C and 18 October highest 23°C / lowest 20–22°C. This closes the earlier “18–19 October beyond the forecast” gap for planning purposes. The AccuWeather and Malta Met Office snapshots already recorded in this dataset are retained: they disagree on 13 October (isolated showers or thunderstorms versus sunny) and neither reaches 19 October. All three are dated forecasts, not observed conditions, and should be rechecked closer to departure. Secondary snapshots read 11 October 2026: AccuWeather Valletta 10-day https://www.accuweather.com/en/mt/valletta/233779/weather-forecast/233779 (the source of the Qawra/AccuWeather values quoted in `hours`, including the wetter 13 and 16 October outlook), BBC Weather Valletta https://www.bbc.com/weather/2562305 , timeanddate Qawra https://www.timeanddate.com/weather/@2562641 , and Malta Met Office https://maltametoffice.com/ (homepage forecast panel; the seven-day view is at the /en/forecast/ URL given as this record's primary source). Convergence worth recording: the parallel branch read the same Met Office Valletta page independently and obtained identical 18–19 October values (sunny intervals, 23/21 on both days, BETA-flagged), which is mutual corroboration of the two least certain trip days. Winds are Beaufort force as published by Malta Met Office. No sea-state, lifeguard or warning notice was checked for any trip date."
     },
     {
       "id": "tipping-no-fixed-rate-verified",
@@ -236,13 +236,13 @@
       "area": "Malta",
       "address": "Not applicable",
       "hours": "Not applicable",
+      "price range": "No percentage recommended; check the bill for any service charge",
       "description": "No authoritative Maltese source establishing one standard tipping percentage was found in the sources checked. Secondary travel guides disagree on suggested amounts, so this guide does not prescribe a rate. Recent secondary guides checked 11 October (see notes) converge on: tipping is discretionary, not obligatory; 5–10% for good table service if no service charge is on the bill; rounding up for taxis and cafés; some tourist-area restaurants add a ~10% service charge — read the bill first. U.S.-style 15–20% is not the local norm according to those guides. Check the bill and treat any additional tip as your choice.",
       "source_url": "https://www.visitmalta.com/en/essential-information/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "unverified",
-      "notes": "Visit Malta’s essential-information page was checked but its rendered page did not provide tipping guidance: https://www.visitmalta.com/en/essential-information/. Secondary guides disagreed: https://horizonjumpers.com/malta-tipping-guide/ and https://www.malta-spirit.com/guides/malta-currency-and-payment/. Dated secondary snapshots read via search views 11 October 2026: https://discovervalletta.com/tipping-in-malta/ (3 Oct 2026: 5–10% for good service, round up taxis/cafés, check for ~10% service charge), https://hubpymalta.com/what-to-do/malta-restaurant-tipping-etiquette.html (July 2026: 5–10% if no service charge; not the U.S. 15–20% convention), https://www.tippingrules.com/countries/malta (Apr 2026: ~5% common locally). An older guide suggests 10–15%: https://travelpander.com/do-you-tip-in-malta/. None is an official rule and they conflict at the margins; confirm any specific service charge on the venue’s bill.",
-      "price range": "No percentage recommended; check the bill for any service charge"
+      "notes": "Visit Malta’s essential-information page was checked but its rendered page did not provide tipping guidance: https://www.visitmalta.com/en/essential-information/. Secondary guides disagreed: https://horizonjumpers.com/malta-tipping-guide/ and https://www.malta-spirit.com/guides/malta-currency-and-payment/. Dated secondary snapshots read via search views 11 October 2026: https://discovervalletta.com/tipping-in-malta/ (3 Oct 2026: 5–10% for good service, round up taxis/cafés, check for ~10% service charge), https://hubpymalta.com/what-to-do/malta-restaurant-tipping-etiquette.html (July 2026: 5–10% if no service charge; not the U.S. 15–20% convention), https://www.tippingrules.com/countries/malta (Apr 2026: ~5% common locally). An older guide suggests 10–15%: https://travelpander.com/do-you-tip-in-malta/. None is an official rule and they conflict at the margins; confirm any specific service charge on the venue’s bill."
     },
     {
       "id": "customs-allowances",
@@ -251,13 +251,13 @@
       "area": "Malta border and local law",
       "address": "Not applicable — customs allowances are set by the EU and by U.S. CBP",
       "hours": "Not applicable",
+      "price range": "Allowance values, not a price — see the description",
       "description": "Two sets of rules matter: what you may bring into Malta duty-free, and what you may bring home. The European Union's official travellers' page states that a traveller arriving from a non-EU country (the United States is one) may bring other goods worth up to €430 when arriving by air or sea, plus alcohol allowances of 4 litres of still wine and 16 litres of beer together with either 1 litre of spirits over 22 % vol. or 2 litres of fortified or sparkling wine, and tobacco allowances of 200 cigarettes or 100 cigarillos or 50 cigars or 250 g of tobacco, with a lower tobacco limit possible in some EU countries, so check the Maltese customs authority before packing. On the way home, U.S. Customs and Border Protection states that a returning U.S. resident may claim an $800 duty-free personal exemption after staying abroad at least 48 hours and only once every 31 days; that exemption includes no more than 200 cigarettes and 100 cigars. CBP also says to declare everything you bring in, including duty-free purchases, to bring only the medication you will need in its original container, and that goods bought for resale do not qualify for the exemption.",
       "source_url": "https://europa.eu/youreurope/citizens/travel/carry/alcohol-tobacco-cash/index_en.htm",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "European Union official travellers' page (read 11 October 2026): https://europa.eu/youreurope/citizens/travel/carry/alcohol-tobacco-cash/index_en.htm — it also warns that a lower tobacco limit may apply in some EU countries and that those under 17 have no tobacco or alcohol allowance, and that the €430 (air and sea) / €300 figure is the allowance for goods other than alcohol, tobacco and fuel. U.S. Customs and Border Protection, 'Customs Duty Information' (read 11 October 2026): https://www.cbp.gov/travel/international-visitors/know-before-you-visit/customs-duty-information — states the $800 duty-free personal exemption, the 48-hour and 31-day conditions, the 200-cigarette and 100-cigar tobacco limit, and the flat duty rate on declared amounts above the exemption. CBP, 'U.S. Travelers' Top Ten Travel Tips' (read 11 October 2026): https://www.cbp.gov/travel/us-citizens/know-before-you-go/us-travelers-top-ten-travel-tips — declare everything, carry only needed medication in its original container, and check restrictions before bringing food or animal products home. This record does not cover every restricted or prohibited item; the Maltese customs authority and CBP are the authorities to check.",
-      "price range": "Allowance values, not a price — see the description"
+      "notes": "European Union official travellers' page (read 11 October 2026): https://europa.eu/youreurope/citizens/travel/carry/alcohol-tobacco-cash/index_en.htm — it also warns that a lower tobacco limit may apply in some EU countries and that those under 17 have no tobacco or alcohol allowance, and that the €430 (air and sea) / €300 figure is the allowance for goods other than alcohol, tobacco and fuel. U.S. Customs and Border Protection, 'Customs Duty Information' (read 11 October 2026): https://www.cbp.gov/travel/international-visitors/know-before-you-visit/customs-duty-information — states the $800 duty-free personal exemption, the 48-hour and 31-day conditions, the 200-cigarette and 100-cigar tobacco limit, and the flat duty rate on declared amounts above the exemption. CBP, 'U.S. Travelers' Top Ten Travel Tips' (read 11 October 2026): https://www.cbp.gov/travel/us-citizens/know-before-you-go/us-travelers-top-ten-travel-tips — declare everything, carry only needed medication in its original container, and check restrictions before bringing food or animal products home. This record does not cover every restricted or prohibited item; the Maltese customs authority and CBP are the authorities to check."
     },
     {
       "id": "ees-malta-implementation-conflict",
@@ -266,13 +266,13 @@
       "area": "Malta external Schengen border, including Malta International Airport",
       "address": "Not applicable — border procedure",
       "hours": "Applies at the border crossing on arrival and departure; processing time depends on the crossing and the queue.",
+      "price range": "No EES fee is stated by the EU.",
       "description": "Plan for extra time at the border and do not assume the fast path. The official EU position is that the progressive rollout ended on 9 April 2026 and that from 10 April 2026 EES is fully operational at all external border crossing points of the countries using it. Separately, secondary travel-visa reporting from September 2026 says Malta is among nine Schengen countries that told the European Commission they cannot yet enforce EES in full, citing technical failures, infrastructure gaps and congestion risk, with the EU informally permitting the delay and no clear time limit. Those two statements conflict. The practical consequence for a traveller is the same either way: biometric registration may or may not be in use at the crossing you arrive at, queues have been reported as long during 2026, and neither source publishes Malta-specific wait times. Allow generous time on both the arrival and the departure day, keep the passport you travelled on to hand, and follow the instructions of border officers and any signage for self-service kiosks. A biometric passport is needed only to use optional self-service equipment, not in principle to cross.",
       "source_url": "https://travel-europe.europa.eu/en/ees/faq",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The official EU FAQ was read directly on 11 October 2026 and states: \"This progressive implementation lasted until 9 April 2026. From 10 April 2026, the EES is fully operational at all external border crossing points of the European countries using the system.\" It also confirms that for a visa-exempt traveller the system stores four fingerprints and a facial image, that fingerprints of children under 12 are not scanned, that a biometric passport is only needed for self-service equipment, and that the 90-days-in-any-180-days limit is calculated as a single period across all EES countries: https://travel-europe.europa.eu/en/ees/faq . Legal basis cited there: Regulation (EU) 2017/2226 and Regulation (EU) 2025/1534. The Malta-specific delay claim is secondary and NOT official: https://www.visasupdate.com/post/ees-implementation-delay-schengen-nine-countries-2026 (16 September 2026), which lists Malta as \"not operating EES at all borders and all times\". Two further secondary sources were seen and are consistent with the official date but not with the Malta detail: https://www.abta.com/tips-and-advice/planning-and-booking-a-holiday/upcoming-changes-travel-europe (updated 17 August 2026) and https://schengentraveler.com/entry-exit-system-ees/ (August 2026, which also reports long 2026 border waits and an ETIAS slip to 2027). No Malta government or eu-LISA statement confirming or denying the Malta delay was found in this session, so the conflict is recorded rather than resolved. Queue times are not published by any source checked. Relationship to other records in this dataset: ees-border-system describes what EES is and what it collects, and etias-status-2026-10 (read from the official EU site) remains the authoritative ETIAS claim; this record adds only the Malta-specific enforcement conflict and is not a replacement for either. Relationship to other records in this dataset: `ees-border-system` describes what EES is and what it collects, and `etias-status-2026-10` (read from the official EU site) remains the authoritative ETIAS claim; this record adds only the Malta-specific enforcement conflict and replaces neither.",
-      "price range": "No EES fee is stated by the EU."
+      "notes": "The official EU FAQ was read directly on 11 October 2026 and states: \"This progressive implementation lasted until 9 April 2026. From 10 April 2026, the EES is fully operational at all external border crossing points of the European countries using the system.\" It also confirms that for a visa-exempt traveller the system stores four fingerprints and a facial image, that fingerprints of children under 12 are not scanned, that a biometric passport is only needed for self-service equipment, and that the 90-days-in-any-180-days limit is calculated as a single period across all EES countries: https://travel-europe.europa.eu/en/ees/faq . Legal basis cited there: Regulation (EU) 2017/2226 and Regulation (EU) 2025/1534. The Malta-specific delay claim is secondary and NOT official: https://www.visasupdate.com/post/ees-implementation-delay-schengen-nine-countries-2026 (16 September 2026), which lists Malta as \"not operating EES at all borders and all times\". Two further secondary sources were seen and are consistent with the official date but not with the Malta detail: https://www.abta.com/tips-and-advice/planning-and-booking-a-holiday/upcoming-changes-travel-europe (updated 17 August 2026) and https://schengentraveler.com/entry-exit-system-ees/ (August 2026, which also reports long 2026 border waits and an ETIAS slip to 2027). No Malta government or eu-LISA statement confirming or denying the Malta delay was found in this session, so the conflict is recorded rather than resolved. Queue times are not published by any source checked. Relationship to other records in this dataset: ees-border-system describes what EES is and what it collects, and etias-status-2026-10 (read from the official EU site) remains the authoritative ETIAS claim; this record adds only the Malta-specific enforcement conflict and is not a replacement for either. Relationship to other records in this dataset: `ees-border-system` describes what EES is and what it collects, and `etias-status-2026-10` (read from the official EU site) remains the authoritative ETIAS claim; this record adds only the Malta-specific enforcement conflict and replaces neither."
     }
   ]
 }
