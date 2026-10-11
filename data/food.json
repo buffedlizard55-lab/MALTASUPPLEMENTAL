@@ -422,7 +422,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Independently read11October: https://www.fontanellateagarden.com.mt/home. Menu link: https://www.fontanellateagarden.com.mt/food-menu. No fresh street-address, menu-price or exact-hours check; upstream conflicting directory/map hours are archived, not treated as operator facts."
+      "notes": "Independently read 11 October: https://www.fontanellateagarden.com.mt/home. Menu link: https://www.fontanellateagarden.com.mt/food-menu. No fresh street-address, menu-price or exact-hours check; upstream conflicting directory/map hours are archived, not treated as operator facts."
     },
     {
       "id": "ta-marija-mosta",
@@ -432,12 +432,12 @@
       "address": "Mosta; confirm the booking’s exact street address with the operator",
       "hours": "October opening hours and folklore-show dates not confirmed; book or contact the operator.",
       "price range": "Not published on the pages checked; menus are linked from the operator site",
-      "description": "The operator describes a Mosta Maltese restaurant established in1964, serving traditional and gastro-style dishes, handmade ravioli and a Maltese tasting menu. Folklore dinner shows occur on select evenings; no trip-date show is confirmed.",
+      "description": "The operator describes a Mosta Maltese restaurant established in 1964, serving traditional and gastro-style dishes, handmade ravioli and a Maltese tasting menu. Folklore dinner shows occur on select evenings; no trip-date show is confirmed.",
       "source_url": "https://tamarija.com/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Independently read11October: https://tamarija.com/ (main restaurant/menus/folklore sections). Booking: https://tamarija.com/book-a-table. Linked older menu PDFs are not current price quotes; seasonal hours in upstream search snippets were not promoted as October hours."
+      "notes": "Independently read 11 October: https://tamarija.com/ (main restaurant/menus/folklore sections). Booking: https://tamarija.com/book-a-table. Linked older menu PDFs are not current price quotes; seasonal hours in upstream search snippets were not promoted as October hours."
     }
   ]
 }

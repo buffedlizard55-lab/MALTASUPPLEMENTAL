@@ -130,14 +130,14 @@
       "category": "DAB+",
       "area": "Rai Radio Uno appears in Malta’s DAB+ channel directory; reception not tested locally",
       "address": "Not applicable — broadcast service",
-      "hours": "Rai’s programme page says Saturdays and Sundays, but no17/18October running order or explicitly dated airtime was available in the retrieved view.",
+      "hours": "Rai’s programme page says Saturdays and Sundays, but no 17/18 October running order or explicitly dated airtime was available in the retrieved view.",
       "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked",
-      "description": "RaiRadio1’s official Tutto il calcio minuto per minuto page describes weekend SerieA/SerieB coverage and includes recent commentary episodes. DigiB’s Malta service directory lists RaiRadioUno; WorldDAB lists RaiRadiouno under6A181.936MHz. These are programme/directory leads, not tested Maltese reception or named-match trip-week carriage.",
+      "description": "Rai Radio 1’s official Tutto il calcio minuto per minuto page describes weekend Serie A/Serie B coverage and includes recent commentary episodes. DigiB’s Malta service directory lists Rai Radio Uno; WorldDAB lists Rai Radiouno under 6 A 181.936 MHz. These are programme/directory leads, not tested Maltese reception or named-match trip-week carriage.",
       "source_url": "https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Independently read11October: https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto (recurring Saturday/Sunday show, Italian programme descriptions, latest listed episode10Oct2026). https://dab.com.mt/channels/ listsRaiRadioUno; https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes listsRaiRadiouno on6A. Do not infer2026/27ChampionsLeague radio rights from previous seasons or add secondary fixture lists as broadcast evidence. No hotel/venue scan or Malta stream test performed."
+      "notes": "Independently read 11 October: https://www.raiplaysound.it/programmi/tuttoilcalciominutoperminuto (recurring Saturday/Sunday show, Italian programme descriptions, latest listed episode 10 Oct 2026). https://dab.com.mt/channels/ listsRai Radio Uno; https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes listsRai Radiouno on 6 A. Do not infer 2026/27 Champions League radio rights from previous seasons or add secondary fixture lists as broadcast evidence. No hotel/venue scan or Malta stream test performed."
     },
     {
       "id": "epl-fixtures-trip-weekend-17-19-oct",
@@ -145,14 +145,14 @@
       "category": "Football fixtures — not radio carriage",
       "area": "England; kickoffs converted to Malta local time",
       "address": "Not applicable — fixture list",
-      "hours": "Malta time(BST+1hour during this trip):17Oct13:30Everton–Chelsea;16:00Brentford–Liverpool,Fulham–HullCity,ManchesterCity–Ipswich;18:30Newcastle–AstonVilla.18Oct15:00Bournemouth–Sunderland,Brighton–CrystalPalace,Leeds–ManchesterUnited;17:30NottinghamForest–Arsenal.19Oct21:00Tottenham–CoventryCity.",
+      "hours": "Malta time(BST+1 hour during this trip):17 Oct 13:30 Everton–Chelsea;16:00 Brentford–Liverpool, Fulham–HullCity, ManchesterCity–Ipswich;18:30 Newcastle–AstonVilla.18 Oct 15:00 Bournemouth–Sunderland, Brighton–CrystalPalace, Leeds–ManchesterUnited;17:30 NottinghamForest–Arsenal.19 Oct 21:00 Tottenham–CoventryCity.",
       "price range": "Not applicable",
-      "description": "The PremierLeague’s official amendments article explicitly states BST for fixtures through24October. The listed17–19October kickoffs are converted by adding one hour for Malta(UTC+2). This helps choose matches to investigate but is not a commentary schedule, Malta rights/reception test or Kalshi market list.",
+      "description": "The Premier League’s official amendments article explicitly states BST for fixtures through 24 October. The listed 17–19 October kickoffs are converted by adding one hour for Malta(UTC+2). This helps choose matches to investigate but is not a commentary schedule, Malta rights/reception test or Kalshi market list.",
       "source_url": "https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Independently read11October: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november. Default kickoffs15:00BSTunless otherwise stated; MaltaCESTUTC+2as sourced in the everyday guide. Recheck changes/postponements. The article also contains a Listen live section requiring PremierLeague sign-in; territory, fixture selection, price and Malta access not tested. Its08:30clock lacks date/zone context, so no stream airtime inferred. No relationship between these fixtures, BBCWorldService commentary and Kalshi markets established."
+      "notes": "Independently read 11 October: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november. Default kickoffs 15:00 BSTunless otherwise stated; MaltaCESTUTC+2 as sourced in the everyday guide. Recheck changes/postponements. The article also contains a Listen live section requiring Premier League sign-in; territory, fixture selection, price and Malta access not tested. Its 08:30 clock lacks date/zone context, so no stream airtime inferred. No relationship between these fixtures, BBC World Service commentary and Kalshi markets established."
     }
   ]
 }

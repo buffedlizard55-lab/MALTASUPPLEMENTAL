@@ -445,14 +445,14 @@
       "category": "Ta’ Qali / event-corridor idea",
       "area": "Ta’ Qali",
       "address": "Ta’ Qali; the museum says it is served by the “Stadium” stop on Routes 56, 186 and 202",
-      "hours": "Monday–Saturday09:00–17:00; Sunday09:00–12:00(noon). Page separately says last entry16:00; that cannot apply to Sunday’s noon close. Confirm Sunday cutoff and holiday/service exceptions.",
+      "hours": "Monday–Saturday 09:00–17:00; Sunday 09:00–12:00(noon). Page separately says last entry 16:00; that cannot apply to Sunday’s noon close. Confirm Sunday cutoff and holiday/service exceptions.",
       "price range": "Adults €9.00; seniors €7.00; students €7.00; children (3–12) €3.00; free parking",
-      "description": "The Malta Aviation Museum Foundation describes its restored aircraft and aviation-history exhibits and lists Route186 via Ta’Qali Stadium among bus options. It is a separate recreation option to compare with the event schedule; the attendee entrance and final walk are not verified.",
+      "description": "The Malta Aviation Museum Foundation describes its restored aircraft and aviation-history exhibits and lists Route 186 via Ta’ Qali Stadium among bus options. It is a separate recreation option to compare with the event schedule; the attendee entrance and final walk are not verified.",
       "source_url": "https://www.maltaaviationmuseum.com/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Independently read11October: operator homepage lists hours, fees and Stadium-stop routes56/186/202. Its generic16:00last-entry line conflicts with Sunday’s12:00close; do not assume Sunday16:00entry. Published closure list includes10Feb,GoodFriday,EasterSunday,29Jun,15Aug,ChristmasDay/Eve andNewYear’sDay; date-specific exceptions still need checking. No walk to BLAST entrance measured. https://www.maltaaviationmuseum.com/"
+      "notes": "Independently read 11 October: operator homepage lists hours, fees and Stadium-stop routes 56/186/202. Its generic 16:00 last-entry line conflicts with Sunday’s 12:00 close; do not assume Sunday 16:00 entry. Published closure list includes 10 February, Good Friday, Easter Sunday, 29 June, 15 August, Christmas Day/Eve andNew Year’s Day; date-specific exceptions still need checking. No walk to BLAST entrance measured. https://www.maltaaviationmuseum.com/"
     },
     {
       "id": "mosta-rotunda",
@@ -462,12 +462,12 @@
       "address": "Mosta Basilica; exact street address not stated in the retrieved parish page",
       "hours": "Visitor hours: Monday–Friday 09:30–18:00 (last entry 17:30); Saturday 09:30–16:30 (last entry 16:00); Sunday 12:00–17:00 (last entry 16:30)",
       "price range": "€5 short visit (basilica, WWII shelter, phone audio guide); €8 full experience (adds crypt, church museum, dome exterior walk and inner dome balcony)",
-      "description": "The parish describes one of the world’s largest unsupported domes and a replica of the1942bomb that pierced it without exploding. Its visitor page lists hours,€5short/€8full experiences and bus routes from Qawra. This is an optional stop, not a guaranteed easy connection around event sessions.",
+      "description": "The parish describes one of the world’s largest unsupported domes and a replica of the 1942 bomb that pierced it without exploding. Its visitor page lists hours, €5 short/€8 full experiences and bus routes from Qawra. This is an optional stop, not a guaranteed easy connection around event sessions.",
       "source_url": "https://mostachurch.com/?lang=en",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Independently read11October: parish visitor page directly lists weekday/weekend hours and last entries,€5short visit and€8whole experience (inner dome balcony in the€8tier), and routes45/186/31/48/280from Qawra Bus Terminus. Address and service interruptions not established; confirm when booking. https://mostachurch.com/?lang=en"
+      "notes": "Independently read 11 October: parish visitor page directly lists weekday/weekend hours and last entries, €5 short visit and€8 whole experience (inner dome balcony in the €8 tier), and routes 45/186/31/48/280 from Qawra Bus Terminus. Address and service interruptions not established; confirm when booking. https://mostachurch.com/?lang=en"
     }
   ]
 }
