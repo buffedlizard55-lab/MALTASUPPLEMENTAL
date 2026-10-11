@@ -1,6 +1,17 @@
 # Open questions and unverified items
 
-**Current research snapshot: 11 October 2026 UTC, session `arena/dd9dd00c-maltasupplemental`.**
+**Current research snapshot: 11 October 2026 UTC, session `arena/9bd7eeb7-maltasupplemental`.** This pass re-read the sources listed in `SOURCES.md` and corrected one overstatement. Nothing below is a booking, a physical test or an RF measurement.
+
+- **OQ-S1 · Stadium 2194 return.** `data/transport.json` cites the last Stadium 2194 return departures at 20:53 and 20:54 on two return grids, “re-read 11 October”. This session's reads of Route 186 chunks 12, 13 and 15 did not reproduce that row, and the earlier pass did not find it in chunks 13–19. Treat 20:53/20:54 as an unverified prior reading until a dated row or the date-specific journey planner shows it. Do not promise a bus home after the playoffs; plan for a taxi or ride-hail return.
+- **OQ-S2 · Qawra 952 first departure.** Chunk 13 shows 06:10 and chunk 15 shows 06:09 on the same page. Luzzu 951 also differs between those chunks. The page prints no timetable-variant label. The repo keeps the 06:09–06:10 range. Do not quote a minute-level first departure.
+- **OQ-S3 · DAB+ operator directory (correction).** The directory is only partly loaded. The page ends with a “Load more” control and returns no further chunk. The earlier statement that the directory was “read in full (38 rendered entries)” is withdrawn. “No Sports Channel” applies only to the visible first page. See OQ-28 below.
+- **OQ-S4 · Social platforms.** Yelp search, Instagram, TikTok search, Reddit r/malta search, Facebook and X search all returned HTTP 403 to the fetch tool this session. No social content from them was used. Social evidence in the repo is therefore limited to the Reddit records.
+- **OQ-S5 · Kalshi Member Agreement.** The help article was read, but the Member Agreement PDF was not opened. Any restriction beyond the help article's statements is unconfirmed.
+- **OQ-S6 · Venue city.** A web-search excerpt (Esports Kingdom) calls the venue “Valletta”. Eventbrite and Liquipedia say Attard, at the MFCC/BLAST venue. The guide uses Attard. The excerpt was not fetched and is not used as a source.
+- **OQ-S7 · BBC display times.** The BBC page's “local time” depends on the viewer's clock. The repo converts from the BST label only; no reception test was made.
+
+
+**Previous research snapshot (`arena/dd9dd00c`), 11 October 2026 UTC, retained below.**
 
 New or tightened gaps from this pass:
 
@@ -105,7 +116,7 @@ Fresh reads two days before the trip advanced four items and left the rest uncha
 | Item | What the fresh read established | What is still open |
 |---|---|---|
 | Match clocks on 14 October | A direct read of the bracket report showed 04:30 / 07:00 / 09:30 / 12:00 and a search-index rendering of the same table showed 10:30 / 13:00 / 15:30 / 18:00 — exactly the EDT-to-CEST offset — so the Malta local starts are 10:30, 13:00, 15:30 and 18:00, corroborated by the listing’s own “games 10:30” row. | The organiser still publishes no per-match running order; clocks can move for broadcast selection; the 15–18 October order is unconfirmed. |
-| OQ-28 “Sports Channel” | The Malta DAB+ operator’s own directory was read in full (38 rendered entries) and contains no “Sports Channel”; the only sports-branded entry is Radio Sportiva. | A “Load more” control means absence is not exhaustive. The 6C-vs-12A conflict is unresolved and no receiver scan has been done, so no service name, block or named match is confirmed. |
+| OQ-28 “Sports Channel” | The Malta DAB+ operator’s directory first page (38 rendered entries counted in an earlier read) contains no “Sports Channel”; the only sports-branded entry is Radio Sportiva. Correction in arena/9bd7eeb7: the page ends in a “Load more” control and was not read in full, so this is a visible-page result only. | A “Load more” control means absence is not exhaustive. The 6C-vs-12A conflict is unresolved and no receiver scan has been done, so no service name, block or named match is confirmed. |
 | Vibe FM football | The station’s Malta Premier page still carries the “2025/2026 Season” label with a May 2026 post as its newest entry, so no trip-week Vibe football broadcast is published. | Whether Vibe covers 2026/27 matches at all during 13–19 October; ask the station locally. |
 | OQ-H3 TQ1 event service | TQ1’s page still says “Timetable not available!”, and the complete latest-service-updates page (all three chunks) published no TQ or Thunderpick/BLAST service. | A special service can still appear days beforehand; recheck daily during 14–18 October. |
 
