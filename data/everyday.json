@@ -29,9 +29,9 @@
       "description": "The Government of Malta identifies the euro as the national currency. Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. No bank, exchange rate, or card-acceptance guarantee is made here.",
+      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. No bank, exchange rate, or card-acceptance guarantee is made here. The State Department page (checked 11 October) notes currency restrictions at €10,000 or equivalent on entry and on exit.",
       "price range": "Use euro (€) as the reference currency; exchange and card fees depend on your provider"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Use Malta local time for tickets, published schedules, and transport. On the supplied trip dates Malta is on summer time; check time-zone conversion when coordinating with the United States.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "The U.S. State Department says Malta uses CET and switches to CEST from the last Sunday in March through the last Sunday in October. 25 October is the last Sunday in October 2026.",
       "price range": "Not applicable"
@@ -74,9 +74,9 @@
       "description": "The U.S. State Department says a visa is not required for a U.S. tourist visit of 90 days or less and that the passport must remain valid for at least three months beyond planned departure. The EU short-stay limit is 90 days in any 180-day period across the Schengen area. These pointers apply only if using a U.S. passport; check official rules for your nationality and exact itinerary.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "U.S. State Department Malta advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. EU Entry/Exit System FAQ explains the single 90-days-in-any-180-days calculation across countries using EES: https://travel-europe.europa.eu/en/ees/faq. A residence/dual-nationality/long-stay case may have different requirements.",
+      "notes": "U.S. State Department Malta advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. EU Entry/Exit System FAQ explains the single 90-days-in-any-180-days calculation across countries using EES: https://travel-europe.europa.eu/en/ees/faq. A residence/dual-nationality/long-stay case may have different requirements. Re-checked 11 October on the U.S. State Department Malta page (Level 1 advisory issued 9 July 2026): no visa is required for 90 days or less, and passports must be valid for 3 months beyond the departure date.",
       "price range": "No tourist visa fee is listed for a U.S. passport holder staying 90 days or less; other eligibility and circumstances can differ"
     },
     {
@@ -89,9 +89,9 @@
       "description": "The EU says EES applies to non-EU nationals making short stays, including visa-exempt travelers, and became fully operational on 10 April 2026. For a visa-exempt traveler, the system records a facial image and four fingerprints, along with travel-document and entry/exit data. Allow time for border processing and follow officials’ instructions.",
       "source_url": "https://travel-europe.europa.eu/en/ees/faq",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The EU FAQ says children under 12 are not fingerprint-scanned and that a biometric passport is only needed for optional self-service equipment, not in principle to cross the border. EES FAQs: https://travel-europe.europa.eu/en/ees/faq. Actual queue times are not published here.",
+      "notes": "The EU FAQ says children under 12 are not fingerprint-scanned and that a biometric passport is only needed for optional self-service equipment, not in principle to cross the border. EES FAQs: https://travel-europe.europa.eu/en/ees/faq. Actual queue times are not published here. Re-checked 11 October: the EU EES FAQ says progressive deployment lasted until 9 April 2026 and the EES has been fully operational at all external border crossing points from 10 April 2026.",
       "price range": "No EES fee stated by the EU"
     },
     {
@@ -104,9 +104,9 @@
       "description": "As checked on 9 October, the EU’s official ETIAS site says the system is not in operation and no applications are being collected; the EU says it will announce the specific start date several months before launch. Recheck before departure because the planned launch is in late 2026. Do not pay an unofficial site claiming to issue ETIAS authorisations.",
       "source_url": "https://travel-europe.europa.eu/en/etias",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias. A U.S. State Department Europe guide likewise says the planned ETIAS launch is late 2026: https://travel.state.gov/en/international-travel/planning/guidance/europe.html. Status is date-sensitive; recheck the EU page immediately before travel.",
+      "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias. A U.S. State Department Europe guide likewise says the planned ETIAS launch is late 2026: https://travel.state.gov/en/international-travel/planning/guidance/europe.html. Status is date-sensitive; recheck the EU page immediately before travel. Re-checked 11 October: the EU ETIAS page still states that ETIAS is currently not in operation and no travel-authorisation applications are collected; the EU will announce the start date several months before launch.",
       "price range": "No payment is due while the official EU site says applications are not being collected"
     },
     {
@@ -119,9 +119,9 @@
       "description": "The Maltese health ministry lists 112 for emergency ambulance, fire, and police services. If you need urgent help, call 112. The U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure; do not assume a U.S. health plan covers care abroad.",
       "source_url": "https://health.gov.mt/services/health-services/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance recommends travel insurance, including medical and evacuation assistance: https://travel.state.gov/en/international-travel/travel-advisories/malta.html.",
+      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance recommends travel insurance, including medical and evacuation assistance: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. The State Department page (checked 11 October) lists no required vaccinations for Malta.",
       "price range": "Costs/coverage depend on treatment and insurance; not stated here"
     },
     {
@@ -134,9 +134,9 @@
       "description": "The U.S. State Department lists +356 2561 4000 for the U.S. Embassy in Malta, including its emergency after-hours contact. This is consular contact information, not a substitute for local emergency services at 112.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Embassy website and current alerts: https://mt.usembassy.gov/. Emergency services in Malta: 112. Confirm contact details on the State Department page before relying on them.",
+      "notes": "Embassy website and current alerts: https://mt.usembassy.gov/. Emergency services in Malta: 112. Confirm contact details on the State Department page before relying on them. The State Department page (checked 11 October) gives the embassy address as Ta’Qali National Park Street, Attard ATD 4000, Malta, and the email ACSMalta@state.gov.",
       "price range": "Not applicable"
     },
     {
@@ -149,9 +149,9 @@
       "description": "On the 9 October 2026 check, the U.S. State Department listed Malta at Level 1 — Exercise normal precautions, and specifically warns that rip currents have caused tourist drownings. Follow lifeguards and local swimming conditions; a sunny forecast does not guarantee safe sea conditions.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The advisory is dated 9 July 2026; check the live page for any later updates. It is a government advisory, not a guarantee of personal safety.",
+      "notes": "The advisory is dated 9 July 2026; check the live page for any later updates. It is a government advisory, not a guarantee of personal safety. Re-checked 11 October: the State Department page still shows the Level 1 advisory issued 9 July 2026 and its riptide warning.",
       "price range": "Not applicable"
     },
     {
@@ -164,7 +164,7 @@
       "description": "Vehicles drive on the left in Malta. The U.S. State Department also notes that roads can be narrow and congested. If walking near traffic or considering a rental car, account for left-side traffic and check local road conditions; public-transport comparisons are on Getting around.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "Official travel advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. For route options from AX ODYCY to the named event venue, see getting-around.html.",
       "price range": "Not applicable — no rental quote is included"
@@ -179,7 +179,7 @@
       "description": "The U.S. State Department warns that bringing marijuana, cannabis, CBD products, or derivatives into Malta is illegal and may lead to arrest and lengthy detention. Do not pack these products; check the official advisory for the full legal guidance.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "This is a specific warning from the U.S. State Department Malta advisory, not personalized legal advice. Check the current advisory and Maltese authorities for the latest rules.",
       "price range": "Not applicable"

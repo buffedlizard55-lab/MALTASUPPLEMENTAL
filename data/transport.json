@@ -9,14 +9,14 @@
       "name": "Thunderpick World Championship 2026 — dates and venue",
       "category": "Event-day planning",
       "area": "Ta’ Qali / Ħ’Attard",
-      "address": "Possible venue-area reference: Malta Fairs & Conventions Centre (MFCC), Ta’ Qali, ATD 4000 Ħ’Attard, identified by a BLAST guide for a different event. The official TWC page gives only Malta as its location; exact Thunderpick address/pin and spectator entrance are unconfirmed.",
-      "hours": "Official TWC page lists the overall event window 12–19 October 2026: arrival 12 October, media day 13 October, Group Stage 14–16 October, Playoffs 17–18 October, departure 19 October. It does not publish daily public match/door times or attendee instructions.",
-      "description": "The official Thunderpick page confirms the overall window and phase dates and lists Malta as the location. A Thunderpick-issued release names BLAST Studios Malta; BLAST’s attendee guide for a separate event places BLAST Arena Studios at MFCC, Ta’ Qali. Treat the address as venue-area context only, not event-specific attendee logistics.",
+      "address": "BLAST Arena Studios Malta is listed at MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000, Malta (Eventworks and VisitMalta listings). Liquipedia lists the TWC venue as BLAST Arena Studios, Attard. The TWC-specific gate, entrance and ticket-holder access point are not confirmed.",
+      "hours": "Official TWC page: overall window 12–19 October 2026 (arrival 12 October, media day 13 October, Group Stage 14–16 October, Playoffs 17–18 October, departure 19 October). Thunderpick’s release gives the competitive Finals as 14–18 October. Daily public match/door times are not published.",
+      "description": "The official Thunderpick page confirms the overall window and phase dates and lists Malta as the location. A Thunderpick-issued release dated 13 August 2026 names BLAST Studios Malta, and Liquipedia lists the venue as BLAST Arena Studios, Attard. Third-party venue listings place BLAST Arena Studios at MFCC South Gate National Stadium, Attard; this corroborates the venue, not TWC-specific attendee logistics.",
       "source_url": "https://world-championship.thunderpick.io/2026-finals/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The official Thunderpick page was rechecked 10 October. Thunderpick’s announcement names BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . BLAST’s attendee guide is for a previous, separate event and gives the MFCC address: https://blast.tv/cs/news/malta-fan-guide . Neither confirms the TWC street address/pin, attendee entrance, tickets, exact daily match/door times, or event transport. Do not transfer earlier BLAST event access rules.",
+      "notes": "The official TWC page and the PR Newswire release were rechecked 10–11 October. Venue corroboration added 11 October: Eventworks lists BLAST Arena Studios Malta at MFCC South Gate National Stadium, Millennium Stand, Attard ATD 4000 with a map pin (35.8957, 14.4169) for another BLAST event on 8 October 2026: https://eventworks.mt/slam-8 . VisitMalta’s directory lists the business at MFCC South Gate National Stadium, Attard ATD 4000: https://www.visitmalta.co.uk/business-directory/business/blast-arena-studios-malta . Liquipedia’s event page lists Venue: BLAST Arena Studios, Location: Attard, 14–18 October 2026: https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026 . The BLAST attendee guide for a different event gives MFCC/Ta’ Qali: https://blast.tv/cs/news/malta-fan-guide . Do not transfer other events’ door times, ticketing or entrance rules. The TWC’s own gate, entrance and ticket instructions remain open. The 17 October playoff date coincides with the Rolex Middle Sea Race and a Heritage Malta ticketed event; exact TWC times are not published. See getting-around.html for transport caveats once an event timetable is available.",
       "price range": "Spectator ticket price/access not verified"
     },
     {
@@ -44,9 +44,9 @@
       "description": "A currently published Malta Public Transport notice says Route 186 is diverted on Friday/Saturday evenings from 19:00, starting 17 October, and that stops from Gholja 2 through Targa toward Buġibba will not be served. This overlaps the TWC Playoffs weekend and may matter for the return journey. The notice does not publish TWC-specific service details; check the live planner and service updates before relying on a particular stop or departure.",
       "source_url": "https://www.publictransport.com.mt/latest-service-updates/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The notice specifies affected stops, not a total cancellation of Route 186. It does not itself confirm whether a particular post-event bus will serve the required Qawra stop. Recheck the operator’s updates and planner on the day.",
+      "notes": "The notice specifies affected stops, not a total cancellation of Route 186. It does not itself confirm whether a particular post-event bus will serve the required Qawra stop. Recheck the operator’s updates and planner on the day. Re-checked 11 October: the MPT notice reads ‘Detour on Route 186 … Detour in effect weekly on Friday, Saturday from 7:00 PM to 12:00 AM, starting October 17. Detour ends October 18 at approximately 12:00 AM’, with stops from Gholja 2 through Targa toward Buġibba not served. The same notice lists similar 17–18 October evening detours for other routes.",
       "price range": "Normal route fare; no separate event fare stated"
     },
     {
@@ -89,9 +89,9 @@
       "description": "This is the most straightforward published public-bus option from Malta International Airport toward Qawra: Airport Direct TD1 runs from the airport toward Cirkewwa via Buġibba and the Qawra area, and its operator timetable lists the Arznell stop in Qawra. The airport terminal is signposted from arrivals. Buses have luggage space; no advance booking is required. The precise walk from the stop to AX ODYCY was not independently measured.",
       "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/.",
+      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/. Re-checked 11 October: the Airport Direct page lists TD1 as serving Rabat, Buġibba, Mellieħa and Ċirkewwa, hourly, with no pre-booking and TD1 at €3.50 without an Unlimited Travel Card. The Qawra stop and its times come from the TD1 timetable and were not re-read on 11 October.",
       "price range": "€3.50 per passenger on TD1 without an eligible unlimited travel card; cash or contactless onboard"
     },
     {
@@ -119,9 +119,9 @@
       "description": "MPT’s fare page says cash/contactless day tickets allow transfers within two hours and lists visitor-card options. A seven-day pass may be convenient for frequent bus use, while the shareable 12-journey card suits occasional/group trips. Prices and inclusions can change; the seasonal effective dates currently shown on the fare page do not establish which single-ticket rate applies 13–19 October 2026, so reconfirm before budgeting or buying.",
       "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "MPT states Airport Direct is included with an Unlimited Travel Card and lists TD1 separately at €3.50 without one. Personalized Tallinja-card free-travel rules and TD-route exclusions differ from visitor cards; check the product terms rather than assuming all buses are free. Sales offices/machines: https://www.publictransport.com.mt/office-and-ticket-machine/.",
+      "notes": "MPT states Airport Direct is included with an Unlimited Travel Card and lists TD1 separately at €3.50 without one. Personalized Tallinja-card free-travel rules and TD-route exclusions differ from visitor cards; check the product terms rather than assuming all buses are free. Sales offices/machines: https://www.publictransport.com.mt/office-and-ticket-machine/. Re-checked 11 October: the MPT fares page says the €2.00 winter single fare on Day Routes applied from 19 October 2025 to 13 June 2026 and its fare table lists Day Routes (Summer) at €2.50, without stating when the summer fare starts or ends. MPT’s winter weekday timetable began 21 September 2026, so the winter fare may apply on the trip days, but the page does not confirm which fare applies on 13–19 October 2026; check the fare at the bus or in the planner before budgeting.",
       "price range": "MPT currently lists €2 winter / €2.50 summer day tickets, valid for two hours; €19 shareable 12-journey card; €25 individual Explore Adult 7-day card"
     },
     {
