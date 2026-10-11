@@ -248,3 +248,43 @@ test('date-by-date transport plan and opening matchups render from canonical rec
   await expect(page.locator('#twc-opening-matchups-14-oct dd').nth(1)).toHaveText(matchup.hours);
   await expect(page.locator('#twc-opening-matchups-14-oct .record-notes p')).toHaveText(matchup.notes);
 });
+
+test('radio trip-week listening plan is labelled on mobile and a semantic table on desktop', async ({page}) => {
+  await page.setViewportSize({width:360,height:850});
+  await page.goto('radio.html#listening-plan');
+  await expect(page.locator('#listening-plan h2')).toContainText('13–19 October 2026');
+  await expect(page.locator('#listening-plan tbody tr')).toHaveCount(12);
+  const radioRecords=data('radio').records;
+  const sportiva=radioRecords.find(r=>r.id==='radio-sportiva-dab-plus');
+  const bbc=radioRecords.find(r=>r.id==='bbc-world-service-dab-sportsworld');
+  expect(sportiva.hours).toContain('15:05–17:00');
+  expect(bbc.hours).toContain('15:06 and 16:06 Malta time');
+  await expect(page.locator('#listening-plan')).toContainText('15:05–17:00 as published');
+  await expect(page.locator('#listening-plan')).toContainText('15:06 start');
+  await expect(page.locator('#listening-plan')).toContainText('Diretta Sp.+Calciom.');
+  await expect(page.locator('#listening-plan')).toContainText('Diretta Sportiva');
+  await expect(page.locator('#listening-plan')).toContainText('5–11 October only');
+  await expect(page.locator('#scan-checklist')).toBeVisible();
+  await expect(page.locator('#listening-plan')).toContainText('15:06 start');
+  await expect(page.locator('#listening-plan')).toContainText('16:06 start');
+  await expect(page.locator('#listening-plan')).toContainText('starts after the published Saturday 13:30 Malta EPL kick-off');
+  await expect(page.locator('#listening-plan')).toContainText('starts after the published Sunday 15:00 Malta EPL kick-offs');
+  await expect(page.locator('#listening-plan')).toContainText('No named match');
+  for (const width of [320,360,720]) {
+    await page.setViewportSize({width,height:850});
+    const mobile = await page.locator('#listening-plan tbody tr').first().locator('td').evaluateAll(cells => ({
+      display: getComputedStyle(cells[0]).display,
+      labels: cells.map(cell=>cell.getAttribute('data-label')),
+      pageWidth: document.documentElement.scrollWidth,
+      viewport: window.innerWidth
+    }));
+    expect(mobile.display).toBe('grid');
+    expect(mobile.labels).toEqual(['When (Malta)','Service & tuning','Programme','Evidence / limitation']);
+    expect(mobile.pageWidth).toBeLessThanOrEqual(mobile.viewport);
+  }
+  await page.setViewportSize({width:1440,height:900});
+  const desktopDisplay = await page.locator('#listening-plan tbody td').first().evaluate(cell=>getComputedStyle(cell).display);
+  expect(desktopDisplay).toBe('table-cell');
+  const sourceLinks = await page.locator('#listening-plan > p a[href^="https://"]').count();
+  expect(sourceLinks).toBeGreaterThanOrEqual(8);
+});
