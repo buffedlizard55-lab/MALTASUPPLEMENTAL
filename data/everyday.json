@@ -72,12 +72,12 @@
       "address": "Not applicable",
       "hours": "13–19 October 2026: Central European Summer Time (CEST), UTC+2. Daylight saving time ends on Sunday 25 October 2026.",
       "price range": "Not applicable",
-      "description": "Use Malta local time for tickets, published schedules, and transport. On the supplied trip dates Malta is on summer time; check time-zone conversion when coordinating with the United States.",
+      "description": "Malta is six hours ahead of U.S. Eastern Time during Eastern Standard Time and five hours ahead at the edges of daylight-saving shifts. The State Department's own wording: Malta 'uses Central European Time (CET) and observes daylight saving time… It switches to Central European Summer Time (CEST) from the last Sunday in March until the last Sunday in October. Malta is 6 hours ahead of Washington, D.C. most of the year during Eastern Standard Time, but only 5 hours ahead during the beginning and end of daylight saving time.' For this trip both ends fall in CEST (UTC+2): the clocks change on the last Sunday in October, which is 25 October 2026, after departure. That matters for the radio pages, where Italian and Maltese civil time match and BBC episode times must be converted from UK BST by adding one hour.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "The U.S. State Department says Malta uses CET and switches to CEST from the last Sunday in March through the last Sunday in October. 25 October is the last Sunday in October 2026."
+      "notes": "Government-adjacent summary read 11 October 2026: https://travel.state.gov/en/international-travel/travel-advisories/malta.html (About Malta section) and https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx for the electricity facts recorded separately. A time-zone rule is stable but the exact DST switch date should be rechecked each year; for 2026 the last Sunday in October is 25 October, i.e. after this stay ends."
     },
     {
       "id": "us-passport-schengen",
@@ -87,12 +87,12 @@
       "address": "Not applicable",
       "hours": "Not applicable — entry requirements apply at the external Schengen border",
       "price range": "No tourist visa fee is listed for a U.S. passport holder staying 90 days or less; other eligibility and circumstances can differ",
-      "description": "The U.S. State Department says a visa is not required for a U.S. tourist visit of 90 days or less and that the passport must remain valid for at least three months beyond planned departure. The EU short-stay limit is 90 days in any 180-day period across the Schengen area. These pointers apply only if using a U.S. passport; check official rules for your nationality and exact itinerary.",
+      "description": "For a U.S. citizen visiting Malta as a tourist the State Department's own summary is short: no visa is required for stays of 90 days or less, no vaccinations are required, and your passport must have at least three months' validity beyond your date of departure. Currency carried in or out is capped at €10,000 or equivalent before declaration rules apply. Malta is in the Schengen area, so a 90/180-day history matters if you have other European travel around this trip, and the separate ETIAS/EES records in this dataset carry the entry-system position and its conflicts.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "U.S. State Department Malta advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. EU Entry/Exit System FAQ explains the single 90-days-in-any-180-days calculation across countries using EES: https://travel-europe.europa.eu/en/ees/faq. A residence/dual-nationality/long-stay case may have different requirements."
+      "notes": "State Department page read 11 October 2026: https://travel.state.gov/en/international-travel/travel-advisories/malta.html — travel requirements section ('No visa is required for 90 days or less', 'No vaccinations are required', 'Passports must have 3 months' validity beyond your date of departure', entry and exit currency maximum €10,000 or equivalent). This is a general rule, not an assessment of this traveller's passport, prior stays or airline requirements. Confirm with the airline and Maltese authorities before travel; the EES/ETIAS records in this dataset carry the system-specific status."
     },
     {
       "id": "ees-border-system",
@@ -147,12 +147,12 @@
       "address": "U.S. Embassy Malta, Ta’ Qali National Park Street, Attard ATD 4000, Malta",
       "hours": "Emergency after-hours number is the same main number; routine services require the embassy’s current appointment guidance",
       "price range": "Not applicable",
-      "description": "The U.S. State Department lists +356 2561 4000 for the U.S. Embassy in Malta, including its emergency after-hours contact. This is consular contact information, not a substitute for local emergency services at 112.",
+      "description": "The U.S. Embassy in Malta sits at Ta'Qali National Park Street, Attard ATD 4000 — the same Ta' Qali/Attard area as the CS2 venue, so it is a genuinely local emergency contact rather than an abstract one. Main and after-hours telephone +356-2561-4000; email ACSMalta@state.gov; website mt.usembassy.gov. Enrol in the Smart Traveler Enrollment Program (STEP) before departure so the embassy can reach you or your emergency contact. The State Department also recommends travel insurance covering medical care, evacuation and cancellation.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Embassy website and current alerts: https://mt.usembassy.gov/. Emergency services in Malta: 112. Confirm contact details on the State Department page before relying on them."
+      "notes": "Embassy contact block read 11 October 2026 from the U.S. State Department's Malta advisory page: https://travel.state.gov/en/international-travel/travel-advisories/malta.html . A general advisory page is not a case file: no consular service, appointment or eligibility was tested, and the embassy was not contacted."
     },
     {
       "id": "coastal-safety",
@@ -288,6 +288,21 @@
       "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "Fresh Health / Prescription medications / Water quality sections read 11 October. Official Maltese medicine authority linked there: https://medicinesauthority.gov.mt/ . Current personal medication eligibility was not assessed. In an emergency use 112; the separate emergency record covers health insurance and payment cautions."
+    },
+    {
+      "id": "us-state-dept-malta-advisory-2026",
+      "name": "U.S. State Department advisory for Malta — Level 1, issued 9 July 2026",
+      "category": "Safety, health & emergency contacts",
+      "area": "Malta (nationwide); advisory page also carries a worldwide-caution banner",
+      "address": "Not applicable — government advisory page",
+      "hours": "Advisory date issued: July 09, 2026. Recheck before departure; advisory levels change.",
+      "price range": "Not applicable",
+      "description": "The U.S. State Department rates Malta <strong>Level 1 — Exercise normal precautions</strong>, issued 9 July 2026, and states that Malta is generally a safe destination for travellers. Its two Malta-specific cautions are worth acting on: rip currents have caused drownings among tourists, so follow lifeguards and local warnings at beaches; and a separate worldwide-caution notice advises Americans everywhere to exercise increased caution. The same page gives the practical entry set this guide records separately — no visa for stays of 90 days or less, no vaccinations required, a passport valid for three months beyond departure, and a €10,000 currency entry/exit maximum. It also notes that vehicles drive on the left with narrow, congested roads, and that bringing marijuana, cannabis or CBD products or derivatives into Malta is illegal and can lead to arrest and long detention.",
+      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Advisory page read 11 October 2026: https://travel.state.gov/en/international-travel/travel-advisories/malta.html — 'Travel advisory – Republic of Malta. Level 1 – Exercise normal precautions. Date issued: July 09, 2026.' Note a defect on the State Department's own page: its OSAC country-security-report link and its CDC travel-health link both pointed at Bermuda when read, so those two jumping-off links were not used here. A general advisory is not personal advice, and it is not a substitute for insurance, medical or visa advice for this traveller's own documents."
     }
   ]
 }
