@@ -173,7 +173,7 @@
 
         var dl = make("dl", "record-details");
         var priceDetail = make("div", "record-detail");
-        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record.price_range));
+        priceDetail.append(make("dt", "", "Price status"), make("dd", "", record["price range"] || "Not published"));
         dl.appendChild(priceDetail);
         article.appendChild(dl);
 

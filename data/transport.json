@@ -5,6 +5,21 @@
   "intro": "The strongest public-transport candidate for event travel is Malta Public Transport route 186 between the Qawra and Ta’ Qali Stadium stops. The operator’s journey planner is the final check for the exact stop, direction, time and service alert on each date; the event’s public match and door times were not available in the sources checked.",
   "records": [
     {
+      "id": "mode-comparison-island-and-event",
+      "name": "Practical mode comparison: public bus vs ride-share/taxis vs ferries vs rental car",
+      "category": "Mode comparison",
+      "area": "Island-wide & Qawra ↔ Attard / Ta’ Qali event corridor",
+      "address": "AX ODYCY (Qawra Coast Road, Qawra SPB 1902) ↔ Malta International Airport, BLAST Arena Studios (Attard / Ta’ Qali), Valletta, Sliema, and Gozo",
+      "hours": "Depends on mode: Route 186 lists Qawra stop 952 at 06:09–21:39 (30-min intervals) and last return arrival at Buġibba Bay 1 (stop 2527) at 21:27; TD1 serves Qawra stop Arznell 950 hourly (05:42–00:35 from airport; 05:27–23:27 to airport); ride-hailing/taxis operate on demand (Malta Taxi advertises 24/7); ferries follow seasonal timetables.",
+      "price range": "Public bus: €2.00 winter / €2.50 summer 2-hr day single (Oct 2026 window unconfirmed), €3.50 TD1, €19 12-journey card, €25 7-day Explore Adult; Ferries: €3.00–€8.50 published adult fares; Ride-share/taxi & Car hire: live quote required",
+      "description": "Side-by-side comparison across convenience, price, value, and feasibility: (1) Public buses (MPT) offer the lowest cost and highest day-to-day value via Route 186 (Qawra ↔ Ta’ Qali Stadium stop 6227), Route 214, and Airport Direct TD1 (serving Qawra stop Arznell 950), but have lower late-night return convenience because Route 186’s return serves St Paul’s Bay/Buġibba (last arrival 21:27 at Buġibba Bay 1) rather than Qawra seafront and is diverted on Saturday 17 October after 19:00. (2) Ride-share/taxis (Bolt, eCabs, Malta Taxi) give the highest door-to-door convenience and late-night feasibility for post-Playoffs returns or airport transfers with luggage, at higher per-ride cost (live app quotes required). (3) Ferries (Valletta Ferry Services, Gozo Channel, Gozo Highspeed) offer high scenic value and harbour/island convenience for Valletta ↔ Sliema/Three Cities and Gozo day trips, but are weather-dependent (with 14 and 17 Oct Gozo Highspeed notices) and do not serve inland Attard/Ta’ Qali. (4) Car hire (Park East at MLA) provides flexibility for rural sightseeing but has lower value/feasibility for a Qawra-based event trip due to left-hand driving, narrow congested roads, parking constraints, and direct bus/ride-share alternatives.",
+      "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Synthesizes verified operator sources checked 9–11 October 2026: MPT fares (https://www.publictransport.com.mt/fares-and-tickets/), Route 186 (https://www.publictransport.com.mt/route/186/), Route TD1 (https://www.publictransport.com.mt/route/TD1/), Bolt Malta (https://bolt.eu/en/cities/malta/), eCabs (https://ecabs.com.mt/), Malta Taxi (https://www.maltataxi.mt/), Valletta Ferry Services (https://www.vallettaferryservices.com/), Gozo Channel (https://www.gozochannel.com/ferry/fares/passenger/), Gozo Highspeed (https://gozohighspeed.com/pages/fares), MLA car rental (https://maltairport.com/renting-a-car/), and U.S. State Department road-safety guidance (https://travel.state.gov/en/international-travel/travel-advisories/malta.html). Exact ride-share/rental quotes and event-day door-to-door walking times remain trip-specific."
+    },
+    {
       "id": "twc-2026-venue-dates",
       "name": "Thunderpick World Championship 2026 — dates and venue",
       "category": "Event-day planning",
@@ -46,7 +61,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Re-checked 11 Oct 2026 on the MPT route page service-update box and the MPT service-updates page: weekly Friday/Saturday 19:00–00:00 detour starting 17 October, ending 18 October; toward Buġibba, stops from Gholja 2 through Targa are not served. Friday 16 October is before the stated start, so this notice covers Saturday 17 October evening. The notice specifies affected stops, not a total cancellation of Route 186. Recheck on the day.",
+      "notes": "Re-checked 11 Oct 2026 on the MPT route page service-update box and the MPT service-updates page: weekly Friday/Saturday 19:00–00:00 detour starting 17 October, ending 18 October; toward Buġibba, stops from Gholja 2 through Targa are not served. Friday 16 October is before the stated start, so this notice covers Saturday 17 October evening. The notice specifies affected stops, not a total cancellation of Route 186. Also listed on the MPT service-updates page on 11 Oct 2026: Stop Saqqajja (ID 4627) closed for construction until approximately 1 January on Routes 109, 109A, 181, 182, 186, 201, 202, 50, 51, 52, 53, 56 and N52, plus Tuesday 13 October (09:30–17:30) construction detours on Attard Routes 54 and 106. Recheck on the day.",
       "price range": "Normal route fare; no separate event fare stated"
     },
     {
@@ -81,17 +96,17 @@
     },
     {
       "id": "airport-direct-td1-qawra",
-      "name": "Malta Airport → north Malta by Airport Direct TD1 (Qawra stop not confirmed)",
+      "name": "Malta Airport ↔ Qawra by Airport Direct TD1 (Il-Qawra stop Arznell 950)",
       "category": "Airport transfer",
       "area": "Malta International Airport ↔ Qawra / Buġibba / north Malta",
-      "address": "Malta International Airport bus terminal, which MPT says is signposted on exiting the arrivals area. Whether TD1 has a Qawra stop and which stop is nearest AX ODYCY is not confirmed; check the TD1 timetable and planner.",
-      "hours": "MPT’s Airport Direct page says TD1 runs every hour. Check the live timetable against the flight arrival time.",
-      "description": "MPT’s Airport Direct page lists TD1 from Malta International Airport to Rabat, Buġibba, Mellieħa and Ċirkewwa, hourly. The buses have luggage space and no pre-booking is needed. The page does not name Qawra, so the Qawra connection is unverified and should be checked in the timetable before relying on TD1.",
+      "address": "Malta International Airport bus terminal (Airport 1 stop 2550 outbound; Airport 3 stop 2552 return) ↔ Il-Qawra stop Arznell (ID 950) and Buġibba stops Sajf (947), Bugibba Bay 8 (2339), and Wileg (955). Exact walking distance from Arznell 950 to AX ODYCY must be confirmed in the planner.",
+      "hours": "MPT’s Route TD1 timetable (read 11 Oct 2026) lists hourly departures from Airport 1 (stop 2550) on the hour from 05:00 to 00:00, reaching Il-Qawra stop Arznell (950) about 42–54 minutes later (05:42–00:35). In the Ċirkewwa-to-Airport return direction, TD1 serves Il-Qawra stop Arznell (950) hourly from 05:28 to 23:26 on weekdays (05:27 to 23:27 on weekends), reaching Airport 3 (stop 2552) at 06:08–00:05 (06:07–00:07 weekends).",
+      "description": "MPT’s Airport Direct TD1 connects Malta International Airport with Rabat, Buġibba, Qawra, Mellieħa and Ċirkewwa hourly. Reading the official Route TD1 stop timetable on 11 October 2026 confirms that TD1 serves Il-Qawra at stop Arznell (ID 950) in both directions (rather than Qawra Coast Road stop 952). The buses have luggage space and no pre-booking is needed; use the live journey planner to compare the walk from Arznell 950 to AX ODYCY against Route 214 or a ride-share.",
       "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Airport Direct page checked 11 Oct 2026: TD1 hourly to Rabat, Buġibba, Mellieħa and Ċirkewwa; TD2 (St Julian’s, Pembroke), TD3 (St Julian’s, Sliema, Gżira, Msida) and TD4 (Valletta, Gozo Fast Ferry) every 30 minutes; TD5 (Rabat, Buġibba) hourly. Without an Unlimited Travel Card, TD1 is €3.50 and the other Airport Direct routes €3; cash or contactless is accepted onboard; the Unlimited Travel Card includes Airport Direct. Route stop list and times (including any Qawra stop): https://www.publictransport.com.mt/route/TD1/ — not read on 11 Oct, so unverified.",
+      "notes": "Airport Direct overview checked 11 Oct 2026 (https://www.publictransport.com.mt/other-services/airport-direct/): TD1 hourly to Rabat, Buġibba, Mellieħa and Ċirkewwa; TD2 (St Julian’s, Pembroke), TD3 (St Julian’s, Sliema, Gżira, Msida) and TD4 (Valletta, Gozo Fast Ferry) every 30 minutes; TD5 (Rabat, Buġibba) hourly. Without an Unlimited Travel Card, TD1 is €3.50 and the other Airport Direct routes €3; cash or contactless is accepted onboard; the Unlimited Travel Card includes Airport Direct. Official Route TD1 stop timetable read 11 Oct 2026 (https://www.publictransport.com.mt/route/TD1/): confirms Il-Qawra stop Arznell (ID 950) in both directions (05:42–00:35 from Airport 1 stop 2550; 05:28–23:26 weekday / 05:27–23:27 weekend toward Airport 3 stop 2552). Exact walking route from stop Arznell 950 to AX ODYCY remains a journey-planner check.",
       "price range": "€3.50 per passenger on TD1 without an Unlimited Travel Card; cash or contactless onboard"
     },
     {
