@@ -16,7 +16,7 @@ Passes 1–3 were run on the tree that started at `250e6bd` (PR #48 on `main`). 
 - Government of Malta still lists 230 V, 50 Hz, UK-style three-pin plugs.
 - Malta Met Office’s seven-day panel still ends 17 October and matches the retained 13–17 October figures.
 
-Local gates after the edits: schema/source/link validator passed (7 files, 185 records, 305 record URLs, 15 pages, 296 link attributes, 9 nav destinations, 25 expense rows). Playwright/axe passed 21/21 after the hub-link fix, including 320–1440 px layouts. Tests do not prove external pages stay live or that a bus/radio signal exists.
+Local gates after the merge with `main`: schema/source/link validator passed (7 files, 197 records, 319 record URLs, 15 pages, 311 link attributes, 9 nav destinations, 25 expense rows). Playwright/axe passed 21/21, including 320–1440 px layouts. Tests do not prove external pages stay live or that a bus/radio signal exists.
 
 ### Still unverified
 
