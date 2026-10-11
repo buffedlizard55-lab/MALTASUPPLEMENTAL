@@ -1,5 +1,18 @@
 # Malta trip guide — work plan
 
+## Current delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026)
+
+The repository and PR #33 were reviewed before integration. This fixed Arena branch began at PR #33 head `854c1e16d94caa6cd7ae35ee44a0040bc5d036fd` (merge base `eeeb648d143299462ac52b00a7bc3749d36ca152`). The required upstream snapshot is `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, including PR #39 and its accumulated PR #40/#41 work. A non-fast-forward merge of that exact `origin/main` commit is in progress on this branch; PR #33’s own corrections and evidence limits must be retained. No commit, push, PR merge or Pages verification has yet been completed.
+
+The parallel-work protocol remains in force: A–F own one topic data file plus its matching page; G owns shared integration and documentation. Because Arena provides no isolated workstream runner, research and edits run serially on the fixed branch. Shared setup happens first; cross-topic findings go to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in `docs/OPEN_QUESTIONS.md`. The schema, source log, expense defaults, and prior useful main work are preserved unless a concrete inconsistency requires correction.
+
+Current session objectives:
+
+1. **Integrate upstream safely:** complete the `de3303f` merge without dropping PR #33 changes or evidence; review staged and unstaged diffs and retain provenance.
+2. **Reconcile current claims:** align the Eventbrite listing scope (dated free 18+ reservation advertisement, visible 14–16 October agenda, no traveler-specific ticket confirmation), MPT’s unresolved October single fare and static Route 186 return risk, the unresolved MTA short-stay wording, and BBC parent-programme versus match-specific broadcast-service labels. Keep inaccessible-platform and physical-check limits explicit.
+3. **Complete Passes 1–3 cumulatively:** check schema/data/page/docs consistency; search for stale or overconfident statements; run structural, JavaScript and browser tests; record all remaining blockers and limitations.
+4. **Delivery:** commit and push only `arena/ef6c76d6-maltasupplemental`, verify PR #33’s head/base/checks/mergeability, merge PR #33 by explicit number as requested, then check the GitHub Pages build. Report only states actually observed.
+
 ## Scope and repository review
 
 The deliverable is a sourced, mobile-friendly Malta trip guide and a blank-by-default expense planner for the traveler-supplied 13–19 October 2026 stay at AX ODYCY in Qawra, with “BLAST Arena Studios, Attard” as the user-supplied event destination. These are planning inputs, not independent confirmation of a booking, ticket, public entrance, event schedule, or exact venue pin. The site is a static HTML/CSS/JavaScript project with JSON-backed pages, shared navigation and renderer, offline validation, and browser regression tests; no production build step is needed.
@@ -50,28 +63,93 @@ PR #13 was based on an older implementation that added duplicate `/pages/` templ
 
 The upstream PR #28 work added the `record["price range"]` validator regression guard, a transport mode-comparison summary, bidirectional `Il-Qawra` stop `Arznell (950)` TD1 timetable evidence, U.S. State Department confirmation of 112 emergency services/private-hospital payment expectations/AmEx and ATM notes, and the BBC *Sportsworld* 11 October EPL billing precedent. These sources are historical and claim-specific; they do not establish all event-day journeys, Malta reception, or named-match carriage. The refreshed source/audit documents retain limitations and checked dates.
 
-### Historical delivery session — PR #31 (merged)
+### Earlier delivery session — PR #31 (historical)
 
-This section records the pre-merge state of work on `arena/3a5297d2-maltasupplemental`; PR #31 was the delivery target at that time. Preserve and inspect later `origin/main` changes before updating the PR branch; rebase safely, reconcile conflicts without dropping relevant content, rerun the cumulative checks, push only this branch, review CI/diff/mergeability, and merge PR #31 by its explicit number when safe. Current audit details and unresolved facts are recorded in `docs/STATUS.md`, `docs/HANDOFF.md`, `docs/OPEN_QUESTIONS.md`, `docs/SOURCES.md`, and `docs/FINAL_REPORT.md`.
+All work remains on `arena/3a5297d2-maltasupplemental`. PR #31 is the delivery target. Preserve and inspect later `origin/main` changes before updating the PR branch; rebase safely, reconcile conflicts without dropping relevant content, rerun the cumulative checks, push only this branch, review CI/diff/mergeability, and merge PR #31 by its explicit number when safe. Current audit details and unresolved facts are recorded in `docs/STATUS.md`, `docs/HANDOFF.md`, `docs/OPEN_QUESTIONS.md`, `docs/SOURCES.md`, and `docs/FINAL_REPORT.md`.
 
-### Second 11 October 2026 session (historical post-merge snapshot)
+### Second 11 October 2026 session (post-merge verification)
 
 Work continued on the fixed session branch `arena/96208136-maltasupplemental` after PR #31 merged. Because this environment has no isolated sub-agent runner, the same ownership-guided serial model was used: workstream A (fares, venue/admission, ride-hailing), E (DAB+ carriage and Kalshi eligibility) and D (power, eco-contribution, weather) were refreshed first, then the shared files (index shell, transport/radio/everyday/costs pages, README and research records) were updated once, in one pass, so no two writers touched a file in the same step. New findings that belong to another workstream are recorded in `docs/HANDOFF.md` rather than edited across owners.
 
-Evidence rules unchanged: every record keeps the canonical 13 fields, every cited URL is logged in `docs/SOURCES.md` with its access date and limitation, and unresolved items stay in `docs/OPEN_QUESTIONS.md` rather than being inferred. The current PR #33 re-audit below supersedes earlier fare, MTA and DAB+ interpretations where newer source comparison found unresolved conflicts.
+Evidence rules unchanged: every record keeps the canonical 13 fields, every cited URL is logged in `docs/SOURCES.md` with its access date and limitation, and unresolved items moved to (or stayed in) `docs/OPEN_QUESTIONS.md` rather than being inferred. That historical refresh described the published fare table and initially interpreted the MTA “15-night” wording as resolved. The current reconciliation rejects the fare-by-date inference and keeps the MTA short-stay interpretation open (see current delivery session and OQ-25). The DAB+ “Sports Channel” remains a technical listing/scan lead, not verified reception or talkSPORT carriage.
 
-### Merged third-pass outcome — 11 October 2026 (historical snapshot; see PR #33 re-audit below)
+### Merged third-pass outcome — 11 October 2026
 
 - **Two 11 October sessions reconciled in one branch:** the session already merged via PR #32/#34 (`ad7226c`: exact fares, admission negative finding, DAB+ tuning guide, power, eco-contribution, Kalshi eligibility, Uber conflict, “10-minute intake”) and this session (venue confirmation, attendee-status record, customs record, receiver compatibility, page rewrites, itinerary quick-fill). Neither session's evidence was dropped; where they disagreed the more cautious reading was adopted and the disagreement is disclosed in the record text.
 - **Ownership respected:** this session touched only its own page/data/files plus the shared files it owns as workstream G (nav-adjacent prose on `index.html`, `css/style.css`, `tests/site.spec.js`, `docs/*`, `README.md`), and merged rather than reformatted the other session's work.
 - **Gates on the merged tree:** validator PASS (140 records / 242 URLs / 130 link attributes / 25 planner rows), JavaScript syntax PASS, Playwright 10/10 PASS.
 - **Handed to the traveler:** the itinerary text itself, party size/ages, booked prices, organizer attendee information. Remaining open questions are listed in `docs/OPEN_QUESTIONS.md`.
+## Historical venue-confirmation session (11 October 2026, on top of `origin/main` ad7226c)
 
+Scope for this pass was deliberately narrow: re-verify the claims that carried the most planning risk, correct everything they invalidated, and re-run the full gate set. The shared schema, renderer, styles, navigation, expense-planner defaults and the six-file data layout were left untouched, so the ownership boundaries in the table above still hold. The parallel 11 October pass already on `main` (fares, card sales points, talkSPORT/Vibe FM leads, Uber quote) is preserved and extended, not replaced.
 
-### Current re-audit and delivery — PR #33 (11 October 2026)
+Historical priorities for that earlier pass: (1) confirm attendee venue/dates/access; (2) re-derive fare and return-risk claims; (3) clarify BBC parent-programme versus individual broadcast labels; (4) extend weather coverage; (5) record the Route 186 notice ambiguity. Current resolutions and remaining gaps are summarized in the opening section and current status/open-question documents.
 
-The fixed branch `arena/ef6c76d6-maltasupplemental` has been rebased onto `main` at `eeeb648` (after PR #35 and its PR #38 status follow-up). Preserve PR #35’s BLAST/MFCC postal address (sourced to the BLAST guide and VisitMalta directory), customs guidance, radio receiver-compatibility evidence, itinerary quick-fill, and the merged 140-record tree. This audit does not treat unmerged PR #36/#37 claims as verified.
+Two evidence rules adopted here. First, when a source states a window for one season only, any extension to the trip dates is recorded as an inference and kept at “partially verified”, not promoted to “verified” — this is why the October fare conclusion is labelled as an inference from the published winter boundary. Second, when two directories disagree on a technical fact such as a DAB+ block, both readings are published side by side and the action becomes “scan both”, rather than picking the more convenient one.
 
-- Reconcile the MPT single-fare window, MTA webpage/PDF threshold wording, and Malta DAB+ 6C/12A listings conservatively; leave unknown trip prices, event access and receiver carriage qualified.
-- PR #37 cites an Eventbrite page, but the page was not independently fetched here; treat it as an unverified lead and recheck directly with the organizer before repeating the dated negative ticket search as current.
-- The cumulative suite includes 320/360/768/1440 px checks and PR #35’s itinerary quick-fill regression. Local validator, JavaScript syntax, `git diff --check` and all 11 Playwright tests passed after the content edits. Push, then verify PR #33 checks/mergeability and the post-merge Pages build before calling delivery complete.
+## Historical reconciliation and verification notes
+
+### Post-merge verification session (after PR #31)
+
+PR #31 was already merged into `main` when this session began, so the session branch started at parity with `main`. This session therefore performed a **forward verification and enrichment pass** rather than a rebase. Work remained on `arena/58d6d232-maltasupplemental` throughout.
+
+Corrections and upgrades made, each traceable to a source read during this session:
+
+1. **Venue disambiguation (workstream A).** “BLAST Arena Studios, Attard” and “Ta’ Qali” are the same complex. Verified from BLAST’s own attendee guide (“Malta Fairs & Conventions Centre – BLAST Arena Studios … Ta Qali, ATD 4000 Ħ’Attard”), EventWorks, GamingMalta and the visitmalta.co.uk directory. The prior dataset hedged this as unresolved; routing is now settled while *access* remains open.
+2. **Two Route 186 detours, not one (A).** The operator’s own route page lists both a recurring Friday/Saturday 20:00–00:00 notice ending ~21 April and a 19:00–00:00 notice starting 17 October. Both omit stops “from Gholja 2 through Targa” toward Buġibba. Only the 17 October one was previously recorded.
+3. **“Sports Channel” upgraded from an unverified lead (E).** Previously recorded as `unverified` with no operator identity. A specialist ensemble listing labels it “Sports Channel (Talk Sport)” at 185.360 MHz, two independent scanner directories place Sports Channel on 185.360 MHz, and the Premier League’s own partner page confirms talkSPORT’s live-commentary rights. It is now `partially verified` and is the page’s primary recommendation, with the identity caveat retained. The WorldDAB 12A placement is recorded as a likely mis-assigned table (its 12A table contains “6c_Test7”/“6c Test12” entries).
+4. **Fixture times converted to Malta time (E).** EPL matchweek 8 and Serie A matchday 7 are now listed in Malta time with the conversion rule stated (Malta CEST = UK BST + 1 hour until both change on 25 October; Italy and Malta share CEST, so Serie A times apply directly).
+5. **Social/review gap partially closed (B).** Reddit threads and TripAdvisor/Google listing snapshots were reachable through search, adding a popularity snapshot and a community shortlist. Yelp, Instagram, TikTok, Facebook and X remained inaccessible; this limitation is disclosed on the page rather than filled with guesses.
+
+No previously verified claim was weakened without cause, and no unsupported claim was introduced. Every URL cited in a record is logged in `docs/SOURCES.md`, which the offline validator enforces.
+
+## Session plan — 11 October 2026 (branch `arena/b7b7ea21-maltasupplemental`)
+
+### Repository review conclusion
+
+The repository already contains a complete, mature implementation of the requested guide: a static
+GitHub Pages site (`index.html` plus six data-backed topic pages and `sources.html`), a shared
+accessible renderer (`js/site.js`), design tokens (`css/style.css`), six canonical JSON datasets on
+the exact 13-field schema, an offline validator (`scripts/validate_site.py`), a JavaScript syntax
+gate (`scripts/check_javascript.py`), and a Playwright/axe browser suite. GitHub Pages is publishing
+the `main` root and reported `built` for `4ed9c5a`. Both baseline gates pass on arrival
+(128 records, 205 unique logged record URLs, 25 expense rows).
+
+Therefore this session does **not** re-scaffold. It runs the same A–G ownership protocol as a
+fresh verification-and-extension pass against the live sources, because the trip now starts in two
+days and several previously "beyond the forecast window" or "unpublished" items have become
+checkable.
+
+### Workstream scope for this session
+
+| Workstream | Owned files | This session's work |
+|---|---|---|
+| A · Transport | `data/transport.json`, `getting-around.html` | Re-read Route 186 end-to-end in both directions; establish the return-leg terminus and the Qawra transfer problem; re-read the fare table and its stated validity window; add trip-specific fare scenarios; confirm the 17–18 October Ta' Qali/Mosta evening detour cluster. |
+| B · Food & cafés | `data/food.json`, `restaurants.html` | No new claims. Existing records retain their dated snapshots; re-verification of all 29 records against live operator pages is out of scope for one session and is logged as a next-session task. |
+| C · Activities | `data/activities.json`, `activities.html` | Resolve the archived "Dash Berlin at UNO Malta" lead on the official ticketing platform; add the Ħamrun Chocolate Festival; record PLAYCON 2026 as explicitly outside the trip window and use it to corroborate the MFCC address. |
+| D · Everyday | `data/everyday.json`, `everyday.html` | Extend the weather record to 18–19 October; document the EES implementation conflict between the official EU position and secondary September 2026 reporting. |
+| E · Radio sports | `data/radio.json`, `radio.html` | Distinguish the parent BBC programme series from individual match broadcast-service labels; add Malta-time conversions for named EPL commentaries and cross-check against the fixture record, without inferring Malta reception. |
+| F · Expenses | `data/expenses.json`, `costs.html` | No structural change; the planner is already blank-by-default and quick-fill. Add the newly verified fare inputs as optional dated reference notes only, never as prefilled amounts. |
+| G · Integration | `index.html`, `README.md`, `docs/*`, `sources.html` | Update the executive summary, day framework, source log, open questions, status, handoff, audit and final report; run all gates; open and merge the PR; confirm Pages rebuild. |
+
+### Evidence rules applied this session
+
+1. Every new claim was read directly from a fetched page in this session and is dated 2026-10-11.
+2. Timetable variants on a single operator page are reported as ranges with the variant caveat,
+   never collapsed into one "official" clock time.
+3. A fixture list, a market listing or an internet stream is never treated as radio carriage; a UK
+   broadcast listing is never treated as Malta reception.
+4. Search-result snippets that could not be confirmed by a direct page fetch are recorded as leads in
+   `docs/OPEN_QUESTIONS.md` and are **not** promoted into data records.
+5. Arithmetic (fares × journeys, nights × contribution rate) is labelled as arithmetic, with its
+   inputs stated, and is never presented as a quoted price or a confirmed charge.
+
+### Outcome of this session's plan
+
+All workstreams completed except two deliberate scope decisions, recorded here rather than left implicit:
+
+- **B · Food** — unchanged, as planned. No new claims; the fresh all-platform re-verification of all 29 records is carried forward as next-session task 6 in `docs/FINAL_REPORT.md`.
+- **F · Expenses** — **deviation from plan.** The plan said to add the newly verified fare inputs as optional dated reference notes in `data/expenses.json`. That was not done: the same inputs are already published in `mpt-fares-cards` and `trip-fare-scenarios-13-19-oct` on the transport page and summarised in the `index.html` executive summary, so duplicating them into the planner's data file would have added a second place for one fact to go stale while giving the traveller nothing new. `data/expenses.json` and `costs.html` are therefore untouched and the planner remains blank-by-default with all 25 rows intact.
+- **Diff discipline** — a key-order normalisation across all six datasets (the repository stores the 13 fields in two different orders) was started and then **reverted**. It touched 59 records with zero content change, which would have buried the real edits in an unreviewable diff. New records follow the dominant field order of the file they join. Canonicalising the order repo-wide should be its own commit if it is ever wanted.
+
+Gates after the pass on this branch alone: `python3 scripts/validate_site.py` PASS (134 records / 228 URLs / 119 link attributes), `python3 scripts/check_javascript.py` PASS, `npm test` 9/9 Playwright PASS in 36.2s, `git diff --check` clean. **After reconciling with `main`, which had advanced through two further passes to 140 records, the merged tree passes at 165 records / 288 logged URLs / 145 link attributes with 10/10 Playwright tests** (the tenth arrived with `main`). An order-insensitive comparison of every record against `HEAD` confirmed exactly five content changes and six additions, no removals, and no unintended `intro` edits.

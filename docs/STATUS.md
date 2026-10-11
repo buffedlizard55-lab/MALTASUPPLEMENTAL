@@ -1,48 +1,37 @@
-# Delivery status — 11 October 2026 (UTC)
+# Delivery status — Malta trip guide (11 October 2026)
 
-## Current delivery snapshot
+> **Snapshot boundary:** this status records the completed local reconciliation and validation, immediately before the required GitHub delivery actions. It is not a live PR or Pages status; the merge and post-merge deployment are reported after they are actually checked.
 
-- **Session branch:** `arena/ef6c76d6-maltasupplemental` (fixed by the Arena session; all work remains on this branch).
-- **Delivery PR:** [#33 — Audit Malta guide sources and expand mobile verification](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/33). It is the audit/reconciliation PR on top of the already-built guide, not an initial-site PR.
-- **Rebase:** this branch is rebased onto `main` at `eeeb648` (PR #35’s third-pass content plus PR #38’s post-merge status follow-up). The earlier PR #33 remote head was `c2d2d4b`; GitHub then reported `DIRTY` / `CONFLICTING`, with no checks listed. The rebased work must be pushed before rechecking PR state.
-- **Pages:** the repository publishes the `main` branch root at https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/. The latest successful build recorded in the merged PR #35 status is for `9c3db1f` (05:19:37 UTC). PR #38 later updated delivery documentation; a Pages run for `eeeb648` and any PR #33 commit has not been verified here. Do not describe this audit branch as published until the merged commit’s Pages build is observed.
+## Integration state
 
-## Integrated implementation
-
-The guide has an overview, six data-backed topic pages, shared navigation, research/status pages and a blank-by-default expense planner. The validator reports **140 exact-schema records** across six JSON datasets (transport 20, food 30, activities/events 33, everyday guidance 17, radio 15, expenses 25), **243 unique URLs** in `docs/SOURCES.md`, **15 HTML pages**, **130 link attributes checked** (local targets validated; external targets not fetched), **8 shared-navigation destinations**, and **25 expense rows**. Every record has the exact 13 fields in `data/record.schema.json`; topic cards render the data files.
-
-PR #35’s additions remain integrated: a corroborated BLAST Arena Studios postal address; EU/U.S. customs guidance; U.S.-traveler receiver compatibility notes; and an itinerary quick-fill tool with preview-before-apply and blank-budget-only behavior. PR #33 contributes the 320 px viewport regression and a source-boundary re-audit. Unmerged PR #36/#37 claims are not promoted to verified site facts.
-
-The current user-facing corrections are:
-
-- **Venue and admission:** BLAST’s guest guide and VisitMalta’s directory list the studio’s postal address at MFCC, Ta’ Qali, ATD 4000 Ħ’Attard. The organizer’s Ta’ Qali-datelined release names BLAST Studios Malta and supports the event’s venue/locality context, not a precise postal address or attendee gate. These sources do not establish a TWC ticket, public entrance or daily doors. Source checks dated 11 October found no public ticket sale; a separate open PR #37 now cites an Eventbrite lead, but that page was not independently fetched or reviewed. Treat the older negative search as historical and verify current ticket terms directly.
-- **Transport and fares:** Route 186 stop directions are distinguished (Qawra 952 outward to Stadium 6227; opposite-side Stadium 2194 returns toward Buġibba). Static timetable variants, including one 20:53 return display, are not a trip-day last-bus guarantee. No date-specific journey, walk or diversion impact is confirmed. MPT lists €2.50 summer / €2.00 winter singles, but the explicit winter period ends 13 June 2026; the 13–19 October 2026 single fare is not stated. Card prices are comparators, not a presumed purchase.
-- **Environmental contribution:** the MTA 2026 guideline PDF lists €1.50/night for eligible adults and a €22.50/person/visit cap. The current MTA webpage separately refers to nights “that exceeded fifteen (15) nights”; the official texts are not clearly reconciled for short stays. Six nights × €1.50 = €9 is conditional arithmetic only; no amount is prefilled.
-- **Radio:** Radio in Malta’s specialist directory labels a DAB+ 6C (185.360 MHz) service “Sports Channel (Talk Sport)”; Wikipedia separately lists talkSPORT on 6C. WorldDAB lists a different generic “Sports Channel” on Digi B 2 / 12A (223.936 MHz), while the operator’s own channel directory lists no sports service. The block, identity, schedule, local reception, live Premier League commentary and named-match carriage remain unverified. BBC *Sportsworld* has dated episode times but general live-sport descriptions; fixtures and online streams are not radio carriage.
-- **Expense planner and customs:** the itinerary quick-fill previews line matches, fills only blank budget fields, preserves typed amounts and reports unresolved lines. Budget fields remain blank by default. Customs allowances are sourced separately for Malta entry and the U.S. return; personal applicability is not assumed.
-- **Responsive coverage:** the browser viewport set includes 320, 360, 768 and 1440 px.
-
-## Workstream status and remaining inputs
-
-| Owner | Data/page | Integrated scope | Remaining evidence / personal inputs |
-|---|---|---|---|
-| A · Transport | `data/transport.json` / `getting-around.html` | Airport/island modes, cards and fare comparison, confirmed postal venue context, conditional event-day route candidates. | TWC ticket/gate/finish time; current Eventbrite lead; live planner for each date; safe stop/venue walks; 17 October diversion effect; October single fare; live ride-hailing availability. |
-| B · Food & cafés | `data/food.json` / `restaurants.html` | Sourced Qawra/on-property and wider-area shortlist with dated operator/review snapshots. | Fresh business-status, hours, menu and ticket checks; accessible, broader review/social evidence. Yelp, Instagram, TikTok, Facebook, X and Reddit access limits remain recorded; no comprehensive ranking is claimed. |
-| C · Activities/events | `data/activities.json` / `activities.html` | Sights, gaming leads, dated trip-window events, and TWC date/venue evidence separated from attendee-specific facts. | Verify Eventbrite/organizer ticket terms, spectator eligibility, entrance and public times; event conflicts, visitor availability and gaming-centre status. |
-| D · U.S. traveler guidance | `data/everyday.json` / `everyday.html` | Power, connectivity, currency, safety/health, customs and date-sensitive information with traveler caveats. | Passport, insurance, device/carrier and medical details; MTA short-stay interpretation; refreshed weather. |
-| E · Sports radio | `data/radio.json` / `radio.html` | Malta FM/DAB+ directory leads, official dated BBC programme data, receiver compatibility, and separate fixture/stream evidence. | On-site FM/DAB+ scan; 6C/12A service identity/content; BBC stream availability in Malta; Rai’s dated running order; named-match carriage. |
-| F · Expense planner | `data/expenses.json` / `costs.html` | 18 core categories plus seven optional daily rows; blank fields, totals, local autosave, CSV, reset and itinerary quick-fill. | Actual itinerary, invoice, guest count/ages, fares, tickets, amounts and reimbursement. Do not double-count daily and aggregate rows. |
-| G · Integration | Shared site, docs and tests | Common schema, data rendering, navigation, source log, audit, quick-fill regression and narrow-screen test. | Push/recheck PR #33, inspect checks/mergeability, and verify a Pages build for the merged commit. No real-device visual audit or receiver test was performed. |
+- Work is on the fixed session branch `arena/ef6c76d6-maltasupplemental`.
+- PR #33 began at `854c1e16d94caa6cd7ae35ee44a0040bc5d036fd`; the required upstream snapshot is `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, containing PR #39 and accumulated PR #40/#41 work.
+- The local non-fast-forward merge includes that exact upstream snapshot and retains PR #33's specific source corrections and evidence boundaries. At this snapshot, the merge commit is still awaiting commit/push and PR #33 has not yet been merged.
+- The integration tree has **165 exact-schema records** (transport 25, food 38, activities 39, everyday 18, radio 20, expenses 25), **288 unique record URLs** in the source log, **15 HTML pages / 138 link attributes**, eight shared navigation destinations, and all 25 expense rows.
 
 ## Cumulative verification passes
 
-1. **Pass 1 — implementation and regression: passed locally.** `python3 scripts/validate_site.py` reports the totals above; `python3 scripts/check_javascript.py` and `node --check js/site.js` pass. `npm test` passed **11 Playwright tests**, including axe and overflow checks at **320, 360, 768 and 1440 px**, data/render parity, navigation/deep links, filters, expense persistence/export/reset/error behavior and itinerary quick-fill. `git diff --check` passes.
-2. **Pass 2 — sources and requirements: passed with explicit limits.** Current MPT fare text, MTA webpage/PDF, DAB+ directory sources, and the previously logged Route 186 notice were compared against user-facing claims. The separate Eventbrite URL surfaced in open PR #37 but was not fetched or adopted. Inaccessible review/social content is not inferred. This was not a fresh retrieval of every historical restaurant, event or everyday fact; older dates and limits remain visible.
-3. **Pass 3 — integration and delivery audit: passed locally; GitHub delivery pending.** PR #35’s customs and quick-fill work was preserved through the rebase, topic pages remain data-backed, and the 320 px expansion is covered by Playwright. External-link liveness, traveler-specific route feasibility and actual bookings remain unverified. PR #33’s remote head/checks and a Pages build for its merged commit still require direct GitHub confirmation.
+1. **Implementation:** all six topic JSON files and `data/record.schema.json` parse; `scripts/validate_site.py` passes schema/source-log/page wiring; `scripts/check_javascript.py` and `node --check js/site.js` pass; browser tests cover planner behavior, navigation, data/render parity, and responsive accessibility.
+2. **Requirements/evidence:** current-facing claims were reconciled against the inherited source notes. The Eventbrite listing is described as dated evidence of a free 18+ reservation option and the visible 14–16 October agenda, not as this traveler's reservation or guaranteed admission. Route 186's 20:53 time is one static variant; fare-season, onward connection, detour effect, and safe walks remain open. BBC parent-series labels are distinguished from match-specific broadcast services without inferring Malta carriage. The MTA short-stay interpretation remains open.
+3. **Final audit:** current pages, data, source notes, handoff, open questions, and plan were reconciled; stale fare-by-date, ticket-access, transit-cutoff, MTA-threshold, and BBC service-label conclusions were corrected or explicitly marked historical. External link liveness, physical radio/transit checks, and comprehensive review-platform coverage were not claimed.
 
-## Limitations and next checks
+## Local validation results
 
-- The traveler supplied AX ODYCY/Qawra, 13–19 October 2026 and “BLAST Arena Studios, Attard” as planning inputs. The postal venue address is corroborated, but there is no independent proof of a hotel booking, ticket, attendee gate, room allocation or exact door-to-door itinerary.
-- No complete line-by-line re-fetch of all historical claims, external URL crawl, physical radio-reception test or manual phone/screen-reader audit was performed.
-- Verify the open Eventbrite lead with the organizer; build date-specific MPT journeys only after attendee gate and finish times are known; recheck fares/disruptions; ask MTA/AX ODYCY about the threshold wording and invoice; scan a real receiver and record content; then fill the planner from bookings and receipts.
-- See [`PLAN.md`](PLAN.md), [`SOURCES.md`](SOURCES.md), [`OPEN_QUESTIONS.md`](OPEN_QUESTIONS.md), [`HANDOFF.md`](HANDOFF.md), [`AUDIT_2026-10-11.md`](AUDIT_2026-10-11.md) and [`FINAL_REPORT.md`](FINAL_REPORT.md).
+- `python3 -m json.tool` on all six topic datasets and the record schema — **PASS**.
+- `python3 scripts/validate_site.py` — **PASS**: 6 JSON files, 165 records, 288 source URLs, 15 HTML pages, 138 link attributes, 8 navigation destinations, 25 expense rows.
+- `python3 scripts/check_javascript.py` — **PASS**.
+- `node --check js/site.js` — **PASS**.
+- `npm ci` — **PASS** (23 packages installed; npm reported 0 vulnerabilities).
+- `npm test` — **PASS**, 11/11 Playwright tests (including 320/360/768/1440 px layouts, axe, rendering, navigation and expense-planner cases).
+- `git diff --check` — **PASS**.
+
+## Current blockers and handoff
+
+- **Event:** current inventory, the traveler's own reservation, per-day scanning/validity, attendee gate, exact finish-time discrepancy (listing headline 22:00 vs Wed/Thu agenda rows to 22:30), and 17–18 October agenda remain unconfirmed.
+- **Transit/fare:** no date-specific end-to-end journey, onward Buġibba-to-Qawra connection, measured gate/hotel walk, complete alternative-route search, or live taxi quote. The 17 October Route 186 notices show different windows; use the 19:00–24:00 union as a planning alert and verify live. MPT has not established the single fare applicable 13–19 October.
+- **Radio:** no physical FM/DAB+ scan, local reception measurement, BBC Sounds/RaiPlay access check, Malta carriage confirmation, or named-match output on a locally receivable service. The DAB+ “Sports Channel” block/identity is a scan lead only; Rai's trip-week running order is not established. UK BBC schedules are not Malta carriage.
+- **MTA:** the guideline PDF and the current webpage's “exceeded fifteen nights” text do not expressly reconcile short-stay treatment. Six-night €9 arithmetic is conditional only; use the invoice.
+- **Research coverage:** Google Maps/review, TripAdvisor and some Reddit/search snapshots were accessible; Yelp, Instagram, TikTok, Facebook and X access was blocked or limited. The evidence is not comprehensive. Recheck volatile menus, hours, closures, fares, schedules and ticket availability before acting.
+- **Traveler-specific unknowns:** booking confirmation, party size/ages, flights, meal plan, actual ticket, itinerary, device, insurance, and personal expenses remain unknown. Keep planner fields blank until the traveler provides them.
+
+The current workstream ownership, dependencies, and next-session tasks remain in `docs/PLAN.md`; cross-topic details are in `docs/HANDOFF.md`; all open items are maintained in `docs/OPEN_QUESTIONS.md`.
