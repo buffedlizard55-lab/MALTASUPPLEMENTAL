@@ -1,6 +1,22 @@
 # Malta trip guide — work plan
 
-## Current delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
+## Current session — `arena/dd9dd00c-maltasupplemental` (11 October 2026)
+
+Arena fixes this session to `arena/dd9dd00c-maltasupplemental` and does not provide isolated workstream branches. A–F therefore run serially on this branch, each editing only its owned data file plus matching notes. G edits shared pages, navigation hubs, docs and delivery last. Cross-topic findings go to `docs/HANDOFF.md`. Unverified gaps stay in `docs/OPEN_QUESTIONS.md`.
+
+| Stream | Owned files | This session |
+|---|---|---|
+| A · Transport | `data/transport.json`, event-day notes on `getting-around.html` | Re-read Route 186 evening grids, fares and service updates. Add the Saqqajja stop-4627 closure as its own record. Do not invent a saved journey. |
+| B · Food | `data/food.json` | Re-read the Qawra TripAdvisor list far enough to record the Featured methodology, sponsored cards and the first three numbered entries. Do not call that a popularity ranking. |
+| C · Activities / event | `data/activities.json`, `data/event.json` | Re-read Eventbrite and the official Thunderpick finals page. Record the visible six-team lineup and the hidden View all control. Do not settle NIP vs Virtus.pro. |
+| D · Everyday | `data/everyday.json` | Re-read Government of Malta electricity wording and the Malta Met Office seven-day panel. Do not reopen every older forecast. |
+| E · Radio | `data/radio.json` | Re-read BBC Sportsworld episode JSON and the Premier League amendment article. Keep UK schedules separate from Malta reception. |
+| F · Expenses | `costs.html` keyword matcher only | Add adapter/radio-receiver keywords that map to the existing incidentals row. Do not prefill amounts. |
+| G · Integration | `index.html`, hubs, docs, tests, PR | Scannable executive summary, event-day bus checks, useful hubs instead of “page moved”, then validate, open the PR from this branch and merge it to `main`. |
+
+Dependencies: shared schema and shell already exist. G waits until A–F data edits are in the files. No workstream rewrites another topic’s page.
+
+## Historical delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
 
 This fixed Arena branch began at `origin/main` commit `b307c51e8026ca3589ece815b0fb761eef36094e` (the PR #33 merge), at parity at session start. The parallel-work protocol remains in force: A–F own one topic data file plus its matching page; G owns shared integration and documentation; Arena provides no isolated workstream runner, so research and edits run serially on the fixed branch, shared files only by G. Cross-topic findings go to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in `docs/OPEN_QUESTIONS.md`.
 

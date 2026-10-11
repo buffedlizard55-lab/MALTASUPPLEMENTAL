@@ -1,6 +1,38 @@
 # Malta trip guide — final report
 
-**Audit date:** 11 October 2026 (UTC)
+## This session — `arena/dd9dd00c-maltasupplemental` (11 October 2026)
+
+Passes 1–3 were run on the tree that started at `250e6bd` (PR #48 on `main`). Arena does not allow a second branch, so workstreams A–F were sequential file owners on this branch and G integrated last.
+
+### Verified in this pass
+
+- Eventbrite still advertises the free 18+ in-person listing at BLAST Arena Studios, MFCC South Gate, ATD 4000 Attard, 14–18 October, headline 9:30 AM–10 PM. Friday’s row header reads 2:00 PM–9:00 PM. Saturday and Sunday stay behind “Show all agenda”. The visible lineup names Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all.
+- Thunderpick’s finals page still gives 12–19 October, media day 13 October, groups 14–16, playoffs 17–18, and a $1,000,000 table. It says Malta, not a street address.
+- MPT’s fare table still shows €2.50 summer / €2.00 winter day singles, €3.00 night/special/Tallinja Direct, €3.50 TD1, and a €50 fine. The printed winter window is still 19 October 2025 – 13 June 2026.
+- Route 186 search excerpts of the operator page still end two Stadium 2194 return grids at 20:53 and 20:54. The service-updates page still shows the 17–18 October 19:00–00:00 diversion, separate from the April notice.
+- A separate notice closes Saqqajja stop 4627 on Route 186 until “January 1” with no year. An earlier same-day stop trace places it before Stadium 2194 on the return. This pass did not re-walk that chain. The notice does not say the Stadium or Qawra stops are closed.
+- Qawra TripAdvisor Featured order, first three numbered entries: Trattoria Riccardo (4.8 / 2,675), Minoa (5.0 / 765, closed today in that snapshot), Cheeky Monkey Qawra (4.5 / 3,374). Sponsored cards sat above them. Not a review-count ranking.
+- BBC Sportsworld JSON still starts 17 October at 14:06 +01:00 and 18 October at 15:06 +01:00, each 3 hours 53 minutes. No named match.
+- Government of Malta still lists 230 V, 50 Hz, UK-style three-pin plugs.
+- Malta Met Office’s seven-day panel still ends 17 October and matches the retained 13–17 October figures.
+
+Local gates after the edits: schema/source/link validator passed (7 files, 185 records, 305 record URLs, 15 pages, 296 link attributes, 9 nav destinations, 25 expense rows). Playwright/axe passed 21/21 after the hub-link fix, including 320–1440 px layouts. Tests do not prove external pages stay live or that a bus/radio signal exists.
+
+### Still unverified
+
+Reservation, inventory, gate, weekend agenda, NIP versus Virtus.pro, a saved hotel-to-gate journey, the Saqqajja closure year and its effect on Stadium stops, the October single fare as an operator quote, physical FM/DAB+ reception, 18–19 October on Malta’s own seven-day panel, and any personal booking or price. Yelp, Instagram, TikTok, Facebook and X were not re-attempted.
+
+### Next session
+
+1. Open the Eventbrite flow and ask Hotspawn for the hidden agenda, FAQ answers and the full lineup.
+2. Save both directions in the MPT journey planner for each event day, including the Saqqajja closure and the 17 October diversion.
+3. Ask MPT whether the day-route single on 13–19 October is the summer or winter price.
+4. If a late return is required, get a live hotel/taxi/ride quote rather than using the 2022 tariff page.
+5. Scan DAB+ blocks 6A, 6C and 12A at the hotel and venue on a DAB+ receiver.
+6. Refresh weather for 18–19 October and any restaurant hours the night before.
+7. Paste only confirmed receipts into the blank planner.
+
+## Previous audit — 11 October 2026 (UTC)
 **Session branch:** `arena/502e2dae-maltasupplemental`
 **Baseline:** `origin/main` at `b307c51` (merge of PR #33), reconciled with `origin/main` at `852343f` (parallel-session PRs #42–47) via a conflict-resolved merge that keeps both sessions' net-new corrections.
 

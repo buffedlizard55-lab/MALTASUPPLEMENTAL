@@ -1,6 +1,21 @@
 # Delivery status — Malta trip guide
 
 **Last updated:** 11 October 2026 (UTC)
+**This session:** `arena/dd9dd00c-maltasupplemental`, started at `250e6bd` (PR #48 merge). Workstream branches were not created because Arena locks the session branch.
+
+| Workstream | Status | Blocker |
+|---|---|---|
+| A · Transport | Route 186 20:53/20:54 grids, October 17–18 19:00–00:00 diversion, and fare table re-read. Saqqajja stop 4627 closure added as partially verified. | No saved hotel-to-gate journey. Closure year and effect on Stadium stops not printed. |
+| B · Food | Qawra TripAdvisor Featured snapshot updated with sponsored cards and numbered entries 1–3. | Yelp, Instagram, TikTok, Facebook and X were not re-attempted. Not a popularity ranking. |
+| C · Activities / event | Eventbrite and Thunderpick pages re-read. Visible lineup is six names plus View all. | Sat/Sun agenda, inventory, reservation and NIP/Virtus.pro slot remain open. |
+| D · Everyday | Gov.mt electricity wording and Malta Met Office panel through 17 October re-read. | 18–19 October national panel still absent. Valletta longer view not re-opened. |
+| E · Radio | BBC JSON offsets reconfirmed (14:06 and 15:06 +01:00). Premier League kickoffs re-read. | No named match heard on a Malta receiver. |
+| F · Expenses | Adapter/radio keywords added. Amounts stay blank. | Traveler itinerary not supplied. |
+| G · Integration | Overview rewritten for scanning; hubs replace retired redirects. Delivery follows the local test run. | Physical transit, radio scan and external-link crawl remain out of scope. |
+
+The sections below are earlier session snapshots, not this session’s live status.
+
+**Previous snapshot updated:** 11 October 2026 (UTC)
 **Session branch:** `arena/cc913a9b-maltasupplemental`
 **Snapshot boundary:** Updated after observing PR #46 merge and its GitHub Pages build on 11 October 2026 (UTC); this is still a dated snapshot, not a live dashboard.
 
