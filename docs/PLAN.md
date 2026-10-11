@@ -1,6 +1,40 @@
 # Malta trip guide — work plan
 
-## Current delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026)
+## Current delivery session — `arena/9f6f35c7-maltasupplemental` (11 October 2026)
+
+Repository review before edits: `main` is at `b307c51` (the PR #33 merge) with six topic datasets, 165 exact-schema records, eight active pages (plus two `noindex` “page moved” stubs), a shared renderer, an offline validator, a JavaScript syntax gate and a Playwright/axe suite. One PR is open: **#42** (`arena/154ca483-maltasupplemental`, head `0c8e8bb`, “Add CS2 event guide (workstream H)”), reported `CONFLICTING` because this checkout is a **shallow clone** — the branch shares no locally resolvable merge base with `main`, so it cannot be merged as-is here. This session therefore **re-verifies and re-implements the unique, highest-value content of PR #42 on the fixed session branch** rather than merging branches, and adopts only what the live sources support.
+
+Session objective: complete the traveller’s stated priority — *how to reach the CS2 event by public transport on the event days* — as a ninth first-class topic, without weakening any earlier evidence boundary.
+
+| Workstream | Owned files | This session’s work |
+|---|---|---|
+| A · Transport | `data/transport.json`, `getting-around.html` | Add the official Transport Malta taxi meter ceiling (`white-taxi-official-tariff`) and the TQ special-event-service wildcard (`tq-event-special-services`); rewrite the event-day callouts around the now-confirmed venue and the “bus out, taxi back” conclusion; keep the unresolved October single fare exactly as unresolved. |
+| B · Food & cafés | `data/food.json`, `restaurants.html` | No new claims. Unchanged this session. |
+| C · Activities | `data/activities.json`, `activities.html` | Move the three tournament-owned records to the new event dataset, leave one dated signpost record, and keep every non-tournament event untouched. |
+| D · Everyday | `data/everyday.json`, `everyday.html` | No new claims. Unchanged this session. |
+| E · Radio sports | `data/radio.json`, `radio.html` | No new claims. Unchanged this session. |
+| F · Expenses | `data/expenses.json`, `costs.html` | Update the four rows whose facts changed (event access, event commute, taxi returns, bus/cards), keeping all 25 rows and every amount blank. |
+| **H · CS2 event (new)** | `data/event.json`, `event.html` | New topic: confirmed venue/address/pin, free 18+ reservation, organiser dates and phases, published daily agenda, Malta-time match clocks, teams/format/prize split, official streams, on-site practicalities. |
+| G · Integration | `index.html`, `js/site.js`, `scripts/validate_site.py`, `tests/site.spec.js`, `sources.html`, `README.md`, `css/style.css`, `docs/*` | Ninth navigation destination, executive-summary and day-plan updates, source register, validation and reporting, PR delivery and Pages check. |
+
+Constraint respected throughout: Arena fixes this session to `arena/9f6f35c7-maltasupplemental`, so the protocol’s per-workstream branches and isolated sub-agents are executed **serially on this one branch** with the same ownership boundaries — one topic dataset plus one page per workstream, shared files touched once, cross-topic findings recorded in `docs/HANDOFF.md`.
+
+Evidence rules for this session: (1) every new or changed claim is read from the live page in this session and dated 2026-10-11; (2) a third-party esports listing is never promoted to an organiser fact — per-match clocks stay third-party-derived, anchored to the official agenda and labelled as such; (3) the fare page’s missing 2026/27 winter window stays an open question, so neither €2.50 nor €2.00 is assigned to a trip date; (4) the FAQ answers, Saturday/Sunday agenda rows and the attendee gate stay open rather than inferred; (5) PR #42’s wording is adopted only where this session re-verified it, and its two superseded readings (per-date fare assignment, eco-contribution “15-night” reconciliation) are **not** adopted.
+
+Verification gates for this session: `scripts/validate_site.py` (now seven datasets), `scripts/check_javascript.py`, `node --check js/site.js`, `npm test` (Playwright/axe at mobile, tablet and desktop widths), a link/anchor audit including the newly moved record anchors, and an integration check of navigation and data/page consistency.
+
+### Outcome of this session's plan
+
+All planned work was completed on the fixed branch:
+
+- **H · CS2 event (new):** `data/event.json` (8 records) and `event.html` (ninth active page) delivered; three tournament records moved out of `data/activities.json` behind a dated signpost, and two duplicated event records removed from `data/transport.json`, so one dataset owns the event.
+- **A · Transport:** `tq-event-special-services` and `white-taxi-official-tariff` added; the getting-around callouts and checklist rewritten around the confirmed venue, the published day times and the “bus out, taxi back” conclusion. The unresolved October single fare was left unresolved, exactly as the session rules required.
+- **F · Expenses:** four rows refreshed (`event-access`, `event-commute`, `taxi-rideshare`, `local-bus-and-cards`); 25 rows retained, every amount blank.
+- **G · Integration:** navigation 8 → 9 destinations, validator now expects seven datasets, Playwright spec covers the new page while retaining the 320 px case, and the executive summary, day plan, planner prose, source log, open questions, handoffs, status, audit addendum and README were updated.
+- **Deliberate scope decisions:** PR #42’s per-date fare assignment and eco-contribution reconciliation were **not** adopted (both were superseded on `main` and are not stated by the operator/MTA texts); the shallow-clone limitation was worked around by re-implementing verified content rather than merging the branch; no record was promoted beyond its evidence, and no unreadable client-rendered content (FAQ answers, Sat/Sun agenda) was guessed.
+- **Gates on this branch:** validator PASS at 7 datasets / 171 records / 301 URLs / 15 pages / 167 link attributes / 9 nav / 25 expense rows; JavaScript syntax PASS; Playwright 11/11 PASS; `git diff --check` clean. Delivery state (commit, PR number, merge, Pages build) is recorded in `docs/FINAL_REPORT.md` and `docs/STATUS.md` after it was actually observed.
+
+## Previous delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026)
 
 The repository and PR #33 were reviewed before integration. This fixed Arena branch began at PR #33 head `854c1e16d94caa6cd7ae35ee44a0040bc5d036fd` (merge base `eeeb648d143299462ac52b00a7bc3749d36ca152`). The required upstream snapshot is `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, including PR #39 and its accumulated PR #40/#41 work. A non-fast-forward merge of that exact `origin/main` commit is in progress on this branch; PR #33’s own corrections and evidence limits must be retained. No commit, push, PR merge or Pages verification has yet been completed.
 

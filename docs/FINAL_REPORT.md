@@ -4,6 +4,16 @@
 **Session branch:** `arena/ef6c76d6-maltasupplemental`
 **PR under delivery:** #33, “Audit Malta guide sources and expand mobile verification”
 
+## Session addendum — CS2 event guide and supersession of PR #42 (branch `arena/9f6f35c7-maltasupplemental`)
+
+The sections below this addendum describe the PR #33 delivery. The current integration on this branch supersedes them in three ways:
+
+1. **A seventh dataset and a ninth active page.** `data/event.json` (8 records: venue/address/pin, free 18+ reservation, dates and phases, the published daily agenda, Malta-time match clocks, teams/format/prize split, official internet streams, on-site practicalities) renders on a rebuilt `event.html`, replacing the `noindex` “page moved” stub. Navigation carries nine destinations; the validator expects seven datasets; the Playwright suite covers the new page at 320/360/768/1440 px.
+2. **PR #42 is superseded, not merged.** The branch `arena/154ca483-maltasupplemental` (head `0c8e8bb`) is reported `CONFLICTING`, this checkout is a **shallow clone** with no locally resolvable merge base, and its content predates corrections already on `main` (the eco-contribution “15-night” reconciliation and the per-date fare inference were deliberately not re-adopted). Its unique, evidence-backed content — the event dataset/page, the TQ1 special-service watch item, the Transport Malta maximum-taxi-tariff record, the Explore Flex card distinction and the superseded-BBC row — was re-verified against the live sources and re-implemented here. Because the re-implementation uses different record ids (`twc-*`), PR #42 should be closed as superseded rather than merged; note that in the close comment.
+3. **Current counts:** 7 datasets / **171 exact-schema records** / **301 unique logged record URLs** / 15 HTML pages / **167 link attributes** / 9 navigation destinations / 25 expense rows; validator, JavaScript syntax and Playwright gates all pass (see `docs/STATUS.md` for the observed run results and the P2 fixes made after the first green pass: the costs-page event-access wording, the activities callout, the quick-fill example line and the radio stream wording).
+
+Open items, handoffs and the three-pass record for this session are in `docs/OPEN_QUESTIONS.md` (OQ-H…), `docs/HANDOFF.md`, `docs/PLAN.md` and `docs/AUDIT_2026-10-11.md`.
+
 ## Scope and integration
 
 The guide was reconciled on the fixed Arena branch with `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, which includes PR #39 and its accumulated PR #40/#41 work. The non-fast-forward integration preserves PR #33's source-specific corrections while retaining useful upstream material. No topic record was dropped to simplify the merge.
