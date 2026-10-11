@@ -1,6 +1,69 @@
 # Malta trip guide — final report
 
-## Current session — `arena/1005fdbf-maltasupplemental` (11 October 2026 UTC)
+## Current session — `arena/b29d95ae-maltasupplemental` (11 October 2026 UTC)
+
+### Delivery summary
+
+A pre-departure delivery pass, two days before the 13 October trip start. The repository was reviewed at `main` `ae69ab1` (the PR #55 merge tip) and found complete: GitHub Pages static site, exact 13-field schema with seven datasets, per-topic pages rendered from JSON, source log, open questions, status ledger, blank-by-default expense planner with itinerary quick-fill, CI workflow and a 23-test Playwright/axe suite. Shared setup was verified serially and left intact; the parallel-work protocol ran with the established file-ownership map on this fixed Arena branch (documented in `docs/PLAN.md`), with cross-stream notes in `docs/HANDOFF.md`. Workstream G integrated last.
+
+This session's increments, all source-read on 11 October 2026 and logged in `docs/SOURCES.md`:
+
+- **Weekend match clocks pinned (C).** A chunk-by-chunk direct read of the Liquipedia bracket supplies the playoff schedule the ticket page still hides: **semifinals 16:00 and 19:00 Saturday 17**, **third-place 13:30 and the best-of-five final 17:00 Sunday 18** (Malta time; pairings TBD; the bracket labels its clocks EDT and EDT+6 h gives Malta CEST). The late-return plan now demonstrably covers all five event days. A search-index extract that appeared to name a “FURIA v BB semifinal” was contradicted by the direct read and discarded; the day-card `twc-day-2026-10-14` contradiction (an unflagged 18:30 next to 18:00) was fixed with the 18:30 figure retained as a labelled outlier, matching `twc-opening-matchups-14-oct`.
+- **Named soccer commentaries on official radio listings (E).** The BBC's own Sportsound page names full-commentary **Scottish Premiership Dundee v Rangers (Sat 17, 19:00 UK, Radio Scotland Extra)** and **Celtic v Hearts (Sun 18, 14:00 UK, Radio Scotland)**, plus a Sportsound omnibus and Fan Zone; the 5 Live record was corroborated (Manchester City v Ipswich, Sat 17 14:45, 5 Sports Extra). These join the seven Premier League listings already recorded. All are **UK output** — none is Malta carriage — and a Europa League “Thursday 19:00, Benfica v Celtic” row that prints no date stays a lead.
+- **ETIAS trip-week answer (D).** The official EU FAQ now reads *“no action is required from travellers at this point”* and promises several months' notice before any launch — so no ETIAS authorisation is needed for 13–19 October 2026. The executive summary and the everyday record state this as the trip answer; the earlier last-quarter-of-2026 timing risk is retired for this departure.
+- **Saturday-night transport risk tightened (A).** The full service-updates page confirms both Route 186 notices and shows the 17–18 October 19:00–00:00 cluster also degrades every fallback lead (202/260 detoured with no stops printed; 405 skips Rotunda 1/Bezzina; 45 skips Rotunda 2→Targa; 47 skips Gatt→Rotunda 1; 48/N48 batched). The pre-booked-return recommendation is strongest for Saturday.
+- **Platform honesty (B).** Yelp re-attempted today — still HTTP 403; the recorded access limits are current, not historical.
+
+### What is verified (this pass, on top of the merged body of evidence)
+
+Event venue/address/dates/admission from the ticketing listing; the Wed–Fri agenda rows; the eight-team field with NIP replacing Virtus.pro (9 October, per Liquipedia's participant note and HLTV/Hotspawn); weekend and opener match clocks from the bracket's own EDT labels (converted, third-party, labelled as such); Route 186 grids (three unlabelled variants — see OQ-S1), both detour notices and the detour cluster from operator pages; fare table wording (winter window still printed as 19 Oct 2025 – 13 Jun 2026 only); BBC Sportsworld dated episodes 17–18 October and the named UK PL/Scottish Premiership listings from official programme pages; ETIAS non-operation from the official EU FAQ; UK Met Office Valletta panel covering 13–19 October.
+
+### What remains unverified
+
+Organizer Sat/Sun **door** times and any finish times; the traveler's reservation, inventory, day validity, scanning, gate and parking; FAQ answers (client-rendered, never extracted); a saved date-specific MPT journey in either direction; both stop-to-gate walks; the Buġibba→Qawra onward connection; what actually runs after 20:54 on event nights (the fallback legs are unverified *and* Saturday-degraded); any TQ event service; live taxi/ride-hailing quotes; the 2022-footer taxi tariff as current maxima; the trip-week fare split (inference only); any named match on a Malta radio frequency (schedule, carriage, receiver and reception are four separate unproven links); BBC Sounds/stream access from Malta; the “Sports Channel” 6C/12A identity conflict; the Malta national weather panel for 18–19 October (7-day URL AccessDenied today); sentiment or “trending” data from Yelp/Instagram/TikTok/Facebook/Reddit/X (blocked or limited); and every traveler-personal item (flights, party, invoice, insurance, devices).
+
+### Passes and observed local gates
+
+1. **Pass 1 — implement and verify:** time-critical sources re-read (Eventbrite; MPT updates in full and fares; Liquipedia bracket in full; BBC Sportsworld/Sportsound upcoming pages and episode m00334k6; EU ETIAS FAQ and Commission page; UK Met Office panel; met office access check; Yelp access check). Every claim logged with URL and date; gaps recorded rather than guessed.
+2. **Pass 2 — adversarial review:** found and fixed a genuine data contradiction (day card `twc-day-2026-10-14` carrying both 18:00 and 18:30 for the fourth opener) and two stale day cards (`twc-day-2026-10-17/18` saying no first-game time was known when the bracket supplies16:00/19:00 and 13:30/17:00); aligned the executive summary, day framework and bus checks with the weekend clocks and the ETIAS answer; verified the detour-cluster detail against the operator page; confirmed the validator's source-log coverage rule (fixed one abbreviated URL row).
+3. **Pass 3 — full request re-check:** the requirement map below was walked against the integrated tree; the complete local suite was re-run afterwards.
+
+**Local gates observed (11 October 2026):** `python3 scripts/validate_site.py` — PASS: 7 JSON files / 200 exact-schema records / 327 unique record URLs in `docs/SOURCES.md` / 15 HTML pages / 341 link attributes / 9 navigation destinations / 25 expense rows. `python3 scripts/check_javascript.py` — PASS. `npx playwright test` — **23/23 passed** (axe at 320/360/768/1024/1440 px; canonical projections; date-by-date transport plan; radio table at 320/360/720/1440 px; planner, quick-fill, CSV/JSON backup and failure modes). These are local software checks, not external truth, dated operations or RF reception.
+
+### Requirement-by-requirement (this integrated tree)
+
+| Requirement | Where it lives | State |
+|---|---|---|
+| Repo review; plan before parallelizing | `docs/PLAN.md` (this session's plan at top) | Done; single fixed Arena branch adapted and documented |
+| Workstreams A–G with owned files; cross-stream notes | data/page pairs per stream; `docs/HANDOFF.md` | Done, serial execution |
+| Hotel, dates, room, event venue as inputs | Overview, hotel checklist, event desk | Present; labelled traveler inputs |
+| Event → venue transport on event days (public transport) | `getting-around.html#event-day-by-date` + transport records | Done; per-date plan, fares, late-return gap, detours; date-specific planner still required in-country |
+| Transport comparison (convenience/price/value/feasibility) | `getting-around.html`, `mode-comparison-summary` | Done; bus priced, others live-quote |
+| Food & cafés incl. review-platform research | `restaurants.html`, `data/food.json` | Done; dated review-volume snapshot; platform blocks recorded (Yelp 403 re-confirmed) |
+| Gaming centers, activities, landmarks, events | `activities.html`, `event.html` | Done; PC-café absence stated honestly; dated event leads |
+| Everyday life for a US traveler | `everyday.html` | Done; ETIAS answer now trip-specific; weather panels disagree and are all shown |
+| Live radio sports broadcasts w/ official schedules (Kalshi-relevant sports) | `radio.html`, `data/radio.json` | Done; dated + named UK listings incl. EPL/Scottish Premiership; Malta carriage/reception explicitly unproven |
+| Expense planner quick to fill once itinerary arrives | `costs.html#quick-fill`, `data/expenses.json` | Done; blank-by-default, preview, CSV/JSON |
+| Categories/sections/subpages; desktop + mobile | All pages; axe 320→1440 | Verified locally |
+| Executive summary; sources as official links | `index.html#exec-title`, `docs/SOURCES.md`, `sources.html` | Done |
+| No hallucinations; open questions recorded | `docs/OPEN_QUESTIONS.md`, confidence fields | Enforced by validator + review passes |
+| GitHub Pages with clean UI | `.nojekyll`, Pages on `main` | Live at https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/ |
+| PR then merge to main | this branch → PR | Delivering this session; observed state recorded after |
+
+### Limitations of this session
+
+Search-index extracts were used for some corroboration (and one, the “FURIA v BB semifinal” pairing, was caught contradicting the direct page read and discarded). Only time-critical sources were re-read; older records were re-checked for internal consistency, not re-fetched. No browser crawl of external links was performed from the sandbox (network is restricted; `fetch_page`/search were used instead). No receiver, taxi quote, journey-planner run or venue visit is possible from here.
+
+### Next-session tasks (priority order)
+
+1. **In-country, day-of:** reserve/confirm the Eventbrite spot and carry photo ID; recheck the ticket page for Sat/Sun doors and any schedule change; check MPT service updates daily for a TQ service (TQ1's corridor serves Qawra/Buġibba) — one notice could fix every late return.
+2. Run the MPT journey planner for 14–18 October from the actual hotel and confirmed gate; save both directions; verify stop sides, walks and the Buġibba→Qawra link; pre-book the late return (strongest for Sat 17).
+3. Scan DAB+ 6A/6C/12A and the FM list at the hotel and venue; log service, block, time, language and named match actually heard; ask the “Sports Channel” operator which block is live.
+4. Refresh hours/menus/closures for chosen venues; confirm the Empire Cinema arcade status; recheck the Malta national forecast for 18–19 October and marine notices before any sea activity.
+5. When the traveler's itinerary arrives: quick-fill the planner, review the preview, export CSV/JSON; enter only retained charges (keep card holds in notes).
+6. Watch the official EU ETIAS page only for future trips; nothing is required for this one. Resolve EES's Malta implementation at the border with generous time.
+
+## Previous session — `arena/1005fdbf-maltasupplemental` (11 October 2026 UTC)
 
 ### Delivery summary
 
@@ -90,7 +153,7 @@ PR #60 was merged into `main` at **2026-10-11 18:43:26 UTC**; GitHub reports mer
 5. When the itinerary arrives, enter confirmed amounts only into the planner and save a private JSON backup.
 
 
-## Current session — `arena/67d511d1-maltasupplemental` (11 October 2026 UTC)
+## Previous session — `arena/67d511d1-maltasupplemental` (11 October 2026 UTC)
 
 ### Delivery summary
 
