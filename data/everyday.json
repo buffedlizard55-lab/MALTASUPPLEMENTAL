@@ -1,7 +1,7 @@
 {
   "topic": "everyday",
   "title": "Everyday guide for a U.S. traveler in Malta",
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-11",
   "intro": "Practical, source-checked essentials for the 13–19 October 2026 trip: entry pointers, money, power, phone service, local time, safety, and health. Entry rules depend on the passport used; forecast snapshots and provider offers can change. Links point to government, EU, safety, weather, and operator sources.",
   "records": [
     {
@@ -89,7 +89,7 @@
       "description": "The EU says EES applies to non-EU nationals making short stays, including visa-exempt travelers, and became fully operational on 10 April 2026. For a visa-exempt traveler, the system records a facial image and four fingerprints, along with travel-document and entry/exit data. Allow time for border processing and follow officials’ instructions.",
       "source_url": "https://travel-europe.europa.eu/en/ees/faq",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "The EU FAQ says children under 12 are not fingerprint-scanned and that a biometric passport is only needed for optional self-service equipment, not in principle to cross the border. EES FAQs: https://travel-europe.europa.eu/en/ees/faq. Actual queue times are not published here.",
       "price range": "No EES fee stated by the EU"
@@ -100,11 +100,11 @@
       "category": "Entry & border",
       "area": "European countries requiring ETIAS, including Malta",
       "address": "Not applicable",
-      "hours": "EU’s official site checked 9 October 2026 says ETIAS is not yet in operation; the exact start date is unannounced",
-      "description": "As checked on 9 October, the EU’s official ETIAS site says the system is not in operation and no applications are being collected; the EU says it will announce the specific start date several months before launch. Recheck before departure because the planned launch is in late 2026. Do not pay an unofficial site claiming to issue ETIAS authorisations.",
-      "source_url": "https://travel-europe.europa.eu/en/etias",
+      "hours": "Official EU site checked 11 October 2026: not operational; no applications collected; exact launch date unannounced.",
+      "description": "The official EU ETIAS site says the system is not in operation and no applications are being collected, as checked 11 October. The EU says it will announce the start date several months before launch. Recheck the official page before travel; do not pay an unofficial site claiming to issue an authorisation.",
+      "source_url": "https://travel-europe.europa.eu/etias",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias. A U.S. State Department Europe guide likewise says the planned ETIAS launch is late 2026: https://travel.state.gov/en/international-travel/planning/guidance/europe.html. Status is date-sensitive; recheck the EU page immediately before travel.",
       "price range": "No payment is due while the official EU site says applications are not being collected"
@@ -194,10 +194,10 @@
       "description": "Before leaving the U.S., check your home carrier’s Malta roaming/data rates and how to enable or disable roaming. Local alternatives include GO prepaid plans/eSIM and Melita prepaid SIM/eSIM. Confirm that your handset is carrier-unlocked and, for eSIM, compatible; compare the live terms rather than assuming EU roaming rules apply to a U.S. plan.",
       "source_url": "https://www.go.com.mt/top-up-mobile-number-malta/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "GO page describes prepaid options for visitors and eSIM compatibility checks: https://www.go.com.mt/top-up-mobile-number-malta/. Melita’s live prepaid page lists physical SIM/eSIM and a starter pack: https://www.melita.com/mobile/top-up-plans/. U.S. carrier fees and this traveler’s device lock/eSIM status are unknown; plan names/prices can change.",
-      "price range": "Provider examples checked 9 Oct: GO Smart Unlimited €15.99 for 28 days; Melita starter SIM/eSIM page lists €10. Prices and terms can change."
+      "notes": "GO offers app eSIM setup for compatible devices: https://www.go.com.mt/top-up-mobile-number-malta/. Melita starter pack: https://www.melita.com/mobile/top-up-plans/. Its Pass renews every 28 days if sufficient credit; discounted Pass L / AutoTopUp offers have separate conditions. Online Melita purchase component returned a server-error message in extraction, so checkout availability was not tested. U.S. carrier fees, device unlocking and eSIM support remain traveler-specific.",
+      "price range": "11 October provider examples: GO Smart Unlimited €15.99 / 28 days (unlimited Malta data, 28GB Zone 1); Melita €10 SIM/eSIM starter pack with 25GB, 200 minutes/SMS and €5 credit. Verify terms and device compatibility."
     },
     {
       "id": "october-weather-forecast",
@@ -205,13 +205,13 @@
       "category": "Weather & packing",
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
-      "hours": "Malta Met Office 7-day forecast, accessed 9 Oct 2026: 13 Oct mainly sunny, high 25°C/low 19°C; 14 Oct sunny, 23°C/18°C; 15 Oct partly cloudy, 24°C/18°C. The page did not yet cover 16–19 Oct.",
+      "hours": "11 October Met Office snapshot: 13 Oct isolated showers 26/19°C; 14 Oct mainly sunny 24/18°C; 15–16 Oct mainly sunny 25/17°C; 17 Oct mainly cloudy 23/18°C. Forecast does not yet include 18–19 Oct.",
       "description": "This is a dated forecast snapshot, not a trip guarantee. The Malta Met Office page is refreshed; recheck all seven dates shortly before departure and before sea activities. Pack for possible wind or showers as well as warm daytime weather, and follow marine/lifeguard notices.",
       "source_url": "https://maltametoffice.com/en/forecast/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Official Malta International Airport Met Office 7-day forecast as fetched 9 Oct 2026: https://maltametoffice.com/en/forecast/. The detailed forecast was last updated 9 Oct 2026 16:45 and warned of thundery showers overnight for 10 Oct: https://maltametoffice.com/en/detailed-forecast/. The Oct 16–19 forecast was not available in the seven-day view at check time.",
+      "notes": "Official seven-day view fetched 11 October: https://maltametoffice.com/en/forecast/. This snapshot replaces the older 9 October forecast; 18–19 October lie beyond this view. Recheck before outdoor or sea activities; these are forecasts, not observed conditions.",
       "price range": "Not applicable"
     },
     {

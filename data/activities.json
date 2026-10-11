@@ -1,7 +1,7 @@
 {
   "topic": "activities",
   "title": "Activities, landmarks & events in Malta",
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-11",
   "intro": "A source-checked shortlist for the 13–19 October 2026 stay: confirmed event dates, ticketed activities, sights, and gaming-venue status. TWC spectator access and daily match times remain unconfirmed. Google Maps currently marks three legacy public PC/esports-centre listings as permanently closed; The Eden XP Arcade is a separate, current general arcade/VR option, not a PC LAN café. Recheck operators and live schedules before travelling.",
   "records": [
     {
@@ -15,9 +15,9 @@
       "description": "The official organizer page lists the overall event window, stage dates, and Malta location. A Thunderpick-issued release names BLAST Studios Malta; a BLAST guide for another event associates BLAST Arena Studios with MFCC, Ta’ Qali. This is venue-area corroboration only—not a confirmed Thunderpick street address, public entrance, or spectator-access notice.",
       "source_url": "https://world-championship.thunderpick.io/2026-finals/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "The official TWC page was rechecked 10 October and lists arrival 12 October, media day 13 October, Group Stage 14–16 October, Playoffs 17–18 October, and departure 19 October. The Thunderpick-issued release names BLAST Studios Malta but gives no street address or attendee logistics: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . A BLAST guide for a different event associates BLAST Arena Studios with MFCC, Ta’ Qali; use as venue-area context only: https://blast.tv/cs/news/malta-fan-guide . Exact TWC address/pin, daily public match/door times, and spectator access remain open. The 17 October playoff date coincides with the Rolex Middle Sea Race and a Heritage Malta ticketed event; exact TWC times are not published. See getting-around.html for transport caveats once an event timetable is available."
+      "notes": "The official TWC page was rechecked 10 October and lists arrival 12 October, media day 13 October, Group Stage 14–16 October, Playoffs 17–18 October, and departure 19 October. The Thunderpick-issued release names BLAST Studios Malta but gives no street address or attendee logistics: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html . A BLAST guide for a different event associates BLAST Arena Studios with MFCC, Ta’ Qali; use as venue-area context only: https://blast.tv/cs/news/malta-fan-guide . Exact TWC address/pin, daily public match/door times, and spectator access remain open. The 17 October playoff date coincides with the Rolex Middle Sea Race and a Heritage Malta ticketed event; exact TWC times are not published. See getting-around.html for transport caveats once an event timetable is available. Official phase dates rechecked 11 October. A 9 October X post references an opening-day schedule, but the image was not readable in extracted text; daily times remain unverified: https://x.com/thunderpickco/status/2108604711968317828."
     },
     {
       "id": "gzira-mosta-2026-10-14",
@@ -30,7 +30,7 @@
       "description": "The live Malta FA match-specific ticket page lists Gżira United v Mosta FC at Tony Bezzina Stadium on 14 October at 19:00. Check ticket availability and the live fixture page before travelling.",
       "source_url": "https://tickets.mfa.com.mt/matches/gzira-united-fc-vs-mosta-fc-2026-10-14",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "The match-specific Malta FA page confirms date, time, stadium and ticket categories. Hibernians FC identifies Tony Bezzina Stadium as being in Paola: https://www.hiberniansfc.mt/stadium/. This direct listing resolves the earlier search-result fixture/time discrepancy; recheck before purchase."
     },
@@ -75,9 +75,9 @@
       "description": "Heritage Malta lists an In Guardia historical re-enactment on Sunday 18 October. The event ticket is separate from ordinary museum entry; advance booking is available through the official page.",
       "source_url": "https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Heritage Malta says HM Passports and discount cards do not apply to these event tickets, and that the event can be cancelled for adverse weather. The same page lists the 2026 date and both ticket types."
+      "notes": "Heritage Malta says HM Passports and discount cards do not apply to these event tickets, and that the event can be cancelled for adverse weather. The same page lists the 2026 date and both ticket types. Do not use the event page’s numeric map coordinates as a route destination: they appear inconsistent with the Valletta venue address. Confirm the entrance by venue name/address."
     },
     {
       "id": "rolex-race-viewpoints-2026",
@@ -345,7 +345,7 @@
       "description": "A family-run collection of classic cars, motorcycles and period memorabilia. The museum describes its displays across 3,000 square metres; it is an indoor option close to the Qawra base.",
       "source_url": "https://www.classiccarsmalta.com/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "Opening times and admission are taken from the museum’s own page. Recheck the operator site for holiday or temporary changes.\nSupporting claim sources:\nThe museum’s official home page lists its Qawra address, weekday/weekend hours, adult and child admission, and the car-and-motorcycle collection. https://www.classiccarsmalta.com/\nThe official ticket page lists an adult ticket at €10 and a child ticket at €4.50. https://www.classiccarsmalta.com/museum-entrance-tickets"
     },
@@ -390,9 +390,9 @@
       "description": "The Dominic Galea Trio with guest vocalist Nadine Axisa perform a Great American Songbook-inspired set in the Sagrestia Vault. The event is listed for a date inside the trip window.",
       "source_url": "https://vallettawaterfront.com/events/the-valletta-waterfront-jazz-series-volume-2/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Date, venue, start time, age limit and listed ticket price are published. Do not assume tickets remain available; verify directly with TicketLine before making plans.\nSupporting claim sources:\nThe official Valletta Waterfront event page gives 15 October at 19:30, the Sagrestia Vault venue and a 16+ audience. https://vallettawaterfront.com/events/the-valletta-waterfront-jazz-series-volume-2/\nTicketLine’s seat-selection page shows a €25 ticket including a glass of prosecco and a limited poster; its extracted seat map did not establish current inventory. https://www.ticketline.com.mt/bookings/BookSeats.aspx?ShowId=3122&SectionId=2954 Availability was not determinable from the extracted TicketLine seat map; do not assume tickets remain or call the event sold out."
+      "notes": "Date, venue, start time, age limit and listed ticket price are published. Do not assume tickets remain available; verify directly with TicketLine before making plans.\nSupporting claim sources:\nThe official Valletta Waterfront event page gives 15 October at 19:30, the Sagrestia Vault venue and a 16+ audience. https://vallettawaterfront.com/events/the-valletta-waterfront-jazz-series-volume-2/\nTicketLine’s seat-selection page shows a €25 ticket including a glass of prosecco and a limited poster; its extracted seat map did not establish current inventory. https://www.ticketline.com.mt/bookings/BookSeats.aspx?ShowId=3122&SectionId=2954 Availability was not determinable from the extracted TicketLine seat map; do not assume tickets remain or call the event sold out. Organizer date/time/location rechecked 11 October; TicketLine price and stock were not newly verified."
     },
     {
       "id": "cafe-del-mar-cdm-sundays-oct18",
@@ -405,9 +405,9 @@
       "description": "The official Café del Mar calendar lists CDM Sundays on 18 October. Its event page advertises DJ sets and states a 17+ age limit.",
       "source_url": "https://cafedelmar.com.mt/event/cdm-sundays-6/?date=20261018",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Exact event start time and ticket price were not visible in the retrieved official event page. Check the ticket link for current entry conditions and availability.\nSupporting claim sources:\nThe official events calendar lists CDM Sundays on Sunday 18 October 2026. https://cafedelmar.com.mt/events/\nThe event page describes late-afternoon-to-night DJ sets, a 17+ age limit, ticket link and sofa reservations with a minimum spend that includes admission. https://cafedelmar.com.mt/event/cdm-sundays-6/?date=20261018\nCafé del Mar’s current contact page gives the Triq it-Trunciera, Qawra address. https://cafedelmar.com.mt/contact/"
+      "notes": "Exact event start time and ticket price were not visible in the retrieved official event page. Check the ticket link for current entry conditions and availability.\nSupporting claim sources:\nThe official events calendar lists CDM Sundays on Sunday 18 October 2026. https://cafedelmar.com.mt/events/\nThe event page describes late-afternoon-to-night DJ sets, a 17+ age limit, ticket link and sofa reservations with a minimum spend that includes admission. https://cafedelmar.com.mt/event/cdm-sundays-6/?date=20261018\nCafé del Mar’s current contact page gives the Triq it-Trunciera, Qawra address. https://cafedelmar.com.mt/contact/ On 11 October the official calendar body explicitly lists Sunday 18.10.26 with this link; the URL query alone is not the date evidence."
     },
     {
       "id": "valletta-waterfront-autumn-vibes",

@@ -42,3 +42,12 @@ Do not fill these gaps with guesses. Update or resolve only when a direct source
 ## OQ-23 — Exact Malta environmental-contribution amount for this booking
 
 The Malta Tourism Authority states that from 1 July 2026 the contribution is €1.50 per night for each guest aged 18 or over, capped at €22.50 per eligible person per visit, and must appear as a separate invoice/fiscal-receipt item. The conditional six-night arithmetic is €9 per eligible adult only if six nights are billable; the actual amount depends on the booking, guest ages, nights charged, and hotel invoice. Confirm those details with AX ODYCY before entering a budget/actual amount. Source checked 2026-10-10: https://mta.com.mt/services/environmental-contribution/.
+
+## 11 October refresh — remaining blockers / supersession
+- **High priority:** organizer attendee eligibility, exact TWC entrance/pin, admission and daily match/door/finish times. X opening-day image was not readable. Do not travel on inferred access rules.
+- **Transport:** date-specific outward/return plans for14–18Oct; safe hotel/venue walks, stop sides, last useful return and17Oct diversion. Static timetable variants are not date-specific evidence. Clarify €25 Adult vs€27 Flex inclusions and October single-fare season.
+- **Radio:** BBC episode clock is labelled Local time, timezone unidentified; prior GMT/Malta conversions are withdrawn. No named EPL/other fixture commentary or Kalshi-market overlap verified; no reception test at AX ODYCY/venue. Physical DAB scan needed.
+- **Platforms:** fresh Google/Yelp/Instagram/TikTok/Facebook/Reddit review compilation remains incomplete due blocked/limited extraction; five403 results lack reliable endpoint labels. Official X text was available, attached schedule was not.
+- **Weather:**18–19October beyond current forecast; earlier16–19gap superseded only for16–17.
+- **Expense inputs:** actual check-in/out, party ages/count, booked prices, included meals, card fees, flight times and reimbursement unknown. Daily optional rows must not duplicate spending entered in aggregate rows.
+- **Fresh verification boundary:** no complete new line-by-line external recheck of all historical records. See the per-record dated audit; earlier menu and third-party snapshots are not silently refreshed.

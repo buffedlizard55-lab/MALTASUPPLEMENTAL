@@ -122,3 +122,23 @@ p { margin: 10px 0; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* Evidence-first enhancements: compact disclosures and resilient narrow layouts. */
+.hero h1 { color: #fff; }
+.skip-link { position: fixed; top: -100px; left: 12px; z-index: 100; background: #fff; padding: 12px 18px; }
+.skip-link:focus { top: 8px; }
+.record-card { scroll-margin-top: 110px; }
+.record-notes summary { cursor: pointer; font-weight: 700; min-height: 44px; display: list-item; padding: 10px 0; }
+.record-notes p { margin: 6px 0; }
+.record-source { margin-top: 0; }
+.topic-tools { min-width: 0; }
+.topic-tools label { min-width: 0; flex: 1 1 170px; }
+.topic-tools input, .topic-tools select { min-width: 0; max-width: 100%; width: 100%; }
+.topic-tools .result-count { flex-basis: 100%; }
+.filter-reset { border: 1px solid var(--line); border-radius: 9px; padding: 8px 15px; color: var(--teal-dark); background: #fff; cursor: pointer; }
+.document-text { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .88rem; padding: 18px; background: var(--paper); border-radius: 14px; max-height: 70vh; overflow-y: auto; }
+.day-plan { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 12px; }
+.day-plan li { padding: 17px; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; }
+.day-plan time { display: block; font-weight: 800; color: var(--teal-dark); }
+.daily-planner > summary { cursor: pointer; padding: 18px; font-weight: 800; background: var(--soft); border-radius: 14px; }
+body, .hero p, .card { overflow-wrap: anywhere; }

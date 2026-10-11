@@ -1,3 +1,7 @@
+# Current delivery status — 11 October 2026
+
+Supersedes dated status below. Pass1 and Pass2 each ran9 passing real Chromium browser tests, structural/schema validation (114records,25expense rows), and JS checks. Axe/overflow checks cover8pages at360/768/1440px. Sources refreshed selectively; retained historical evidence is not silently reverified. Pass3, integration with newly advanced main, PR/checks/merge and Pages deployment are pending.
+
 # Workstream status
 
 Last updated: 2026-10-10 (UTC)

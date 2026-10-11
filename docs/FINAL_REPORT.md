@@ -1,3 +1,9 @@
+# 11 October delivery refresh — pending final integration
+
+Implementation and requirements/edge-case passes completed with9passing real-browser tests each,114records and25expense rows. Critical sources rechecked; complete fresh external verification of historical shortlist remains incomplete. Main advanced during work and must be reconciled without importing unsupported stronger claims. Final regression/PR/merge/deployment pending.
+
+## Historical report (10 October)
+
 # Final report — Malta Trip Guide
 
 **Planning window:** 13–19 October 2026

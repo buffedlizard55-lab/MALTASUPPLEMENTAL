@@ -1,7 +1,7 @@
 {
   "topic": "expenses",
   "title": "Quick-fill Malta expense planner",
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-11",
   "intro": "A blank-by-default planner for 13–19 October 2026. Enter full trip/party amounts in euros (€) consistently; no flight, hotel, meal, fare, ticket, or reimbursement amount has been assumed.",
   "records": [
     {
@@ -44,9 +44,9 @@
       "description": "Optional line for charges shown separately on the confirmed hotel invoice. The Malta Tourism Authority states an environmental contribution of €1.50 per night per person aged 18 or over from 1 July 2026, capped at €22.50 per person per visit. A six-night stay would be €9 per eligible adult only if all six nights are billable; this is a conditional calculation, not the traveler’s confirmed amount. Do not duplicate amounts already included in the accommodation total.",
       "source_url": "https://mta.com.mt/services/environmental-contribution/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "MTA’s published rate, age threshold, per-person cap and effective date were checked 10 Oct 2026. The MTA says the contribution must appear as a separate item on the invoice/fiscal receipt. Whether anything is due on this booking depends on actual billable nights, guest ages and the hotel’s invoice; see OQ-23 in docs/OPEN_QUESTIONS.md. No personalized amount has been prefilled.",
+      "notes": "MTA’s published rate, age threshold, per-person cap and effective date were checked 11 Oct 2026. The MTA says the contribution must appear as a separate item on the invoice/fiscal receipt. Whether anything is due on this booking depends on actual billable nights, guest ages and the hotel’s invoice; see OQ-23 in docs/OPEN_QUESTIONS.md. No personalized amount has been prefilled.",
       "price range": "Environmental contribution: €1.50 per person per night for guests aged 18+, from 1 July 2026; maximum €22.50 per person per visit. Six chargeable nights would be €9 per eligible adult."
     },
     {
@@ -273,6 +273,111 @@
       "confidence": "unverified",
       "notes": "VisitMalta is a discovery link, not an incidentals price source. No amount has been estimated or prefilled.",
       "price range": "User-entered; starts blank"
+    },
+    {
+      "id": "daily-2026-10-13",
+      "name": "13 October · optional daily spending",
+      "category": "Optional daily spending — avoid double counting",
+      "area": "Trip planning input",
+      "address": "Traveler-entered; no venue assumed",
+      "hours": "Enter booked itinerary details; no departure or activity time assumed",
+      "description": "Use for meals, incidentals or other daily spending not already entered in the core trip categories. Do not count a bus pass, hotel charge or meal twice. Add the day’s plan or receipt references in notes.",
+      "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "This is a traveler-input template, not a sourced itinerary or price estimate. Government source supports euro currency only. Enter whole-day costs here OR in corresponding aggregate categories, not both. Do not include private payment or identity data.",
+      "price range": "Blank by default — enter your own confirmed total"
+    },
+    {
+      "id": "daily-2026-10-14",
+      "name": "14 October · optional daily spending",
+      "category": "Optional daily spending — avoid double counting",
+      "area": "Trip planning input",
+      "address": "Traveler-entered; no venue assumed",
+      "hours": "Enter booked itinerary details; no departure or activity time assumed",
+      "description": "Use for meals, incidentals or other daily spending not already entered in the core trip categories. Do not count a bus pass, hotel charge or meal twice. Add the day’s plan or receipt references in notes.",
+      "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "This is a traveler-input template, not a sourced itinerary or price estimate. Government source supports euro currency only. Enter whole-day costs here OR in corresponding aggregate categories, not both. Do not include private payment or identity data.",
+      "price range": "Blank by default — enter your own confirmed total"
+    },
+    {
+      "id": "daily-2026-10-15",
+      "name": "15 October · optional daily spending",
+      "category": "Optional daily spending — avoid double counting",
+      "area": "Trip planning input",
+      "address": "Traveler-entered; no venue assumed",
+      "hours": "Enter booked itinerary details; no departure or activity time assumed",
+      "description": "Use for meals, incidentals or other daily spending not already entered in the core trip categories. Do not count a bus pass, hotel charge or meal twice. Add the day’s plan or receipt references in notes.",
+      "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "This is a traveler-input template, not a sourced itinerary or price estimate. Government source supports euro currency only. Enter whole-day costs here OR in corresponding aggregate categories, not both. Do not include private payment or identity data.",
+      "price range": "Blank by default — enter your own confirmed total"
+    },
+    {
+      "id": "daily-2026-10-16",
+      "name": "16 October · optional daily spending",
+      "category": "Optional daily spending — avoid double counting",
+      "area": "Trip planning input",
+      "address": "Traveler-entered; no venue assumed",
+      "hours": "Enter booked itinerary details; no departure or activity time assumed",
+      "description": "Use for meals, incidentals or other daily spending not already entered in the core trip categories. Do not count a bus pass, hotel charge or meal twice. Add the day’s plan or receipt references in notes.",
+      "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "This is a traveler-input template, not a sourced itinerary or price estimate. Government source supports euro currency only. Enter whole-day costs here OR in corresponding aggregate categories, not both. Do not include private payment or identity data.",
+      "price range": "Blank by default — enter your own confirmed total"
+    },
+    {
+      "id": "daily-2026-10-17",
+      "name": "17 October · optional daily spending",
+      "category": "Optional daily spending — avoid double counting",
+      "area": "Trip planning input",
+      "address": "Traveler-entered; no venue assumed",
+      "hours": "Enter booked itinerary details; no departure or activity time assumed",
+      "description": "Use for meals, incidentals or other daily spending not already entered in the core trip categories. Do not count a bus pass, hotel charge or meal twice. Add the day’s plan or receipt references in notes.",
+      "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "This is a traveler-input template, not a sourced itinerary or price estimate. Government source supports euro currency only. Enter whole-day costs here OR in corresponding aggregate categories, not both. Do not include private payment or identity data.",
+      "price range": "Blank by default — enter your own confirmed total"
+    },
+    {
+      "id": "daily-2026-10-18",
+      "name": "18 October · optional daily spending",
+      "category": "Optional daily spending — avoid double counting",
+      "area": "Trip planning input",
+      "address": "Traveler-entered; no venue assumed",
+      "hours": "Enter booked itinerary details; no departure or activity time assumed",
+      "description": "Use for meals, incidentals or other daily spending not already entered in the core trip categories. Do not count a bus pass, hotel charge or meal twice. Add the day’s plan or receipt references in notes.",
+      "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "This is a traveler-input template, not a sourced itinerary or price estimate. Government source supports euro currency only. Enter whole-day costs here OR in corresponding aggregate categories, not both. Do not include private payment or identity data.",
+      "price range": "Blank by default — enter your own confirmed total"
+    },
+    {
+      "id": "daily-2026-10-19",
+      "name": "19 October · optional daily spending",
+      "category": "Optional daily spending — avoid double counting",
+      "area": "Trip planning input",
+      "address": "Traveler-entered; no venue assumed",
+      "hours": "Enter booked itinerary details; no departure or activity time assumed",
+      "description": "Use for meals, incidentals or other daily spending not already entered in the core trip categories. Do not count a bus pass, hotel charge or meal twice. Add the day’s plan or receipt references in notes.",
+      "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "This is a traveler-input template, not a sourced itinerary or price estimate. Government source supports euro currency only. Enter whole-day costs here OR in corresponding aggregate categories, not both. Do not include private payment or identity data.",
+      "price range": "Blank by default — enter your own confirmed total"
     }
   ]
 }

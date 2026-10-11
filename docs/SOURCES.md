@@ -213,3 +213,48 @@ These URLs are linked from record notes as secondary context, contact or menu ev
 | RMYC 2026 Rolex Middle Sea Race event listing gives 17 Oct at 11:00 | https://rmyc.org/races/2026-rolex-middle-sea-race/ | 2026-10-10 | C — Activities & events | official; Organizer listing; recheck for live changes and access restrictions. |
 | Heritage Malta calendar lists Sailing Spectacle: Middle Sea Race Viewing at Fort St Elmo on 17 Oct | https://heritagemalta.mt/app/uploads/2026/01/2026-calendar-of-events-English-R6-Web.pdf | 2026-10-09 | C — Activities & events | official; Annual calendar entry does not give event-specific time, price, or ticket availability. |
 | Malta National Aquarium current address and daily 10:00–20:00 opening hours | https://aquarium.com.mt/contact/ | 2026-10-10 | C — Activities & events | official; Current operator contact page; verify holiday/temporary changes. |
+
+## Critical refresh — 11 October 2026 (UTC)
+
+Earlier entries above remain historical checks; this section supersedes only the specified claims. See `AUDIT_2026-10-11.md` for the retained-evidence boundary.
+
+| Claim / scope | URL | Checked UTC | Owner | Result / limitation |
+|---|---|---|---|---|
+| TWC phase dates: media 13th, groups 14–16th, playoffs 17–18th; Malta location | https://world-championship.thunderpick.io/2026-finals/ | 2026-10-11 | A/C | Official body supports dates; no public access/doors/address pin. |
+| Thunderpick announcement: finals 14–18 October at BLAST Studios Malta | https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html | 2026-10-11 | A/C | Issuer release; does not establish attendee logistics. |
+| MFCC/Ta’ Qali venue context | https://blast.tv/cs/news/malta-fan-guide | 2026-10-11 | A/C | Different BLAST event; do not transfer ticket/entry policies. |
+| Official X post dated 9 October points to opening-day schedule | https://x.com/thunderpickco/status/2108604711968317828 | 2026-10-11 | C/E | Text extracted; attached schedule image unavailable, no match times transcribed. |
+| Route 186 Qawra 952 / Stadium 6227; return via Buġibba | https://www.publictransport.com.mt/route/186/ | 2026-10-11 | A | Multiple extracted timetable variants; no exact trip-day departure/last return asserted. |
+| Route 214 Qawra / Ta’ Qali candidate | https://www.publictransport.com.mt/route/214/ | 2026-10-11 | A | Stop-level evidence, not hotel-to-entrance directions. |
+| Fares: €19 shareable 12 journeys, Flex €21/4 days and €27/7 days; distinct Adult €25 paragraph | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-11 | A/F | Flex explicitly includes Airport Direct. Adult exclusions/general overview differ; clarify product. Only explicit winter date range is expired for this trip. |
+| TD1 Airport Direct €3.50; Qawra area | https://www.publictransport.com.mt/other-services/airport-direct/ | 2026-10-11 | A | Flight-specific timetable and safe final walk not tested. |
+| Published service notices | https://www.publictransport.com.mt/latest-service-updates/ | 2026-10-11 | A | Earlier documented 17 October notice retained; recheck live on date. |
+| Minoa Wed–Sat 18:30–22:30 /16+, tasting €70/€80 and order-by 20:30 | https://minoa.mt/ | 2026-10-11 | B | Official homepage/menu; other menu samples retain earlier check. |
+| Cheeky Monkey daily hours and food cut-off | https://cheekymonkeymalta.com/qawra/ | 2026-10-11 | B | Operator extraction; old menu-price snapshot not refreshed. |
+| Luzzu closed for refurbishment since operator 29 September notice | https://luzzu.mt/ | 2026-10-11 | B | No reopening date. |
+| AX ODYCY facilities / contact; Espresso 24-hour service | https://axhotelsmalta.com/odycy/ | 2026-10-11 | B/D | Operator property, not reservation confirmation. |
+| Caffè Cordina address / Mon–Sat 07:30–21, Sun 07:30–15 | https://caffecordina.com/contact-us/ | 2026-10-11 | B | Official contact page; earlier menu prices not rechecked. |
+| Nine Lives Perched Beach / daily 09–23 | https://ninelivesmalta.com/ | 2026-10-11 | B | No trip-week DJ lineup. |
+| Gżira–Mosta 14 October 19:00, Tony Bezzina Stadium, €10 adult / €6 senior | https://tickets.mfa.com.mt/matches/gzira-united-fc-vs-mosta-fc-2026-10-14 | 2026-10-11 | C/E | Under-16 free gate ticket; fixture is not radio carriage. |
+| In Guardia 18 October 11–12, entry 10, museum 12; adult show €10 / combined €17 | https://heritagemalta.mt/whats-on/in-guardia-fort-st-elmo-and-the-national-war-museum-2/ | 2026-10-11 | C | Weather cancellation; numeric map coordinates appear inconsistent, use venue/address. |
+| Classic Cars museum weekday 09–17, weekend/holiday 09–14; adult €10 / child €4.50 | https://www.classiccarsmalta.com/ | 2026-10-11 | C | Operator details, not booking. |
+| Waterfront Jazz 15 October 19:30, Sagrestia Vault, 16+ | https://vallettawaterfront.com/events/the-valletta-waterfront-jazz-series-volume-2/ | 2026-10-11 | C | Organizer verified; €25 TicketLine price retains earlier check, current stock unknown. |
+| CDM Sundays explicitly listed in calendar body 18.10.26 | https://cafedelmar.com.mt/events/ | 2026-10-11 | C | Date verified independently of URL query; precise start/price not extracted. |
+| October 13–17 forecast: showers 26/19; mainly sunny 24/18,25/17,25/17; mainly cloudy23/18°C | https://maltametoffice.com/en/forecast/ | 2026-10-11 | D/C | Forecast horizon ends 17 October; 18–19 unknown. Not observed conditions. |
+| EES fully operational since 10 April 2026; visa-exempt biometric rules | https://travel-europe.europa.eu/en/ees/faq | 2026-10-11 | D | Exceptions/queues depend on traveler; no queue time inferred. |
+| ETIAS not operational / no applications being collected | https://travel-europe.europa.eu/etias | 2026-10-11 | D | Date-sensitive official status; recheck. |
+| GO Smart Unlimited €15.99/28 days, unlimited local / 28GB Zone 1; app eSIM | https://www.go.com.mt/top-up-mobile-number-malta/ | 2026-10-11 | D/F | Device/carrier compatibility and checkout not tested. |
+| Melita €10 starter pack 25GB/200min-SMS/€5credit; physical/eSIM | https://www.melita.com/mobile/top-up-plans/ | 2026-10-11 | D/F | Separate auto-renewal/promotion conditions; purchase widget extraction shows server error. |
+| Environmental contribution €1.50/night/18+ guest, €22.50/person/visit cap, effective 1 July 2026 | https://mta.com.mt/services/environmental-contribution/ | 2026-10-11 | F | Separately itemized; actual booking nights/ages/invoice unknown. No amount prefilled. |
+| NET FM recurring Friday 18:30 / Saturday 16 / Sunday 15 sports shows | https://netfm.com.mt/ | 2026-10-11 | E | Homepage works; `/skeda/` is 404. No explicit timezone, dated fixture or live commentary proof. |
+| NET FM 101 MHz licensed frequency | https://ba.org.mt/stations-licenced | 2026-10-11 | E | Licensed frequency, not hotel reception test. |
+| BBC Sportsworld 17 October episode, 3h53, feed except News Internet | https://www.bbc.co.uk/programmes/w1730c92ck0m2cw | 2026-10-11 | E | 09:06 labelled Local time; timezone unidentified. Removed old GMT/Malta conversion. |
+| BBC Sportsworld 18 October episode, 3h53 | https://www.bbc.co.uk/programmes/w1730c92ck0q313 | 2026-10-11 | E | Local-clock display not safely convertible; no named match verified. |
+| BBC WS technical listing 6A 181.936 MHz | https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes | 2026-10-11 | E | Industry association directory, not network operator/reception test. |
+| Operator DAB+ channel directory | https://dab.com.mt/channels/ | 2026-10-11 | E | BBC WS listed; legacy Radio Sportiva profile does not prove current technical service. |
+
+### Platform attempts / access limitations
+
+Google Maps returned a loading-only view, not substantive review text. A parallel social/review request batch returned five HTTP 403 responses without URL labels in the result; attribution to a specific endpoint is therefore not reliable. Yelp/Instagram/TikTok/Facebook/Reddit did not yield substantive newly usable review evidence. X yielded the exact official post above. No ratings, rankings or user comments were invented. Historical platform snapshots retain their earlier dates.
+
+| Euro currency reference for optional daily input templates; NO itinerary/price claim | https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx | 2026-10-11 | F | Seven dated rows are traveler-input templates, not bookings or estimated costs. |

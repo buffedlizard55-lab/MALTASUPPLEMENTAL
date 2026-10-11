@@ -1,7 +1,7 @@
 {
   "topic": "radio",
   "title": "Sports radio to try in Malta",
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-11",
   "intro": "The strongest radio leads found for 13–19 October are NET FM on FM 101 MHz, plus DAB+ directory listings for Radio Sportiva and BBC World Service. WorldDAB lists BBC World Service on Digi B Network block 6A at 181.936 MHz; reception at the hotel and event venue remains untested. The dated BBC Sportsworld listings and local stations’ recurring grids do not prove that a specific trip event or fixture will be carried.",
   "records": [
     {
@@ -10,11 +10,11 @@
       "category": "FM",
       "area": "Nationwide licensed FM service in Malta",
       "address": "Not published",
-      "hours": "NET FM’s recurring weekly grid lists Hits & Score on Saturday at 16:00 and Sports Box on Sunday at 15:00 (times as published by the Malta station; timezone not explicitly stated). In this trip window those days are 17 and 18 October.",
+      "hours": "Recurring NET FM homepage grid: Friday Mhux Premier biss 18:30; Saturday Hits & Score 16:00; Sunday Sports Box 15:00. In this trip those days are 16, 17 and 18 October. Grid timezone is not explicit and listings are not dated match schedules.",
       "description": "The Broadcasting Authority’s licensed-stations list gives NET FM at 101 MHz FM. NET FM’s own recurring weekend grid includes two sports programmes. This is the clearest conventional-FM option found, but the weekly grid is not a date-stamped October 2026 schedule and does not confirm match commentary or carriage of a particular event.",
       "source_url": "https://ba.org.mt/stations-licenced",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "NET FM’s official programme grid: https://netfm.com.mt/. The frequency is from the Broadcasting Authority; the programme names/times are from the station. The grid does not state its time zone and is recurring, not a date-stamped trip-week schedule. Recheck the station’s live schedule before travel. No TWC, Gżira United–Mosta, or Rolex Middle Sea Race radio carriage was confirmed.",
       "price range": "Free-to-air; receiver cost not checked"
@@ -40,13 +40,13 @@
       "category": "DAB+",
       "area": "BBC World Service appears in Malta’s DAB+ channel directory; reception not tested locally",
       "address": "Not published; this is a broadcast listing, not a visitor venue",
-      "hours": "BBC’s official Sportsworld upcoming-broadcasts page lists Saturday 17 October at 13:06 GMT and Sunday 18 October at 14:06 GMT on BBC World Service (except News Internet). That is 15:06 and 16:06 Malta time respectively (UTC+2).",
+      "hours": "Official BBC episode pages list Sportsworld on 17 and 18 October 2026 (3h 53m each). Their clock is labelled “Local time” without an identified timezone in extraction. No Malta airtime is asserted.",
       "description": "The Malta DAB+ channel directory includes BBC World Service. The BBC’s dated programme listing schedules Sportsworld, described as live sport with news, interviews and analysis, on both playoff-weekend dates. The programme listing identifies the BBC World Service radio feed; a separate record gives WorldDAB’s DAB+ block/frequency listing. Neither directory evidence nor the programme schedule proves reception at the traveler’s locations or commentary on the trip’s esports, football, or sailing events.",
       "source_url": "https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Malta DAB+ directory listing for BBC World Service: https://dab.com.mt/channels/. Dated BBC programme pages: Saturday 17 October, https://www.bbc.co.uk/programmes/w1730c92ck0m2cw ; Sunday 18 October, https://www.bbc.co.uk/programmes/w1730c92ck0q313. The schedule labels the feed “BBC World Service except News Internet”; the episode page’s displayed local clock depends on the viewer’s time zone. Times above are converted from 13:06 and 14:06 GMT to 15:06 and 16:06 Malta time (UTC+2). WorldDAB’s technical listing and the reception caveat are recorded separately; no reception test at AX ODYCY or MFCC was available.",
+      "notes": "Official programme page: https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming. Episode pages: https://www.bbc.co.uk/programmes/w1730c92ck0m2cw and https://www.bbc.co.uk/programmes/w1730c92ck0q313. The 11 October Saturday extraction shows 09:06 Local time; neither that label nor “GMT” in the episode title establishes the displayed clock’s timezone. Earlier GMT/Malta conversions removed. Malta directory: https://dab.com.mt/channels/. Check the BBC page with an explicit timezone/feed before tuning; named-match commentary and on-location DAB reception remain unconfirmed.",
       "price range": "Free-to-air broadcast; DAB+ receiver required for radio reception; hardware price not checked"
     },
     {
@@ -58,10 +58,10 @@
       "hours": "Technical service-directory entry; not a programme schedule",
       "description": "WorldDAB lists BBC World Service on Malta’s Digi B Network block 6A at 181.936 MHz. This is technical-directory evidence for tuning/scanning, not a measured signal-strength result or a guarantee of reliable reception indoors at the hotel or event venue.",
       "source_url": "https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes",
-      "source_type": "directory",
-      "date_checked": "2026-10-10",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "WorldDAB’s Malta multiplex directory lists BBC WS on Digi B Network 6A (181.936 MHz). Digi B’s channel list separately includes BBC World Service: https://dab.com.mt/channels/. Wohnort lists transmission sites at Għargħur and Żebbuġ (Gozo), but is a directory rather than an on-location reception test: https://www.wohnort.org/dab/malta.html. No receiver scan at AX ODYCY or the MFCC was available; actual reception remains unknown.",
+      "notes": "WorldDAB is the publishing industry association, not the Maltese network operator. Its technical directory is not a reception test. WorldDAB’s Malta multiplex directory lists BBC WS on Digi B Network 6A (181.936 MHz). Digi B’s channel list separately includes BBC World Service: https://dab.com.mt/channels/. Wohnort lists transmission sites at Għargħur and Żebbuġ (Gozo), but is a directory rather than an on-location reception test: https://www.wohnort.org/dab/malta.html. No receiver scan at AX ODYCY or the MFCC was available; actual reception remains unknown.",
       "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked"
     },
     {
