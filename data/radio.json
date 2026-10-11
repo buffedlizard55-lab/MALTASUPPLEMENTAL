@@ -2,7 +2,7 @@
   "topic": "radio",
   "title": "Sports radio to try in Malta",
   "last_updated": "2026-10-11",
-  "intro": "Radio findings re-checked on 11 October 2026: NET FM is listed at FM 101 MHz with a published weekly grid that includes sports programmes, and WorldDAB's Malta multiplex page confirms three DAB+ multiplexes — Digi B Network (6A, 181.936 MHz), Digi B 3 (6C, 185.360 MHz) and Digi B 2 (12A, 223.936 MHz), where a service named 'Sports Channel' is listed. Rai Radio Uno, carried in Malta's DAB+ line-up, publishes weekend live Italian football coverage. None of this proves a specific fixture, including the esports event, is carried or receivable at the hotel or venue: no on-location reception test was possible.",
+  "intro": "Radio findings re-checked on 11 October 2026 and merged from both re-verification passes. The strongest leads for 13–19 October are NET FM on FM 101 MHz and the DAB+ directory listings. WorldDAB's Malta multiplex page confirms three DAB+ multiplexes — Digi B Network (6A, 181.936 MHz), Digi B 3 (6C, 185.360 MHz) and Digi B 2 (12A, 223.936 MHz); BBC World Service and Rai Radiouno appear on 6A, and 12A carries a regular service named 'Sports Channel' whose broadcaster is not identified. Radio Sportiva appears in Digi B's channel directory, but no block or frequency was found and the Broadcasting Authority's licensed list does not name it; the BBC Radio 5 Live Premier League listing is a UK schedule whose weekend entries were undated in the snapshot checked. None of this proves that a specific fixture, including the esports event, is carried or receivable at the hotel or venue: no on-location reception test was possible.",
   "records": [
     {
       "id": "net-fm-fm-101",
@@ -11,12 +11,12 @@
       "area": "Nationwide licensed FM service in Malta",
       "address": "Not published",
       "hours": "NET FM's published weekly grid (re-checked 11 October 2026) lists 'Hits & Score' on Saturday from 16:00, 'Sports Box' on Sunday from 15:00, and 'Mhux Premier biss' on Friday from 18:30, with NET News at 18:00 and 12:00. In this trip window those days are Friday 16, Saturday 17 and Sunday 18 October. The grid shows start times only and does not state a time zone (Malta is UTC+2 in October).",
-      "description": "The Broadcasting Authority's licensed-stations list gives NET FM at 101 MHz FM, and the station's own site carries a weekly grid with three programmes whose names relate to sport. The station page does not describe their content, so names such as 'Hits & Score', 'Sports Box' and 'Mhux Premier biss' (literally 'not only the Premier') are titles only — match commentary or carriage of a named fixture is not confirmed.",
+      "description": "The Broadcasting Authority's licensed-stations list gives NET FM at 101 MHz FM, and the station's own site carries a recurring weekly grid with three programmes whose names relate to sport. This is the clearest conventional-FM option found, but the grid is not a date-stamped October 2026 schedule and the station page does not describe the programmes' content, so names such as 'Hits & Score', 'Sports Box' and 'Mhux Premier biss' (literally 'not only the Premier') are titles only — match commentary or carriage of a named fixture is not confirmed.",
       "source_url": "https://ba.org.mt/stations-licenced",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Frequency source: Broadcasting Authority licensed-stations list https://ba.org.mt/stations-licenced (re-checked 11 October 2026). Programme grid and live stream: https://netfm.com.mt/ (stream link published by the station: https://station.voscast.com/59784f63b730d). The grid is recurring, not a date-stamped 13–19 October 2026 schedule, and does not name fixtures. No TWC, Gżira United–Mosta or Rolex Middle Sea Race radio carriage was confirmed. Recheck the station's schedule close to air time.",
+      "notes": "Re-checked 11 October 2026. Frequency source: Broadcasting Authority licensed-stations list https://ba.org.mt/stations-licenced. Programme grid and live stream: https://netfm.com.mt/ (stream link published by the station: https://station.voscast.com/59784f63b730d). The grid is recurring, not a date-stamped 13–19 October 2026 schedule, and does not name fixtures. No TWC, Gżira United–Mosta or Rolex Middle Sea Race radio carriage was confirmed. Recheck the station's schedule close to air time.",
       "price range": "Free-to-air; receiver cost not checked"
     },
     {
@@ -26,13 +26,13 @@
       "area": "Malta DAB+ directory; reception not tested at AX ODYCY or BLAST Arena Studios",
       "address": "Not published; the directory does not state a multiplex block or tuned frequency",
       "hours": "Radio Sportiva’s recurring grid lists Diretta Sportiva on Saturday and Sunday, 15:05–17:00. Its schedule page says programming may vary with the sporting events of the day. The date-specific live items shown when checked were for 5–11 October, not 13–19 October.",
-      "description": "Digi B Network's Malta DAB+ channel directory lists Radio Sportiva, an Italian sports station, and Radio Sportiva's own schedule page lists weekend sports programming with a note that programming can vary with the day's events. However, WorldDAB's Malta multiplex service lists for 6A, 12A and 6C, checked the same day, do not name Radio Sportiva. Treat it as a plausible DAB+ service to scan for by name, not as a confirmed current carriage.",
+      "description": "Digi B Network’s Malta DAB+ channel directory lists Radio Sportiva, an Italian sports station. Radio Sportiva’s own schedule lists weekend sports programming. The Broadcasting Authority’s licensed-stations list does not show Radio Sportiva, and no DAB+ block or tuned frequency for it was found, so treat it as a plausible DAB+ option to scan for by name, not a reception test or a promise of live coverage of a named match.",
       "source_url": "https://dab.com.mt/project/radio-sportiva/",
       "source_type": "official",
       "date_checked": "2026-10-11",
-      "confidence": "unverified",
-      "notes": "Malta DAB+ channel directory: https://dab.com.mt/channels/ (listing page dated 2020). WorldDAB service lists checked 11 October 2026: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes (6A, 6C and 12A do not list Radio Sportiva). Broadcasting Authority licensed DAB services checked the same day do not name it: https://ba.org.mt/stations-licenced. Station schedule and the variance note: https://www.radiosportiva.com/palinsesto/. The conflict between the operator directory and WorldDAB is logged in docs/OPEN_QUESTIONS.md rather than resolved by guessing.",
-      "price range": "Free-to-air broadcast if carried; DAB+ receiver required; hardware price not checked"
+      "confidence": "partially verified",
+      "notes": "Re-checked 11 Oct 2026. Station schedule (https://www.radiosportiva.com/palinsesto/): “Diretta Sportiva” Saturday and Sunday 15:05–17:00; the page says programming can change with the day’s sporting events and that live programming can run until 24:00 depending on evening big matches (for example Serie A, Coppa Italia, European competitions, national team, or F1/MotoGP). Its dated “Sportiva Live” items visible at check time were for 5–11 October only. DAB+ channel directory (https://dab.com.mt/channels/) lists Radio Sportiva. Digi B’s channel profile (https://dab.com.mt/project/radio-sportiva/) is dated 20 August 2020. Times are as published; Italy and Malta share the same civil time during this trip.",
+      "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked"
     },
     {
       "id": "bbc-world-service-dab-sportsworld",
@@ -40,13 +40,13 @@
       "category": "DAB+",
       "area": "BBC World Service appears in Malta’s DAB+ channel directory; reception not tested locally",
       "address": "Not published; this is a broadcast listing, not a visitor venue",
-      "hours": "BBC's 'Sportsworld' next-on list (re-checked 11 October 2026) shows editions on Saturday 17 October and Sunday 18 October 2026 on BBC World Service 'except News Internet'; the individual episode pages are titled '17/10/2026 GMT' and '18/10/2026 GMT'. The list displays times in the viewer's local time zone, so the exact Malta clock time (UTC+2 in October) must be read off the BBC page or a schedule app rather than converted here.",
-      "description": "BBC World Service carries dated 'Sportsworld' editions on both playoff-weekend days of the trip (17 and 18 October 2026). The programme is described on the BBC's own pages as live sport with news, interviews and analysis, and the 11 October edition's description mentions the English Premier League. The listings do not promise a particular match, and they do not cover the esports event.",
+      "hours": "BBC's 'Sportsworld' upcoming-broadcasts list (re-checked 11 October 2026) shows editions on Saturday 17 October and Sunday 18 October 2026 on BBC World Service 'except News Internet'; the episode pages are titled '17/10/2026 GMT' and '18/10/2026 GMT'. A 10 October check of the episode pages showed 13:06 and 14:06 GMT, which converts to 15:06 and 16:06 Malta time (UTC+2). The list itself displays times in the viewer's local time zone, so confirm the Malta clock time on the BBC page or a schedule app rather than relying on any single conversion.",
+      "description": "The Malta DAB+ channel directory includes BBC World Service. The BBC’s dated programme listing schedules Sportsworld, described as live sport with news, interviews and analysis, on both playoff-weekend dates. The programme listing identifies the BBC World Service radio feed; a separate record gives WorldDAB’s DAB+ block/frequency listing. Neither directory evidence nor the programme schedule proves reception at the traveler’s locations or commentary on the trip’s esports, football, or sailing events. The 11 October edition's description mentions the English Premier League.",
       "source_url": "https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Dated programme pages: Saturday 17 October https://www.bbc.co.uk/programmes/w1730c92ck0m2cw and Sunday 18 October https://www.bbc.co.uk/programmes/w1730c92ck0q313; next-on list https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming (re-checked 11 October 2026; the list labels the feed 'BBC World Service except News Internet'). Earlier checks converted the times from GMT; because the current page renders times in the viewer's local zone, no absolute time is restated here. Malta DAB+ carriage is listed separately in this dataset and reception remains untested.",
+      "notes": "Malta DAB+ directory listing for BBC World Service: https://dab.com.mt/channels/. Dated BBC programme pages: Saturday 17 October https://www.bbc.co.uk/programmes/w1730c92ck0m2cw ; Sunday 18 October https://www.bbc.co.uk/programmes/w1730c92ck0q313. Next-on list: https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming (re-checked 11 October 2026; it labels the feed “BBC World Service except News Internet” and renders times in the viewer's local zone). Earlier checks converted times from GMT; because of the viewer-zone rendering, confirm the Malta clock time on the page itself. The WorldDAB technical listing and the reception caveat are recorded separately in this dataset; no reception test at AX ODYCY or the MFCC was available.",
       "price range": "Free-to-air broadcast; DAB+ receiver required for radio reception; hardware price not checked"
     },
     {
@@ -55,13 +55,13 @@
       "category": "DAB+",
       "area": "Malta Digi B Network listing; reception at AX ODYCY and MFCC not tested",
       "address": "Not published; this is a technical radio-service listing, not a venue",
-      "hours": "Technical service-directory entry (checked 11 October 2026); not a programme schedule.",
-      "description": "WorldDAB's Malta multiplex page lists three DAB+ multiplexes: Digi B Network on block 6A (181.936 MHz), Digi B 3 on block 6C (185.360 MHz) and Digi B 2 on block 12A (223.936 MHz). BBC World Service ('BBC WS') appears in the Digi B Network (6A) service list. This is technical-directory evidence for tuning and scanning, not a measured signal-strength result and not a guarantee of reliable indoor reception at the hotel or event venue.",
+      "hours": "Technical service-directory entry (re-checked 11 October 2026); not a programme schedule.",
+      "description": "WorldDAB's Malta multiplex page (re-checked 11 October 2026) lists three DAB+ multiplexes: Digi B Network on block 6A (181.936 MHz), Digi B 3 on block 6C (185.360 MHz) and Digi B 2 on block 12A (223.936 MHz). BBC World Service ('BBC WS') appears in the Digi B Network (6A) service list. This is technical-directory evidence for tuning and scanning, not a measured signal-strength result and not a guarantee of reliable indoor reception at the hotel or event venue.",
       "source_url": "https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes",
       "source_type": "directory",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "WorldDAB service lists checked 11 October 2026: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes — Digi B Network 6A includes BBC WS, Rai Radiouno, RTL 102.5, Radio 101, ONE Radio, Magic, Campus FM and others; Digi B 2 (12A) includes a 'Sports Channel' regular service; Digi B 3 is listed as 6C 185.360 MHz. Digi B's own channel list: https://dab.com.mt/channels/. Third-party transmission-site directory (not a reception test): https://www.wohnort.org/dab/malta.html. No receiver scan at the hotel or venue was possible.",
+      "notes": "WorldDAB service lists checked 11 October 2026: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes — Digi B Network 6A includes BBC WS, Rai Radiouno, RTL 102.5, Radio 101, ONE Radio, Magic, Campus FM and others; Digi B 2 (12A) includes a regular service named “Sports Channel”; Digi B 3 is listed as 6C 185.360 MHz. Digi B's own channel list: https://dab.com.mt/channels/. Third-party transmission-site directory (lists sites at Għargħur and Żebbuġ, Gozo; not a reception test): https://www.wohnort.org/dab/malta.html. No receiver scan at AX ODYCY or the event venue was possible, so actual reception remains unknown.",
       "price range": "Free-to-air broadcast; DAB+ receiver required; hardware price not checked"
     },
     {
@@ -71,12 +71,12 @@
       "area": "Malta",
       "address": "Not published",
       "hours": "No current AM/MW sports schedule was verified for 13–19 October 2026.",
-      "description": "No current AM or medium-wave sports station was confirmed in the sources checked. The Broadcasting Authority's licensed-stations list (re-checked 11 October 2026) shows nationwide FM services, DAB services and community FM stations, but no current AM/MW sports service. Malta's digital radio capacity is now spread across three DAB+ multiplexes, which is where sports-oriented listening should be checked instead.",
+      "description": "No current AM or medium-wave sports station was confirmed. The Broadcasting Authority’s licensed-stations page (checked 11 Oct 2026) lists FM, DAB+ and community-radio services and no AM/MW station. A 2026 TVM News history says Radju Malta began on 999 MW and changed to 93.7 FM in 1979; that historic reference is not evidence of a current AM service.",
       "source_url": "https://ba.org.mt/stations-licenced",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Checked list: https://ba.org.mt/stations-licenced (no AM service listed; DAB services named are All Rock, Pure Radio, Lite Radio, Maltin Biss, Breeze and Smooth 70s). WorldDAB's Malta multiplex page lists the three DAB+ multiplexes including the 'Sports Channel' on Digi B 2: https://www.worlddab.org/why-dab-plus/countries/malta/multiplexes. Historical note retained: a TVM News article says Radju Malta began on 999 MW and moved to 93.7 FM in 1979 (https://tvmnews.mt/en/news/radju-malta-is-53-years-old/); that is history, not a current AM service. Absence of a listing is not proof that distant AM signals can never be received.",
+      "notes": "The current Broadcasting Authority licensed-stations list was checked on 11 Oct 2026 (https://ba.org.mt/stations-licenced). Absence from the list is not a guarantee that no distant AM signal can ever be received; do not rely on an AM sports programme without current station confirmation. Historical context: https://tvmnews.mt/en/news/radju-malta-is-53-years-old/.",
       "price range": "Not applicable"
     },
     {
@@ -153,6 +153,36 @@
       "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "NFL week-by-week schedule page (checked 11 October 2026) lists the 18 October fixtures and ET kick-off times; the same page set also lists Commanders at 49ers on Monday 19 October 20:15 ET (02:15 Malta on Tuesday 20 October). Malta conversions: Malta is ET+6 during US daylight time. Note that some outlets number the 18 October weekend differently (week 6 vs week 7), so the date is the reliable anchor. NFL international game listing: https://www.nfl.com/news/2026-nfl-schedule-release-nine-international-games-dates-times-matchups."
+    },
+    {
+      "id": "ba-licensed-fm-frequencies",
+      "name": "Broadcasting Authority list — nationwide FM frequencies",
+      "category": "FM",
+      "area": "Malta (nationwide licensed FM services)",
+      "address": "Not applicable — station contacts are on the Broadcasting Authority page",
+      "hours": "Not a programme schedule; check each station’s own schedule (for example NET FM and Radio Sportiva in this dataset)",
+      "description": "The Broadcasting Authority’s licensed-stations page lists these nationwide FM frequencies: Radju Malta 93.7 MHz; Radju Malta 2 105.9 MHz; Magic Malta 91.7 MHz; ONE Radio 92.7 MHz; NET FM 101 MHz; RTK 103 MHz; Smash Radio 104.6 MHz; Calypso 101.8 MHz; 89.7 Bay 89.7 MHz; Campus 103.7 MHz; Bay Easy 100.2 MHz; Radju Marija 102.3 MHz; Vibe FM 88.7 MHz. Use it as the FM tuning reference; the list does not show which stations carry sport.",
+      "source_url": "https://ba.org.mt/stations-licenced",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "verified",
+      "notes": "Checked 11 Oct 2026. Frequencies are as published by the Broadcasting Authority; reception at AX ODYCY or BLAST Arena Studios was not tested. Sports carriage must be confirmed per station and date (see the other records on this page).",
+      "price range": "Broadcast reception is free; FM receiver required; hardware price not checked"
+    },
+    {
+      "id": "bbc-radio-5-live-premier-league-listings",
+      "name": "BBC Radio 5 Live / 5 Live Sports Extra — Premier League commentary listings",
+      "category": "UK national radio — football listing (Malta reception not verified)",
+      "area": "United Kingdom BBC service; reception or streaming in Malta not established",
+      "address": "Not published",
+      "hours": "The BBC's upcoming-broadcasts page, checked 11 Oct, shows Premier League commentary with the labels 'Today', 'Next Saturday' and 'Next Sunday' and no calendar date for those items. The dated entries shown are Sat 24 Oct (14:55, 15:00, 17:30 UK time) and Sun 25 Oct (14:00, 16:30 UK time), which fall after the trip. Malta is one hour ahead of UK time in this period (CEST, UTC+2, versus BST, UTC+1).",
+      "description": "The BBC's Premier League Football programme page lists live 5 Live and 5 Live Sports Extra commentary for 2026–27 fixtures. It is a UK public-broadcaster listing. It is not a Malta frequency, DAB+ block, or streaming-availability check, and it does not confirm that the feed can be received in Malta or that any named fixture is broadcast on 17–18 October.",
+      "source_url": "https://www.bbc.co.uk/programmes/m002h76y/broadcasts/upcoming",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "The 'Next Saturday' and 'Next Sunday' entries are not mapped to 17–18 October in the snapshot checked; that mapping is an inference and must be confirmed on the BBC page on the day. BBC Sounds/stream access from Malta was not tested and must not be assumed. The user's 'Kalshi-market' framing was not verified: no Kalshi market, EPL fixture set for 13–19 October, or Malta broadcast-rights deal was checked. Third-party TV listings (not radio) show Premier League rights for Melita/GO TSN channels; they were not used as radio evidence.",
+      "price range": "Not applicable (listing); receiver and streaming costs not checked"
     }
   ]
 }
