@@ -1,8 +1,9 @@
 # Malta Trip Guide — final report (11 October 2026)
 
 **Guide:** https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/
-**Delivery PR:** the second 11 October 2026 session PR on `arena/96208136-maltasupplemental` (previous PR #31 merged to `main` on 11 October 2026)
+**Delivery PR:** #32 on `arena/96208136-maltasupplemental` — merged into `main` 11 October 2026, 05:08 UTC (merge commit `016ba27`); previous PR #31 merged earlier the same day
 **Branch:** `arena/96208136-maltasupplemental`
+**Deployment:** GitHub Pages reported `built` for merge commit `016ba27` with no error, so the public site serves this revision. The sandbox network policy permits only `github.com`/`api.github.com`, so the rendered page could not be fetched from here; delivery is confirmed by the Pages build record and the `main` file listing.
 **Traveler-supplied planning inputs:** AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Deluxe Sea-View room; 13–19 October 2026; event destination/name “BLAST Arena Studios, Attard.” These details do not independently confirm a reservation, room allocation, ticket, spectator access, exact TWC entrance, or door-to-door itinerary.
 
 ## Executive summary
