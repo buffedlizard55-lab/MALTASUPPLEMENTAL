@@ -222,3 +222,18 @@ Nothing below was presented as fact on the site, and each item is recorded in `d
   planner persistence, CSV/JSON backup, reset, quick-fill, storage-denial and data-fetch-failure cases).
 - Manual Chromium check at 390 px and 1280 px on the three pages changed this session — **zero horizontal overflow, zero
   console errors**, and the new records render.
+
+
+## Delivery snapshot — session `arena/09cdfbf0-maltasupplemental` (observed)
+
+- Pull request **#51** was opened from `arena/09cdfbf0-maltasupplemental` against `main` and reported `MERGEABLE`/`CLEAN`.
+- Its required check **“Schema, browser and accessibility checks”** ([run 38158610565](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38158610565)) **passed**.
+- PR #51 was **merged into `main` on 11 October 2026 at 17:13:35 UTC**, merge commit
+  `6859c46efa5053578b41962bed21246ae76fd3aa`, from session head `a20368c`.
+- The GitHub Pages latest-build record for that merge commit reports **status `built`**, created 17:13:36 and updated
+  17:13:53 UTC.
+
+**What this does not confirm:** this session's network policy allows only GitHub API and package-registry hosts, so
+`https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/` could not be fetched for a browser-level content check. The Pages
+build record above is a GitHub build-state observation only; nobody here loaded the live page and compared it with the
+merged tree.
