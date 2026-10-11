@@ -315,3 +315,17 @@ Latest upstream’s inferredBBCclockzone,communitymatchtiming/staticlastbus comb
 | Workstream | URL | Note |
 |---|---|---|
 | A | https://www.publictransport.com.mt/new-night-routes/ | Operator notice of night routes effective 5 April 2026: N212 Buġibba 23:50–01:30 every 20 minutes; N13 Valletta weekdays 23:10–02:10; free service with a valid Tallinja card. Exact trip-week night timetables were not re-published; recheck the tallinja app or planner for the night of travel. No night service to Ta’ Qali found. |
+
+## BBC Premier League and Sportsworld direct episode recheck — 11 October 2026 (UTC)
+
+The BBC programme page’s “Local time” label depends on viewer settings. For trip-week Sportsworld start-time conversion, use the direct episode JSON `first_broadcast_date` offsets below; schedule timing still does not establish local reception or named-match carriage.
+
+| Claim / record | URL | Date accessed (UTC) | Workstream | Source type / limitation |
+|---|---|---|---|---|
+| BBC episode metadata: Manchester City v Ipswich Town, Sat 17 Oct 14:45 BST; upcoming page labels BBC Radio 5 Sports Extra while JSON parent-service says Radio 5 Live | https://www.bbc.co.uk/programmes/m00334k6 ; https://www.bbc.co.uk/programmes/m00334k6.json | 2026-10-11 | E — Radio sports | Official BBC episode page/JSON; UK schedule only, not Malta reception/streaming. Recheck the current service label. |
+| BBC episode metadata: Brentford v Liverpool, Sat 17 Oct 15:00 BST, BBC Radio 5 Live | https://www.bbc.co.uk/programmes/m00332zg ; https://www.bbc.co.uk/programmes/m00332zg.json | 2026-10-11 | E — Radio sports | Official BBC episode page/JSON; UK schedule only, not Malta reception/streaming. |
+| BBC episode metadata: Newcastle United v Aston Villa, Sat 17 Oct 17:30 BST, BBC Radio 5 Live | https://www.bbc.co.uk/programmes/m00332zl ; https://www.bbc.co.uk/programmes/m00332zl.json | 2026-10-11 | E — Radio sports | Official BBC episode page/JSON; UK schedule only, not Malta reception/streaming. |
+| BBC episode metadata: Brighton & Hove Albion v Crystal Palace, Sun 18 Oct 13:55 BST; upcoming page labels BBC Radio 5 Sports Extra while JSON parent-service says Radio 5 Live | https://www.bbc.co.uk/programmes/m00335hm ; https://www.bbc.co.uk/programmes/m00335hm.json | 2026-10-11 | E — Radio sports | Official BBC episode page/JSON; UK schedule only, not Malta reception/streaming. Recheck the current service label. |
+| BBC episode metadata: Leeds United v Manchester United, Sun 18 Oct 14:00 BST, BBC Radio 5 Live | https://www.bbc.co.uk/programmes/m003334l ; https://www.bbc.co.uk/programmes/m003334l.json | 2026-10-11 | E — Radio sports | Official BBC episode page/JSON; UK schedule only, not Malta reception/streaming. |
+| BBC episode metadata: Nottingham Forest v Arsenal, Sun 18 Oct 16:30 BST, BBC Radio 5 Live | https://www.bbc.co.uk/programmes/m003334q ; https://www.bbc.co.uk/programmes/m003334q.json | 2026-10-11 | E — Radio sports | Official BBC episode page/JSON; UK schedule only, not Malta reception/streaming. |
+| BBC Sportsworld episode JSON: Sat 17 Oct first broadcast 14:06 +01:00; Sun 18 Oct 15:06 +01:00; Malta CEST (UTC+2) start times 15:06 and 16:06 | https://www.bbc.co.uk/programmes/w1730c92ck0m2cw.json ; https://www.bbc.co.uk/programmes/w1730c92ck0q313.json | 2026-10-11 | E — Radio sports | Official BBC metadata; episode pages render viewer-dependent local time. *Sportsworld* is general live sport, not a named-match commentary listing or a reception test. |

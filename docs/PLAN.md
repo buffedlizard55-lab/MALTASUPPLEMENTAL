@@ -12,7 +12,7 @@ Review the repository and existing evidence before edits. Preserve useful main-b
 2. Keep the site dependency-light. Preserve the shared renderer, styles, navigation, page structure, and the expense planner's blank defaults unless integration/testing identifies a concrete defect.
 3. Maintain `docs/SOURCES.md` (claim, URL, access date, workstream, and limitation), `docs/OPEN_QUESTIONS.md` (missing/conflicting or unresolved details), `docs/STATUS.md` (progress/blockers), and `docs/HANDOFF.md` (cross-workstream discoveries).
 4. Prefer primary operator, organizer, station, government, or official provider sources for current facts. Attribute community and social evidence by source and date. Every factual claim needs a traceable source and an appropriate confidence/uncertainty label; do not present unverified claims as fact.
-5. The user-requested source types are `official`, `map`, `review`, and `social`; the repository schema additionally permits `directory` for specialist/provider directories. Do not expand or silently change the schema enum. Where platform coverage is incomplete, document the attempt and limitation rather than implying comprehensive research.
+5. The current canonical schema allows exactly `official`, `map`, `review`, and `social`. Label a specialist directory by its publisher/source provenance (the current enum does not include `directory`) and explain in notes that a technical-directory entry does not prove local reception. Do not expand or silently change the schema enum. Where platform coverage is incomplete, document the attempt and limitation rather than implying comprehensive research.
 
 ## Parallel-work and ownership protocol
 
