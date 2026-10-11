@@ -48,11 +48,17 @@ class LinkParser(HTMLParser):
         self.links: list[str] = []
         self.ids: set[str] = set()
         self.has_title = False
+        self.data_sources: list[str] = []
+        self.projections: list[tuple[str, list[str]]] = []
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = dict(attrs)
         if values.get("id"):
             self.ids.add(values["id"] or "")
+        if values.get("data-topic-data"):
+            self.data_sources.append(values["data-topic-data"] or "")
+        if values.get("data-record-list"):
+            self.projections.append((values["data-record-list"] or "", (values.get("data-ids") or "").split()))
         if tag == "title":
             self.has_title = True
         for key in ("href", "src"):
@@ -233,6 +239,13 @@ def validate_html_links() -> tuple[int, int]:
             fail(f"cannot read {page.name}: {exc}")
         if not parser.has_title:
             fail(f"{page.name} is missing a <title>")
+        for topic, ids in parser.projections:
+            source = ensure_inside_root(DATA_DIR / (topic + ".json"), "record projection")
+            if not source.is_file():
+                fail(f"{page.name}: missing projection dataset {topic}")
+            available = {r["id"] for r in json.loads(source.read_text())["records"]}
+            if not ids or len(ids) != len(set(ids)) or not set(ids) <= available:
+                fail(f"{page.name}: invalid/duplicate projected record IDs")
         pages[page.resolve()] = parser
 
     checked = 0
@@ -253,10 +266,13 @@ def validate_html_links() -> tuple[int, int]:
                     target_parser = LinkParser()
                     target_parser.feed(target.read_text(encoding="utf-8"))
                 dynamic_ids = set()
-                for data_path, page_path in EXPECTED_PAGES.items():
-                    if target.name == page_path:
-                        dataset = json.loads((ROOT / data_path).read_text(encoding="utf-8"))
-                        dynamic_ids.update(record["id"] for record in dataset["records"])
+                paths = target_parser.data_sources + (["data/expenses.json"] if target.name == "costs.html" else [])
+                for data_path in paths:
+                    source = ensure_inside_root(ROOT / data_path, "dynamic links")
+                    dataset = json.loads(source.read_text(encoding="utf-8"))
+                    dynamic_ids.update(record["id"] for record in dataset["records"])
+                for _topic, ids in target_parser.projections:
+                    dynamic_ids.update(ids)
                 if fragment not in target_parser.ids | dynamic_ids:
                     fail(f"missing local fragment in {page.relative_to(ROOT)}: {value!r}")
 

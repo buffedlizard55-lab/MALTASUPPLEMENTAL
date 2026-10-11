@@ -4,7 +4,7 @@
 
   var NAV = [
     ["index.html", "Overview"],
-    ["event.html", "CS2 event"],
+    ["event.html", "Event desk"],
     ["getting-around.html", "Transport"],
     ["restaurants.html", "Food & cafés"],
     ["activities.html", "Activities & sights"],
@@ -64,6 +64,12 @@
         toggle.setAttribute("aria-expanded", String(expanded));
         toggle.textContent = expanded ? "Close menu" : "Menu";
         nav.classList.toggle("open", expanded);
+      });
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+          toggle.click();
+          toggle.focus();
+        }
       });
     }
 
@@ -167,6 +173,15 @@
     return article;
   }
 
+  function revealTarget(target) {
+    if (!target) return;
+    // Canonical deep links may point into a collapsed evidence disclosure.
+    for (var parent = target.parentElement; parent; parent = parent.parentElement) {
+      if (parent.tagName === "DETAILS") parent.open = true;
+    }
+    target.scrollIntoView();
+  }
+
   function renderTopic() {
     var host = document.querySelector("[data-topic-data]");
     if (!host) return;
@@ -264,10 +279,21 @@
       area.addEventListener("change", paint);
       confidence.addEventListener("change", paint);
       paint();
-      if (window.location.hash) {
-        var target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
-        if (target) target.scrollIntoView();
+      function followHash() {
+        var id;
+        try { id = decodeURIComponent(window.location.hash.slice(1)); } catch (_error) { return; }
+        if (records.some(function (r) { return r.id === id; }) && !document.getElementById(id)) {
+          if (search) search.value = "";
+          if (select) select.value = "";
+          area.value = "";
+          confidence.value = "";
+          paint();
+        }
+        var target = document.getElementById(id);
+        revealTarget(target);
       }
+      followHash();
+      window.addEventListener("hashchange", followHash);
     }).catch(function (error) {
       host.replaceChildren(make("p", "callout callout-danger", "Topic data could not be loaded. Please use the source links in the project repository or reload the page. " + error.message));
     });
@@ -289,35 +315,72 @@
     });
   }
 
+  var topicRequests = new Map();
+  function loadTopic(topic) {
+    if (!topicRequests.has(topic)) topicRequests.set(topic, fetch("data/" + topic + ".json").then(function (response) {
+      if (!response.ok) throw new Error("HTTP " + response.status);
+      return response.json();
+    }));
+    return topicRequests.get(topic);
+  }
+
+  function summaryCard(record, topicPage, label, field) {
+    var card = make("article", "card");
+    card.dataset.recordRef = record.id;
+    card.append(make("span", "card-tag", label), make("h3", "", record.name), make("p", "", record[field || "description"]));
+    var source = make("a", "", "Evidence & details →");
+    source.href = topicPage + "#" + record.id;
+    card.append(source, make("p", "small", "Checked " + record.date_checked + " · " + record.confidence));
+    return card;
+  }
+
   function renderOverview() {
     var host = document.querySelector("[data-overview]");
     if (!host) return;
     var specs = [
+      ["activities", "ax-odycy-base-hotel", "activities.html", "Your base"],
+      ["activities", "twc-finals-2026", "event.html", "Before the event"],
+      ["transport", "mode-comparison-summary", "getting-around.html", "Choose a mode"],
+      ["food", "espresso-odycy", "restaurants.html", "At the hotel"],
       ["everyday", "malta-electricity", "everyday.html", "Pack first"],
-      ["transport", "mpt-fares-cards", "getting-around.html", "Choose the right pass"],
-      ["expenses", "hotel-separate-charges", "costs.html", "Check the hotel invoice"],
-      ["everyday", "october-weather-forecast", "everyday.html", "Outdoor plans"]
+      ["radio", "radio-research-status", "radio.html", "Receiver, not stream"]
     ];
-    Promise.all(specs.map(function (spec) {
-      return fetch("data/" + spec[0] + ".json").then(function (r) {
-        if (!r.ok) throw new Error("Summary data unavailable");
-        return r.json();
-      }).then(function (data) {
-        return {spec: spec, record: data.records.find(function (r) { return r.id === spec[1]; })};
+    specs.forEach(function (spec) {
+      var slot = make("div", "summary-slot");
+      slot.textContent = "Loading " + spec[3].toLowerCase() + "…";
+      host.appendChild(slot);
+      loadTopic(spec[0]).then(function (data) {
+        var record = data.records.find(function (r) { return r.id === spec[1]; });
+        if (!record) throw new Error("Record missing");
+        slot.replaceWith(summaryCard(record, spec[2], spec[3]));
+      }).catch(function () {
+        slot.className = "card callout-danger";
+        slot.replaceChildren(make("h3", "", spec[3]), make("p", "", "Summary unavailable; open the topic guide or try again."));
+        var link = make("a", "", "Open guide →");
+        link.href = spec[2];
+        slot.appendChild(link);
       });
-    })).then(function (items) {
-      host.replaceChildren();
-      items.forEach(function (item) {
-        var r = item.record;
-        if (!r) return;
-        var card = make("article", "card");
-        card.append(make("span", "card-tag", item.spec[3]), make("h3", "", r.name), make("p", "", r.id === "october-weather-forecast" ? r.hours : (r.id === "mpt-fares-cards" ? r["price range"] : r.description)));
-        var source = make("a", "", "Source & details →");
-        source.href = item.spec[2] + (item.spec[2] === "costs.html" ? "" : "#" + r.id);
-        card.append(source, make("p", "small", "Checked " + r.date_checked + " · " + r.confidence));
-        host.appendChild(card);
+    });
+  }
+
+  function renderRecordLists() {
+    document.querySelectorAll("[data-record-list]").forEach(function (host) {
+      var ids = host.dataset.ids.split(/\s+/).filter(Boolean);
+      loadTopic(host.dataset.recordList).then(function (data) {
+        var records = ids.map(function (id) {
+          var record = data.records.find(function (r) { return r.id === id; });
+          if (!record) throw new Error("Record missing: " + id);
+          return record;
+        });
+        host.replaceChildren();
+        records.forEach(function (record) { host.appendChild(createRecord(record)); });
+        var target;
+        try { target = document.getElementById(decodeURIComponent(window.location.hash.slice(1))); } catch (_error) { return; }
+        revealTarget(target);
+      }).catch(function () {
+        host.replaceChildren(make("p", "callout callout-danger", "These entries could not be loaded. Reload or use the topic guide and source data."));
       });
-    }).catch(function () { host.textContent = "Summary unavailable. Open the topic guides for sources."; });
+    });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -325,5 +388,6 @@
     renderTopic();
     renderDocuments();
     renderOverview();
+    renderRecordLists();
   });
 })();
