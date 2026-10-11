@@ -13,6 +13,22 @@ Current session objectives:
 
 ## Previous delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026, superseded above)
 
+## Post-merge follow-up session — `arena/9f6f35c7-maltasupplemental` (11 October 2026)
+
+This session began as a serial re-implementation of PR #42, which could not be merged locally from this shallow checkout. While the branch was being finished, PR #42 was merged into `main` (`5cdea68`, squashed `fbb7aa4`), so the branch was reconciled to `main` and now carries only net-new corrections; duplicate event content was dropped in favour of the merged version.
+
+| Workstream | Owned files | Kept after reconciliation |
+|---|---|---|
+| A · Transport | `data/transport.json`, `getting-around.html` | None — merged PR #42 versions kept unchanged (including `tq-event-special-services` and `white-taxi-official-tariff`). |
+| C · Activities | `data/activities.json`, `activities.html` | `twc-2026-teams-format` and `twc-finals-2026` refreshed for the 9 October Virtus.pro → NIP substitution; the callout says "free in-person admission" and links the CS2 event guide. |
+| E · Radio | `radio.html` | Stream bullet credits the organiser's own release naming Twitch/Kick/YouTube; a station app is an internet feed, not radio. |
+| F · Expenses | `data/expenses.json`, `costs.html` | Data unchanged (merged version kept); page fixes: event-access bullet and quick-use note reflect the free 18+ reservation, the taxi row is budgeted as the event-night return, and the example quick-fill line no longer suggests a ticket price. |
+| G · Integration | `index.html`, `js/site.js`, `scripts/validate_site.py`, `tests/site.spec.js`, `docs/*` | Nav (9 destinations), validator (7 datasets) and Playwright (320/360/768/1440 px) are the merged versions; docs record this follow-up (PLAN, FINAL_REPORT, AUDIT). |
+
+Evidence: every changed claim was read from its live page on 11 October 2026; the NIP substitution URLs were already logged in `docs/SOURCES.md`. No record was added, removed or renamed; all dataset counts match `main`. Gates: validator PASS (7 datasets / 176 records / 307 logged URLs / 15 pages / 181 link attributes / 9 nav / 25 expense rows), JavaScript syntax PASS, Playwright 11/11 PASS, `git diff --check` clean. Protocol note: Arena fixes the session to one branch, so the per-workstream protocol is executed serially on this branch with the same ownership boundaries.
+
+## Previous delivery session — `arena/ef6c76d6-maltasupplemental` (11 October 2026)
+
 The repository and PR #33 were reviewed before integration. This fixed Arena branch began at PR #33 head `854c1e16d94caa6cd7ae35ee44a0040bc5d036fd` (merge base `eeeb648d143299462ac52b00a7bc3749d36ca152`). The required upstream snapshot is `origin/main` at `de3303fbfecdf8176afb32002f02be58692d0405`, including PR #39 and its accumulated PR #40/#41 work. A non-fast-forward merge of that exact `origin/main` commit is in progress on this branch; PR #33’s own corrections and evidence limits must be retained. No commit, push, PR merge or Pages verification has yet been completed.
 
 The parallel-work protocol remains in force: A–F own one topic data file plus its matching page; G owns shared integration and documentation. Because Arena provides no isolated workstream runner, research and edits run serially on the fixed branch. Shared setup happens first; cross-topic findings go to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in `docs/OPEN_QUESTIONS.md`. The schema, source log, expense defaults, and prior useful main work are preserved unless a concrete inconsistency requires correction.
@@ -164,3 +180,37 @@ All workstreams completed except two deliberate scope decisions, recorded here r
 - **Diff discipline** — a key-order normalisation across all six datasets (the repository stores the 13 fields in two different orders) was started and then **reverted**. It touched 59 records with zero content change, which would have buried the real edits in an unreviewable diff. New records follow the dominant field order of the file they join. Canonicalising the order repo-wide should be its own commit if it is ever wanted.
 
 Gates after the pass on this branch alone: `python3 scripts/validate_site.py` PASS (134 records / 228 URLs / 119 link attributes), `python3 scripts/check_javascript.py` PASS, `npm test` 9/9 Playwright PASS in 36.2s, `git diff --check` clean. **After reconciling with `main`, which had advanced through two further passes to 140 records, the merged tree passes at 165 records / 288 logged URLs / 145 link attributes with 10/10 Playwright tests** (the tenth arrived with `main`). An order-insensitive comparison of every record against `HEAD` confirmed exactly five content changes and six additions, no removals, and no unintended `intro` edits.
+
+## Workstream H — CS2 event guide (added by PR #42, 11 October 2026)
+
+| Workstream | Owned data file(s) | Owned page(s) | Scope | Dependencies |
+|---|---|---|---|---|
+| H. CS2 event guide | `data/event.json` | `event.html` | The trip's reason for existing: the Counter-Strike 2 Thunderpick World Championship 2026 Finals as a single dedicated page — confirmed venue address and map pin, spectator ticketing terms, published daily agenda, match clocks converted to Malta time, team field and the late substitution, format and prize split, broadcast talent and official streams, and on-site practicalities. | Shared schema and renderer. Supplies A with the venue pin and daily finish times; supplies C with the event record; asks E whether any radio carries the event (answer: none found). |
+
+H was added because the event was the only topic without a page of its own, and because the user's central question — how to reach the venue by public transport on event days — is answered jointly by H (door times) and A (timetables). `event.html` was **promoted out of the retired noindex stub set** rather than added alongside it, so the HTML page count stayed at 15 while the active page count went 8 → 9.
+
+Because adding a page touches shared files, H's integration edits were made **serially after** the topic work, per the ownership protocol: `js/site.js` navigation (8 → 9 items), `scripts/validate_site.py` (`EXPECTED_PAGES` plus the topic-file count 6 → 7), `tests/site.spec.js` (page list, topic map, nav-count assertion 8 → 9), `index.html` (guide card plus two exec-summary additions), `getting-around.html` (two checklist items), `sources.html`, `README.md`, and the docs. **Any future page addition must repeat that same sequence** or the offline gates will disagree with the site.
+
+Two verification rules were adopted and should not be relaxed:
+
+1. **The timezone rule.** HLTV and Liquipedia both render clocks in the *fetching client's* timezone — the same HLTV match page showed 15:30 in one captured view and 09:30 in another, and Liquipedia labelled its times EDT. So no third-party clock is ever copied as a local time; every clock is labelled "Malta time (CEST, UTC+2)" with its UTC/EDT anchor shown. The EDT+6h conversion is admissible **only** because Eventbrite independently publishes "Games 10:30" for Wednesday 14 October, which it reproduces exactly. An earlier session correctly removed a Liquipedia-only evening schedule for lacking such an anchor; that removal stands as precedent rather than as a blanket ban.
+2. **The source-type rule.** The `source_type` enum has no value for a community wiki or an esports news site, so every `event.json` record carries an **official** `source_url` — Eventbrite, a Thunderpick-issued release, or the organiser's tournament page — and cites HLTV, Liquipedia, Moovit and Wikipedia in `notes`. Third-party evidence never becomes a record's primary source.
+
+### Reconciliation note for PR #42
+
+`main` advanced through PRs #36–#40 while this branch was being prepared, and the parallel session **independently located the same Eventbrite ticketing listing and reached the same headline transport conclusion**. That convergence is corroboration, not duplication. On rebase, the reconciliation rule applied was: **where both sessions covered the same subject, keep `main`'s record and drop the duplicate; add only what is genuinely new.** Two of this branch's four new transport records were dropped on that basis — `event-day-late-return` (superseded by `main`'s verified `event-day-late-finish-return-gap`, which goes further and establishes that the return direction serves *no* Il-Qawra stop, making a second boarding mandatory) and `venue-nearest-bus-stops` (superseded by `main`'s verified `mfcc-official-bus-186`, sourced from the venue's own booklet and already citing the same Moovit stop listing). Two were kept as unique: **`tq-event-special-services`** and **`white-taxi-official-tariff`**, neither of which appears anywhere in `main`. Likewise `main`'s Met Office **Valletta** view reaches 12–19 October and so **supersedes this branch's earlier "18–19 October is not forecast" limitation** — that limitation is withdrawn, not carried forward.
+
+
+## Session `arena/27302b08-maltasupplemental` — 11 October 2026 (integration + re-verification)
+
+**Situation on arrival.** `origin/main` (b307c51) carried PR #33's merged reconciliation; pull request **#42** (workstream H — the CS2 event guide: `data/event.json`, `event.html`, eight records, plus 2 transport records and a fare/card/venue evidence set) was still **open and conflicting** with main on five files.
+
+**Objectives and outcomes.**
+
+1. **Integrate #42 by content, not by side — done.** A non-fast-forward merge of `origin/arena/154ca483-maltasupplemental` produced five conflicts (`README.md`, `index.html`, `data/expenses.json`, `docs/STATUS.md`, `docs/FINAL_REPORT.md`). Each was resolved on the merits: #42's verified additions were kept (venue/dates/agenda, TQ1 special services, the Transport Malta taxi tariff, the fare/card table, the richer radio leads, `data/event.json`, `event.html`) while this branch's evidence caveats were retained (no reservation held; inventory, attendee gate and weekend agenda unpublished). A mechanical check confirmed **no #42 line was silently dropped** in the files that auto-merged.
+2. **Re-verify the load-bearing sources in this session — done, see `docs/SOURCES.md`.** The Eventbrite listing, the MPT fares page, the Route 186 page (both diversions, the Saqqajja closure, stop-level times), the TQ1 page, the Transport Malta taxi tariff, NET FM's schedule, and AX ODYCY's property and FAQ pages were each read directly today.
+3. **Enrich the data with what the hotel's own pages establish — done.** Hotel practicalities (power sockets, doctor on call, ATM, water park, accessibility, upgrades), the hotel-arranged fixed-charge taxi option, and operator-published tipping guidance were added or folded into existing records, with the FAQ URL logged in `docs/SOURCES.md`.
+4. **Keep the fare honest — done.** €2.50 is documented as a *planning inference* because the operator's only dated statement covers a winter window that expired on 13 June 2026.
+5. **Passes 1–3, gates, PR and Pages — done in this session.** `scripts/validate_site.py`, `scripts/check_javascript.py`, `node --check` and the 11-test Playwright suite are the gates; the branch is pushed, a PR opened against `main`, merged by explicit number, and the Pages build checked afterwards.
+
+**Ownership during this pass.** The A–G ownership table above still holds. Because #42 modified shared files, the merge itself was performed serially by workstream G *before* any further topic edits, and the post-merge enrichment touched only topic-owned data files (`activities`, `everyday`, `transport`, `event`, `expenses`) plus the shared documentation set that G owns.
