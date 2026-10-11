@@ -2,7 +2,7 @@
 
 ## Current delivery session — `arena/cc913a9b-maltasupplemental` (11 October 2026)
 
-This plan was reviewed before topic corrections. Work began at `b307c51` on the fixed Arena branch and integrates upstream main through PR #42 (`5cdea68`), #43 (`94733df`), #45 (`dc2fe82`) and #44 (`c7d1d00`). The tree already contains the shared schema, mobile shell, data-backed pages, source/open-question logs, blank-by-default expense planner and prior verification; preserve them and reconcile incoming main changes rather than replacing them.
+This plan was reviewed before topic corrections. Work began at `b307c51` on the fixed Arena branch and integrates upstream main through PR #42 (`5cdea68`), #43 (`94733df`), #45 (`dc2fe82`), #44 (`c7d1d00`) and #47 (`852343f`). The tree already contains the shared schema, mobile shell, data-backed pages, source/open-question logs, blank-by-default expense planner and prior verification; preserve them and reconcile incoming main changes rather than replacing them.
 
 PR #44's event-field update is retained: HLTV and Hotspawn reported that Ninjas in Pyjamas replaced Virtus.pro on 9 October, while the organizer's own pages still showed the original roster when checked. The final re-audit also supersedes any overconfident Eventbrite/free-ticket, network-wide bus/taxi, Route 186 diversion and short-stay contribution wording inherited from earlier snapshots. The current report distinguishes dated observations from current checkout evidence and route-specific facts from a verified door-to-door itinerary.
 

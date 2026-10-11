@@ -61,4 +61,10 @@ node --check js/site.js
 npm test
 ```
 
-The Playwright suite checks responsive widths, accessibility rules, data/render consistency, navigation and planner behavior. It does not test physical radio reception, external booking availability, a date-specific bus journey, every device/browser or exhaustive assistive-technology compatibility. Generated reports and `node_modules` are ignored.
+The suite checks all nine active pages at 320/360/768/1440 px, responsive overflow, axe WCAG 2A/AA/2.1AA rules, data/render parity, navigation/deep links, filtering, expense persistence/CSV/reset, invalid amounts, denied/corrupt storage and data-fetch failures. It does not test physical radio reception, external booking availability, a date-specific bus journey, every browser/device or exhaustive assistive-technology compatibility. Generated screenshots/reports and `node_modules` are ignored.
+
+## 11 October research and verification boundary
+
+This is a dated planning aid, not a booking or live-service guarantee. A separate 11 October listing-card capture and HLTV report record a “Free / Reserve a spot” offer for the TWC, but the current extracted Eventbrite text did not expose a fee table; this does not establish current price, inventory, the traveler’s reservation or guaranteed admission. The listing showed agenda entries for 14–16 October only, with a 22:00 headline and Wednesday/Thursday rows extending to 22:30. The 17–18 October agenda, attendee gate and ticket validity remain open. See `event.html`, `docs/SOURCES.md` and `docs/OPEN_QUESTIONS.md`.
+
+The BBC episode records name seven UK Premier League commentaries for 17–18 October; those schedules are not evidence of Malta radio reception, BBC Sounds access, World Service carriage or named-match carriage on a local service. The DAB+ “Sports Channel” identity/block and MTA short-stay “15-night” wording remain unresolved; the published bus single-fare seasons do not establish a date-specific fare for 13–19 October. Review-platform coverage is partial. No full external-link crawl, dated end-to-end transit journey, physical transit/radio test or device-based visual/accessibility audit was completed. Current blockers and source-specific limitations are maintained in the linked docs.

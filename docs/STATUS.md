@@ -6,10 +6,11 @@
 
 ## Integration state
 
-- Work began at `b307c51`. Upstream PR #42 (`5cdea68`), #43 (`94733df`), #45 (`dc2fe82`) and #44 (`c7d1d00`) are merged to `main` and retained in this branch.
-- PR #44's reported 9 October Virtus.pro withdrawal / Ninjas in Pyjamas replacement is preserved in the team data and attributed to HLTV and Hotspawn; the organizer's published pages still showed the original field when last checked.
+- Work began at `b307c51`. Upstream PR #42 (`5cdea68`), #43 (`94733df`), #45 (`dc2fe82`), #44 (`c7d1d00`) and #47 (`852343f`) are merged to `main` and retained or reconciled in this branch.
+- PR #44 was merged 11 October at 16:01:59 UTC as `c7d1d00`. The upstream delivery note records its main CI as successful, Pages as built, and a live-page spot-check. PR #47 later corrected the README's listed browser widths to 320/360/768/1440 px; that documentation correction is retained.
+- PR #44's reported 9 October Virtus.pro withdrawal / Ninjas in Pyjamas replacement is preserved in team data and attributed to HLTV and Hotspawn; the organizer's published pages still showed the original field when last checked.
 - This session re-audited PR #44's current-facing copy. Ticket-price evidence is now a dated “Free / Reserve a spot” observation, not a current checkout total. Bus evidence is route-specific; a taxi is optional, not a presumed requirement. MPT's 17 October Route 186 notice is 19:00–00:00; the separate older 20:00 notice ends around 21 April. The MTA short-stay wording remains unresolved.
-- PR #46 is open from the fixed branch to `main`. Before this latest main integration, GitHub reported the pushed head `3549ddc` as `CONFLICTING` with no checks reported after `main` advanced. `origin/main` at `c7d1d00` (PR #44) is now integrated locally and all text conflicts are resolved. The post-integration local suite passes; the merge commit and push are pending, then the PR head/check/merge state must be inspected again.
+- PR #46 is open from the fixed branch to `main`. GitHub reported the pushed head `9393755` as `CONFLICTING`; `gh pr checks 46` reported no checks. Main then advanced to `852343f` through PR #47. That newest main revision has been reconciled locally and the full suite passes; commit and push the merge, then inspect the current PR head/check/merge state before attempting the requested merge.
 
 ## Workstream status
 
@@ -22,7 +23,7 @@
 | **E · Malta sports radio** | Separate radio section implemented | No physical FM/DAB+ scan, local reception test, named-match carriage confirmation or stream-access test. DAB+ directories and UK BBC fixtures are not Malta reception/carriage proof. |
 | **F · Expense planner** | Implemented; blank by default | Await itinerary, booking, party size, ticket/transport choice and actuals. Keep the return ride and all personal costs optional/unassumed. |
 | **H · CS2 event guide** | Integrated and re-audited | Confirm current checkout/inventory, traveler reservation, attendee gate, per-day validity, finish discrepancy and 17–18 October agenda. |
-| **G · Integration** | Three cumulative passes complete | Resolve upstream merge cleanly, rerun local validation, push only the fixed branch, inspect PR checks/mergeability, then merge by explicit PR number if allowed. |
+| **G · Integration** | Three cumulative passes complete; latest-main tests passed | Finish the merge commit/whitespace check, push only the fixed branch, inspect PR checks/mergeability, then merge by explicit PR number if GitHub allows it. |
 
 ## Current evidence boundaries
 
@@ -35,14 +36,11 @@
 
 ## Local validation snapshot
 
-- `npm test` — **PASS**, 11/11 Playwright tests after the latest-main conflict resolutions; includes 320/360/768/1440 px responsive layouts, axe checks, navigation/data parity and planner flows.
-- Validator — **PASS**: 7 JSON files / 176 exact-schema records / 307 unique record URLs / 15 HTML pages / 175 link attributes / 9 navigation destinations / 25 expense rows.
-- JavaScript checks — **PASS** (`scripts/check_javascript.py` and `node --check js/site.js`; included in `npm test`).
-- `git diff --check` — rerun after staging the resolved merge.
+After resolving PR #47 and the latest-main conflicts, `npm test` passed: 7 JSON files / 176 exact-schema records / 307 unique record URLs / 15 HTML pages / 175 link attributes / 9 navigation destinations / 25 expense rows; JavaScript syntax checks passed; Playwright passed 11/11 at 320/360/768/1440 px with axe, page/data parity and planner coverage. Run `git diff --check` after staging this final status edit and before the merge commit.
 
 ## Next steps
 
-1. Complete the merge of `origin/main` at `c7d1d00` into this branch without losing either upstream updates or the current evidence corrections.
+1. Complete the merge of `origin/main` at `852343f` into this branch while keeping the current evidence corrections.
 2. Run the full local validation and `git diff --check`, commit the merge, and push only `arena/cc913a9b-maltasupplemental`.
 3. Inspect PR #46 head, checks, reviews and mergeability. Merge with the explicit PR number only if GitHub allows it; then check the resulting Pages outcome.
 4. For the traveler: confirm the ticket/gate/weekend agenda; run the dated transit planner; confirm fare and any desired ride quote; clarify MTA/EES; refresh volatile details; fill and export the planner after itinerary/actuals arrive.

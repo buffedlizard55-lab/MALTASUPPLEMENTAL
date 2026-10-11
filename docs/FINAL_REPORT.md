@@ -3,7 +3,7 @@
 **Audit date:** 11 October 2026 (UTC)
 **Session branch:** `arena/cc913a9b-maltasupplemental`
 **Starting revision:** `b307c51`
-**Integrated upstream:** PR #42 (`5cdea68`), PR #43 (`94733df`), PR #45 (`dc2fe82`) and PR #44 (`c7d1d00`).
+**Integrated upstream:** PR #42 (`5cdea68`), PR #43 (`94733df`), PR #45 (`dc2fe82`), PR #44 (`c7d1d00`) and PR #47 (`852343f`).
 
 ## Summary
 
@@ -12,6 +12,10 @@ The repository contains a mobile-friendly, source-linked Malta guide for the tra
 The planner has 18 core categories and seven optional daily rows. It starts blank, previews itinerary quick-fill matches before applying them to blank budget fields, saves only in the current browser, and supports CSV export and reset. It assumes no flight, hotel amount, party size, ticket, transport choice, ride count or personal spend.
 
 The final re-audit preserved PR #44’s dated report that Ninjas in Pyjamas replaced Virtus.pro after Virtus.pro withdrew on 9 October, while qualifying Eventbrite ticket-price wording against the current page-text extraction. It also corrected the Route 186 diversion interpretation, the scope of late-return evidence and the MTA contribution wording. This is a planning aid—not a booking, admission, fare, service, live-availability, trip-itinerary, radio-reception or event-carriage guarantee.
+
+## Upstream PR #44 delivery record
+
+PR #44 was merged to `main` on 11 October 2026 at 16:01:59 UTC as `c7d1d00`. The upstream status record notes its main validation run and Pages build as successful and documents a live-page spot-check; those outcomes refer to PR #44, not this session’s PR #46. No PR #46 merge or deployment is inferred in this report.
 
 ## Material findings and limits
 
