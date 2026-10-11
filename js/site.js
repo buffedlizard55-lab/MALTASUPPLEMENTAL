@@ -187,7 +187,7 @@
       var select = tools && tools.querySelector("select");
       var count = tools && tools.querySelector("[data-result-count]");
       if (select) {
-        Array.from(new Set(records.map(function (r) { return r.category; }))).forEach(function (category) {
+        Array.from(new Set(records.map(function (r) { return r.category; }))).sort().forEach(function (category) {
           var option = document.createElement("option");
           option.value = category;
           option.textContent = category;

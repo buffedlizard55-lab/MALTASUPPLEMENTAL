@@ -39,7 +39,6 @@ This is a dated research and planning aid, not a booking or guarantee of future 
 - [`docs/HANDOFF.md`](docs/HANDOFF.md) — cross-workstream discoveries and follow-ups.
 - [`docs/PLAN.md`](docs/PLAN.md) — scope, ownership, and verification plan.
 - [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md) — shared data conventions; topic records use the exact requested common key `price range`.
-- [`docs/FINAL_REPORT.md`](docs/FINAL_REPORT.md) — 3-pass audit summary, verified vs. unverified items, limitations, and next-session recommendations.
 - [`data/record.schema.json`](data/record.schema.json) — canonical machine-readable schema for the exact 13 fields.
 
 ## Build, preview, and deployment
