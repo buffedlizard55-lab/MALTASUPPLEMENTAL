@@ -21,7 +21,7 @@ Use this log for findings that belong to another topic; do not edit that workstr
 | 2026-10-10 | F → G | `data/expenses.json` supplies 18 blank-by-default categories. The page supports editable euro budget/actual fields, notes, totals, browser-local autosave, CSV backup, and reset. The MTA’s €1.50/night/person (18+) contribution and €22.50/person cap are sourced; €9 per eligible adult is only a conditional six-billable-night calculation, not a confirmed hotel charge. | Keep the traveler’s booking amount blank until the invoice confirms billable nights, guest ages, and separately invoiced items; retain browser-local storage and CSV export. |
 | 2026-10-10 | G → A–F | GitHub Pages API reported `built` for upstream `main` merge `87bca74` before PR #14. PR #14 subsequently merged as `2aeb536`, and the Pages API reported `built` for that main commit. This confirms the static build, not browser/device rendering or external-link liveness. | Recheck volatile sources over time; use a real browser/device for visual review. |
 
-## 11 October cross-topic integration
+## 11 October cross-topic integration (historical snapshot; see the PR #33 re-audit below)
 - A → C/G: organizer confirms phase dates but not a TWC entrance/pin; route186 is conditional. Remove exact timetable bounds whose variant/day context is missing.
 - A → F: €25 Explore Adult and €27 Flex are distinct products, not a silent fare correction; Airport Direct terms conflict in Adult/general prose. Keep quote selection explicit.
 - B → D/G: Luzzu remains closed; Espresso24h is a late-service option, not a booking/price guarantee.
@@ -54,15 +54,15 @@ A/B/C/E→G: preserve independentlycheckedUber,Fontanella,TaMarija,AviationMuseu
 - G: #29’s `npm test` gate (validator + JavaScript check + Playwright) adopted and executed on the merge: validator 128 records / 206 URLs, JavaScript check, nine Playwright browser/accessibility tests (via npm-distributed Chromium) and the independent DOM harness (planner 19/19, site 49/49) all pass. Publishing remains `main` root.
 
 
-## PR #31 rebase integration handoff — 11 October 2026
+## PR #31 rebase integration handoff — 11 October 2026 (historical snapshot; PR #31 merged)
 
 - Upstream `origin/main` advanced to `81930be` after the earlier rebase. The new base’s additions are retained: the AX ODYCY base-hotel record, N212/N13 night-route notice, seven optional blank daily expense templates, and the updated activity/transport/emergency/market source notes.
 - Keep upstream removals of duplicate or unsupported records (including the old fixed airport-taxi fare, event-evening Liquipedia schedule, and superseded radio fixture/audio leads). The existing upstream `mode-comparison-summary` incorporates the useful branch mode-comparison findings without duplicating the summary card.
 - Current data counts after reconciliation are expected to be transport 16, food 29, activities 32, everyday 15, radio 11, and expenses 25 (128 total); confirm against the validator after the final conflict commit. The expense planner remains 18 core categories plus seven optional daily rows, all blank by default.
 - Radio follow-up carries the six BBC UK commentary episode records and direct Sportsworld JSON offsets. Explicitly keep UK schedule, Malta receiver signal, online-stream availability, and named-match carriage separate. Current sources and unresolved status are in `docs/SOURCES.md` and `docs/OPEN_QUESTIONS.md`.
-- Rebase is in progress on `arena/3a5297d2-maltasupplemental`; resolve and test before updating PR #31. No external-link crawler, physical receiver scan, or new graphical screenshot has been run in this integration pass.
+- At that point, rebase was in progress on `arena/3a5297d2-maltasupplemental`; the current rebase and PR #33 delivery state is recorded in the section below. No external-link crawler, physical receiver scan, or new graphical screenshot was run in that earlier integration pass.
 
-## Second 11 October 2026 verification session — cross-topic notes
+## Second 11 October 2026 verification session — cross-topic notes (historical; superseded by the current re-audit below)
 
 | From → To | Finding | Follow-up owner |
 |---|---|---|
@@ -73,9 +73,18 @@ A/B/C/E→G: preserve independentlycheckedUber,Fontanella,TaMarija,AviationMuseu
 | D → B/C | Dated 13–17 October forecast snapshots disagree on 13 October (rain vs sun), so outdoor plans need a same-day check. | B/C: recheck the Malta Met Office forecast on the day for terrace dining and outdoor events. |
 | E → A | Kalshi’s own help centre permits travel-abroad use subject to its Member Agreement while third-party guides say US-resident-only; users should confirm eligibility rather than assume. | A: no transport impact; keep the Kalshi caveat visible in transport/taxi planning for late finishes. |
 
-## Merged third-pass handoff — 11 October 2026 (two sessions reconciled)
+## Merged third-pass handoff — 11 October 2026 (historical two-session snapshot; see PR #33 re-audit below)
 
 - **A ↔ G:** the venue record now carries both sessions' provenance — BLAST’s guest guide and the VisitMalta directory (address), the organizer’s Ta’ Qali dateline, EventWorks/HLTV/Times of Malta (studio and staging precedent) — while `twc-2026-attendee-status` keeps the unpublished ticket/gate/door/time facts `unverified`. Both sessions' fare records are kept side by side (`mpt-fares-cards` and `mpt-seasonal-fare-window-2026`), and their Route 186 and detour records were merged so that the static-grid spans are labelled static and the operator’s date-specific planner stays authoritative.
 - **D ↔ F:** customs (EU allowances, U.S. return exemption) is a new everyday record and a line in the executive summary; the eco-contribution question is now stated in the form the guidelines PDF supports (€1.50 per night for guests 18+, cap €22.50 per person, the cap being fifteen chargeable nights), so the planner’s notes point at the invoice rather than an unresolved rule. Itinerary paste-and-preview is the hand-off mechanism for both.
 - **E ↔ E (cross-session correction):** the two 11 October sessions disagreed about the “Sports Channel” block. Merged position: the specialist directory says 6C, WorldDAB’s Multiplexes table says 12A, the operator lists nothing — so both blocks are scan targets and no carriage claim is made. The receiver guidance also now states plainly that a US HD Radio set cannot decode DAB+ and that the BBC advises buying the DAB+ radio in Malta.
 - **Verification state after merge:** validator PASS at 140 records / 242 logged URLs; JavaScript syntax PASS; Playwright 10/10 PASS including the quick-fill regression. No physical radio scan, no physical-device audit, no external-link crawl.
+
+
+## PR #33 re-audit after PR #35/#38 — 11 October 2026
+
+- **A ↔ G — event access:** PR #35 recorded the BLAST Arena Studios postal address at MFCC, Ta’ Qali, ATD 4000 Ħ’Attard from BLAST’s guest guide and VisitMalta’s directory. The organizer’s Ta’ Qali-datelined release names the studio but is not a precise-address source. None of these establishes the TWC attendee gate or ticket terms. Open PR #37 cites an Eventbrite listing, but this branch did not fetch or review it; do not adopt that PR’s ticket/age/time claims until verified directly. The dated “no public ticket sale found” result is not a current guarantee.
+- **A ↔ F — MPT fares:** seasonal day-route prices and card products are listed, but the explicit winter-single period ends 13 June 2026. The applicable 13–19 October 2026 single fare remains open. Do not use €2.50 as a confirmed trip fare or assume a pass/ride count.
+- **D ↔ F — eco-contribution:** the MTA 2026 guideline PDF and current service page have unreconciled short-stay/“exceeded fifteen (15) nights” wording. Keep six-night €9 arithmetic conditional and enter only the invoice amount.
+- **E ↔ G — radio:** Radio in Malta’s specialist directory labels a 6C “Sports Channel (Talk Sport)”; Wikipedia separately lists talkSPORT on 6C; WorldDAB lists a generic 12A “Sports Channel”; the operator’s own directory lists no sports service. No operator confirmation, reception, schedule, named-match carriage or relay identity is established.
+- **G — cumulative gate:** preserve the 320 px test alongside PR #35’s itinerary quick-fill test. Current local gate totals and status are in `docs/STATUS.md`; no physical receiver scan, external-link crawl or traveler-specific journey run was performed.

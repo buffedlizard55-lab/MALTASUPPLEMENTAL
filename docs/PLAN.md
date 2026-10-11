@@ -16,7 +16,7 @@ Review the repository and existing evidence before edits. Preserve useful main-b
 
 ## Parallel-work and ownership protocol
 
-The repository must be reviewed and this ownership plan maintained before topic work. Complete shared schema/source-log setup serially. The Arena checkout is fixed to `arena/3a5297d2-maltasupplemental`; there is no isolated sub-agent or workstream-branch runner in this environment, so execute A–F one at a time on this branch. Each workstream edits only its owned topic data/page files. Do not make cross-workstream edits during another workstream; record relevant discoveries in `docs/HANDOFF.md`. Workstream G performs serial integration and owns shared files, source/audit documentation, validation, and reporting. Avoid concurrent edits to shared files.
+The repository must be reviewed and this ownership plan maintained before topic work. Complete shared schema/source-log setup serially. The Arena checkout is fixed to `arena/ef6c76d6-maltasupplemental`; there is no isolated sub-agent or workstream-branch runner in this environment, so execute A–F one at a time on this branch. Each workstream edits only its owned topic data/page files. Do not make cross-workstream edits during another workstream; record relevant discoveries in `docs/HANDOFF.md`. Workstream G performs serial integration and owns shared files, source/audit documentation, validation, and reporting. Avoid concurrent edits to shared files.
 
 ## Workstreams, owned files, scope, and dependencies
 
@@ -50,19 +50,28 @@ PR #13 was based on an older implementation that added duplicate `/pages/` templ
 
 The upstream PR #28 work added the `record["price range"]` validator regression guard, a transport mode-comparison summary, bidirectional `Il-Qawra` stop `Arznell (950)` TD1 timetable evidence, U.S. State Department confirmation of 112 emergency services/private-hospital payment expectations/AmEx and ATM notes, and the BBC *Sportsworld* 11 October EPL billing precedent. These sources are historical and claim-specific; they do not establish all event-day journeys, Malta reception, or named-match carriage. The refreshed source/audit documents retain limitations and checked dates.
 
-### Current delivery session — PR #31
+### Historical delivery session — PR #31 (merged)
 
-All work remains on `arena/3a5297d2-maltasupplemental`. PR #31 is the delivery target. Preserve and inspect later `origin/main` changes before updating the PR branch; rebase safely, reconcile conflicts without dropping relevant content, rerun the cumulative checks, push only this branch, review CI/diff/mergeability, and merge PR #31 by its explicit number when safe. Current audit details and unresolved facts are recorded in `docs/STATUS.md`, `docs/HANDOFF.md`, `docs/OPEN_QUESTIONS.md`, `docs/SOURCES.md`, and `docs/FINAL_REPORT.md`.
+This section records the pre-merge state of work on `arena/3a5297d2-maltasupplemental`; PR #31 was the delivery target at that time. Preserve and inspect later `origin/main` changes before updating the PR branch; rebase safely, reconcile conflicts without dropping relevant content, rerun the cumulative checks, push only this branch, review CI/diff/mergeability, and merge PR #31 by its explicit number when safe. Current audit details and unresolved facts are recorded in `docs/STATUS.md`, `docs/HANDOFF.md`, `docs/OPEN_QUESTIONS.md`, `docs/SOURCES.md`, and `docs/FINAL_REPORT.md`.
 
-### Second 11 October 2026 session (post-merge verification)
+### Second 11 October 2026 session (historical post-merge snapshot)
 
 Work continued on the fixed session branch `arena/96208136-maltasupplemental` after PR #31 merged. Because this environment has no isolated sub-agent runner, the same ownership-guided serial model was used: workstream A (fares, venue/admission, ride-hailing), E (DAB+ carriage and Kalshi eligibility) and D (power, eco-contribution, weather) were refreshed first, then the shared files (index shell, transport/radio/everyday/costs pages, README and research records) were updated once, in one pass, so no two writers touched a file in the same step. New findings that belong to another workstream are recorded in `docs/HANDOFF.md` rather than edited across owners.
 
-Evidence rules unchanged: every record keeps the canonical 13 fields, every cited URL is logged in `docs/SOURCES.md` with its access date and limitation, and unresolved items moved to (or stayed in) `docs/OPEN_QUESTIONS.md` rather than being inferred. The refresh resolved two long-standing items (published bus fares; the MTA “15-night” wording) and upgraded one previously unverified radio lead (DAB+ block 6C talkSPORT carriage) to a partially verified listing with its content still open.
+Evidence rules unchanged: every record keeps the canonical 13 fields, every cited URL is logged in `docs/SOURCES.md` with its access date and limitation, and unresolved items stay in `docs/OPEN_QUESTIONS.md` rather than being inferred. The current PR #33 re-audit below supersedes earlier fare, MTA and DAB+ interpretations where newer source comparison found unresolved conflicts.
 
-### Merged third-pass outcome — 11 October 2026
+### Merged third-pass outcome — 11 October 2026 (historical snapshot; see PR #33 re-audit below)
 
 - **Two 11 October sessions reconciled in one branch:** the session already merged via PR #32/#34 (`ad7226c`: exact fares, admission negative finding, DAB+ tuning guide, power, eco-contribution, Kalshi eligibility, Uber conflict, “10-minute intake”) and this session (venue confirmation, attendee-status record, customs record, receiver compatibility, page rewrites, itinerary quick-fill). Neither session's evidence was dropped; where they disagreed the more cautious reading was adopted and the disagreement is disclosed in the record text.
 - **Ownership respected:** this session touched only its own page/data/files plus the shared files it owns as workstream G (nav-adjacent prose on `index.html`, `css/style.css`, `tests/site.spec.js`, `docs/*`, `README.md`), and merged rather than reformatted the other session's work.
 - **Gates on the merged tree:** validator PASS (140 records / 242 URLs / 130 link attributes / 25 planner rows), JavaScript syntax PASS, Playwright 10/10 PASS.
 - **Handed to the traveler:** the itinerary text itself, party size/ages, booked prices, organizer attendee information. Remaining open questions are listed in `docs/OPEN_QUESTIONS.md`.
+
+
+### Current re-audit and delivery — PR #33 (11 October 2026)
+
+The fixed branch `arena/ef6c76d6-maltasupplemental` has been rebased onto `main` at `eeeb648` (after PR #35 and its PR #38 status follow-up). Preserve PR #35’s BLAST/MFCC postal address (sourced to the BLAST guide and VisitMalta directory), customs guidance, radio receiver-compatibility evidence, itinerary quick-fill, and the merged 140-record tree. This audit does not treat unmerged PR #36/#37 claims as verified.
+
+- Reconcile the MPT single-fare window, MTA webpage/PDF threshold wording, and Malta DAB+ 6C/12A listings conservatively; leave unknown trip prices, event access and receiver carriage qualified.
+- PR #37 cites an Eventbrite page, but the page was not independently fetched here; treat it as an unverified lead and recheck directly with the organizer before repeating the dated negative ticket search as current.
+- The cumulative suite includes 320/360/768/1440 px checks and PR #35’s itinerary quick-fill regression. Local validator, JavaScript syntax, `git diff --check` and all 11 Playwright tests passed after the content edits. Push, then verify PR #33 checks/mergeability and the post-merge Pages build before calling delivery complete.
