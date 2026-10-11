@@ -1,24 +1,19 @@
 #!/usr/bin/env python3
-"""Re-runnable editor for the 11 October venue-confirmation refresh.
+"""Historical editor for the 11 October venue-confirmation refresh.
 
-Applied on top of `origin/main` at ad7226c, which already carried a parallel
-11 October verification pass (fares, card sales points, talkSPORT/Vibe FM radio
-leads, Uber quote). This script adds only what that pass did not have:
-
-  * the event's own ticketing listing (venue pin, dates, daily times, 18+, free)
-  * the resulting event-day return conflict (event to 22:30 vs last bus 20:53)
-  * the per-date fare conclusion for 13-19 October
-  * the resolved BBC service labels and the 5 Live Sport studio shows
-  * the WorldDAB multiplex block for the "Sports Channel" DAB+ service
-  * the full-window Met Office Valletta forecast
-
-Idempotent: replacements are keyed on record id and appends are deduplicated.
+This script records the earlier pass, but its fare-season and event-access
+assumptions were superseded during the PR #33/current-main reconciliation.
+It is retained for provenance only and must NOT be rerun on the current data;
+see the live records and docs/OPEN_QUESTIONS.md for reconciled claims.
 """
 
 from __future__ import annotations
 
 import json
 from pathlib import Path
+
+if __name__ == "__main__":
+    raise SystemExit("Disabled historical patch: its assumptions were superseded; do not rerun on reconciled data.")
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
