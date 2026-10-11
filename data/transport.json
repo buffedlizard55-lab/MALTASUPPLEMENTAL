@@ -16,7 +16,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Official TWC page rechecked 11 Oct 2026 (still lists Malta only). Venue corroboration checked 11 Oct 2026: Liquipedia TWC 2026 page (location Attard; venue BLAST Arena Studios): https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026 ; Thunderpick press release naming BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html ; visitmalta directory address for BLAST Arena Studios: https://www.visitmalta.co.uk/business-directory/entertainment-venues-malta/blast-arena-studios-malta ; EventWorks listing for a BLAST event at the same venue (30 Jul 2026): https://eventworks.mt/premier-bounty-presented-by-polymarket ; BLAST attendee guide for BLAST Bounty at BLAST Arena Studios, giving the MFCC/Ta’ Qali address: https://blast.tv/cs/news/malta-fan-guide . Do not transfer earlier BLAST event access rules or door times to the Thunderpick Finals.",
+      "notes": "Official TWC page rechecked 11 Oct 2026 (still lists Malta only). Venue corroboration checked 11 Oct 2026: Liquipedia TWC 2026 page (location Attard; venue BLAST Arena Studios): https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026 ; Thunderpick press release naming BLAST Studios Malta: https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-returns-to-malta-with-1-million-prize-pool-302850221.html ; visitmalta directory address for BLAST Arena Studios: https://www.visitmalta.co.uk/business-directory/business/blast-arena-studios-malta ; EventWorks listing for a BLAST event at the same venue (30 Jul 2026): https://eventworks.mt/premier-bounty-presented-by-polymarket ; BLAST attendee guide for BLAST Bounty at BLAST Arena Studios, giving the MFCC/Ta’ Qali address: https://blast.tv/cs/news/malta-fan-guide . Do not transfer earlier BLAST event access rules or door times to the Thunderpick Finals.",
       "price range": "Spectator ticket price/access not verified"
     },
     {
@@ -96,18 +96,18 @@
     },
     {
       "id": "airport-direct-td1-qawra",
-      "name": "Malta Airport ↔ Qawra by Airport Direct TD1",
+      "name": "Malta Airport → north Malta by Airport Direct TD1 (Qawra stop not confirmed)",
       "category": "Airport transfer",
       "area": "Malta International Airport ↔ Qawra / Buġibba / north Malta",
-      "address": "Airport bus terminal; MPT’s Route TD1 timetable includes Qawra stop Arznell 950. Confirm the stop nearest the hotel entrance in the planner.",
-      "hours": "MPT lists TD1 departures hourly; use the live timetable for the flight arrival time",
-      "description": "This is the most straightforward published public-bus option from Malta International Airport toward Qawra: Airport Direct TD1 runs from the airport toward Cirkewwa via Buġibba and the Qawra area, and its operator timetable lists the Arznell stop in Qawra. The airport terminal is signposted from arrivals. Buses have luggage space; no advance booking is required. The precise walk from the stop to AX ODYCY was not independently measured.",
+      "address": "Malta International Airport bus terminal, which MPT says is signposted on exiting the arrivals area. Whether TD1 has a Qawra stop and which stop is nearest AX ODYCY is not confirmed; check the TD1 timetable and planner.",
+      "hours": "MPT’s Airport Direct page says TD1 runs every hour. Check the live timetable against the flight arrival time.",
+      "description": "MPT’s Airport Direct page lists TD1 from Malta International Airport to Rabat, Buġibba, Mellieħa and Ċirkewwa, hourly. The buses have luggage space and no pre-booking is needed. The page does not name Qawra, so the Qawra connection is unverified and should be checked in the timetable before relying on TD1.",
       "source_url": "https://www.publictransport.com.mt/other-services/airport-direct/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Route stop and times: https://www.publictransport.com.mt/route/TD1/. MPT also lists TD5 Airport Direct toward Rabat/Buġibba hourly at €3; its Qawra suitability was not established here. Operator information and fares: https://www.publictransport.com.mt/fares-and-tickets/.",
-      "price range": "€3.50 per passenger on TD1 without an eligible unlimited travel card; cash or contactless onboard"
+      "notes": "Airport Direct page checked 11 Oct 2026: TD1 hourly to Rabat, Buġibba, Mellieħa and Ċirkewwa; TD2 (St Julian’s, Pembroke), TD3 (St Julian’s, Sliema, Gżira, Msida) and TD4 (Valletta, Gozo Fast Ferry) every 30 minutes; TD5 (Rabat, Buġibba) hourly. Without an Unlimited Travel Card, TD1 is €3.50 and the other Airport Direct routes €3; cash or contactless is accepted onboard; the Unlimited Travel Card includes Airport Direct. Route stop list and times (including any Qawra stop): https://www.publictransport.com.mt/route/TD1/ — not read on 11 Oct, so unverified.",
+      "price range": "€3.50 per passenger on TD1 without an Unlimited Travel Card; cash or contactless onboard"
     },
     {
       "id": "airport-route-214",
@@ -146,13 +146,13 @@
       "area": "Malta and Gozo",
       "address": "Tickets may be purchased onboard by cash or contactless; sales points and machines are listed by MPT",
       "hours": "Tickets on bus; card validity depends on the selected product",
-      "description": "MPT’s fare page says single tickets bought on board by cash or contactless allow transfers within two hours. Travelling without a valid ticket risks a €50 fine. For a week of daily event trips plus an airport run, the 7-day Explore Flex (€27) covers Day, Night and Airport Direct routes. The shareable 12-journey card (€19) suits fewer or group trips. Third-party guides say summer single fares apply until 18 October and winter fares from 19 October 2026; MPT’s page does not confirm those dates. Reconfirm product terms before buying.",
+      "description": "MPT’s fare page says single tickets bought on board by cash or contactless allow transfers within two hours. Travelling without a valid ticket risks a €50 fine. For a week of daily event trips plus an airport run, the 7-day Explore Flex (€27) covers Day, Night and Airport Direct routes. The shareable 12-journey card (€19) suits fewer or group trips. Third-party guides say summer single fares apply until 18 October and winter fares from 19 October 2026; MPT’s page does not state the summer end date. Reconfirm product terms before buying.",
       "source_url": "https://www.publictransport.com.mt/fares-and-tickets/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "MPT states Airport Direct is included with an Unlimited Travel Card and lists TD1 separately at €3.50 without one. Personalized Tallinja-card free-travel rules and TD-route exclusions differ from visitor cards; check the product terms rather than assuming all buses are free. Sales offices/machines: https://www.publictransport.com.mt/office-and-ticket-machine/. Re-read 11 Oct 2026: Explore Flex and 12-journey details, the €50 fine and two-hour validity as listed on the fare page; sales offices include the Buġibba terminal and the airport (per the fare page). Whether a 7-day Explore Flex bought on 13 Oct still covers a 19 Oct departure depends on its validity rules, which were not checked.",
-      "price range": "MPT lists: day route €2.00 winter / €2.50 summer (valid 2 hours); Night, Special Services and tallinja Direct €3.00; TD1 €3.50; 12 Single Day Journeys card €19 (shareable; Night/Airport trips use 2 journeys); Explore Flex 4-day €21 / 7-day €27 (Day, Night, Airport Direct and Special Services); Explore Adult 7-day €25 (excludes tallinja Direct; not shareable)"
+      "notes": "MPT fares page checked 11 Oct 2026 (both chunks): https://www.publictransport.com.mt/fares-and-tickets/ . Fare table: Day Routes (Winter) €2.00; Day Routes (Summer) €2.50; Night Routes €3.00; Special Services €3.00; Tallinja Direct Routes €3.00; TD1 €3.50. Explore Adult 7-day card €25 (individual, excludes tallinja Direct Routes). Airport Direct is included with an Unlimited Travel Card (FAQ on the Airport Direct page). Sales offices and machines: https://www.publictransport.com.mt/office-and-ticket-machine/ . A €50 fine applies for travelling without a valid ticket. Second 11 Oct read: Explore Flex 4-day €21 / 7-day €27 (Day, Night, Airport Direct and Special Services) and the 12-journey card’s rule that Night/Airport trips use 2 journeys. Whether a 7-day Explore Flex bought on 13 Oct still covers a 19 Oct departure depends on its validity rules, which were not checked. Third-party fare-season dates: https://hubpymalta.com/ .",
+      "price range": "MPT lists: day route €2.00 winter (stated period ended 13 Jun 2026) / €2.50 summer (end date not stated), valid 2 hours; Night, Special Services and tallinja Direct €3.00; TD1 €3.50; 12 Single Day Journeys card €19 (shareable; Night/Airport trips use 2 journeys); Explore Flex 4-day €21 / 7-day €27 (Day, Night, Airport Direct and Special Services); Explore Adult 7-day €25 (excludes tallinja Direct; not shareable)"
     },
     {
       "id": "malta-ride-hailing-taxis",
