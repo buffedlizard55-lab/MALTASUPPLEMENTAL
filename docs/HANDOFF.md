@@ -9,6 +9,15 @@
 - **D → G:** ETIAS not in operation; EES fully operational since 10 April 2026. No change to the everyday record was needed.
 - **F → traveller:** Planner stays blank until the itinerary and amounts are supplied.
 
+## Previous handoff — `arena/08099cd9-maltasupplemental` · 11 October 2026 UTC
+
+**Session:** `arena/08099cd9-maltasupplemental` · **updated:** 11 October 2026 UTC.
+
+- **C → G:** The Eventbrite ticket block did not show “Free” in the 11 Oct read; the record now says so. HLTV's 2 Oct article corroborates free entry through an Eventbrite link. Keep the price flagged until checkout is checked.
+- **D → G:** The official EU ETIAS page still says “not in operation” today. The record is unchanged and needs a pre-departure recheck.
+- **E → G:** The Radio In Malta directory corroborates the talkSPORT “Sports Channel” label on DAB+ (block not given). Keep the 6C/12A conflict open; do not treat the directory as a schedule.
+- **A → traveler:** No change to the transport record. The first fares chunk and the Route 186 index were re-read. Timetable grids remain the 11 Oct evidence.
+
 ## Previous handoff — `arena/dd9dd00c-maltasupplemental` · 11 October 2026 UTC
 
 
