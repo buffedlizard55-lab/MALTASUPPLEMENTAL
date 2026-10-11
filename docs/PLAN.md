@@ -1,31 +1,26 @@
 # Malta trip guide — work plan
 
-## Current delivery session — `arena/09cdfbf0-maltasupplemental` (11 October 2026)
+## Current session — `arena/dd9dd00c-maltasupplemental` (11 October 2026)
 
-Started from `origin/main` at `250e6bd` (merge of PR #48) at parity. The parallel-work protocol remains in force: A–F own
-one topic data file plus its matching page; G owns shared integration and documentation. Arena provides no isolated
-workstream runner here, so research and edits ran serially on this fixed branch, with shared files touched only by the
-integration step. Cross-topic findings went to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in
-`docs/OPEN_QUESTIONS.md`.
+Arena fixes this session to `arena/dd9dd00c-maltasupplemental` and does not provide isolated workstream branches. A–F therefore run serially on this branch, each editing only its owned data file plus matching notes. G edits shared pages, navigation hubs, docs and delivery last. Cross-topic findings go to `docs/HANDOFF.md`. Unverified gaps stay in `docs/OPEN_QUESTIONS.md`.
 
-Session objectives, in the order they were executed:
+| Stream | Owned files | This session |
+|---|---|---|
+| A · Transport | `data/transport.json`, event-day notes on `getting-around.html` | Re-read Route 186 evening grids, fares and service updates. Add the Saqqajja stop-4627 closure as its own record. Do not invent a saved journey. |
+| B · Food | `data/food.json` | Re-read the Qawra TripAdvisor list far enough to record the Featured methodology, sponsored cards and the first three numbered entries. Do not call that a popularity ranking. Keep the separate review-volume capture from `main`. |
+| C · Activities / event | `data/activities.json`, `data/event.json` | Re-read Eventbrite and the official Thunderpick finals page. Record the visible six-team lineup and the hidden View all control. Keep the HLTV/Hotspawn/Liquipedia group record already on `main`; do not treat Eventbrite’s incomplete image block as a contradiction. |
+| D · Everyday | `data/everyday.json` | Re-read Government of Malta electricity wording and the Malta Met Office seven-day panel. Do not reopen every older forecast. Keep the EES/ETIAS conflict already recorded on `main`. |
+| E · Radio | `data/radio.json` | Re-read BBC Sportsworld episode JSON and the Premier League amendment article. Keep UK schedules separate from Malta reception. |
+| F · Expenses | `costs.html` keyword matcher only | Add adapter/radio-receiver keywords that map to the existing incidentals row. Do not prefill amounts. |
+| G · Integration | `index.html`, hubs, docs, tests, PR | Scannable executive summary, event-day bus checks, useful hubs instead of “page moved”, then validate, open the PR from this branch and merge it to `main`. |
 
-1. **Pass 1 — implement against the request, not against the existing docs.** Review the tree and run the baseline gates
-   before changing anything, so later claims are attributable. Then re-verify the external claims that carry the most
-   planning weight and close the two genuinely weak evidence areas rather than restating strong ones.
-2. **Close the food/popularity gap.** The request asked for the *most popular* restaurants, and the tree previously held
-   only "Featured is not a ranking" caveats with no readable ranked list. A dated, platform-sourced capture ranked by
-   review volume was obtained and recorded with its volatility caveats.
-3. **Close the gaming gap honestly.** The tree said "no walk-in PC venue confirmed by this research". A dated directory
-   read now evidences that arcades exist and that no public PC café is listed — a finding, not an absence of effort.
-4. **Harden the entry-requirements advice** where the trip dates sit directly on an announced boundary (ETIAS Q4-2026)
-   and where a reported conflict names Malta specifically (EES).
-5. **Pass 2 — adversarial review of my own diff:** duplicated prose, misspelled public anchors, cross-record
-   contradictions, rendering and overflow, and whether every new claim is stronger than what it replaced.
-6. **Pass 3 — full re-check against the original request**, then documentation, gates, commit, PR and merge, reporting
-   only what was actually observed.
+Dependencies: shared schema and shell already exist. G waits until A–F data edits are in the files. No workstream rewrites another topic’s page. `origin/main` moved during the session (PRs #51 and #52); those records are retained in the merge.
 
-## Current delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
+## Prior delivery session — `arena/09cdfbf0-maltasupplemental` (11 October 2026)
+
+Started from `origin/main` at `250e6bd` (merge of PR #48). Closed the food review-volume gap, recorded that no public PC café was listed, and hardened the EES/ETIAS notes. Merged as PR #51.
+
+## Historical delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
 
 This fixed Arena branch began at `origin/main` commit `b307c51e8026ca3589ece815b0fb761eef36094e` (the PR #33 merge), at parity at session start. The parallel-work protocol remains in force: A–F own one topic data file plus its matching page; G owns shared integration and documentation; Arena provides no isolated workstream runner, so research and edits run serially on the fixed branch, shared files only by G. Cross-topic findings go to `docs/HANDOFF.md`; unresolved or conflicting evidence stays in `docs/OPEN_QUESTIONS.md`.
 

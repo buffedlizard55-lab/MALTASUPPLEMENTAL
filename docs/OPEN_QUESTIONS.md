@@ -1,6 +1,15 @@
 # Open questions and unverified items
 
-**Current research snapshot: 11 October 2026 UTC.** This replaces the contradictory accumulated status summaries inherited from PR #43. Historical source attempts remain in `SOURCES.md` and Git history. A missing extraction is not proof that information is unpublished; a listing is not a booking or physical check.
+**Current research snapshot: 11 October 2026 UTC, session `arena/dd9dd00c-maltasupplemental`.**
+
+New or tightened gaps from this pass:
+
+- **Saqqajja stop 4627.** The operator notice closes it on Route 186 until “January 1” at about 4:00 AM and prints no year. An earlier same-day trace of the return chain places it before Stadium 2194. This pass did not repeat that trace, so the effect on whether the bus still reaches Stadium is unknown.
+- **Eventbrite View all.** Six team names were visible. PARIVISION and NIP were not in that extracted block. HLTV, Hotspawn and Liquipedia say NIP replaced Virtus.pro; the 16 September organizer release still named Virtus.pro. Saturday/Sunday agenda and FAQ answers were still not extracted.
+- **TripAdvisor completeness.** The Qawra extraction stopped as Medusa Sky Bar began. It is not a full top-10 transcript. Yelp, Instagram, TikTok, Facebook and X were not re-attempted.
+- **18–19 October weather.** The Malta Met Office seven-day panel still ends 17 October. The earlier UK Met Office Valletta longer view was not re-opened.
+
+**Prior snapshot retained below.** This replaces the contradictory accumulated status summaries inherited from PR #43. Historical source attempts remain in `SOURCES.md` and Git history. A missing extraction is not proof that information is unpublished; a listing is not a booking or physical check.
 
 ## Resolve before relying on the trip plan
 

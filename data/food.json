@@ -2,7 +2,7 @@
   "topic": "Food & cafés",
   "title": "Food & cafés in Malta",
   "last_updated": "2026-10-11",
-  "intro": "Food and cafés at AX ODYCY, around Qawra/Buġibba and on farther outings. Start with the hotel options, then filter by area or cuisine. Official menus take priority. Ratings and review counts are dated platform snapshots — see “Most-reviewed places near AX ODYCY” for the one readable platform-ranked popularity capture — and are not a universal “most popular” ranking. Confirm bookings, kitchen times, closures and dietary needs directly.",
+  "intro": "Food and cafés at AX ODYCY, around Qawra/Buġibba and on farther outings. Start with the hotel options, then filter by area or cuisine. Official menus take priority. Ratings and review counts are dated platform snapshots. See “Most-reviewed places near AX ODYCY” for the review-volume capture, and the 11 October Qawra Featured snapshot for sponsored cards above a numbered list that is not a review-count rank. Neither is a universal “most popular” ranking. Confirm bookings, kitchen times, closures and dietary needs directly.",
   "records": [
     {
       "id": "espresso-odycy",
@@ -100,14 +100,14 @@
       "category": "Review research & limitations",
       "area": "Qawra (Saint Paul’s Bay) and Buġibba / St Paul’s Bay",
       "address": "Not applicable — aggregated platform ranking; each venue’s own address is in its record",
-      "hours": "TripAdvisor list headers and methodology read 11 October 2026; no complete current ranking transcribed.",
+      "hours": "Featured list snapshot read 11 October 2026. Not opening hours.",
       "price range": "Not a price source; platform dollar-sign tiers are relative bands, not euro meal quotes.",
-      "description": "The Qawra and Buġibba pages use a “Featured” order influenced by page views, reviews, price, cuisine, location and user interactions; they also show sponsored entries. Their display order is not a pure rating or review-count ranking. Use the venue records as a practical shortlist rather than calling the first results the island’s most popular restaurants.",
+      "description": "On 11 October 2026 the Qawra TripAdvisor restaurants page, titled “THE 10 BEST Restaurants in Qawra (Updated October 2026)”, reported 64 results and said Featured order uses page views, reviews, price, cuisine, location and user interactions. Sponsored cards appeared before the numbered list, including Sveta’s Culinary Atelier in Mellieħa and Chatterbox. The first numbered entries in the extraction were 1 Trattoria Riccardo (4.8 from 2,675 reviews), 2 Minoa Mediterranean Fusion (5.0 from 765 reviews, marked closed today in that snapshot) and 3 Cheeky Monkey Gastropub Qawra (4.5 from 3,374 reviews). Cheeky Monkey’s higher review count than the number-1 entry shows this is not a review-count ranking. The extraction stopped as Medusa Sky Bar began, so it is not a complete top-10 transcript and not a popularity award.",
       "source_url": "https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html",
       "source_type": "review",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Direct list headers: https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html and https://www.tripadvisor.com/Restaurants-g608948-Bugibba_St_Paul_s_Bay_Island_of_Malta.html . The initial extracted chunks include the ranking methodology, Featured sort and sponsored listings; the full paginated results were not re-audited. Earlier raw counts and ordinal statements are retained in the historical source log, not treated as a comparable current top list."
+      "notes": "Direct list: https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html . Page text states the Featured methodology and labeled Sveta’s Culinary Atelier and Chatterbox as Sponsored before the numbered results. Numbered profiles in the same extraction: Trattoria Riccardo https://www.tripadvisor.com/Restaurant_Review-g608947-d26887189-Reviews-Trattoria_Riccardo-Qawra_Island_of_Malta.html ; Minoa https://www.tripadvisor.com/Restaurant_Review-g608947-d26887178-Reviews-Minoa_Mediterranean_Fusion-Qawra_Island_of_Malta.html ; Cheeky Monkey Qawra https://www.tripadvisor.com/Restaurant_Review-g608947-d8381082-Reviews-Cheeky_Monkey_Gastropub_Qawra-Qawra_Island_of_Malta.html . Ratings and review counts are that page’s snapshot, not a fresh reading of every review. Yelp, Instagram, TikTok, Facebook and X were not re-attempted in this pass; earlier 403 results remain an access limit, not a ranking. Earlier raw counts remain in the historical source log and are not a current comparable ranking."
     },
     {
       "id": "ombre-cafe-bistro-qawra",

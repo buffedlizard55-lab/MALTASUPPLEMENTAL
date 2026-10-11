@@ -1,4 +1,24 @@
-# Current-session source refresh · 11 October 2026
+# Session `arena/dd9dd00c-maltasupplemental` source refresh · 11 October 2026
+
+UTC access date for every row is 2026-10-11. These rows record what this session actually read. They do not recertify every inherited claim.
+
+| Claim / scope | URL | Accessed | Workstream | Result / limitation |
+|---|---|---|---|---|
+| Free 18+ listing, MFCC South Gate address, coordinates, Fri 02:00 PM–09:00 PM row, six visible lineup names plus View all, Sat/Sun and FAQ answers not extracted. | https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 | 2026-10-11 | C | Fresh returned text. No reservation or inventory test. |
+| Official 12–19 October window, media day 13 October, groups 14–16, playoffs 17–18, $1,000,000 table. Location “Malta”, not a street address. | https://world-championship.thunderpick.io/2026-finals/ | 2026-10-11 | C | Fresh complete page. |
+| Day-route winter €2.00 / summer €2.50, night and special €3.00, TD €3.00, TD1 €3.50, €50 fine, card prices and the 19 Oct 2025–13 Jun 2026 winter sentence. | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-11 | A | Both returned chunks. No 2026/27 changeover printed. |
+| Route 186 Stadium 2194 evening grids ending 20:53 and 20:54. | https://www.publictransport.com.mt/route/186/ | 2026-10-11 | A | Search excerpts of the operator page, not all 21 chunks and not a labelled trip-date grid. |
+| October 17–18 Route 186 diversion 19:00–00:00, separate April notice, and Saqqajja stop 4627 closure until January 1 with no year. | https://www.publictransport.com.mt/latest-service-updates/ | 2026-10-11 | A | All three returned chunks read. |
+| Third-party map places Ir-Rabat - Saqqajja in Rabat. Not an operator stop order. | https://mapcarta.com/N382987073 | 2026-10-11 | A | Location lead only. |
+| Moovit associates bus 186 with Saqqajja in Rabat. | https://moovitapp.com/index/en-gb/public_transportation-Saqqajja-Malta-site_27278084-4507 | 2026-10-11 | A | Secondary lead only. |
+| Qawra TripAdvisor Featured page: 64 results, sponsored cards, numbered Riccardo 4.8/2675, Minoa 5.0/765, Cheeky Monkey 4.5/3374. | https://www.tripadvisor.com/Restaurants-g608947-Qawra_Island_of_Malta.html | 2026-10-11 | B | First three chunks. Extraction stopped at Medusa Sky Bar. Not a review-count rank. |
+| Sportsworld JSON 2026-10-17T14:06:00+01:00, duration 13980 seconds; next peer 2026-10-18T15:06:00+01:00. | https://www.bbc.co.uk/programmes/w1730c92ck0m2cw.json | 2026-10-11 | E | Fresh JSON. HTML local time was viewer-dependent. No named match. |
+| Premier League kickoffs for 17–19 October, labelled BST. | https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november | 2026-10-11 | E | Fresh article. Not Malta radio carriage. |
+| 230 V, 50 Hz, UK-style three-pin plugs; GMT +1 field is not the trip’s daylight-saving clock. | https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx | 2026-10-11 | D | Fresh complete text. |
+| Malta Met Office seven-day panel ends 17 October and repeats the retained 13–17 October figures. | https://maltametoffice.com/en/forecast/ | 2026-10-11 | D | Fresh panel. Does not cover 18–19 October. |
+| Hotel page: Qawra Coast Road, +356 2354 3000, info.odycy@axhotelsmalta.com, 4-star, Deluxe Room with Side Sea View link. | https://axhotelsmalta.com/odycy/ | 2026-10-11 | G | First chunk. SPB 1902 was not in that chunk; it remains a traveler-supplied/earlier-page detail. |
+
+# Earlier current-session source refresh · 11 October 2026
 
 Session `arena/dfefc16f-maltasupplemental`. This section supersedes conflicting interpretations in the historical log below. It records **what was actually returned/read**, not full-site access, a field-by-field recertification of inherited claims, physical visits, RF measurements or personal purchases. UTC access/attempt date for every row is 2026-10-11. Dates in the canonical records remain scoped evidence dates; editing a record alone does not constitute a source refresh.
 
