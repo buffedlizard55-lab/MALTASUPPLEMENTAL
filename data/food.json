@@ -9,15 +9,15 @@
       "name": "Espresso Grab & Go",
       "category": "At AX ODYCY",
       "area": "Qawra",
-      "address": "Level 11, AX ODYCY, Qawra Coast Road, Qawra SPB 1902, Malta",
-      "hours": "Wednesday–Saturday 18:30–22:30; age 16+. Tasting menu for the entire table; order by 20:30.",
-      "price range": "Official menu references: vegetarian tasting €70 / standard €80 per guest. Other menu examples retain their 9 October check date in notes; not a complete meal quote.",
-      "description": "Rooftop Mediterranean-fusion dining at the user's hotel, with local ingredients, à la carte dishes and set tasting menus. TripAdvisor's Qawra profile showed 5.0/764 reviews, #1 of 64 in Qawra and a 2026 Best of the Best badge; a limited Google Maps view showed 4.9 without a visible review count. These are platform snapshots, not guarantees.",
-      "source_url": "https://minoa.mt/restaurant-menu/",
+      "address": "AX ODYCY Hotel, Level 0, Qawra Coast Road, Qawra SPB 1902, Malta",
+      "hours": "Monday to Sunday, open 24/7 — the operator's wording is “Open 24/7 (Open round the clock)”.",
+      "price range": "No prices are printed on the outlet page; the operator links a Food & Beverage menu PDF (linked only, not transcribed in this pass).",
+      "description": "The hotel's 24/7 coffee bar on Level 0: barista coffees, fresh juices and light snacks, with seating, described by the operator as an all-day pitstop. This is a snack-and-coffee stop rather than a full sit-down dinner — useful before an early event check-in and after a late return when other kitchens are closed.",
+      "source_url": "https://axhotelsmalta.com/odycy/qawra-restaurants/espresso-grab-and-go/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Official hours, location and 16+ policy: https://minoa.mt/. TripAdvisor snapshot (5.0/764; #1/64; Best of the Best 2026): https://www.tripadvisor.com/Restaurant_Review-g608947-d26887178-Reviews-Minoa_Mediterranean_Fusion-Qawra_Island_of_Malta.html. Google Maps limited profile view (4.9; no review count surfaced): https://www.google.com/maps?cid=8295389532400202843. Definitive(ly) Good Guide 2026 lists Minoa #9: https://restaurantsmalta.com/top-10-restaurants-for-2026-as-voted-by-you/. Hours, 16+ rule and €70/€80 tasting prices rechecked on operator homepage 11 October: https://minoa.mt/. Other à-la-carte/signature examples were not re-transcribed on this check."
+      "notes": "Operator page fetched 11 October 2026: https://axhotelsmalta.com/odycy/qawra-restaurants/espresso-grab-and-go/ . The page states “our welcoming 24/7 coffee bar”, “An all-day coffee bar, serving up barista coffees, fresh juices, snacks, and more”, opening hours “Monday to Sunday / Open 24/7 (Open round the clock)”, and the address “AX ODYCY Hotel, Level 0, Qawra Coast Road, Qawra SPB 1902, Malta”; it links a Food & Beverage menu PDF at https://axhotelsmalta.com/wp-content/uploads/2025/07/Espresso-Menu.pdf , which this pass did not transcribe, so no price is claimed. Data correction recorded here for traceability: this record previously carried the rooftop restaurant's hours (Wednesday–Saturday 18:30–22:30, ages 16+, tasting menu €70/€80), its Level 11 address, its menu URL and its TripAdvisor figures — that content belongs to Minoa Mediterranean Fusion and remains in the separate `minoa-ax-odycy` record. “Open 24/7” is the operator's service claim; it is not a promise that every menu item is available at every hour, and no price was verified."
     },
     {
       "id": "trattoria-riccardo-qawra",

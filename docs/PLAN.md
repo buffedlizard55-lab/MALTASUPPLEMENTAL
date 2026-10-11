@@ -1,3 +1,25 @@
+## Current session plan — `arena/3031b29b-maltasupplemental` (11 October 2026)
+
+Started at `main` `ae69ab1c3a243685289b16c274fa06a21c9b9167` (PRs #55–#57 merged), clean tree. Repository review confirmed the existing static Pages shell, canonical 13-field schema, seven topic datasets with matching pages, source/open-question/status/handoff logs, expense planner, CI workflow and Playwright/axe suite; nothing is replaced. Shared setup (schema, navigation/renderer, CSS tokens, source-log row format) is unchanged and was re-verified before any edit. Arena still provides one fixed branch and no isolated workstream runner, so A–F run serially with the same ownership boundaries and G integrates shared files last; cross-topic finds go to `docs/HANDOFF.md`, unresolved items to `docs/OPEN_QUESTIONS.md`.
+
+This pass targets the one requirement that is still weakest — a receiver-usable answer on live sports radio, and the trip-window sport calendar behind it — plus fresh corroboration of the trip’s highest-risk facts. Two days before departure, the priorities are the things that change a decision, not new description.
+
+| Stream | Owned files | This session |
+|---|---|---|
+| A · Transport | `data/transport.json`, event-day notes on `getting-around.html` | Re-read the complete service-updates page a fourth time and enumerate the 17–18 October detour cluster; add the published TQ1/TQ2 route definitions and the dated Ta’ Qali special-service precedent; keep the return-gap and Friday-16-October questions open. |
+| B · Food & cafés | `data/food.json`, `restaurants.html` | No new platform access was available in this pass; existing dated review-volume snapshot and access limits stand unchanged rather than being re-asserted as fresh. |
+| C · Gaming, activities, landmarks & events | `data/activities.json`, `data/event.json`, `activities.html`, `event.html` | Re-read the ticketing listing for inventory/lineup/agenda drift; no agenda change found. |
+| D · U.S.-traveler everyday guide | `data/everyday.json`, `everyday.html` | Add the national forecast’s republication by a second Maltese outlet and the two third-party forecasts that reach 18–19 October, labelled as leads. |
+| E · Sports radio | `data/radio.json`, `radio.html` | Three new records: BFBS Radio 2 as a non-Malta option (negative), PBS Radju Malta/Radju Malta 2 as a radio-carriage lead, and the trip-window/out-of-window sports calendar; plus a new dated trip-window live-sport table on the page and independent fixture corroboration. |
+| F · Expense planner | `data/expenses.json`, `costs.html` | Unchanged: amounts stay blank; only confirmed quotes go in. |
+| G · Site shell, executive summary & navigation (last) | `index.html`, `docs/*`, `README.md`, tests | Fold the new evidence into the executive summary, refresh the source/status/report/handoff records, run every gate, then deliver by PR. |
+
+### Verification gates / passes
+
+1. **Pass 1 — implement and verify:** re-read the highest-risk live sources (ticketing listing, operator fares and service updates, Route 186 grids) and add the new radio/transport/weather evidence with its sources.
+2. **Pass 2 — adversarial review:** check the new claims for overreach (crowd-edited sources, third-party calendars, precedent vs. commitment), confirm every new URL is in the source log, confirm no unverified item is presented as fact, and re-run schema/link/JavaScript/browser gates.
+3. **Pass 3 — original-request audit:** walk the user’s line-by-line requirements against the integrated result, confirm the site still answers each, and report only observed PR/Pages state.
+
 # Malta trip guide — work plan
 
 ## Current session plan — `arena/67d511d1-maltasupplemental` (11 October 2026)
