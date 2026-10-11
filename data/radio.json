@@ -93,6 +93,21 @@
       "confidence": "partially verified",
       "notes": "The current Broadcasting Authority licensed-stations list was checked on 11 Oct 2026 (https://ba.org.mt/stations-licenced). Absence from the list is not a guarantee that no distant AM signal can ever be received; do not rely on an AM sports programme without current station confirmation. Historical context: https://tvmnews.mt/en/news/radju-malta-is-53-years-old/.",
       "price range": "Not applicable"
+    },
+    {
+      "id": "bbc-radio-5-live-premier-league-listings",
+      "name": "BBC Radio 5 Live / 5 Live Sports Extra — Premier League commentary listings",
+      "category": "UK national radio — football listing (Malta reception not verified)",
+      "area": "United Kingdom BBC service; reception or streaming in Malta not established",
+      "address": "Not published",
+      "hours": "The BBC's upcoming-broadcasts page, checked 11 Oct, shows Premier League commentary with the labels 'Today', 'Next Saturday' and 'Next Sunday' and no calendar date for those items. The dated entries shown are Sat 24 Oct (14:55, 15:00, 17:30 UK time) and Sun 25 Oct (14:00, 16:30 UK time), which fall after the trip. Malta is one hour ahead of UK time in this period (CEST, UTC+2, versus BST, UTC+1).",
+      "description": "The BBC's Premier League Football programme page lists live 5 Live and 5 Live Sports Extra commentary for 2026–27 fixtures. It is a UK public-broadcaster listing. It is not a Malta frequency, DAB+ block, or streaming-availability check, and it does not confirm that the feed can be received in Malta or that any named fixture is broadcast on 17–18 October.",
+      "source_url": "https://www.bbc.co.uk/programmes/m002h76y/broadcasts/upcoming",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "The 'Next Saturday' and 'Next Sunday' entries are not mapped to 17–18 October in the snapshot checked; that mapping is an inference and must be confirmed on the BBC page on the day. BBC Sounds/stream access from Malta was not tested and must not be assumed. The user's 'Kalshi-market' framing was not verified: no Kalshi market, EPL fixture set for 13–19 October, or Malta broadcast-rights deal was checked. Third-party TV listings (not radio) show Premier League rights for Melita/GO TSN channels; they were not used as radio evidence.",
+      "price range": "Not applicable (listing); receiver and streaming costs not checked"
     }
   ]
 }
