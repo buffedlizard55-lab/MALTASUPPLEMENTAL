@@ -26,12 +26,12 @@
       "area": "Malta",
       "address": "Not applicable — island-wide currency",
       "hours": "Not applicable",
-      "description": "The U.S. State Department Malta page confirms the euro (€) is Malta’s official currency, notes that American Express credit cards are not widely accepted, and states that ATMs accept U.S.-issued bankcards (though cash withdrawals frequently incur an ATM fee). Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a Visa/Mastercard or cash backup. Do not assume a merchant will accept U.S. dollars or American Express.",
+      "description": "The Government of Malta and the U.S. State Department confirm the euro (€) is the national currency; the State Department also notes that American Express credit cards are not widely accepted and that ATMs accept U.S.-issued bankcards (though cash withdrawals frequently incur an ATM fee). Set the trip budget in euros, check your U.S. card’s foreign-transaction and ATM fees, and keep a backup way to pay. Do not assume a merchant will accept U.S. dollars or American Express.",
       "source_url": "https://www.gov.mt/en/About%20Malta/Pages/The%20Maltese%20Islands.aspx",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch on 11 Oct 2026. The U.S. State Department Malta page (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 0–1 read 11 Oct 2026) explicitly states that the euro is the official currency, American Express is not widely accepted, ATMs accept U.S.-issued bankcards (often with an ATM fee), and the currency limit is €10,000 or equivalent on entry and on exit.",
+      "notes": "The official Visit Malta currency page is https://www.visitmalta.com/en/info/currency-banks-in-malta/; its page content did not render fully in the direct fetch. The U.S. State Department Malta page (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 0–1 read 11 Oct 2026) explicitly states that the euro is the official currency, American Express is not widely accepted, ATMs accept U.S.-issued bankcards (often with an ATM fee), and the currency limit is €10,000 or equivalent on entry and on exit.",
       "price range": "Use euro (€) as the reference currency; exchange and card fees depend on your provider"
     },
     {
@@ -59,7 +59,7 @@
       "description": "Use Malta local time for tickets, published schedules, and transport. On the supplied trip dates Malta is on summer time; check time-zone conversion when coordinating with the United States.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-09",
       "confidence": "verified",
       "notes": "The U.S. State Department says Malta uses CET and switches to CEST from the last Sunday in March through the last Sunday in October. 25 October is the last Sunday in October 2026.",
       "price range": "Not applicable"
@@ -74,9 +74,9 @@
       "description": "The U.S. State Department says a visa is not required for a U.S. tourist visit of 90 days or less and that the passport must remain valid for at least three months beyond planned departure. The EU short-stay limit is 90 days in any 180-day period across the Schengen area. These pointers apply only if using a U.S. passport; check official rules for your nationality and exact itinerary.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "U.S. State Department Malta advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. EU Entry/Exit System FAQ explains the single 90-days-in-any-180-days calculation across countries using EES: https://travel-europe.europa.eu/en/ees/faq. A residence/dual-nationality/long-stay case may have different requirements. Re-checked 11 October on the U.S. State Department Malta page (Level 1 advisory issued 9 July 2026): no visa is required for 90 days or less, and passports must be valid for 3 months beyond the departure date.",
+      "notes": "U.S. State Department Malta advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. EU Entry/Exit System FAQ explains the single 90-days-in-any-180-days calculation across countries using EES: https://travel-europe.europa.eu/en/ees/faq. A residence/dual-nationality/long-stay case may have different requirements.",
       "price range": "No tourist visa fee is listed for a U.S. passport holder staying 90 days or less; other eligibility and circumstances can differ"
     },
     {
@@ -91,7 +91,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "The EU FAQ says children under 12 are not fingerprint-scanned and that a biometric passport is only needed for optional self-service equipment, not in principle to cross the border. EES FAQs: https://travel-europe.europa.eu/en/ees/faq. Actual queue times are not published here. Re-checked 11 October: the EU EES FAQ says progressive deployment lasted until 9 April 2026 and the EES has been fully operational at all external border crossing points from 10 April 2026.",
+      "notes": "The EU FAQ says children under 12 are not fingerprint-scanned and that a biometric passport is only needed for optional self-service equipment, not in principle to cross the border. EES FAQs: https://travel-europe.europa.eu/en/ees/faq. Actual queue times are not published here.",
       "price range": "No EES fee stated by the EU"
     },
     {
@@ -100,13 +100,13 @@
       "category": "Entry & border",
       "area": "European countries requiring ETIAS, including Malta",
       "address": "Not applicable",
-      "hours": "EU’s official site checked 9 October 2026 says ETIAS is not yet in operation; the exact start date is unannounced",
-      "description": "The EU’s official ETIAS page, read 11 Oct 2026, says ETIAS is currently not in operation and no travel-authorisation applications are collected. The EU will announce the specific start date several months before launch. Recheck before departure, and do not pay any site that claims to sell an application.",
-      "source_url": "https://travel-europe.europa.eu/en/etias",
+      "hours": "Official EU site checked 11 October 2026: not operational; no applications collected; exact launch date unannounced.",
+      "description": "The official EU ETIAS site says the system is not in operation and no applications are being collected, as checked 11 October. The EU says it will announce the start date several months before launch. Recheck the official page before travel; do not pay an unofficial site claiming to issue an authorisation.",
+      "source_url": "https://travel-europe.europa.eu/etias",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias (read 11 Oct 2026). The page quotes a EUR 20 application fee for when the system opens. Status is date-sensitive; recheck the EU page immediately before travel.",
+      "notes": "Live status and official notices: https://travel-europe.europa.eu/en/etias. A U.S. State Department Europe guide likewise says the planned ETIAS launch is late 2026: https://travel.state.gov/en/international-travel/planning/guidance/europe.html. Status is date-sensitive; recheck the EU page immediately before travel.",
       "price range": "No payment is due while the official EU site says applications are not being collected"
     },
     {
@@ -116,12 +116,12 @@
       "area": "Malta",
       "address": "Not applicable — emergency services are island-wide",
       "hours": "112 emergency service and 179 national helpline: 24 hours a day",
-      "description": "The U.S. State Department Malta advisory confirms dialing 112 for emergency services (ambulance, fire brigade, police, and emergency medical services), 179 for Malta’s 24/7 toll-free national helpline, and 116-006 for the toll-free victim support line. Medical care in Malta is not free to visitors, U.S. Medicare/Medicaid do not apply abroad, and private hospitals often require upfront payment; the State Department strongly recommends supplemental medical and evacuation insurance and states that no vaccinations are required.",
-      "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
+      "description": "Both the Maltese health ministry and the U.S. State Department Malta advisory list 112 for emergency ambulance, fire, and police services (plus 179 for Malta’s 24/7 national helpline and 116-006 for victim support). Medical care in Malta is not free to visitors and private hospitals often require upfront payment; the U.S. State Department recommends travel insurance and checking medical and evacuation cover before departure.",
+      "source_url": "https://health.gov.mt/services/health-services/",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "verified",
-      "notes": "U.S. State Department Malta page (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 1–2 read in full 11 Oct 2026): confirms dialing 112 for ambulance, fire brigade, police, and emergency medical services; 179 for the 24/7 national helpline; 1579 for the National Mental Health Helpline; and 116-006 for victim support. Also states that no vaccinations are required, tap water is generally safe to drink, prescriptions should be carried in original packaging with a doctor’s prescription, and visitors incur medical charges even at public facilities. General Maltese health-services directory: https://health.gov.mt/services/health-services/.",
+      "notes": "Health ministry helpline listing: https://health.gov.mt/services/health-services/. U.S. State Department travel guidance (https://travel.state.gov/en/international-travel/travel-advisories/malta.html, chunks 1–2 read 11 October): explicitly confirms dialing 112 for ambulance, fire brigade, police, and emergency medical services (plus 179 for the 24/7 national helpline, 1579 for mental health, and 116-006 for victim support), notes that medical care is not free to visitors and private hospitals often require upfront payment, and states that no vaccinations are required and tap water is generally safe to drink. Independently re-read 11 October: the ministry’s HelpLines and Support table also explicitly lists Emergency — Ambulance, Fire, and Police: 112, 24/7.",
       "price range": "Costs/coverage depend on treatment and insurance; private hospitals often require upfront payment"
     },
     {
@@ -134,9 +134,9 @@
       "description": "The U.S. State Department lists +356 2561 4000 for the U.S. Embassy in Malta, including its emergency after-hours contact. This is consular contact information, not a substitute for local emergency services at 112.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "Embassy website and current alerts: https://mt.usembassy.gov/. Emergency services in Malta: 112. Confirm contact details on the State Department page before relying on them. The State Department page (checked 11 October) gives the embassy address as Ta’Qali National Park Street, Attard ATD 4000, Malta, and the email ACSMalta@state.gov.",
+      "notes": "Embassy website and current alerts: https://mt.usembassy.gov/. Emergency services in Malta: 112. Confirm contact details on the State Department page before relying on them.",
       "price range": "Not applicable"
     },
     {
@@ -149,9 +149,9 @@
       "description": "On the 9 October 2026 check, the U.S. State Department listed Malta at Level 1 — Exercise normal precautions, and specifically warns that rip currents have caused tourist drownings. Follow lifeguards and local swimming conditions; a sunny forecast does not guarantee safe sea conditions.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-09",
       "confidence": "verified",
-      "notes": "The advisory is dated 9 July 2026; check the live page for any later updates. It is a government advisory, not a guarantee of personal safety. Re-checked 11 October: the State Department page still shows the Level 1 advisory issued 9 July 2026 and its riptide warning.",
+      "notes": "The advisory is dated 9 July 2026; check the live page for any later updates. It is a government advisory, not a guarantee of personal safety.",
       "price range": "Not applicable"
     },
     {
@@ -164,7 +164,7 @@
       "description": "Vehicles drive on the left in Malta. The U.S. State Department also notes that roads can be narrow and congested. If walking near traffic or considering a rental car, account for left-side traffic and check local road conditions; public-transport comparisons are on Getting around.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-09",
       "confidence": "verified",
       "notes": "Official travel advisory: https://travel.state.gov/en/international-travel/travel-advisories/malta.html. For route options from AX ODYCY to the named event venue, see getting-around.html.",
       "price range": "Not applicable — no rental quote is included"
@@ -179,7 +179,7 @@
       "description": "The U.S. State Department warns that bringing marijuana, cannabis, CBD products, or derivatives into Malta is illegal and may lead to arrest and lengthy detention. Do not pack these products; check the official advisory for the full legal guidance.",
       "source_url": "https://travel.state.gov/en/international-travel/travel-advisories/malta.html",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-09",
       "confidence": "verified",
       "notes": "This is a specific warning from the U.S. State Department Malta advisory, not personalized legal advice. Check the current advisory and Maltese authorities for the latest rules.",
       "price range": "Not applicable"
@@ -194,10 +194,10 @@
       "description": "Before leaving the U.S., check your home carrier’s Malta roaming/data rates and how to enable or disable roaming. Local alternatives include GO prepaid plans/eSIM and Melita prepaid SIM/eSIM. Confirm that your handset is carrier-unlocked and, for eSIM, compatible; compare the live terms rather than assuming EU roaming rules apply to a U.S. plan.",
       "source_url": "https://www.go.com.mt/top-up-mobile-number-malta/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "GO page describes prepaid options for visitors and eSIM compatibility checks: https://www.go.com.mt/top-up-mobile-number-malta/. Melita’s live prepaid page lists physical SIM/eSIM and a starter pack: https://www.melita.com/mobile/top-up-plans/. U.S. carrier fees and this traveler’s device lock/eSIM status are unknown; plan names/prices can change.",
-      "price range": "Provider examples checked 9 Oct: GO Smart Unlimited €15.99 for 28 days; Melita starter SIM/eSIM page lists €10. Prices and terms can change."
+      "notes": "GO offers app eSIM setup for compatible devices: https://www.go.com.mt/top-up-mobile-number-malta/. Melita starter pack: https://www.melita.com/mobile/top-up-plans/. Its Pass renews every 28 days if sufficient credit; discounted Pass L / AutoTopUp offers have separate conditions. Online Melita purchase component returned a server-error message in extraction, so checkout availability was not tested. U.S. carrier fees, device unlocking and eSIM support remain traveler-specific.",
+      "price range": "11 October provider examples: GO Smart Unlimited €15.99 / 28 days (unlimited Malta data, 28GB Zone 1); Melita €10 SIM/eSIM starter pack with 25GB, 200 minutes/SMS and €5 credit. Verify terms and device compatibility."
     },
     {
       "id": "october-weather-forecast",
@@ -205,13 +205,13 @@
       "category": "Weather & packing",
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
-    "hours": "Malta Met Office 7-day forecast, accessed 11 Oct 2026, covers 13–17 Oct: 13 Oct isolated showers, high 26°C/low 19°C (NW F3-4); 14 Oct mainly sunny, 24°C/18°C (N F4); 15 Oct mainly sunny, 25°C/17°C (NE F3); 16 Oct mainly sunny, 25°C/17°C (W F2-3); 17 Oct mainly cloudy, 23°C/18°C (WNW F3-4). The 7-day view did not yet cover 18–19 Oct at check time.",
-    "description": "This is a dated forecast snapshot, not a trip guarantee. The Malta Met Office page is refreshed; recheck all seven dates shortly before departure and before sea activities. Pack for possible wind or showers as well as warm daytime weather, and follow marine/lifeguard notices.",
-    "source_url": "https://maltametoffice.com/en/forecast/",
-    "source_type": "official",
-    "date_checked": "2026-10-11",
-    "confidence": "partially verified",
-    "notes": "Official Malta International Airport Met Office 7-day forecast as fetched 11 Oct 2026: https://maltametoffice.com/en/forecast/. This supersedes the 9 Oct snapshot, which covered 13–15 Oct only. Wind strengths are Beaufort forces as published; UV index was 5 on each displayed day. The 18–19 Oct forecast was still outside the seven-day window at check time; an earlier detailed-forecast check (9 Oct, thundery-shower wording) is logged in docs/SOURCES.md.",
+      "hours": "11 October Met Office snapshot: 13 Oct isolated showers 26/19°C; 14 Oct mainly sunny 24/18°C; 15–16 Oct mainly sunny 25/17°C; 17 Oct mainly cloudy 23/18°C. Forecast does not yet include 18–19 Oct.",
+      "description": "This is a dated forecast snapshot, not a trip guarantee. The Malta Met Office page is refreshed; recheck all seven dates shortly before departure and before sea activities. Pack for possible wind or showers as well as warm daytime weather, and follow marine/lifeguard notices.",
+      "source_url": "https://maltametoffice.com/en/forecast/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Official seven-day view fetched 11 October: https://maltametoffice.com/en/forecast/. This snapshot replaces the older 9 October forecast; 18–19 October lie beyond this view. Recheck before outdoor or sea activities; these are forecasts, not observed conditions.",
       "price range": "Not applicable"
     },
     {

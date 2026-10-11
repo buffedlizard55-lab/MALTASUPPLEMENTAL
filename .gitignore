@@ -1,3 +1,8 @@
 # Python validation scripts
 __pycache__/
 *.py[cod]
+
+# Development dependencies and generated browser artifacts
+node_modules/
+test-results/
+playwright-report/
