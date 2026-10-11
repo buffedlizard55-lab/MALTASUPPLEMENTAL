@@ -10,13 +10,13 @@
       "category": "FM",
       "area": "Nationwide licensed FM service in Malta",
       "address": "Not published",
-      "hours": "NET FM’s recurring weekly grid lists Hits & Score on Saturday at 16:00 and Sports Box on Sunday at 15:00 (times as published by the Malta station; timezone not explicitly stated). In this trip window those days are 17 and 18 October.",
+      "hours": "NET FM’s recurring weekly grid lists Hits & Score on Saturday at 16:00 and Sports Box on Sunday at 15:00 (times as published by the Malta station; timezone not explicitly stated). In this trip window those days are 17 and 18 October. The same grid lists Mhux Premier biss on Friday at 18:30 (trip-window Friday is 16 October); see the separate net-fm-friday-mhux-premier-biss record for that lead.",
       "description": "The Broadcasting Authority’s licensed-stations list gives NET FM at 101 MHz FM. NET FM’s own recurring weekend grid includes two sports programmes. This is the clearest conventional-FM option found, but the weekly grid is not a date-stamped October 2026 schedule and does not confirm match commentary or carriage of a particular event.",
       "source_url": "https://ba.org.mt/stations-licenced",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Re-checked 11 Oct 2026: NET FM’s official programme grid (https://netfm.com.mt/) lists Saturday 16:00 Hits & Score and Sunday 15:00 Sports Box; the frequency is from the Broadcasting Authority list (https://ba.org.mt/stations-licenced). The grid does not state its time zone and is recurring, not a date-stamped trip-week schedule. Recheck the station’s live schedule before travel. No TWC, Gżira United–Mosta, or Rolex Middle Sea Race radio carriage was confirmed.",
+      "notes": "Re-checked 11 Oct 2026: NET FM’s official programme grid (https://netfm.com.mt/) lists Saturday 16:00 Hits & Score and Sunday 15:00 Sports Box; the frequency is from the Broadcasting Authority list (https://ba.org.mt/stations-licenced). The grid also lists a Friday 18:30 show, ‘Mhux Premier biss’, tracked as the separate net-fm-friday-mhux-premier-biss record (schedule lead only; content unverified). The grid does not state its time zone and is recurring, not a date-stamped trip-week schedule. Recheck the station’s live schedule before travel. No TWC, Gżira United–Mosta, or Rolex Middle Sea Race radio carriage was confirmed.",
       "price range": "Free-to-air; receiver cost not checked"
     },
     {
@@ -76,7 +76,7 @@
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Malta DAB+ directory listing for BBC World Service: https://dab.com.mt/channels/. Dated BBC programme pages, both re-read 11 Oct 2026: Saturday 17 October, https://www.bbc.co.uk/programmes/w1730c92ck0m2cw ; Sunday 18 October, https://www.bbc.co.uk/programmes/w1730c92ck0q313 (3 hours 53 minutes each; feed “BBC World Service except News Internet”). The episode pages render times in the viewer’s local zone; the fetch showed 09:06 and 10:06 US Eastern (UTC−4), i.e. 13:06 and 14:06 GMT. Precedent episode with Premier League commentary: https://www.bbc.co.uk/programmes/w1730c9208pxyf8 (11 Oct 2026). Upcoming list: https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming . WorldDAB’s technical listing and the reception caveat are recorded separately.",
+      "notes": "Malta DAB+ directory listing for BBC World Service: https://dab.com.mt/channels/. Dated BBC programme pages, both re-read 11 Oct 2026: Saturday 17 October, https://www.bbc.co.uk/programmes/w1730c92ck0m2cw ; Sunday 18 October, https://www.bbc.co.uk/programmes/w1730c92ck0q313 (3 hours 53 minutes each; feed “BBC World Service except News Internet”). The episode pages render times in the viewer’s local zone; the fetch showed 09:06 and 10:06 US Eastern (UTC−4), i.e. 13:06 and 14:06 GMT. Precedent episode with Premier League commentary: https://www.bbc.co.uk/programmes/w1730c9208pxyf8 (11 Oct 2026). Upcoming list: https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming . WorldDAB’s technical listing and the reception caveat are recorded separately. Time-zone reconciliation (11 Oct, third pass): an earlier check recorded 13:06/14:06 labelled GMT, and a later render showed 09:06/10:06 under ‘Local time’. These are exactly four hours apart, i.e. the same GMT start shown in a UTC−4 viewer zone, so the readings agree. Independent check: the 11 Oct episode (same Sunday slot) carried Liverpool v Man City, which kicked off at 16:30 BST (15:30 GMT) per premierleague.com. That fits a 14:06 GMT start, not 10:06 GMT. Recheck the episode pages close to air.",
       "price range": "Free-to-air broadcast; DAB+ receiver required for radio reception; hardware price not checked"
     },
     {

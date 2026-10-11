@@ -38,7 +38,7 @@ After integration, perform three cumulative passes:
 
 PR #13 was based on an older implementation that added duplicate `/pages/` templates and a separate site builder. `origin/main` already contains the canonical root-page renderer, shared schema/validator, six current JSON datasets, expense planner, and research pages. The reconciliation retained that main architecture, imported only non-duplicate food/activity records, updated the Aquarium and Rolex race facts, and integrated their source/open-question/status/handoff notes. The duplicate `/pages/` copies, `tools/build_site.py`, legacy `data/schema.json`, and duplicate schema document were removed; main’s `.nojekyll`, `docs/DATA_SCHEMA.md`, and validator remain. Legacy `hotel.html`, `itinerary.html`, and `qawra.html` URLs remain noindex notices. No claim was imported without a source and limitation recorded.
 
-## Session addendum — 11 Oct 2026 (second pass)
+## Session addendum — 11 Oct 2026 (third pass, arena/d347388b)
 
 Scope, executed serially under the ownership table after syncing with `main` (PR #21):
 
