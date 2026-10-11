@@ -4,6 +4,7 @@
 
   var NAV = [
     ["index.html", "Overview"],
+    ["event.html", "CS2 event"],
     ["getting-around.html", "Transport"],
     ["restaurants.html", "Food & cafés"],
     ["activities.html", "Activities & sights"],

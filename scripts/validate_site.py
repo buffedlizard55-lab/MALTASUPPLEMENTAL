@@ -33,6 +33,7 @@ CONFIDENCE = {"verified", "partially verified", "unverified"}
 URL_RE = re.compile(r"https://[^\s<>\"']+")
 TRAILING_URL_PUNCTUATION = ".,;:!?)]}»”"
 EXPECTED_PAGES = {
+    "data/event.json": "event.html",
     "data/transport.json": "getting-around.html",
     "data/food.json": "restaurants.html",
     "data/activities.json": "activities.html",
@@ -117,8 +118,8 @@ def validate_data() -> tuple[dict[str, dict], set[str], int]:
     source_text = source_log.read_text(encoding="utf-8")
 
     files = sorted(file for file in DATA_DIR.glob("*.json") if file.name != "record.schema.json")
-    if len(files) != 6:
-        fail(f"expected six topic JSON files, found {len(files)}")
+    if len(files) != 7:
+        fail(f"expected seven topic JSON files, found {len(files)}")
 
     datasets: dict[str, dict] = {}
     logged_urls: set[str] = set()

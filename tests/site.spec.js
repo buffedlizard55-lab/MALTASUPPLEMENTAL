@@ -1,8 +1,8 @@
 const {test, expect} = require('@playwright/test');
 const AxeBuilder = require('@axe-core/playwright').default;
 const fs = require('fs');
-const pages = ['index.html','getting-around.html','restaurants.html','activities.html','everyday.html','radio.html','costs.html','sources.html'];
-const topics = {'getting-around.html':'transport','restaurants.html':'food','activities.html':'activities','everyday.html':'everyday','radio.html':'radio'};
+const pages = ['index.html','event.html','getting-around.html','restaurants.html','activities.html','everyday.html','radio.html','costs.html','sources.html'];
+const topics = {'event.html':'event','getting-around.html':'transport','restaurants.html':'food','activities.html':'activities','everyday.html':'everyday','radio.html':'radio'};
 const data = topic => JSON.parse(fs.readFileSync(`data/${topic}.json`));
 
 for (const width of [320, 360, 768, 1440]) {
@@ -60,7 +60,7 @@ test('mobile navigation, skip link and canonical deep link', async ({page}) => {
   const toggle = page.locator('.nav-toggle');
   await toggle.click();
   await expect(toggle).toHaveAttribute('aria-expanded','true');
-  await expect(page.getByRole('navigation').getByRole('link')).toHaveCount(8);
+  await expect(page.getByRole('navigation').getByRole('link')).toHaveCount(9);
   await page.getByRole('navigation').getByRole('link',{name:'Sports radio',exact:true}).click();
   await expect(page).toHaveURL(/radio.html$/);
   await expect(page.locator('#main-navigation [aria-current=page]')).toHaveText('Sports radio');

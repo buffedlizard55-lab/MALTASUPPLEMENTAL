@@ -35,3 +35,30 @@
 - **Traveler-specific unknowns:** booking confirmation, party size/ages, flights, meal plan, actual ticket, itinerary, device, insurance, and personal expenses remain unknown. Keep planner fields blank until the traveler provides them.
 
 The current workstream ownership, dependencies, and next-session tasks remain in `docs/PLAN.md`; cross-topic details are in `docs/HANDOFF.md`; all open items are maintained in `docs/OPEN_QUESTIONS.md`.
+---
+
+## Workstream H status — PR #42, 11 October 2026 (`arena/154ca483-maltasupplemental`)
+
+Everything above describes the state as of the PR #33 audit pass. **This section is authoritative for the current merged tree**, which adds workstream H on top of it. **Delivery vehicle: PR #42** — https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/42.
+
+`main` carried 165 records across six data files and eight active pages. This session added the event topic and reconciled twice — first against PR #39's extension pass, then against PR #33's audit pass.
+
+| Owner | Canonical data / page | Integrated scope | Remaining |
+|---|---|---|---|
+| **H · CS2 event (new)** | `data/event.json` / `event.html` | **8 records** and the site's **ninth active page**, promoted out of the retired noindex stub set (so HTML pages stayed at 15). Venue address and map pin, ticketing terms, dates and phases, the published daily agenda, match clocks in Malta time, team field including the 9 Oct Virtus.pro → NIP substitution, format and prize split, broadcast talent, official streams, on-site practicalities. | Sat 17 / Sun 18 agenda rows and all nine FAQ answers are client-side and did not render; current inventory and whether a reservation guarantees admission; the attendee gate; Thu 15 / Fri 16 match clocks were published by no source at any timezone; the NIP substitution is not officially republished (OQ-H5). **No ticket has been secured by this project.** |
+| A · Transport (additions) | `data/transport.json` / `getting-around.html` | 25 → **27 records**. Two unique additions: **`tq-event-special-services`** (the TQ1 corridor through Qawra — a possibility to watch for, not a plan) and **`white-taxi-official-tariff`** (Transport Malta's published meter maxima, read directly, with the April-2022 currency caveat). Two checklist items added to the page. | OQ-H3 (will TQ1 run?) and OQ-H7 (tariff currency, unmeasured road distance). |
+| F · Expenses (corrections) | `data/expenses.json` | Still **25 rows, still blank by default**. Three rows left stale at 2026-10-09 were brought in line with the transport findings: `event-commute` (no longer implies the event end time is unsettled), `taxi-rideshare` (reframed from "contingency" to the realistic fallback), `local-bus-and-cards` (now carries the €27 Explore Flex recommendation). `event-access` kept as written with only the two budget-relevant FAQ gaps appended. | Actual amounts, party size, flights, reimbursement — unchanged, still traveller-supplied. |
+| G · Integration | Shared files | Edited serially per the ownership protocol: `js/site.js` nav 8 → 9; `scripts/validate_site.py` (`EXPECTED_PAGES` + topic-file count 6 → 7); `tests/site.spec.js` (page list, topic map, nav count); `index.html`; `getting-around.html`; `sources.html`; `README.md`; and this docs set. | No physical radio scan, no manual graphical screenshot, no external-link liveness test. |
+
+**Language was aligned to PR #33's audit qualifications.** That pass deliberately downgraded the return-gap finding from `verified` to `partially verified` and reframed it as a *risk from one static Route 186 variant* rather than proof that no later bus exists. This branch's wording was rewritten to match — in `index.html`, `README.md`, `event.html`, `getting-around.html` and the three expense rows — so the reconciliation does not silently re-strengthen a claim the audit softened. The TQ1 finding reinforces that caution rather than undercutting it: it is a second reason not to treat one timetable variant as the whole network.
+
+**Duplicates deliberately dropped.** The parallel session independently found the same Eventbrite listing, so this branch dropped its own overlapping records rather than duplicating them: `event-day-late-return` and `venue-nearest-bus-stops` were superseded by `main`'s `event-day-late-finish-return-gap` and `mfcc-official-bus-186`, and its `twc-2026-venue-dates` and `mpt-fares-cards` rewrites were dropped in favour of `main`'s. One limitation is **withdrawn**: "18–19 October is not forecast" is obsolete, because `main` located the Met Office Valletta view reaching 12–19 October. Reasoning is in `docs/PLAN.md` and `docs/HANDOFF.md`.
+
+### Gates on the merged tree
+
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files / **175 exact-schema records** / **305 unique record URLs all present in `docs/SOURCES.md`** / 15 HTML pages / 170 link attributes / **9 shared-navigation destinations** / 25 expense rows wired.
+- `python3 scripts/check_javascript.py` and `node --check js/site.js` — **PASS**; `git diff --check` clean.
+- `npm ci && npm test` — **PASS, 11/11 Playwright**, including `main`'s itinerary quick-fill regression.
+- Counts: transport 27, event 8, food 38, activities 39, everyday 18, radio 20, expenses 25.
+
+Two mechanical notes for the next session. The repository had been fetched **shallowly**, which made `main` and this branch appear to be unrelated roots with no merge-base; `git fetch --unshallow` restored real ancestry before the rebase. And one earlier local commit was rolled back by the workspace before pushing, so the work was recommitted and every gate re-run from a fresh `npm ci`.
