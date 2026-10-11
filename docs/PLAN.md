@@ -7,14 +7,18 @@ Arena fixes this session to `arena/dd9dd00c-maltasupplemental` and does not prov
 | Stream | Owned files | This session |
 |---|---|---|
 | A · Transport | `data/transport.json`, event-day notes on `getting-around.html` | Re-read Route 186 evening grids, fares and service updates. Add the Saqqajja stop-4627 closure as its own record. Do not invent a saved journey. |
-| B · Food | `data/food.json` | Re-read the Qawra TripAdvisor list far enough to record the Featured methodology, sponsored cards and the first three numbered entries. Do not call that a popularity ranking. |
-| C · Activities / event | `data/activities.json`, `data/event.json` | Re-read Eventbrite and the official Thunderpick finals page. Record the visible six-team lineup and the hidden View all control. Do not settle NIP vs Virtus.pro. |
-| D · Everyday | `data/everyday.json` | Re-read Government of Malta electricity wording and the Malta Met Office seven-day panel. Do not reopen every older forecast. |
+| B · Food | `data/food.json` | Re-read the Qawra TripAdvisor list far enough to record the Featured methodology, sponsored cards and the first three numbered entries. Do not call that a popularity ranking. Keep the separate review-volume capture from `main`. |
+| C · Activities / event | `data/activities.json`, `data/event.json` | Re-read Eventbrite and the official Thunderpick finals page. Record the visible six-team lineup and the hidden View all control. Keep the HLTV/Hotspawn/Liquipedia group record already on `main`; do not treat Eventbrite’s incomplete image block as a contradiction. |
+| D · Everyday | `data/everyday.json` | Re-read Government of Malta electricity wording and the Malta Met Office seven-day panel. Do not reopen every older forecast. Keep the EES/ETIAS conflict already recorded on `main`. |
 | E · Radio | `data/radio.json` | Re-read BBC Sportsworld episode JSON and the Premier League amendment article. Keep UK schedules separate from Malta reception. |
 | F · Expenses | `costs.html` keyword matcher only | Add adapter/radio-receiver keywords that map to the existing incidentals row. Do not prefill amounts. |
 | G · Integration | `index.html`, hubs, docs, tests, PR | Scannable executive summary, event-day bus checks, useful hubs instead of “page moved”, then validate, open the PR from this branch and merge it to `main`. |
 
-Dependencies: shared schema and shell already exist. G waits until A–F data edits are in the files. No workstream rewrites another topic’s page.
+Dependencies: shared schema and shell already exist. G waits until A–F data edits are in the files. No workstream rewrites another topic’s page. `origin/main` moved during the session (PRs #51 and #52); those records are retained in the merge.
+
+## Prior delivery session — `arena/09cdfbf0-maltasupplemental` (11 October 2026)
+
+Started from `origin/main` at `250e6bd` (merge of PR #48). Closed the food review-volume gap, recorded that no public PC café was listed, and hardened the EES/ETIAS notes. Merged as PR #51.
 
 ## Historical delivery session — `arena/502e2dae-maltasupplemental` (11 October 2026)
 

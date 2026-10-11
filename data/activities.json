@@ -72,12 +72,12 @@
       "address": "Not applicable to the field list; see the venue record in the transport guide for address context",
       "hours": "Competitive Finals 14–18 October 2026 (Group Stage 14–16 October, Playoffs 17–18 October)",
       "price range": "A Hotspawn/Eventbrite listing read 11 October advertised a free reservation; current inventory and the traveler’s reservation remain unconfirmed.",
-      "description": "The organizer describes eight-team CS2 Finals, a US$1 million prize pool and live Twitch/Kick/YouTube broadcasts. Its 16 September announcement named Virtus.pro, but 9 October reports from HLTV and presenting partner Hotspawn say Ninjas in Pyjamas replaces that team after visa/health problems. The event desk keeps the field update, format, talent and third-party bracket clocks together; older field lists are not the current lineup. The 11 October Eventbrite lineup block visibly named Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all; it did not display a complete eight-team list.",
+      "description": "The organizer describes eight-team CS2 Finals, a US$1 million prize pool and live Twitch/Kick/YouTube broadcasts. Its 16 September announcement named Virtus.pro, but 9 October reports from HLTV and presenting partner Hotspawn say Ninjas in Pyjamas replaces that team after visa/health problems. Liquipedia independently records the same 9 October replacement and lists Virtus.pro under former participants. Groups recorded from those pages: Group A Falcons, NIP, 9z, Aurora; Group B FURIA, BETBOOM, Legacy, PARIVISION; two best-of-three GSL groups feeding a single-elimination playoff with a third-place decider and a best-of-five grand final. The 11 October Eventbrite lineup block visibly named Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all; it did not display PARIVISION or NIP, so the ticket page alone is not the complete field. The event desk keeps the field update, format, talent and third-party bracket clocks together; older field lists are not the current lineup.",
       "source_url": "https://www.prnewswire.com/news-releases/thunderpick-world-championship-2026-reveals-eight-team-field-for-1-million-malta-finals-302880720.html",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Current integration re-read the full 16 September organizer release, the main HLTV article body at https://www.hltv.org/news/45688/thunderpick-world-championship-matchups-announced-with-virtuspro-replaced-by-nip and the complete Hotspawn report at https://www.hotspawn.com/counter-strike/news/nip-replace-virtus-pro-at-thunderpick-world-championship-2026 . The later reporting supersedes the Virtus.pro slot in the older release. Organizer phase/format reference: https://world-championship.thunderpick.io/2026-finals/ . See event.html#twc-teams-format and event.html#twc-match-times-malta for the qualified details. Stream access is not terrestrial radio; future rosters and clocks can change. Eventbrite visible lineup, 11 October 2026: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . Hidden names behind View all were not extracted."
+      "notes": "Current integration re-read the full 16 September organizer release, the main HLTV article body at https://www.hltv.org/news/45688/thunderpick-world-championship-matchups-announced-with-virtuspro-replaced-by-nip and the complete Hotspawn report at https://www.hotspawn.com/counter-strike/news/nip-replace-virtus-pro-at-thunderpick-world-championship-2026 . The later reporting supersedes the Virtus.pro slot in the older release. Liquipedia's event page records the 9 October withdrawal/replacement and the same group composition: https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026 . HLTV's matchup article also gives the host-region rule: because the withdrawal came within 20 days of the event, the replacement had to come from the next eligible team in the host region's VRS — here Europe, which is NIP. Organizer phase/format reference: https://world-championship.thunderpick.io/2026-finals/ . See event.html#twc-teams-format and event.html#twc-match-times-malta for the qualified details. Stream access is not terrestrial radio; future rosters and clocks can change. Eventbrite visible lineup, 11 October 2026: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . Hidden names behind View all were not extracted, so that page does not by itself confirm NIP or PARIVISION."
     },
     {
       "id": "gzira-mosta-2026-10-14",
@@ -597,12 +597,12 @@
       "address": "BLAST Arena Studios Malta, MFCC South Gate National Stadium, Attard ATD 4000. Attendee gate unconfirmed.",
       "hours": "Check-in 09:30 · games 10:30 · agenda ends 22:30. Times as displayed by the listing; confirm venue-local clock times with the organizer.",
       "price range": "Free 18+ reservation advertised for the event; your reservation and per-day ticket validity are unconfirmed. Transport/food extra.",
-      "description": "The visible listing provides Wednesday check-in and games times. Its overall headline ends at 22:00 but this agenda row ends at 22:30; confirm the finish before arranging the return.",
+      "description": "The visible listing provides Wednesday check-in and games times. Its overall headline ends at 22:00 but this agenda row ends at 22:30; confirm the finish before arranging the return. **Independent corroboration added in this pass:** the published Wednesday 14 October schedule places the first matches at 10:30, 13:00, 15:30 and 18:30 CEST — 9z v Aurora 10:30, Falcons v NIP 13:00, Legacy v PARIVISION 15:30, FURIA v BETBOOM 18:00 — which matches the listing's \"games 10:30\" start. If four matches run from 10:30 to 18:30, an end time of 22:00–22:30 is plausible but still not confirmed; these are scheduled start times from esports databases, not door times or a guaranteed finish.",
       "source_url": "https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841",
       "source_type": "official",
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
-      "notes": "Organizer stage dates: https://world-championship.thunderpick.io/2026-finals/ . Visible agenda/ticket conditions: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . No matches, attendance or personal timetable are booked by this guide. Consult the Transport records for route candidates; no dated hotel-to-gate journey has been saved."
+      "notes": "Organizer stage dates: https://world-championship.thunderpick.io/2026-finals/ . Visible agenda/ticket conditions: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . Wednesday match times (10:30, 13:00, 15:30 and 18:30 CEST) corroborated in this pass by HLTV at https://www.hltv.org/news/45688/thunderpick-world-championship-matchups-announced-with-virtuspro-replaced-by-nip and Liquipedia at https://liquipedia.net/counterstrike/Thunderpick/World_Championship/2026 ; both are third-party esports sources, so treat them as scheduled start times rather than organizer guarantees. No matches, attendance or personal timetable are booked by this guide. Consult the Transport records for route candidates; no dated hotel-to-gate journey has been saved."
     },
     {
       "id": "twc-day-2026-10-15",
@@ -663,6 +663,51 @@
       "date_checked": "2026-10-11",
       "confidence": "partially verified",
       "notes": "Organizer stage dates: https://world-championship.thunderpick.io/2026-finals/ . Visible agenda/ticket conditions: https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 . No matches, attendance or personal timetable are booked by this guide. Consult the Transport records for route candidates; no dated hotel-to-gate journey has been saved."
+    },
+    {
+      "id": "eco-sports-bugibba",
+      "name": "Eco Sports Limited — bike, e-bike, SUP and kayak rental",
+      "category": "Outdoor activity · Buġibba (near the hotel)",
+      "area": "Buġibba, St Paul’s Bay",
+      "address": "8 Triq L-Imsell, Buġibba, San Pawl il-Baħar, SPB 2440, Malta · +356 9947 1627 · bookings@ecosportsltd.com",
+      "hours": "Listed by review platforms and a directory as split opening hours 09:00–13:00 and 17:00–19:00. The operator’s own booking pages show a request form rather than a posted timetable.",
+      "price range": "Published operator daily rates: MTB E-Bike €35 (multiday from €33.33 at 3 days to €25.00 at 21 days); MTB Platinum €30; MTB Gold €25; MTB Silver €17; Trekking Bike €20; 24″ MTB €15; MTB Kids €15 (ages 8–12, must be accompanied). Stand Up Paddle Board from €30; Double SUP €50. Guided bike/e-bike tours from €55 per person (listed as 3 hours, 12–20 people). Malta delivery with collection €20; Gozo delivery €50.",
+      "description": "A practical, independently run way to see more of the island than Qawra without using a bus: rental of mountain, trekking and electric bikes plus SUP/kayak hire, and guided tours including a Valletta and Three Cities highlights ride. This is the strongest publicly priced, operator-confirmed recreation lead found near the hotel this pass, and it is a genuine alternative to an event day that finishes after the last bus back to Qawra.",
+      "source_url": "https://ecosportsltd.com/",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Operator pages read in full 11 October 2026: https://ecosportsltd.com/ , https://ecosportsltd.com/bike-rentals/ , https://ecosportsltd.com/watersports-rentals/ , https://ecosportsltd.com/rent/mtb-e-bike-booking-request/ . Prices are the operator’s published daily rates, not a quote for specific dates, and the booking pages are request forms rather than an instant checkout. Dated review-platform evidence on the same day: 4.9 from about 158 reviews, ranked first of five “Nature & Parks” entries in Buġibba (https://www.tripadvisor.com/Attraction_Review-g608948-d5567696-Reviews-Eco_Sports_Malta-Bugibba_St_Paul_s_Bay_Island_of_Malta.html) . A TripAdvisor owner reply quotes much cheaper historic rates (MTB €10, trekking €15, e-bike €20 per day) — those are older owner-posted prices and are not the current published rate; treat the operator page as current. Reviewers describe busy, narrow roads and few bike paths, so plan routes for morning light and confirm helmet/lock/repair-kit inclusion at booking. Malta drives on the left."
+    },
+    {
+      "id": "empire-cinema-arcade-bugibba",
+      "name": "Empire Cinema, Buġibba — arcade games room",
+      "category": "Arcade / games room · Buġibba",
+      "area": "Buġibba, St Paul’s Bay",
+      "address": "Buġibba, St Paul’s Bay. Street address and current opening hours not verified from an operator page in this pass.",
+      "hours": "Not verified. Sessions run around film showings according to the local listing below; check before going.",
+      "price range": "Not checked. Arcade credits are normally charged per play, but no current price sheet was read.",
+      "description": "The local listing describes the Empire Cinema as popular with local young people partly because of its arcade games room, with a bar, restaurant and food store under one roof. That makes it the closest thing to casual, walk-in gaming in the Buġibba strip, which matters because no public PC-gaming café was verified in this research.",
+      "source_url": "https://www.maltascout.com/en/attraction/cinema/the-empire-cinema",
+      "source_type": "review",
+      "date_checked": "2026-10-11",
+      "confidence": "unverified",
+      "notes": "Independent Malta listing directory, read via search extract on 11 October 2026 — this session could not open the page directly, so the description is a search-index extract rather than a full page read. It is a cinema with an arcade room, not a PC café, not a venue with tournament PCs, and not an esports club. No age restriction, price list or current trading status was confirmed. Do not plan an event night around it."
+    },
+    {
+      "id": "malta-game-entertainment-directory-2026-10-11",
+      "name": "Malta game & entertainment centres — dated directory read, no walk-in PC venue",
+      "category": "Gaming directory & limitations",
+      "area": "Malta-wide",
+      "address": "Not applicable — platform category listing",
+      "hours": "Directory read 11 October 2026. Opening hours shown per venue were inconsistent between captures and are not transcribed here as facts.",
+      "price range": "Not a price source. Individual venues publish their own prices (for example The Eden’s arcade credits and MULTIMAXX laser/VR pricing, which have their own records here).",
+      "description": "A dated read of the platform’s Malta “Game & Entertainment Centers” category listed MultiMaxx, Laser Tag Malta (marked “Temporarily closed” in this capture), Falcon Archery Malta, The Eden and Gravity Malta / Jurassic Immersive Experience. Arcade and entertainment centres are real and walk-in; a public PC-gaming café for a CS2 attendee is not on that list. This confirms the gap already recorded for esports venues: this research has still not found a venue offering walk-in PC sessions to the public.",
+      "source_url": "https://www.tripadvisor.com/Attractions-g190311-Activities-c56-t110-Malta.html",
+      "source_type": "review",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Platform category page captured 11 October 2026 via search extract; the page could not be opened directly in this session. The Eden’s own hours appeared on a second platform capture (Thursday 11:00–00:00, Friday to 01:00, Saturday 10:00–01:00, Sunday and Monday to midnight, Tuesday and Wednesday to midnight) but that capture is undated beyond “2026 Reviews”, so it is a lead, not a timetable. “Temporarily closed” is the platform’s status word and not proof of permanent closure. A tournament organiser, bootcamp or team training session is a different product from walk-in public play and must not be presented as one."
     }
   ]
 }

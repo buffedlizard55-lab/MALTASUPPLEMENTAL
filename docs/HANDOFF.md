@@ -3,7 +3,7 @@
 **Session:** `arena/dd9dd00c-maltasupplemental` · **updated:** 11 October 2026 UTC.
 
 - **A → G:** Service updates re-read in full. Route 186 October diversion remains Friday/Saturday 19:00–00:00 starting 17 October and ending 18 October at midnight, Gholja 2 through Targa toward Buġibba. A separate notice closes Saqqajja stop 4627 on Route 186 until “January 1” with no year. An earlier same-day operator trace places that stop before Stadium 2194 on the return. This pass did not re-walk the chain, so do not tell the traveler the Stadium stop is closed or guaranteed to be served.
-- **C → A/E:** Eventbrite still hides Saturday/Sunday agenda and FAQ answers. The visible lineup names Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all. That does not confirm NIP, PARIVISION or Virtus.pro, and it is not radio carriage.
+- **C → A/E:** Eventbrite still hides Saturday/Sunday agenda and FAQ answers. Its visible lineup names Legacy, Falcons, FURIA, Betboom, 9z and Aurora, then View all. HLTV, Hotspawn and Liquipedia say NIP replaced Virtus.pro and name PARIVISION in Group B. That is not radio carriage, and the 16 September organizer release still named Virtus.pro.
 - **B → G:** TripAdvisor Qawra Featured order on 11 October numbered Riccardo, Minoa and Cheeky Monkey as 1–3, with sponsored cards above them. Cheeky Monkey had more reviews than the number-1 entry. Do not rank from that order.
 - **D → G:** Malta Met Office seven-day panel still ends 17 October. Do not say the national panel covers 18–19 October.
 - **E → G:** BBC episode JSON still starts 17 October at 14:06 +01:00 and 18 October at 15:06 +01:00. HTML “Local time” is viewer-dependent. No Malta reception test.
