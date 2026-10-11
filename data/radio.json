@@ -153,6 +153,21 @@
       "date_checked": "2026-10-11",
       "confidence": "verified",
       "notes": "Independently read 11 October: https://www.premierleague.com/en/news/4688862/fixture-amendments-for-premier-league-matches-in-october-and-november. Default kickoffs 15:00 BSTunless otherwise stated; MaltaCESTUTC+2 as sourced in the everyday guide. Recheck changes/postponements. The article also contains a Listen live section requiring Premier League sign-in; territory, fixture selection, price and Malta access not tested. Its 08:30 clock lacks date/zone context, so no stream airtime inferred. No relationship between these fixtures, BBC World Service commentary and Kalshi markets established."
+    },
+    {
+      "id": "kalshi-epl-serie-a-radio-overlap-oct-2026",
+      "name": "Kalshi EPL, Serie A & CS2 markets vs. Malta radio schedules (13–19 Oct)",
+      "category": "Coverage checks",
+      "area": "Trip-window broadcast and market schedule comparison (Malta CEST, UTC+2)",
+      "address": "Not applicable — schedule comparison between Kalshi market pages and Malta-listed radio stations",
+      "hours": "Kalshi trip-window soccer kickoffs (converted from EDT to Malta CEST, UTC+2): Fri 16 Oct Serie A Frosinone vs Sassuolo 20:45; Sat 17 Oct EPL Everton vs Chelsea 13:30, Man City vs Ipswich / Fulham vs Hull / Brentford vs Liverpool 16:00, Newcastle vs Aston Villa 18:30, plus Serie A Venezia vs Napoli 15:00, Bologna vs Inter 18:00, Roma vs Genoa 20:45; Sun 18 Oct EPL Leeds vs Man United / Brighton vs Crystal Palace / Bournemouth vs Sunderland 15:00, Nottingham Forest vs Arsenal 17:30.",
+      "price range": "Radio broadcasts are free-to-air with a suitable receiver; Kalshi market pricing/eligibility in Malta is not verified",
+      "description": "Kalshi’s EPL and Serie A pages checked on 11 October list trip-weekend soccer markets on 16–18 October whose kickoff windows directly overlap BBC World Service Sportsworld (Sat 17 Oct about 15:06–18:59 CEST; Sun 18 Oct about 16:06–19:59 CEST), Rai Radio Uno Tutto il calcio, and Radio Sportiva Diretta Sportiva (Sat–Sun 15:05–17:00 CEST plus potential Serie A evening windows). However, a Kalshi market listing is not proof of Malta radio commentary: BBC and Radio Sportiva had not published their match-by-match commentary selection for 16–18 October when checked, no Malta radio station was found carrying CS2/TWC, and Kalshi account/trading access while physically in Malta is not assumed.",
+      "source_url": "https://kalshi.com/category/sports/soccer/epl",
+      "source_type": "official",
+      "date_checked": "2026-10-11",
+      "confidence": "partially verified",
+      "notes": "Kalshi category pages checked 11 October 2026: EPL https://kalshi.com/category/sports/soccer/epl , Serie A https://kalshi.com/category/sports/soccer/serie-a , Soccer overview https://kalshi.com/category/sports/soccer , Sports overview https://kalshi.com/category/sports/all-sports , and CS2 esports https://kalshi.com/category/sports/esports/cs2 (on 11 Oct, visible CS2 game markets covered 10–11 Oct rather than 14–18 Oct TWC Finals). Overlapping radio schedules: BBC Sportsworld https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming and Radio Sportiva https://www.radiosportiva.com/palinsesto/ . Do not treat a market or fixture list as a guarantee of live radio commentary, indoor DAB+ reception, or jurisdictional trading eligibility in Malta."
     }
   ]
 }

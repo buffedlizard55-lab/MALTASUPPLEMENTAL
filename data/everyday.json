@@ -7,7 +7,7 @@
     {
       "id": "malta-electricity",
       "name": "Power adapters and voltage",
-      "category": "Packing & utilities",
+      "category": "Power, connectivity & weather",
       "area": "Malta",
       "address": "Not applicable — island-wide electrical standard",
       "hours": "Not applicable",
@@ -22,7 +22,7 @@
     {
       "id": "malta-currency-cards",
       "name": "Currency and card planning",
-      "category": "Money & payments",
+      "category": "Money, cards & tipping",
       "area": "Malta",
       "address": "Not applicable — island-wide currency",
       "hours": "Not applicable",
@@ -37,7 +37,7 @@
     {
       "id": "malta-language",
       "name": "Language",
-      "category": "Local basics",
+      "category": "Language, time, driving & local laws",
       "area": "Malta",
       "address": "Not applicable — national languages",
       "hours": "Not applicable",
@@ -52,7 +52,7 @@
     {
       "id": "malta-local-time",
       "name": "Local time during the trip",
-      "category": "Local basics",
+      "category": "Language, time, driving & local laws",
       "area": "Malta",
       "address": "Not applicable",
       "hours": "13–19 October 2026: Central European Summer Time (CEST), UTC+2. Daylight saving time ends on Sunday 25 October 2026.",
@@ -67,7 +67,7 @@
     {
       "id": "us-passport-schengen",
       "name": "Entry rules if travelling on a U.S. passport",
-      "category": "Entry & border",
+      "category": "Entry, passport, EES & ETIAS",
       "area": "Malta / Schengen Area",
       "address": "Not applicable",
       "hours": "Not applicable — entry requirements apply at the external Schengen border",
@@ -82,7 +82,7 @@
     {
       "id": "ees-border-system",
       "name": "EU Entry/Exit System (EES) at the border",
-      "category": "Entry & border",
+      "category": "Entry, passport, EES & ETIAS",
       "area": "External borders of participating European countries, including Malta",
       "address": "Not applicable",
       "hours": "Fully operational at participating external border crossings from 10 April 2026; processing time depends on the border crossing and queue",
@@ -97,7 +97,7 @@
     {
       "id": "etias-status-2026-10",
       "name": "ETIAS travel authorisation status",
-      "category": "Entry & border",
+      "category": "Entry, passport, EES & ETIAS",
       "area": "European countries requiring ETIAS, including Malta",
       "address": "Not applicable",
       "hours": "Official EU site checked 11 October 2026: not operational; no applications collected; exact launch date unannounced.",
@@ -111,8 +111,8 @@
     },
     {
       "id": "emergency-medical-112",
-      "name": "Emergency number (112) and health cover",
-      "category": "Safety & health",
+      "name": "Emergency number and health cover",
+      "category": "Safety, health & emergency contacts",
       "area": "Malta",
       "address": "Not applicable — emergency services are island-wide",
       "hours": "112 emergency service and 179 national helpline: 24 hours a day",
@@ -127,7 +127,7 @@
     {
       "id": "us-embassy-malta",
       "name": "U.S. Embassy Malta contact",
-      "category": "Safety & health",
+      "category": "Safety, health & emergency contacts",
       "area": "Ta’ Qali, Attard",
       "address": "U.S. Embassy Malta, Ta’ Qali National Park Street, Attard ATD 4000, Malta",
       "hours": "Emergency after-hours number is the same main number; routine services require the embassy’s current appointment guidance",
@@ -142,7 +142,7 @@
     {
       "id": "coastal-safety",
       "name": "Coastal safety and current advisory",
-      "category": "Safety & health",
+      "category": "Safety, health & emergency contacts",
       "area": "Malta’s beaches and coastline",
       "address": "Not applicable — follow local beach/lifeguard notices",
       "hours": "Not applicable",
@@ -157,7 +157,7 @@
     {
       "id": "left-hand-driving",
       "name": "Road orientation if taking a car or crossing streets",
-      "category": "Getting around",
+      "category": "Language, time, driving & local laws",
       "area": "Malta",
       "address": "Not applicable",
       "hours": "Not applicable",
@@ -172,7 +172,7 @@
     {
       "id": "cannabis-cbd-warning",
       "name": "Do not bring cannabis or CBD products",
-      "category": "Local laws & customs",
+      "category": "Language, time, driving & local laws",
       "area": "Malta border and local law",
       "address": "Not applicable",
       "hours": "Not applicable",
@@ -187,7 +187,7 @@
     {
       "id": "malta-mobile-options",
       "name": "Mobile data: check roaming or a local prepaid SIM/eSIM",
-      "category": "Phone & connectivity",
+      "category": "Power, connectivity & weather",
       "area": "Malta",
       "address": "GO and Melita offer online/app and shop-based prepaid options; no specific shop selected",
       "hours": "Service and shop support hours vary by provider",
@@ -202,7 +202,7 @@
     {
       "id": "october-weather-forecast",
       "name": "October weather: check the local forecast, not a fixed assumption",
-      "category": "Weather & packing",
+      "category": "Power, connectivity & weather",
       "area": "Malta International Airport / Maltese Islands",
       "address": "Not applicable",
       "hours": "11 October Met Office snapshot: 13 Oct isolated showers 26/19°C; 14 Oct mainly sunny 24/18°C; 15–16 Oct mainly sunny 25/17°C; 17 Oct mainly cloudy 23/18°C. Forecast does not yet include 18–19 Oct.",
@@ -217,7 +217,7 @@
     {
       "id": "tipping-no-fixed-rate-verified",
       "name": "Tipping: no fixed percentage verified",
-      "category": "Local laws & customs — open research item",
+      "category": "Money, cards & tipping",
       "area": "Malta",
       "address": "Not applicable",
       "hours": "Not applicable",
