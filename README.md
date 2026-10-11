@@ -77,7 +77,7 @@ npm ci
 npm test
 ```
 
-The suite checks the nine active pages at 360/768/1440 px, responsive overflow, axe WCAG 2A/AA/2.1AA rules, data/render parity, navigation/deep links, filtering, expense persistence/CSV/reset, invalid amounts, denied/corrupt storage, and data-fetch failures. It does not test physical radio reception, external booking availability, personal eligibility, every browser/device, or exhaustive assistive-technology compatibility. Generated screenshots/reports and `node_modules` are ignored.
+The suite checks the nine active pages at 320/360/768/1440 px, responsive overflow, axe WCAG 2A/AA/2.1AA rules, data/render parity, navigation/deep links, filtering, expense persistence/CSV/reset, invalid amounts, denied/corrupt storage, and data-fetch failures. It does not test physical radio reception, external booking availability, personal eligibility, every browser/device, or exhaustive assistive-technology compatibility. Generated screenshots/reports and `node_modules` are ignored.
 
 ## 11 October research and verification boundary
 

@@ -21,7 +21,7 @@
 - The fixed follow-up branch was reconciled to that `main` and contributes only net-new corrections: costs-page event-access wording and quick-fill example; the activities callout wording + CS2-event-guide link; the radio stream wording; and the activities tournament records updated for the 9 October Virtus.pro → NIP substitution. No record was added, removed or renamed.
 - Counts and gates on the reconciled branch: validator **PASS** (7 datasets / 176 records / 307 logged URLs / 15 HTML pages / 181 link attributes / 9 nav destinations / 25 expense rows); `check_javascript.py` and `node --check js/site.js` **PASS**; `npm test` **PASS** (11/11 Playwright, 320/360/768/1440 px, axe, parity, planner); `git diff --check` **PASS**.
 - Open items are unchanged from the sections below and `docs/OPEN_QUESTIONS.md`: the FAQ answers, the Saturday/Sunday agenda, the attendee gate and walk, the TQ1 monitor, the October single fare, and the taxi tariff's April-2022 vintage.
-- Delivery: the branch is pushed and PR #44 carries these corrections; the merge and the Pages build are recorded here only after they are observed.
+- Delivery (observed): PR #44 was merged by explicit number on 11 October 2026 at 16:01:59 UTC as merge commit `c7d1d00`; CI on `main` (run 38153759615) reported **SUCCESS** and the GitHub Pages build for `c7d1d00` reported **built**. The nine active pages were re-fetched live after the build and carry the corrected content; `main` is now `c7d1d00`.
 
 ## Integration state
 
