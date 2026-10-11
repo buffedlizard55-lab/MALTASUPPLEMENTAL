@@ -29,6 +29,10 @@ The repository was reviewed first and left intact: static Pages site, canonical 
 - **Last-return reproducibility (OQ-S1).** A later session could not reproduce the Stadium 2194 “20:53/20:54” rows, and this session's own chunk read reproduced only the opposite direction. A reproducibility caveat was added to the three affected transport records and to the transport page and overview checklist: the direction problem (the return terminates at Buġibba Bay 1, not Qawra) and the need for a date-specific planner check are the solid facts; the exact last minute is published-grid evidence requiring confirmation.
 - **DAB+ directory wording (OQ-S3).** The claim that the operator directory was “read in full” is withdrawn — it ends in a “Load more” control — so the radio record now says the *visible* listing showed no “Sports Channel” entry and that the absence is not exhaustive.
 
+### Delivery — observed (not predicted)
+
+PR #60 was merged into `main` at **2026-10-11 18:43:26 UTC**; GitHub reports merge commit `b8af702b664893ce00c6d4951c178fd7a1b92190`. Its required check, “Schema, browser and accessibility checks”, passed on the pushed head (`9c8e05a`) in 1 m 13 s, and the PR was `MERGEABLE` before merge. The GitHub Pages latest-build endpoint reports status `built` for the same merge commit. The published `radio.html` was then fetched and contains the new trip-window live-sport table, the BFBS negative bullet and the PBS lead bullet, and the published `index.html` carries the corrected executive-summary line — a browser-level content check of the deployment, not a crawl of every external link and not an RF or service test.
+
 ### Still to do next session
 
 1. Confirm the reservation, gate, ID rules, per-day validity, weekend agenda and the 18:00 vs 18:30 opener outlier with the organiser.
