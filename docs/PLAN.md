@@ -1,102 +1,48 @@
-# Current session plan — `arena/104c434a-maltasupplemental` (12 October 2026, UTC)
+# Current session plan — `arena/33cc3d09-maltasupplemental` (12 October 2026, UTC)
 
-## Repository review and integration boundary
+## Repository review and execution boundary
 
-The repository was reviewed before any edit: Pages shell, exact 13-field record schema, seven datasets, shared renderer/navigation/CSS, expense planner, source log, status/handoff/open-question logs and the validate/JS/Playwright-axe gates are retained untouched in structure. Arena fixes one branch per session, so the parallel-work protocol ran with the established A–G file-ownership map on this single branch, G integrating shared files last; cross-stream findings go to `docs/HANDOFF.md`, unresolved items to `docs/OPEN_QUESTIONS.md`, sources to `docs/SOURCES.md`.
+Reviewed the existing static GitHub Pages site before editing: 15 HTML pages, seven canonical datasets, the exact 13-field schema, shared navigation/renderer and design tokens, source log, status/handoff/open-question records, expense planner, and validator + JavaScript + Playwright/axe checks are already present. Shared setup is retained serially; no new folder/schema/shell is needed. Arena fixes this session to `arena/33cc3d09-maltasupplemental`; separate workstream branches/subagents are not available, so A–F will be handled serially with strict file ownership and G will integrate shared files last. Cross-stream discoveries go to `docs/HANDOFF.md`; unresolved facts stay in `docs/OPEN_QUESTIONS.md`; all evidence dates/URLs go in `docs/SOURCES.md`.
 
-This pass on the eve of departure is a **time-critical re-read of the sources that can change a decision**, then Passes 1–3 on the integrated result. The substantive finding is recorded under E (Kalshi CS2 listing state); the only page whose factual claims changed is `radio.html` (with its index summary and test guard), while A/C/D/E gained dated re-read notes on existing records.
-
-| Stream | Owned files | This session |
+| Stream | Owned files | Dependency / focus |
 |---|---|---|
-| **A · Transport** | `data/transport.json`, `getting-around.html` | Route 186 page re-read in full (both direction series, return at Stadium 2194 through 20:53, Bugibba Bay 1 terminus, Saqqajja 4627 closure listed); TQ1 and the fares page rechecked; feed re-read with no event service; running-time arithmetic added to the page as a labelled subtraction. |
-| **B · Food & cafés** | `data/food.json`, `restaurants.html` | No change this pass; platform blocks unchanged. |
-| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `data/event.json`, `event.html` | Eventbrite and Liquipedia re-reads folded in: "Sales end soon", weekend agenda still hidden, playoff days and pairings-TBD status confirmed, HLTV matchpages recorded. |
-| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | National weather panel re-read row by row; the panel-vs-reprint difference on 17 October kept unreconciled. |
-| **E · Sports radio** | `data/radio.json`, `radio.html` | Kalshi CS2 API re-read — the four 14 October openers are now listed — plus a new record, page rewrite and retargeted regression guard; NET FM and talkSPORT rechecks. Listings stay separate from carriage. |
-| **F · Expense planner** | `data/expenses.json`, `costs.html` | Unchanged: amounts stay blank. |
-| **G · Shared shell, executive summary, integration & delivery (last)** | `index.html`, `README.md`, `docs/*`, tests | Supersession notes in README/OPEN_QUESTIONS/HANDOFF/STATUS/FINAL_REPORT/PLAN, index bullet updated, every gate re-run, PR opened and merged by explicit number. |
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Existing schema/source log; recheck trip-week official service/fare notices and avoid implying an untested date-specific journey. |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | Existing source limits/ranking scope; do not imply inaccessible platforms were reviewed. |
+| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Existing listings/official event material; separate event schedule, access and ticket claims. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Official country/US/EU health, travel and practical guidance; date-bound weather and entry status. |
+| **E · Sports radio** | `data/radio.json`, `radio.html` | Keep official programme schedule, fixture, Malta carriage and physical receiver reception as separate evidence. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html` | Preserve blank, user-entered amounts and existing preview/autosave/import/export safeguards. |
+| **G · Shell, executive summary, integration & delivery (last)** | `index.html`, `js/site.js`, `css/style.css`, `README.md`, `sources.html`, tests and `docs/*` | Integrate only after A–F; run three full passes, update records, then validate and deliver via PR on the fixed branch. |
 
-### Verification gates / passes
+### Passes
+1. **Implement/recheck:** use current source reads only where they can change trip decisions; log URLs and access dates; keep unknowns explicit.
+2. **Adversarial review:** test source-to-claim scope, route direction and date, weather/ETIAS bounds, platform coverage, radio carriage, expense privacy and stale copy.
+3. **Original-prompt audit:** check every requested topic/UI/delivery requirement against the integrated site; run validators, browser/accessibility tests and GitHub checks; report unverified facts and remaining work.
 
-1. **Pass 1 — implement and verify:** re-read the time-critical live sources; write only what they say; log every URL and access date in `docs/SOURCES.md`.
-2. **Pass 2 — adversarial review:** check the new listing claim for overreach, confirm every new URL is in the source log (the validator enforces this), correct inherited stale statements with dated notes, update the test guard, re-run schema/JavaScript/browser gates.
-3. **Pass 3 — original-request audit:** walk the traveler's requirements against the integrated tree and report only observed PR/Pages state.
+### Implementation and pass log — 12 October 2026
 
-# Previous session plan — `arena/99828d92-maltasupplemental` (12 October 2026 UTC)
+- **Pass 1:** completed the current re-reads and integrated them into canonical data/pages: separate Google Maps profile snapshots and platform caveats; Route 214 as a Qawra/Ta’ Qali event-area and Airport 3 candidate with date/direction caveats; official Rolex programme time/viewing note; Heritage Malta’s 19:00 lecture time with Events Malta’s conflicting 21:00 structured field recorded, not silently adopted. Updated the executive summary, food page, transport guidance, README and source/open-question/handoff documentation.
+- **Pass 2:** checked the 13-field schema, source-log coverage, generated deep-link IDs, review-ranking scope, current vs historical source dates, and transport-direction wording. Narrowed the broad Route 186 claim to a risk comparison for the three visible weekday agenda rows, added Route 214 as another planner candidate, and removed the remaining bike-entry claim that event finishes occur after the “last bus.” No date-specific journey or last-network-service claim is made.
+- **Pass 3:** audited the requested trip context, responsive accessible site, event transit/mode alternatives, restaurant/platform scope, activities/landmarks, U.S.-traveler guidance, terrestrial radio-vs-fixture-vs-reception distinction, verifiable Kalshi context, and blank-by-default itinerary quick-fill planner. The initial pre-mainline run passed all 26 Playwright tests and reported seven JSON files / 219 exact-schema records / 356 source-logged URLs / 15 HTML pages / 384 link attributes / nine navigation destinations / 25 expense rows.
+- After integrating `origin/main` PR #76 and the source/date corrections, the combined `npm test` passed all 26 Playwright tests; the validator reports 7 JSON files / 219 exact-schema records / 358 logged URLs / 15 HTML pages / 385 link attributes / 9 navigation destinations / 25 expense rows. The new weekday check passes 314 pairs. Final GitHub/check/Pages observations are recorded only after delivery.
 
-## Repository review and scope
+### Upstream integration after main advanced (PR #76)
 
-The repository was reviewed at `main` `956dfd9` (PR #72 merge) on the eve of the trip window. Everything required by the original request is already built and green on the untouched tree: a GitHub Pages static site (15 HTML pages, nine-item shared navigation, executive summary, section hubs), an exact 13-field record schema with seven datasets (218 records), per-topic pages rendered from JSON by `js/site.js`, a master source log, open-questions and status ledgers, a blank-by-default expense planner with itinerary quick-fill, a CI workflow and a Playwright/axe suite. Nothing is rebuilt and no shared setup (folder structure, schema, site shell, CSS tokens, source-log row format) is changed without a source-led reason.
+`origin/main` advanced from the branch point to merge commit `2a17b66` while this PR was open. The mainline work was integrated on the fixed Arena branch (not by switching branches). Its source re-verification and weekday/date checker are retained: the fourth opener is 18:00 Malta; a separate Route 186 Fri/Sat notice ending “April 21” without a year remains an open Friday-16 risk; hotel contact, gov.mt power/plug guidance, BFBS Malta’s 1979 closure, US HD Radio/DAB+ incompatibility and Kalshi event listings are documented with limits. `scripts/check_weekdays.py` is included in `npm test`. Conflicting shared docs were reconciled without replacing the current-session findings; the combined local gates and GitHub state must be observed after this merge.
 
-This session is a **final pre-departure verification and delivery pass** on the fixed Arena branch. Arena fixes one branch per session, so workstreams run serially on it with the established ownership map; G integrates last. Cross-topic findings go to `docs/HANDOFF.md`, unknowns stay in `docs/OPEN_QUESTIONS.md`, and every claim is logged with URL and access date in `docs/SOURCES.md`.
+### Upstream integration after main advanced (PR #77)
 
-| Stream | Owned files | This session |
-|---|---|---|
-| **A · Transport** | `data/transport.json`, `getting-around.html` | Re-read the operator's Route 186 page and the live service-updates feed (both complete, 12 Oct UTC); record the 30-minute headway, the reproduced 20:53 Stadium 2194 return and its 21:27 Buġibba Bay 1 arrival, and confirm the trip-week notice set. Add the venue's published map pin from the official ticketing listing. |
-| **B · Food & cafés** | `data/food.json`, `restaurants.html` | No new platform access; re-confirm the blocked-platform boundary rather than restate it as evidence. |
-| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Re-read the ticket listing (agenda, venue block, FAQ state) and the tournament bracket source; keep event facts separate from the generic recommendation card. |
-| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Independently reproduce the national 12–18 October forecast panel (identical values) and keep it labelled a dated forecast; leave entry/health/power claims untouched where no change was found. |
-| **E · Terrestrial sports radio** | `data/radio.json`, `radio.html` | Re-read the three official schedules already cited (BBC World Service Sportsworld, BBC Radio Scotland, Radio Sportiva), the Rai Radio 1 programme page and the DAB+ operator directory; keep fixtures, schedules, carriage and reception strictly separate. |
-| **F · Expense planner** | `data/expenses.json`, `costs.html`, `docs/ITINERARY_QUICKSTART.md` | Ship the missing piece for “quick work once the itinerary arrives”: a one-page itinerary-to-planner worksheet (accepted line formats, category mapping, five-minute workflow) wired into the planner page. Amounts stay blank. |
-| **G · Site shell, executive summary & delivery** | `index.html`, `js/site.js`, `sources.html`, `README.md`, `docs/*`, tests | Fix the one orphaned page by giving the shell a footer hub row, refresh the executive-summary bullets affected by this pass, log all new sources, run all gates, open the PR, merge it by number and record only observed GitHub/Pages state. |
+`origin/main` advanced again from `2a17b66` to `5b171b4` while PR #78 remained open. This integration preserves PR #77’s new itinerary quickstart, costs-page link, footer section hubs and styles, source page updates, two browser regression tests, and its independent dated re-reads. It also carries forward its current Route 186 frequency/arrival observation and refreshed service-feed details while keeping the distinction between a static timetable and a date-specific journey. Existing branch-only findings (Google Maps profile snapshot, BFBS year-only closure wording and Friday 16 October OQ-T5) remain intact. Resolve shared docs by retaining both provenance streams, then run Passes 1–3 and the full local suite before pushing; re-observe PR #78 only after GitHub receives the integration. The completed full local run passes: 7 JSON files / 219 records / 359 logged source URLs / 15 pages / 393 links / 25 budget rows, 321 weekday/date pairs, JavaScript syntax, and 28/28 Playwright tests with axe at five viewport widths.
 
-## Conflict avoidance
+## Mainline PR #79 / PR #80 integration — 12 October 2026
 
-One branch (this one), serial execution, one owner per file. Shared files (`index.html`, `js/site.js`, `css/style.css`, `sources.html`, `README.md`, `docs/*`) are touched only by G after A–F. No file is reformatted, no record is deleted or re-keyed, and no unverified item is presented as fact.
+`origin/main` advanced to `096b659` while PR #78 remained open. The fixed branch merge is now reconciled and its conflict paths are resolved; work remained serial, with no other branch or parallel agent used. The PR #77 quickstart, footer hubs, tests and branch-only Route 214/source history remain the basis. The 12 October mainline additions are being integrated without discarding them: (1) the four 14 October Kalshi CS2 open-market observations and explicit supersession of the prior 11 October negative result; (2) the weekend Liquipedia start clocks and Best-of-5 Grand Final format, kept separate from doors, finishes and organizer-published clocks; (3) Eventbrite's “Sales end soon” banner with ticket-price/reservation uncertainty; and (4) Route 186's reproduced static 20:53/21:27 row and approximate stop-time subtraction, not a dated trip. The branch's Route 214 evidence and all earlier transport/source notes are preserved. A malformed upstream `docs/SOURCES.md` leftover row is intentionally excluded; the two valid later Liquipedia/organizer source rows are recorded instead.
 
-## Verification gates (Passes 1–3)
-
-1. **Pass 1 — implement and verify:** each stream re-reads its live sources, writes only its owned data/page pair, and logs every claim with URL and access date; anything not confirmed stays labelled.
-2. **Pass 2 — adversarial review:** check the new records for overreach (a timetable row is not a dated last bus; a published pin is not attendee access; a schedule is not carriage; a listing is not a broadcast), re-check page/data consistency, and re-run the validator, the JavaScript check and the full Playwright/axe suite.
-3. **Pass 3 — original-request audit:** walk the user's line-by-line requirements against the integrated tree, state verified vs unverified, deliver by PR and merge, observe the Pages build, and report limitations plus next-session tasks.
+All merge paths are resolved and staged. Pass 1 integrated mainline data/pages/docs; Pass 2 caught and removed an inconsistent generalized Route 186 return-duration range, retaining the directly displayed 20:53→21:27 (34-minute) pair while noting that another reader reported 29–33 minutes across unlabelled variants; Pass 3 checked the full request and remaining gaps. `npm test` passes 28/28 browser/axe cases after this correction, with 220 exact-schema records, 364 logged source URLs, 15 pages, 395 link attributes, 25 planner rows, 342 weekday/date pairs and JavaScript syntax pass. The local merge commit is recorded; next, push only the fixed branch, re-query PR #78 and checks, and merge by explicit number only if GitHub permits; record GitHub state only after observing it.
 
 ---
 
-## Previous session plan — `arena/4d02579a-maltasupplemental` (12 October 2026, UTC)
-
-## Repository review (start of session)
-
-- Repo state: `main` = `956dfd9`, branch identical; PR #72 is the latest merge. Open PR #10 (`arena/9327905a`, a different session) is left untouched.
-- Existing site: static HTML + seven JSON datasets (218 exact-schema records), a shared renderer (`js/site.js`), a blank-by-default expense planner, Playwright/axe tests and `scripts/validate_site.py`. Baseline gates passed before any edit (validator, JavaScript, Playwright 26/26).
-- Environment limit: bash can reach only GitHub and package registries. External pages were read with the web tools (`fetch_page`, `web_search`).
-
-## Protocol adaptation
-
-The parallel protocol asks for one branch per workstream and sub-agents. This session is fixed to `arena/4d02579a-maltasupplemental`, so the workstreams ran **serially in one agent**:
-
-| Workstream | Owned files this session | Dependencies |
-|---|---|---|
-| A · Transport | `data/transport.json` (wording), `getting-around.html` (rendered) | none |
-| B · Food & cafés | none changed (no food re-read in this pass) | — |
-| C · Gaming, activities, events | `data/event.json` / `data/activities.json` read only; corrections recorded in logs | A |
-| D · Everyday | read only (plug record confirmed on gov.mt) | — |
-| E · Sports radio | read only (Kalshi, BFBS, HD Radio) | — |
-| F · Expense planner | unchanged (blank by design) | itinerary |
-| G · Integration | `scripts/check_weekdays.py`, `package.json`, `index.html` (exec summary), `README.md`, `docs/*` | A–F |
-
-Shared files (`index.html`, `README.md`, `docs/`) were edited once, at integration, not by each workstream.
-
-## Session objectives
-
-1. Re-verify the time-critical trip facts (event dates and venue, teams, opener clocks, the operator's live notices, hotel contact details, plug/voltage, radio and market listings) against live sources, and log each result with a date.
-2. Fix any error found, and close the open item where a source resolves it.
-3. Add a machine check for the one error class found: weekday/date pairs.
-4. Update the executive summary and open questions for anything that changes a decision on the trip.
-5. Run the gates, open a PR, merge it into `main`, and record the next-session work.
-
-## Verification gates and passes
-
-- **Pass 1 — implement and verify.** Re-read the operator feed (3 chunks), the organiser finals page, Liquipedia (chunk 0), the PR Newswire release, the hotel contact page, gov.mt, Kalshi events, and HLTV/Fragster/Liquipedia on the NIP replacement. Logged in `docs/SOURCES.md` (top section). Ran `npm test`.
-- **Pass 2 — adversarial review.** The new weekday check found three phrasing errors and then flagged the session's own quoted wording. Both were fixed. The fourth opener's “18:30” row was traced to a transcription error (Liquipedia 12:00 EDT = 18:00 Malta). The Route 186 “April 21” notice, which has no year, was kept as an open question (OQ-S7) rather than resolved by guesswork.
-- **Pass 3 — full request audit.** Checked the executive summary's claims one by one against the logs. Checked mobile and desktop rendering with a headless screenshot (no horizontal overflow). Recorded what is still unverified (see `docs/OPEN_QUESTIONS.md`, session section, and the handoff).
-
-## Delivery
-
-Commit to `arena/4d02579a-maltasupplemental`, push, open a PR into `main`, wait for the required check, merge by PR number, and record the merge state only after it is observed.
-
----
-
-## Previous session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
+# Previous session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
 
 ## Repository review and integration boundary
 

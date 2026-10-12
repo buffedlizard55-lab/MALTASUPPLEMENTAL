@@ -308,7 +308,8 @@ test('trip-window live-sport table separates fixtures from radio carriage', asyn
   await expect(page.locator('#trip-window-live-sport tbody tr')).toHaveCount(6);
   await expect(page.locator('#trip-window-live-sport')).toContainText('13:30');
   await expect(page.locator('#trip-window-live-sport')).toContainText('15:30');
-  await expect(page.locator('#trip-window-live-sport')).toContainText('BFBS Malta closed on 31 March 1979');
+  await expect(page.locator('#trip-window-live-sport')).toContainText('BFBS Malta closed in 1979');
+  await expect(page.locator('#trip-window-live-sport')).toContainText('Accounts disagree on the exact March date');
   await expect(page.locator('#trip-window-live-sport')).toContainText('outside your dates');
   const labels = await page.locator('#trip-window-live-sport tbody tr').first().locator('td')
     .evaluateAll(cells => ({display: getComputedStyle(cells[0]).display, labels: cells.map(c=>c.getAttribute('data-label'))}));
