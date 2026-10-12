@@ -20,7 +20,7 @@
     </section>
 
     <nav class="quick-links" aria-label="Radio shortcuts">
-      <a href="#dab-blocks">Which block carries sport</a><a href="#listening-plan">Trip-week listening plan</a><a href="#radio-research-status">Verification status</a><a href="#radio-trip-week-planner">Trip-week checks</a><a href="#dab-plus-receiver-malta">Receiver checklist</a><a href="#bbc-world-service-dab-sportsworld">Dated programmes</a><a href="#kalshi-epl-serie-a-radio-overlap-oct-2026">Kalshi context</a>
+      <a href="#dab-blocks">Which block carries sport</a><a href="#listening-plan">Trip-week listening plan</a><a href="#radio-research-status">Verification status</a><a href="#radio-trip-week-planner">Trip-week checks</a><a href="#dab-plus-receiver-malta">Receiver checklist</a><a href="#bbc-world-service-dab-sportsworld">Dated programmes</a><a href="#kalshi-epl-serie-a-radio-overlap-oct-2026">Kalshi context</a><a href="#kalshi-trip-window-markets">Kalshi market list</a>
     </nav>
     <p class="section-note">Keep the evidence levels separate: station licence / directory, broadcaster schedule, named match, and local reception. Expand each record for technical details and source limits.</p>
 
@@ -229,7 +229,46 @@
     </section>
 
     <section aria-labelledby="kalshi-epl-title">
-      <h2 id="kalshi-epl-title">Kalshi category checks are not radio evidence</h2>
+      <h2 id="kalshi-epl-title">Kalshi listings and radio carriage are separate things</h2>
+      <h3 id="kalshi-trip-window-markets">What the exchange actually lists for 13&ndash;19 October 2026</h3>
+      <p>Read from <strong>Kalshi&rsquo;s own public API on 11 October 2026</strong> &mdash; the exchange&rsquo;s read-only endpoints, not a category-page snapshot. Every Premier League fixture of the trip weekend has an open market, the Champions League midweek of 13&ndash;14 October is listed (twelve contracts in this read), the 18 October NFL slate is listed, and the open CS2 games had not reached the Maltese tournament. A listing proves the exchange offers a market on an event; it proves <em>nothing</em> about a radio broadcast.</p>
+      <div class="table-wrap">
+        <table class="radio-listening">
+          <caption class="small">Markets open on 11 October 2026 for events dated inside the stay, and what each does and does not imply</caption>
+          <thead>
+            <tr><th scope="col">Sport (series)</th><th scope="col">Listed inside 13&ndash;19 October</th><th scope="col">What that means for the radio plan</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Sport (series)">Premier League (<code>KXEPLGAME</code>)</td>
+              <td data-label="Listed inside 13&ndash;19 October">Sat 17 Oct: Everton v Chelsea; Brentford v Liverpool; Fulham v Hull City; Manchester City v Ipswich; Newcastle v Aston Villa. Sun 18 Oct: Bournemouth v Sunderland; Brighton v Crystal Palace; Leeds v Manchester United; Nottingham Forest v Arsenal. Mon 19 Oct: Tottenham v Coventry.</td>
+              <td data-label="What that means for the radio plan">The same fixtures already in the table above &mdash; now confirmed as listed markets as well. Still no named Malta commentary: BBC Radio 5 Live and 5 Sports Extra are not on Malta&rsquo;s observed multiplexes, and the DAB+ &ldquo;Sports Channel&rdquo; remains an unverified scan lead.</td>
+            </tr>
+            <tr>
+              <td data-label="Sport (series)">Champions League (<code>KXUCLGAME</code>)</td>
+              <td data-label="Listed inside 13&ndash;19 October">Tue 13 Oct: Lens v Sporting; Sabah v Slavia; Arsenal v Lille; Atl&eacute;tico v Manchester United; Galatasaray v Barcelona; Inter v Club Brugge; Leipzig v PSV; Viking v Bayern; Villarreal v Napoli. Wed 14 Oct: LASK v Liverpool; Feyenoord v Como; Aston Villa v Fenerbah&ccedil;e.</td>
+              <td data-label="What that means for the radio plan">A midweek option on the opening CS2 days. Malta radio carriage for the Champions League is not verified on any station found; the Italian commentary route below covers Serie A and Serie B, not these games.</td>
+            </tr>
+            <tr>
+              <td data-label="Sport (series)">NFL / pro football (<code>KXNFLGAME</code>)</td>
+              <td data-label="Listed inside 13&ndash;19 October">Sun 18 Oct: Houston v Jacksonville; Baltimore v Cleveland; Carolina v Philadelphia; Chicago v Atlanta; New Orleans v NY Giants; NY Jets v New England; Pittsburgh v Tampa Bay.</td>
+              <td data-label="What that means for the radio plan">No Malta radio carriage found for the NFL on any station checked. Treat it as a streaming or venue-screen item, not a frequency you can tune.</td>
+            </tr>
+            <tr>
+              <td data-label="Sport (series)">CS2 (<code>KXCS2GAME</code>)</td>
+              <td data-label="Listed inside 13&ndash;19 October">Open games sampled on 11 October ran to 13 October (for example BBL v Liquid, JiJieHao v 100 Thieves). <strong>No Thunderpick World Championship fixture was listed.</strong></td>
+              <td data-label="What that means for the radio plan">A negative result for the tournament itself: the event you are attending had no market listed on that read, and no radio broadcast of it was found anywhere.</td>
+            </tr>
+            <tr>
+              <td data-label="Sport (series)">Serie A (<code>KXSERIEA</code>)</td>
+              <td data-label="Listed inside 13&ndash;19 October">Only the season future <em>Serie A Champion</em> (<code>KXSERIEA-27</code>) was open under that ticker &mdash; no per-match market.</td>
+              <td data-label="What that means for the radio plan">Serie A match commentary is still the strongest over-the-air football route in Malta (Rai Radio 1 on observed block 6A), but that carriage is independent of anything the exchange lists.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">Method: Kalshi public trade-API v2 read-only endpoints, no account, order, wallet or eligibility call, each URL logged in the <a href="#kalshi-trip-window-markets-api-2026-10-11">API listing record</a>. Listings move — contracts can be added, paused or settled at any time, so re-read before relying on one. Nothing on this page is a price, an odds quote, a tip or a trading recommendation, and a listing does not establish that the traveller may trade from Malta; that is the exchange&rsquo;s own agreement.</p>
+      <h3 id="kalshi-category-snapshots">Earlier category-page checks (kept for the record)</h3>
       <p><a href="https://kalshi.com/category/sports/soccer/epl" target="_blank" rel="noopener noreferrer">Kalshi EPL</a> and <a href="https://kalshi.com/category/sports/soccer/serie-a" target="_blank" rel="noopener noreferrer">Serie A category pages</a> were checked for the trip window; visible schedule listings overlap some BBC <em>Sportsworld</em>, Rai Radio Uno and Radio Sportiva programme windows. Of those three, Rai Radio Uno and Radio Sportiva are confirmed on Malta's observed DAB+ blocks (6A and 6C respectively); BBC <em>Sportsworld</em> is general live sport, not match commentary. The <a href="https://kalshi.com/category/sports/esports/cs2" target="_blank" rel="noopener noreferrer">11 October CS2 category snapshot</a> showed games for 10–11 October, not evidence of a 14–18 October TWC market. This establishes only what was visible on those category pages at that check—not a named-fixture radio contract, broadcast rights, Malta reception, or trading eligibility while in Malta. Do not infer a connection between a market and an over-the-air programme.</p>
     </section>
 

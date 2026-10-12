@@ -1,6 +1,23 @@
 <!-- Session addendum appended by the arena/1005fdbf session; historical sections below are preserved. -->
 # Delivery status — Malta trip guide
 
+## Current session addendum — `arena/2b38c9c6-maltasupplemental` (11 October 2026)
+
+**Stage:** Passes 1–3 on the integrated tree. Repository review complete; changes limited to the files each workstream owns, with documentation and tests integrated last.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Operator service-updates feed re-read end to end. Two notices inside the trip window are recorded for the first time: Routes 46/260 Mon–Thu 21:00–05:00 (12–16 October) and Routes 54/106 daytime Attard detours (13 October). Fares page unchanged; TQ1 still prints “Timetable not available!”. | Whether either new notice touches a stop on the Qawra ↔ Ta' Qali journey needs the date-specific planner; no event-specific service is published; trip-week fare split still an inference. |
+| **B · Food & cafés** | No new platform evidence; Yelp 403, Reddit 403 and Google Maps' JavaScript shell re-confirmed this session. | Platform limits unchanged; venue hours/menus and the Empire Cinema arcade lead still to re-confirm. |
+| **C · Gaming, landmarks & events** | Eventbrite listing re-read with no change to venue, dates, agenda rows or the hidden Saturday/Sunday rows. | Reservation, door times, weekend agenda, gate and FAQ answers remain unpublished. |
+| **D · Everyday guide** | Second Met Office Valletta read covering 13–21 October recorded alongside the earlier snapshot. | Forecast values are indicative; national-panel coverage of 18–19 October still not published. |
+| **E · Sports radio** | Kalshi market listings now verified from the exchange's own read-only API and published as a market-versus-radio table; no Thunderpick fixture listed in the sampled open CS2 games. | No named match is yet verified on a Maltese frequency, and no receiver scan has been made. |
+| **F · Expense planner** | Unchanged; 25 rows blank by design and covered by tests. | Itinerary and amounts still to be supplied by the traveller. |
+| **G · Integration** | New records, page sections, quick links, source rows, open questions, README and this ledger updated; regression test added for the market-versus-radio distinction. | Local gates re-run below; PR opened and merged by explicit number, with the observed Pages state recorded in `docs/FINAL_REPORT.md`. |
+
+**Gate results (11 October 2026, this session):** `python3 scripts/validate_site.py` PASS — 7 JSON files / 218 exact-schema records / 353 unique record URLs / 15 HTML pages / 376 link attributes / 9 navigation destinations / 25 expense rows. `python3 scripts/check_javascript.py` PASS. `npx playwright test` — 26/26 after the new regression test was added (25 passed before it).
+
+
 ## Current session addendum — `arena/9bd7eeb7-maltasupplemental` (11 October 2026)
 
 **Stage:** Pass 1 (implement and verify), Pass 2 (adversarial review) and Pass 3 (full re-check against the request) run in that order on `origin/main` `ae69ab1`. Gate results are recorded in the section below. The GitHub PR is the source of truth for merge state.
