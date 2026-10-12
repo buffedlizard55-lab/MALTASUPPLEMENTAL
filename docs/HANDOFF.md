@@ -1,5 +1,16 @@
 # Current cross-workstream handoff
 
+**Session:** `arena/561bff0e-maltasupplemental` · **updated:** 12 October 2026 UTC (session opened late 11 October UTC).
+
+- **D → C/G (arrival-day weather):** the Malta Met Office national panel now covers 12–18 October and shows **Tuesday 13 October “windy with isolated showers”, NW force 5–6** — the one genuinely unsettled day of the stay, and harsher than the UK Met Office’s sunny 25/22 for the same date. 18 October appears in the national panel for the first time (mainly cloudy 24/18). Outdoor/sea plans for the 13th (C’s activities, F’s contingencies) should carry a rain layer and a wind check; the detailed forecast’s milder wind reading for the same day is quoted beside it, not reconciled.
+- **A → C/G (trip-week detours):** the live updates feed adds dated detours inside the stay: Attard-bound Routes 54/106 stop omissions on Tuesday 13th 09:30–17:30 (venue scouting by bus that day is affected), Routes 46/260 Monday–Thursday 21:00–05:00 through Friday 05:00 (weekday-night fallback chains degraded as well as the Saturday cluster — whether the 260 omissions touch the recorded Sliema-direction fallback is unestablished), and the routine Sunday Marsaxlokk diversions on 81/210/119. The feed still prints expired notices beside current ones: treat `trip-week-detour-watch` as a dated snapshot and recheck daily.
+- **C → G (openers named):** Liquipedia’s upcoming-matches block now names all four Wednesday openers — 9z–Aurora 10:30, Falcons–NIP 13:00, Legacy–PARIVISION 15:30, FURIA–BetBoom 18:00 Malta — corroborating the published clock set from a fresh path; the weekend pairings remain TBD and the Eventbrite Sat/Sun agenda remains hidden.
+- **E → G (radio, no new carriage):** BBC Sportsound’s page now dates its Saturday rows 17/10/2026 and later rows 22 Oct, so the undated “Thursday 19:00 Benfica v Celtic” row is bracketed but still undated — 15 October stays a lead. Radio Sportiva dated callouts still stop at 11 October. Nothing new for Malta carriage.
+- **B → G:** Yelp re-checked 12 Oct — HTTP 403 again; platform-coverage limits current.
+- **F → traveler:** planner unchanged and blank; the fare-split question (€2.50 through 18 Oct / €2.00 on 19 Oct) is still an inference — keep bus amounts provisional until receipts exist.
+
+
+
 **Session:** `arena/b29d95ae-maltasupplemental` · **updated:** 11 October 2026 UTC.
 
 - **C → A/G:** Direct Liquipedia reads (all seven chunks) pin the weekend bracket clocks the Eventbrite page still hides: SF1 Sat 17 16:00 Malta, SF2 Sat 17 19:00 Malta, third-place Sun 18 13:30, final Sun 18 17:00 (Bo5), pairings TBD. A search-index extract had garbled the bracket as “FURIA v BB in the semifinal” — the direct read supersedes it; do not copy search-extract pairings. The late-return problem now demonstrably covers all five event days.

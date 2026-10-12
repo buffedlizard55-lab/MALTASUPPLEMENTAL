@@ -1,6 +1,41 @@
 # Malta trip guide — final report
 
-## Current session — `arena/b29d95ae-maltasupplemental` (11 October 2026 UTC)
+## Current session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
+
+### Delivery summary
+
+A final pre-departure pass executed on the eve of the trip window (the session opened late 11 October UTC; source reads are dated 12 October). The repository was reviewed at `main` `ac487ae` (the PR #67 merge tip) and found complete and healthy: GitHub Pages static site (15 pages), exact 13-field schema with seven datasets (216 records before this pass), per-topic pages rendered from JSON, source log, open questions, status ledger, blank-by-default expense planner with itinerary quick-fill, CI workflow and a 25-test Playwright/axe suite — all green on the untouched tree. Shared setup was verified serially and left intact; workstreams A–F ran on this fixed Arena branch with the established file-ownership map (`docs/PLAN.md`), G integrated last, and cross-stream findings went to `docs/HANDOFF.md`.
+
+This session's increments, all source-read on 12 October 2026 UTC and logged in `docs/SOURCES.md`:
+
+- **Arrival-day weather corrected upward in risk (D).** The Malta Met Office national panel now runs 12–18 October — **18 October appears in the national forecast for the first time** (mainly cloudy 24/18) — and labels **Tuesday 13 October “windy with isolated showers”, NW force 5–6**, materially worse than the UK Met Office's sunny 25/22 for the same day. The national site's own detailed forecast for the 13th is milder (F4→F3–4, high 26 °C, isolated evening showers, sea 26 °C); both readings are quoted side by side, not reconciled. Only departure day 19 October remains outside the national panel (UK BETA row only).
+- **Trip-week detour watch (A).** The live service feed (all three chunks) reconfirmed the 17–18 October cluster and both Route 186 notices, and added dated detours the trip plan did not previously carry: Attard-bound Routes 54/106 stop omissions on Tuesday daytime (relevant to venue scouting on media day), Routes 46/260 detoured Monday–Thursday 21:00–05:00 through Friday 05:00 (degrading the weekday late-return fallback leads as well as the Saturday cluster), the routine Sunday Marsaxlokk diversions, and — as a caution — an expired notice still displayed beside current ones. A new `trip-week-detour-watch` record carries the detail.
+- **Wednesday openers named (C).** Liquipedia's upcoming-matches block now names all four 14 October openers — 9z–Aurora, Falcons–NIP, Legacy–PARIVISION, FURIA–BetBoom — at EDT clocks that convert to the published Malta set (10:30/13:00/15:30/18:00), corroborating the guide's clock evidence from a fresh path. Eventbrite is unchanged: weekend agenda and FAQ answers still hidden, “Sales end soon”, no reservation test.
+- **Radio listings re-read (E).** BBC Sportsound now dates its Saturday rows 17/10/2026 and later rows 22 Oct, bracketing the undated “Benfica v Celtic” row (15 October remains a lead); Sportsworld's 17/18 October episodes are unchanged; Radio Sportiva still names no trip-week match. No Malta carriage evidence changed.
+- **Platform honesty (B) and fares (A/F).** Yelp still HTTP 403; the operator's fares page still prints only the 2025–26 winter window, so the trip-week split (€2.50 through 18 Oct, €2.00 on 19 Oct) remains a labelled inference. ETIAS remains not in operation (official EU FAQ re-read).
+
+### What is verified (this pass)
+
+The national 12–18 October panel and the 13 October detailed forecast from the official Malta Met Office pages; the trip-week detour notices as printed on the operator's live feed; the Wednesday opener pairings and bracket clocks from a direct Liquipedia read; the unchanged Eventbrite agenda rows and hidden weekend rows; the unchanged ETIAS non-operation wording; the unchanged BBC/Sportiva listings; the current Yelp block. Everything earlier sessions verified stands unless this pass recorded a change above.
+
+### What remains unverified
+
+Organizer Sat/Sun door/finish times, FAQ answers, reservation/inventory/day validity/gate; a saved date-specific MPT journey; both stop-to-gate walks; the exact last Route 186 return (OQ-S1) and the “April 21” notice year; whether the 260 Mon–Thu detour touches the weekday fallback chains; any TQ event service; live taxi quotes; the trip-week fare split (inference); any named match on a Malta radio frequency and the 6C “Sports Channel” identity; 19 October's national forecast; the panel-vs-detail weather difference on the 13th; Yelp/Instagram/TikTok/Facebook/Reddit/X sentiment data; and every traveler-personal item (flights, reservation, party, insurance, devices, receipts).
+
+### Passes and observed local gates
+
+1. **Pass 1 — implement and verify:** time-critical sources re-read (Eventbrite; MPT updates in full and fares; Liquipedia; BBC Sportsworld/Sportsound upcoming; Radio Sportiva palinsesto; EU ETIAS FAQ; Malta Met Office panel + detailed forecast; Yelp access check). New/changed claims written only from those reads; every URL logged with its access date.
+2. **Pass 2 — adversarial review:** overreach checks on the new claims (weather panel-vs-detail difference kept unreconciled; expired-notice caution added; the undated BBC row left a lead), source-log coverage re-verified by the validator, and the full local suite (validator + JavaScript + Playwright/axe) re-run after the edits.
+3. **Pass 3 — full request re-check:** the requirement map below is walked against the integrated tree; delivery is a PR from this branch merged by explicit number, and only observed GitHub/Pages state is reported afterwards.
+
+### Next-session tasks and limitations (the honest list)
+
+1. **During the trip (13–18 Oct):** re-read the MPT updates feed and journey planner each morning; confirm the actual last Route 186 return on the day; watch for a TQ special-service notice (the one thing that could fix the late return); reserve the free event spot and confirm the gate/day validity with the organizer before the first session; recheck the national weather panel daily (especially 13 and 19 Oct).
+2. **Radio scan on the ground:** a physical DAB+ receiver scan at the hotel and venue (block 6C first) is the only way to close the radio question; log service labels, blocks and any named match heard. No remote source can substitute.
+3. **Expense planner:** once the itinerary lands, use the quick-fill panel and enter only confirmed amounts; the fare split and the €1.50/night eco-contribution (capped €22.50) remain conditional until receipts exist.
+4. **Limitations of this project:** several social/review platforms (Yelp, Instagram, TikTok, Facebook, Reddit, X) are unreachable from the research environment, so “popularity” rests on one dated TripAdvisor capture plus operator pages; review counts drift; no physical transit, reception or device-based visual test was possible; the operator's fare page itself prints an expired winter window; and the site's tests prove software behavior, not the live truth of external listings.
+
+## Previous session — `arena/b29d95ae-maltasupplemental` (11 October 2026 UTC)
 
 ### Delivery summary
 

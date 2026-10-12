@@ -20,6 +20,28 @@ This pass targets the one requirement that is still weakest — a receiver-usabl
 2. **Pass 2 — adversarial review:** check the new claims for overreach (crowd-edited sources, third-party calendars, precedent vs. commitment), confirm every new URL is in the source log, confirm no unverified item is presented as fact, and re-run schema/link/JavaScript/browser gates.
 3. **Pass 3 — original-request audit:** walk the user’s line-by-line requirements against the integrated result, confirm the site still answers each, and report only observed PR/Pages state.
 
+## Current session plan — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
+
+Repository review at session start (`main` = `ac487ae`, merge of PR #67): the full integrated static Pages site is present — 15 HTML pages, seven exact-schema datasets (216 records), shared nav/renderer, CSS tokens, `docs/SOURCES.md` source log, open questions, blank-by-default expense planner with itinerary quick-fill, CI workflow and a 25-test Playwright/axe suite — and `python3 scripts/validate_site.py`, the JavaScript checker and all 25 browser tests pass on a clean checkout. **Shared setup is complete and was verified serially before any edit**; nothing is replaced. Arena fixes one branch per session, so the parallel-work protocol runs with the established A–F file-ownership map on this single branch, G integrating shared files last; cross-stream finds go to `docs/HANDOFF.md`, unresolved items to `docs/OPEN_QUESTIONS.md`.
+
+The trip window opens **13 October — tomorrow** — so this pass is a final **time-critical re-read of the sources that change decisions**, then Passes 1–3 on the integrated result and delivery by PR. No new structure is added unless a fresh read demands it.
+
+| Stream | Owned files | This session |
+|---|---|---|
+| A · Transport | `data/transport.json`, `getting-around.html` | Re-read the live service-updates feed end-to-end (3 chunks) and the fares page. Adds a `trip-week-detour-watch` record for the dated 12–18 October notices (Routes 54/106 toward Attard on the 13th; Routes 46/260 Monday–Thursday nights; Sunday Marsaxlokk diversions; feed-churn warning) and re-confirms the 17–18 October cluster and both Route 186 notices. |
+| B · Food & cafés | `data/food.json`, `restaurants.html` | One platform re-check (Yelp, still HTTP 403) recorded in the coverage record; no other change. |
+| C · Gaming, activities, landmarks & events | `data/activities.json`, `data/event.json`, `activities.html`, `event.html` | Liquipedia re-read: the upcoming-matches block now names all four Wednesday openers at the EDT clocks that convert to the published Malta times; pairings-corroboration appended to `twc-opening-matchups-14-oct`. |
+| D · U.S.-traveler everyday guide | `data/everyday.json`, `everyday.html` | National met panel re-read: now covers 12–18 October (18 October in the national forecast for the first time) with a windy/showery 13th; detailed forecast for the 13th re-read; ETIAS FAQ re-read unchanged. Weather record rewritten around the national panel. |
+| E · Sports radio | `data/radio.json`, `radio.html` | Three re-reads (BBC Sportsworld, BBC Sportsound, Radio Sportiva): content unchanged except the Sportsound page now dates its Saturday rows 17/10/2026 and later rows 22 Oct, marginally narrowing the undated Benfica v Celtic row. |
+| F · Expense planner | `data/expenses.json`, `costs.html` | Unchanged: amounts stay blank; only confirmed quotes go in. |
+| G · Site shell, executive summary & navigation (last) | `index.html`, `js/site.js`, `docs/*`, `README.md`, tests | Executive summary gains an arrival-weather/detour bullet; snapshot and footer dates advance; PLAN/STATUS/SOURCES/OPEN_QUESTIONS/HANDOFF/FINAL_REPORT updated; every gate re-run; PR opened and merged by explicit number. |
+
+### Verification gates / passes
+
+1. **Pass 1 — implement and verify:** re-read the time-critical live sources listed above; write only what they say; log every URL and access date in `docs/SOURCES.md`; record the changed gaps in `docs/OPEN_QUESTIONS.md`.
+2. **Pass 2 — adversarial review:** check the new claims for overreach (panel-vs-detail weather differences, expired notices still displayed, undated BBC row), confirm every new URL is in the source log, confirm no unverified item is presented as fact, re-run schema/link/JavaScript/browser gates.
+3. **Pass 3 — original-request audit:** walk the user’s line-by-line requirements against the integrated tree, confirm the site still answers each, and report only observed PR/Pages state.
+
 # Malta trip guide — work plan
 
 ## Current session plan — `arena/b29d95ae-maltasupplemental` (11 October 2026)

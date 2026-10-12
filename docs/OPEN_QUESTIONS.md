@@ -1,6 +1,17 @@
 # Open questions and unverified items
 
-**Current research snapshot: 11 October 2026 UTC, session `arena/b29d95ae-maltasupplemental` (delivery pass).**
+**Current research snapshot: 12 October 2026 UTC, session `arena/561bff0e-maltasupplemental` (delivery pass).** The session opened late 11 October UTC; the reads below were made just after midnight.
+
+Delivery-session updates (12 October 2026, eve of departure):
+
+- **Weather — the national panel now covers 12–18 October.** For the first time **18 October** appears in the Malta Met Office forecast (mainly cloudy 24/18, ESE F2–3→F4), closing most of the “18–19 October beyond the national panel” gap; only **19 October** (departure) remains outside it and is covered solely by the UK Met Office’s BETA long-range row. The two services still disagree on arrival day: the national panel says **Tuesday 13 October is “windy with isolated showers” (NW F5–6)** while the UK panel says sunny 25/22. The national site is also internally milder on the 13th in its detailed forecast (F4→F3–4, high 26) than in its homepage row (F5–6, high 25). All are dated forecasts, not observations; treat strong NW winds and shower risk on the 13th as the planning default and recheck on the day.
+- **Service-feed churn is itself an open item.** The 12 October read of the operator's updates page still prints **expired notices beside current ones** (e.g., the Routes 203/280/31/41/42/48/N48 notice whose printed end date is 1 July). Re-read the feed and the date-specific planner on each event day; this repo's snapshot is not a live feed. New dated detours inside the trip week are catalogued in the `trip-week-detour-watch` record — including the question they leave: whether the Route 260/46 Monday–Thursday night detour (Mnara→Zerafa, ending 16 October about 05:00) affects the recorded Route 202/260 late-return fallback chains on Wednesday and Thursday nights is **not established** from the printed stops.
+- **Eventbrite Sat/Sun agenda and FAQ answers — still hidden.** The re-read listing is unchanged: three visible agenda rows (Wed/Thu to 22:30, Fri to 21:00), weekend rows behind “Show all agenda”, nine FAQ questions with no rendered answers, “Sales end soon”, and the “Free / Reserve a spot” control on the tail recommendation card. Reservation, inventory, day validity and gate remain untested.
+- **Liquipedia now names the Wednesday openers** (9z–Aurora 10:30, Falcons–NIP 13:00, Legacy–PARIVISION 15:30, FURIA–BetBoom 18:00 Malta), corroborating the clock set already published; the weekend pairings remain TBD. Rosters/order can still change.
+- **BBC Radio Scotland undated row — marginally narrowed.** The page now dates its Saturday rows “17/10/2026” and later rows “Thu 22 Oct 2026”, but the first row (“Thursday 19:00 — Europa League Benfica v Celtic”, m0032sf3) still prints no date. Thursday 15 October remains the most plausible reading only.
+- **Radio Sportiva dated callouts still stop at 11 October.** No Serie A match is named for 13–19 October on the station's own grid; the recurring programme windows stand as leads.
+
+## 11 October 2026 — delivery session (`arena/b29d95ae-maltasupplemental`)
 
 Delivery-session updates (11 October 2026, two days before departure):
 

@@ -1,7 +1,7 @@
 {
   "topic": "radio",
   "title": "Sports radio to try in Malta",
-  "last_updated": "2026-10-11",
+  "last_updated": "2026-10-12",
   "intro": "Over-the-air radio only: FM and DAB+ receiver leads, dated and recurring sports programmes, and a separate fixture/market reference. No named trip-week match has yet met all checks for Malta terrestrial carriage. Web streams, UK schedules and overlapping kickoffs are not substitutes for that evidence.",
   "records": [
     {
@@ -60,9 +60,9 @@
       "description": "BBC's official episode JSON schedules Sportsworld on 17 and 18 October 2026 with general live sport, news, interviews and analysis — not named-match commentary. Maltese carriage is now evidenced by a dated observation of block 6A rather than only by a directory: BBC WS appears there with service ID C001 at 32 kbit/s DAB+ stereo HE-AAC v2, so expect speech-grade audio. BBC Radio 5 Live and 5 Sports Extra, which carry the UK Premier League commentaries, are not present on this block and are separate services.",
       "source_url": "https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-12",
       "confidence": "partially verified",
-      "notes": "Official BBC episode JSON checked 11 October 2026: 17 Oct https://www.bbc.co.uk/programmes/w1730c92ck0m2cw.json (first broadcast 14:06 +01:00, duration 13 980 s) and 18 Oct https://www.bbc.co.uk/programmes/w1730c92ck0q313.json (first broadcast 15:06 +01:00, duration 13 980 s); upcoming list https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming . Malta carriage: https://www.wohnort.org/dab/malta.html (6A table: BBC WS SId C001 32 kbit/s from the detail table captioned 'Source: Observations, 19.01.2025'; the same page's 13.01.2026 ensemble row re-lists the service) and operator directory https://dab.com.mt/channels/ . No local receiver scan; the synopses name no match."
+      "notes": "Official BBC episode JSON checked 11 October 2026: 17 Oct https://www.bbc.co.uk/programmes/w1730c92ck0m2cw.json (first broadcast 14:06 +01:00, duration 13 980 s) and 18 Oct https://www.bbc.co.uk/programmes/w1730c92ck0q313.json (first broadcast 15:06 +01:00, duration 13 980 s); upcoming list https://www.bbc.co.uk/programmes/p002w5vq/broadcasts/upcoming . Malta carriage: https://www.wohnort.org/dab/malta.html (6A table: BBC WS SId C001 32 kbit/s from the detail table captioned 'Source: Observations, 19.01.2025'; the same page's 13.01.2026 ensemble row re-lists the service) and operator directory https://dab.com.mt/channels/ . No local receiver scan; the synopses name no match. Upcoming page re-read 12 October 2026: the 17/10/2026 and 18/10/2026 editions (episodes w1730c92ck0m2cw and w1730c92ck0q313) remain listed with unchanged episode IDs; the page renders start times in the viewer’s own clock, so the episode JSON offsets stay the conversion anchor."
     },
     {
       "id": "bbc-world-service-dab-frequency",
@@ -120,9 +120,9 @@
       "description": "The block question for this station is now answered by observation rather than by a directory profile: Radio Sportiva is listed in the 13 January 2026 service table for Malta's block 6C with service ID C02A at 32 kbit/s, and it also appears in the operator's own consumer channel directory. Radio Sportiva is an Italian all-sports service whose current weekly grid lists ‘Diretta Sp.+Calciom.’ 15:05–17:00 Monday to Friday and ‘Diretta Sportiva’ 15:05–17:00 at weekends, and the page warns that programming follows the day's events and that live coverage can run to midnight on major match days. The trip-week lineup therefore remains a recheck-and-ask item rather than a confirmed 13–19 October match list.",
       "source_url": "https://dab.com.mt/project/radio-sportiva/",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-12",
       "confidence": "partially verified",
-      "notes": "Dated block/bitrate observation: https://www.wohnort.org/dab/malta.html (6C table, 'Source: Observations, 13.01.2026', Radio Sportiva SId C02A 32 kbit/s). Official weekly schedule: https://www.radiosportiva.com/palinsesto/ — the page states programming may vary with the day's events and that live coverage may extend to midnight depending on major matches; its explicitly dated 'Sportiva Live' callouts ran 5–11 October. Operator channel directory: https://dab.com.mt/channels/ . Individual operator profile (dated 20 August 2020): https://dab.com.mt/project/radio-sportiva/ . Italian and Maltese civil time match during the trip window, so published Italian times apply without conversion. No receiver test and no named trip-week match confirmed."
+      "notes": "Dated block/bitrate observation: https://www.wohnort.org/dab/malta.html (6C table, 'Source: Observations, 13.01.2026', Radio Sportiva SId C02A 32 kbit/s). Official weekly schedule: https://www.radiosportiva.com/palinsesto/ — the page states programming may vary with the day's events and that live coverage may extend to midnight depending on major matches; its explicitly dated 'Sportiva Live' callouts ran 5–11 October. Operator channel directory: https://dab.com.mt/channels/ . Individual operator profile (dated 20 August 2020): https://dab.com.mt/project/radio-sportiva/ . Italian and Maltese civil time match during the trip window, so published Italian times apply without conversion. No receiver test and no named trip-week match confirmed. Palinsesto re-read 12 October 2026: the dated “Sportiva Live” callouts still stop at 5–11 October, so no trip-week match is named; the recurring grid (weekday Diretta Sp.+Calciom. 15:05–17:00, weekend Diretta Sportiva 15:05–17:00) is unchanged."
     },
     {
       "id": "talksport-dab-6c-malta",
@@ -435,8 +435,9 @@
       "description": "The BBC's own Sportsound upcoming page, read 11 October 2026, names full-commentary Scottish Premiership broadcasts for the trip weekend: Dundee v Rangers (Saturday 17 October, 19:00 UK, BBC Radio Scotland Extra) and Celtic v Hearts (Sunday 18 October, 14:00 UK, BBC Radio Scotland), plus a Saturday Sportsound omnibus (14:00) and Fan Zone (17:30). A first row labelled only 'Thursday 19:00' bills Europa League Benfica v Celtic on Radio Scotland Extra; it prints no date and most plausibly refers to Thursday 15 October — treat that one as a lead. These are official UK service listings for soccer matches likely to appear on Kalshi-style football markets, but they are not proof of Malta FM/DAB+ carriage, BBC Sounds access or reception at the hotel or venue.",
       "source_url": "https://www.bbc.co.uk/programmes/b0079g4q/broadcasts/upcoming",
       "source_type": "official",
-      "date_checked": "2026-10-11",
+      "date_checked": "2026-10-12",
       "confidence": "partially verified",
-      "notes": "Direct read of the official BBC page on 11 October 2026. Programme pages: Sportsound 17/10 https://www.bbc.co.uk/programmes/m00331cy ; Fan Zone https://www.bbc.co.uk/programmes/m00331d2 ; Dundee v Rangers https://www.bbc.co.uk/programmes/m00331dx ; Celtic v Hearts https://www.bbc.co.uk/programmes/m00331f9 ; undated Thursday Benfica v Celtic row https://www.bbc.co.uk/programmes/m0032sf3 . The page labels the 17/18 October rows 'Next Saturday'/'Next Sunday' with the dates printed on the adjacent episode titles; the undated Thursday row carries no date and is not scheduled into any plan here. BBC Radio Scotland and Radio Scotland Extra are UK-distribution services; no Malta frequency, relay, stream access test or receiver check was performed. A match listing is not radio rights evidence for any market and no market-to-broadcast link is inferred."    }
+      "notes": "Direct read of the official BBC page on 11 October 2026. Programme pages: Sportsound 17/10 https://www.bbc.co.uk/programmes/m00331cy ; Fan Zone https://www.bbc.co.uk/programmes/m00331d2 ; Dundee v Rangers https://www.bbc.co.uk/programmes/m00331dx ; Celtic v Hearts https://www.bbc.co.uk/programmes/m00331f9 ; undated Thursday Benfica v Celtic row https://www.bbc.co.uk/programmes/m0032sf3 . The page labels the 17/18 October rows 'Next Saturday'/'Next Sunday' with the dates printed on the adjacent episode titles; the undated Thursday row carries no date and is not scheduled into any plan here. BBC Radio Scotland and Radio Scotland Extra are UK-distribution services; no Malta frequency, relay, stream access test or receiver check was performed. A match listing is not radio rights evidence for any market and no market-to-broadcast link is inferred. Upcoming page re-read 12 October 2026: the Saturday rows now print the date label “17/10/2026” and later rows print “Thu 22 Oct 2026”; the Benfica v Celtic row still prints no date, so Thursday 15 October remains the most plausible reading, not a scheduled fact."
+    }
   ]
 }
