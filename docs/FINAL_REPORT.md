@@ -37,9 +37,12 @@ These are local structure, behavior and accessibility checks. They are not indep
 5. Refresh weather/sea and attraction operating information close to the day; verify EES/ETIAS against current official guidance and traveler-specific documents.
 6. Populate expenses only after the traveler supplies itinerary, party and actual bookings/quotes; export a private backup.
 
-### Delivery state
+### Delivery observed
 
-GitHub PR and Pages-build observations are recorded in this section only after the required check, merge and build state are actually observed. PR #71 is a separate open branch with overlapping work; it was not checked out or merged.
+- Pull request [**#73**](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/73), from the fixed branch `arena/57ad3983-maltasupplemental`, passed the required **“Schema, browser and accessibility checks”** ([run 38188460975](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38188460975)).
+- `gh pr merge 73 --merge` succeeded; GitHub reports **MERGED** at **2026-10-12T00:35:41Z** with merge commit **`1382640d027e5bef69b97776bc72c6a1b4cfb096`**.
+- The post-merge `Validate Malta Trip Guide` run [38188606027](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38188606027) completed successfully. The Pages build/deployment run [38188605376](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38188605376) also completed successfully; the Pages latest-build API reported status **`built`** for the same commit at **00:36:01Z**. Public URL: <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/>. This is a GitHub build-state observation, not a separate browser fetch of every published page.
+- PR [**#71**](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/71) remains a separate open, overlapping branch; it was not checked out or merged.
 
 ## Previous integrated-main session — `arena/2b38c9c6-maltasupplemental` (11 October 2026 UTC; retained history)
 
