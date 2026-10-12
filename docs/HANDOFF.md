@@ -6,7 +6,45 @@
 - **A → G (route evidence extended, not changed):** the Route 186 page was read in full again on 12 October — return boarding still Stadium 2194 through 20:53, terminus Bugibba Bay 1, both direction series unchanged, and subtracting published rows gives roughly 25 minutes Qawra 952 → Stadium 6227 and 29–33 minutes Stadium 2194 → terminus. Those are arithmetic on static, unlabelled timetable variants — not a planner result, not a door-to-door time, and no date-specific journey is saved.
 - **C/★ → G (event evidence unchanged):** the Eventbrite listing now shows a "Sales end soon" banner while still exposing no price, tier, inventory, day validity or weekend door time; the bracket page still schedules the semis at 16:00/19:00 on 17 October, third place 13:30 and the best-of-five final 17:00 Malta on 18 October, now with published HLTV matchpages for the last two, and pairings remain TBD. 19 October (departure) is still outside the national weather panel, and the fare-season split (€2.50 through 18 Oct / €2.00 on 19 Oct) is still an inference.
 
-## Previous cross-workstream handoff — `arena/561bff0e`
+## Previous cross-workstream handoff — `arena/99828d92-maltasupplemental` · 12 October 2026 UTC
+
+| From → to | Finding / decision | Follow-up owner |
+|---|---|---|
+| G → A–F | The shared footer now carries a “Section hubs” row (hotel, around Qawra, landmarks, US traveller basics, day framework, CS2 event pointer), so no hub page is orphaned; the top navigation deliberately stays at nine items and a regression test asserts both facts. | No action; keep any future hub page linked. |
+| A → F/G | The venue record now carries the organizer's published map pin (35.8957343, 14.4168839) and the Route 186 record carries the operator's “every 30 minutes” label plus the 21:27 Buġibba Bay 1 arrival for the 20:53 Stadium 2194 boarding. | F must still not prefill any taxi/fare amount from these facts; a pin is not a legal drop-off point and a frequency label is not a dated last bus. |
+| A → C | Route 186's return direction still lists no Il-Qawra stop, so any evening plan that relies on walking Buġibba Bay 1 back to the hotel uses a leg nobody has measured or surveyed. | C keeps evening outings off the event-return critical path unless the planner shows a connection. |
+| E → C/G/F | NET FM's own schedule re-read a third time: Saturday 16:00 “Hits & Score”, Sunday 15:00 “Sports Box”, Friday 18:30 “Mhux Premier biss” — recurring, undated, and discussion formats rather than commentary; an earlier-season station Instagram caption claims 3pm–6pm for Hits & Score, which conflicts with the current 16:00 start and stays recorded as a conflict, not smoothed over. | C must not sell these as match commentary; F must not budget for a receiver purchase on the strength of an unverified match. |
+| E → G | Rai Radio 1's “Tutto il calcio” still bills Saturdays/Sundays but publishes no 17–18 October running order; Radio Sportiva's dated callouts still stop at 11 October; the DAB+ operator directory re-read names channels without a block map. The DAB+ “Sports Channel” identity question therefore remains open. | G keeps the “no named match on a Malta frequency” caveat in the executive summary and radio page. |
+| E → G | talkSPORT's schedule page remains unusable (“Sorry, page unavailable”), and Liquipedia re-blocked this session's reader window (abuse filter until 01:55 UTC), so neither is treated as evidence in this pass. | G marks them as access limits, not as facts. |
+| D → B/C/G | The national 12–18 October forecast panel reproduced identically (13th windy/showers F5–6; 14–18 drier/cloudier; 19 October outside the panel) and the live national address is `maltametoffice.com` — the older `maltairport.com` weather paths now serve a shell or 404 and must not be cited as current. | Anyone re-reading weather should start at `https://maltametoffice.com/`. |
+| B → G | Reddit's search JSON returned HTTP 403 again on 12 October; combined with the standing Yelp/Instagram/TikTok/Facebook/X blocks, the review-platform section stays a dated TripAdvisor/Google sample rather than a social ranking. | No sentiment inference anywhere. |
+| F → G | New `docs/ITINERARY_QUICKSTART.md` wires the itinerary-to-planner workflow (accepted formats, keyword→row map, five-minute process) and is linked from the planner, the overview and the sources page. | When the real itinerary arrives, paste it into `costs.html#quick-fill`, read the preview flags, then apply — amounts remain traveler-supplied. |
+| G → A–F | Local gates on the integrated tree: validator PASS (7 datasets / 218 records / 353 logged record URLs / 15 pages), JavaScript check PASS, Playwright + axe suite re-run (see `docs/STATUS.md` for the observed count). | Keep the suite green on the next session's first commit. |
+
+## Session `arena/4d02579a-maltasupplemental` · 12 October 2026 UTC (previous)
+
+**Integrated decisions.** The event is 14–18 October at BLAST Arena Studios, Attard (Ta’ Qali), with the organiser's 12–19 October window. The fourth 14 October opener is **18:00 Malta** (Liquipedia 12:00 EDT). Virtus.pro was replaced by NIP (HLTV, Fragster, Liquipedia; the organiser's own page names no teams). The Route 186 cluster bites only on **Saturday 17 October, 19:00–midnight**. The Route 186 “April 21” notice (no year, no start date) is an open risk for Friday 16 evening (OQ-S7).
+
+**Cross-workstream notes**
+
+- **A → C/G:** The Saturday 17 bracket start (semifinal 2 at 19:00 Malta) coincides with the Route 186 / 405 / 202 / 260 diversion window. Plan the late return before that match, not after it.
+- **A → G:** The second Route 186 detour notice (weekly Fri/Sat 20:00–midnight, “ends April 21”) has no start date and no year. Confirm with MPT before a Friday 16 evening return.
+- **C → E:** Kalshi's trip-weekend EPL game events are still open on 17, 18 and 19 October. A listing is not a Malta broadcast.
+- **D → G:** The plug/voltage record (230 V, 50 Hz, UK-style three-pin) is confirmed on gov.mt. US HD Radio does not decode DAB+ (Wikipedia, HD Radio).
+- **G:** `npm test` now includes `scripts/check_weekdays.py`. A new weekday phrasing that does not match the 2026 calendar fails CI.
+
+**Suggested work for the next session, in priority order**
+
+1. Confirm the Route 186 “April 21” notice with MPT (year, start, whether it applies to Friday 16 and Saturday 17 evenings); remove or re-dating it on the page.
+2. Re-read the operator feed and the organiser's team and bracket pages on the morning of 14 October.
+3. Confirm the Eventbrite weekend agenda, ticket status and the on-site entry rules (age 18+, ID, day validity) once the event is open for sale or check-in.
+4. Shorten the executive summary to five bullets for mobile (currently about ten long bullets). Each bullet should link to one record.
+5. Run a true external-link crawl from a host with public internet access. This sandbox can only reach GitHub and package registries.
+6. Keep the transport notes and the radio carriage claims apart: no Malta frequency has been shown to carry a named trip-week match.
+
+---
+
+## Previous integrated handoff (kept for history)
 
 **Session:** `arena/561bff0e-maltasupplemental` · **updated:** 12 October 2026 UTC (session opened late 11 October UTC).
 

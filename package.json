@@ -6,7 +6,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "python3 scripts/validate_site.py && python3 scripts/check_javascript.py && playwright test",
+    "test": "python3 scripts/validate_site.py && python3 scripts/check_weekdays.py && python3 scripts/check_javascript.py && playwright test",
     "test:browser": "playwright test"
   },
   "repository": {

@@ -22,6 +22,80 @@ This pass on the eve of departure is a **time-critical re-read of the sources th
 2. **Pass 2 — adversarial review:** check the new listing claim for overreach, confirm every new URL is in the source log (the validator enforces this), correct inherited stale statements with dated notes, update the test guard, re-run schema/JavaScript/browser gates.
 3. **Pass 3 — original-request audit:** walk the traveler's requirements against the integrated tree and report only observed PR/Pages state.
 
+# Previous session plan — `arena/99828d92-maltasupplemental` (12 October 2026 UTC)
+
+## Repository review and scope
+
+The repository was reviewed at `main` `956dfd9` (PR #72 merge) on the eve of the trip window. Everything required by the original request is already built and green on the untouched tree: a GitHub Pages static site (15 HTML pages, nine-item shared navigation, executive summary, section hubs), an exact 13-field record schema with seven datasets (218 records), per-topic pages rendered from JSON by `js/site.js`, a master source log, open-questions and status ledgers, a blank-by-default expense planner with itinerary quick-fill, a CI workflow and a Playwright/axe suite. Nothing is rebuilt and no shared setup (folder structure, schema, site shell, CSS tokens, source-log row format) is changed without a source-led reason.
+
+This session is a **final pre-departure verification and delivery pass** on the fixed Arena branch. Arena fixes one branch per session, so workstreams run serially on it with the established ownership map; G integrates last. Cross-topic findings go to `docs/HANDOFF.md`, unknowns stay in `docs/OPEN_QUESTIONS.md`, and every claim is logged with URL and access date in `docs/SOURCES.md`.
+
+| Stream | Owned files | This session |
+|---|---|---|
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Re-read the operator's Route 186 page and the live service-updates feed (both complete, 12 Oct UTC); record the 30-minute headway, the reproduced 20:53 Stadium 2194 return and its 21:27 Buġibba Bay 1 arrival, and confirm the trip-week notice set. Add the venue's published map pin from the official ticketing listing. |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | No new platform access; re-confirm the blocked-platform boundary rather than restate it as evidence. |
+| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Re-read the ticket listing (agenda, venue block, FAQ state) and the tournament bracket source; keep event facts separate from the generic recommendation card. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Independently reproduce the national 12–18 October forecast panel (identical values) and keep it labelled a dated forecast; leave entry/health/power claims untouched where no change was found. |
+| **E · Terrestrial sports radio** | `data/radio.json`, `radio.html` | Re-read the three official schedules already cited (BBC World Service Sportsworld, BBC Radio Scotland, Radio Sportiva), the Rai Radio 1 programme page and the DAB+ operator directory; keep fixtures, schedules, carriage and reception strictly separate. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html`, `docs/ITINERARY_QUICKSTART.md` | Ship the missing piece for “quick work once the itinerary arrives”: a one-page itinerary-to-planner worksheet (accepted line formats, category mapping, five-minute workflow) wired into the planner page. Amounts stay blank. |
+| **G · Site shell, executive summary & delivery** | `index.html`, `js/site.js`, `sources.html`, `README.md`, `docs/*`, tests | Fix the one orphaned page by giving the shell a footer hub row, refresh the executive-summary bullets affected by this pass, log all new sources, run all gates, open the PR, merge it by number and record only observed GitHub/Pages state. |
+
+## Conflict avoidance
+
+One branch (this one), serial execution, one owner per file. Shared files (`index.html`, `js/site.js`, `css/style.css`, `sources.html`, `README.md`, `docs/*`) are touched only by G after A–F. No file is reformatted, no record is deleted or re-keyed, and no unverified item is presented as fact.
+
+## Verification gates (Passes 1–3)
+
+1. **Pass 1 — implement and verify:** each stream re-reads its live sources, writes only its owned data/page pair, and logs every claim with URL and access date; anything not confirmed stays labelled.
+2. **Pass 2 — adversarial review:** check the new records for overreach (a timetable row is not a dated last bus; a published pin is not attendee access; a schedule is not carriage; a listing is not a broadcast), re-check page/data consistency, and re-run the validator, the JavaScript check and the full Playwright/axe suite.
+3. **Pass 3 — original-request audit:** walk the user's line-by-line requirements against the integrated tree, state verified vs unverified, deliver by PR and merge, observe the Pages build, and report limitations plus next-session tasks.
+
+---
+
+## Previous session plan — `arena/4d02579a-maltasupplemental` (12 October 2026, UTC)
+
+## Repository review (start of session)
+
+- Repo state: `main` = `956dfd9`, branch identical; PR #72 is the latest merge. Open PR #10 (`arena/9327905a`, a different session) is left untouched.
+- Existing site: static HTML + seven JSON datasets (218 exact-schema records), a shared renderer (`js/site.js`), a blank-by-default expense planner, Playwright/axe tests and `scripts/validate_site.py`. Baseline gates passed before any edit (validator, JavaScript, Playwright 26/26).
+- Environment limit: bash can reach only GitHub and package registries. External pages were read with the web tools (`fetch_page`, `web_search`).
+
+## Protocol adaptation
+
+The parallel protocol asks for one branch per workstream and sub-agents. This session is fixed to `arena/4d02579a-maltasupplemental`, so the workstreams ran **serially in one agent**:
+
+| Workstream | Owned files this session | Dependencies |
+|---|---|---|
+| A · Transport | `data/transport.json` (wording), `getting-around.html` (rendered) | none |
+| B · Food & cafés | none changed (no food re-read in this pass) | — |
+| C · Gaming, activities, events | `data/event.json` / `data/activities.json` read only; corrections recorded in logs | A |
+| D · Everyday | read only (plug record confirmed on gov.mt) | — |
+| E · Sports radio | read only (Kalshi, BFBS, HD Radio) | — |
+| F · Expense planner | unchanged (blank by design) | itinerary |
+| G · Integration | `scripts/check_weekdays.py`, `package.json`, `index.html` (exec summary), `README.md`, `docs/*` | A–F |
+
+Shared files (`index.html`, `README.md`, `docs/`) were edited once, at integration, not by each workstream.
+
+## Session objectives
+
+1. Re-verify the time-critical trip facts (event dates and venue, teams, opener clocks, the operator's live notices, hotel contact details, plug/voltage, radio and market listings) against live sources, and log each result with a date.
+2. Fix any error found, and close the open item where a source resolves it.
+3. Add a machine check for the one error class found: weekday/date pairs.
+4. Update the executive summary and open questions for anything that changes a decision on the trip.
+5. Run the gates, open a PR, merge it into `main`, and record the next-session work.
+
+## Verification gates and passes
+
+- **Pass 1 — implement and verify.** Re-read the operator feed (3 chunks), the organiser finals page, Liquipedia (chunk 0), the PR Newswire release, the hotel contact page, gov.mt, Kalshi events, and HLTV/Fragster/Liquipedia on the NIP replacement. Logged in `docs/SOURCES.md` (top section). Ran `npm test`.
+- **Pass 2 — adversarial review.** The new weekday check found three phrasing errors and then flagged the session's own quoted wording. Both were fixed. The fourth opener's “18:30” row was traced to a transcription error (Liquipedia 12:00 EDT = 18:00 Malta). The Route 186 “April 21” notice, which has no year, was kept as an open question (OQ-S7) rather than resolved by guesswork.
+- **Pass 3 — full request audit.** Checked the executive summary's claims one by one against the logs. Checked mobile and desktop rendering with a headless screenshot (no horizontal overflow). Recorded what is still unverified (see `docs/OPEN_QUESTIONS.md`, session section, and the handoff).
+
+## Delivery
+
+Commit to `arena/4d02579a-maltasupplemental`, push, open a PR into `main`, wait for the required check, merge by PR number, and record the merge state only after it is observed.
+
+---
+
 ## Previous session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
 
 ## Repository review and integration boundary

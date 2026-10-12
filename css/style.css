@@ -102,6 +102,8 @@ p { margin: 10px 0; }
 .footer-inner { display: flex; justify-content: space-between; gap: 22px; max-width: 1120px; margin: 0 auto; padding: 26px 22px; font-size: .86rem; }
 .site-footer a { color: #f3d48e; }
 .site-footer p { margin: 4px 0; }
+.footer-hubs { margin-top: 6px; color: #a9c0cb; }
+.footer-hubs a { text-decoration-thickness: 1px; text-underline-offset: 2px; }
 .small, .muted { color: var(--muted); font-size: .88rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 @media (max-width: 1280px) {

@@ -207,3 +207,26 @@ test('failed data fetch is visible and cannot export an empty planner', async ({
   await page.goto('radio.html');
   await expect(page.locator('[data-topic-data]')).toContainText('could not be loaded');
 });
+
+test('every hub page is reachable from the shared footer, and the itinerary quickstart is wired in', async ({page}) => {
+  await page.goto('index.html');
+  const hubs = ['hotel.html','qawra.html','landmarks.html','logistics.html','itinerary.html','hotspawn.html'];
+  for (const hub of hubs) await expect(page.locator(`.footer-hubs a[href="${hub}"]`)).toBeVisible();
+  await expect(page.locator('.footer-hubs a')).toHaveCount(hubs.length);
+  await expect(page.locator('#main-navigation a')).toHaveCount(9);
+  await expect(page.locator('a[href="docs/ITINERARY_QUICKSTART.md"]')).toHaveCount(1);
+  await page.goto('costs.html');
+  await expect(page.locator('#quick-fill a[href="docs/ITINERARY_QUICKSTART.md"]')).toHaveCount(1);
+  await page.goto('sources.html');
+  await expect(page.locator('a[href="docs/ITINERARY_QUICKSTART.md"]')).toHaveCount(1);
+});
+
+test('venue pin and route-frequency details are present and sourced on the transport page', async ({page}) => {
+  const record = JSON.parse(fs.readFileSync('data/transport.json','utf8')).records.find(r=>r.id==='blast-arena-studios-venue-address');
+  await page.goto('getting-around.html');
+  await expect(page.locator('#blast-arena-studios-venue-address dd').first()).toContainText('35.8957343');
+  await expect(page.locator('#venue-address-and-second-route')).toContainText('35.8957343');
+  await expect(page.locator('#venue-address-and-second-route')).toContainText('Scheduled Frequency every 30 minutes');
+  await expect(page.locator('#qawra-taqali-route-186 dd').nth(1)).toContainText('every 30 minutes');
+  expect(record.source_url).toBe('https://blast.tv/cs/news/malta-fan-guide');
+});
