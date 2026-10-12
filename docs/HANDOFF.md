@@ -1,6 +1,12 @@
 # Current cross-workstream handoff
 
-## Session `arena/99828d92-maltasupplemental` · 12 October 2026 UTC (latest)
+**Session:** `arena/104c434a-maltasupplemental` · **updated:** 12 October 2026 UTC (trip window opens 13 October).
+
+- **E → C/G (CS2 listing state changed):** Kalshi's own read-only API, re-read 12 October 2026, now returns **all four Thunderpick openers of 14 October as open CS2 markets** — the explicit "no Thunderpick fixture" statement that stood on `radio.html`, in `kalshi-trip-window-markets-api-2026-10-11` and in the earlier handoff is superseded by the new record `kalshi-cs2-twc-markets-2026-10-12`. The page, the record notes and the `tests/review.spec.js` guard were all retargeted together. **Keep the separation**: a listing is not carriage, not a stream, not a tip, and not permission to trade from Malta — CS2 commentary on a Maltese frequency remains unverified, as do the 17–18 October playoff markets.
+- **A → G (route evidence extended, not changed):** the Route 186 page was read in full again on 12 October — return boarding still Stadium 2194 through 20:53, terminus Bugibba Bay 1, both direction series unchanged, and subtracting published rows gives roughly 25 minutes Qawra 952 → Stadium 6227 and 29–33 minutes Stadium 2194 → terminus. Those are arithmetic on static, unlabelled timetable variants — not a planner result, not a door-to-door time, and no date-specific journey is saved.
+- **C/★ → G (event evidence unchanged):** the Eventbrite listing now shows a "Sales end soon" banner while still exposing no price, tier, inventory, day validity or weekend door time; the bracket page still schedules the semis at 16:00/19:00 on 17 October, third place 13:30 and the best-of-five final 17:00 Malta on 18 October, now with published HLTV matchpages for the last two, and pairings remain TBD. 19 October (departure) is still outside the national weather panel, and the fare-season split (€2.50 through 18 Oct / €2.00 on 19 Oct) is still an inference.
+
+## Previous cross-workstream handoff — `arena/99828d92-maltasupplemental` · 12 October 2026 UTC
 
 | From → to | Finding / decision | Follow-up owner |
 |---|---|---|

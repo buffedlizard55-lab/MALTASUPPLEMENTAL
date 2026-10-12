@@ -1,6 +1,30 @@
 # Malta trip guide — final report
 
-## Current session — `arena/99828d92-maltasupplemental` (12 October 2026 UTC)
+## Current session — `arena/104c434a-maltasupplemental` (12 October 2026 UTC)
+
+### Delivery summary
+
+A trip-eve verification pass on the fixed Arena branch, one day before arrival, run as Pass 1 (re-read the sources that can change a decision), Pass 2 (adversarial check of every new claim against its source) and Pass 3 (walk the original request against the integrated tree), then delivered by pull request merged by explicit number.
+
+One substantive delta was found and fixed end-to-end: **Kalshi's own read-only API, re-read on 12 October 2026, now lists all four Thunderpick World Championship opening matches of 14 October as open CS2 markets** (tickers `KXCS2GAME-26OCT140430AUR9Z`, `26OCT140700NIPFAL`, `26OCT140930PRVLGC`, `26OCT141200BBFURIA`; clocks converting exactly to the published 10:30/13:00/15:30/18:00 Malta starts), superseding the 11 October statement on `radio.html`, in `kalshi-trip-window-markets-api-2026-10-11` and in three inherited docs. The fix added a new canonical record (`kalshi-cs2-twc-markets-2026-10-12`), rewrote the radio page's Kalshi paragraph, CS2 table row and method footnote, updated the index summary bullet, corrected the dated "no Thunderpick fixture" copy in README/OPEN_QUESTIONS/HANDOFF with explicit supersession notes rather than silent rewrites, and retargeted the regression guard in `tests/review.spec.js`. The newest CS2 events in the same response were dated 14 October, so no 17–18 October playoff market was listed at that moment — the page says exactly that.
+
+Everything else re-read on this pass reproduced its recorded value: the MPT Route 186 page (both direction series; return boarding at Stadium 2194 through 20:53; Bugibba Bay 1 terminus; Saqqajja 4627 closure still listed), the TQ1 page ("Timetable not available!"), the full service-updates feed (no TQ/BLAST/Thunderpick notice), the fares page (winter window still dated "19 October 2025 to 13 June 2026"), the Liquipedia bracket (openers; semifinals 17 October 16:00 and 19:00, third place 13:30 and the best-of-five Grand Final 17:00 Malta time on 18 October, now with published HLTV matchpages for the last two; pairings TBD), the Eventbrite listing (weekend agenda still behind "Show all agenda", FAQ titles unanswered, "Sales end soon", no price or inventory exposed), NET FM's own weekly grid, the retried talkSPORT schedule page (still unavailable) and the Malta Met Office panel (12–18 October; 13 October windy with isolated showers, 25/19, NW F5–6; 19 October still outside the panel).
+
+### What is verified (this pass)
+
+The Kalshi CS2 and EPL listing reads of 12 October 2026 on the exchange's own read-only endpoints; the MPT Route 186 published stop-time rows and both direction series; the TQ1 page state and the absence of an event notice on the live feed; the fares page text; the Liquipedia bracket clocks, playoff days and the two HLTV matchpages; the Eventbrite page state including the "Sales end soon" banner and the still-hidden weekend rows; the NET FM recurring grid; the talkSPORT page being unavailable to this reader; and the Malta Met Office panel row by row for 12–18 October.
+
+### What remains unverified
+
+Organizer weekend door/finish times, FAQ answers, price/tier/inventory/day validity/gate; any 17–18 October Kalshi playoff market; a saved date-specific MPT journey and both stop-to-gate walks; the exact last Route 186 return (OQ-S1) and the "April 21" notice year; whether the 260/46 night detour touches the weekday fallback chains (OQ-T1); any TQ event service; live taxi or ride-hail quotes; the trip-week fare split (still an inference); any named match on a Maltese frequency and the 6C "Sports Channel" identity; 19 October's national forecast; and every traveler-personal item (flights, reservation, party, insurance, devices, receipts).
+
+### Passes and observed local gates
+
+1. **Pass 1 — implement and verify:** time-critical sources re-read (Kalshi CS2/EPL APIs, MPT Route 186, TQ1, service feed, fares page, Eventbrite, Liquipedia, NET FM, talkSPORT, Malta Met Office); only what those reads say was written; every URL logged in `docs/SOURCES.md` with its access date.
+2. **Pass 2 — adversarial review:** the new listing claim was checked for overreach (a market is not a broadcast, not a price, not eligibility), every new URL was verified present in the source log by the validator, stale "no Thunderpick fixture" statements in inherited docs were corrected with dated supersession notes, and the regression guard was moved to the new wording so CI enforces the separation.
+3. **Pass 3 — request audit:** the traveler's stated dates, hotel, event and the requested deliverables (sourced guide, radio subpage, expense planner, GitHub Pages delivery) were walked against the integrated tree; delivery is a PR from this branch merged by explicit number, with only observed GitHub/Pages state reported afterwards.
+
+## Previous session — `arena/99828d92-maltasupplemental` (12 October 2026 UTC)
 
 ### Delivery summary
 
@@ -39,7 +63,7 @@ No date-specific MPT journey, gate/walk measurement, live bus/taxi/rental quote 
 5. **Keep the evidence boundary:** update `docs/SOURCES.md`, `docs/OPEN_QUESTIONS.md`, `docs/STATUS.md` and this report in the same pass as any new claim, and re-run the full gate suite before merging.
 
 
-## Current session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
+## Previous session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
 ### Delivery summary
 
