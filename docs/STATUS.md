@@ -2,7 +2,7 @@
 
 ## Current session addendum — `arena/5ec909ed-maltasupplemental` · 11–12 October 2026 UTC
 
-**Integration:** PR #71 is on the fixed branch. While it was open, `main` advanced through PR #69 (`926c33b`), PR #70 (`8799b1b`), PR #73 (`1382640`) and PR #74 (`0031757`). The latest data/source corrections and delivery-receipt update are resolved in the local merge tree. PR #70 clarified that the Routes 46/260 and 54/106 notices had previously appeared in passing; current records add stop-level detail. PR #73’s event-ticket, Route 186 direction, TripAdvisor, ETIAS and weather corrections are retained. Local gates pass; the latest merge commit still needs pushing before PR #71’s state is rechecked. No external re-fetch, dated route-planner query, live ride quote, venue visit or physical radio scan was made here.
+**Integration:** PR #71 was merged after incorporating `main` through PR #74 (`0031757`). GitHub merged it at `2026-10-12T00:53:20Z` as `c4449fb7e7267f16ff113fa8eb5de541dc5a88fb`; the required check passed and Pages later reported `built` for that commit. PR #70 clarified that the Routes 46/260 and 54/106 notices had previously appeared in passing; current records add stop-level detail. PR #73’s event-ticket, Route 186 direction, TripAdvisor, ETIAS and weather corrections are retained. Local gates pass. This post-merge documentation receipt makes no new external research claim.
 
 | Workstream | Current result | Remaining boundary |
 |---|---|---|
@@ -12,13 +12,15 @@
 | **D · Everyday guide** | ETIAS is date-qualified; EES remains separate; Malta national weather and UK Met Office/AccuWeather snapshots remain distinct. | Recheck entry/weather; no Malta national value for 19 October or marine conditions is established. |
 | **E · Sports radio** | Official schedule leads and Kalshi market context are kept separate from Malta carriage, named-match programming and reception. | Receiver compatibility, local signal, trip-date named-match carriage and full market eligibility terms remain unverified. |
 | **F · Expense planner** | Blank-by-default rows and preview/no-overwrite/backup flows retained. | Populate only after actual bookings, itinerary, party details and receipts/quotes arrive. |
-| **G · Integration** | Current upstream corrections, source log, open questions, handoff and three-pass plan reconciled; local validator, JavaScript check and full 26-test suite pass. | Push fixed branch, inspect PR checks/mergeability, merge only if eligible, then verify Pages state. |
+| **G · Integration** | Current upstream corrections, source log, open questions, handoff and three-pass plan reconciled; local validator, JavaScript check and full 26-test suite pass. PR #71 merged and its Pages build is `built`. | Recheck volatile trip facts and traveler-specific inputs before travel; no external-service or physical-device confirmation is implied. |
 
 **Observed local gates (12 October 2026 UTC):** validator PASS — 7 JSON files / 218 exact-schema records / 351 unique record URLs / 15 HTML pages / 374 link attributes / 9 shared navigation destinations / 25 expense rows; JavaScript syntax PASS; `npm test` PASS, Playwright 26/26 with axe at 320/360/768/1024/1440 px; whitespace checks PASS. Tests validate local behavior, not live external facts or services.
 
 **Three-pass record:** Pass 1 integrated source-dated corrections; Pass 2 adversarially checked stale ticket/transport/fare/weather/platform/radio claims; Pass 3 audited the complete user request and documented remaining limits. PR/check/merge/Pages state is updated only after observation.
 
-**Upstream delivery observed (not PR #71):** PR #73 from `arena/57ad3983-maltasupplemental` merged at `2026-10-12T00:35:41Z` as `1382640d`; its required check passed, post-merge validation and Pages deployment succeeded. The Pages latest-build API reports `built` for `main` `0031757` (PR #74 documentation update) at `00:41:46Z`. PR #71 still needs a post-push state check.
+**Delivery observed — PR #71:** GitHub reports `MERGED` at `2026-10-12T00:53:20Z` as `c4449fb7e7267f16ff113fa8eb5de541dc5a88fb`. Required check “Schema, browser and accessibility checks” passed for head `b5db811` (run 38189621707). The Pages latest-build API reported `built` for the PR #71 merge commit at `00:53:46Z`.
+
+**Upstream delivery observed — PR #73, separate branch:** merged at `2026-10-12T00:35:41Z` as `1382640d`; the required check passed, post-merge validation and Pages deployment succeeded. PR #74’s documentation update is included in base `0031757`. These are separate upstream deliveries, not PR #71.
 
 <!-- Historical addenda below are preserved as dated snapshots; they do not describe the current branch state. -->
 
