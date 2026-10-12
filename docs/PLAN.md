@@ -1,4 +1,28 @@
-# Current session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
+# Current session plan — `arena/104c434a-maltasupplemental` (12 October 2026, UTC)
+
+## Repository review and integration boundary
+
+The repository was reviewed before any edit: Pages shell, exact 13-field record schema, seven datasets, shared renderer/navigation/CSS, expense planner, source log, status/handoff/open-question logs and the validate/JS/Playwright-axe gates are retained untouched in structure. Arena fixes one branch per session, so the parallel-work protocol ran with the established A–G file-ownership map on this single branch, G integrating shared files last; cross-stream findings go to `docs/HANDOFF.md`, unresolved items to `docs/OPEN_QUESTIONS.md`, sources to `docs/SOURCES.md`.
+
+This pass on the eve of departure is a **time-critical re-read of the sources that can change a decision**, then Passes 1–3 on the integrated result. The substantive finding is recorded under E (Kalshi CS2 listing state); the only page whose factual claims changed is `radio.html` (with its index summary and test guard), while A/C/D/E gained dated re-read notes on existing records.
+
+| Stream | Owned files | This session |
+|---|---|---|
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Route 186 page re-read in full (both direction series, return at Stadium 2194 through 20:53, Bugibba Bay 1 terminus, Saqqajja 4627 closure listed); TQ1 and the fares page rechecked; feed re-read with no event service; running-time arithmetic added to the page as a labelled subtraction. |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | No change this pass; platform blocks unchanged. |
+| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `data/event.json`, `event.html` | Eventbrite and Liquipedia re-reads folded in: "Sales end soon", weekend agenda still hidden, playoff days and pairings-TBD status confirmed, HLTV matchpages recorded. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | National weather panel re-read row by row; the panel-vs-reprint difference on 17 October kept unreconciled. |
+| **E · Sports radio** | `data/radio.json`, `radio.html` | Kalshi CS2 API re-read — the four 14 October openers are now listed — plus a new record, page rewrite and retargeted regression guard; NET FM and talkSPORT rechecks. Listings stay separate from carriage. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html` | Unchanged: amounts stay blank. |
+| **G · Shared shell, executive summary, integration & delivery (last)** | `index.html`, `README.md`, `docs/*`, tests | Supersession notes in README/OPEN_QUESTIONS/HANDOFF/STATUS/FINAL_REPORT/PLAN, index bullet updated, every gate re-run, PR opened and merged by explicit number. |
+
+### Verification gates / passes
+
+1. **Pass 1 — implement and verify:** re-read the time-critical live sources; write only what they say; log every URL and access date in `docs/SOURCES.md`.
+2. **Pass 2 — adversarial review:** check the new listing claim for overreach, confirm every new URL is in the source log (the validator enforces this), correct inherited stale statements with dated notes, update the test guard, re-run schema/JavaScript/browser gates.
+3. **Pass 3 — original-request audit:** walk the traveler's requirements against the integrated tree and report only observed PR/Pages state.
+
+## Previous session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
 
 ## Repository review and integration boundary
 

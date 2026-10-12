@@ -1,7 +1,23 @@
-<!-- Session addendum appended by the arena/561bff0e session; historical sections below are preserved. -->
+<!-- Session addendum appended by the arena/104c434a session; historical sections below are preserved. -->
 # Delivery status — Malta trip guide
 
-## Current session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
+## Current session addendum — `arena/104c434a-maltasupplemental` (12 October 2026 UTC)
+
+**Stage:** trip-eve verification pass (Pass 1 re-reads → Pass 2 adversarial check → Pass 3 request walk) on the fixed Arena branch, followed by delivery by PR merged by explicit number. Source reads are dated 2026-10-12. The one substantive delta this pass was the Kalshi CS2 listing state, fixed end-to-end (record, page, log, test guard); every other re-read reproduced its recorded value.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Route 186 page re-read in full (both direction series, return at Stadium 2194 to 20:53, Bugibba Bay 1 terminus, Saqqajja 4627 closed-but-listed); TQ1 still "Timetable not available!"; fares page unchanged (winter window dated to 13 June 2026); updates feed re-read with no TQ/BLAST notice. Running-time arithmetic (≈25 / ≈29–33 min) added to the page as a labelled subtraction, not a planner result. | No saved date-specific journey, no gate walk, no live quote; exact last return (OQ-S1), "April 21" year and 260/46 night-detour effect (OQ-T1) still open; trip-week fare split still an inference. |
+| **B · Food & cafés** | No change this pass. | Platform blocks unchanged; menus/hours to reconfirm in person. |
+| **C · Gaming & events** | Eventbrite re-read: weekend agenda still behind "Show all agenda", FAQ titles unanswered, "Sales end soon", venue pin and 18+ in-person condition unchanged; Liquipedia bracket re-read (openers, semis 16:00/19:00 on 17 Oct, third place 13:30, Bo5 final 17:00 Malta, HLTV matchpages for the last two), pairings TBD. | No price, tier, inventory, day validity, gate or weekend door time; organizer to confirm. |
+| **D · Everyday** | National weather panel re-read row by row (12–18 Oct; 13 Oct windy with isolated showers 25/19 NW F5–6; 19 Oct still outside the panel); the panel's own 17 Oct value differs from a news reprint of the same forecast and both are recorded. | Forecasts, not observations; departure-day forecast still absent from the national panel. |
+| **E · Sports radio** | Kalshi CS2 listing updated (four 14 Oct TWC openers now open; no 17–18 Oct market yet); EPL trip-window set unchanged; NET FM grid re-read (recurring Fri/Sat/Sun slots only); talkSPORT schedule retried and still unavailable. | No named match on a Maltese frequency; "Sports Channel" 6C identity unresolved; no receiver scan possible remotely. |
+| **F · Expense planner** | Unchanged; all amounts blank; 25 rows wired. | Itinerary not supplied. |
+| **G · Integration** | Kalshi paragraph/table/method footnote on `radio.html`, index summary bullet, `event.html`/`getting-around.html`/`sources.html` dated wording, new `docs/SOURCES.md` session block, README/OPEN_QUESTIONS/HANDOFF/STATUS/FINAL_REPORT/PLAN notes, and the retargeted `tests/review.spec.js` guard. | PR from this branch merged by explicit number; report only observed GitHub/Pages state. |
+
+**Gate results (12 October 2026, this session):** validator PASS — 7 JSON files / 219 exact-schema records / 357 unique record URLs / 15 HTML pages / 380 link attributes / 9 shared navigation destinations / 25 expense rows; JavaScript check PASS; browser suite run locally after `npm ci` (result recorded in the PR body; CI re-runs the same three gates on the pull request).
+
+## Previous session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
 **Stage:** Pass 1 (time-critical re-reads), Pass 2 (adversarial review) and Pass 3 (full re-check against the request) run in that order on this fixed Arena branch. Main advanced during the pass (PRs #68–#70 from parallel sessions) and was merged into the branch before delivery: conflicts in shared docs/pages were resolved by keeping both sessions' blocks, and this session's trip-week-notice additions were folded into main's canonical `mpt-trip-week-notices-2026-10-11` record instead of creating a duplicate. Local gates re-run before delivery; the GitHub PR is the source of truth for merge state. The session opened late 11 October UTC; source reads are dated 2026-10-12.
 

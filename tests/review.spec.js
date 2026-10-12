@@ -383,7 +383,10 @@ test('Kalshi market listing is presented as a listing, never as radio carriage',
   const sectionText = await section.innerText();
   expect(sectionText).toContain('KXEPLGAME');
   expect(sectionText).toContain('KXCS2GAME');
-  expect(sectionText).toContain('No Thunderpick World Championship fixture was listed');
+  // The CS2 listing state changed on 12 October 2026: the openers are now listed, and the
+  // page must say so while still refusing to present a listing as carriage.
+  expect(sectionText).toContain('the tournament’s four 14 October opening matches are listed');
+  expect(sectionText).toContain('the sentence this page carried on 11 October, that no Thunderpick fixture was listed, is superseded');
   expect(sectionText).toContain('Nothing on this page is a price');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBeTruthy();
 
