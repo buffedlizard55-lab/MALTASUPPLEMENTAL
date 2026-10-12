@@ -4,15 +4,15 @@
 
 The session began on the fixed Arena branch at `ac487ae` (PR #67 merge), with the existing GitHub Pages site, seven JSON datasets, exact 13-field schema, shared renderer/navigation/CSS, source/open-question/status/handoff logs, expense planner, CI and Playwright/axe suite already present. `docs/PLAN.md`, `data/record.schema.json`, `js/site.js`, `css/style.css` and the source-log format were reviewed before topic edits; preserve them unless an integration defect is found. `origin/main` had advanced to `4725130` with PR #68 and a follow-up documentation commit, so the branch was fast-forwarded on the same fixed branch before edits. PR #68's documentation is an upstream snapshot, not evidence that the current factual claims are correct.
 
-Arena pins this session to `arena/5ec909ed-maltasupplemental`; workstreams A–F therefore run serially on this branch, each respecting the established file ownership. No extra branches or parallel agents are claimed. Cross-topic findings go to `docs/HANDOFF.md`; unresolved claims go to `docs/OPEN_QUESTIONS.md`. G updates shared pages and documentation last.
+Arena pins this session to `arena/5ec909ed-maltasupplemental`; workstreams A–F therefore run serially on this branch, each respecting the established file ownership. No extra branches or parallel agents are claimed. After the first push, `origin/main` advanced again to `926c33b` through PR #69; the update was merged into this fixed branch after PR #71 exposed a conflict. Its already-recorded service-notice, Kalshi API, Met Office, platform, radio page and test changes were reconciled into the current tree rather than re-fetched here. Cross-topic findings go to `docs/HANDOFF.md`; unresolved claims go to `docs/OPEN_QUESTIONS.md`. G updates shared pages and documentation last.
 
 | Stream | Owned files | This session's focus |
 |---|---|---|
-| **A · Transport** | `data/transport.json`, `getting-around.html` | Adversarially review the dated hotel↔Attard bus plan and the unlabelled Route 186 variants; retain uncertainty rather than promise a return. Keep fare-season inference, taxi/ride-hail quotes and saved journeys distinct. |
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Adversarially review the dated hotel↔Attard bus plan and unlabelled Route 186 variants; incorporate mainline’s newly logged Routes 46/260 and 54/106 notices without asserting trip impact. Retain uncertainty rather than promise a return; keep fare-season inference, taxi quotes and saved journeys distinct. |
 | **B · Food & cafés** | `data/food.json`, `restaurants.html` | Reconcile current access notes without presenting limited platform samples as a universal popularity ranking; no new reviews are asserted. |
 | **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Correct the Eventbrite ticket-price/action attribution; preserve age/date/visible-agenda evidence but do not infer ticket price or reservation from a recommendation card. |
-| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Align the ETIAS page with the current EU FAQ's no-action/several-months-notice statement; refresh the 13–19 Oct forecast record from current official pages and retain forecast disagreements. |
-| **E · Sports radio** | `data/radio.json`, `radio.html` | Preserve the separate terrestrial-radio scope and distinguish station schedules, Malta carriage, receiver compatibility, reception and online streams. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Align ETIAS with the current EU FAQ’s no-action/several-months-notice statement; reconcile Malta’s through-18 panel with the later same-day UK Met Office view through 21 Oct and its BETA labels; retain changing values and disagreements. |
+| **E · Sports radio** | `data/radio.json`, `radio.html` | Preserve the separate terrestrial-radio scope and distinguish schedules, Malta carriage, receiver reception and online streams; integrate mainline’s read-only Kalshi API data as market context, never as radio evidence. |
 | **F · Expense planner** | `data/expenses.json`, `costs.html` | Keep all user-specific amounts blank; verify the existing planner and do not invent itinerary costs. |
 | **G · Shell, executive summary, integration & delivery (last)** | `index.html`, `README.md`, `docs/*`, tests and shared pages as needed | Reconcile source/status/open-question/handoff/report files, scan all current claims for contradictions, run the full suite, open a PR only after local gates and record observed PR/Pages state. |
 
@@ -192,6 +192,28 @@ All records must include:
 - Final integration by G
 
 ---
+
+## Historical mainline plan — `arena/2b38c9c6-maltasupplemental` (11 October 2026)
+
+Started at `main` `ac487ae` (PR #67 merge), clean tree. Repository review confirmed the unchanged structure: 15 static pages, seven topic datasets (216 records at review time), the canonical 13-field schema, per-topic pages rendered from JSON by `js/site.js`, `docs/SOURCES.md`, `docs/OPEN_QUESTIONS.md`, the blank-by-default expense planner, the CI workflow and a 25-test Playwright/axe suite. Nothing is rebuilt; shared setup (schema, navigation/renderer, CSS tokens, source-log row format) was re-verified first and left intact. Arena fixes one branch per session, so A–F run serially on this branch under the same ownership map and G integrates last; cross-stream notes go to `docs/HANDOFF.md`.
+
+This pass targets the one prompt requirement whose evidence base was still secondary: **the Kalshi question in the sports-radio section**, plus fresh reads of the trip's most decision-relevant live sources two days before departure.
+
+| Stream | Owned files | This session |
+|---|---|---|
+| A · Transport | `data/transport.json`, `getting-around.html` | Full three-chunk read of the operator service-updates feed: reconfirmed the 17–18 October cluster and added two previously unrecorded trip-window notices (Routes 46/260 Mon–Thu 21:00–05:00, 12–16 October; Routes 54/106 daytime Attard detours on 13 October); re-read fares (no change) and TQ1 (still “Timetable not available!”). |
+| B · Food & cafés | `data/food.json`, `restaurants.html` | No new platform access: Yelp and Reddit returned HTTP 403 again and Google Maps returned a JavaScript shell, so the platform-coverage limits are re-confirmed rather than restated as fresh evidence. No record change. |
+| C · Gaming, activities, landmarks & events | `data/activities.json`, `data/event.json`, `activities.html`, `event.html` | Eventbrite listing re-read in full: venue, dates, 18+ rule, Wed–Fri agenda rows and the hidden Saturday/Sunday rows unchanged. No record change. |
+| D · U.S.-traveler everyday guide | `data/everyday.json`, `everyday.html` | Second Met Office Valletta read now covering 13–21 October, recorded alongside the earlier same-day snapshot; no other everyday change. |
+| E · Sports radio | `data/radio.json`, `radio.html` | **Primary-source addition:** the exchange's own public API confirms which trip-window fixtures have open markets (EPL 17–19 October, Champions League 13–14 October, NFL 18 October, CS2 sampled to 13 October with no Thunderpick fixture, Serie A future only). New page section and record keep market listings strictly separate from radio carriage. |
+| F · Expense planner | `data/expenses.json`, `costs.html` | Unchanged and still blank by design; no amounts are invented while no itinerary is supplied. |
+| G · Site shell, executive summary & navigation (last) | `index.html`, `sources.html`, `README.md`, `js/site.js`, `css/style.css`, `docs/*`, tests | Integrate the new evidence, log every URL, add a regression test for the market-versus-radio distinction, run the full gate suite, then deliver by PR and record the observed merge and Pages state. |
+
+### Verification gates / passes
+
+1. **Pass 1 — implement and verify:** each stream re-reads its live sources, writes only its owned data/page pair, and logs every claim with URL and date; anything not confirmed is recorded as printed-but-unresolved, not smoothed over.
+2. **Pass 2 — adversarial review:** check the new records for overreach (market listing vs. radio carriage, notice year ambiguity, forecast volatility), confirm no unverified item is presented as fact, and re-run validator, JavaScript and browser gates.
+3. **Pass 3 — original-request audit:** walk the user's line-by-line requirements against the integrated tree and report verified vs. unverified, limitations and next-session work.
 
 ## Previous Session Plans (Preserved for Reference)
 

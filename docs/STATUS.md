@@ -2,25 +2,25 @@
 
 ## Current session addendum — `arena/5ec909ed-maltasupplemental` · 11 October 2026 UTC
 
-**Base:** fixed Arena branch fast-forwarded to `4725130`. Work was performed serially on this branch, following the A–F topic / G integration ownership map; no parallel agents or workstream branches are claimed. This continuation reconciled the data and site copies against source reads fetched on 11 October in the prior session context. It made **no new external page fetch, Eventbrite checkout/inventory test, date-specific MPT planner query, taxi quote, venue visit or physical radio scan**.
+**Base:** fixed Arena branch started at `4725130`. After PR #71 was opened, `origin/main` advanced to `926c33b` through PR #69; that mainline update was merged into this fixed branch to resolve the resulting conflict. Work was performed serially here under the A–F topic / G integration ownership map; no parallel agents or workstream branches are claimed. This continuation reconciled earlier source reads and integrated additional MPT, Kalshi API, Met Office and platform reads already recorded on mainline. It made **no new external page fetch, Eventbrite checkout/inventory test, date-specific MPT planner query, taxi quote, venue visit or physical radio scan**.
 
 | Workstream | Current result | Remaining check |
 |---|---|---|
-| **A · Transport** | Route 186 remains a candidate; its Buġibba-bound direction does not list an Il-Qawra stop and terminates at Buġibba Bay 1. The earlier 20:53/20:54 Stadium 2194 return was not reproduced on later reads; variants are unlabelled. Page copy no longer treats a variant as the trip-date last bus or claims every event finish outlasts every possible service. | Save a date-specific planner result, confirm gate/stop sides/walks and onward Qawra connection; quote ride fallback only if needed. Fare-season split remains an inference. |
-| **B · Food & cafés** | No new review/social source evidence. Existing dated platform limits and rating/count caveats remain. | Recheck chosen venues’ current hours, menus and trading status; requested blocked platforms remain a limitation. |
+| **A · Transport** | Route 186 remains a candidate; its Buġibba-bound direction does not list an Il-Qawra stop and terminates at Buġibba Bay 1. The earlier 20:53/20:54 Stadium 2194 return was not reproduced on later reads; variants are unlabelled. Mainline’s additional operator-feed read adds Mon–Thu 21:00–05:00 detours on Routes 46/260 (nights 14–15 Oct) and 13 Oct daytime Attard detours on Routes 54/106. Page copy does not assert their trip impact or a specific last bus. | Save a date-specific planner result for all actual event days; check each notice’s applicable stops, gate/walks and onward Qawra connection; quote ride fallback only if needed. Fare-season split remains an inference. |
+| **B · Food & cafés** | The added mainline re-test recorded Yelp and Reddit HTTP 403 and Google Maps as a JavaScript shell with no place data; no content was inferred. Existing dated platform limits and rating/count caveats remain. | Recheck chosen venues’ current hours, menus and trading status; other blocked/unreadable platforms remain a limitation. |
 | **C · Gaming, activities & events** | Eventbrite ticket wording now distinguishes the ticket section (no price/action in latest extraction) from the recommendation card; HLTV’s free-ticket statement stays secondary. Activity and event-day records no longer treat the Route 186 minute as confirmed. | Confirm ticket terms, inventory, personal access, attendee gate, daily validity and weekend door/finish times with organizer. |
-| **D · Everyday essentials** | ETIAS wording follows the EU FAQ’s “no action” and several-months notice statement; forecast snapshot covers Malta through 18 Oct and UK Valletta through 19 Oct (19th BETA), with disagreement retained. | Follow any new EU notice; EES Malta implementation remains unresolved; no marine forecast/sea-state check. |
-| **E · Sports radio** | Existing radio records distinguish observed 6C sports services and Rai’s weekend schedule from unverified trip-date named-match content and reception; OQ-28 was aligned to that evidence. | Physical DAB+/FM scan, exact relay content, named-match carriage and indoor reception. |
+| **D · Everyday essentials** | ETIAS wording follows the EU FAQ’s “no action” and several-months notice statement; Malta’s panel ends 18 Oct, and a later same-day UK Valletta read covers to 21 Oct (18–21 BETA) with its small re-read changes and disagreement recorded. | Follow any new EU notice; EES Malta implementation remains unresolved; no marine forecast/sea-state check; recheck daily. |
+| **E · Sports radio** | Existing radio records distinguish observed 6C sports services and BBC/Rai/NET FM/Radio Sportiva schedule leads from unverified trip-date named-match content/reception. The merged read-only Kalshi API record separates listed EPL/UCL/NFL markets from radio, records no sampled Thunderpick CS2 fixture and no per-match Serie A contract under the probed ticker. | Physical DAB+/FM scan, exact relay content, named-match carriage and indoor reception; full Member Agreement and personal Malta trading eligibility. |
 | **F · Expense planner** | Event-access and event-return guidance now stay blank and conditional; €0/free access and a taxi for every event night are not assumed. | Enter only actual itinerary/quotes/receipts; do not double count commute and ride rows. |
-| **G · Integration** | Overview, transport/event/everyday/expense copy, README, sources, handoff, open questions, historical-report notices and retired script reconciled. | Local checks pass below. Pull request has **not** yet been opened; no push, required-check or Pages-build state is claimed. |
+| **G · Integration** | Overview, transport/event/everyday/expense copy, README, radio market table, sources, handoff, open questions, historical-report notices and retired script reconciled. PR #71 is open from this fixed branch; `main` advanced while it was open and has been merged locally with the conflicts resolved. | Push the integrated tree, observe PR #71 checks and mergeability, then record merge and Pages-build state only if observed. |
 
-**Observed local gates on the integrated tree:** `python3 scripts/validate_site.py` PASS (7 JSON files, 216 exact-schema records, 336 unique record URLs, 15 HTML pages, 372 link attributes, 9 navigation destinations, 25 expense rows); `python3 scripts/check_javascript.py` PASS; `npm test` PASS, **25/25** Playwright tests, including axe at 320/360/768/1024/1440 px; `git diff --check` PASS. These verify repository/site behavior, not external facts, transport availability, ticket inventory, forecasts or radio reception.
+**Observed local gates on the integrated tree:** `python3 scripts/validate_site.py` PASS (7 JSON files, 218 exact-schema records, 341 unique record URLs, 15 HTML pages, 380 link attributes, 9 navigation destinations, 25 expense rows); `python3 scripts/check_javascript.py` PASS; `npm test` PASS, **26/26** Playwright tests, including axe at 320/360/768/1024/1440 px and the Kalshi market-versus-radio regression; `git diff --check` PASS. These verify repository/site behavior, not external facts, transport availability, ticket inventory, forecasts or radio reception.
 
-**Three-pass record:** Pass 1 implemented the current-source corrections and ran the local suite. Pass 2 adversarially searched the integrated surfaces for stale free-ticket, exact-last-bus, ETIAS and forecast wording; corrected the expense instructions and marked older reports as historical. Pass 3 mapped the requested topic areas to the site and recorded unverified items/limitations in the current report and open-question ledger. Final delivery state is pending until the branch is pushed, a PR is opened, and GitHub checks/Pages state are observed.
+**Three-pass record:** Pass 1 reconciled ticket, route, new service-notice, ETIAS, weather and Kalshi records; Pass 2 adversarially checked stale ticket/bus/ETIAS/forecast claims and the market-versus-radio boundary; Pass 3 audited the full request and documented limitations. The suite is recorded above. Update final delivery state only from observed PR/check/Pages results.
 
 <!-- Historical addenda below are preserved as dated snapshots; they do not describe the current branch state. -->
 
-## Current session addendum — `arena/9bd7eeb7-maltasupplemental` (11 October 2026)
+## Historical session addendum — `arena/9bd7eeb7-maltasupplemental` (11 October 2026)
 
 **Stage:** Pass 1 (implement and verify), Pass 2 (adversarial review) and Pass 3 (full re-check against the request) run in that order on `origin/main` `ae69ab1`. Gate results are recorded in the section below. The GitHub PR is the source of truth for merge state.
 
@@ -36,7 +36,7 @@
 
 **Gate results (11 October 2026, this session):** validator PASS; JavaScript check PASS; Playwright 23/23 passed. Details in `docs/PLAN.md` "Current session plan".
 
-## Current session addendum — `arena/1005fdbf-maltasupplemental` (11 October 2026)
+## Historical session addendum — `arena/1005fdbf-maltasupplemental` (11 October 2026)
 
 **Stage:** Passes 1–3 complete on the branch; radio workstream verified and committed; full local suite run. PR opened from this branch and merged to `main`; the Pages build for the merge commit is reported as observed, not assumed.
 
@@ -56,9 +56,9 @@
 **Current session branch:** `arena/3031b29b-maltasupplemental`
 **Snapshot boundary:** the addendum directly below is this session; later sections are historical mainline snapshots, not a live dashboard.
 
-## Current session addendum — `arena/3031b29b-maltasupplemental` (11 October 2026)
+## Historical session addendum — `arena/3031b29b-maltasupplemental` (11 October 2026)
 
-**Stage:** Passes 1–3 executed on a tree started from `main` `ae69ab1`; local gates run; **delivered as PR #60** (merged to `main` at 2026-10-11 18:43:26 UTC, merge commit `b8af702b664893ce00c6d4951c178fd7a1b92190`), with the required “Schema, browser and accessibility checks” job **passing** at 1 m 13 s on the pushed head and the GitHub Pages latest-build endpoint reporting `built` for that same merge commit. Two parallel sessions merged during the pass (PRs #58, #59); both were integrated with their blocks preserved and their three corrections folded in. The public radio page was then fetched and confirmed to render the new trip-window live-sport table — a browser-level content check of the deployment, not an external-link or reception test.
+**Stage:** Passes 1–3 executed on a tree started from `main` `ae69ab1`; local gates run; **delivered as PR #60** (merged to `main` at 2026-10-11 18:43:26 UTC, merge commit `b8af702b664893ce00c6d4951c178fd7a1b92190`), with the required “Schema, browser and accessibility checks” job **passing** at 1 m 13 s on the pushed head and the GitHub Pages latest-build endpoint reporting `built` for that same merge commit. Two upstream PRs (#58 and #59) merged during that period; their updates were integrated with records preserved and three corrections folded in. The public radio page was then fetched and confirmed to render the new trip-window live-sport table — a browser-level content check of the deployment, not an external-link or reception test.
 
 | Workstream | Status | Blockers / next check |
 |---|---|---|
@@ -79,7 +79,7 @@
 **Current session branch:** `arena/b29d95ae-maltasupplemental`
 **Snapshot boundary:** Current-session addendum below; later sections are historical mainline snapshots, not a live dashboard.
 
-## Current session addendum — `arena/b29d95ae-maltasupplemental` (11 October 2026)
+## Historical session addendum — `arena/b29d95ae-maltasupplemental` (11 October 2026)
 
 **Stage:** Delivered. PR #64 merged to `main` at 2026-10-11 19:10:02 UTC as `60fea6d` after rebasing through `614a67b` (PRs #56–#66 integrated, including the parallel 6C radio-block resolution); the Pages latest-build endpoint reports `built` for that commit. Repository reviewed at `main` `ae69ab1` (PR #55 merge tip); shared setup (schema, shell, CSS, source-log format, planner, CI, tests) verified present and left intact. Workstreams ran serially on this fixed Arena branch with the established file-ownership map; cross-stream findings went to `docs/HANDOFF.md`. Time-critical sources re-read (Eventbrite, MPT updates + fares, Liquipedia bracket, BBC Sportsworld/Sportsound, EU ETIAS FAQ, met panels, one platform access check); Passes 1–3 and the local suite are the gates before the PR.
 
@@ -89,7 +89,7 @@
 | **B · Food & cafés** | Platform-coverage record updated: Yelp re-attempted today, still HTTP 403 | Counts drift; other platforms remain blocked/limited; reconfirm hours/menus in person. |
 | **C · Gaming, activities & event** | Weekend match clocks now pinned from a direct bracket read (SF 16:00/19:00 Sat; 3rd 13:30 + Final 17:00 Sun); garbled search-extract pairing discarded | Organizer Sat/Sun door rows, FAQ answers, reservation/inventory remain open. |
 | **D · U.S.-traveler essentials** | ETIAS record tightened to the trip-week answer (not in operation; no action required; several-months notice promise) | EES Malta conflict open; weather panels disagree for 13th/18th; national panel 18–19 coverage unverified (AccessDenied). |
-| **E · Sports radio** | New record: named BBC Radio Scotland weekend commentaries (Dundee v Rangers, Celtic v Hearts) with official programme IDs; 5 Live record corroborated. Merged with the parallel sessions' 6C resolution — no block conflict remains | UK output only — no Malta carriage, reception or named-match chain; undated Thursday Benfica v Celtic row stays a lead; what 6C's “Sports Channel” airs is still open. |
+| **E · Sports radio** | New record: named BBC Radio Scotland weekend commentaries (Dundee v Rangers, Celtic v Hearts) with official programme IDs; 5 Live record corroborated. Incorporates the mainline 6C resolution — no block conflict remains | UK output only — no Malta carriage, reception or named-match chain; undated Thursday Benfica v Celtic row stays a lead; what 6C's “Sports Channel” airs is still open. |
 | **F · Expense planner** | Unchanged, blank-by-default; verified untouched by this pass | Awaiting the traveler's itinerary and receipts. |
 | **G · Integration (last)** | Exec summary, README recheck note, source log, handoff, open questions and this status updated; full local suite is the pre-PR gate | Open the PR from this branch, merge by explicit number, observe Pages build, write the session report. |
 
