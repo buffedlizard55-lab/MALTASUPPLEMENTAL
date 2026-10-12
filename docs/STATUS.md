@@ -1,5 +1,24 @@
-<!-- Session addendum appended by the arena/1005fdbf session; historical sections below are preserved. -->
 # Delivery status — Malta trip guide
+
+## Current session addendum — `arena/5ec909ed-maltasupplemental` · 11 October 2026 UTC
+
+**Base:** fixed Arena branch fast-forwarded to `4725130`. Work was performed serially on this branch, following the A–F topic / G integration ownership map; no parallel agents or workstream branches are claimed. This continuation reconciled the data and site copies against source reads fetched on 11 October in the prior session context. It made **no new external page fetch, Eventbrite checkout/inventory test, date-specific MPT planner query, taxi quote, venue visit or physical radio scan**.
+
+| Workstream | Current result | Remaining check |
+|---|---|---|
+| **A · Transport** | Route 186 remains a candidate; its Buġibba-bound direction does not list an Il-Qawra stop and terminates at Buġibba Bay 1. The earlier 20:53/20:54 Stadium 2194 return was not reproduced on later reads; variants are unlabelled. Page copy no longer treats a variant as the trip-date last bus or claims every event finish outlasts every possible service. | Save a date-specific planner result, confirm gate/stop sides/walks and onward Qawra connection; quote ride fallback only if needed. Fare-season split remains an inference. |
+| **B · Food & cafés** | No new review/social source evidence. Existing dated platform limits and rating/count caveats remain. | Recheck chosen venues’ current hours, menus and trading status; requested blocked platforms remain a limitation. |
+| **C · Gaming, activities & events** | Eventbrite ticket wording now distinguishes the ticket section (no price/action in latest extraction) from the recommendation card; HLTV’s free-ticket statement stays secondary. Activity and event-day records no longer treat the Route 186 minute as confirmed. | Confirm ticket terms, inventory, personal access, attendee gate, daily validity and weekend door/finish times with organizer. |
+| **D · Everyday essentials** | ETIAS wording follows the EU FAQ’s “no action” and several-months notice statement; forecast snapshot covers Malta through 18 Oct and UK Valletta through 19 Oct (19th BETA), with disagreement retained. | Follow any new EU notice; EES Malta implementation remains unresolved; no marine forecast/sea-state check. |
+| **E · Sports radio** | Existing radio records distinguish observed 6C sports services and Rai’s weekend schedule from unverified trip-date named-match content and reception; OQ-28 was aligned to that evidence. | Physical DAB+/FM scan, exact relay content, named-match carriage and indoor reception. |
+| **F · Expense planner** | Event-access and event-return guidance now stay blank and conditional; €0/free access and a taxi for every event night are not assumed. | Enter only actual itinerary/quotes/receipts; do not double count commute and ride rows. |
+| **G · Integration** | Overview, transport/event/everyday/expense copy, README, sources, handoff, open questions, historical-report notices and retired script reconciled. | Local checks pass below. Pull request has **not** yet been opened; no push, required-check or Pages-build state is claimed. |
+
+**Observed local gates on the integrated tree:** `python3 scripts/validate_site.py` PASS (7 JSON files, 216 exact-schema records, 336 unique record URLs, 15 HTML pages, 372 link attributes, 9 navigation destinations, 25 expense rows); `python3 scripts/check_javascript.py` PASS; `npm test` PASS, **25/25** Playwright tests, including axe at 320/360/768/1024/1440 px; `git diff --check` PASS. These verify repository/site behavior, not external facts, transport availability, ticket inventory, forecasts or radio reception.
+
+**Three-pass record:** Pass 1 implemented the current-source corrections and ran the local suite. Pass 2 adversarially searched the integrated surfaces for stale free-ticket, exact-last-bus, ETIAS and forecast wording; corrected the expense instructions and marked older reports as historical. Pass 3 mapped the requested topic areas to the site and recorded unverified items/limitations in the current report and open-question ledger. Final delivery state is pending until the branch is pushed, a PR is opened, and GitHub checks/Pages state are observed.
+
+<!-- Historical addenda below are preserved as dated snapshots; they do not describe the current branch state. -->
 
 ## Current session addendum — `arena/9bd7eeb7-maltasupplemental` (11 October 2026)
 

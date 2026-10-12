@@ -1,6 +1,18 @@
 # Current cross-workstream handoff
 
-**Session:** `arena/b29d95ae-maltasupplemental` · **updated:** 11 October 2026 UTC.
+## Reconciliation pass — `arena/5ec909ed-maltasupplemental` · 11 October 2026 UTC
+
+This continuation synchronized canonical records and page copies against source reads fetched 11 October in the prior session context. It made **no new external source fetch, date-specific journey-planner query, ride quote, physical radio test or venue visit**. The historical handoffs below preserve what earlier sessions observed; use these current integration decisions where wording conflicts.
+
+- **C → G/A (ticket status):** the latest Eventbrite ticket-section extraction contained no event-specific price or reservation action; “Free / Reserve a spot” was in a “You might also like” card. HLTV’s 2 October free-ticket report remains secondary evidence. Do not say the listing offers a confirmed free reservation, and do not infer this traveler’s access, current inventory or gate.
+- **A → G (Route 186):** an earlier static-page extraction reported 20:53/20:54 from Stadium 2194, but later reads did not reproduce that row. The grids are unlabelled, and no date-specific MPT journey was run. The robust route facts are that the Buġibba-bound direction does not list an Il-Qawra stop and terminates at Buġibba Bay 1; the exact date-specific last bus and onward Qawra connection remain open. Do not claim all event finishes outlast every possible bus. Compare a dated planner result with a current ride quote only if needed.
+- **D → G (ETIAS/weather):** the EU FAQ read 11 October says ETIAS is not operating, applications are not collected, no action is required “at this point,” and several months’ notice will precede launch. The current trip answer is no ETIAS authorisation under that published status/notice process, subject to any new official notice and not a personal visa ruling. The Malta Met Office snapshot reaches 18 October; the UK Met Office view reaches 19 October (19th BETA). They differ; forecasts are snapshots, not guarantees.
+- **E → G (sports radio):** the dated 13 January 2026 multiplex observation lists Sports Channel (C02F) and Radio Sportiva on DAB+ 6C and no sports service on 12A. The block conflict is narrowed in the canonical radio data; what the service relays on trip dates, named-match carriage, and indoor reception remain open. Rai RadioUno’s weekend football programme is a schedule/carriage lead, not a confirmed 17–18 October match assignment.
+- **G → F/traveler:** the expense planner remains blank. No fare-season inference, taxi estimate or event admission status was converted into a selected purchase or personal budget.
+
+## Earlier cross-workstream handoff — `arena/b29d95ae-maltasupplemental` · 11 October 2026
+
+**Updated:** 11 October 2026 UTC.
 
 - **C → A/G:** Direct Liquipedia reads (all seven chunks) pin the weekend bracket clocks the Eventbrite page still hides: SF1 Sat 17 16:00 Malta, SF2 Sat 17 19:00 Malta, third-place Sun 18 13:30, final Sun 18 17:00 (Bo5), pairings TBD. A search-index extract had garbled the bracket as “FURIA v BB in the semifinal” — the direct read supersedes it; do not copy search-extract pairings. The late-return problem now demonstrably covers all five event days.
 - **A → G:** The full service-updates page (3 chunks) confirms both Route 186 notices and adds per-route stop detail for the 17–18 Oct cluster: on Saturday night the fallback leads are degraded too (202/260 detoured with no stops printed; 405 skips Rotunda 1/Bezzina toward Mosta/Ta’ Qali P&R; 45 skips Rotunda 2→Targa toward Buġibba; 47 skips Gatt→Rotunda 1 toward Mosta; 48/N48 in the batch). The pre-booked-return recommendation is strongest for 17 October. Still no TQ/event-service notice.

@@ -1,5 +1,32 @@
-# Malta Trip Guide - Session Plan
-## Session: arena/8f0b561b-maltasupplemental (11 October 2026)
+# Current session plan — `arena/5ec909ed-maltasupplemental` (11 October 2026, UTC)
+
+## Repository review and integration boundary
+
+The session began on the fixed Arena branch at `ac487ae` (PR #67 merge), with the existing GitHub Pages site, seven JSON datasets, exact 13-field schema, shared renderer/navigation/CSS, source/open-question/status/handoff logs, expense planner, CI and Playwright/axe suite already present. `docs/PLAN.md`, `data/record.schema.json`, `js/site.js`, `css/style.css` and the source-log format were reviewed before topic edits; preserve them unless an integration defect is found. `origin/main` had advanced to `4725130` with PR #68 and a follow-up documentation commit, so the branch was fast-forwarded on the same fixed branch before edits. PR #68's documentation is an upstream snapshot, not evidence that the current factual claims are correct.
+
+Arena pins this session to `arena/5ec909ed-maltasupplemental`; workstreams A–F therefore run serially on this branch, each respecting the established file ownership. No extra branches or parallel agents are claimed. Cross-topic findings go to `docs/HANDOFF.md`; unresolved claims go to `docs/OPEN_QUESTIONS.md`. G updates shared pages and documentation last.
+
+| Stream | Owned files | This session's focus |
+|---|---|---|
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Adversarially review the dated hotel↔Attard bus plan and the unlabelled Route 186 variants; retain uncertainty rather than promise a return. Keep fare-season inference, taxi/ride-hail quotes and saved journeys distinct. |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | Reconcile current access notes without presenting limited platform samples as a universal popularity ranking; no new reviews are asserted. |
+| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Correct the Eventbrite ticket-price/action attribution; preserve age/date/visible-agenda evidence but do not infer ticket price or reservation from a recommendation card. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Align the ETIAS page with the current EU FAQ's no-action/several-months-notice statement; refresh the 13–19 Oct forecast record from current official pages and retain forecast disagreements. |
+| **E · Sports radio** | `data/radio.json`, `radio.html` | Preserve the separate terrestrial-radio scope and distinguish station schedules, Malta carriage, receiver compatibility, reception and online streams. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html` | Keep all user-specific amounts blank; verify the existing planner and do not invent itinerary costs. |
+| **G · Shell, executive summary, integration & delivery (last)** | `index.html`, `README.md`, `docs/*`, tests and shared pages as needed | Reconcile source/status/open-question/handoff/report files, scan all current claims for contradictions, run the full suite, open a PR only after local gates and record observed PR/Pages state. |
+
+## Cumulative verification passes
+
+1. **Pass 1 — implement and verify:** review the integrated baseline and the highest-risk sources; correct the ticket, ETIAS and weather claims; record each source/date and retain explicit confidence/limits.
+2. **Pass 2 — adversarial review:** scan for stale price, admission, route, timetable, timezone, forecast and status language; verify data/page consistency, links, responsive behavior and planner edge cases; fix overclaims or move them to open questions.
+3. **Pass 3 — full request audit:** map every requested trip topic and UI/delivery requirement to the integrated site; rerun all local checks; document verified facts, unresolved items, tool/access limitations and next-session tasks. Push and open a PR from this branch; merge only after required checks and mergeability are observed.
+
+---
+
+## Historical mainline plan — `arena/8f0b561b-maltasupplemental` (11 October 2026)
+
+This plan and its completion checklist describe the earlier PR #68 documentation pass. It is retained as history; current ownership and verification status are at the top of this file.
 
 ### Repository Review
 

@@ -1,6 +1,60 @@
 # Malta trip guide — final report
 
-## Current session — `arena/b29d95ae-maltasupplemental` (11 October 2026 UTC)
+## Current session — `arena/5ec909ed-maltasupplemental` (11 October 2026 UTC)
+
+### Session boundary and delivery summary
+
+The fixed Arena branch started this continuation at `4725130`, fast-forwarded to current `origin/main`. Work remained on `arena/5ec909ed-maltasupplemental` and was performed serially under the A–F topic / G integration ownership map; no parallel agents or workstream branches are claimed. This was a **source reconciliation and integration pass**, not a fresh external research pass: source reads in the session context were fetched 11 October 2026. No new external-page fetch, Eventbrite checkout/inventory test, date-specific Malta Public Transport planner query, live taxi/ride-hail quote, venue visit or physical radio scan was performed in this continuation.
+
+The event, transport, everyday-weather/ETIAS and expense-planner copies were aligned to those dated reads. `scripts/session_update.py` was reduced to a retired stub because its old one-shot patch encoded stale ticket and bus assumptions. Older completion reports now carry archive notices; their prior PR/merge states are historical and are not the delivery state of this branch.
+
+### Verified facts and current evidence limits
+
+- **Trip inputs:** the traveler supplied AX ODYCY, Qawra, 13–19 October 2026 and “Deluxe sea-view”. They remain traveler inputs, not proof of a booking, room allocation, rate, party size or flight.
+- **Event listing:** Eventbrite’s 11 October extraction identifies the 14–18 October, in-person, 18+ event and shows Wed–Fri agenda rows; the 22:00 headline conflicts with Wed/Thu rows ending 22:30. The latest ticket-section extraction showed **no event-specific price or reservation action**. “Free / Reserve a spot” appeared only in “You might also like”; HLTV’s 2 October free-ticket report is secondary. Current terms, inventory, this traveler’s access, gate, daily validity/scanning and Sat/Sun door/finish times remain unconfirmed.
+- **Bracket:** the direct Liquipedia read available in the prior session lists Sat semifinals at 16:00/19:00 and Sun third-place/final at 13:30/17:00 Malta time (pairings TBD). These are third-party match starts, not event doors or guaranteed finishes.
+- **Transport:** Route 186 is a candidate from Qawra to the Ta’ Qali Stadium area; the Buġibba-bound direction does not list an Il-Qawra stop and terminates at Buġibba Bay 1. An earlier static extraction reported a 20:53/20:54 Stadium 2194 return, but later reads did not reproduce that row; other timetable variants are unlabelled. No date-specific journey is saved. This does **not** establish the applicable last bus or prove every event finish outlasts every possible bus. Verify date, direction, gate, stop sides, walks and onward Qawra service in MPT’s planner. Saturday 17 October has an operator-published 19:00–00:00 diversion notice, but the diverted path/timing and actual trip effect are not known.
+- **Fares/modes:** MPT still publishes winter single fares only for 19 October 2025–13 June 2026. The likely 2026 trip split (€2.50 on 13–18 Oct / €2.00 on 19 Oct) remains a third-party-supported inference, not operator confirmation. No live ride quote or event parking assessment was made. Taxi/rideshare is a fallback to compare, not an assumed expense for every event night.
+- **ETIAS/EES/weather:** the official EU ETIAS FAQ read 11 October says ETIAS is not operating, applications are not collected, travellers need take no action “at this point,” and the EU will announce the start date several months before launch. Under that published status/notice process, no ETIAS authorisation is required for this trip; this is not a personal visa determination. The EES Malta-specific implementation conflict remains open. The Malta Met Office forecast snapshot reaches 18 October; the UK Met Office Valletta snapshot reaches 19 October (19th marked BETA). Their conditions/temperatures differ; neither is a guarantee, and no marine forecast was checked.
+- **Sports radio and Kalshi context:** canonical radio records identify a dated 13 January 2026 DAB+ observation with “Sports Channel” (C02F) and Radio Sportiva on 6C; that same-date 12A table lists no sports service. The conflicting WorldDAB 12A entry is kept as unsupported rather than an equal tuning target. BBC World Service’s official schedule lists Sportsworld editions on 17 October (15:06 Malta) and 18 October (16:06), with general live sport, news, interviews and analysis—not named-match commentary. BBC WS is observed on 6A. Rai’s official weekend Serie A/B programme and the published NET FM/Radio Sportiva grids are trip-week schedule/carriage leads, not confirmed selections for particular fixtures. Official Premier League and Serie A fixture snapshots and Kalshi category pages are recorded separately: displayed markets and kickoffs do not establish radio rights, carriage, or an individual’s ability to trade from Malta. Kalshi’s help page defers to its Member Agreement/geographic rules; the agreement was not fully reviewed and no account or transaction was tested. Exact trip-date match selection, the content of the 6C relay and indoor receiver reception remain unverified; no physical scan was made.
+- **Food, recreation and requested platforms:** the site retains dated review/menu/activity evidence and clearly labels platform/source limits. Yelp and several social/review platforms were blocked or unreadable in the earlier documented attempts; this continuation made no new platform checks. Counts, platform order and dated events can change, and no universal popularity/trending conclusion is asserted.
+- **Expense planner:** event admission, transport and all other personal amounts remain blank. Do not enter €0 admission until the current terms confirm it; do not pre-budget a taxi for every event night. Use actual confirmations, quotes and receipts once available.
+
+### Three cumulative verification passes
+
+1. **Pass 1 — implement and verify:** reconciled the Eventbrite ticket-status wording, Route 186 return uncertainty, EU ETIAS status, current weather snapshot and dependent expense guidance across canonical records, page copy and source/open-question logs. Preserved the exact 13-field record schema and user-supplied booking details as inputs.
+2. **Pass 2 — adversarial review:** searched integrated HTML/data for unqualified free-ticket claims, “reserve before travel,” exact last-bus assertions, universal “event outlasts bus” claims, stale Q4 ETIAS risk wording and old forecast coverage. Corrected remaining expense planner instructions, day-specific route wording, event records and archived-report labels. Rechecked E’s block/status language against the canonical radio data and aligned OQ-28.
+3. **Pass 3 — request audit:** mapped the full tourism/recreation guide, event-day transport and mode comparison, food/review-platform caveats, gaming/landmarks/events, U.S.-traveler essentials, terrestrial sports radio/Kalshi context, blank expense planner, responsive navigation, sourcing and delivery requirements to the integrated pages and records. Remaining access-dependent items are listed below; no external fact is claimed solely from a test pass.
+
+### Local gates observed on the integrated tree
+
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files; 216 exact-schema records; 336 unique record URLs in `docs/SOURCES.md`; 15 HTML pages; 372 link attributes; 9 shared navigation destinations; 25 expense rows.
+- `python3 scripts/check_javascript.py` — **PASS**.
+- `npm test` — **PASS, 25/25 Playwright tests**, including axe checks at 320/360/768/1024/1440 px and the canonical projections, event/transport and radio tests, and expense planner flows.
+- `git diff --check` — **PASS**.
+
+These are local software/content-structure checks, not proof of external listing truth, ticket availability, transport operation, fare season, weather or RF reception.
+
+### Remaining unknowns and limitations
+
+No saved MPT journey by date or direction; exact Route 186 return variant and onward Qawra connection; measured hotel/venue walks; the event’s attendee gate, live ticket price/requirement/inventory/personal access and weekend doors; any TQ event shuttle; live taxi/rideshare pricing, pickup or venue parking; operator confirmation of the 2026/27 single-fare boundary; Malta-specific EES enforcement; 19 October Malta national forecast, marine conditions and current day-of forecast; physical DAB+/FM scan and named-match carriage; trip-week commentary assignment on Rai/Sports Channel; current status/menus on chosen food/activity venues; and all traveler-specific itinerary, party, insurance, device and invoice facts. The source and access limitations are documented in `docs/SOURCES.md` and `docs/OPEN_QUESTIONS.md`.
+
+### Next session / in-country checklist
+
+1. Confirm the Eventbrite/organizer ticket terms, personal access, entry gate, day validity and weekend schedule. Do not assume free admission from the recommendation card or secondary report.
+2. Run MPT’s date-specific planner for each event date from the hotel to the confirmed gate and back; verify both stop sides, walks, route changes and onward Buġibba-to-Qawra leg. Get current ride quotes only for dates where a bus is unsuitable or a ride is preferred.
+3. Check the actual October fare and card coverage with MPT before purchase; recheck diversion/service updates and whether any TQ service is published.
+4. Scan compatible FM/DAB+ equipment at AX ODYCY and the event area; record block, service name, time, programme and named match actually heard.
+5. Recheck daily weather and marine/lifeguard notices; refresh restaurant/activity hours and prices for chosen plans.
+6. When the itinerary and receipts arrive, use the planner preview and enter only confirmed costs once; export a CSV/JSON backup.
+
+### GitHub delivery state
+
+**Not yet observed at the time of this report section.** No push or PR from this branch is claimed here. Update this section only after pushing the fixed branch, opening a PR, observing its checks/mergeability, and (if merged) observing the Pages build. Earlier PR/merge statements in the historical report sections below refer to other branches and are not evidence about this branch.
+
+---
+
+## Previous session — `arena/b29d95ae-maltasupplemental` (11 October 2026 UTC) — historical mainline snapshot
 
 ### Delivery summary
 

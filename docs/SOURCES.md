@@ -1,6 +1,19 @@
-# Session `arena/b29d95ae-maltasupplemental` source refresh · 11 October 2026
+# Current-session source reconciliation — `arena/5ec909ed-maltasupplemental` · 11 October 2026
 
-UTC access date for every row is 2026-10-11. Delivery-session reads, two days before departure; earlier same-day sessions' rows are retained below.
+This is a reconciliation of source reads fetched on 11 October and preserved in the session context; **no new external page fetch or date-specific MPT journey-planner query was made in this continuation**. The earlier source logs remain below as contemporaneous history. Where they conflict with the rows here or current canonical data, use the correction below.
+
+| Claim / scope | URL | Accessed | Workstream | Result / limitation |
+|---|---|---|---|---|
+| Eventbrite ticket-section extraction: 14–18 October, in-person, 18+, venue/address and visible Wed–Fri agenda; no event-specific price or reservation action was extracted. “Free / Reserve a spot” appeared only in a “You might also like” card. | https://www.eventbrite.co.uk/e/hotspawn-present-the-thunderpick-world-championships-2026-tickets-1988838616841 | 2026-10-11 | C | Latest extraction available in the session context. HLTV’s 2 October free-ticket report is secondary evidence; no checkout, inventory or personal reservation was tested. Supersedes earlier same-day wording that attributed the recommendation card to this event. |
+| Route 186 timetable reproducibility: an earlier 11 October extraction reported Stadium 2194 returns at 20:53/20:54 and Buġibba Bay 1 arrivals at 21:26/21:36, with other unlabelled variants showing later times. Later paginated reads did not reproduce the 20:53/20:54 row. | https://www.publictransport.com.mt/route/186/ | 2026-10-11 | A | Historical static-grid report only; later reads did not establish the applicable date/variant or a single last bus. No date-specific planner query was made. Route 186 toward Buġibba does not list an Il-Qawra stop; verify the onward connection in the dated planner. |
+| Official EU ETIAS FAQ: system not in operation, applications not collected, “no action is required from travellers at this point”; EU says it will announce the start date several months before launch. | https://travel-europe.europa.eu/etias/faq | 2026-10-11 | D | Official page read in the prior session context. Supports no ETIAS action for the 13–19 October trip under the published status and notice process; not a personal visa determination. Follow any new official notice. |
+| Malta Met Office seven-day panel through 18 October: 13th windy/showers 25/19°C; 14th mainly sunny 24/18; 15th mainly sunny 24/18; 16th mainly cloudy 25/17; 17th mainly cloudy 25/17; 18th mainly cloudy 24/18. | https://maltametoffice.com/en/forecast/ | 2026-10-11 | D | Official Malta forecast snapshot from prior session context; no 19 October row. Forecast is not a guarantee; no marine warning/sea-state check. |
+| UK Met Office Valletta forecast snapshot for 13–19 October: highs/lows 24/21, 23/21, 23/21, 24/21, 23/21, 23/21, 23/21°C; sunny 13–18, sunny intervals 19; 19th marked BETA. | https://weather.metoffice.gov.uk/forecast/sq6k4r011 | 2026-10-11 | D | Official UK forecast snapshot from prior session context. It differs from the Malta Met Office panel; the 19 October row is long-range/BETA. Check daily. |
+| MPT fare table still prints winter single €2.00 from 19 October 2025 to 13 June 2026 and no 2026/27 boundary. | https://www.publictransport.com.mt/fares-and-tickets/ | 2026-10-11 | A / F | The likely 18/19 October 2026 split comes from third-party season guides and remains an inference, not operator confirmation. |
+
+## Historical source refresh — `arena/b29d95ae-maltasupplemental` · 11 October 2026
+
+UTC access date for every row in the following historical table is 2026-10-11. Earlier same-day source statements are retained for provenance; consult the current reconciliation above where later extraction or editorial review corrected a claim.
 
 | Claim / scope | URL | Accessed | Workstream | Result / limitation |
 |---|---|---|---|---|

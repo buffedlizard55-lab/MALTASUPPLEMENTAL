@@ -1,5 +1,8 @@
-# Session Verification Report
-## Session: arena/8f0b561b-maltasupplemental
+# Historical Session Verification Report — PR #68 snapshot
+
+> **Archive notice:** This file records an earlier session (`arena/8f0b561b-maltasupplemental`) and its then-current assumptions. It is not the current verification report. Later 11 October reconciliation withdrew the unqualified Eventbrite free-reservation and Route 186 last-return claims; the current status and fresh gate results belong in [`FINAL_REPORT.md`](FINAL_REPORT.md).
+
+## Historical session: `arena/8f0b561b-maltasupplemental`
 ## Date: 11 October 2026 (UTC)
 ## Purpose: Complete verification passes 1-3 as requested by user
 
