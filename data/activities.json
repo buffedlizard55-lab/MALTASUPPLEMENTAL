@@ -1,7 +1,7 @@
 {
   "topic": "activities",
   "title": "Activities, landmarks & events in Malta",
-  "last_updated": "2026-10-11",
+  "last_updated": "2026-10-12",
   "intro": "Choose one outing around your confirmed event sessions, not an overfilled checklist. Start near Qawra, then compare Ta’ Qali-area sights and farther trips. Dated events are distinguished from year-round attractions, and PC-gaming status conflicts are kept separate from arcade/VR options. Confirm access and return transport before booking.",
   "records": [
     {
@@ -100,14 +100,14 @@
       "category": "Tournament & trip-window events (13–19 Oct)",
       "area": "Grand Harbour / Valletta",
       "address": "Grand Harbour, Valletta, Malta",
-      "hours": "Saturday 17 October 2026 at 11:00, according to the Royal Malta Yacht Club’s 2026 event listing. Confirm the live organizer notice for changes.",
-      "price range": "No spectator ticket or viewing fee was stated in the organizer article",
-      "description": "Sailing event: The 47th Rolex Middle Sea Race starts from Grand Harbour during the trip. The RMYC’s 2026 event listing gives the 11:00 start; its 2 October article describes a fleet of more than 100 yachts and names shoreline viewing locations.",
-      "source_url": "https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/",
+      "hours": "Saturday 17 October 2026 at 11:00, per the organizer’s current race programme. The programme says the series of starts may be watched from Valletta’s fortifications; check same-day access/closure information.",
+      "price range": "The organizer programme does not state a spectator ticket or viewing fee. Do not assume paid-attraction access is included or that every viewpoint is open.",
+      "description": "Sailing event: the Royal Malta Yacht Club’s official 2026 race programme schedules the Rolex Middle Sea Race start in Grand Harbour on Saturday 17 October at 11:00. It describes a series of starts and says they may be watched from Valletta’s fortifications. This is an optional daytime event, not a confirmed combination with CS2 attendance; local access and crowd/closure information still need a same-day check.",
+      "source_url": "https://www.rolexmiddlesearace.com/race-programme/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-12",
       "confidence": "verified",
-      "notes": "RMYC identifies viewing locations in the separate ‘Race-start viewpoints’ card below. The same article mentions English commentary on RMYC / Rolex Middle Sea Race social channels and Maltese commentary on TVMSport+; that is not evidence of AM/FM/DAB radio carriage. Radio research belongs on radio.html.\nOfficial event time: https://rmyc.org/races/2026-rolex-middle-sea-race/. The 2 October 2026 article confirms the Grand Harbour date and recommends Upper Barrakka Gardens and the Valletta, Senglea and Vittoriosa waterfronts: https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/."
+      "notes": "RMYC identifies viewing locations in the separate ‘Race-start viewpoints’ card below. The same article mentions English commentary on RMYC / Rolex Middle Sea Race social channels and Maltese commentary on TVMSport+; that is not evidence of AM/FM/DAB radio carriage. Radio research belongs on radio.html.\nOfficial event time: https://rmyc.org/races/2026-rolex-middle-sea-race/. The 2 October 2026 article confirms the Grand Harbour date and recommends Upper Barrakka Gardens and the Valletta, Senglea and Vittoriosa waterfronts: https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/. Direct read of the organizer’s 2026 Race Programme on 12 October 2026: https://www.rolexmiddlesearace.com/race-programme/ . It schedules the Grand Harbour start for Saturday 17 October at 11:00 and says the series of starts may be watched from any of Valletta’s fortifications. This does not establish that each individual fortification is open, free, uncrowded or accessible on the day. The RMYC’s separate 2 October article recommends Upper Barrakka Gardens and the Valletta, Senglea and Vittoriosa waterfronts: https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/ . Neither source gives a traveler-specific transit plan or confirms the Heritage Malta Fort St Elmo special-viewing arrangements."
     },
     {
       "id": "picnic-in-the-1800s-2026",
@@ -145,14 +145,14 @@
       "category": "Tournament & trip-window events (13–19 Oct)",
       "area": "Valletta, Senglea and Vittoriosa",
       "address": "Upper Barrakka Gardens and waterfronts of Valletta, Senglea and Vittoriosa",
-      "hours": "For the race start on Saturday 17 October 2026 at 11:00, per the RMYC event listing; location-specific access arrangements were not stated.",
+      "hours": "Official race programme: first starts Saturday 17 October 2026 at 11:00; the organizer says the series of starts may be watched from Valletta’s fortifications. Specific access, openings and closures are not stated; check on the day.",
       "price range": "No viewing fee was stated; this is not a ticket for the Saluting Battery or other attractions",
-      "description": "The Royal Malta Yacht Club names Upper Barrakka Gardens and the waterfronts of Valletta, Senglea and Vittoriosa as the best places to watch the start. Crowd levels, garden access and the exact race time still need a live check.",
-      "source_url": "https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/",
+      "description": "The Royal Malta Yacht Club’s current race programme schedules the Grand Harbour start for 11:00 on Saturday 17 October and says the series of starts may be watched from Valletta’s fortifications. A separate RMYC article recommends Upper Barrakka Gardens and waterfronts of Valletta, Senglea and Vittoriosa. These are suggested areas, not reserved platforms or proof that every attraction/viewpoint is open; check local access and transport on the day.",
+      "source_url": "https://www.rolexmiddlesearace.com/race-programme/",
       "source_type": "official",
-      "date_checked": "2026-10-10",
+      "date_checked": "2026-10-12",
       "confidence": "partially verified",
-      "notes": "Organizer source confirms suggested viewing areas, not reserved access, a viewing platform, or a timetable. Do not assume Saluting Battery entry is free or included; it is a separate managed attraction. Recheck local access and transport notices on the day.\nRMYC event listing shows 11:00: https://rmyc.org/races/2026-rolex-middle-sea-race/."
+      "notes": "Organizer source confirms suggested viewing areas, not reserved access, a viewing platform, or a timetable. Do not assume Saluting Battery entry is free or included; it is a separate managed attraction. Recheck local access and transport notices on the day.\nRMYC event listing shows 11:00: https://rmyc.org/races/2026-rolex-middle-sea-race/. Direct read of the official 2026 race programme on 12 October 2026: https://www.rolexmiddlesearace.com/race-programme/ . It gives the Saturday 17 October start at 11:00 and says the series of starts may be watched from Valletta’s fortifications, but it does not specify access hours, fees or closures for individual sites. RMYC’s 2 October article names Upper Barrakka Gardens and waterfronts of Valletta, Senglea and Vittoriosa as recommended viewing areas: https://rmyc.org/rolex-middle-sea-race-marks-30-years-since-its-revival/ . The cited organizer article does not reserve any spot or establish a particular viewpoint is open. Check same-day city/heritage notices and plan separate return transport."
     },
     {
       "id": "gamers-lounge-msida-status",
@@ -435,9 +435,9 @@
       "description": "Lecture / history event: Professor Emanuel Buttigieg discusses the Maltese militia and the defence of Malta during the 17th century. This is a dated, ticketed event at Fort St Elmo.",
       "source_url": "https://heritagemalta.mt/whats-on/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-17th-century-by-prof-emmanuel-buttigieg/",
       "source_type": "official",
-      "date_checked": "2026-10-09",
+      "date_checked": "2026-10-12",
       "confidence": "verified",
-      "notes": "The event page confirms date, 19:00 start, English language, Valletta address and €5 ticket. Book/check any remaining availability through Heritage Malta.\nSupporting claim sources:\nHeritage Malta’s event page lists the 13 October 2026 lecture at Fort St Elmo at 19:00 in English, with a €5 ticket. https://heritagemalta.mt/whats-on/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-17th-century-by-prof-emmanuel-buttigieg/"
+      "notes": "The event page confirms date, 19:00 start, English language, Valletta address and €5 ticket. Book/check any remaining availability through Heritage Malta.\nSupporting claim sources:\nHeritage Malta’s event page lists the 13 October 2026 lecture at Fort St Elmo at 19:00 in English, with a €5 ticket. https://heritagemalta.mt/whats-on/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-17th-century-by-prof-emmanuel-buttigieg/ Direct primary-source recheck on 12 October 2026 confirms Tuesday 13 October, 7pm (19.00), English, Fort St Elmo, and €5: https://heritagemalta.mt/whats-on/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-17th-century-by-prof-emmanuel-buttigieg/ . Events Malta’s duplicate detail page repeats ‘starting at 7pm’ in its narrative but its structured Time field shows 21:00; the browse-card also shows 21:00: https://eventsmalta.org/events/their-native-valour-aspects-of-the-militia-and-the-defence-of-malta-during-the-1 and https://eventsmalta.org/events . The 21:00 structured value is unexplained; do not treat it as an organizer-confirmed start or event end. Use Heritage Malta’s explicit 19:00 start for planning and recheck its ticket page if attending."
     },
     {
       "id": "valletta-waterfront-jazz-oct15",
@@ -672,7 +672,7 @@
       "address": "8 Triq L-Imsell, Buġibba, San Pawl il-Baħar, SPB 2440, Malta · +356 9947 1627 · bookings@ecosportsltd.com",
       "hours": "Listed by review platforms and a directory as split opening hours 09:00–13:00 and 17:00–19:00. The operator’s own booking pages show a request form rather than a posted timetable.",
       "price range": "Published operator daily rates: MTB E-Bike €35 (multiday from €33.33 at 3 days to €25.00 at 21 days); MTB Platinum €30; MTB Gold €25; MTB Silver €17; Trekking Bike €20; 24″ MTB €15; MTB Kids €15 (ages 8–12, must be accompanied). Stand Up Paddle Board from €30; Double SUP €50. Guided bike/e-bike tours from €55 per person (listed as 3 hours, 12–20 people). Malta delivery with collection €20; Gozo delivery €50.",
-      "description": "A practical, independently run way to see more of the island than Qawra without using a bus: rental of mountain, trekking and electric bikes plus SUP/kayak hire, and guided tours including a Valletta and Three Cities highlights ride. This is the strongest publicly priced, operator-confirmed recreation lead found near the hotel this pass, and it is a genuine alternative to an event day that finishes after the last bus back to Qawra.",
+      "description": "A practical, independently run leisure option for exploring beyond Qawra: mountain, trekking and electric-bike rental, SUP/kayak hire, and guided rides including Valletta and the Three Cities. This is a recreation lead, not a substitute for an event-day transfer or evidence that the last public bus has run; plan any CS2 return separately in MPT’s dated journey planner and compare a live ride quote if needed.",
       "source_url": "https://ecosportsltd.com/",
       "source_type": "official",
       "date_checked": "2026-10-11",

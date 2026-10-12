@@ -1,4 +1,33 @@
-# Current session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
+# Current session plan — `arena/33cc3d09-maltasupplemental` (12 October 2026, UTC)
+
+## Repository review and execution boundary
+
+Reviewed the existing static GitHub Pages site before editing: 15 HTML pages, seven canonical datasets, the exact 13-field schema, shared navigation/renderer and design tokens, source log, status/handoff/open-question records, expense planner, and validator + JavaScript + Playwright/axe checks are already present. Shared setup is retained serially; no new folder/schema/shell is needed. Arena fixes this session to `arena/33cc3d09-maltasupplemental`; separate workstream branches/subagents are not available, so A–F will be handled serially with strict file ownership and G will integrate shared files last. Cross-stream discoveries go to `docs/HANDOFF.md`; unresolved facts stay in `docs/OPEN_QUESTIONS.md`; all evidence dates/URLs go in `docs/SOURCES.md`.
+
+| Stream | Owned files | Dependency / focus |
+|---|---|---|
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Existing schema/source log; recheck trip-week official service/fare notices and avoid implying an untested date-specific journey. |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | Existing source limits/ranking scope; do not imply inaccessible platforms were reviewed. |
+| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Existing listings/official event material; separate event schedule, access and ticket claims. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Official country/US/EU health, travel and practical guidance; date-bound weather and entry status. |
+| **E · Sports radio** | `data/radio.json`, `radio.html` | Keep official programme schedule, fixture, Malta carriage and physical receiver reception as separate evidence. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html` | Preserve blank, user-entered amounts and existing preview/autosave/import/export safeguards. |
+| **G · Shell, executive summary, integration & delivery (last)** | `index.html`, `js/site.js`, `css/style.css`, `README.md`, `sources.html`, tests and `docs/*` | Integrate only after A–F; run three full passes, update records, then validate and deliver via PR on the fixed branch. |
+
+### Passes
+1. **Implement/recheck:** use current source reads only where they can change trip decisions; log URLs and access dates; keep unknowns explicit.
+2. **Adversarial review:** test source-to-claim scope, route direction and date, weather/ETIAS bounds, platform coverage, radio carriage, expense privacy and stale copy.
+3. **Original-prompt audit:** check every requested topic/UI/delivery requirement against the integrated site; run validators, browser/accessibility tests and GitHub checks; report unverified facts and remaining work.
+
+### Implementation and pass log — 12 October 2026
+
+- **Pass 1:** completed the current re-reads and integrated them into canonical data/pages: separate Google Maps profile snapshots and platform caveats; Route 214 as a Qawra/Ta’ Qali event-area and Airport 3 candidate with date/direction caveats; official Rolex programme time/viewing note; Heritage Malta’s 19:00 lecture time with Events Malta’s conflicting 21:00 structured field recorded, not silently adopted. Updated the executive summary, food page, transport guidance, README and source/open-question/handoff documentation.
+- **Pass 2:** checked the 13-field schema, source-log coverage, generated deep-link IDs, review-ranking scope, current vs historical source dates, and transport-direction wording. Narrowed the broad Route 186 claim to a risk comparison for the three visible weekday agenda rows, added Route 214 as another planner candidate, and removed the remaining bike-entry claim that event finishes occur after the “last bus.” No date-specific journey or last-network-service claim is made.
+- **Pass 3:** audited the requested trip context, responsive accessible site, event transit/mode alternatives, restaurant/platform scope, activities/landmarks, U.S.-traveler guidance, terrestrial radio-vs-fixture-vs-reception distinction, verifiable Kalshi context, and blank-by-default itinerary quick-fill planner. Local checks after implementation: `npm test` passed all 26 Playwright tests, including axe at five viewport widths; validator reported seven JSON files / 219 exact-schema records / 356 source-logged record URLs / 15 HTML pages / 384 link attributes / nine navigation destinations / 25 expense rows. Final GitHub/PR/Pages observations are to be recorded after delivery.
+
+---
+
+# Previous session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
 
 ## Repository review and integration boundary
 

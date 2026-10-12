@@ -1,6 +1,50 @@
 # Malta trip guide — final report
 
-## Current session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
+## Current session — fixed branch `arena/33cc3d09-maltasupplemental` (12 October 2026 UTC)
+
+### Delivery summary
+
+This continuation reviewed the existing site and preserved its 15-page static architecture, shared renderer/design tokens, seven datasets, exact 13-field record schema, source log, trip documents, and blank-by-default expense planner. It worked serially under the A–F ownership plan; no separate workstream branches or subagents are claimed. Earlier source records remain dated and qualified; this pass does not recertify every inherited external listing.
+
+Fresh source-backed changes:
+
+- **Transport:** MPT’s Route 214 page lists Airport 3 stop 2552, Qawra stop 952 and Ta’ Qali Qali 2 stop 2542. This supports Route 214 as an airport-transfer/event-area candidate, not a saved trip: the extracted static time sequences do not establish trip-date direction/times, arrival compatibility, a late event return or the walk to the attendee gate. The overview and transport page now say the visible Route 186 20:53 return row is a risk comparison for the three dates whose Eventbrite finish rows were exposed, not proof of the network’s last bus; Route 214 and all alternatives require the live planner.
+- **Food/review signals:** the 12 October Google Maps snapshot records Trattoria Riccardo 4.8/6,448; Minoa 4.9/379; Cheeky Monkey 4.5 with no count surfaced. These are separate platform observations, not added to TripAdvisor counts, a complete list or sentiment analysis. Yelp search returned HTTP 403; no blocked-platform content is inferred.
+- **Activities/events:** the official Rolex Middle Sea Race programme confirms the 17 October 2026 Grand Harbour start at 11:00 and says the start sequence may be watched from Valletta’s fortifications. Specific site access, closures, crowd level and fees remain unknown. Heritage Malta’s primary lecture page confirms the 13 October event starts at 19:00 in English for €5. Events Malta’s duplicate narrative says “starting at 7pm” but its structured Time field and card show 21:00; that discrepancy is logged as unexplained, and the organizer’s 19:00 is the planning time.
+- **Integration/docs:** separate Google Maps/TripAdvisor language was aligned in `restaurants.html`; Route 214 and narrowed Route 186 wording was integrated in `index.html` and `getting-around.html`; the residual activity claim implying an established “last bus” was removed. `README.md`, `docs/SOURCES.md`, `OPEN_QUESTIONS.md`, `HANDOFF.md`, `PLAN.md` and this report record source scope and remaining checks.
+
+### Requirement audit
+
+The integrated guide retains the traveler-supplied AX ODYCY Qawra base and 13–19 October 2026 dates; an event desk for Thunderpick/BLAST; bus, taxi/ride-hail, rental and other transport comparisons; restaurant/café options with platform-specific review scope; gaming, activities, landmarks and dated event leads; U.S.-traveler essentials; a separate terrestrial-radio section distinguishing fixture, broadcaster schedule/carriage and physical reception; verifiable Kalshi market context without trading or radio claims; and a quick-fill expense planner that stays blank until real itinerary/receipts are supplied. The five responsive viewport/axe checks and browser tests pass. No booking, transaction, actual itinerary, event-gate walk, ride quote, local radio reception or physical route was fabricated.
+
+### Three cumulative passes
+
+1. **Pass 1 — implement and verify:** read the current MPT Route 214 page, official Rolex programme, Heritage Malta lecture listing, Events Malta duplicate, selected Google Maps profiles and Yelp search; recorded access dates/limits; synchronized source-backed data and visible pages.
+2. **Pass 2 — adversarial review:** checked all changed records against the exact schema and source log; tested deep-link anchors; distinguished snapshot ratings/counts and official vs aggregator event times; searched for remaining overbroad “last bus” copy and revised the overview and a stale recreation description; kept date-specific journeys, ticketing and access unverified where not observed.
+3. **Pass 3 — full request audit:** verified the existing topic-page structure, mobile/accessibility suite, radio/fixture/reception distinctions, market caveat and blank expense workflow against the original traveler request; documented continuing gaps in the open-questions and handoff records.
+
+### Local gates (12 October 2026 UTC)
+
+- `git diff --check` — **PASS**.
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files, 219 exact-schema records, 356 unique record URLs logged, 15 HTML pages, 384 link attributes, 9 shared navigation destinations and 25 expense rows.
+- `python3 scripts/check_javascript.py` — **PASS**.
+- `npm test` — **PASS, 26/26 Playwright tests**, including axe at 320/360/768/1024/1440 px, canonical projection/deep links, prefix hosting, expense planner, Kalshi/radio separation, and browser failure/accessibility cases.
+
+These software checks do not certify live services, external-link liveness, the accuracy of every inherited volatile listing, or real-world accessibility.
+
+### Remaining limits and next steps
+
+- Check the MPT dated journey planner and updates feed on each event/flight day. Confirm Route 186/214 directions and actual trips, stop-to-gate and hotel walks, TQ notices, event pickup permission and any onward Qawra connection. No live taxi/ride-hail/rental quote is in this report; compare one if the planner offers no suitable return.
+- Confirm Eventbrite price, booking/inventory, attendee gate, day validity and hidden weekend door/finish/FAQ information with the organizer. Recheck race-viewpoint access/crowd/closures; use Heritage Malta’s 19:00 lecture start over the unexplained Events Malta field unless the organizer updates it.
+- Google Maps/TripAdvisor counts and menus/hours are volatile; Yelp returned 403 and Instagram/TikTok/Facebook/Reddit/X remain limited to previously logged access attempts. No review sentiment is claimed.
+- No named match on a Malta terrestrial frequency, compatible receiver test or physical local reception was verified. Recheck broadcaster schedules on air day and scan in Malta; a fixture, online feed or market listing is not carriage.
+- Trip itinerary, bookings, tickets, flights, party/ages, receipts, insurance, device compatibility and actual expenses remain traveler-supplied. Fill the planner only after those inputs arrive. Recheck weather and entry guidance from their official live sources close to travel.
+
+### GitHub delivery (observed state)
+
+Before commit/push, `gh pr list --state all --head buffedlizard55-lab:arena/33cc3d09-maltasupplemental` returned no PR. Commit, push, PR creation, merge/check and GitHub Pages state are pending; this section must be updated only after observing the corresponding GitHub responses.
+
+## Previous session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
 ### Delivery summary
 

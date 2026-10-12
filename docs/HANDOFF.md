@@ -1,6 +1,6 @@
 # Current cross-workstream handoff
 
-**Session:** `arena/561bff0e-maltasupplemental` · **updated:** 12 October 2026 UTC (session opened late 11 October UTC).
+**Session:** fixed branch `arena/33cc3d09-maltasupplemental` · **updated:** 12 October 2026 UTC. Work was completed serially under the shared A–F ownership map; no separate workstream branches or subagents are claimed.
 
 - **D → C/G (arrival-day weather):** the Malta Met Office national panel now covers 12–18 October and shows **Tuesday 13 October “windy with isolated showers”, NW force 5–6** — the one genuinely unsettled day of the stay, and harsher than the UK Met Office’s sunny 25/22 for the same date. 18 October appears in the national panel for the first time (mainly cloudy 24/18). Outdoor/sea plans for the 13th (C’s activities, F’s contingencies) should carry a rain layer and a wind check; the detailed forecast’s milder wind reading for the same day is quoted beside it, not reconciled.
 - **A → C/G (trip-week detours):** the 12 October feed re-read reconfirmed the recorded notices and added to the canonical trip-week notices record: the routine Sunday Marsaxlokk diversions on 81/210/119 (relevant to a Sunday 18 October outing), the Dingli diversion (52/201 through 30 June 2027), a Route 117 detour on Wednesday 14 October, and a feed-churn caution — expired notices still display beside current ones, so treat every notice as a dated snapshot and recheck daily. Whether the Route 260/46 Mon–Thu night detour touches the recorded weekday fallback chains remains unestablished (OQ-T1).
@@ -8,9 +8,14 @@
 - **E → G (radio, no new carriage):** BBC Sportsound’s page now dates its Saturday rows 17/10/2026 and later rows 22 Oct, so the undated “Thursday 19:00 Benfica v Celtic” row is bracketed but still undated — 15 October stays a lead. Radio Sportiva dated callouts still stop at 11 October. Nothing new for Malta carriage; main’s API-verified Kalshi market record merges cleanly with this.
 - **B → G:** Yelp re-checked 12 Oct — HTTP 403 again; platform-coverage limits current.
 - **F → traveler:** planner unchanged and blank; the fare-split question (€2.50 through 18 Oct / €2.00 on 19 Oct) is still an inference — keep bus amounts provisional until receipts exist.
-**Current delivery branch:** `arena/57ad3983-maltasupplemental` · **updated:** 11 October 2026 UTC. The latest upstream main handoff below (PR #69/#70) is retained and integrated.
+- **A → C/G (Route 214):** the operator’s 12 October static page lists Airport 3 (2552), Qawra 952 and Ta’ Qali Qali 2 (2542), supporting route-level airport/event-area comparison. Extracted timetable sequences do not establish trip-date directions/times, a flight connection, event return or attendee-gate walk. Surface it as a candidate to test in MPT’s dated planner; the Route 186 20:53 row is not a network-wide last-bus finding.
+- **B → G (review sources):** Google Maps profile snapshots now show Trattoria Riccardo 4.8/6,448, Minoa 4.9/379 and Cheeky Monkey 4.5 with no count. Keep these platform-specific and dated; do not combine them with TripAdvisor counts or call them a cross-platform popularity ranking. Yelp remains HTTP 403; no systematic review-text analysis was done.
+- **C → G/A (events):** the official Rolex programme confirms the 17 October 11:00 start and says the series may be watched from Valletta’s fortifications, not which individual sites will be open or free. Heritage Malta’s primary lecture page confirms 19:00 on 13 October; Events Malta’s duplicate narrative also says 7pm but its structured time field/card says 21:00, which remains unexplained. Use 19:00 as the organizer-confirmed start.
+- **G → traveler:** `docs/OPEN_QUESTIONS.md` and `docs/SOURCES.md` now record these latest evidence limits and access dates; no bookings, dated journey, ticket inventory, live fare quote or physical site test was made.
 
-**Previous delivery branch:** `arena/5ec909ed-maltasupplemental` · **updated:** 12 October 2026 UTC. This section reconciles source corrections already merged to `main` (including PRs #69, #70 and #73); the latest correction work was not re-fetched in this continuation. The original source session and access dates remain in `docs/SOURCES.md`.
+**Earlier delivery record (historical, not the active work branch):** `arena/57ad3983-maltasupplemental` · **updated:** 11 October 2026 UTC. The latest upstream main handoff below (PR #69/#70) is retained and integrated.
+
+**Earlier integration/source reconciliation:** `arena/5ec909ed-maltasupplemental` · **updated:** 12 October 2026 UTC. This section records source corrections previously merged to `main` (including PRs #69, #70 and #73); the original source session and access dates remain in `docs/SOURCES.md`.
 
 ### Current integration decisions
 

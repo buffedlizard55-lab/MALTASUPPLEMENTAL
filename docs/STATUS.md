@@ -1,7 +1,23 @@
-<!-- Session addendum appended by the arena/561bff0e session; historical sections below are preserved. -->
+<!-- Active status for fixed branch arena/33cc3d09-maltasupplemental; older delivery receipts below are historical. -->
 # Delivery status — Malta trip guide
 
-## Current session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
+## Current session addendum — fixed branch `arena/33cc3d09-maltasupplemental` (12 October 2026 UTC)
+
+**Stage:** Passes 1–3 completed serially under the shared A–F ownership map; local tests pass. This session did not create a second workstream branch or claim subagents. The pre-push GitHub query found no existing PR for this branch; commit, push, PR and merge are the remaining delivery steps at this snapshot.
+
+| Workstream | Status | Remaining check |
+|---|---|---|
+| **A · Transport** | MPT Route 214’s static page is now integrated as a candidate from Qawra 952 to Ta’ Qali Qali 2 (2542) and Airport 3 (2552); overview wording now scopes Route 186’s displayed 20:53 row to a planning risk rather than a network-wide last bus. | Run the dated planner for actual flight/event days, both directions and stop/walk details; route-page sequences are not a saved journey, and notices/TQ service need same-day recheck. |
+| **B · Food & cafés** | `data/food.json` and `restaurants.html` now show a separate 12 Oct Google Maps snapshot: Trattoria Riccardo 4.8/6,448; Minoa 4.9/379; Cheeky Monkey 4.5 (no count). Yelp 403 and blocked platform limits are explicit. | Volatile counts/hours; no systematic review-text analysis, all-platform ranking, reservation or current-menu check. |
+| **C · Gaming, activities, landmarks & events** | Official Rolex programme confirms 17 Oct 11:00 and Valletta fortifications as viewing guidance. Heritage Malta confirms the 13 Oct lecture starts 19:00; Events Malta’s duplicate 21:00 structured field is logged as unresolved. | Specific Rolex viewpoint access, crowd/closure/fee and lecture aggregator discrepancy remain; Eventbrite weekend agenda, ticket inventory, gate and personal reservation remain unknown. |
+| **D · U.S.-traveler essentials** | Prior official date-qualified entry/weather/practical guidance remains source-linked and distinct by provider. | Recheck forecasts and travel rules close to departure; traveler-specific passport, flights, insurance, phone and payment details were not supplied. |
+| **E · Terrestrial sports radio** | Existing official schedule and fixture leads remain distinct from local carriage, named-match broadcast and actual reception. | No receiver test or verified Malta match carriage; confirm live programme/frequencies on site. |
+| **F · Expense planner** | Blank-by-default planner and quick-fill/preview/export protections unchanged; validator wires 25 rows. | Await itinerary/receipts; no actual expense or fare is prefilled. |
+| **G · Integration** | README, source log, open questions, handoff, plan, transport/food/activity records and overview are aligned with current evidence. | Complete GitHub delivery and report only observed check/merge/Pages state. |
+
+**Local gates (12 October 2026 UTC):** `git diff --check` PASS; `python3 scripts/validate_site.py` PASS (7 JSON files / 219 exact-schema records / 356 unique source-logged URLs / 15 HTML pages / 384 link attributes / 9 shared navigation destinations / 25 expense rows); `python3 scripts/check_javascript.py` PASS; `npm test` PASS, Playwright 26/26 with axe at 320/360/768/1024/1440 px. These tests check local rendering/behavior, not the live truth or availability of external sources.
+
+## Previous session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
 **Stage:** Pass 1 (time-critical re-reads), Pass 2 (adversarial review) and Pass 3 (full re-check against the request) run in that order on this fixed Arena branch. Main advanced during the pass (PRs #68–#70 from parallel sessions) and was merged into the branch before delivery: conflicts in shared docs/pages were resolved by keeping both sessions' blocks, and this session's trip-week-notice additions were folded into main's canonical `mpt-trip-week-notices-2026-10-11` record instead of creating a duplicate. Local gates re-run before delivery; the GitHub PR is the source of truth for merge state. The session opened late 11 October UTC; source reads are dated 2026-10-12.
 

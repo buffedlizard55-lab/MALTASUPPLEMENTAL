@@ -1,6 +1,6 @@
 # Open questions and unverified items
 
-**Current research snapshot: 12 October 2026 UTC, session `arena/561bff0e-maltasupplemental` (delivery pass).** The session opened late 11 October UTC; the reads below were made just after midnight.
+**Current research snapshot: 12 October 2026 UTC, fixed branch `arena/33cc3d09-maltasupplemental`.** The traveller’s 13–19 October window starts tomorrow; values here are dated source observations, not bookings, saved trips or physical tests.
 
 Delivery-session updates (12 October 2026, eve of departure):
 
@@ -10,6 +10,10 @@ Delivery-session updates (12 October 2026, eve of departure):
 - **Liquipedia now names the Wednesday openers** (9z–Aurora 10:30, Falcons–NIP 13:00, Legacy–PARIVISION 15:30, FURIA–BetBoom 18:00 Malta), corroborating the clock set already published; the weekend pairings remain TBD. Rosters/order can still change.
 - **BBC Radio Scotland undated row — marginally narrowed.** The page now dates its Saturday rows “17/10/2026” and later rows “Thu 22 Oct 2026”, but the first row (“Thursday 19:00 — Europa League Benfica v Celtic”, m0032sf3) still prints no date. Thursday 15 October remains the most plausible reading only.
 - **Radio Sportiva dated callouts still stop at 11 October.** No Serie A match is named for 13–19 October on the station's own grid; the recurring programme windows stand as leads.
+- **Event-day and airport buses:** MPT’s static Route 214 page lists Qawra stop 952, Ta’ Qali Qali 2 (2542) and Airport 3 (2552), making it a candidate for both the event-area comparison and airport transfer. Its extracted time sequences are not clearly assigned to the trip dates/directions; it is not a confirmed return or booked flight connection. Route 186’s visible 20:53 row is not a network-wide last-bus result; no date-specific journey, attendee-gate walk or Route 214 return has been saved. Recheck the planner and notices on each relevant day.
+- **Heritage Malta lecture time:** the official page confirms the 13 October lecture starts at 19:00. Events Malta’s duplicate page says “starting at 7pm” in its prose but displays 21:00 in its structured Time field and browse card. The 21:00 value is unexplained; use the organizer’s 19:00 start and check directly if attending.
+- **Rolex Middle Sea Race viewing:** the official programme confirms a Saturday 17 October 11:00 start and says it may be watched from Valletta’s fortifications. It does not confirm access hours, closures, crowd levels, fees or which specific viewpoints will be open. Check local access and transport on the day.
+- **Food-review snapshots:** 12 October Google Maps profiles exposed Trattoria Riccardo 4.8/6,448; Minoa 4.9/379; Cheeky Monkey 4.5 with no count. These are separate volatile platform snapshots, not a combined ranking or sentiment analysis. Yelp returned 403; Google Maps searches for Nine Lives and Ta’ Pawla returned only map-shell content, so no review signal is established for those profiles.
 
 **Previous research snapshot: 11 October 2026 UTC, session `arena/2b38c9c6-maltasupplemental`.**
 **Previous correction pass — `arena/57ad3983-maltasupplemental`, 11 October 2026 UTC.** The bullets below supersede conflicting older snapshots; they are research boundaries, not bookings or physical tests.
