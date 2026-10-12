@@ -1,6 +1,27 @@
+<!-- Session addendum appended by the arena/561bff0e session; historical sections below are preserved. -->
 # Delivery status — Malta trip guide
 
-## Current session addendum — `arena/5ec909ed-maltasupplemental` · 11–12 October 2026 UTC
+## Current session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
+
+**Stage:** Pass 1 (time-critical re-reads), Pass 2 (adversarial review) and Pass 3 (full re-check against the request) run in that order on this fixed Arena branch. Main advanced during the pass (PRs #68–#70 from parallel sessions) and was merged into the branch before delivery: conflicts in shared docs/pages were resolved by keeping both sessions' blocks, and this session's trip-week-notice additions were folded into main's canonical `mpt-trip-week-notices-2026-10-11` record instead of creating a duplicate. Local gates re-run before delivery; the GitHub PR is the source of truth for merge state. The session opened late 11 October UTC; source reads are dated 2026-10-12.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Live updates feed re-read end-to-end (3 chunks) and the fares page re-read. Additions folded into the trip-week notices record: Sunday Marsaxlokk diversions, Dingli diversion, Route 117 on the 14th, Gozo detours, feed-churn caution (expired notice still displayed), 54/106 stop-level wording. The 17–18 Oct cluster and both Route 186 notices reconfirmed. | No date-specific planner run, gate walk or live quote; “April 21” year and the exact last 186 return still open (OQ-S1); whether the 260 Mon–Thu night detour affects the recorded weekday fallback chains is unestablished; TQ service still unpublished. |
+| **B · Food & cafés** | Yelp re-checked 12 Oct — still HTTP 403; coverage record updated. No other platform newly accessible. | Counts drift; menus, hours and closures to reconfirm in person. |
+| **C · Gaming, activities, landmarks & events** | Liquipedia re-read: upcoming-matches block names all four 14 Oct openers (9z–Aurora, Falcons–NIP, Legacy–PARIVISION, FURIA–BetBoom) at EDT clocks matching the published Malta times; corroborating append to `twc-opening-matchups-14-oct`. Eventbrite re-read unchanged. | Sat/Sun door rows, FAQ answers, reservation/inventory and gate remain open; weekend pairings TBD. |
+| **D · U.S.-traveler essentials** | National met panel now covers 12–18 Oct — 18 Oct in the national forecast for the first time (mainly cloudy 24/18) — and shows the 13th “windy with isolated showers” (NW F5–6), harsher than the UK panel’s sunny 25/22; detailed forecast for the 13th re-read (milder winds; both quoted, not reconciled). ETIAS FAQ unchanged. | 19 Oct remains outside the national panel (UK BETA row only); panel-vs-detail difference on the 13th unresolved; EES Malta conflict open; personal entry/insurance/device facts unknown. |
+| **E · Sports radio** | Three listings re-read: Sportsworld 17/18 Oct episodes unchanged; Sportsound now dates its Sat rows “17/10/2026” and later rows “Thu 22 Oct 2026” (the undated Benfica v Celtic row stays a lead); Radio Sportiva callouts still stop at 11 Oct. Merged with main's API-verified Kalshi market record — no conflict. | No named match on a Malta frequency; “Sports Channel” 6C identity unresolved; no receiver scan. |
+| **F · Expense planner** | Unchanged. Amounts blank by design; 25 rows wired per validator. | Itinerary not yet supplied. |
+| **G · Integration** | Exec summary (arrival-weather/detour bullet merged with main's Kalshi bullet), snapshot/footer dates, README recheck note and all six docs updated this session; main merged in with both sessions' blocks preserved; full local suite is the pre-PR gate. | PR from this branch, merge by explicit number, observe Pages build. |
+
+**Gate results (12 October 2026, this session, after both merges with main):** validator PASS (7 JSON files / 218 exact-schema records; 352 logged record URLs; 15 HTML pages / 378 link attributes; 25 expense rows); JavaScript check PASS; Playwright 26/26 passed (five viewports + axe, planner, quick-fill, projections, Kalshi listing guard). Details in `docs/PLAN.md` "Current session plan".
+
+
+## Current session addendum — `arena/2b38c9c6-maltasupplemental` (11 October 2026)
+## Previous delivery session — `arena/57ad3983-maltasupplemental` (11–12 October 2026 UTC)
+
+## Previous session addendum — `arena/5ec909ed-maltasupplemental` · 11–12 October 2026 UTC
 
 **Integration:** PR #71 was merged after incorporating `main` through PR #74 (`0031757`). GitHub merged it at `2026-10-12T00:53:20Z` as `c4449fb7e7267f16ff113fa8eb5de541dc5a88fb`; the required check passed and Pages later reported `built` for that commit. PR #70 clarified that the Routes 46/260 and 54/106 notices had previously appeared in passing; current records add stop-level detail. PR #73’s event-ticket, Route 186 direction, TripAdvisor, ETIAS and weather corrections are retained. Local gates pass. This post-merge documentation receipt makes no new external research claim.
 

@@ -77,7 +77,7 @@
     if (footer) {
       var inner = make("div", "footer-inner");
       var left = document.createElement("div");
-      left.appendChild(make("p", "", "Malta trip guide · Critical refresh: 11 October 2026 · Individual source dates vary"));
+      left.appendChild(make("p", "", "Malta trip guide · Critical refresh: 12 October 2026 · Individual source dates vary"));
       left.appendChild(make("p", "", "Check source pages and live operator information again before travel; schedules, opening hours and prices can change."));
       var right = document.createElement("div");
       var sourceLink = make("a", "", "Master source log");
