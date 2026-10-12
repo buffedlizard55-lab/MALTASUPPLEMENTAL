@@ -3,7 +3,7 @@
 
 ## Current session addendum — fixed branch `arena/33cc3d09-maltasupplemental` (12 October 2026 UTC)
 
-**Stage:** Passes 1–3 completed serially under the shared A–F ownership map; local tests pass. This session did not create a second workstream branch or claim subagents. The pre-push GitHub query found no existing PR for this branch; commit, push, PR and merge are the remaining delivery steps at this snapshot.
+**Stage:** Passes 1–3 completed serially under the shared A–F ownership map; no second workstream branch or subagents are claimed. After PR #78 was opened, `origin/main` advanced to `2a17b66` (PR #76); it has been merged into this fixed branch and the combined local suite passes. The last observed GitHub state before pushing this reconciliation was PR #78 open, `DIRTY`, with no visible checks and not merged. Push the conflict-resolving update, then re-observe checks and mergeability.
 
 | Workstream | Status | Remaining check |
 |---|---|---|
@@ -15,7 +15,11 @@
 | **F · Expense planner** | Blank-by-default planner and quick-fill/preview/export protections unchanged; validator wires 25 rows. | Await itinerary/receipts; no actual expense or fare is prefilled. |
 | **G · Integration** | README, source log, open questions, handoff, plan, transport/food/activity records and overview are aligned with current evidence. | Complete GitHub delivery and report only observed check/merge/Pages state. |
 
-**Local gates (12 October 2026 UTC):** `git diff --check` PASS; `python3 scripts/validate_site.py` PASS (7 JSON files / 219 exact-schema records / 356 unique source-logged URLs / 15 HTML pages / 384 link attributes / 9 shared navigation destinations / 25 expense rows); `python3 scripts/check_javascript.py` PASS; `npm test` PASS, Playwright 26/26 with axe at 320/360/768/1024/1440 px. These tests check local rendering/behavior, not the live truth or availability of external sources.
+**Combined local gates (12 October 2026 UTC, after merging PR #76):** `git diff --check` PASS; `python3 scripts/validate_site.py` PASS (7 JSON files / 219 exact-schema records / 358 unique source-logged URLs / 15 HTML pages / 385 link attributes / 9 shared navigation destinations / 25 expense rows); `python3 scripts/check_weekdays.py` PASS (314 weekday/date pairs); JavaScript syntax PASS; `npm test` PASS, Playwright 26/26 with axe at 320/360/768/1024/1440 px. These tests check local rendering/behavior, not the live truth or availability of external sources.
+
+### Additional mainline verification integrated from PR #76
+
+The 12 October upstream re-read corrected the fourth opener to 18:00 Malta, preserved a separate ambiguous Route 186 Friday-16 notice as OQ-S7, confirmed hotel contact and gov.mt plug/voltage facts, and logged BFBS Malta closure (1979) and US HD Radio/DAB+ incompatibility with appropriate limits. `scripts/check_weekdays.py` is part of `npm test`. Source provenance is retained in `docs/SOURCES.md`; combined checks above were rerun after integration.
 
 ## Previous session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
@@ -113,7 +117,7 @@
 
 **Parallel-session integration:** `main` advanced twice during this pass (PRs #58, #59). Conflicts in `README.md`, `docs/HANDOFF.md`, `docs/OPEN_QUESTIONS.md`, `docs/SOURCES.md` and `docs/STATUS.md` were resolved by keeping both sessions' blocks, and three upstream corrections were folded in: the Eventbrite “Free” wording is now qualified everywhere, the 2194 last-return rows carry a reproducibility caveat (OQ-S1), and the DAB+ directory claim is now “visible list, not exhaustive” (OQ-S3).
 
-**Fresh evidence (11 October 2026 UTC, this session):** Wikipedia talkSPORT frequency infobox (“DAB+: 6C (Malta)”) and its “every Premier League match” international-audio statement; BFBS Radio 2 schedule with live EPL commentary entries; BFBS frequency tables with no Malta row; the Radio Malta article’s 31 March 1979 BFBS-Malta closure; PBS/FIFA-EBU radio carriage described by a rights directory; three sports calendars for the trip window; The Athletic’s NFL London kick-off clock; BBC Sport, Sky Sports and a UK TV listing for the 17–19 October EPL clocks; the Wikipedia special-services table for TQ1/TQ2; a March 2026 Ta’ Qali special-service news report; Times of Malta weather page; holiday-weather and weather25 18–19 October leads; the Eventbrite listing; and the operator’s service-updates, fares and Route 186 pages. Every URL and its limit is in `docs/SOURCES.md`; unresolved claims are in `docs/OPEN_QUESTIONS.md`.
+**Fresh evidence (11 October 2026 UTC, this session):** Wikipedia talkSPORT frequency infobox (“DAB+: 6C (Malta)”) and its “every Premier League match” international-audio statement; BFBS Radio 2 schedule with live EPL commentary entries; BFBS frequency tables with no Malta row; BFBS Malta’s closure in 1979 (the Radio Malta article says 31 March, while other source snippets give 25/26 March, so the exact date is disputed); PBS/FIFA-EBU radio carriage described by a rights directory; three sports calendars for the trip window; The Athletic’s NFL London kick-off clock; BBC Sport, Sky Sports and a UK TV listing for the 17–19 October EPL clocks; the Wikipedia special-services table for TQ1/TQ2; a March 2026 Ta’ Qali special-service news report; Times of Malta weather page; holiday-weather and weather25 18–19 October leads; the Eventbrite listing; and the operator’s service-updates, fares and Route 186 pages. Every URL and its limit is in `docs/SOURCES.md`; unresolved claims are in `docs/OPEN_QUESTIONS.md`.
 
 
 **Last updated:** 11 October 2026 (UTC)
