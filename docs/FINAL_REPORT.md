@@ -39,9 +39,11 @@ These software checks do not certify live services, external-link liveness, vola
 - Menu/hours and map/review counts are volatile. Yelp returned 403 and Instagram/TikTok/Facebook/Reddit/X evidence remains limited to the separately recorded access attempts; no unsupported review ranking or sentiment is claimed.
 - Flights, ticket bookings, party size, receipts, insurance, devices and actual expenses remain traveler-supplied. Fill the expense planner only from confirmed itinerary amounts and receipts.
 
-### GitHub delivery (pending post-push observation)
+### GitHub delivery (observed)
 
-The last observed PR #78 state predates this integration: it was open against `main`, `DIRTY`/`CONFLICTING`, with no status checks reported, no review decision, and `mergedAt: null`. The updated base at `096b659` is now integrated locally; the resolved tree passes the full local gate, but this merge commit has not yet been pushed. Re-query PR #78, checks and mergeability after push. No merge result or Pages build is claimed here.
+- PR [#78](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/78), from `arena/33cc3d09-maltasupplemental` to `main`, is **MERGED** at `2026-10-12T02:51:21Z` as merge commit `1f4c5bcc28b6d0d9142d87d4a741cfc0160ec41c`. Before merge GitHub reported `CLEAN` / `MERGEABLE` at head `aadfe82161b282b529ab1c731fb74303634a3930`.
+- The “Schema, browser and accessibility checks” GitHub Actions run [38197292664](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38197292664) completed with **SUCCESS** at `2026-10-12T02:50:39Z`. `gh pr checks --required` reported no checks configured as required on the branch; the named validation workflow itself nevertheless passed before the explicit merge.
+- GitHub Pages API reported status **`built`** for merge commit `1f4c5bcc28b6d0d9142d87d4a741cfc0160ec41c` at `2026-10-12T02:51:42Z` (build [1277753076](https://api.github.com/repos/buffedlizard55-lab/MALTASUPPLEMENTAL/pages/builds/1277753076)). This records the Pages build state only; this session did not fetch the public Pages content for an independent browser comparison.
 
 ## Previous session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 

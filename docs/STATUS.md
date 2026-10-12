@@ -3,7 +3,7 @@
 
 ## Current session addendum — fixed branch `arena/33cc3d09-maltasupplemental` (12 October 2026 UTC)
 
-**Stage:** `origin/main` at `096b659` has been integrated on the fixed branch. All ten merge-conflict paths were resolved and recorded in the local merge commit; the PR #77 quickstart, footer hubs, tests, Route 214 evidence and prior source history are retained. The final post-correction local gates pass. Next: push only this fixed branch, then re-query PR #78 and its checks. Do not treat pre-push GitHub state as current; merge only by explicit PR number if GitHub reports the required state.
+**Stage:** `origin/main` at `096b659` was integrated on the fixed branch and all ten conflict paths were resolved. The full local gates passed. PR #78 then merged into `main` at `2026-10-12T02:51:21Z` as `1f4c5bcc28b6d0d9142d87d4a741cfc0160ec41c`; the named “Schema, browser and accessibility checks” run succeeded. GitHub Pages API reported `built` for that merge commit at `02:51:42Z`. The merge/check/build receipts are recorded below; a Pages build state is not a browser audit of every live page.
 
 | Workstream | Status | Remaining check |
 |---|---|---|
@@ -13,9 +13,13 @@
 | **D · U.S.-traveler essentials** | Prior official date-qualified entry/weather/practical guidance remains source-linked and provider-specific. | Recheck forecasts and travel rules close to departure; passport, flights, insurance, phone and payment details were not supplied. |
 | **E · Terrestrial sports radio** | The 12 Oct Kalshi API read lists four open CS2 markets for the 14 Oct tournament openers; no 17–18 Oct playoff market appeared in that same response. Markets, fixtures and station schedules remain distinct from Malta carriage/reception. | No named CS2 match on a Malta frequency, receiver test or physical reception; trading eligibility was not fully assessed. |
 | **F · Expense planner** | Blank-by-default quick-fill planner remains unchanged; `docs/ITINERARY_QUICKSTART.md` explains paste, preview and backup workflow. | Await itinerary/receipts; no actual expense or fare is prefilled. |
-| **G · Integration** | PR #79/#80 source additions are recorded with the existing PR #77 stream; the malformed upstream source-log leftover row was excluded. `docs/OPEN_QUESTIONS.md` explicitly supersedes old 11 Oct Kalshi/Route 186 snapshots. | Commit/push, observe required GitHub checks, then merge PR #78 by explicit number only if permitted. |
+| **G · Integration** | PR #79/#80 source additions are recorded with PR #77; the malformed upstream source-log leftover row was excluded. PR #78 is merged, its named validation check passed and the Pages API reports the merge commit built. | No live Pages content/browser audit was made. Keep volatile external facts date-qualified and recheck traveler-specific itinerary items. |
 
 **Latest verified local gates (12 October 2026 UTC, after conflict resolution and the return-row adversarial correction):** `npm test` PASS — 7 JSON files / 220 exact-schema records / 364 unique record URLs in `docs/SOURCES.md` / 15 HTML pages / 395 link attributes / 9 shared navigation destinations / 25 expense rows; weekday checker: 342 weekday/date pairs; JavaScript syntax: PASS; Playwright: 28/28, including axe at 320/360/768/1024/1440 px. `git diff --check` and `git diff --cached --check` pass on the resolved tree. These checks cover local structure and behavior, not live external availability or a date-specific journey.
+
+### GitHub delivery receipt — PR #78
+
+GitHub reports [PR #78](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/78) **MERGED** at `2026-10-12T02:51:21Z`, merge commit `1f4c5bcc28b6d0d9142d87d4a741cfc0160ec41c`. Before merge it was `CLEAN` / `MERGEABLE`; head was `aadfe82161b282b529ab1c731fb74303634a3930`. The “Schema, browser and accessibility checks” run ([38197292664](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38197292664)) completed successfully at `02:50:39Z`. GitHub Pages API latest-build endpoint reported status **`built`** for the merge commit at `02:51:42Z` ([build 1277753076](https://api.github.com/repos/buffedlizard55-lab/MALTASUPPLEMENTAL/pages/builds/1277753076)). This is an observed GitHub build state, not a direct browser/content review of the live site.
 
 ### Mainline source integration from PR #79 / PR #80
 
