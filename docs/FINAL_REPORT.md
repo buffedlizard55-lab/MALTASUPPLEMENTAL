@@ -1,6 +1,47 @@
 # Malta trip guide — final report
 
-## Current session — `arena/2b38c9c6-maltasupplemental` (11 October 2026 UTC)
+## Current integrated result — `arena/57ad3983-maltasupplemental` (11–12 October 2026 UTC)
+
+### Integration and corrections
+
+The fixed branch started from `ac487ae` and was fast-forwarded to `8799b1b4` so the latest mainline work (PRs #68–#70) is present. The saved changes were reapplied; conflicts in `README.md`, `data/everyday.json`, `docs/HANDOFF.md`, `docs/OPEN_QUESTIONS.md`, `docs/PLAN.md`, `getting-around.html` and `index.html` were resolved by content. No upstream Kalshi market table, trip-week service notice, or forecast snapshot was discarded.
+
+- **Event access:** the direct Eventbrite extraction identifies the in-person 18+ listing, venue and 14–18 October dates, with visible 14–16 October agenda rows. It does not expose an event-specific ticket price, tier, reservation action, checkout or inventory. The generic “Free / Reserve a spot” recommendation card is not attributable to TWC; HLTV’s 2 October free-ticket statement is secondary, not a current checkout quote. No personal reservation is recorded. Weekend doors/finishes and the attendee gate remain unknown.
+- **Transport:** the current static Route 186 page shows the Buġibba-bound return at Stadium stop 2194 through 20:53, ending at Buġibba Bay 1, not Qawra. The approximately 22:04/22:08 series is outbound at Stadium stop 6227 toward Rabat. These are not date-specific planner results and do not prove that no other bus runs. The onward Buġibba–Qawra leg, stop/gate walks, notice effects and return service must be checked for the actual dates. MPT’s two-hour transfer policy is conditional on actual boardings and terms; no card/product, bus journey or taxi is assumed.
+- **Upstream service and radio additions preserved:** the Routes 46/260 overnight and 54/106 Attard daytime notices are detailed, along with the 17–18 October detour cluster and Saqqajja closure. Their year/corridor effects remain open. Kalshi API listings are presented separately from broadcast schedules/carriage; no Thunderpick fixture appeared in the sampled open CS2 markets.
+- **Weather and entry:** Malta International Airport Met Office’s national panel covers 13–18 October, not 19. UK Met Office Valletta and AccuWeather views are separate dated snapshots, not a single forecast. The 11 October EU ETIAS FAQ said no applications/no action at that point and promised several months’ notice; this is date-qualified guidance, not a permanent or personal legal determination. EES local practice remains conflicted.
+- **Food/activity evidence:** TripAdvisor’s AX ODYCY query uses a 10-mile setting and 1,869 results with “Best Nearby” ranking by reviews and distance. Five profile counts/ratings are a volatile, dated sample, not a complete Qawra or Malta ranking. Blocked/limited platform reads are not treated as evidence of sentiment. No public walk-in PC-gaming café was verified.
+- **Expense planner:** all amounts remain blank; the planner’s preview, no-overwrite behavior, local-only autosave and CSV/JSON paths remain covered by browser tests.
+
+### Three integrated review passes
+
+1. **Pass 1 — implement and verify:** reviewed the existing repository and preserved its shared shell, canonical 13-field schema, datasets, source log and planner. Carried forward the latest upstream records and corrections; source uncertainty remains recorded in the source log/open questions.
+2. **Pass 2 — adversarial review:** checked ticket-price/reservation language, bus direction/times, onward connection and fare transfer assumptions, taxi defaults, forecast attribution, food-ranking scope and data/page consistency. Corrected stale Eventbrite and transport claims; no date-specific journey, live ride quote, event booking or radio reception is fabricated.
+3. **Pass 3 — original-request audit:** mapped the deliverable against tourism/recreation, event-day transit and mode comparison, food/cafés, gaming/activities/landmarks, U.S.-traveler guidance, separate sports-radio schedules and limits, source/open-question protocol and the expense planner.
+
+### Gate results observed locally
+
+- `npm test` — **PASS**: 7 JSON files / **218** exact-schema records / **351** unique record URLs in `docs/SOURCES.md` / 15 HTML pages / **374** link attributes / 9 shared navigation destinations / 25 expense rows.
+- Shared and inline JavaScript syntax check — **PASS**.
+- Playwright — **26/26 PASS**, including all five axe viewport sweeps (320, 360, 768, 1024 and 1440 px), canonical rendering, route/date and radio/market distinctions, navigation/deep links, planner import/export/quick-fill and failure cases.
+- `git diff --cached --check` — **PASS** at this gate.
+
+These are local structure, behavior and accessibility checks. They are not independent confirmation of external link uptime, Eventbrite inventory, trip-date transport operation, current fares, radio carriage or physical reception.
+
+### Remaining unknowns and follow-up
+
+1. Ask Hotspawn for event-specific price/fees, booking method/current inventory, day validity, acceptable ID, attendee gate and Saturday/Sunday door/finish schedule; do not assume a reservation.
+2. Run/save MPT’s planner for each event date in both directions using the confirmed gate; verify stop sides/walking routes, the Buġibba–Qawra connection, effects of all notices and any TQ service.
+3. Confirm the 13–19 October fare season and compare ticket products against actual boardings/eligibility. Obtain a live taxi/ride-hail quote and pickup confirmation only if needed.
+4. For radio, confirm an official trip-date listing, Malta carriage and receiver/service compatibility separately; perform a local scan if reception matters.
+5. Refresh weather/sea and attraction operating information close to the day; verify EES/ETIAS against current official guidance and traveler-specific documents.
+6. Populate expenses only after the traveler supplies itinerary, party and actual bookings/quotes; export a private backup.
+
+### Delivery state
+
+GitHub PR and Pages-build observations are recorded in this section only after the required check, merge and build state are actually observed. PR #71 is a separate open branch with overlapping work; it was not checked out or merged.
+
+## Previous integrated-main session — `arena/2b38c9c6-maltasupplemental` (11 October 2026 UTC; retained history)
 
 ### What this pass changed
 
