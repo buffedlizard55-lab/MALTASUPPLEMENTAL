@@ -20,6 +20,7 @@
 | B → G | Reddit's search JSON returned HTTP 403 again on 12 October; combined with the standing Yelp/Instagram/TikTok/Facebook/X blocks, the review-platform section stays a dated TripAdvisor/Google sample rather than a social ranking. | No sentiment inference anywhere. |
 | F → G | New `docs/ITINERARY_QUICKSTART.md` wires the itinerary-to-planner workflow (accepted formats, keyword→row map, five-minute process) and is linked from the planner, the overview and the sources page. | When the real itinerary arrives, paste it into `costs.html#quick-fill`, read the preview flags, then apply — amounts remain traveler-supplied. |
 | G → A–F | Local gates on the integrated tree: validator PASS (7 datasets / 218 records / 353 logged record URLs / 15 pages), JavaScript check PASS, Playwright + axe suite re-run (see `docs/STATUS.md` for the observed count). | Keep the suite green on the next session's first commit. |
+| C → A/F/G | Post-merge re-reads (01:56–01:58 UTC): Liquipedia and the organizer page reproduce the event window and the four 14 October opener clocks, and state the Grand Final is **Best-Of-5** on Sunday 18 October from a scheduled 17:00 start. No match, door or check-in time is published by the organizer, and no Saturday/Sunday agenda row is visible on the ticket listing — so the Bo5 final widens the late-return exposure rather than resolving it. | A (return plan), F (planner assumptions), G (logs) |
 
 ## Session `arena/4d02579a-maltasupplemental` · 12 October 2026 UTC (previous)
 
