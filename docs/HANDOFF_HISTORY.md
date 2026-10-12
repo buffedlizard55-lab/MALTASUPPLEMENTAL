@@ -56,7 +56,7 @@ This snapshot predates the PR #33/current-main reconciliation at the top. Retain
 - D/G: Government of Malta and U.S. State Department pages support emergency number 112; retain the 24/7/help-line and medical-payment caveats with their exact source attribution.
 - E/G: six dated BBC 5 Live / 5 Sports Extra EPL episode records are UK-only schedule evidence; two current page labels differ from JSON parent-service fields. BBC JSON +01:00 offsets support the Sportsworld start-time conversion, but not local reception or named-match carriage. Kalshi category pages were checked for time overlap; a specific radio/market relationship and Malta eligibility remain unverified. BA FM and WorldDAB “Sports Channel” leads retain source boundaries.
 - F/G: MTA15-night prose ambiguity preserved as OQ-25; keep invoice amount blank and six-night math conditional.
-- G: all work stays on session branch; protocol’s separate workstream branches/subagents unavailable here. Ownership-guided edits and parallel independent research used; serial integration/test gate, no claim of autonomous parallel implementation.
+- G: all work stays on session branch; protocol’s separate workstream branches/subagents unavailable here. Ownership-guided edits and independent source checks are recorded; implementation and integration followed the fixed-branch serial protocol, with no separate workstream branch or agent implementation claimed.
 
 ## Latest upstream2f90396 integration
 

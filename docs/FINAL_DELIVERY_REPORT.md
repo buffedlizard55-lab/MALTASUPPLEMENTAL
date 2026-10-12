@@ -1,5 +1,8 @@
-# Final Delivery Report
-## Malta Trip Guide - Complete Verification and Delivery
+# Historical Final Delivery Report — PR #68 snapshot
+
+> **Archive notice:** This report records the earlier `arena/8f0b561b-maltasupplemental` / PR #68 delivery snapshot. It is not the current branch or current verification state. Later 11 October reconciliation changed the Eventbrite ticket wording, Route 186 return certainty, ETIAS answer and forecast snapshot; local gates and current GitHub delivery state must be observed again. See [`FINAL_REPORT.md`](FINAL_REPORT.md) for the current-session record.
+
+## Historical Malta Trip Guide verification and delivery
 
 **Date:** 11 October 2026 (UTC)
 **Session:** arena/8f0b561b-maltasupplemental

@@ -1,6 +1,8 @@
-# Malta Trip Guide - Task Completion Summary
+# Historical Malta Trip Guide completion snapshot — PR #68
 
-## ✅ TASK COMPLETE - All Requirements Satisfied
+> **Archive notice:** This summary was written for the earlier `arena/8f0b561b-maltasupplemental` / PR #68 state. It is not the current branch, verification or delivery report. Later 11 October source reconciliation withdrew the unqualified Eventbrite free-reservation claim and the exact Route 186 last-bus claim, updated ETIAS/weather wording, and left schema/tests/PR status to be rechecked. Use [`docs/FINAL_REPORT.md`](docs/FINAL_REPORT.md) and its current-session section for current status.
+
+## Historical snapshot only — not a current completion assertion
 
 **Date:** 11 October 2026 (UTC)  
 **Repository:** buffedlizard55-lab/MALTASUPPLEMENTAL  

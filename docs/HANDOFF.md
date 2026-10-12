@@ -10,13 +10,19 @@
 - **F → traveler:** planner unchanged and blank; the fare-split question (€2.50 through 18 Oct / €2.00 on 19 Oct) is still an inference — keep bus amounts provisional until receipts exist.
 **Current delivery branch:** `arena/57ad3983-maltasupplemental` · **updated:** 11 October 2026 UTC. The latest upstream main handoff below (PR #69/#70) is retained and integrated.
 
-### Additional integrated corrections
+**Previous delivery branch:** `arena/5ec909ed-maltasupplemental` · **updated:** 12 October 2026 UTC. This section reconciles source corrections already merged to `main` (including PRs #69, #70 and #73); the latest correction work was not re-fetched in this continuation. The original source session and access dates remain in `docs/SOURCES.md`.
 
-- **C → A/G/F:** Eventbrite’s latest direct extraction identifies the in-person 18+ listing and visible 14–16 October rows, but exposes no event-specific ticket price, tier, reservation action, checkout or inventory. The generic “Free / Oct 14–18 / Reserve a spot” recommendation card is not attributable to TWC; HLTV’s 2 October statement is secondary. No personal reservation is recorded.
-- **A → G/F:** the full Route 186 read displays the Buġibba-bound return at Stadium 2194 through 20:53, ending at Buġibba Bay 1 rather than Qawra; the 22:04/22:08 series is outbound at Stadium 6227 toward Rabat. Static rows are not date-specific. Check both date-planned legs and onward Buġibba–Qawra service; a two-hour fare may cover a transfer only if actual boarding times and terms fit. No taxi, bus return or trip is assumed.
-- **B → G:** TripAdvisor’s AX ODYCY query is a 10-mile, 1,869-result “Best Nearby” sample using reviews and distance, not a walkable-Qawra ranking; five directly read profiles are a dated snapshot. Other requested social/review platforms remain blocked or limited.
-- **D → G:** the Malta national Met Office panel covers 13–18 October; 19 October is outside it. The separate UK Met Office Valletta view is not the Malta national panel. The official EU ETIAS FAQ’s 11 October status indicated no trip-week action; recheck. EES local practice remains conflicted.
-- **F → traveler:** expenses stay blank; bus-card choices depend on actual ride counts and eligibility, and taxi/ride rows are optional actual costs, not event-night defaults.
+### Current integration decisions
+
+- **C → A/G/F (ticket terms):** Eventbrite’s 11 October ticket-section extraction exposed no TWC-specific price, tier, reservation action, checkout or inventory. Its generic “Free / Reserve a spot” card is not attributable to the event; HLTV’s 2 October report is secondary. No personal reservation, gate, day validity or weekend door/finish is recorded.
+- **A → G/F (Route 186 and notices):** the current static page separates Stadium 2194 toward Buġibba (displayed through 20:53; terminal Buġibba Bay 1) from Stadium 6227 outbound toward Rabat (about 22:04/22:08). This is not a date-specific planner result; no Il-Qawra stop is listed on the return, and the onward Buġibba–Qawra connection is unknown. The Route 46/260 overnight and 54/106 Attard daytime notices have separate stop-level details; they were previously mentioned in passing. Their effect on a particular journey is not established. Keep the 17–18 October cluster/Saqqajja closure and no-published-TQ-service caveats; check the dated planner and do not assume every bus or every late taxi.
+- **A/F (fares/modes):** MPT’s two-hour transfer window/free-transfer statement is conditional on actual boardings and operator terms. The 2026/27 fare changeover is unpublished. Compare bus, ride-hail/taxi, rental and other modes using current trip-specific offers; there is no live quote, saved route or selected mode. Keep expense rows blank.
+- **B → G (reviews/platforms):** TripAdvisor’s AX ODYCY query is a 10-mile, 1,869-result “Best Nearby” search using review/distance signals, not a walkable-Qawra ranking. Five directly read profiles are a volatile dated sample. Yelp/Reddit 403s and the Maps JavaScript shell are access failures, not content or sentiment.
+- **D → G (entry/weather):** the EU ETIAS FAQ read 11 October said no applications/no action at that point and promised several months’ notice; this is date-qualified, not a permanent exemption or personal ruling. EES local implementation remains disputed. Malta’s national weather panel ends 18 October; UK Met Office Valletta and AccuWeather are separate dated snapshots. No marine forecast was checked.
+- **E → G (radio/Kalshi):** keep station schedules, Malta carriage, named-match programming, receiver compatibility and physical reception separate. Kalshi’s read-only API listings are market context only, never radio evidence, odds or eligibility advice.
+- **G → traveler:** expense planner stays blank. No event ticket, taxi, card, rental, meal, hotel charge or itinerary has been assumed.
+
+## Previous integrated-main handoff — `arena/2b38c9c6-maltasupplemental`
 
 **Session:** `arena/2b38c9c6-maltasupplemental` · **updated:** 11 October 2026 UTC.
 
