@@ -1,5 +1,61 @@
 # Malta trip guide — final report
 
+## Current session — `arena/2b38c9c6-maltasupplemental` (11 October 2026 UTC)
+
+### What this pass changed
+
+Repository review first: the structure, schema, planner, source log and test suite were reviewed and left intact; nothing was rebuilt. Work then ran serially under the standing A–G ownership map on this session's fixed branch, and the deliverable is an integrated, re-verified tree.
+
+The substantive addition is the one prompt requirement that still rested on secondary evidence — **which sports markets are open for the trip window** — plus fresh reads of the highest-risk live sources two days before departure.
+
+- **Kalshi listings verified from the exchange itself (E).** Read-only calls to Kalshi's public trade API on 11 October 2026 return open contracts for all nine Premier League fixtures dated 17–19 October (`KXEPLGAME`), twelve Champions League contracts on 13–14 October (`KXUCLGAME`, as returned in that read), the 18 October NFL slate (`KXNFLGAME`), and CS2 games whose sampled open list ends on 13 October with **no Thunderpick World Championship fixture** (`KXCS2GAME`); the `KXSERIEA` ticker returned only the season future. This replaces the earlier category-page snapshots, matches the fixture set already recorded from the league's amendment article, and is published as `radio.html#kalshi-trip-window-markets` plus record `kalshi-trip-window-markets-api-2026-10-11` — with the market-versus-carriage separation, the “not a price” statement and the no-recommendation rule enforced by a new regression test.
+- **Two trip-window service notices recorded for the first time (A).** The operator's full service-updates feed also carries a Mon–Thu 21:00–05:00 detour on Routes 46 and 260 running 12–16 October — the nights of the two long event days — and Tuesday 13 October 09:30–17:30 daytime detours on Routes 54 and 106 in the Attard area; the 17–18 October cluster and the Saqqajja 4627 closure are unchanged, and again no TQ/BLAST/Thunderpick service is published. TQ1 still prints “Timetable not available!”. Record: `mpt-trip-week-notices-2026-10-11`. Whether the new rows touch a stop on this traveller's route is recorded as open, not assumed.
+- **Fares and Eventbrite re-read unchanged (A/C).** The fare page still dates its winter sentence to 19 October 2025 – 13 June 2026 (trip-week split remains an inference) and `…/fares-and-cards` is a 404 while `…/fares-and-tickets/` is live. The ticketing listing has the same venue, address, coordinates, 18+ rule, Wed–Fri agenda rows and hidden weekend rows.
+- **Weather refreshed (D).** A second Met Office Valletta read covers 13–21 October (13 Oct sunny 24/21; 14–18 Oct 23/21; 19 Oct sunny intervals 23/21; 18–21 October BETA) and is recorded alongside the earlier same-day snapshot rather than replacing it silently.
+- **Platforms re-tested, still blocked (B/E).** Yelp and Reddit returned HTTP 403 and Google Maps returned a JavaScript shell without place data; no new social or review evidence was invented to fill the gap, and the recorded platform limits stand as current.
+
+### Verification gates and passes
+
+1. **Pass 1 — implement and verify:** each stream re-read its live sources, wrote only its owned data/page pair, and logged every claim in `docs/SOURCES.md` with URL and access date; unresolved items went to `docs/OPEN_QUESTIONS.md` and cross-stream notes to `docs/HANDOFF.md`.
+2. **Pass 2 — adversarial review:** the new records were checked for overreach — listings are not broadcasts, no price/odds/recommendation text exists, notice rows without a printed year are quoted as printed, forecast values are labelled indicative, and no blocked platform was described as a source. One test assertion written during this pass was itself wrong (it looked for the literal word “Kalshi” in a heading and for a sentence inside the wrong element) and was corrected, then re-run green.
+3. **Pass 3 — original-request audit:** the requirement map below was walked against the integrated tree, and the full local suite was re-run afterwards.
+
+### Requirement-by-requirement (this integrated tree)
+
+| Requirement | Where it lives | State |
+|---|---|---|
+| Repo review; plan before parallelizing; workstreams with owned files | `docs/PLAN.md` (this session's plan at top), `docs/HANDOFF.md` | Done; single fixed Arena branch adapted and documented |
+| Hotel, room and dates as inputs | `index.html`, `hotel.html`, hotel records | Present and labelled as traveller inputs |
+| Event venue/facts; how to reach it by public transport on event days | `event.html`, `getting-around.html#event-day-by-date` | Done; per-date plan, fares, the late-return gap, the 17–18 October detours and the newly recorded 12–16 October night notice |
+| Transport comparison (convenience, price, value, feasibility) | `getting-around.html`, `mode-comparison-summary` | Done; published fares priced, live quotes still required |
+| Food, cafés and review-platform research | `restaurants.html`, `data/food.json` | Done; dated review-volume snapshot and explicit platform limits (Yelp/Reddit/Google re-tested this pass) |
+| Gaming centres, activities, landmarks, events | `activities.html`, `data/activities.json` | Done; no public PC café verified, dated event leads kept |
+| Everyday life for a US traveller | `everyday.html` | Done; power, money, SIM, entry, safety, customs, health and the refreshed weather set |
+| Live sports radio with official schedules | `radio.html`, `data/radio.json` | Done; dated UK programme listings, Malta carriage explicitly unproven, and the trip-window listening plan |
+| Kalshi-relevant sports broadcast section | `radio.html#kalshi-trip-window-markets`, `kalshi-trip-window-markets-api-2026-10-11` | Done; market listings now primary-source, kept separate from radio carriage |
+| Expense planner quick to fill once the itinerary arrives | `costs.html#quick-fill`, `data/expenses.json` | Done; blank by default, preview-then-fill, CSV/JSON backup |
+| Sections, subpages, desktop and mobile readability | 15 pages, axe sweeps 320–1440 px | Verified by the browser suite |
+| Executive summary, official links, source log | `index.html#exec-title`, `sources.html`, `docs/SOURCES.md` | Done |
+| No hallucinations; open questions recorded | confidence fields, `docs/OPEN_QUESTIONS.md` | Enforced by the validator (every cited URL must be logged) and the review passes |
+| GitHub Pages site; PR opened then merged to main | `.nojekyll`, Pages on `main` | Live at https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/ — delivery receipt below |
+
+### Gate results observed locally (11 October 2026)
+
+- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files / **218** exact-schema records / **353** unique record URLs in `docs/SOURCES.md` / 15 HTML pages / 376 link attributes / 9 navigation destinations / 25 expense rows.
+- `python3 scripts/check_javascript.py` — **PASS**.
+- `npx playwright test` — **26/26 passed** (25 existing plus the new market-versus-radio regression test).
+
+### What remains unverified (unchanged unless noted)
+
+Organiser Saturday/Sunday door times, finish times and FAQ answers; the traveller's reservation, day validity and gate; a saved date-specific MPT journey in either direction, both walks, the Buġibba → Qawra onward leg and any effect of the newly recorded notices; an operator-dated 13–19 October fare; live taxi/ride-hailing quotes; the 2022 taxi-tariff page's currency; any TQ event service; a **named match on a Maltese frequency** (schedule, carriage, receiver and reception are four separate links, and no receiver scan has been made); the “Sports Channel” identity on 6C; the 18–19 October national forecast; sentiment or trend data from Yelp, Instagram, TikTok, Facebook, Reddit and X (blocked or limited — Yelp/Reddit/Google re-tested this session); and every traveller-personal item (flights, party, invoice, insurance, devices).
+
+### Limitations of this session
+
+- The Kalshi evidence is a listing snapshot: contracts can be added, paused or settled at any time, and the API read establishes only what was open on 11 October 2026. It is not a price, a tip, or a statement about eligibility to trade while travelling.
+- The new service notices print dates without a year and the operator's route pages carry unlabelled timetable variants; the honest reading is “printed, printed and unresolved”, not “confirmed to affect your journey”.
+- Platform coverage was re-tested, not expanded: three major review/social sources still refuse this project's reader, so no ranking or sentiment claim is made from them.
+- Local gates check structure, behaviour and accessibility — not external truth. A passing suite is not a certificate that any listing, fare, route or broadcast is still current on the day.
+
 ## Current session — `arena/b29d95ae-maltasupplemental` (11 October 2026 UTC)
 
 ### Delivery summary

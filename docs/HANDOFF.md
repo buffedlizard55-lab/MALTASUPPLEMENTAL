@@ -1,5 +1,14 @@
 # Current cross-workstream handoff
 
+**Session:** `arena/2b38c9c6-maltasupplemental` · **updated:** 11 October 2026 UTC.
+
+- **E → G (new primary source):** Kalshi's public trade-API v2 is reachable read-only and returns open events per series. Trip-window results: `KXEPLGAME` lists all nine EPL fixtures of 17–19 October; `KXUCLGAME` lists twelve Champions League matches on 13–14 October; `KXNFLGAME` lists the 18 October slate; `KXCS2GAME`'s open games sampled ran to 13 October with **no Thunderpick fixture**; `KXSERIEA` returns only the season future. Published as a market-versus-radio table on `radio.html#kalshi-trip-window-markets` and record `kalshi-trip-window-markets-api-2026-10-11`. Keep saying that a listing is not carriage and that no price, tip or eligibility claim is made — the regression test enforces both.
+- **A → G (new notices):** the service-updates feed re-read in full adds the Routes 46/260 Mon–Thu 21:00–05:00 notice (12–16 October) and the Routes 54/106 daytime Attard detours (13 October) to the record; the 17–18 October cluster, the older Route 186 April notice and the Saqqajja 4627 closure are unchanged, and TQ1 still prints “Timetable not available!”. Do not claim the new notices affect a specific journey — the rows print no year and the corridor question is open (OQ-T1).
+- **D → G (forecast):** a second Met Office Valletta read covers 13–21 October with slightly cooler values than the earlier same-day read; both snapshots are recorded and 18–21 October stay BETA. Do not present any of them as the national panel.
+- **B/C → G (platforms, unchanged):** Yelp 403, Reddit 403 and Google Maps' JavaScript shell were re-tested this session; the Eventbrite listing re-read with no change. No new social evidence exists, and no new food record is justified.
+- **F → traveller:** the planner is still blank; paste the confirmed itinerary into the quick-fill preview when it exists and export a JSON backup before switching devices.
+
+
 **Session:** `arena/b29d95ae-maltasupplemental` · **updated:** 11 October 2026 UTC.
 
 - **C → A/G:** Direct Liquipedia reads (all seven chunks) pin the weekend bracket clocks the Eventbrite page still hides: SF1 Sat 17 16:00 Malta, SF2 Sat 17 19:00 Malta, third-place Sun 18 13:30, final Sun 18 17:00 (Bo5), pairings TBD. A search-index extract had garbled the bracket as “FURIA v BB in the semifinal” — the direct read supersedes it; do not copy search-extract pairings. The late-return problem now demonstrably covers all five event days.

@@ -1,5 +1,15 @@
 # Open questions and unverified items
 
+**Current research snapshot: 11 October 2026 UTC, session `arena/2b38c9c6-maltasupplemental`.**
+
+New or changed items from this pass. Nothing below is a booking, a physical test or an RF measurement.
+
+- **OQ-T1 · Two newly recorded service notices during the trip.** The operator feed carries a Mon–Thu 21:00–05:00 detour on Routes 46 and 260 “starting October 12 … ends October 16 at approximately 5:00 AM” (skipping Mnara → Zerafa toward Għargħur and Zerafa → Imnara toward Valletta), which covers the nights of the two long event days, and Tuesday 13 October 09:30–17:30 detours on Routes 54 and 106 in Attard (toward Attard skipping Fontaine → Aquilina and Wiji → Aquilina). None of the rows prints a year. Whether either notice changes a stop this traveller would actually use — in particular whether Route 260 touches the Qawra ↔ Ta' Qali corridor on those nights — is unresolved and must be settled in the operator's date-specific planner.
+- **OQ-T2 · TQ special service still unpublished.** The TQ1 page re-read on 11 October 2026 still renders “Timetable not available!”, and the updates feed carries no Thunderpick/BLAST notice. Any TQ service would be the single development that improves the late return; check the feed daily during 13–19 October.
+- **OQ-T3 · Trip-week single fare.** The fare page still prints only “with effect from 19 October 2025 to 13 June 2026”, so the €2.50 (13–18 Oct) / €2.00 (19 Oct) split remains a third-party-supported inference. Note also that `…/fares-and-cards` is a 404 and `…/fares-and-tickets/` is the live page.
+- **OQ-K1 · Kalshi listings are verified; the radio link is not.** The exchange's own API lists trip-window markets for the EPL weekend, the 13–14 October Champions League midweek, the 18 October NFL slate, and CS2 games that stop short of the Maltese tournament (no Thunderpick fixture), with Serie A offered only as a season future. This closes the “which markets exist for these dates” question with a primary source. It does not close the radio question: no market listing is a broadcast, no named match has been verified on a Maltese frequency, and personal eligibility to trade while travelling comes from the exchange's agreement, which was not reviewed in full.
+- **OQ-W1 · Weather snapshots moved slightly.** The second Met Office Valletta read on the same day returned 13 Oct 24/21 and 14–18 Oct 23/21 with 18–19 October labelled BETA, superseding the slightly warmer/cloudier values of the earlier read for planning purposes. Both are recorded; 18–21 October values are indicative only.
+
 **Current research snapshot: 11 October 2026 UTC, session `arena/b29d95ae-maltasupplemental` (delivery pass).**
 
 Delivery-session updates (11 October 2026, two days before departure):
