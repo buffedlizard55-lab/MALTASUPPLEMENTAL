@@ -1,5 +1,30 @@
 # Open questions and unverified items
 
+**Session `arena/4d02579a-maltasupplemental` — verification pass, 12 October 2026 UTC (latest; supersedes conflicting older bullets).** Each item below is either resolved with a dated source, corrected, or still open. Nothing here is a booking, a live quote or a physical test.
+
+**Resolved or corrected this session**
+
+- **Fourth 14 October opener is 18:00 Malta, not 18:30.** Liquipedia labels FURIA v BETBOOM at 12:00 EDT; EDT + 6 h = 18:00 Malta (UTC+2 mid-October). The earlier “18:30” rows in `docs/SOURCES.md`, `docs/STATUS.md` and `docs/FINAL_REPORT.md` were transcription errors and are corrected. The data files already said 18:00. The 14 October starts are 10:30, 13:00, 15:30 and 18:00 Malta. Weekend pairings are still TBD. The “18:00 vs 18:30 outlier” item is closed.
+- **Route 186 / 405 weekend cluster — wording corrected.** The operator's weekly Friday/Saturday 19:00–24:00 notice starts **17 October** and ends **18 October at about 00:00**. Inside the 13–19 October stay, only **Saturday 17 October evening** is affected; Friday 16 is before the start and Sunday 18 is after the end. Earlier records and pages that said “Friday/Saturday, 17–18 October” are reworded (see `data/transport.json`, `docs/FINAL_REPORT.md`, `docs/SOURCES.md`).
+- **Weekday/date pairs are now machine-checked.** `scripts/check_weekdays.py` (run by `npm test`) checks 302 weekday/date pairs against the 2026 calendar and rejects ambiguous wording that puts a weekday straight after a date. It found three real errors, all fixed.
+- **Venue city conflict — still rejected.** The Esports Kingdom page says “BLAST Studios in Valletta” (read as a search snippet, not fetched). Eventbrite and Liquipedia (“Location: Attard”) agree on Attard; the organiser's release is datelined “TA’ QALI, Malta”. The guide uses Attard.
+- **Hotel phone and address — confirmed on the official contact page.** AX ODYCY: +356 2354 3000, info.odycy@axhotelsmalta.com, Qawra Coast Road, Qawra SPB 1902. A search snippet also linked +356 2354 3887 to the same address; it is not on the official page and is not used.
+- **Plug/voltage — confirmed on gov.mt.** “230 Volts, 50Hz. UK-style three pin square plugs.” A US plug will need an adapter, and a voltage converter only for single-voltage devices.
+- **BFBS Malta closure — 1979 confirmed, exact day disputed.** Sources give 25, 26 or 31 March 1979. The guide says only “closed in 1979”.
+- **US HD Radio vs DAB+ — confirmed.** Wikipedia's HD Radio article says DAB and DRM receivers cannot receive HD signals in the US, and HD receivers cannot receive DAB or DRM from other countries. Buy a DAB+ receiver in Malta or bring a DAB+-capable radio.
+- **Kalshi EPL trip-window listings — re-read 12 October.** The public events endpoint still lists open game events on 17 Oct (five fixtures), 18 Oct (four) and 19 Oct (Tottenham v Coventry). These are market listings only; they are not radio carriage.
+
+**Open — new or raised this session**
+
+- **OQ-S7 · Route 186 weekly Friday/Saturday 20:00–24:00 notice (year missing).** The operator feed prints “Detour in effect weekly on Friday, Saturday from 8:00 PM to 12:00 AM. Detour ends April 21” with **no start date and no year**. If the year is 2026, the notice has already expired and is stale feed text, which the operator's feed is known to carry. If it is April 2027, it would cover **Friday 16 and Saturday 17 October from 20:00**. The skipped stops (Gholja 2 → Targa toward Buġibba) are upstream of the Ta' Qali Stadium stop. The diversion path and running time are not published, so Friday 16 evening after 20:00 and the Saturday evening return carry an unpriced timing risk. Confirm with MPT before relying on a late bus.
+- **OQ-S8 · Team list on the organiser's own page.** The organiser's finals page (read 12 October) gives format, dates and prize money but names no teams. Team identities come from the 9–10 October HLTV, Fragster, Liquipedia and Hotspawn reports and from the 16 September release, which still lists Virtus.pro. Check the organiser's team and bracket pages on the day before the first match.
+- **OQ-S9 · Time-zone assumption.** Conversions in this guide use UTC+2 (CEST) for 14–18 October. That matches Liquipedia's EDT labels (+6 h). This session did not read a Maltese source for the daylight-saving end date; confirm before using the times in other countries' clocks.
+- **OQ-S10 · Event-day finish times and ticket status.** Unchanged from the sections below: the Eventbrite listing still hides the Saturday/Sunday agenda and FAQ answers, and no event-specific ticket price, reservation or inventory was confirmed.
+
+**Carried forward unchanged:** the Eventbrite weekend agenda, personal reservation and gate, the 20:53 Route 186 return row (OQ-S1), taxi/ride-hailing quotes, the Sports Channel DAB+ identity (OQ-28), named-match carriage on any Malta frequency, MTA invoice treatment (OQ-23), ETIAS/EES status (re-check before departure) and personal facts (devices, insurance, party).
+
+---
+
 **Current research snapshot: 12 October 2026 UTC, session `arena/561bff0e-maltasupplemental` (delivery pass).** The session opened late 11 October UTC; the reads below were made just after midnight.
 
 Delivery-session updates (12 October 2026, eve of departure):

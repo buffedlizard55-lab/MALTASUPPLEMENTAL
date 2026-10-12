@@ -1,5 +1,30 @@
 # Current cross-workstream handoff
 
+## Session `arena/4d02579a-maltasupplemental` · 12 October 2026 UTC (latest)
+
+**Integrated decisions.** The event is 14–18 October at BLAST Arena Studios, Attard (Ta’ Qali), with the organiser's 12–19 October window. The fourth 14 October opener is **18:00 Malta** (Liquipedia 12:00 EDT). Virtus.pro was replaced by NIP (HLTV, Fragster, Liquipedia; the organiser's own page names no teams). The Route 186 cluster bites only on **Saturday 17 October, 19:00–midnight**. The Route 186 “April 21” notice (no year, no start date) is an open risk for Friday 16 evening (OQ-S7).
+
+**Cross-workstream notes**
+
+- **A → C/G:** The Saturday 17 bracket start (semifinal 2 at 19:00 Malta) coincides with the Route 186 / 405 / 202 / 260 diversion window. Plan the late return before that match, not after it.
+- **A → G:** The second Route 186 detour notice (weekly Fri/Sat 20:00–midnight, “ends April 21”) has no start date and no year. Confirm with MPT before a Friday 16 evening return.
+- **C → E:** Kalshi's trip-weekend EPL game events are still open on 17, 18 and 19 October. A listing is not a Malta broadcast.
+- **D → G:** The plug/voltage record (230 V, 50 Hz, UK-style three-pin) is confirmed on gov.mt. US HD Radio does not decode DAB+ (Wikipedia, HD Radio).
+- **G:** `npm test` now includes `scripts/check_weekdays.py`. A new weekday phrasing that does not match the 2026 calendar fails CI.
+
+**Suggested work for the next session, in priority order**
+
+1. Confirm the Route 186 “April 21” notice with MPT (year, start, whether it applies to Friday 16 and Saturday 17 evenings); remove or re-dating it on the page.
+2. Re-read the operator feed and the organiser's team and bracket pages on the morning of 14 October.
+3. Confirm the Eventbrite weekend agenda, ticket status and the on-site entry rules (age 18+, ID, day validity) once the event is open for sale or check-in.
+4. Shorten the executive summary to five bullets for mobile (currently about ten long bullets). Each bullet should link to one record.
+5. Run a true external-link crawl from a host with public internet access. This sandbox can only reach GitHub and package registries.
+6. Keep the transport notes and the radio carriage claims apart: no Malta frequency has been shown to carry a named trip-week match.
+
+---
+
+## Previous integrated handoff (kept for history)
+
 **Session:** `arena/561bff0e-maltasupplemental` · **updated:** 12 October 2026 UTC (session opened late 11 October UTC).
 
 - **D → C/G (arrival-day weather):** the Malta Met Office national panel now covers 12–18 October and shows **Tuesday 13 October “windy with isolated showers”, NW force 5–6** — the one genuinely unsettled day of the stay, and harsher than the UK Met Office’s sunny 25/22 for the same date. 18 October appears in the national panel for the first time (mainly cloudy 24/18). Outdoor/sea plans for the 13th (C’s activities, F’s contingencies) should carry a rain layer and a wind check; the detailed forecast’s milder wind reading for the same day is quoted beside it, not reconciled.

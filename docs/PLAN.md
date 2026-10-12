@@ -1,4 +1,48 @@
-# Current session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
+# Current session plan — `arena/4d02579a-maltasupplemental` (12 October 2026, UTC)
+
+## Repository review (start of session)
+
+- Repo state: `main` = `956dfd9`, branch identical; PR #72 is the latest merge. Open PR #10 (`arena/9327905a`, a different session) is left untouched.
+- Existing site: static HTML + seven JSON datasets (218 exact-schema records), a shared renderer (`js/site.js`), a blank-by-default expense planner, Playwright/axe tests and `scripts/validate_site.py`. Baseline gates passed before any edit (validator, JavaScript, Playwright 26/26).
+- Environment limit: bash can reach only GitHub and package registries. External pages were read with the web tools (`fetch_page`, `web_search`).
+
+## Protocol adaptation
+
+The parallel protocol asks for one branch per workstream and sub-agents. This session is fixed to `arena/4d02579a-maltasupplemental`, so the workstreams ran **serially in one agent**:
+
+| Workstream | Owned files this session | Dependencies |
+|---|---|---|
+| A · Transport | `data/transport.json` (wording), `getting-around.html` (rendered) | none |
+| B · Food & cafés | none changed (no food re-read in this pass) | — |
+| C · Gaming, activities, events | `data/event.json` / `data/activities.json` read only; corrections recorded in logs | A |
+| D · Everyday | read only (plug record confirmed on gov.mt) | — |
+| E · Sports radio | read only (Kalshi, BFBS, HD Radio) | — |
+| F · Expense planner | unchanged (blank by design) | itinerary |
+| G · Integration | `scripts/check_weekdays.py`, `package.json`, `index.html` (exec summary), `README.md`, `docs/*` | A–F |
+
+Shared files (`index.html`, `README.md`, `docs/`) were edited once, at integration, not by each workstream.
+
+## Session objectives
+
+1. Re-verify the time-critical trip facts (event dates and venue, teams, opener clocks, the operator's live notices, hotel contact details, plug/voltage, radio and market listings) against live sources, and log each result with a date.
+2. Fix any error found, and close the open item where a source resolves it.
+3. Add a machine check for the one error class found: weekday/date pairs.
+4. Update the executive summary and open questions for anything that changes a decision on the trip.
+5. Run the gates, open a PR, merge it into `main`, and record the next-session work.
+
+## Verification gates and passes
+
+- **Pass 1 — implement and verify.** Re-read the operator feed (3 chunks), the organiser finals page, Liquipedia (chunk 0), the PR Newswire release, the hotel contact page, gov.mt, Kalshi events, and HLTV/Fragster/Liquipedia on the NIP replacement. Logged in `docs/SOURCES.md` (top section). Ran `npm test`.
+- **Pass 2 — adversarial review.** The new weekday check found three phrasing errors and then flagged the session's own quoted wording. Both were fixed. The fourth opener's “18:30” row was traced to a transcription error (Liquipedia 12:00 EDT = 18:00 Malta). The Route 186 “April 21” notice, which has no year, was kept as an open question (OQ-S7) rather than resolved by guesswork.
+- **Pass 3 — full request audit.** Checked the executive summary's claims one by one against the logs. Checked mobile and desktop rendering with a headless screenshot (no horizontal overflow). Recorded what is still unverified (see `docs/OPEN_QUESTIONS.md`, session section, and the handoff).
+
+## Delivery
+
+Commit to `arena/4d02579a-maltasupplemental`, push, open a PR into `main`, wait for the required check, merge by PR number, and record the merge state only after it is observed.
+
+---
+
+## Previous session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)
 
 ## Repository review and integration boundary
 
