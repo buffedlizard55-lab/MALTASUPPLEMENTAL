@@ -1,4 +1,34 @@
-# Current session plan — `arena/4d02579a-maltasupplemental` (12 October 2026, UTC)
+# Current session plan — `arena/99828d92-maltasupplemental` (12 October 2026 UTC)
+
+## Repository review and scope
+
+The repository was reviewed at `main` `956dfd9` (PR #72 merge) on the eve of the trip window. Everything required by the original request is already built and green on the untouched tree: a GitHub Pages static site (15 HTML pages, nine-item shared navigation, executive summary, section hubs), an exact 13-field record schema with seven datasets (218 records), per-topic pages rendered from JSON by `js/site.js`, a master source log, open-questions and status ledgers, a blank-by-default expense planner with itinerary quick-fill, a CI workflow and a Playwright/axe suite. Nothing is rebuilt and no shared setup (folder structure, schema, site shell, CSS tokens, source-log row format) is changed without a source-led reason.
+
+This session is a **final pre-departure verification and delivery pass** on the fixed Arena branch. Arena fixes one branch per session, so workstreams run serially on it with the established ownership map; G integrates last. Cross-topic findings go to `docs/HANDOFF.md`, unknowns stay in `docs/OPEN_QUESTIONS.md`, and every claim is logged with URL and access date in `docs/SOURCES.md`.
+
+| Stream | Owned files | This session |
+|---|---|---|
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Re-read the operator's Route 186 page and the live service-updates feed (both complete, 12 Oct UTC); record the 30-minute headway, the reproduced 20:53 Stadium 2194 return and its 21:27 Buġibba Bay 1 arrival, and confirm the trip-week notice set. Add the venue's published map pin from the official ticketing listing. |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | No new platform access; re-confirm the blocked-platform boundary rather than restate it as evidence. |
+| **C · Gaming, activities, landmarks & events** | `data/activities.json`, `activities.html`, `data/event.json`, `event.html` | Re-read the ticket listing (agenda, venue block, FAQ state) and the tournament bracket source; keep event facts separate from the generic recommendation card. |
+| **D · U.S.-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Independently reproduce the national 12–18 October forecast panel (identical values) and keep it labelled a dated forecast; leave entry/health/power claims untouched where no change was found. |
+| **E · Terrestrial sports radio** | `data/radio.json`, `radio.html` | Re-read the three official schedules already cited (BBC World Service Sportsworld, BBC Radio Scotland, Radio Sportiva), the Rai Radio 1 programme page and the DAB+ operator directory; keep fixtures, schedules, carriage and reception strictly separate. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html`, `docs/ITINERARY_QUICKSTART.md` | Ship the missing piece for “quick work once the itinerary arrives”: a one-page itinerary-to-planner worksheet (accepted line formats, category mapping, five-minute workflow) wired into the planner page. Amounts stay blank. |
+| **G · Site shell, executive summary & delivery** | `index.html`, `js/site.js`, `sources.html`, `README.md`, `docs/*`, tests | Fix the one orphaned page by giving the shell a footer hub row, refresh the executive-summary bullets affected by this pass, log all new sources, run all gates, open the PR, merge it by number and record only observed GitHub/Pages state. |
+
+## Conflict avoidance
+
+One branch (this one), serial execution, one owner per file. Shared files (`index.html`, `js/site.js`, `css/style.css`, `sources.html`, `README.md`, `docs/*`) are touched only by G after A–F. No file is reformatted, no record is deleted or re-keyed, and no unverified item is presented as fact.
+
+## Verification gates (Passes 1–3)
+
+1. **Pass 1 — implement and verify:** each stream re-reads its live sources, writes only its owned data/page pair, and logs every claim with URL and access date; anything not confirmed stays labelled.
+2. **Pass 2 — adversarial review:** check the new records for overreach (a timetable row is not a dated last bus; a published pin is not attendee access; a schedule is not carriage; a listing is not a broadcast), re-check page/data consistency, and re-run the validator, the JavaScript check and the full Playwright/axe suite.
+3. **Pass 3 — original-request audit:** walk the user's line-by-line requirements against the integrated tree, state verified vs unverified, deliver by PR and merge, observe the Pages build, and report limitations plus next-session tasks.
+
+---
+
+## Previous session plan — `arena/4d02579a-maltasupplemental` (12 October 2026, UTC)
 
 ## Repository review (start of session)
 

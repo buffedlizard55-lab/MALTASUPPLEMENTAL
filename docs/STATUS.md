@@ -1,7 +1,25 @@
-<!-- Session addendum appended by the arena/561bff0e session; historical sections below are preserved. -->
+<!-- Session addendum appended by the arena/99828d92 session; historical sections below are preserved. -->
 # Delivery status — Malta trip guide
 
-## Current session addendum — `arena/4d02579a-maltasupplemental` (12 October 2026 UTC, last update 12 Oct)
+## Current session addendum — `arena/99828d92-maltasupplemental` (12 October 2026 UTC)
+
+**Stage:** pre-departure verification and delivery pass, executed in three passes on this fixed Arena branch, one day before the trip window opens. The tree was reviewed at `main` `956dfd9` (PR #72) and left structurally unchanged: no schema, navigation, CSS or dataset shape was altered, and no record was deleted or re-keyed. Every read in this pass is logged in `docs/SOURCES.md` under this session's heading; open boundaries are in `docs/OPEN_QUESTIONS.md`; cross-topic notes are in `docs/HANDOFF.md`.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Full re-read of the operator's Route 186 page (operator's own “Scheduled Frequency every 30 minutes”; Stadium 2194 window 16:55–20:53; the 20:53 boarding arriving Buġibba Bay 1 at 21:27) and of the live service-updates feed (trip-week cluster, 54/106 on the 13th, 46/260 on the 12th–16th nights, plus newly visible 117/Gozo/12-October notices). Venue record now carries the organizer's published map pin (35.8957343, 14.4168839). | Still no date-specific planner query, gate walk or live ride quote; TQ service unpublished; trip-week fare still an inference. |
+| **B · Food & cafés** | No new platform content: Reddit's search JSON returned HTTP 403 again on 12 October, alongside the recorded Yelp/Instagram/TikTok/Facebook/X blocks. Coverage limits re-confirmed, not restated as evidence. | Menus, hours and closures remain to be confirmed in person; the review sample is dated and volatile. |
+| **C · Gaming, activities, landmarks & events** | Ticket listing re-read: venue block and venue pin unchanged, Wed/Thu 09:30–22:30 and Fri 14:00–21:00 agenda rows unchanged, Sat/Sun still behind “Show all agenda”, nine FAQ headings still unanswered, a “Sales end soon” badge appears. Liquipedia re-read was blocked by its abuse filter in this window. | No event price/tier/checkout/inventory/gate verified; weekend door/finish times and FAQ answers remain the traveler's question for the organizer. |
+| **D · U.S.-traveler everyday guide** | National panel independently reproduced (identical 12–18 October values; 13th windy with isolated showers F5–6; 19 October still outside the panel). Live national address recorded as `maltametoffice.com` — the older `maltairport.com` weather paths now serve a shell or 404. | Personal entry/insurance/device facts remain traveler-supplied; recheck forecasts and warnings daily. |
+| **E · Sports radio** | Three station sources re-read: BBC World Service Sportsworld's 17/18 October editions unchanged; Radio Sportiva's dated callouts still stop at 11 October; Rai Radio 1's “Tutto il calcio” still billed Saturdays/Sundays with no 17–18 October running order; NET FM's recurring weekend sport slots re-confirmed (Saturday 16:00, Sunday 15:00, Friday 18:30) with an unresolved older social caption. talksport.com schedule page still unusable; Kalshi's public API still lists all trip-window EPL markets (plus a 12 October game). | No named match on a Maltese frequency; no receiver scan; “Sports Channel” (6C) identity still unresolved. |
+| **F · Expense planner** | New `docs/ITINERARY_QUICKSTART.md` documents what to send, the accepted paste format, the keyword→row map and a five-minute workflow; linked from the planner, the overview and the sources page. Amounts stay blank by design. | The planner has not yet been filled from a real itinerary; the parse path is covered by automated tests using example lines. |
+| **G · Integration & delivery** | Footer now exposes six section hubs (fixing the orphaned `hotspawn.html`), the sources page records the 12 October research state, and two regression tests were added (hub reachability + quickstart wiring; venue pin/frequency presence). Validator, JavaScript check and the full Playwright/axe suite pass locally. | Open the PR from this branch, merge by number, then observe the Pages build before recording any deployment claim. |
+
+**Gate results (12 October 2026, this session, on the integrated tree):** validator PASS — 7 JSON files / 218 exact-schema records / 353 unique record URLs logged in `docs/SOURCES.md` / 15 HTML pages / 386 link attributes / 9 shared navigation destinations / 25 expense rows; JavaScript syntax check PASS; `npx playwright test` **28/28 passed** (five viewports with axe at 320/360/768/1024/1440 px, planner round-trips, quick-fill safety, deep links, project-prefix mount, no-JS fallback, plus the two new tests).
+
+<!-- Session addendum appended by the arena/561bff0e session; historical sections below are preserved. -->
+
+## Previous session addendum — `arena/4d02579a-maltasupplemental` (12 October 2026 UTC)
 
 **Stage:** Pass 1 (re-verify time-critical facts and run the gates), Pass 2 (adversarial check of the wording, dates and third-party conflicts it found) and Pass 3 (re-check the whole request and the protocol). The session's branch constraint means the parallel-protocol workstreams (A–G) ran serially in one agent. Each workstream kept to its own data file, page or doc sections; shared files (`index.html`, `README.md`, `docs/`) were edited once at integration. No per-workstream branches were created, because this session is fixed to `arena/4d02579a-maltasupplemental`.
 
@@ -23,7 +41,7 @@
 
 **Gate results (12 October 2026, final state after all edits):** `npm test` PASS. Validator PASS (7 JSON files / 218 exact-schema records / 352 record URLs found in the source log / 15 HTML pages / 379 link attributes / 9 shared navigation destinations / 25 expense rows). Weekday/date check PASS (306 pairs). JavaScript syntax PASS. Playwright 26/26 including axe. Mobile (390 px) and desktop (1440 px) screenshots of the executive summary: no horizontal overflow. These are local gates; they do not confirm live external links.
 
-## Current session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
+## Previous session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
 **Stage:** Pass 1 (time-critical re-reads), Pass 2 (adversarial review) and Pass 3 (full re-check against the request) run in that order on this fixed Arena branch. Main advanced during the pass (PRs #68–#70 from parallel sessions) and was merged into the branch before delivery: conflicts in shared docs/pages were resolved by keeping both sessions' blocks, and this session's trip-week-notice additions were folded into main's canonical `mpt-trip-week-notices-2026-10-11` record instead of creating a duplicate. Local gates re-run before delivery; the GitHub PR is the source of truth for merge state. The session opened late 11 October UTC; source reads are dated 2026-10-12.
 
