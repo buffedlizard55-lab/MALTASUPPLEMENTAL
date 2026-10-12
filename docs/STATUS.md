@@ -36,6 +36,8 @@
 
 **Gate results (12 October 2026, this session, on the integrated tree):** validator PASS — 7 JSON files / 218 exact-schema records / 353 unique record URLs logged in `docs/SOURCES.md` / 15 HTML pages / 386 link attributes / 9 shared navigation destinations / 25 expense rows; JavaScript syntax check PASS; `npx playwright test` **28/28 passed** (five viewports with axe at 320/360/768/1024/1440 px, planner round-trips, quick-fill safety, deep links, project-prefix mount, no-JS fallback, plus the two new tests).
 
+**Post-merge addendum (01:56–01:58 UTC, PR #77 already merged):** the expired Liquipedia block was re-attempted successfully and the organizer finals page was re-read. No site or dataset number changed; the two reads reproduce the recorded window, format and prize pool and add the explicit **Best-Of-5 Grand Final** wording (organizer, corroborated by Liquipedia) on Sunday 18 October from a scheduled 17:00 start. Recorded in `data/event.json` (`twc-teams-format`, `twc-match-times-malta`, `twc-dates-phases`, `twc-venue-address`), `data/activities.json` (the 17 and 18 October day records), `docs/SOURCES.md` and `docs/OPEN_QUESTIONS.md`. Local gates re-run after the edits: validator PASS, weekday check PASS (315 pairs), JavaScript check PASS, Playwright + axe 28/28.
+
 <!-- Session addendum appended by the arena/561bff0e session; historical sections below are preserved. -->
 
 ## Previous session addendum — `arena/4d02579a-maltasupplemental` (12 October 2026 UTC)

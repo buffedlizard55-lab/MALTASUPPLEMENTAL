@@ -63,6 +63,15 @@ No date-specific MPT journey, gate/walk measurement, live bus/taxi/rental quote 
 5. **Keep the evidence boundary:** update `docs/SOURCES.md`, `docs/OPEN_QUESTIONS.md`, `docs/STATUS.md` and this report in the same pass as any new claim, and re-run the full gate suite before merging.
 
 
+### Post-merge addendum (01:56–01:58 UTC, after PR #77 merged)
+
+The reader block that had refused Liquipedia expired minutes after the merge, so the highest-value unverified item was re-attempted rather than left as a limitation. Two reads, no changes to the site's own numbers:
+
+- **Liquipedia event page (successful fetch, 01:56:30 UTC).** Infobox unchanged (Attard · BLAST Arena Studios · 2026-10-14 → 2026-10-18 · 8 teams · S-Tier). The “Upcoming Matches” widget reproduces the four 14 October openers at 10:30/13:00/15:30/18:00 Malta and now carries a first playoff row, “Oct 17 – 10:00 EDT · Semifinals” — the Saturday 16:00 Malta start already recorded on 11 October, reproduced on a second day and still the only published Saturday start. Format section: two double-elimination (GSL) groups of four, all group matches Bo3, single-elimination playoffs with every match Bo3 **except a Bo5 Grand Final**.
+- **Organizer finals page (01:57 UTC).** The 12–19 October window and phase labels are unchanged and the format block prints “All matches are Best-Of-3 except for Grand Final Best-Of-5” with the $1,000,000 split; the page still says “Stay tuned for the latest details on match schedules” and publishes **no** match times, door times, team list or attendance detail. The known “4 Teams advance to Group Stage” inconsistency is still printed beside an eight-team group stage.
+
+What this changes for the trip: the Sunday 18 October Grand Final is a **Bo5** from a scheduled 17:00 start, on top of a Sunday bus timetable — a longer format than the Bo3 rows around it. That is an inference about format length, not a measured finish, but it makes the already-flagged late-return exposure (last static Stadium 2194 observation 20:53; no Qawra stop on the return leg) sharper, not smaller. Door and check-in times remain unpublished by every source checked.
+
 ## Previous session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
 ### Delivery summary
