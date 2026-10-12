@@ -79,6 +79,22 @@
       var left = document.createElement("div");
       left.appendChild(make("p", "", "Malta trip guide · Critical refresh: 12 October 2026 · Individual source dates vary"));
       left.appendChild(make("p", "", "Check source pages and live operator information again before travel; schedules, opening hours and prices can change."));
+      var hubRow = make("p", "footer-hubs", "Section hubs: ");
+      var hubs = [
+        {href: "hotel.html", label: "Hotel"},
+        {href: "qawra.html", label: "Around Qawra"},
+        {href: "landmarks.html", label: "Landmarks"},
+        {href: "logistics.html", label: "US traveller basics"},
+        {href: "itinerary.html", label: "Day framework"},
+        {href: "hotspawn.html", label: "CS2 event pointer"}
+      ];
+      hubs.forEach(function (hub, index) {
+        if (index) hubRow.appendChild(document.createTextNode(" · "));
+        var hubLink = make("a", "", hub.label);
+        hubLink.href = hub.href;
+        hubRow.appendChild(hubLink);
+      });
+      left.appendChild(hubRow);
       var right = document.createElement("div");
       var sourceLink = make("a", "", "Master source log");
       sourceLink.href = "sources.html#source-reader";

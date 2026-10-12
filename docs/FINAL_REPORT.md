@@ -12,7 +12,7 @@ Fresh source-backed changes:
 - **Food/review signals:** the 12 October Google Maps snapshot records Trattoria Riccardo 4.8/6,448; Minoa 4.9/379; Cheeky Monkey 4.5 with no count surfaced. These are separate platform observations, not added to TripAdvisor counts, a complete list or sentiment analysis. Yelp search returned HTTP 403; no blocked-platform content is inferred.
 - **Activities/events:** the official Rolex Middle Sea Race programme confirms the 17 October 2026 Grand Harbour start at 11:00 and says the start sequence may be watched from Valletta’s fortifications. Specific site access, closures, crowd level and fees remain unknown. Heritage Malta’s primary lecture page confirms the 13 October event starts at 19:00 in English for €5. Events Malta’s duplicate narrative says “starting at 7pm” but its structured Time field and card show 21:00; that discrepancy is logged as unexplained, and the organizer’s 19:00 is the planning time.
 - **Integration/docs:** separate Google Maps/TripAdvisor language was aligned in `restaurants.html`; Route 214 and narrowed Route 186 wording was integrated in `index.html` and `getting-around.html`; the residual activity claim implying an established “last bus” was removed. `README.md`, `docs/SOURCES.md`, `OPEN_QUESTIONS.md`, `HANDOFF.md`, `PLAN.md` and this report record source scope and remaining checks.
-- **Mainline integration (PR #76):** after PR #78 was opened, `main` advanced to `2a17b66`. That upstream 12 October source pass and its weekday/date regression check were merged into this fixed branch, not discarded. The imported evidence closes the fourth-opener discrepancy at 18:00 Malta, leaves the separate Route 186 “April 21” notice open for Friday 16 (OQ-S7), records hotel contact and government power guidance, and narrows BFBS closure to 1979 because sources conflict on the exact March day. `scripts/check_weekdays.py` now runs in `npm test`; source provenance is labelled separately in `docs/SOURCES.md`.
+- **Mainline integrations (PRs #76 and #77):** after PR #78 was opened, main advanced first to `2a17b66` and then to `5b171b4`; both updates are being reconciled on the fixed branch. PR #76’s 18:00 Malta opener correction, Route 186 OQ-S7, hotel contact, gov.mt power guidance, BFBS 1979-only wording and weekday/date check are retained. PR #77 adds the planner quickstart, footer hubs, two regressions, refreshed Route 186 frequency/21:27 arrival observation and updated source-page links. The latter is still static timetable evidence, not a trip-specific route. Both provenance streams are recorded separately in `docs/SOURCES.md`. The integrated validator, weekday checker, syntax check and 28-test Playwright/axe suite pass locally; GitHub delivery remains pending until this reconciliation is pushed and PR #78 is re-observed.
 
 ### Requirement audit
 
@@ -20,17 +20,17 @@ The integrated guide retains the traveler-supplied AX ODYCY Qawra base and 13–
 
 ### Three cumulative passes
 
-1. **Pass 1 — implement and verify:** read the current MPT Route 214 page, official Rolex programme, Heritage Malta lecture listing, Events Malta duplicate, selected Google Maps profiles and Yelp search; recorded access dates/limits; synchronized source-backed data and visible pages.
+1. **Pass 1 — implement and verify:** read the current MPT Route 214 page, official Rolex programme, Heritage Malta lecture listing, Events Malta duplicate, selected Google Maps profiles and Yelp search; integrated the independent PR #77 reads of Route 186, the service feed, ticket pin, forecast, radio schedules and Kalshi EPL API; recorded access dates/limits and synchronized data/pages.
 2. **Pass 2 — adversarial review:** checked all changed records against the exact schema and source log; tested deep-link anchors; distinguished snapshot ratings/counts and official vs aggregator event times; searched for remaining overbroad “last bus” copy and revised the overview and a stale recreation description; kept date-specific journeys, ticketing and access unverified where not observed.
 3. **Pass 3 — full request audit:** verified the existing topic-page structure, mobile/accessibility suite, radio/fixture/reception distinctions, market caveat and blank expense workflow against the original traveler request; documented continuing gaps in the open-questions and handoff records.
 
-### Local gates (12 October 2026 UTC)
+### Local gates (12 October 2026 UTC, after PR #77 integration)
 
-- `python3 scripts/validate_site.py` — **PASS**: 7 JSON files, 219 exact-schema records, 358 unique record URLs logged, 15 HTML pages, 385 link attributes, 9 shared navigation destinations and 25 expense rows.
-- `python3 scripts/check_weekdays.py` — **PASS**: 314 weekday/date pairs match the 2026 calendar; no ambiguous date/weekday phrasing.
+- `npm test` — **PASS**. Validator: 7 JSON files / 219 exact-schema records / 359 unique record URLs logged / 15 HTML pages / 393 link attributes / 9 shared navigation destinations / 25 expense rows.
+- `python3 scripts/check_weekdays.py` — **PASS**, 321 weekday/date pairs match the 2026 calendar.
 - `python3 scripts/check_javascript.py` — **PASS**.
-- `npm test` — **PASS, 26/26 Playwright tests**, including axe at 320/360/768/1024/1440 px, canonical projection/deep links, prefix hosting, expense planner, Kalshi/radio separation, and browser failure/accessibility cases.
-- `git diff --check` — **PASS**.
+- Playwright — **28/28 passed**, including axe at 320/360/768/1024/1440 px, itinerary planner behavior, quickstart/footer wiring, venue pin/Route 186 evidence, canonical deep links and project-prefix mount.
+- `git diff --cached --check` — **PASS**.
 
 These software checks do not certify live services, external-link liveness, the accuracy of every inherited volatile listing, or real-world accessibility.
 
@@ -42,9 +42,9 @@ These software checks do not certify live services, external-link liveness, the 
 - No named match on a Malta terrestrial frequency, compatible receiver test or physical local reception was verified. Recheck broadcaster schedules on air day and scan in Malta; a fixture, online feed or market listing is not carriage.
 - Trip itinerary, bookings, tickets, flights, party/ages, receipts, insurance, device compatibility and actual expenses remain traveler-supplied. Fill the planner only after those inputs arrive. Recheck weather and entry guidance from their official live sources close to travel.
 
-### GitHub delivery (observed state before conflict-resolution push)
+### GitHub delivery (awaiting post-push observation)
 
-PR #78 is open against `main`, from `arena/33cc3d09-maltasupplemental`; its last observed GitHub view reported `mergeStateStatus: DIRTY`, no status checks in the rollup, no review decision and `mergedAt: null`. A later direct API read hit GitHub’s rate limit. A local `git fetch origin main` showed that `main` had advanced to `2a17b66` (PR #76), so the fixed branch is now merging that base and resolving conflicts before another push. No post-resolution GitHub check, mergeability result, merge or Pages build has been observed yet; update this section only from GitHub’s subsequent responses.
+Before the second integration, PR #78 was open against `main`, `DIRTY`/`CONFLICTING`, with no status checks reported, no review decision, and `mergedAt: null`. The updated base at `5b171b4` is now integrated locally and the full local gates pass. This commit still needs to be pushed; only then can the PR’s checks, mergeability and review state be re-observed. No merge result or Pages build is claimed here.
 
 ## Previous session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 

@@ -30,6 +30,10 @@ Reviewed the existing static GitHub Pages site before editing: 15 HTML pages, se
 
 `origin/main` advanced from the branch point to merge commit `2a17b66` while this PR was open. The mainline work was integrated on the fixed Arena branch (not by switching branches). Its source re-verification and weekday/date checker are retained: the fourth opener is 18:00 Malta; a separate Route 186 Fri/Sat notice ending “April 21” without a year remains an open Friday-16 risk; hotel contact, gov.mt power/plug guidance, BFBS Malta’s 1979 closure, US HD Radio/DAB+ incompatibility and Kalshi event listings are documented with limits. `scripts/check_weekdays.py` is included in `npm test`. Conflicting shared docs were reconciled without replacing the current-session findings; the combined local gates and GitHub state must be observed after this merge.
 
+### Upstream integration after main advanced (PR #77)
+
+`origin/main` advanced again from `2a17b66` to `5b171b4` while PR #78 remained open. This integration preserves PR #77’s new itinerary quickstart, costs-page link, footer section hubs and styles, source page updates, two browser regression tests, and its independent dated re-reads. It also carries forward its current Route 186 frequency/arrival observation and refreshed service-feed details while keeping the distinction between a static timetable and a date-specific journey. Existing branch-only findings (Google Maps profile snapshot, BFBS year-only closure wording and Friday 16 October OQ-S7) remain intact. Resolve shared docs by retaining both provenance streams, then run Passes 1–3 and the full local suite before pushing; re-observe PR #78 only after GitHub receives the integration. The completed full local run passes: 7 JSON files / 219 records / 359 logged source URLs / 15 pages / 393 links / 25 budget rows, 321 weekday/date pairs, JavaScript syntax, and 28/28 Playwright tests with axe at five viewport widths.
+
 ---
 
 # Previous session plan — `arena/5ec909ed-maltasupplemental` (11–12 October 2026, UTC)

@@ -15,7 +15,7 @@ A responsive, source-linked planning guide for the traveler-supplied **13–19 O
 | [Activities & sights](activities.html) | Gaming and arcade status, operator-priced bike/e-bike hire nearby, landmarks and dated recreation/event leads |
 | [Everyday guide](everyday.html) | US-to-Malta power, connectivity, money, entry/customs, health, safety and weather |
 | [Sports radio](radio.html) | Terrestrial receiver/service leads and schedules—not a collection of online streams |
-| [Expense planner](costs.html) | 18 core and seven optional daily rows, blank amounts, quick-fill preview, autosave, CSV and JSON backup/restore |
+| [Expense planner](costs.html) | 18 core and seven optional daily rows, blank amounts, quick-fill preview, autosave, CSV and JSON backup/restore; see the [itinerary quickstart](docs/ITINERARY_QUICKSTART.md) when bookings arrive |
 | [Sources & status](sources.html) | Dated source log, access limits, open questions and project reports |
 
 ## Latest evidence update — 12 October 2026 (fixed branch `arena/33cc3d09-maltasupplemental`)
@@ -27,6 +27,10 @@ The previous 12 October delivery pass’s national-weather and trip-week service
 ### Additional 12 October verification merged from main (PR #76)
 
 A separate upstream pass re-read Liquipedia, the full MPT service feed, the organizer’s event page, hotel contact information, gov.mt, and selected radio/market sources. It confirms the fourth 14 October opener is **18:00 Malta** (12:00 EDT); the earlier 18:30 schedule mention is superseded. The dated Route 186/405 diversion starts on 17 October, while a separate weekly Route 186 notice ending “April 21” has no year and may affect Friday 16 October; neither is a saved journey. The official hotel contact is +356 2354 3000, and gov.mt lists 230 V, 50 Hz and UK-style three-pin plugs. The Radio section continues to distinguish the 1979 closure of BFBS Malta, a US HD Radio’s incompatibility with DAB+, fixture/market listings, Malta carriage and actual reception. `npm test` now also runs `scripts/check_weekdays.py`; details and source/access limits are in `docs/SOURCES.md` and `docs/OPEN_QUESTIONS.md`.
+
+### Additional independent mainline recheck (PR #77)
+
+A second 12 October source pass re-read the Route 186 operator page: it displayed a “Scheduled Frequency every 30 minutes” label, weekday/Saturday/Sunday tabs, the Buġibba-bound Stadium 2194 row through 20:53 and a 21:27 Buġibba Bay 1 arrival. This remains a static page observation, not a date-specific saved journey or a verified connection back to Qawra. The Eventbrite listing still hid weekend agenda/FAQ details but exposed its venue map pin (35.8957343, 14.4168839); a pin is not an attendee gate or measured walk. The live MPT feed, national forecast panel, broadcaster listings and Kalshi EPL market list were independently re-read; none establishes a specific bus journey, named Malta radio match or broadcast. The planner now has a separate [five-minute itinerary quickstart](docs/ITINERARY_QUICKSTART.md), footer section hubs, and two additional regression tests. The independent source session is preserved in `docs/SOURCES.md` under `arena/99828d92`; any differing access result is kept scoped to that read. After integration, the full local gate passes: 28/28 browser tests with axe, 321 weekday/date pairs, and 219 exact-schema records.
 
 ## Previous recheck — 11 October 2026 (session `arena/2b38c9c6`)
 ## Previous integrated recheck — 11 October 2026 (upstream verification plus delivery-branch corrections)
