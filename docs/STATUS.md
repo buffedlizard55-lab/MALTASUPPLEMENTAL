@@ -2,7 +2,7 @@
 
 ## Current session addendum — `arena/5ec909ed-maltasupplemental` · 11–12 October 2026 UTC
 
-**Integration:** PR #71 is on the fixed branch. While it was open, `main` advanced through PR #69 (`926c33b`), PR #70 (`8799b1b`) and PR #73 (`1382640`); the latest update is resolved in the local merge tree. PR #70 clarified that the Routes 46/260 and 54/106 notices had previously appeared in passing; the current records add stop-level detail. PR #73’s event-ticket, Route 186 direction, TripAdvisor, ETIAS and weather corrections are retained. The final local suite now passes; push and post-push GitHub observation are still pending. No external re-fetch, dated route-planner query, live ride quote, venue visit or physical radio scan was made here.
+**Integration:** PR #71 is on the fixed branch. While it was open, `main` advanced through PR #69 (`926c33b`), PR #70 (`8799b1b`), PR #73 (`1382640`) and PR #74 (`0031757`). The latest data/source corrections and delivery-receipt update are resolved in the local merge tree. PR #70 clarified that the Routes 46/260 and 54/106 notices had previously appeared in passing; current records add stop-level detail. PR #73’s event-ticket, Route 186 direction, TripAdvisor, ETIAS and weather corrections are retained. Local gates pass; the latest merge commit still needs pushing before PR #71’s state is rechecked. No external re-fetch, dated route-planner query, live ride quote, venue visit or physical radio scan was made here.
 
 | Workstream | Current result | Remaining boundary |
 |---|---|---|
@@ -18,7 +18,7 @@
 
 **Three-pass record:** Pass 1 integrated source-dated corrections; Pass 2 adversarially checked stale ticket/transport/fare/weather/platform/radio claims; Pass 3 audited the complete user request and documented remaining limits. PR/check/merge/Pages state is updated only after observation.
 
-<!-- Historical addenda below are preserved as dated snapshots; they do not describe the current branch state. -->
+**Upstream delivery observed (not PR #71):** PR #73 from `arena/57ad3983-maltasupplemental` merged at `2026-10-12T00:35:41Z` as `1382640d`; its required check passed, post-merge validation and Pages deployment succeeded. The Pages latest-build API reports `built` for `main` `0031757` (PR #74 documentation update) at `00:41:46Z`. PR #71 still needs a post-push state check.
 
 <!-- Historical addenda below are preserved as dated snapshots; they do not describe the current branch state. -->
 
