@@ -1,6 +1,28 @@
 <!-- Session addendum appended by the arena/561bff0e session; historical sections below are preserved. -->
 # Delivery status — Malta trip guide
 
+## Current session addendum — `arena/4d02579a-maltasupplemental` (12 October 2026 UTC, last update 12 Oct)
+
+**Stage:** Pass 1 (re-verify time-critical facts and run the gates), Pass 2 (adversarial check of the wording, dates and third-party conflicts it found) and Pass 3 (re-check the whole request and the protocol). The session's branch constraint means the parallel-protocol workstreams (A–G) ran serially in one agent. Each workstream kept to its own data file, page or doc sections; shared files (`index.html`, `README.md`, `docs/`) were edited once at integration. No per-workstream branches were created, because this session is fixed to `arena/4d02579a-maltasupplemental`.
+
+| Workstream | Status | Blockers / next check |
+|---|---|---|
+| **A · Transport** | Operator feed re-read end to end (three chunks). Corrected the “Friday/Saturday, 17–18 October” wording: only Saturday 17 October evening (19:00–24:00) falls in the trip. Added a clearer Route 186 Friday-16 warning on the executive summary (OQ-S7). | Second Route 186 notice (weekly Fri/Sat 20:00–midnight, “April 21”, no year) may be stale or may cover Friday 16 evening; confirm with MPT. No date-specific journey run. |
+| **B · Food & cafés** | Not re-read in this pass; no food claim was checked here. | Counts, hours and closures remain volatile; reconfirm in person. Yelp, Reddit, Instagram, TikTok, Facebook and X access limits unchanged. |
+| **C · Events, gaming, landmarks** | Organiser finals page, Liquipedia (fetched) and Eventbrite venue data re-checked. Fourth 14 Oct opener corrected to **18:00 Malta** (the earlier 18:30 rows were transcription errors). Venue confirmed as Attard/Ta’ Qali; the Esports Kingdom “Valletta” snippet stays rejected. NIP for Virtus.pro confirmed by HLTV, Fragster and Liquipedia. | The organiser page names no teams (OQ-S8); weekend pairings TBD; Eventbrite weekend agenda and ticket inventory still unconfirmed. |
+| **D · U.S.-traveler essentials** | Malta electricity (230 V, 50 Hz, UK-style three-pin) confirmed on gov.mt. Emergency/health, EES/ETIAS and customs records unchanged this session. | ETIAS/EES status should be rechecked on the day of travel; personal devices, insurance and health needs are the traveler's to confirm. |
+| **E · Sports radio** | Kalshi public events API re-read: the trip-weekend EPL game events are still listed (17, 18, 19 Oct). BFBS Malta closure (1979) confirmed; the exact day is disputed across sources. US HD Radio vs DAB+ confirmed from Wikipedia. | Listings are not Malta carriage. No named match is confirmed on a Malta frequency; the Sports Channel DAB+ identity is still unresolved (OQ-28). |
+| **F · Expense planner** | Unchanged. Amounts blank by design. Gate now includes a weekday/date check. | Populate after the itinerary and bookings arrive. |
+| **G · Integration and gates** | New `scripts/check_weekdays.py` (302 weekday/date pairs; ambiguous “D Month, Weekday” phrasing rejected) runs inside `npm test`. Three phrasing errors fixed. Source log extended with 12 October rows, including rejected and conflicting sources. | Re-run the full gate on the integrated branch before the PR; confirm the Pages build after merge. |
+
+**Corrections made this session**
+
+- The fourth 14 October opener was logged as 18:30 CEST in `docs/SOURCES.md`, `docs/STATUS.md` and `docs/FINAL_REPORT.md`. Liquipedia's own 12:00 EDT label converts to **18:00 Malta**, which the data already used. The outlier item is closed.
+- `data/transport.json` (`mpt-trip-week-notices-2026-10-11`, `route-186-detour-start-date-scope`, `route-186-oct17-detour`) and `docs/FINAL_REPORT.md` / `docs/SOURCES.md` described the Route 186 cluster as “Friday/Saturday, 17–18 October”. The notice starts 17 October and ends 18 October at about 00:00, so only Saturday 17 evening is in the trip.
+- `index.html` executive summary: the Route 186 bullet now says the weekly Friday/Saturday notice does not cover Friday 16, and flags the open “April 21” notice (OQ-S7).
+
+**Gate results (12 October 2026, final state after all edits):** `npm test` PASS. Validator PASS (7 JSON files / 218 exact-schema records / 352 record URLs found in the source log / 15 HTML pages / 379 link attributes / 9 shared navigation destinations / 25 expense rows). Weekday/date check PASS (306 pairs). JavaScript syntax PASS. Playwright 26/26 including axe. Mobile (390 px) and desktop (1440 px) screenshots of the executive summary: no horizontal overflow. These are local gates; they do not confirm live external links.
+
 ## Current session addendum — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
 **Stage:** Pass 1 (time-critical re-reads), Pass 2 (adversarial review) and Pass 3 (full re-check against the request) run in that order on this fixed Arena branch. Main advanced during the pass (PRs #68–#70 from parallel sessions) and was merged into the branch before delivery: conflicts in shared docs/pages were resolved by keeping both sessions' blocks, and this session's trip-week-notice additions were folded into main's canonical `mpt-trip-week-notices-2026-10-11` record instead of creating a duplicate. Local gates re-run before delivery; the GitHub PR is the source of truth for merge state. The session opened late 11 October UTC; source reads are dated 2026-10-12.
@@ -232,7 +254,7 @@ explicitly whether it is a full page read or a search-index extract; no extract 
 
 | Area | Result |
 |---|---|
-| Event | 14–18 Oct, BLAST Arena Studios, Attard, 8 teams, $1m — corroborated across HLTV, Liquipedia, Hotspawn and the organiser's release. NIP-for-Virtus.pro substitution confirmed as current (9 Oct). Wednesday match starts 10:30 / 13:00 / 15:30 / 18:30 CEST corroborate the listing's "games 10:30". |
+| Event | 14–18 Oct, BLAST Arena Studios, Attard, 8 teams, $1m — corroborated across HLTV, Liquipedia, Hotspawn and the organiser's release. NIP-for-Virtus.pro substitution confirmed as current (9 Oct). Wednesday match starts 10:30 / 13:00 / 15:30 / 18:00 CEST corroborate the listing's "games 10:30". |
 | Food | TripAdvisor's *Restaurants near AX ODYCY Hotel* list was readable; recorded ranked **by review volume** with explicit volatility evidence (two captures minutes apart disagreed). 9 new food records, 1 platform-ranked capture. |
 | Gaming | Dated Malta "Game & Entertainment Centers" directory read confirms arcades exist and **no public PC café is listed** — the gap is now evidenced, not just unresearched. Empire Cinema arcade added as an unconfirmed lead. |
 | Recreation | Eco Sports Limited (Buġibba) added with **official published prices** (e-bike €35/day, SUP from €30, tours from €55) — the strongest operator-priced near-hotel option found to date. |

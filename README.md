@@ -18,6 +18,20 @@ A responsive, source-linked planning guide for the traveler-supplied **13–19 O
 | [Expense planner](costs.html) | 18 core and seven optional daily rows, blank amounts, quick-fill preview, autosave, CSV and JSON backup/restore |
 | [Sources & status](sources.html) | Dated source log, access limits, open questions and project reports |
 
+## Latest verification — 12 October 2026 (session `arena/4d02579a`)
+
+Re-read against live sources on the eve of departure: the organiser's finals page, Liquipedia, the PR Newswire release, the operator's full service feed (three chunks), the AX ODYCY contact page, gov.mt, the Kalshi public events API, and HLTV/Fragster on the NIP replacement. Corrections:
+
+- **Fourth 14 October opener is 18:00 Malta**, not 18:30 (Liquipedia labels 12:00 EDT). The data already used 18:00; the logs are fixed.
+- **Route 186 weekend diversion:** only **Saturday 17 October, 19:00–midnight** falls inside the stay. A second, undated-start Route 186 notice (“ends April 21”, no year) may cover Friday 16 evening; it is an open question, OQ-S7.
+- **Hotel contact** confirmed on the official page: +356 2354 3000, Qawra Coast Road, SPB 1902.
+- **Plugs:** 230 V, 50 Hz, UK-style three-pin (gov.mt).
+- **Radio:** BFBS Malta closed in 1979 (exact day disputed); a US HD Radio does not decode DAB+.
+
+A new `scripts/check_weekdays.py` (run by `npm test`) verifies every weekday/date pair in the site and docs against the 2026 calendar.
+
+Full detail: `docs/SOURCES.md` (top section), `docs/OPEN_QUESTIONS.md` (session section), `docs/STATUS.md` and `docs/HANDOFF.md`.
+
 ## Latest recheck — 12 October 2026 (delivery session `arena/561bff0e`)
 
 A final pre-departure pass on the night the trip window opened, re-reading the sources that change decisions. The Malta Met Office national panel now runs **12–18 October** — the first time **18 October** has appeared in the national forecast — and it paints **Tuesday 13 October** as “windy with isolated showers” (NW force 5–6), noticeably harsher than the UK Met Office’s sunny 25/22 for the same day; 14–15 October are mainly sunny, 16–18 mainly cloudy, and only departure day 19 October remains outside the national panel. The operator’s live service feed (all three chunks) reconfirmed the 17–18 October detour cluster, both Route 186 notices and the trip-week notices the parallel pass below detailed (Attard-bound stop omissions on Routes 54/106 during Tuesday daytime; a Route 260/46 Monday–Thursday night detour through Friday 05:00 that degrades the weekday late-return fallback leads as well as the Saturday cluster), and this pass added to that record the routine Sunday Marsaxlokk diversions, the Dingli diversion, and proof the feed still prints expired notices beside current ones. Liquipedia’s upcoming-matches block now **names all four Wednesday openers** (9z–Aurora, Falcons–NIP, Legacy–PARIVISION, FURIA–BetBoom) at 10:30/13:00/15:30/18:00 Malta — corroborating the clock set already published here. Everything else re-checked unchanged: Eventbrite still hides the Sat/Sun agenda and FAQ answers; the fares page still prints only the 2025–26 winter window; ETIAS is still not in operation; Radio Sportiva still names no trip-week match; Yelp still returns HTTP 403. Planner amounts remain blank.
@@ -90,7 +104,7 @@ npm test
 python3 -m http.server 8080 --bind 0.0.0.0
 ```
 
-Tests need Node 22 and Python 3.10+ and use a Linux Chromium setup from `tests/browser-setup.js`. For another supported Chromium installation, set `CHROMIUM_PATH`; `SITE_URL` can target an already-running test server. `npm test` runs exact-schema/source-log/local-link checks, JavaScript syntax checks and Playwright/axe tests. The GitHub validation workflow runs on PRs and pushes to `main`.
+Tests need Node 22 and Python 3.10+ and use a Linux Chromium setup from `tests/browser-setup.js`. For another supported Chromium installation, set `CHROMIUM_PATH`; `SITE_URL` can target an already-running test server. `npm test` runs exact-schema/source-log/local-link checks, the weekday/date calendar check, JavaScript syntax checks and Playwright/axe tests. The GitHub validation workflow runs on PRs and pushes to `main`.
 
 Tests establish software behavior—not the truth or live availability of an external listing. Current observed runs and delivery boundaries are in [the final report](docs/FINAL_REPORT.md).
 
