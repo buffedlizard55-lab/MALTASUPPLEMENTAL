@@ -1,6 +1,21 @@
 # Current cross-workstream handoff
 
-## Session `arena/4d02579a-maltasupplemental` · 12 October 2026 UTC (latest)
+## Session `arena/99828d92-maltasupplemental` · 12 October 2026 UTC (latest)
+
+| From → to | Finding / decision | Follow-up owner |
+|---|---|---|
+| G → A–F | The shared footer now carries a “Section hubs” row (hotel, around Qawra, landmarks, US traveller basics, day framework, CS2 event pointer), so no hub page is orphaned; the top navigation deliberately stays at nine items and a regression test asserts both facts. | No action; keep any future hub page linked. |
+| A → F/G | The venue record now carries the organizer's published map pin (35.8957343, 14.4168839) and the Route 186 record carries the operator's “every 30 minutes” label plus the 21:27 Buġibba Bay 1 arrival for the 20:53 Stadium 2194 boarding. | F must still not prefill any taxi/fare amount from these facts; a pin is not a legal drop-off point and a frequency label is not a dated last bus. |
+| A → C | Route 186's return direction still lists no Il-Qawra stop, so any evening plan that relies on walking Buġibba Bay 1 back to the hotel uses a leg nobody has measured or surveyed. | C keeps evening outings off the event-return critical path unless the planner shows a connection. |
+| E → C/G/F | NET FM's own schedule re-read a third time: Saturday 16:00 “Hits & Score”, Sunday 15:00 “Sports Box”, Friday 18:30 “Mhux Premier biss” — recurring, undated, and discussion formats rather than commentary; an earlier-season station Instagram caption claims 3pm–6pm for Hits & Score, which conflicts with the current 16:00 start and stays recorded as a conflict, not smoothed over. | C must not sell these as match commentary; F must not budget for a receiver purchase on the strength of an unverified match. |
+| E → G | Rai Radio 1's “Tutto il calcio” still bills Saturdays/Sundays but publishes no 17–18 October running order; Radio Sportiva's dated callouts still stop at 11 October; the DAB+ operator directory re-read names channels without a block map. The DAB+ “Sports Channel” identity question therefore remains open. | G keeps the “no named match on a Malta frequency” caveat in the executive summary and radio page. |
+| E → G | talkSPORT's schedule page remains unusable (“Sorry, page unavailable”), and Liquipedia re-blocked this session's reader window (abuse filter until 01:55 UTC), so neither is treated as evidence in this pass. | G marks them as access limits, not as facts. |
+| D → B/C/G | The national 12–18 October forecast panel reproduced identically (13th windy/showers F5–6; 14–18 drier/cloudier; 19 October outside the panel) and the live national address is `maltametoffice.com` — the older `maltairport.com` weather paths now serve a shell or 404 and must not be cited as current. | Anyone re-reading weather should start at `https://maltametoffice.com/`. |
+| B → G | Reddit's search JSON returned HTTP 403 again on 12 October; combined with the standing Yelp/Instagram/TikTok/Facebook/X blocks, the review-platform section stays a dated TripAdvisor/Google sample rather than a social ranking. | No sentiment inference anywhere. |
+| F → G | New `docs/ITINERARY_QUICKSTART.md` wires the itinerary-to-planner workflow (accepted formats, keyword→row map, five-minute process) and is linked from the planner, the overview and the sources page. | When the real itinerary arrives, paste it into `costs.html#quick-fill`, read the preview flags, then apply — amounts remain traveler-supplied. |
+| G → A–F | Local gates on the integrated tree: validator PASS (7 datasets / 218 records / 353 logged record URLs / 15 pages), JavaScript check PASS, Playwright + axe suite re-run (see `docs/STATUS.md` for the observed count). | Keep the suite green on the next session's first commit. |
+
+## Session `arena/4d02579a-maltasupplemental` · 12 October 2026 UTC (previous)
 
 **Integrated decisions.** The event is 14–18 October at BLAST Arena Studios, Attard (Ta’ Qali), with the organiser's 12–19 October window. The fourth 14 October opener is **18:00 Malta** (Liquipedia 12:00 EDT). Virtus.pro was replaced by NIP (HLTV, Fragster, Liquipedia; the organiser's own page names no teams). The Route 186 cluster bites only on **Saturday 17 October, 19:00–midnight**. The Route 186 “April 21” notice (no year, no start date) is an open risk for Friday 16 evening (OQ-S7).
 

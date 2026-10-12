@@ -1,5 +1,44 @@
 # Malta trip guide — final report
 
+## Current session — `arena/99828d92-maltasupplemental` (12 October 2026 UTC)
+
+### Delivery summary
+
+This session ran a final pre-departure verification and delivery pass on the existing, already-complete project (15-page GitHub Pages site, 13-field record schema, seven datasets, shared navigation and renderer, expense planner with itinerary quick-fill, source log, open questions, status ledger, CI and Playwright/axe suite). Nothing was rebuilt and no shared setup was changed. Workstreams A–F were re-verified serially on this fixed Arena branch with the documented ownership map; G integrated last. Every source read is logged in `docs/SOURCES.md` under this session's heading.
+
+Session increments, all read on 12 October 2026 UTC (01:19–01:35) and each recorded with its own evidence boundary:
+
+- **Transport (A).** Full re-read of the operator's Route 186 page: the operator's own “Scheduled Frequency every 30 minutes” label, the Buġibba-bound Stadium 2194 window 16:55–20:53, and the 21:27 arrival at Buġibba Bay 1 for the 20:53 boarding — the numbers behind the guide's return-gap warning, reproduced rather than assumed. Full re-read of the live service-updates feed: the 17–18 October detour cluster, the 54/106 Attard detours on the 13th and the 46/260 night detours (12–16 October) still print, with newly visible rows for Route 117 (14 October), Gozo routes and 12 October one-day works. The venue record now carries the organizer's own published map pin (35.8957343, 14.4168839) as a navigation/drop-off target, explicitly not a gate.
+- **Event (C).** The ticket listing is unchanged (venue block, Wed/Thu 09:30–22:30, Fri 14:00–21:00; Sat/Sun still behind “Show all agenda”; nine FAQ headings with no answers) and now shows a “Sales end soon” badge. No price, tier, checkout, inventory or gate is exposed, and the project holds no personal reservation.
+- **Everyday (D).** The national 12–18 October forecast panel was independently reproduced with identical values (13th windy with isolated showers, NW F5–6, UV 4; 14–15 mainly sunny; 16–18 mainly cloudy; 19 October outside the panel). The live address is `maltametoffice.com`; the older `maltairport.com` weather paths now serve a shell or 404 and are recorded as superseded.
+- **Radio (E).** BBC World Service Sportsworld's 17 and 18 October editions are unchanged; Radio Sportiva still names no trip-week match; Rai Radio 1's “Tutto il calcio” is still billed for Saturdays/Sundays with no 17–18 October running order; NET FM's recurring weekend sport slots were re-confirmed (Saturday 16:00 “Hits & Score”, Sunday 15:00 “Sports Box”, Friday 18:30 “Mhux Premier biss”) as discussion formats, with an unresolved older social caption on their running time; Kalshi's public API still lists all trip-window EPL markets. talkSPORT's schedule page remains unusable; Liquipedia re-blocked this window's reader.
+- **Planner (F).** New `docs/ITINERARY_QUICKSTART.md`: what to send, the accepted paste format, the keyword→row map and a five-minute workflow, linked from the planner, the overview and the sources page. Every amount stays blank until the traveler supplies it.
+- **Integration (G).** The footer now exposes six section hubs (fixing the orphaned `hotspawn.html`), the sources page records the 12 October research state, and two regression tests were added.
+
+### What is verified (this pass)
+
+Routes and notices as printed on the operator's own live pages; the ticket listing's visible agenda, venue block and pin; the national weather panel values; the three radio station schedules and the exchange's market list as published. Local gates: validator PASS (7 datasets / 218 records / 353 logged record URLs / 15 pages / 386 link attributes / 9 navigation destinations / 25 expense rows), JavaScript check PASS, Playwright + axe **28/28 passed**. Where this pass reproduced an earlier same-day read exactly, that corroboration is stated; where it could not (talkSPORT, Liquipedia, social platforms), the limitation is recorded instead of a fact.
+
+### What remains unverified (and must not be presented as fact)
+
+No date-specific MPT journey, gate/walk measurement, live bus/taxi/rental quote or trip-week fare confirmation; no TQ/BLAST special service; no event price, booking path, inventory, day-validity rule, gate or weekend door time; no named match commentated on a Maltese frequency and no receiver scan; no marine/sea-state warning; no personal bookings, receipts or party details; no real-itinerary pass through the planner.
+
+### Limitations
+
+- The sandbox has no general internet egress: research runs through a page-reading tool, so JavaScript-heavy or bot-protected platforms (Yelp, Instagram, TikTok, Facebook, X, Reddit, Google Maps, parts of Eventbrite) return blocks or shells and yield no sentiment evidence.
+- Timetables are static windows without date labels; a displayed row is not a dated departure. Service feeds mix current and expired notices.
+- Third-party sources (Liquipedia, HLTV, TripAdvisor, fan wikis) are dated samples, not organizer or operator statements.
+- Automated tests prove the site's behaviour, not any external fact or physical reception.
+
+### Suggested next-session work (priority order)
+
+1. **Run the real itinerary through the planner** as soon as it is supplied: paste into `costs.html#quick-fill`, read the preview flags, apply only to blank fields, then export a backup. Amounts remain traveler-supplied.
+2. **Re-read on each event day:** MPT service updates + the date-specific planner for that date (and the TQ1 page in case an event service appears), the ticket listing for weekend doors/FAQ answers, and the daily forecast/marine outlook.
+3. **Ask the organizer directly** for the CS2 weekend door and finish times, whether one reservation covers all days, age/ID procedure, gate name and bag/food rules — the listing does not answer these.
+4. **Radio, on arrival:** scan DAB+ blocks 6A/6C in the room for BBC World Service, Rai Radio Uno, Radio Sportiva and the “Sports Channel” service; note actual signal strength. Do not promise a named match.
+5. **Keep the evidence boundary:** update `docs/SOURCES.md`, `docs/OPEN_QUESTIONS.md`, `docs/STATUS.md` and this report in the same pass as any new claim, and re-run the full gate suite before merging.
+
+
 ## Current session — `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
 
 ### Delivery summary
