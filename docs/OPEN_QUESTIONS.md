@@ -12,6 +12,15 @@ Delivery-session updates (12 October 2026, eve of departure):
 - **Radio Sportiva dated callouts still stop at 11 October.** No Serie A match is named for 13–19 October on the station's own grid; the recurring programme windows stand as leads.
 
 **Previous research snapshot: 11 October 2026 UTC, session `arena/2b38c9c6-maltasupplemental`.**
+**Previous correction pass — `arena/57ad3983-maltasupplemental`, 11 October 2026 UTC.** The bullets below supersede conflicting older snapshots; they are research boundaries, not bookings or physical tests.
+
+- **Event-specific ticketing remains unresolved:** the direct Eventbrite extraction does not expose a TWC-specific price/tier, booking action, checkout or inventory. Its generic “Free / Reserve a spot” recommendation card is not attributable to the event; HLTV’s 2 October report is secondary. Personal reservation, fees, day validity, attendee gate and weekend door/finish rows remain unknown.
+- **Route 186 direction is reconciled; trip-date routing is not:** the current static display shows the Buġibba return at Stadium 2194 through 20:53, ending at Buġibba Bay 1, not Qawra. The 22:04/22:08 series is outbound at Stadium 6227 toward Rabat; a 20:54 return at 2194 was not reproduced. No date-specific planner journey or onward Buġibba–Qawra leg is recorded.
+- **Fare transfer is conditional:** MPT publishes a two-hour window with free transfers, but actual boardings and operator terms must fit; the seasonal fare for 13–19 October is not operator-confirmed. No bus card or product is recommended without ride count and eligibility.
+- **Taxi/ride-hailing is optional:** no live quote, event-night vehicle, pickup permission or booking is known. Compare only after checking the dated planner; no event-night taxi is assumed.
+- **Food, weather and entry remain scoped:** the TripAdvisor query is a 10-mile, 1,869-result “Best Nearby” search, not Qawra-only; five profiles are a mutable sample. Malta’s national forecast panel covers 13–18 October but not 19; UK Met Office Valletta is a separate provider. The EU ETIAS FAQ read 11 October said no applications/no action now and promised several months’ notice; EES local practice remains conflicted.
+
+**Current research snapshot: 11 October 2026 UTC, session `arena/2b38c9c6-maltasupplemental`.**
 
 New or changed items from this pass. Nothing below is a booking, a physical test or an RF measurement.
 

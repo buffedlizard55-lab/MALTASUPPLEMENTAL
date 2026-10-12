@@ -15,10 +15,29 @@
 | **F · Expense planner** | Unchanged. Amounts blank by design; 25 rows wired per validator. | Itinerary not yet supplied. |
 | **G · Integration** | Exec summary (arrival-weather/detour bullet merged with main's Kalshi bullet), snapshot/footer dates, README recheck note and all six docs updated this session; main merged in with both sessions' blocks preserved; full local suite is the pre-PR gate. | PR from this branch, merge by explicit number, observe Pages build. |
 
-**Gate results (12 October 2026, this session, post-merge):** validator PASS (7 JSON files / 218 exact-schema records after the parallel sessions' additions; 354 logged record URLs; 15 HTML pages / 381 link attributes; 25 expense rows); JavaScript check PASS; Playwright 26/26 passed (five viewports + axe, planner, quick-fill, projections, Kalshi listing guard). Details in `docs/PLAN.md` "Current session plan".
+**Gate results (12 October 2026, this session, after both merges with main):** validator PASS (7 JSON files / 218 exact-schema records; 352 logged record URLs; 15 HTML pages / 378 link attributes; 25 expense rows); JavaScript check PASS; Playwright 26/26 passed (five viewports + axe, planner, quick-fill, projections, Kalshi listing guard). Details in `docs/PLAN.md` "Current session plan".
 
 
 ## Current session addendum — `arena/2b38c9c6-maltasupplemental` (11 October 2026)
+## Previous delivery session — `arena/57ad3983-maltasupplemental` (11–12 October 2026 UTC)
+
+**Stage:** Main was fast-forwarded from `ac487ae` to `8799b1b4` (PRs #68–#70). The stash was applied with conflicts in seven files; all seven were resolved by retaining upstream Kalshi, service-notice and forecast material while restoring this branch’s event-price and Route 186 direction corrections. PR #73 from this fixed branch passed checks and was merged; the Pages build and post-merge validation were observed. PR #71 remains a separate open branch and was not checked out or merged.
+
+| Workstream | Status | Remaining boundary |
+|---|---|---|
+| **A · Transport** | Current correction distinguishes Stadium 2194 Buġibba return through 20:53 from outbound Stadium 6227 22:04/22:08 rows; retains the Route 46/260, 54/106, 17–18 October and Saqqajja notices. | No date-specific planner journey, gate/walk, onward Buġibba–Qawra connection, confirmed notice effect, trip-week fare or live ride quote. |
+| **B · Food & cafés** | TripAdvisor search scope and five directly re-read profiles are described as a mutable sample, not a Qawra-only ranking; platform limits remain explicit. | Menus/hours/trading and blocked-platform coverage require direct checks. |
+| **C · Events & activities** | Eventbrite listing separated from generic recommendation card; no event-specific checkout price/reservation is claimed. | Booking/inventory, ID/day validity, gate, weekend doors/finish and FAQ answers remain unknown. |
+| **D · Everyday guide** | ETIAS wording is trip-specific and date-qualified; EES remains separate; Malta national 13–18 October panel and UK Met Office long-range snapshots are kept distinct. | Recheck entry and weather; no Malta national value for 19 October, sea-state or marine warning was checked. |
+| **E · Sports radio** | Mainline Kalshi market data and official schedule material retained; listings are not presented as carriage or reception. | Named-match Malta carriage, receiver compatibility and physical signal remain unverified. |
+| **F · Expense planner** | Blank-by-default rows and preview-based quick-fill retained. | Populate only after actual bookings, itinerary, party and receipts/quotes arrive. |
+| **G · Integration** | Executive summary, pages, data, source log, open questions, handoff and three-pass plan aligned; local and GitHub checks pass. PR #73 merged and its Pages build is `built`. | Traveler-supplied itinerary, ticketing, date-specific transit, current fares, live quotes and physical radio checks remain open. |
+
+**Gate results (12 October 2026 UTC):** `npm test` PASS — 7 JSON files / 218 exact-schema records / 351 unique record URLs / 15 HTML pages / 374 link attributes / 9 shared navigation destinations / 25 expense rows. JavaScript syntax PASS; Playwright **26/26 PASS**, with axe at 320/360/768/1024/1440 px. `git diff --cached --check` PASS before the core commit. Tests do not verify current external facts, live inventory, actual route operation, radio carriage or physical reception.
+
+**Delivery observed:** PR [#73](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/pull/73) from `arena/57ad3983-maltasupplemental` passed the required **“Schema, browser and accessibility checks”** ([run 38188460975](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38188460975)) and was merged with `--merge` at **2026-10-12T00:35:41Z** as **`1382640d027e5bef69b97776bc72c6a1b4cfb096`**. Post-merge validation run [38188606027](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38188606027) and Pages deployment run [38188605376](https://github.com/buffedlizard55-lab/MALTASUPPLEMENTAL/actions/runs/38188605376) both completed successfully. The GitHub Pages latest-build API reports **`built`** for that commit at **00:36:01Z**. Public URL: <https://buffedlizard55-lab.github.io/MALTASUPPLEMENTAL/>. This confirms GitHub build/deployment status, not an independent live-page or physical-device inspection.
+
+## Previous session addendum — `arena/2b38c9c6-maltasupplemental` (11 October 2026; retained history)
 
 **Stage:** Passes 1–3 on the integrated tree. Repository review complete; changes limited to the files each workstream owns, with documentation and tests integrated last.
 

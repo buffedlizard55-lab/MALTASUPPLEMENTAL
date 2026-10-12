@@ -8,6 +8,15 @@
 - **E → G (radio, no new carriage):** BBC Sportsound’s page now dates its Saturday rows 17/10/2026 and later rows 22 Oct, so the undated “Thursday 19:00 Benfica v Celtic” row is bracketed but still undated — 15 October stays a lead. Radio Sportiva dated callouts still stop at 11 October. Nothing new for Malta carriage; main’s API-verified Kalshi market record merges cleanly with this.
 - **B → G:** Yelp re-checked 12 Oct — HTTP 403 again; platform-coverage limits current.
 - **F → traveler:** planner unchanged and blank; the fare-split question (€2.50 through 18 Oct / €2.00 on 19 Oct) is still an inference — keep bus amounts provisional until receipts exist.
+**Current delivery branch:** `arena/57ad3983-maltasupplemental` · **updated:** 11 October 2026 UTC. The latest upstream main handoff below (PR #69/#70) is retained and integrated.
+
+### Additional integrated corrections
+
+- **C → A/G/F:** Eventbrite’s latest direct extraction identifies the in-person 18+ listing and visible 14–16 October rows, but exposes no event-specific ticket price, tier, reservation action, checkout or inventory. The generic “Free / Oct 14–18 / Reserve a spot” recommendation card is not attributable to TWC; HLTV’s 2 October statement is secondary. No personal reservation is recorded.
+- **A → G/F:** the full Route 186 read displays the Buġibba-bound return at Stadium 2194 through 20:53, ending at Buġibba Bay 1 rather than Qawra; the 22:04/22:08 series is outbound at Stadium 6227 toward Rabat. Static rows are not date-specific. Check both date-planned legs and onward Buġibba–Qawra service; a two-hour fare may cover a transfer only if actual boarding times and terms fit. No taxi, bus return or trip is assumed.
+- **B → G:** TripAdvisor’s AX ODYCY query is a 10-mile, 1,869-result “Best Nearby” sample using reviews and distance, not a walkable-Qawra ranking; five directly read profiles are a dated snapshot. Other requested social/review platforms remain blocked or limited.
+- **D → G:** the Malta national Met Office panel covers 13–18 October; 19 October is outside it. The separate UK Met Office Valletta view is not the Malta national panel. The official EU ETIAS FAQ’s 11 October status indicated no trip-week action; recheck. EES local practice remains conflicted.
+- **F → traveler:** expenses stay blank; bus-card choices depend on actual ride counts and eligibility, and taxi/ride rows are optional actual costs, not event-night defaults.
 
 **Session:** `arena/2b38c9c6-maltasupplemental` · **updated:** 11 October 2026 UTC.
 

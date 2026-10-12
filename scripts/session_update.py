@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-"""Historical editor for the 11 October venue-confirmation refresh.
+"""Disabled historical replay of a superseded 11 October refresh.
 
-This script records the earlier pass, but its fare-season and event-access
-assumptions were superseded during the PR #33/current-main reconciliation.
-It is retained for provenance only and must NOT be rerun on the current data;
-see the live records and docs/OPEN_QUESTIONS.md for reconciled claims.
+This file is retained for provenance only. Its old event-access and fare
+assumptions are stale; execution and import are blocked before any writes.
+Use the canonical data files and docs/OPEN_QUESTIONS.md instead.
 """
 
 from __future__ import annotations
@@ -12,8 +11,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-if __name__ == "__main__":
-    raise SystemExit("Disabled historical patch: its assumptions were superseded; do not rerun on reconciled data.")
+raise SystemExit("Disabled historical patch: stale assumptions; no data files were changed. Use the canonical records and current source log.")
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"

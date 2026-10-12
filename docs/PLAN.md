@@ -1,3 +1,40 @@
+## Current session plan — `arena/57ad3983-maltasupplemental` (11 October 2026)
+
+### Repository review and shared setup (completed before topic work)
+
+At task start the fixed Arena branch was based on `ac487ae`. Before delivery, upstream main was fast-forwarded through PRs #68–70 to `8799b1b`; their Kalshi, trip-week notice and weather updates were preserved. The repository already contains a static GitHub Pages site, shared navigation/rendering and CSS, the canonical 13-field record schema, seven JSON datasets, topic pages, a source log, open-question/status/handoff records, an expense planner, and CI plus JavaScript/Playwright/axe checks. Preserve that setup: do not replace or reformat unrelated files. No isolated sub-agent/branch runner is available in this session; execute A–F serially on the required fixed branch, keep each stream within its owned files, and run G only after topic work. Cross-topic discoveries go in `docs/HANDOFF.md`; unresolved claims go in `docs/OPEN_QUESTIONS.md`.
+
+### Workstreams, owned files, dependencies
+
+| Stream | Owned files | Dependencies / boundary |
+|---|---|---|
+| **A · Transport** | `data/transport.json`, `getting-around.html` | Use the user-supplied AX ODYCY and BLAST Arena Studios locations, but verify the event venue/date and operator details. Event-day routing depends on confirmed event dates/times and current operator service notices. Compare bus, taxi/ride-hail, rental and other modes only where evidence supports cost/feasibility. |
+| **B · Food & cafés** | `data/food.json`, `restaurants.html` | Near-hotel shortlist; review/social platforms are discovery signals, not proof of current hours, prices or popularity. Record access/coverage limits rather than infer missing platform results. |
+| **C · Gaming, activities, landmarks & event** | `data/activities.json`, `data/event.json`, `activities.html`, `landmarks.html`, `event.html` | Verify named venues and trip-window events. Event records provide A's date/venue inputs; unannounced agenda, access, hours and ticket inventory remain open. |
+| **D · US-traveler everyday guide** | `data/everyday.json`, `everyday.html` | Official country/operator sources for entry, power, money, connectivity, safety, health, language and weather. Weather/entry guidance is date-sensitive and needs a trip-window check. |
+| **E · Live sports radio** | `data/radio.json`, `radio.html` | A listed sport fixture is not proof of Malta radio carriage. Separate station schedule, rights, local frequency/service, trip-date programme listing and actual reception; event/fixture dates must be checked. |
+| **F · Expense planner** | `data/expenses.json`, `costs.html` | Keep prices/amounts blank unless supported by an actual booking or quote. Build for quick input after itinerary/party details arrive; verify persistence/export/edge cases. |
+| **G · Site shell, executive summary, navigation and integration (last)** | Shared shell/pages as needed, `README.md`, `docs/*`, tests | Integrate A–F without changing their facts, maintain sources/open questions/status, run integration and all three review passes on the integrated result. |
+
+### Verification and delivery passes
+
+1. **Pass 1 — implement/review:** check each stream's claims against accessible primary sources; every record has a source URL, source type, check date, confidence and notes. No unsupported detail is written as fact.
+2. **Pass 2 — adversarial review:** inspect for stale dates, unverified platform claims, schema/data-page drift, broken navigation/links, desktop/mobile and planner edge cases; fix or explicitly record blockers.
+3. **Pass 3 — original-request audit:** map the deliverable against the user's complete brief, run the full test suite, update `docs/STATUS.md`, `docs/OPEN_QUESTIONS.md`, `docs/SOURCES.md`, `docs/HANDOFF.md` and the final report. Open and merge a PR only if checks pass; the session may push only `arena/57ad3983-maltasupplemental`.
+
+### Integrated review execution — 11 October 2026
+
+- **Pass 1:** preserved the existing Pages shell, schema, datasets, source-log format and planner. The evidence already logged for the current trip-week review, including the latest upstream Kalshi, trip-week service-notice and weather updates, was carried into the integrated tree; this final review did not create a new live-source observation. Claims that remain date-, checkout-, or device-dependent are still explicitly open.
+- **Pass 2:** searched the integrated pages and data for stale admission, fare/transfer, return-direction and taxi assumptions. Corrected the residual expense-page statement that tickets were advertised as free, the “taxi every event night” budget advice, and older wording treating a late taxi as the default. Rechecked that Eventbrite’s generic recommendation card is not attributed to TWC; Route 186’s 20:53 Buġibba return is separated from 22:04/22:08 outbound rows at the other Stadium stop; a static table is not a date-specific planner result; one fare is conditional on MPT’s published two-hour rule; and no vehicle, booking, fare split, finish time or return is assumed. Fixed joined adjacent `<li>` source formatting without changing page content.
+- **Pass 3:** checked the original requirements against the integrated overview, event desk, seven-day public-transport comparison, food/review-methodology page, activities/landmarks, U.S.-traveler guide, separate official-schedule radio section, expense planner, sources, handoff and open questions. Validator confirms pages project canonical data. Remaining travel-, ticket-, price-, forecast- and reception-specific gaps are reported in `docs/OPEN_QUESTIONS.md` and the final report.
+
+**Local gates on the integrated tree (12 October 2026 UTC):** `npm test` PASS — 7 JSON files / 218 exact-schema records / 351 unique record URLs logged / 15 HTML pages / 374 link attributes / 9 shared navigation destinations / 25 expense rows; shared and inline JavaScript syntax PASS; Playwright **26/26 PASS**, including axe at 320, 360, 768, 1024 and 1440 px, event/date projection, radio and market tables, project-prefix links, and expense import/export/quick-fill edge cases. `git diff --cached --check` PASS. These tests verify local structure, behavior and accessibility, not external link uptime, ticket availability, transport operations, radio carriage or physical reception.
+
+
+---
+
+## Preserved plan history from the latest integrated main
+
 # Malta Trip Guide - Session Plan
 
 ## Session: `arena/561bff0e-maltasupplemental` (12 October 2026 UTC)
