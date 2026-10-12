@@ -350,3 +350,46 @@ test('hotel outlet records keep their own facts (no cross-record contamination)'
   await expect(page.locator('#espresso-odycy dd').nth(2)).not.toContainText('€');
   await expect(page.locator('#minoa-ax-odycy dd').nth(2)).toContainText('€70');
 });
+
+test('Kalshi market listing is presented as a listing, never as radio carriage', async ({page}) => {
+  const radio = data('radio').records;
+  const markets = radio.find(r=>r.id==='kalshi-trip-window-markets-api-2026-10-11');
+  expect(markets).toBeTruthy();
+  expect(markets.confidence).toBe('verified');
+  expect(markets.source_type).toBe('official');
+  expect(markets.source_url).toContain('api.elections.kalshi.com');
+  // Trip-window fixtures named in the API record, and the negatives it must keep saying.
+  for (const fixture of ['Everton v Chelsea','Brentford v Liverpool','Fulham v Hull City','Manchester City v Ipswich','Newcastle v Aston Villa',
+    'Bournemouth v Sunderland','Brighton v Crystal Palace','Leeds v Manchester United','Nottingham Forest v Arsenal','Tottenham v Coventry']) {
+    expect(markets.hours).toContain(fixture);
+  }
+  expect(markets.hours).toContain('LASK v Liverpool');
+  expect(markets.hours).toContain('Houston v Jacksonville');
+  expect(markets.hours).toContain('no Thunderpick World Championship fixture appeared');
+  expect(markets.hours).toContain('no per-match Serie A market was listed');
+  // No price, odds or recommendation claim is allowed in the record.
+  expect(markets['price range']).toContain('Not applicable');
+  for (const field of ['hours','description','notes']) {
+    expect(markets[field]).not.toMatch(/\bodds\b|\d+\s?¢|cents per contract/i);
+  }
+
+  await page.setViewportSize({width:360,height:850});
+  await page.goto('radio.html#kalshi-trip-window-markets');
+  await expect(page.locator('#kalshi-trip-window-markets')).toContainText('What the exchange actually lists');
+  await expect(page.locator('#kalshi-trip-window-markets + p')).toContainText('public API');
+  const table = page.locator('#kalshi-trip-window-markets').locator('xpath=following-sibling::div[1]//tbody/tr');
+  await expect(table).toHaveCount(5);
+  const section = page.locator('section[aria-labelledby="kalshi-epl-title"]');
+  const sectionText = await section.innerText();
+  expect(sectionText).toContain('KXEPLGAME');
+  expect(sectionText).toContain('KXCS2GAME');
+  expect(sectionText).toContain('No Thunderpick World Championship fixture was listed');
+  expect(sectionText).toContain('Nothing on this page is a price');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBeTruthy();
+
+  // The canonical projection of the API record renders with its own notes, and the anchor is reachable.
+  await page.setViewportSize({width:1440,height:900});
+  await page.goto('radio.html#kalshi-trip-window-markets-api-2026-10-11');
+  await expect(page.locator('#kalshi-trip-window-markets-api-2026-10-11 h3')).toHaveText(markets.name);
+  await expect(page.locator('#kalshi-trip-window-markets-api-2026-10-11 .record-notes p')).toHaveText(markets.notes);
+});
